@@ -1,0 +1,32 @@
+{
+  "status": "NOT_ADMITTED_RAW_CORPUS_TIMESTAMP_GATE_FAIL",
+  "scope": "one pinned shard, schema and non-text metadata only",
+  "candidate_revision": "c7d979394488bbd94bd6f493af1775d6b6159176",
+  "sample": {
+    "path": "data/train-00000-of-00014.parquet",
+    "bytes": 256002046,
+    "sha256": "32a038196aad9289d7469051a519469412a7796495775f7f04f1fca81fef0184",
+    "rows": 1573793
+  },
+  "schema": {
+    "fields": ["timestamp", "tweet", "language", "total_tokens", "sentiment_class", "sentiment_label", "sentiment_score", "confidence_level", "year"],
+    "tweet_text_read_or_exported": false,
+    "market_outcome_fields_present": false,
+    "precomputed_annotation_fields": ["sentiment_class", "sentiment_label", "sentiment_score", "confidence_level"]
+  },
+  "timestamp_gate": {
+    "date_only": 429856,
+    "datetime_with_explicit_offset": 861543,
+    "datetime_without_timezone": 282394,
+    "raw_corpus_admitted": false,
+    "reason": "Date-only and timezone-ambiguous records cannot be assigned a conservative information time without an independently verified provenance rule."
+  },
+  "admission_rule_if_reopened": {
+    "candidate_records": "Only timestamps with an explicit UTC offset; exclude date-only and timezone-ambiguous records.",
+    "allowed_model_fields": ["tweet"],
+    "excluded_fields": ["sentiment_class", "sentiment_label", "sentiment_score", "confidence_level", "year", "total_tokens"],
+    "remaining_gates": ["independent historical-provenance review", "all-shard timestamp audit", "outcome-blind corpus-contract freeze"]
+  },
+  "market_data_accessed": false,
+  "model_run": false
+}

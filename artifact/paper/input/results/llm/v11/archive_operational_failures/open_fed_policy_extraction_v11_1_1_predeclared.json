@@ -1,0 +1,59 @@
+{
+  "schema_version": "open-fed-policy-extraction-predeclaration-v11.1.1",
+  "predeclared_at": "2026-09-05T06:44:19.186582+00:00",
+  "status": "FROZEN_RECURSION_CORRECTION_BEFORE_MARKET_TARGET_ACCESS",
+  "development_only": true,
+  "strict_point_in_time": false,
+  "supersedes_failed_config": {
+    "path": "paper/input/results/llm/v11/open_fed_policy_extraction_v11_1_predeclared.json",
+    "sha256": "8957993c6fca2a0a89c16437b7e3681b0f6f8f20a24b9de7f6fd1350193c477b"
+  },
+  "failure_artifact": {
+    "path": "paper/input/results/llm/v11/open_fed_policy_extraction_v11_1.json",
+    "sha256": "ce4026e2c39d283b9c823db02d9383620dfc5b572f4085a08f4b11c8863e28f1"
+  },
+  "correction": "Retain an immutable reference to the base validator before monkeypatching; evidence alignment and predictive fields are unchanged.",
+  "sources": {
+    "events": {
+      "path": "paper/input/results/llm/v11/conditional_fed_policy_events_v11/events.json",
+      "sha256": "3ed9923fb3a21ca18642925605ab8be2d73612c1402728d8aa6e7f6b1a4ce661"
+    }
+  },
+  "model": {
+    "name": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71"
+  },
+  "contract": {
+    "prompt": {
+      "path": "tools/llm/prompts/open_fed_policy_v11.txt",
+      "sha256": "eb48940531c36a0208c9942fdd8327a733c880ded19204e055494b47a21c25b6"
+    },
+    "schema": {
+      "path": "tools/llm/schemas/open_fed_policy_v11.json",
+      "sha256": "9712935c387af08ec8b30f10d0610e2d92d90d35ebadde117d47789679d338af"
+    },
+    "producer": {
+      "path": "tools/llm/score_open_fed_policy_v11_1_1.py",
+      "sha256": "f244bab467451f929e2be10152d37f223db6321160aadeb6e47de044e8bf58fa"
+    },
+    "base_producer": {
+      "path": "tools/llm/score_open_fed_policy_v11.py",
+      "sha256": "0654d915faf85cd87bbe581e7f3c57336d6707f66d64cb5cabb32788ac12e15f"
+    },
+    "tests": {
+      "path": "tools/llm/test_score_open_fed_policy_v11_1_1.py",
+      "sha256": "d41e4e645884ae620354be0ccd49520184dbd71d1575eaeec377207b68be7db6"
+    },
+    "protocol": {
+      "path": "paper/working/protocols/LLM_Only_Open_Fed_Policy_Protocol_v11.md",
+      "sha256": "d1aaf0c1ffb2d9c6b3341a95e54fcb295b30ec7a4ba2d3d87282b1555cf54e32"
+    },
+    "batch_size": 1,
+    "workers": 1,
+    "temperature": 0,
+    "seed": 20260905,
+    "think": false
+  },
+  "outcomes_consulted_for_v11_1_1_extraction": false,
+  "restart_from_record_zero": true
+}

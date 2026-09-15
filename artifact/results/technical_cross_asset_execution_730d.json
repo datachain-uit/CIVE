@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-08-07T09:37:59.830118+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT"
+    ],
+    "daily_selection": "market UP-UP + channel event + top-N 20d momentum",
+    "fill": "next daily 4H open",
+    "stops": "4H ATR fixed plus trailing, adverse OHLC stop",
+    "pyramiding": "disabled baseline",
+    "fee_bps": 6.0,
+    "slippage_bps": 5.0,
+    "funding_bps_8h": 1.0
+  },
+  "result": {
+    "starting_balance": 10000,
+    "final_equity": 12327.92,
+    "return_pct": 23.2792,
+    "max_drawdown_pct": 20.0896,
+    "fills": 100
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "tech-llm-text-state-stage1-gate-v3",
+  "evaluated_at": "2026-09-10T06:51:41.685381+00:00",
+  "experiment_id": "hyb-003-text-state-ministral3-8b-v3.1-stage1-reliability",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records_left": 96,
+    "records_right": 96,
+    "success_left": 96,
+    "success_right": 96,
+    "paired_success": 96,
+    "categorical_exact_agreement": {
+      "affected_asset_scope": 96,
+      "held_long_pressure": 96,
+      "mechanism": 96,
+      "event_stage": 96
+    },
+    "confidence_mean_absolute_difference": 0.0,
+    "confidence_max_absolute_difference": 0.0,
+    "horizon_mean_l1_difference": 0.0,
+    "horizon_max_l1_difference": 0.0,
+    "evidence_fallbacks_left": 0,
+    "evidence_fallbacks_right": 0
+  },
+  "checks": {
+    "record_count": true,
+    "schema_success": true,
+    "context_order": true,
+    "asset_scope_agreement": true,
+    "pressure_agreement": true,
+    "mechanism_agreement": true,
+    "stage_agreement": true,
+    "confidence_mean_difference": true,
+    "confidence_max_difference": true,
+    "horizon_mean_l1": true,
+    "horizon_max_l1": true,
+    "evidence_fallback_limit": true
+  },
+  "passed": true,
+  "status": "stage1-pass-full-text-state-extraction-authorized",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\tech_llm_text_state_extractor_v3_1_stage1_predeclared.json",
+      "sha256": "4c810c101dc72fd42f74785dd006de25c0efd44ab127b0f2e5a06c69146c85f1"
+    },
+    "left": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\tech_llm_text_state_v3_1_stage1_run1.json",
+      "sha256": "643688cb9a139291b810a22178222e703593a84b878fcc3aec62f57831dd5e62"
+    },
+    "right": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\tech_llm_text_state_v3_1_stage1_run2.json",
+      "sha256": "f3a7581227363b5a5e7567c1c90ffb555dd9652b5c9921de322bc3097fb70c17"
+    }
+  }
+}

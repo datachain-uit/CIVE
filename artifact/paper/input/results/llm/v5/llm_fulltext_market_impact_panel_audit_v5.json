@@ -1,0 +1,33 @@
+{
+  "schema_version": "llm-fulltext-market-impact-panel-audit-v5",
+  "panel": {
+    "path": "D:\\UIT\\KLTN\\runtime\\external\\crypto_news_fulltext_v5\\fulltext_market_impact_panel_v5.json",
+    "sha256": "426c4022e2a18857ee6946dc422c4b496cc7a8ab11e828e9100deb958336a65c"
+  },
+  "counts": {
+    "eligible_unique_articles": 125055,
+    "selected_articles": 36828,
+    "selected_sources": 58,
+    "labeled_four_hour_buckets": 5187,
+    "rejected_short_body_rows": 104061,
+    "rejected_duplicate_identities": 56,
+    "buckets_without_complete_market_data": 5777
+  },
+  "coverage": {
+    "start": "2022-09-12T00:00:00+00:00",
+    "end": "2025-02-02T00:00:00+00:00"
+  },
+  "market_feature_names": [
+    "return_4h",
+    "return_24h",
+    "return_72h",
+    "return_168h",
+    "realized_volatility_24h",
+    "realized_volatility_168h",
+    "completed_volume_zscore_30d"
+  ],
+  "target_summary_for_data_audit_only": {
+    "finite": true,
+    "nonconstant": true
+  }
+}

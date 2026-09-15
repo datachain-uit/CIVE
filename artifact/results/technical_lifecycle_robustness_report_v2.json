@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-08-13T15:17:39.804948+00:00",
+  "status": "robustness evidence for frozen candidate; not a new selection or sealed holdout",
+  "candidate": {
+    "name": "top1_rank20_stop3p0_trail4p0",
+    "top_n": 1,
+    "rank_days": 20,
+    "stop_atr": 3.0,
+    "trail_atr": 4.0,
+    "train_compounded_return_pct": 239.0018,
+    "train_positive_folds": 6,
+    "inspected_compounded_return_pct": -3.653,
+    "inspected_positive_folds": 0,
+    "starting_balance": 10000,
+    "final_equity": 31747.81,
+    "return_pct": 217.4781,
+    "max_drawdown_pct": 10.5589,
+    "fills": 62
+  },
+  "parameter_neighbourhood": {
+    "configurations": 27,
+    "positive_full_return": 27,
+    "positive_inspected_period": 0,
+    "median_return_pct": 140.5455,
+    "min_return_pct": 85.3177,
+    "max_return_pct": 218.3358
+  },
+  "selection_risk": {
+    "configurations_tested": 54,
+    "eligible_on_train_gate": 54,
+    "warning": "54 configurations were inspected; raw winner performance is selection-biased. See technical_selection_inference_v2.json for exploratory DSR/PBO on the aligned daily return matrix."
+  },
+  "candidate_train_rank_among_eligible": "2/54",
+  "pnl_decomposition": {
+    "gross_price_pnl": 23780.724013,
+    "execution_cost": 648.520263,
+    "fees": 778.217181,
+    "funding_paid": 606.174625,
+    "net_pnl": 21747.811944,
+    "equity_change": 21747.811944,
+    "reconciliation_error": 3e-08
+  },
+  "exit_reasons": {
+    "rebalance": 21,
+    "stop": 10
+  },
+  "asset_concentration": {
+    "assets_with_closed_trades": 5,
+    "positive_contribution_hhi": 0.369866,
+    "contributions": [
+      {
+        "symbol": "XRPUSDT",
+        "net_pnl": 10507.656656,
+        "positive_pnl_share_pct": 48.2989
+      },
+      {
+        "symbol": "BTCUSDT",
+        "net_pnl": 7432.928952,
+        "positive_pnl_share_pct": 34.1658
+      },
+      {
+        "symbol": "ETHUSDT",
+        "net_pnl": 2937.468289,
+        "positive_pnl_share_pct": 13.5022
+      },
+      {
+        "symbol": "SOLUSDT",
+        "net_pnl": 877.415657,
+        "positive_pnl_share_pct": 4.0331
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "net_pnl": -7.65761,
+        "positive_pnl_share_pct": 0.0
+      }
+    ]
+  },
+  "cost_sweep": [
+    {
+      "adverse_execution_bps_per_side": 5,
+      "fee_bps_per_side": 6.0,
+      "return_pct": 217.4781,
+      "max_drawdown_pct": 10.5589,
+      "positive_folds": 6
+    },
+    {
+      "adverse_execution_bps_per_side": 25,
+      "fee_bps_per_side": 6.0,
+      "return_pct": 182.1916,
+      "max_drawdown_pct": 13.0239,
+      "positive_folds": 6
+    },
+    {
+      "adverse_execution_bps_per_side": 50,
+      "fee_bps_per_side": 6.0,
+      "return_pct": 126.8281,
+      "max_drawdown_pct": 18.6328,
+      "positive_folds": 5
+    },
+    {
+      "adverse_execution_bps_per_side": 100,
+      "fee_bps_per_side": 6.0,
+      "return_pct": 63.6249,
+      "max_drawdown_pct": 26.5354,
+      "positive_folds": 5
+    },
+    {
+      "adverse_execution_bps_per_side": 150,
+      "fee_bps_per_side": 6.0,
+      "return_pct": 4.1449,
+      "max_drawdown_pct": 41.4746,
+      "positive_folds": 5
+    },
+    {
+      "adverse_execution_bps_per_side": 175,
+      "fee_bps_per_side": 6.0,
+      "return_pct": -11.6301,
+      "max_drawdown_pct": 44.442,
+      "positive_folds": 4
+    },
+    {
+      "adverse_execution_bps_per_side": 200,
+      "fee_bps_per_side": 6.0,
+      "return_pct": -29.0274,
+      "max_drawdown_pct": 49.5399,
+      "positive_folds": 3
+    }
+  ],
+  "empirical_breakeven_bracket": {
+    "last_positive_adverse_execution_bps_per_side": 150,
+    "first_negative_adverse_execution_bps_per_side": 175,
+    "fee_bps_per_side": 6,
+    "note": "Bracket only; no interpolation claim because position sizing compounds path-dependently."
+  },
+  "limitations": [
+    "All 54 configurations and the final two folds have been inspected.",
+    "DSR/PBO is reported separately from aligned daily returns and remains development-sample evidence.",
+    "Asset contribution is concentrated and is not a leave-one-asset-out rerun.",
+    "No new sealed holdout exists."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "tech-llm-conditional-state-stage-b-predeclaration-v3.1",
+  "experiment_id": "HYB-003",
+  "status": "predeclared-before-stage-b-audit",
+  "research_role": "Outcome-blind aggregation plus post-outcome feasibility/power diagnostic; no learner fit, action mapping or performance evaluation.",
+  "frozen_contract": {
+    "panel": {
+      "path": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_panel.json",
+      "sha256": "cbcf95feeec96e8120bac2e3da45922981500763f3e55488e2a82ae8f39e2c64"
+    },
+    "extraction": {
+      "path": "paper/input/results/hybrid/hyb003_text_state_full_v3_1/extraction.json",
+      "sha256": "de47f0829634b0894cac94ace494115895e278b835a72a1a836631bcb112dc8d",
+      "records": 2534
+    },
+    "full_gate": {
+      "path": "paper/input/results/hybrid/hyb003_text_state_full_v3_1/gate.json",
+      "sha256": "7fc88ef53af8581f2bb3123b5902947bdb2d5945ad5fc54f287a093c7cda9ef8"
+    },
+    "aggregator": {
+      "path": "tools/llm/aggregate_tech_llm_text_state_v3_1.py",
+      "sha256": "3270600ed8402c90a9edd5dcdabece978648af59a290c6bcc23d08ec84fde069"
+    }
+  },
+  "aggregation": {
+    "deduplication": "exact headline_id only",
+    "no_semantic_cross_domain_deduplication": true,
+    "scope_weights": {
+      "direct_held": 1.0,
+      "crypto_systemic": 0.75,
+      "other": 0.0,
+      "unknown": 0.0
+    },
+    "forward_decay": "retain horizon mass only while elapsed hours are below 4, 12, 24 or 72 respectively",
+    "unknown_and_two_sided": "no adverse or supportive mass"
+  },
+  "power_gate": {
+    "minimum_panel_trade_clusters": 20,
+    "minimum_text_trade_clusters": 12,
+    "minimum_new_text_decisions": 50,
+    "minimum_applicable_trade_clusters": 12,
+    "minimum_adverse_mass": 0.25,
+    "economic_mde_rule": "all-decision normal 80%-power, two-sided 5% MDE must not exceed the median one-bar registered overlay cost"
+  },
+  "prohibited": [
+    "T1/T2/T3 fitting",
+    "policy/action mapping",
+    "performance evaluation",
+    "semantic event clustering after seeing outcomes"
+  ]
+}

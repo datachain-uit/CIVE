@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-073--LLM-076-multicoin-transfer-v18",
+  "stage": "PREDECLARED_BEFORE_TARGET_BUILD",
+  "frozen_at": "2026-09-11T08:59:47.132341+00:00",
+  "outcomes_consulted_for_this_design": false,
+  "research_status": "development transfer; historical project period is not sealed",
+  "assets": {
+    "BTCUSDT": {
+      "experiment_id": "LLM-073",
+      "aliases": [
+        "bitcoin",
+        "btc"
+      ],
+      "passed": true,
+      "status": "PASS_TARGET_AND_EVALUATION_PREDECLARATION_AUTHORIZED",
+      "summary": {
+        "calendar_dates": 1079,
+        "event_records": 18115,
+        "event_dates": 1067,
+        "coverage_start": "2022-09-12",
+        "coverage_end": "2025-08-26",
+        "fallback_records": 414,
+        "fallback_fraction": 0.022853988407397184,
+        "direction_counts": {
+          "positive": 9958,
+          "negative": 7949,
+          "mixed": 73,
+          "unclear": 135
+        },
+        "fold_counts": [
+          {
+            "fold": 1,
+            "calendar_dates": 139,
+            "event_dates": 132,
+            "event_records": 2138
+          },
+          {
+            "fold": 2,
+            "calendar_dates": 139,
+            "event_dates": 139,
+            "event_records": 2433
+          },
+          {
+            "fold": 3,
+            "calendar_dates": 139,
+            "event_dates": 139,
+            "event_records": 2446
+          },
+          {
+            "fold": 4,
+            "calendar_dates": 139,
+            "event_dates": 139,
+            "event_records": 2746
+          },
+          {
+            "fold": 5,
+            "calendar_dates": 143,
+            "event_dates": 141,
+            "event_records": 2642
+          }
+        ]
+      },
+      "checks": {
+        "extractor_input_one_to_one": true,
+        "all_extractions_successful": true,
+        "calendar_is_frozen_1079_dates": true,
+        "direct_records": true,
+        "direct_dates": true,
+        "each_oos_fold": true,
+        "fallback_fraction": true
+      }
+    }
+  },
+  "eligible_assets": [
+    "BTCUSDT"
+  ],
+  "stopped_assets": [
+    "XRPUSDT",
+    "SOLUSDT",
+    "BNBUSDT"
+  ],
+  "target_contract": {
+    "information_cutoff": "daily available_at",
+    "entry_delay_hours": 4,
+    "horizon_hours": 24,
+    "price": "asset 4H bar open-to-open"
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-09-11",
+      "valid_start": "2023-09-15",
+      "valid_end": "2024-01-31"
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-01-31",
+      "valid_start": "2024-02-04",
+      "valid_end": "2024-06-21"
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-21",
+      "valid_start": "2024-06-25",
+      "valid_end": "2024-11-10"
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-11-10",
+      "valid_start": "2024-11-14",
+      "valid_end": "2025-04-01"
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-01",
+      "valid_start": "2025-04-05",
+      "valid_end": "2025-08-27"
+    }
+  ],
+  "model": {
+    "family": "ridge",
+    "alpha": 10.0,
+    "standardization": "train fold only",
+    "tuning": false
+  },
+  "bootstrap": {
+    "iterations": 5000,
+    "block_length_days": 7,
+    "seed": 20260918
+  },
+  "per_coin_gate": "delta-MSE CI lower >0; event Pearson CI lower >0; >=3/5 MSE fold wins; nonconstant predictions",
+  "family_gate": "Holm-adjusted one-sided p<0.05 for both delta-MSE and Pearson on at least one eligible coin, plus fold/nonconstant gates",
+  "sources": {
+    "screen": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v18\\llm_only_multicoin_screen_v18.json",
+      "sha256": "0a56393a6ac1fe936c594d012a9990d95629d586757bb3a0174f7be7c792bb78"
+    },
+    "information_sets": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "bars": {
+      "BTCUSDT": {
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BTCUSDT_1660348800000_1786492800000.json",
+        "sha256": "9757ea7ddb7f1562d3e9a9e3e157c8dd6ce7aefbf8c48cafaa589db2717505e0"
+      }
+    },
+    "target_builder": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\build_llm_only_multicoin_targets_v18.py",
+      "sha256": "5e907b3dda44779b52d2e17eebfc6d2b443c2a2119cd70e489a7bb0ef6068bbc"
+    },
+    "evaluator": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_llm_only_multicoin_transfer_v18.py",
+      "sha256": "c2cdae9196c4bfa2332d1e5367f0fee0c8132f96c6c24d1aed9ef100bd3a9ac6"
+    },
+    "common_helper": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\multicoin_transfer_v18_common.py",
+      "sha256": "dc77a7a138ab196bcdedabf5f14d1a67fe95b1b6ce2e252ca195e1845dc21cb0"
+    }
+  }
+}

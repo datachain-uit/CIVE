@@ -1,0 +1,65 @@
+{
+  "checks": {
+    "amendment_outcome_blind": true,
+    "manifest_hashes_match": true,
+    "minimum_information_sets_met": true,
+    "outcome_blind": true,
+    "publisher_time_not_after_information_time": true,
+    "record_count_matches": true,
+    "required_plain_text_present": true,
+    "timestamps_ordered": true,
+    "unique_canonical_links": true,
+    "unique_record_ids": true
+  },
+  "counts": {
+    "corpus_records": 1892,
+    "downloaded_snapshots": 219,
+    "excluded_item_or_snapshot_records": 725,
+    "feed_records": {
+      "enforcement": 868,
+      "general": 1024
+    },
+    "information_sets": 124,
+    "minimum_information_sets": 96,
+    "parseable_snapshots": 218
+  },
+  "exclusion_reasons": {
+    "missing_required_field": 724,
+    "xml_parse_error:not well-formed (invalid token): line 1, column 0": 1
+  },
+  "extraction_authorized": true,
+  "information_time_range": {
+    "first": "2010-04-23T08:11:29+00:00",
+    "last": "2025-02-21T20:30:50+00:00"
+  },
+  "inputs": {
+    "auditor": {
+      "path": "tools/llm/audit_cftc_rss_archive_corpus_v15.py",
+      "sha256": "238fad93a59a489276c864ad1765b8a40598da17f4033fe38d14e55f234d2726"
+    },
+    "corpus": {
+      "path": "paper/input/results/llm/v15/cftc_rss_archive_corpus_v15/corpus.json",
+      "sha256": "cc0bb90a767e4338c3cef07c0945b8d8022518ed1f173067fccf92017ae1c255"
+    },
+    "excluded": {
+      "path": "paper/input/results/llm/v15/cftc_rss_archive_corpus_v15/excluded.json",
+      "sha256": "875a4eb111f465a46e8cd61198ef72b79ca9fd72ee0117b35c7c21fe769859b5"
+    },
+    "implementation_amendment": {
+      "path": "paper/input/results/llm/v15/cftc_rss_archive_corpus_v15/implementation_amendment.json",
+      "sha256": "e67343b8a5d7c532c3bb5ba8716ef2115e6337de6e3ad3ee6174085e672e3bac"
+    },
+    "manifest": {
+      "path": "paper/input/results/llm/v15/cftc_rss_archive_corpus_v15/manifest.json",
+      "sha256": "2a607c31aebd3a0671b1bdda13251e957dba6e29450f93bb45f2fe5d8ded8183"
+    }
+  },
+  "interpretation": "Pass authorizes only outcome-blind LLM extraction. Market targets, predictive metrics, thresholds, backtests, Tech+LLM, and sealed holdout remain prohibited.",
+  "market_data_accessed": false,
+  "model_run": false,
+  "outcomes_consulted": false,
+  "passed": true,
+  "schema_version": "cftc-rss-archive-corpus-gate-v15",
+  "status": "OUTCOME_BLIND_CORPUS_GATE_PASS_EXTRACTION_AUTHORIZED",
+  "target_join_authorized": false
+}

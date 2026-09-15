@@ -1,0 +1,10 @@
+{
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/2024-press.htm",
+  "http_status": 200,
+  "content_range": null,
+  "partial_sample": false,
+  "bytes": 169824,
+  "sha256": "f42429fbae576c264be2d178c15875c108468334ad94d18d717f775269d811ec",
+  "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\2024-press.html",
+  "fetched_at": "2026-09-05T06:17:29.718044+00:00"
+}

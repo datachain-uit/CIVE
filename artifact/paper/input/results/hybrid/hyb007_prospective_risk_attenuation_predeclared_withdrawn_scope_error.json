@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-007",
+  "status": "FROZEN_BEFORE_PROSPECTIVE_COLLECTION_NO_OUTCOME_ACCESS",
+  "frozen_at": "2026-09-11T14:33:52.195580+00:00",
+  "research_role": "Prospective shadow Tech+LLM risk attenuation; conditional incremental value, not standalone alpha or live evidence.",
+  "sequence_prerequisite": {
+    "llm_only_eth_sample_audit": "PASS before target join in LLM-072",
+    "llm_only_eth_transfer_diagnostic": "FAIL on 699 OOS predictions; 0/5 positive event-vs-generic MSE folds",
+    "llm_only_branch": "closed through v21 before HYB-007 freeze"
+  },
+  "frozen_files": {
+    "protocol": {
+      "path": "paper/working/protocols/Tech_LLM_Prospective_Risk_Attenuation_Protocol_HYB007.md",
+      "sha256": "59f80a385e652cf27e889ae7e06bc8aaf22858613e689c64fd0a17cdc430a5e3"
+    },
+    "collector": {
+      "path": "tools/llm/collect_hyb007_prospective_news.py",
+      "sha256": "b98f61582f7a8275db120f4f8a962a7fea5679d800bf63ca5ccf4f5d3e7ae2a0"
+    },
+    "collector_test": {
+      "path": "tools/llm/test_collect_hyb007_prospective_news.py",
+      "sha256": "7e03ae7d34539ff2eb645c6176324b4776cdb8221bc055c0588ca93d0719dc58"
+    },
+    "v3_9_stage1_contract": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_stage1_predeclared.json",
+      "sha256": "2dca09d110c9f9ba55d77a7206ccab24a2ca3041de004db0a33d07d14d960dac"
+    },
+    "v3_9_full_gate": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_full_gate.json",
+      "sha256": "0905906c04aa26469f3cce2ab3f16851c91c17ccc0b2a98cde6af0e653204049"
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/llm_event_extractor_v3_2.txt",
+      "sha256": "ac3798d3ee52899f297f1187396c6cfee22bf43c120c38463622c3bf71199497"
+    },
+    "schema": {
+      "path": "tools/llm/schemas/llm_event_extraction_batch_v3_2.schema.json",
+      "sha256": "0ac1073b90b469631bb58ab3fccc7b6c89ffcb46bf0faa1103c05b97073e8d87"
+    },
+    "postprocessor": {
+      "path": "tools/llm/score_llm_event_extractor_v3_9.py",
+      "sha256": "b7a174c46afe7d33f3185b7e0d583348d30b4a405e4ed09c360d47e5e0f148a3"
+    }
+  },
+  "source_registry": {
+    "cointelegraph": "https://cointelegraph.com/rss"
+  },
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "quantization": "Q4_K_M",
+    "temperature": 0.0,
+    "seed": 20260823,
+    "batch_size": 4,
+    "workers": 1
+  },
+  "sample_gate": {
+    "independent_clusters_min": 30,
+    "calendar_span_days_min": 90,
+    "clusters_each_chronological_third_min": 8,
+    "direct_asset_clusters_min": 15,
+    "assets_with_at_least_five_clusters_min": 2,
+    "collector_gap_hours_max_without_documented_incident": 48,
+    "outcome_access_before_pass": "prohibited"
+  },
+  "treatment": {
+    "authority": "multiply current Tech exposure magnitude by 0.5; never select, open, reverse or extend a Tech position",
+    "duration_4h_bars": 3,
+    "negative_only": true,
+    "severity_min": 0.7,
+    "confidence_min": 0.8,
+    "event_types": [
+      "exchange_security",
+      "fraud_legal",
+      "network_protocol",
+      "liquidation_leverage"
+    ]
+  },
+  "primary_estimand": "paired mean net return T1 minus T0 over union of prospective intervention windows",
+  "placebos": [
+    "delayed_24h",
+    "supportive_sign",
+    "metadata_hash"
+  ],
+  "prohibited": [
+    "backfilling any URL present at collector initialization",
+    "reading forward return, PnL, MDD or adverse excursion before effective-sample PASS",
+    "changing source, alias, threshold, horizon, event type, placebo or pass rule after freeze",
+    "using HYB-001 through HYB-006 outcomes to tune HYB-007",
+    "calling shadow evidence live trading evidence"
+  ]
+}

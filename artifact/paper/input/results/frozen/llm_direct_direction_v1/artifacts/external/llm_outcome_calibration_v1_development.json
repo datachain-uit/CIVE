@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "status": "development-calibration-not-freeze-evidence",
+  "policy": {
+    "execution_delay_hours": 4,
+    "forward_horizon_hours": 24,
+    "price_definition": "BTCUSDT open at execution timestamp to open exactly 24h later",
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "parameter_search": false
+  },
+  "coverage_start": "2022-08-13T04:00:00+00:00",
+  "coverage_end": "2025-08-29T04:00:00+00:00",
+  "overall": {
+    "observations": 1110,
+    "pearson_score_forward_return": 0.02431303144393668,
+    "spearman_score_forward_return": 0.019616615623927542,
+    "signed_direction_accuracy": 0.5218181818181818,
+    "long_rule": {
+      "observations": 292,
+      "mean_forward_return_pct": 0.27936553406731435,
+      "median_forward_return_pct": 0.13508737023824047,
+      "positive_rate": 0.5376712328767124
+    },
+    "flat_rule": {
+      "observations": 818,
+      "mean_forward_return_pct": 0.13263025512203402,
+      "median_forward_return_pct": 0.037936217131318006,
+      "positive_rate": 0.511002444987775
+    },
+    "long_minus_flat_mean_bps": 14.673527894528032
+  },
+  "by_year": {
+    "2022": {
+      "observations": 141,
+      "pearson_score_forward_return": -0.041043280573942575,
+      "spearman_score_forward_return": -0.05303085245557899,
+      "signed_direction_accuracy": 0.47058823529411764,
+      "long_rule": {
+        "observations": 12,
+        "mean_forward_return_pct": 0.6036245418187379,
+        "median_forward_return_pct": 0.15313591665156445,
+        "positive_rate": 0.5
+      },
+      "flat_rule": {
+        "observations": 129,
+        "mean_forward_return_pct": -0.32899205410469895,
+        "median_forward_return_pct": -0.05047805689173401,
+        "positive_rate": 0.4883720930232558
+      },
+      "long_minus_flat_mean_bps": 93.26165959234369
+    },
+    "2023": {
+      "observations": 365,
+      "pearson_score_forward_return": -0.004094123432430495,
+      "spearman_score_forward_return": 0.007803669214473,
+      "signed_direction_accuracy": 0.5248618784530387,
+      "long_rule": {
+        "observations": 81,
+        "mean_forward_return_pct": 0.32724185047305954,
+        "median_forward_return_pct": 0.07725391169992601,
+        "positive_rate": 0.5432098765432098
+      },
+      "flat_rule": {
+        "observations": 284,
+        "mean_forward_return_pct": 0.2721645479667512,
+        "median_forward_return_pct": 0.025064344294589702,
+        "positive_rate": 0.5105633802816901
+      },
+      "long_minus_flat_mean_bps": 5.507730250630832
+    },
+    "2024": {
+      "observations": 366,
+      "pearson_score_forward_return": 0.037542406021416265,
+      "spearman_score_forward_return": 0.016177346447910117,
+      "signed_direction_accuracy": 0.5315068493150685,
+      "long_rule": {
+        "observations": 110,
+        "mean_forward_return_pct": 0.438054762723138,
+        "median_forward_return_pct": 0.13508737023824047,
+        "positive_rate": 0.5454545454545454
+      },
+      "flat_rule": {
+        "observations": 256,
+        "mean_forward_return_pct": 0.17588322602701134,
+        "median_forward_return_pct": 0.12702087763125647,
+        "positive_rate": 0.52734375
+      },
+      "long_minus_flat_mean_bps": 26.217153669612664
+    },
+    "2025": {
+      "observations": 238,
+      "pearson_score_forward_return": 0.02874770300492169,
+      "spearman_score_forward_return": 0.02431355446919984,
+      "signed_direction_accuracy": 0.5316455696202531,
+      "long_rule": {
+        "observations": 89,
+        "mean_forward_return_pct": -0.004060363393618804,
+        "median_forward_return_pct": 0.24724810639347172,
+        "positive_rate": 0.5280898876404494
+      },
+      "flat_rule": {
+        "observations": 149,
+        "mean_forward_return_pct": 0.19201802807958235,
+        "median_forward_return_pct": 0.03443147283233028,
+        "positive_rate": 0.5033557046979866
+      },
+      "long_minus_flat_mean_bps": -19.607839147320117
+    }
+  },
+  "uncertainty": {
+    "method": "moving-block percentile bootstrap",
+    "block_days": 7,
+    "samples": 10000,
+    "seed": 20260814,
+    "long_minus_flat_mean_bps_95_ci": [
+      -21.460541591653048,
+      48.593639313391066
+    ],
+    "pearson_score_forward_return_95_ci": [
+      -0.03875420787056424,
+      0.08567579363910018
+    ]
+  },
+  "inputs": {
+    "scores": "..\\results\\llm_daily_full_llama3_development.json",
+    "scores_sha256": "468dba96d2842833aaa3a58d46f1f452cc9d268af68c43b56b8740bc0713ebc8",
+    "btc_bars": "..\\results\\bybit_lifecycle_4h\\BTCUSDT_1660348800000_1786492800000.json",
+    "btc_bars_sha256": "9757ea7ddb7f1562d3e9a9e3e157c8dd6ce7aefbf8c48cafaa589db2717505e0"
+  }
+}

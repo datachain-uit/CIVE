@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-03T15:44:17.485087+00:00",
+  "experiment_id": "llm-event-risk-h24-rv-gate-v3.2-development",
+  "status": "predictive-gate-fail-stop-before-threshold-or-backtest",
+  "passed": false,
+  "outcomes_consulted": true,
+  "trading_backtest_consulted": false,
+  "target": {
+    "field": "h24_realized_volatility",
+    "asset": "BTCUSDT",
+    "execution_delay_hours": 4,
+    "role": "single primary raw risk target",
+    "formula": "sqrt(sum(squared 4h close-to-close log returns)) over the 24h path after the 4h execution delay"
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-fold mean/std only; constant columns use scale 1",
+    "hyperparameter_tuning": false
+  },
+  "oos_records": 699,
+  "overall": {
+    "market": {
+      "mse": 0.00015677920789621198,
+      "rmse": 0.012521150422234052,
+      "mae": 0.009260976055132658,
+      "pearson": 0.25846099037688647,
+      "prediction_std": 0.005092956594079069,
+      "calibration_intercept": 0.007652693730339452,
+      "calibration_slope": 0.6490797923111119
+    },
+    "metadata": {
+      "mse": 0.00016519426162483282,
+      "rmse": 0.012852791977809057,
+      "mae": 0.009528799881757217,
+      "pearson": 0.2430407018196607,
+      "prediction_std": 0.005912094799454218,
+      "calibration_intercept": 0.010467974763523616,
+      "calibration_slope": 0.5257880127294605
+    },
+    "event": {
+      "mse": 0.00017498151195396202,
+      "rmse": 0.013228057754408318,
+      "mae": 0.009904026724182285,
+      "pearson": 0.20710287727343446,
+      "prediction_std": 0.006481276604856564,
+      "calibration_intercept": 0.01263064863690924,
+      "calibration_slope": 0.4086943513899129
+    }
+  },
+  "event_minus_metadata": {
+    "paired_delta_mse": -9.787250329129204e-06,
+    "relative_mse_reduction": -0.05924691471037113,
+    "mse_fold_wins": 1
+  },
+  "uncertainty": {
+    "paired_delta_mse_95_ci": [
+      -1.7520302618085818e-05,
+      -1.1650831830615396e-06
+    ],
+    "event_pearson_95_ci": [
+      0.12968113742121365,
+      0.27475547255870103
+    ]
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "validation_records": 139,
+      "metrics": {
+        "market": {
+          "mse": 0.00012079458436108256,
+          "rmse": 0.010990658959365565,
+          "mae": 0.008480565039170792,
+          "pearson": 0.15537024257511206,
+          "prediction_std": 0.00517185192248605,
+          "calibration_intercept": 0.01186025736500245,
+          "calibration_slope": 0.3155572759547225
+        },
+        "metadata": {
+          "mse": 0.00014721721726405033,
+          "rmse": 0.012133310235218183,
+          "mae": 0.009307122085682648,
+          "pearson": 0.04206909584876097,
+          "prediction_std": 0.005814770630278486,
+          "calibration_intercept": 0.016557191918759755,
+          "calibration_slope": 0.07599535122828156
+        },
+        "event": {
+          "mse": 0.00014241102589756068,
+          "rmse": 0.011933609089356022,
+          "mae": 0.009387424393136274,
+          "pearson": 0.1535334107989944,
+          "prediction_std": 0.007107456634911324,
+          "calibration_intercept": 0.014151385572808638,
+          "calibration_slope": 0.22690554858096368
+        },
+        "event_minus_metadata_delta_mse": 4.806191366489652e-06
+      }
+    },
+    {
+      "fold": 2,
+      "validation_records": 139,
+      "metrics": {
+        "market": {
+          "mse": 0.00020650570817344196,
+          "rmse": 0.014370306474582996,
+          "mae": 0.010543663536889234,
+          "pearson": 0.14275221638310057,
+          "prediction_std": 0.006029955708080456,
+          "calibration_intercept": 0.014854223235536002,
+          "calibration_slope": 0.32850541400341954
+        },
+        "metadata": {
+          "mse": 0.00020966974100866738,
+          "rmse": 0.014479977244756546,
+          "mae": 0.010562658672999402,
+          "pearson": 0.14817609118645356,
+          "prediction_std": 0.00637894963240689,
+          "calibration_intercept": 0.015112711893883279,
+          "calibration_slope": 0.3223315041402448
+        },
+        "event": {
+          "mse": 0.00021771005758865422,
+          "rmse": 0.014755001104325755,
+          "mae": 0.010948731732360164,
+          "pearson": 0.15984509439934041,
+          "prediction_std": 0.007298399817611933,
+          "calibration_intercept": 0.015611501353411354,
+          "calibration_slope": 0.303910325105428
+        },
+        "event_minus_metadata_delta_mse": -8.040316579986846e-06
+      }
+    },
+    {
+      "fold": 3,
+      "validation_records": 139,
+      "metrics": {
+        "market": {
+          "mse": 0.0001795887821295399,
+          "rmse": 0.01340107391702396,
+          "mae": 0.009702077795727652,
+          "pearson": 0.2169897708049606,
+          "prediction_std": 0.004395991862141962,
+          "calibration_intercept": 0.009622057028763717,
+          "calibration_slope": 0.6541126547209362
+        },
+        "metadata": {
+          "mse": 0.00018089478751966736,
+          "rmse": 0.013449713287638044,
+          "mae": 0.009760634755405185,
+          "pearson": 0.219520646697306,
+          "prediction_std": 0.0045874848133706835,
+          "calibration_intercept": 0.010093669101229559,
+          "calibration_slope": 0.6341192011300725
+        },
+        "event": {
+          "mse": 0.0001962781742993254,
+          "rmse": 0.014009931273897292,
+          "mae": 0.010027378555627487,
+          "pearson": 0.19386912374806328,
+          "prediction_std": 0.005257221823811016,
+          "calibration_intercept": 0.013363697760895852,
+          "calibration_slope": 0.4886776933299067
+        },
+        "event_minus_metadata_delta_mse": -1.5383386779658023e-05
+      }
+    },
+    {
+      "fold": 4,
+      "validation_records": 139,
+      "metrics": {
+        "market": {
+          "mse": 0.00019057718371817778,
+          "rmse": 0.013804969529780853,
+          "mae": 0.010378868451012638,
+          "pearson": 0.35679455775045094,
+          "prediction_std": 0.0049167366278490676,
+          "calibration_intercept": 0.0018320729472322606,
+          "calibration_slope": 1.049207010956888
+        },
+        "metadata": {
+          "mse": 0.00019732599313737186,
+          "rmse": 0.014047277071994126,
+          "mae": 0.010654141255057646,
+          "pearson": 0.29203550970406605,
+          "prediction_std": 0.0050241623085529085,
+          "calibration_intercept": 0.005699017380790787,
+          "calibration_slope": 0.8404113497807062
+        },
+        "event": {
+          "mse": 0.0002035424620609173,
+          "rmse": 0.014266830834523738,
+          "mae": 0.01089415438993829,
+          "pearson": 0.2474144112166429,
+          "prediction_std": 0.0049996082141030435,
+          "calibration_intercept": 0.008299479739497864,
+          "calibration_slope": 0.7154988292134693
+        },
+        "event_minus_metadata_delta_mse": -6.216468923545443e-06
+      }
+    },
+    {
+      "fold": 5,
+      "validation_records": 143,
+      "metrics": {
+        "market": {
+          "mse": 8.839759723301059e-05,
+          "rmse": 0.009401999640130316,
+          "mae": 0.007257363371807572,
+          "pearson": 0.28231702474841647,
+          "prediction_std": 0.004008802510782703,
+          "calibration_intercept": 0.004100660139002068,
+          "calibration_slope": 0.673869718858136
+        },
+        "metadata": {
+          "mse": 9.294274940225127e-05,
+          "rmse": 0.009640681998813738,
+          "mae": 0.007420123961098992,
+          "pearson": 0.2744988567908512,
+          "prediction_std": 0.005382349584024395,
+          "calibration_intercept": 0.007680769434118812,
+          "calibration_slope": 0.4880026415089276
+        },
+        "event": {
+          "mse": 0.00011664459998015278,
+          "rmse": 0.010800212959944483,
+          "mae": 0.008308362932348042,
+          "pearson": 0.09912384540087052,
+          "prediction_std": 0.005898610326139858,
+          "calibration_intercept": 0.013056864010330066,
+          "calibration_slope": 0.1607984912238777
+        },
+        "event_minus_metadata_delta_mse": -2.370185057790151e-05
+      }
+    }
+  ],
+  "checks": {
+    "oos_records": true,
+    "paired_delta_mse_ci_lower_gt_zero": false,
+    "event_pearson_ci_lower_gt_zero": true,
+    "event_mse_fold_wins": false,
+    "event_predictions_nonconstant": true
+  },
+  "inputs": {
+    "extraction_gate": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_gate.json",
+      "sha256": "0905906c04aa26469f3cce2ab3f16851c91c17ccc0b2a98cde6af0e653204049"
+    },
+    "extraction_input": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "market_features": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    "target_panel": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_risk_target_panel_v3_development.json",
+      "sha256": "fb56005b63964da995d2af974f9568d4c559429d1594723e9d9a9e0e5a7fb0a7"
+    }
+  },
+  "prediction_panel": {
+    "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_risk_predictive_panel_v3_2_development.json",
+    "sha256": "5356ebacd0f5668d71361a0e5a1cfe0cca2c9ec70a2f6578692a5a1fe630d5eb"
+  }
+}

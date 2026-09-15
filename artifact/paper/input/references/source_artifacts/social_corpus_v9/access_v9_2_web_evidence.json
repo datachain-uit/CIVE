@@ -1,0 +1,31 @@
+{
+  "retrieval_date": "2026-09-05",
+  "method": "Official pages successfully read using web tool; normalized source notes, not full HTML snapshots",
+  "terminal_download_status": "403; see social_access_review_v9_2.json; no attempt to bypass access controls",
+  "sources": [
+    {
+      "title": "Responsible Builder Policy",
+      "url": "https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy",
+      "page_updated": "2026-06-05",
+      "section": "Researchers; Other Prohibited Practices",
+      "excerpt": "Any research that uses Reddit data collected outside of the RFR Program is in violation of this policy.",
+      "review_note": "Source-specific approval remains required for this project; do not equate public archive availability with authorization. This is a policy reading, not a legal opinion."
+    },
+    {
+      "title": "Reddit for Researchers Program",
+      "url": "https://support.reddithelp.com/hc/en-us/articles/49381918834964-Reddit-for-Researchers-Program",
+      "page_updated": "2026-06-02",
+      "section": "Eligibility; Dataset Content",
+      "excerpt": "Each monthly update incorporates the most recent content versions",
+      "review_note": "Institutional application, sponsorship and ethics documentation are needed. Current-version data does not alone establish original as-of text; clarification is necessary."
+    },
+    {
+      "title": "Public Content Policy",
+      "url": "https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy",
+      "page_updated": "2025-05-29",
+      "section": "Reddit may license public content for commercial or non-commercial use",
+      "excerpt": "Ensure data licensees honor public content deletions by Redditors and Reddit.",
+      "review_note": "Respect applicable deletion obligations. A filtered historical sample must not be represented as an unchanged as-of information set."
+    }
+  ]
+}

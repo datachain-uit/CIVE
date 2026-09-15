@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3-stage1-reliability",
+  "status": "predeclared-before-event-extractor-inference",
+  "predeclared_at": "2026-08-23T00:00:00+07:00",
+  "research_role": "article-level structured event extraction; no return forecast and no trading action",
+  "selection_basis": "Ministral 3 8B achieved exact strict-JSON operational reliability in the prior direct-direction contract; selection is not based on predictive return",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0"
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086",
+      "records": 39393
+    },
+    "stage1_sample": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_stage1_sample_v3_frozen.json",
+      "sha256": "d58b812486ab9197158ed33c98cefd8dcc5356a2312c1a842dbfd39de474e4d2",
+      "records": 114,
+      "strata": 38
+    },
+    "sampler": {
+      "path": "tools/llm/build_llm_event_reliability_sample_v3.py",
+      "sha256": "c2d8220b1c5e7e2d97708e83d7b9dffc396a249352427ddf20cfe3629e5ccbc1"
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/llm_event_extractor_v3.txt",
+      "sha256": "b23ed0b31f1eebdf58ae30398cd4b6080abf5a9f8e1aeef3b363a5c03b92a5e6"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/llm_event_extraction_batch_v3.schema.json",
+      "sha256": "a8a0a40e08b6703a311b14d4243442f036d573cd35f28184153c3cb519b736ce"
+    },
+    "batch_size": 4,
+    "expected_batches_per_run": 29,
+    "temperature": 0.0,
+    "seed": 20260823,
+    "workers": 1,
+    "request_delay_seconds": 10
+  },
+  "stage1_gate": {
+    "independent_runs": 2,
+    "required": {
+      "schema_success_each_run": 114,
+      "headline_count_match_each_run": 114,
+      "headline_id_and_order_match_each_run": 114,
+      "evidence_exact_substring_each_run": 114,
+      "btc_relevance_exact_agreement_min": 108,
+      "event_type_exact_agreement_min": 103,
+      "direction_exact_agreement_min": 103,
+      "expected_horizon_exact_agreement_min": 97,
+      "affected_assets_mean_jaccard_min": 0.9,
+      "severity_mean_absolute_difference_max": 0.05,
+      "reported_surprise_mean_absolute_difference_max": 0.05,
+      "confidence_mean_absolute_difference_max": 0.05,
+      "continuous_field_max_absolute_difference_max": 0.25
+    },
+    "decision": "all requirements must pass before full-corpus extraction"
+  },
+  "stage2_only_if_stage1_passes": {
+    "scope": "one full extraction over 39393 articles; no outcome join, predictive test, threshold selection, backtest, or Tech overlay",
+    "required": {
+      "schema_success": 39393,
+      "headline_id_match": 39393,
+      "evidence_exact_substring": 39393
+    }
+  },
+  "prohibited": [
+    "changing prompt, schema, model digest, sample, batch size, or gate thresholds after Stage 1 begins",
+    "joining market outcomes before the full extraction artifact is complete and frozen",
+    "creating action, position size, or Tech overlay fields in the extractor",
+    "running more than one LLM worker",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

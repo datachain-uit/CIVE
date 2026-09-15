@@ -1,0 +1,60 @@
+{
+  "schema_version": "hyb006-rank-pair-feasibility-v1",
+  "experiment_id": "HYB-006",
+  "status": "PASS_FREEZE_AND_EVALUATE_AUTHORIZED",
+  "passed": true,
+  "audited_at": "2026-09-11T08:23:01.030393+00:00",
+  "outcomes_consulted": false,
+  "audit_contract": "Momentum ranks, selected pairs, text availability, weights and sample counts only; no next-day return or PnL is read.",
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb006_rank_pair_reallocation_predeclared.json",
+    "sha256": "1b804886cbb7e45d039cdf29345295d6ed46397a79e3d517a94b2c1389fc4681"
+  },
+  "coverage": [
+    "2022-09-12",
+    "2025-08-27"
+  ],
+  "sample": {
+    "pair_days": 1081,
+    "active_days": 974,
+    "active_days_by_chronological_third": [
+      318,
+      313,
+      343
+    ],
+    "selected_days_by_asset": {
+      "BTCUSDT": 514,
+      "ETHUSDT": 367,
+      "XRPUSDT": 376,
+      "SOLUSDT": 464,
+      "BNBUSDT": 441
+    },
+    "selected_pair_counts": {
+      "BTCUSDT+SOLUSDT": 170,
+      "ETHUSDT+XRPUSDT": 80,
+      "SOLUSDT+XRPUSDT": 119,
+      "ETHUSDT+SOLUSDT": 91,
+      "BTCUSDT+XRPUSDT": 78,
+      "BNBUSDT+XRPUSDT": 99,
+      "BNBUSDT+BTCUSDT": 164,
+      "BTCUSDT+ETHUSDT": 102,
+      "BNBUSDT+ETHUSDT": 94,
+      "BNBUSDT+SOLUSDT": 84
+    }
+  },
+  "thresholds": {
+    "minimum_pair_days": 1000,
+    "minimum_active_days": 600,
+    "minimum_active_days_each_chronological_third": 150,
+    "minimum_selected_days_each_asset": 50
+  },
+  "checks": {
+    "pair_days": true,
+    "active_days": true,
+    "active_each_third": true,
+    "selected_each_asset": true,
+    "weights_capital_neutral": true,
+    "weight_bounds": true
+  },
+  "next_authorized_action": "Materialize frozen assignment panel and run exactly the predeclared evaluation."
+}

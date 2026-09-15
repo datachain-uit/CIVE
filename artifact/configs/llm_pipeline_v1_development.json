@@ -1,0 +1,70 @@
+{
+  "schema_version": 3,
+  "pipeline_id": "llm-pipeline-v1-development",
+  "status": "development-not-frozen",
+  "task": "broad-crypto-next-24h-directional-assessment",
+  "score_range": [-1.0, 1.0],
+  "source_corpus": {
+    "dataset": "CryptoVision v2",
+    "doi": "10.17632/3c3xtxtfb6.2",
+    "license": "CC BY 4.0",
+    "snapshot_sha256": "0c0ce86fc0a3b90378d36fbb27cd08137fd1fd9f72030cfc50a4aa967380a142",
+    "coverage": ["2017-08-17", "2025-08-27"],
+    "allowed_domains": ["blockworks.co", "coindesk.com", "cointelegraph.com", "cryptonews.com", "cryptopanic.com", "decrypt.co"],
+    "outcome_columns_imported": false
+  },
+  "input_contract": {
+    "required": ["content_hash", "text", "published_at", "available_at", "url", "source_domain"],
+    "deduplication": "SHA-256 of normalized title, then normalized URL",
+    "information_set": "completed UTC calendar day",
+    "information_set_available": "00:00 UTC on the following calendar day",
+    "selection": "domain round-robin, chronological within domain, maximum 48 headlines",
+    "future_items_prohibited": true
+  },
+  "model_contract": {
+    "current_candidate": "llama3:latest",
+    "current_candidate_digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "prompt_version": "crypto-daily-information-set-v1",
+    "temperature": 0.0,
+    "seed": 20260814,
+    "response_schema": {"score": "float[-1,1]", "confidence": "float[0,1]", "reason_code": "string"},
+    "parse_or_request_failure": "record error; no score; flat decision",
+    "silent_zero_imputation": false
+  },
+  "reliability_stabilization": {
+    "policy": "dual-run conservative consensus",
+    "component_runs": 2,
+    "workers_per_run": 1,
+    "combined_score": "minimum component score",
+    "combined_confidence": "minimum component confidence",
+    "disagreement_missing_or_error": "flat",
+    "selection_basis": "predeclared from reliability evidence before consensus trading results",
+    "development_evaluation_status": "completed-not-ready-to-freeze"
+  },
+  "action_policy": {
+    "strategy": "LLM-only BTCUSDT long/flat",
+    "long_when": "both component runs have score >= 0.30 and confidence >= 0.70",
+    "otherwise": "flat",
+    "decision_delay_hours": 4,
+    "technical_entry_filter": false,
+    "threshold_selection": "predeclared before outcome backtest; not return-optimized"
+  },
+  "operational_safety": {
+    "gpu_temperature_sensor": "NVIDIA GPU via nvidia-smi",
+    "hard_ceiling_c": 75,
+    "resume_at_or_below_c": 70,
+    "sensor_poll_interval_seconds_max": 5,
+    "sensor_failure": "fail closed; do not start or continue sustained compute",
+    "llm_workers": 1,
+    "inter_request_delay_seconds": 10,
+    "concurrent_heavy_jobs": 1,
+    "power_plan": "Windows Balanced; vendor Silent/Windows profile",
+    "at_ceiling": "stop compute producer, preserve atomic checkpoint, unload local model and restore Balanced",
+    "runtime_preference": "overnight execution is acceptable; thermal safety takes priority over speed"
+  },
+  "unresolved_before_freeze": [
+    "current consensus calibration intervals span zero and do not establish a reliable predictive edge",
+    "obtain untouched evidence under a fully frozen model, prompt, source snapshot and dual-run action policy before live consideration",
+    "treat any model or prompt change as a new predeclared development cycle"
+  ]
+}

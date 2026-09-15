@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-15T06:44:17.851063+00:00",
+  "experiment_id": "llm-qwen25-7b-challenger-v1-development",
+  "candidate": {
+    "model": "qwen2.5:7b",
+    "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+    "architecture": "qwen2",
+    "parameters": "7.6B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0",
+    "rationale": "same local hardware class as the baseline and officially documented for improved instruction following and structured JSON output",
+    "primary_sources": [
+      "https://qwenlm.github.io/blog/qwen2.5/",
+      "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "information_sets": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run1": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run2": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "exact_score_agreement": {
+      "observed": 108,
+      "required_min": 103,
+      "passed": true
+    },
+    "long_flat_action_agreements": {
+      "observed": 108,
+      "required_min": 107,
+      "passed": true
+    },
+    "mean_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.01,
+      "passed": true
+    },
+    "max_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.4,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "status": "stage1-pass-full-calibration-authorized",
+  "inputs": {
+    "config": "configs\\llm_qwen25_7b_challenger_v1_development.json",
+    "config_sha256": "a725a78f1d0be6621f0caf7c23fad6b03752b2faa6da87f34d3d87ee3e292b4f",
+    "audit": "results\\llm_daily_reliability_qwen2_5_7b_determinism_v1.json",
+    "audit_sha256": "b7ef2fd814c91a9868dadf980af98cc1b2399617ed5fa2cd27e95637e00feed5",
+    "left": "results\\llm_daily_reliability_qwen2_5_7b_run1_v1.json",
+    "left_sha256": "32bc0b4b964af79956f5f90c66b4685f83cc64b8e339b6c7b99d5e0a2fed777f",
+    "right": "results\\llm_daily_reliability_qwen2_5_7b_run2_v1.json",
+    "right_sha256": "1ceca969e8a4df78dc4f471152a76eb95a12714b42ce7cda7056463c333acdb8"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-fingpt-chatglm2-6b-bnb-nf4-v2-development",
+  "predeclared_at": "2026-08-16T21:55:00+07:00",
+  "status": "predeclared-after-v1-int4-infeasibility-and-before-v2-base-download-or-output",
+  "reason_for_new_candidate": "The official pre-quantized INT4 checkpoint replaces query_key_value with an unsupported QuantizedLinear before PEFT injection. V2 uses the exact full-precision base named by the adapter and supported bitsandbytes Linear4bit injection.",
+  "candidate": {
+    "framework": "FinGPT Benchmark",
+    "base_model": "zai-org/chatglm2-6b",
+    "base_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "adapter_model": "FinGPT/fingpt-mt_chatglm2-6b_lora",
+    "adapter_revision": "c28afd1e770d313f57cf11ebc647a9b9c3fea6e4",
+    "quantization": {
+      "backend": "bitsandbytes",
+      "load_in_4bit": true,
+      "quant_type": "nf4",
+      "double_quant": true,
+      "compute_dtype": "float16"
+    },
+    "primary_sources": [
+      "https://arxiv.org/abs/2306.06031",
+      "https://github.com/AI4Finance-Foundation/FinGPT/tree/master/fingpt/FinGPT_Benchmark",
+      "https://huggingface.co/FinGPT/fingpt-mt_chatglm2-6b_lora",
+      "https://huggingface.co/zai-org/chatglm2-6b",
+      "https://huggingface.co/docs/transformers/quantization/bitsandbytes"
+    ]
+  },
+  "frozen_input_contract": {
+    "artifact": "results/llm_daily_information_sets_v1.json",
+    "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338",
+    "outcome_columns_present": false,
+    "contract_version": "fingpt-benchmark-headline-label-mean-v1",
+    "contract_hash": "391a70c9f75099f46dbc978b669b115efc03df9e87b2269a3472f2af3e6be168"
+  },
+  "runtime_contract": {
+    "environment": ".venv-fingpt-chatglm2",
+    "device": "cuda:0",
+    "workers": 1,
+    "generation": "greedy",
+    "max_input_tokens": 512,
+    "max_new_tokens": 8,
+    "thermal_monitor_seconds": 5,
+    "gpu_hard_ceiling_c": 75,
+    "resume_at_or_below_c": 70,
+    "power_plan": "Balanced"
+  },
+  "stage0_feasibility_gate": {
+    "sample": "the first 12 causally available headlines in the frozen corpus",
+    "runs": 2,
+    "market_outcomes_consulted": false,
+    "required": {
+      "parsed_labels_each_run": 12,
+      "exact_label_agreement": 12,
+      "cuda_out_of_memory": false,
+      "gpu_peak_temperature_lt_c": 75
+    },
+    "failure_action": "stop before Stage 1"
+  },
+  "stage1_and_stage2": "Identical operational and predictive gates to V1; unauthorized unless Stage 0 passes.",
+  "anti_shopping_rule": "V2 exists only to correct the pre-quantized-module incompatibility observed in V1. It is not selected using market outcomes."
+}

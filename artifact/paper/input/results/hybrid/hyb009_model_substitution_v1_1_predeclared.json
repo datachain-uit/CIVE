@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-009-v1.1-continuous-model-substitution",
+  "frozen_at": "2026-09-12T04:10:08.627174+00:00",
+  "research_role": "post-outcome exploratory development",
+  "sources": {
+    "audit": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb009_model_substitution_sample_audit_v1_1.json",
+      "sha256": "37a4325610d2c22de773c3777dbe50e5b3fac0eb30a8d0fb9783d711c5628de7"
+    },
+    "tech": {
+      "path": "D:\\projects\\auto-trading\\results\\technical_bybit_lifecycle_1x_candidate_hardened.json",
+      "sha256": "7e8e8653c207e759e6cd3093e78705486fd732ba588362620ffe0ff372c60cf7"
+    },
+    "evaluator": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_hyb009_model_substitution_v1_1.py",
+      "sha256": "6773d8836342c038bc0411eb60408f882b479d308a2d3af4f86cfed3d4bcec1e"
+    }
+  },
+  "folds": [
+    [
+      "2022-09-13T00:00:00+00:00",
+      "2023-09-01T00:00:00+00:00"
+    ],
+    [
+      "2023-09-01T00:00:00+00:00",
+      "2024-09-01T00:00:00+00:00"
+    ],
+    [
+      "2024-09-01T00:00:00+00:00",
+      "2025-08-29T00:00:00+00:00"
+    ]
+  ],
+  "primary_estimand": "paired net return difference versus frozen Tech-Control",
+  "family_gate": "CI lower >0, gross mean >0, >=2/3 folds, Holm sign-flip p<0.05, and exceeds shuffled plus constant-0.75 placebos",
+  "prohibited": [
+    "retuning after PnL evaluation",
+    "claiming validation, holdout or live evidence"
+  ]
+}

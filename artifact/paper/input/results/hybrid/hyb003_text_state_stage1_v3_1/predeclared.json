@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "experiment_id": "hyb-003-text-state-ministral3-8b-v3.1-stage1-reliability",
+  "status": "predeclared-after-v3-operational-failure-before-v3.1-inference",
+  "predeclared_at": "2026-09-10T00:00:00+07:00",
+  "research_role": "Outcome-blind reliability rerun after exact-decimal tolerance repair; no target, policy, backtest or performance evaluation.",
+  "selection_basis": "Reuse the operationally deterministic Ministral 3 8B model, but replace the semantically invalid generic-negative event contract with held-long pressure, mechanism, stage and horizon mass. Selection is based on HYB-002 semantic audit and not on HYB-003 model performance, which has not been run.",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0"
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_text_inputs.json",
+      "sha256": "2871c55fee6ceafe2e6263069e4906cb1613110261dc56462a9d66523559a39f",
+      "records": 2534
+    },
+    "stage1_sample": {
+      "path": "paper/input/results/hybrid/tech_llm_text_state_reliability_sample_v3_frozen.json",
+      "sha256": "efca502321c8a9821a33d62547da5ba5472d73dfdf7165ea0bb6429c7a71ccfe",
+      "records": 96,
+      "lexical_strata": 21
+    },
+    "sampler": {
+      "path": "tools/llm/build_tech_llm_text_state_reliability_sample_v3.py",
+      "sha256": "a61921ddb1db7f5f59ec011500a1297d563ac7ff5c72355fa88d5b2f315a66c1"
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/tech_llm_text_state_extractor_v3.txt",
+      "sha256": "59c8bf4768ceceb13d6c35d679a027c71673b43bf82d091ef359aad92b79a14b"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/tech_llm_text_state_batch_v3.schema.json",
+      "sha256": "04289d7aacc2e48fb2f3f185d7f194e9d48ccdfd2ba2022feec96311a77d5104"
+    },
+    "postprocessor": {
+      "path": "tools/llm/score_tech_llm_text_state_v3_1.py",
+      "sha256": "57aa3f74e34597d37e8ca248ffa171c5f692af72c0bf3715d5dfedce8d3a9fdd"
+    },
+    "audit": {
+      "path": "tools/llm/evaluate_tech_llm_text_state_stage1_v3.py",
+      "sha256": "4cc46afd1d665158d7ab944a5ed2af4ec59820aa3849496567e3df8c41562067"
+    },
+    "regression_test": {
+      "path": "tools/llm/test_tech_llm_text_state_v3_1.py",
+      "sha256": "dd2ebcb5b9514a0f293cdf6a385531475c36278902b2e256bf0abe0c61b21f81",
+      "status": "passed-before-v3.1-predeclaration"
+    },
+    "hyb_003_design": {
+      "path": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_design.json",
+      "sha256": "dc8db87aa21d8d475c1061afa8efe9d381680cd845adda9556e78bd1e27d5183"
+    },
+    "batch_size": 4,
+    "expected_batches_per_run": 24,
+    "temperature": 0.0,
+    "seed": 20260910,
+    "workers": 1,
+    "request_delay_seconds": 10,
+    "base_postprocessor": {
+      "path": "tools/llm/score_tech_llm_text_state_v3.py",
+      "sha256": "5e7a107070accb199af3b8220c2437a5bad0d8db36aa23dcba9739c3c5180996"
+    }
+  },
+  "stage1_gate": {
+    "independent_runs": 2,
+    "required": {
+      "schema_success_each_run": 96,
+      "affected_asset_scope_exact_min": 92,
+      "held_long_pressure_exact_min": 92,
+      "mechanism_exact_min": 87,
+      "event_stage_exact_min": 87,
+      "confidence_mean_absolute_difference_max": 0.05,
+      "confidence_max_absolute_difference_max": 0.25,
+      "horizon_mean_l1_difference_max": 0.15,
+      "horizon_max_l1_difference_max": 0.5,
+      "evidence_fallback_max_each_run": 10
+    },
+    "decision": "Every requirement must pass before one full extraction is authorized. A failure stops HYB-003 before any model fit."
+  },
+  "full_extraction_only_if_stage1_passes": {
+    "scope": "One extraction over all 2534 frozen context-headline rows; no market target, learner fit, action mapping or performance evaluation.",
+    "required": {
+      "schema_success": 2534,
+      "context_id_match": 2534,
+      "evidence_fallback_max": 260
+    }
+  },
+  "prohibited": [
+    "Using price, counterfactual target, trade PnL or HYB-003 performance as extractor input",
+    "Mapping generic negative tone or event_type directly to an action",
+    "Changing prompt, schema, model digest, sample, batch size or reliability thresholds after Stage 1 starts",
+    "Fitting T1 or T3 before text extraction, data audit and power gate are frozen",
+    "Running more than one LLM worker",
+    "Continuing compute at NVIDIA GPU temperature 75 C or above"
+  ],
+  "repair_scope": {
+    "only_change": "Evaluate the already-frozen absolute horizon-sum tolerance 0.001 with Decimal(str(value)) rather than binary float.",
+    "v3_failure": {
+      "path": "paper/input/results/hybrid/tech_llm_text_state_full_v3_failure.json",
+      "sha256": "26dc851f10408c15dc7cc0e4079b569b05a8ae337f7627b30f1f0f3e3223b0d9"
+    },
+    "restart_rule": "Two fresh reliability runs, then a fresh full extraction from record 0; v3 checkpoint is not resumed."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-081--LLM-084-multicoin-short-v20",
+  "stage": "PREDECLARED_BEFORE_OUTCOME_FREE_BUCKET_SCREEN",
+  "frozen_at": "2026-09-11T09:40:51.376186+00:00",
+  "outcomes_consulted_for_v20_design": false,
+  "prior_project_results_known": true,
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-081",
+      "aliases": [
+        "eth",
+        "ether",
+        "ethereum"
+      ],
+      "priority": "primary",
+      "bar_path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETHUSDT_1660348800000_1786492800000.json"
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-082",
+      "aliases": [
+        "sol",
+        "solana"
+      ],
+      "priority": "primary",
+      "bar_path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SOLUSDT_1660348800000_1786492800000.json"
+    },
+    "XRPUSDT": {
+      "experiment_id": "LLM-083",
+      "aliases": [
+        "ripple",
+        "xrp"
+      ],
+      "priority": "conditional",
+      "bar_path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\XRPUSDT_1660348800000_1786492800000.json"
+    },
+    "BNBUSDT": {
+      "experiment_id": "LLM-084",
+      "aliases": [
+        "binance coin",
+        "bnb"
+      ],
+      "priority": "conditional",
+      "bar_path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BNBUSDT_1660348800000_1786492800000.json"
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-12-31T20:00:00+00:00",
+      "valid_start": "2024-01-01T04:00:00+00:00",
+      "valid_end": "2024-04-30T20:00:00+00:00"
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-04-30T20:00:00+00:00",
+      "valid_start": "2024-05-01T04:00:00+00:00",
+      "valid_end": "2024-08-31T20:00:00+00:00"
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-08-31T20:00:00+00:00",
+      "valid_start": "2024-09-01T04:00:00+00:00",
+      "valid_end": "2024-12-31T20:00:00+00:00"
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-12-31T20:00:00+00:00",
+      "valid_start": "2025-01-01T04:00:00+00:00",
+      "valid_end": "2025-04-30T20:00:00+00:00"
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-30T20:00:00+00:00",
+      "valid_start": "2025-05-01T04:00:00+00:00",
+      "valid_end": "2025-08-27T20:00:00+00:00"
+    }
+  ],
+  "eligibility": {
+    "event_types": [
+      "macro_liquidity",
+      "regulation",
+      "etf_institutional_flow",
+      "exchange_security",
+      "liquidation_leverage",
+      "network_protocol",
+      "fraud_legal",
+      "adoption_business"
+    ],
+    "dedupe": "first normalized headline by published_at",
+    "asset_relation": "affected_assets exact closed alias"
+  },
+  "thresholds": {
+    "minimum_eligible_events": 800,
+    "minimum_unique_buckets": 500,
+    "minimum_buckets_each_oos_fold": 75,
+    "bar_file_required": true
+  },
+  "sources": {
+    "inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "protocol": {
+      "path": "D:\\UIT\\KLTN\\paper\\working\\protocols\\LLM_Only_Multicoin_Short_Horizon_Transfer_Protocol_v20.md",
+      "sha256": "e9dd8bba9ed742af29100a9a29061b37ea9331c2aaa1bbaf5e9613bc7a2f2608"
+    },
+    "code": [
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\multicoin_event_transfer_v19_v20_common.py",
+        "sha256": "512ab0fc3fec5909a42aefb70a6820db5bc08d708ed4e4fe24fb7d472bfdc9c4"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\audit_multicoin_short_screen_v20.py",
+        "sha256": "6c58f7ae49cd29f5183a29a7562269e8dc439dc678cdfa0195586ff5d6b49d20"
+      }
+    ]
+  }
+}

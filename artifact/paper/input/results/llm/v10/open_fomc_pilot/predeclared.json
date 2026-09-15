@@ -1,0 +1,13 @@
+{
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "selection": "all monetaryYYYYMMDDa.htm statement links in official calendar",
+  "max_statements": 40,
+  "model_run": false,
+  "market_data_accessed": false,
+  "created_at": "2026-09-05T05:39:20.553746+00:00",
+  "script_sha256": "f483eb858a128e825748f3b126bd2e64c994cd1d5ac7e42464f5e676ae3c9b0f"
+}

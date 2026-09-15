@@ -1,0 +1,618 @@
+{
+  "schema_version": 1,
+  "freeze_id": "llm-direct-direction-v1-v2-negative-evidence",
+  "created_at": "2026-08-23T15:52:27.875676+00:00",
+  "scope": "Completed development evidence for direct sentiment/direction LLM candidates, including the multi-source causal-memory v2.1 transfer test",
+  "research_status": "frozen-negative-development-evidence",
+  "trading_authorization": false,
+  "sealed_holdout_status": "not-run",
+  "supersession_policy": "Future event/risk or overlay experiments are a new protocol and must not mutate or reinterpret these artifacts as successful predictive evidence",
+  "summary": {
+    "artifact_count": 86,
+    "total_size_bytes": 200374422
+  },
+  "artifacts": [
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_candidate_status_summary_v1_development.csv",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_candidate_status_summary_v1_development.csv",
+      "origin": "workspace",
+      "size_bytes": 2625,
+      "sha256": "5226868bbd983f42275ef18dc66680929d04466f4a95ac817519d12e5b9455c5"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_candidate_status_summary_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_candidate_status_summary_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 8458,
+      "sha256": "7cd7b993bfab94982321cf022827101037013e0bfa2c6b1814846c2e0fe7216a"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_cryptobert_full_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_full_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 1848255,
+      "sha256": "3e7f580aff68727db8377ca5d5391585d963b830bdba629204d2665708af0145"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_cryptobert_predictive_gate_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_predictive_gate_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2297,
+      "sha256": "c02e253cfb03df1faf4f712cac0a7e27167d3df1f3f06bf2281cc77caa42b5ae"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_cryptobert_stage0_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_stage0_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 10622,
+      "sha256": "ec9eab61077984e3de5258caad29d78f7e61f57deaa3308b24321a76cb4dfa33"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_cryptobert_stage1_reliability_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_stage1_reliability_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2568238,
+      "sha256": "1a8ec26a570699ebfc495aa21f50246185349d88d6ac3f48e557250ed0b4b769"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_full_ministral3_8b_multisource_v2_1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_full_ministral3_8b_multisource_v2_1_development.json",
+      "origin": "workspace",
+      "size_bytes": 901280,
+      "sha256": "7b37ee3a6c6090573167f59b91474a8cb563fd7ad8265db5ba192f24cec56204"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_full_ministral3_8b_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_full_ministral3_8b_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2461076,
+      "sha256": "737f5632f89ea2a48a8bdeea53a0fbc57afbb6313906ae84a5664ea713a6594c"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_information_sets_multisource_v2_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "origin": "workspace",
+      "size_bytes": 24695610,
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_llama31_8b_run1_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_llama31_8b_run1_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 40387,
+      "sha256": "5f98730817dd3869b087a466a7c7962d938c88ea47f841daa3f9e28af905f28f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_ministral3_8b_determinism_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_ministral3_8b_determinism_multisource_v2_1.json",
+      "origin": "workspace",
+      "size_bytes": 1438,
+      "sha256": "a3007faaf50385871ace582b9f9d72f50519eabb61c96ddb75f1f641217ad284"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_ministral3_8b_determinism_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_ministral3_8b_determinism_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 1409,
+      "sha256": "f26888f6b96147bb870184f983770a28286eb10973b96d515938eb8be162a5f4"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_ministral3_8b_run1_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_ministral3_8b_run1_multisource_v2_1.json",
+      "origin": "workspace",
+      "size_bytes": 40792,
+      "sha256": "9e16100a370eb3021ebdbcd70bdf312aea33657c2554b85df2594a880f098021"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_ministral3_8b_run1_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_ministral3_8b_run1_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 90781,
+      "sha256": "a4be99bd118d8f55295558ded13ed9bf9f9e6e0405565ad4f1d56331024dbe1b"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_ministral3_8b_run2_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_ministral3_8b_run2_multisource_v2_1.json",
+      "origin": "workspace",
+      "size_bytes": 40792,
+      "sha256": "d9a2d3cb5854cee286545171ad2cdef251e861a508b4b0ce50962c40cb3666dc"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_ministral3_8b_run2_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_ministral3_8b_run2_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 90781,
+      "sha256": "4d293f3ad2659b5e78386b1076fc9d1c6aeb2f5e3f8a972e8c47db0982fcf0e3"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_nemotron3_nano4b_determinism_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_nemotron3_nano4b_determinism_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 1459,
+      "sha256": "c243dbbeb4a41851dfdd110aab446bb2bfd09e20de963a08c943d075486bc29a"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_nemotron3_nano4b_run1_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_nemotron3_nano4b_run1_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 87255,
+      "sha256": "b53916dc7288f6125256a4536fbb27beff834c3b793271b3cc79ce0cdc782626"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_daily_reliability_nemotron3_nano4b_run2_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_reliability_nemotron3_nano4b_run2_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 87684,
+      "sha256": "cccf8e432d8b9039770f07d970ab71df89336e00f375612059d5b8d2accebd7b"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_fingpt_chatglm2_6b_bnb_nf4_stage0_v2_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_fingpt_chatglm2_6b_bnb_nf4_stage0_v2_development.json",
+      "origin": "workspace",
+      "size_bytes": 6319,
+      "sha256": "27b37af34e766cf5a6dbe70a10fdbc287d75e5a444883d85ad33bc5f587d112c"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_fingpt_chatglm2_6b_bnb_nf4_stage1_reliability_v2_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_fingpt_chatglm2_6b_bnb_nf4_stage1_reliability_v2_development.json",
+      "origin": "workspace",
+      "size_bytes": 122990,
+      "sha256": "3d5af715ca4fcc3f8c4dc146dff4e6d10703142e2c050f5ae4947c48f15e511c"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_finmem_official_preflight_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_finmem_official_preflight_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2819,
+      "sha256": "d5c62dd44618e0efa84afbef34aec16a966a1d7e9a204e75bf8f00e8e38f84cf"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_llama31_8b_challenger_config_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_llama31_8b_challenger_config_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 3103,
+      "sha256": "0e27dbf062d7aa30343c4d4dd19f2cd5abe12d730dfda9f952b820cfc691506f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_llama31_8b_challenger_gate_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_llama31_8b_challenger_gate_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 1926,
+      "sha256": "214da5934f6f3becc7cef41380b8d2b2b1effd55d1dd744fe607372a0a873ee2"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_ministral3_8b_challenger_config_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_ministral3_8b_challenger_config_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 3124,
+      "sha256": "099d1471023c90a4b831baa52d6da8a7bde6f2468c0253418a52556fae5062a4"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_ministral3_8b_challenger_gate_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_ministral3_8b_challenger_gate_multisource_v2_1.json",
+      "origin": "workspace",
+      "size_bytes": 2358,
+      "sha256": "1f4480888de24b4d57500c140bab8bbdbd75f46f24ae9ed9c4a119bec1f23c68"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_ministral3_8b_challenger_gate_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_ministral3_8b_challenger_gate_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2694,
+      "sha256": "839df6382821cf0d12f8ff601875eef7c99b27a1e6f2a4e8dfe14820d15b7f4f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_ministral3_8b_challenger_stage2_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_ministral3_8b_challenger_stage2_multisource_v2_1.json",
+      "origin": "workspace",
+      "size_bytes": 2354,
+      "sha256": "a47a8bfd3b496eceb57ad7ed125bf2c9d7388716a292c4aef831d4b967e88c40"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_ministral3_8b_challenger_stage2_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_ministral3_8b_challenger_stage2_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2611,
+      "sha256": "d789900be48b356fa54e8b530a41d84b9b8db4900456e61063d5f298bf364ed2"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_ministral3_8b_multisource_v2_1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_ministral3_8b_multisource_v2_1_development.json",
+      "origin": "workspace",
+      "size_bytes": 3632,
+      "sha256": "d9d7243a74dd77148a8c63be53d4a60513841d498fb6752b137089e739f19878"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_nemotron3_nano4b_challenger_config_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_nemotron3_nano4b_challenger_config_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 3276,
+      "sha256": "1b577d38d0554689ff07f47869d052c2b8e25d98ebcceb2edebd6a3ba3f3713a"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_nemotron3_nano4b_challenger_gate_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_nemotron3_nano4b_challenger_gate_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2859,
+      "sha256": "cbfcd91f3c22ed5d20c3e16f8ff0f5a96ec1e5d0260dfe9f71c26529c39ce5ce"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_outcome_calibration_ministral3_8b_multisource_v2_1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_outcome_calibration_ministral3_8b_multisource_v2_1_development.json",
+      "origin": "workspace",
+      "size_bytes": 4795,
+      "sha256": "2bdf67be6ba7a036ce22ae5367e0c3f656993b9c86e5f158422be57b36678a05"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/llm/llm_outcome_calibration_ministral3_8b_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_outcome_calibration_ministral3_8b_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 4898,
+      "sha256": "2f7dadc9748b280e1164c76f652a57cb967b21023814d4791f3752eebab5f3ba"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_daily_reliability_gemma3_4b_run1_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_daily_reliability_gemma3_4b_run1_v1.json",
+      "origin": "workspace",
+      "size_bytes": 10461,
+      "sha256": "69a1d81607712fbc7f1b5b6e3907a9df54fc86415b4c012ad259b8c373358bbe"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_dual_run_consensus_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_dual_run_consensus_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 1052,
+      "sha256": "49a80e0ccd62e80342685ec67d8ab532e642b673d05970951780713d28f61818"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_gemma3_4b_challenger_gate_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_gemma3_4b_challenger_gate_v1.json",
+      "origin": "workspace",
+      "size_bytes": 1804,
+      "sha256": "9eb103defbbc75e74424fa44fc2bd34983d4a114c48fae6a191a85306bb1f05c"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_gemma3_4b_challenger_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_gemma3_4b_challenger_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 3328,
+      "sha256": "4de39e1cc6793ac8e2098fc92c67132fb7d8e250c2008b1c7f34c273e558ded6"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_pipeline_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_pipeline_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 3364,
+      "sha256": "e8c753c3fcb5a0c20df471539422bba8f9d0f51e17804b9fbda93eafbcb31a67"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_pipeline_v1_readiness.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_pipeline_v1_readiness.json",
+      "origin": "workspace",
+      "size_bytes": 10179,
+      "sha256": "3eafb4d3031b13d56592170664937597bc714bd9cbc6674588eb37cff154c3bc"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/paper/input/results/snapshots/llm/llm_qwen25_7b_challenger_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\paper\\input\\results\\snapshots\\llm\\llm_qwen25_7b_challenger_v1_development.json",
+      "origin": "workspace",
+      "size_bytes": 2989,
+      "sha256": "a725a78f1d0be6621f0caf7c23fad6b03752b2faa6da87f34d3d87ee3e292b4f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/configs/llm_ministral3_8b_challenger_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_challenger_v1_development.json",
+      "origin": "runtime",
+      "size_bytes": 3124,
+      "sha256": "099d1471023c90a4b831baa52d6da8a7bde6f2468c0253418a52556fae5062a4"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/configs/llm_ministral3_8b_multisource_v2_1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_multisource_v2_1_development.json",
+      "origin": "runtime",
+      "size_bytes": 3632,
+      "sha256": "d9d7243a74dd77148a8c63be53d4a60513841d498fb6752b137089e739f19878"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/configs/llm_ministral3_8b_multisource_v2_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_multisource_v2_development.json",
+      "origin": "runtime",
+      "size_bytes": 3198,
+      "sha256": "cf5bbeeb0a8f22e81d2e293fab5fef2f6ca97e1512ae10f513f771ebf1469a16"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_full_ministral3_8b_multisource_v2_1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_full_ministral3_8b_multisource_v2_1_development.json",
+      "origin": "runtime",
+      "size_bytes": 901280,
+      "sha256": "7b37ee3a6c6090573167f59b91474a8cb563fd7ad8265db5ba192f24cec56204"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_full_ministral3_8b_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_full_ministral3_8b_v1_development.json",
+      "origin": "runtime",
+      "size_bytes": 2461076,
+      "sha256": "737f5632f89ea2a48a8bdeea53a0fbc57afbb6313906ae84a5664ea713a6594c"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_information_sets_multisource_v2_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_information_sets_multisource_v2_development.json",
+      "origin": "runtime",
+      "size_bytes": 24695610,
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_information_sets_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_information_sets_v1.json",
+      "origin": "runtime",
+      "size_bytes": 46135671,
+      "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_determinism_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_determinism_multisource_v2_1.json",
+      "origin": "runtime",
+      "size_bytes": 1438,
+      "sha256": "a3007faaf50385871ace582b9f9d72f50519eabb61c96ddb75f1f641217ad284"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_determinism_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_determinism_v1.json",
+      "origin": "runtime",
+      "size_bytes": 1409,
+      "sha256": "f26888f6b96147bb870184f983770a28286eb10973b96d515938eb8be162a5f4"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_run1_multisource_v2.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_multisource_v2.json",
+      "origin": "runtime",
+      "size_bytes": 13126,
+      "sha256": "d2d18f7bd910273833b6a3f65cb89f45796bd2c366f35c7f603102df52746033"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_run1_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_multisource_v2_1.json",
+      "origin": "runtime",
+      "size_bytes": 40792,
+      "sha256": "9e16100a370eb3021ebdbcd70bdf312aea33657c2554b85df2594a880f098021"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_run1_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_v1.json",
+      "origin": "runtime",
+      "size_bytes": 90781,
+      "sha256": "a4be99bd118d8f55295558ded13ed9bf9f9e6e0405565ad4f1d56331024dbe1b"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_run2_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run2_multisource_v2_1.json",
+      "origin": "runtime",
+      "size_bytes": 40792,
+      "sha256": "d9a2d3cb5854cee286545171ad2cdef251e861a508b4b0ce50962c40cb3666dc"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_daily_reliability_ministral3_8b_run2_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run2_v1.json",
+      "origin": "runtime",
+      "size_bytes": 90781,
+      "sha256": "4d293f3ad2659b5e78386b1076fc9d1c6aeb2f5e3f8a972e8c47db0982fcf0e3"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_ministral3_8b_challenger_gate_multisource_v2.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_gate_multisource_v2.json",
+      "origin": "runtime",
+      "size_bytes": 1600,
+      "sha256": "e3a1b4aae6df3db3706ca32d96ab46f159d64c9ea8826074fbb1b65b3a581941"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_ministral3_8b_challenger_gate_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_gate_multisource_v2_1.json",
+      "origin": "runtime",
+      "size_bytes": 2358,
+      "sha256": "1f4480888de24b4d57500c140bab8bbdbd75f46f24ae9ed9c4a119bec1f23c68"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_ministral3_8b_challenger_gate_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_gate_v1.json",
+      "origin": "runtime",
+      "size_bytes": 2694,
+      "sha256": "839df6382821cf0d12f8ff601875eef7c99b27a1e6f2a4e8dfe14820d15b7f4f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_ministral3_8b_challenger_stage2_multisource_v2_1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_stage2_multisource_v2_1.json",
+      "origin": "runtime",
+      "size_bytes": 2354,
+      "sha256": "a47a8bfd3b496eceb57ad7ed125bf2c9d7388716a292c4aef831d4b967e88c40"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_ministral3_8b_challenger_stage2_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_stage2_v1.json",
+      "origin": "runtime",
+      "size_bytes": 2611,
+      "sha256": "d789900be48b356fa54e8b530a41d84b9b8db4900456e61063d5f298bf364ed2"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_outcome_calibration_ministral3_8b_multisource_v2_1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_outcome_calibration_ministral3_8b_multisource_v2_1_development.json",
+      "origin": "runtime",
+      "size_bytes": 4795,
+      "sha256": "2bdf67be6ba7a036ce22ae5367e0c3f656993b9c86e5f158422be57b36678a05"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/ministral3_8b_challenger/results/llm_outcome_calibration_ministral3_8b_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_outcome_calibration_ministral3_8b_v1_development.json",
+      "origin": "runtime",
+      "size_bytes": 4898,
+      "sha256": "2f7dadc9748b280e1164c76f652a57cb967b21023814d4791f3752eebab5f3ba"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/nemotron3_nano4b_challenger/configs/llm_nemotron3_nano4b_challenger_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\configs\\llm_nemotron3_nano4b_challenger_v1_development.json",
+      "origin": "runtime",
+      "size_bytes": 3276,
+      "sha256": "1b577d38d0554689ff07f47869d052c2b8e25d98ebcceb2edebd6a3ba3f3713a"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/nemotron3_nano4b_challenger/results/llm_daily_information_sets_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_information_sets_v1.json",
+      "origin": "runtime",
+      "size_bytes": 46135671,
+      "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/nemotron3_nano4b_challenger/results/llm_daily_reliability_nemotron3_nano4b_determinism_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_determinism_v1.json",
+      "origin": "runtime",
+      "size_bytes": 1459,
+      "sha256": "c243dbbeb4a41851dfdd110aab446bb2bfd09e20de963a08c943d075486bc29a"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/nemotron3_nano4b_challenger/results/llm_daily_reliability_nemotron3_nano4b_run1_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_run1_v1.json",
+      "origin": "runtime",
+      "size_bytes": 87255,
+      "sha256": "b53916dc7288f6125256a4536fbb27beff834c3b793271b3cc79ce0cdc782626"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/nemotron3_nano4b_challenger/results/llm_daily_reliability_nemotron3_nano4b_run2_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_run2_v1.json",
+      "origin": "runtime",
+      "size_bytes": 87684,
+      "sha256": "cccf8e432d8b9039770f07d970ab71df89336e00f375612059d5b8d2accebd7b"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/nemotron3_nano4b_challenger/results/llm_nemotron3_nano4b_challenger_gate_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_nemotron3_nano4b_challenger_gate_v1.json",
+      "origin": "runtime",
+      "size_bytes": 2859,
+      "sha256": "cbfcd91f3c22ed5d20c3e16f8ff0f5a96ec1e5d0260dfe9f71c26529c39ce5ce"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/llama31_8b_challenger/configs/llm_llama31_8b_challenger_v1_development.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\llama31_8b_challenger\\configs\\llm_llama31_8b_challenger_v1_development.json",
+      "origin": "runtime",
+      "size_bytes": 3103,
+      "sha256": "0e27dbf062d7aa30343c4d4dd19f2cd5abe12d730dfda9f952b820cfc691506f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/llama31_8b_challenger/results/llm_daily_information_sets_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\llama31_8b_challenger\\results\\llm_daily_information_sets_v1.json",
+      "origin": "runtime",
+      "size_bytes": 46135671,
+      "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/llama31_8b_challenger/results/llm_daily_reliability_llama31_8b_run1_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\llama31_8b_challenger\\results\\llm_daily_reliability_llama31_8b_run1_v1.json",
+      "origin": "runtime",
+      "size_bytes": 40387,
+      "sha256": "5f98730817dd3869b087a466a7c7962d938c88ea47f841daa3f9e28af905f28f"
+    },
+    {
+      "snapshot_path": "artifacts/workspace/runtime/llama31_8b_challenger/results/llm_llama31_8b_challenger_gate_v1.json",
+      "source_path": "D:\\UIT\\KLTN\\runtime\\llama31_8b_challenger\\results\\llm_llama31_8b_challenger_gate_v1.json",
+      "origin": "runtime",
+      "size_bytes": 1926,
+      "sha256": "214da5934f6f3becc7cef41380b8d2b2b1effd55d1dd744fe607372a0a873ee2"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_deepseek_r1_7b_challenger_gate_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_deepseek_r1_7b_challenger_gate_v1.json",
+      "origin": "external-production",
+      "size_bytes": 2021,
+      "sha256": "6d12f981aa7c9235ac33e13ea989558b14e217609b3aad927fc728fdc4d934e0"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_gemma3_4b_challenger_gate_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_gemma3_4b_challenger_gate_v1.json",
+      "origin": "external-production",
+      "size_bytes": 1804,
+      "sha256": "9eb103defbbc75e74424fa44fc2bd34983d4a114c48fae6a191a85306bb1f05c"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_qwen25_7b_challenger_gate_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_qwen25_7b_challenger_gate_v1.json",
+      "origin": "external-production",
+      "size_bytes": 2333,
+      "sha256": "52a7c4d02c7371dde87933d98748db79b998628a23558ee8c254a05b64dfcb47"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_qwen3_8b_challenger_gate_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_qwen3_8b_challenger_gate_v1.json",
+      "origin": "external-production",
+      "size_bytes": 2479,
+      "sha256": "999a661560907d20c12229353f0036990f10e9c452cdc63dc53a2c9a43121046"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_qwen25_7b_challenger_stage2_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_qwen25_7b_challenger_stage2_v1.json",
+      "origin": "external-production",
+      "size_bytes": 2250,
+      "sha256": "b2ffa10f15ff72fb470c6878ddb15b654e94d9be720361fe2234ff2bd132d62a"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_qwen3_8b_challenger_stage2_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_qwen3_8b_challenger_stage2_v1.json",
+      "origin": "external-production",
+      "size_bytes": 2396,
+      "sha256": "ccf9e525a35522b357dbcab3823eb3189d51e3368ab9f68f078bb88d827fc85e"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_finbert_operational_gate_v1.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_finbert_operational_gate_v1.json",
+      "origin": "external-production",
+      "size_bytes": 2525,
+      "sha256": "d5654dd936b05b699fbfd35e7982bc5315f0296eed1ee263fd649210ae0f9a42"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_finbert_predictive_gate_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_finbert_predictive_gate_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 2550,
+      "sha256": "46c4fa055a74bfa31e138ea734ec4681999f4f8eaf84cd603b5a13bab7b734b6"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_outcome_calibration_dual_run_consensus_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_outcome_calibration_dual_run_consensus_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 4783,
+      "sha256": "25b8c0935780997335790399574171373b62524facb5e02a041d4b67b6dff134"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_outcome_calibration_qwen2_5_7b_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_outcome_calibration_qwen2_5_7b_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 4773,
+      "sha256": "70f9a3ba98827394c34b30f10dcae1029605dc0bd86404b3b4c0097cfbbfdee0"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_outcome_calibration_qwen3_8b_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_outcome_calibration_qwen3_8b_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 4792,
+      "sha256": "6551813ed43b8c19c0f2aac6db317408db18a50593ce3175fc0917990209d2f7"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_outcome_calibration_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_outcome_calibration_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 4785,
+      "sha256": "0a093dd9ba0d486c434ba3d76e4fe0fbece6f0d68604d8a290e2a3a9b051f6fb"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_bybit_lifecycle_full_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_bybit_lifecycle_full_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 75024,
+      "sha256": "e0c2f27cf498cf94bce64d78bbc8642826bb24d6c49525d813f3fc5d383102a7"
+    },
+    {
+      "snapshot_path": "artifacts/external/llm_bybit_lifecycle_dual_run_consensus_v1_development.json",
+      "source_path": "D:\\projects\\auto-trading\\results\\llm_bybit_lifecycle_dual_run_consensus_v1_development.json",
+      "origin": "external-production",
+      "size_bytes": 74422,
+      "sha256": "666e2f39713488e9dfed623f13282cfa3154fe94a016109acac59e3c49359242"
+    }
+  ]
+}

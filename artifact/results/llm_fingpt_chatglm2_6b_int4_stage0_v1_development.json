@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-16T14:51:40.251200+00:00",
+  "experiment_id": "llm-fingpt-chatglm2-6b-int4-v1-development",
+  "stage": "stage0-feasibility",
+  "model": {
+    "base": "zai-org/chatglm2-6b-int4",
+    "base_revision": "a954550736dda16d022a7019b9ffecd753aa1b84",
+    "adapter": "FinGPT/fingpt-mt_chatglm2-6b_lora",
+    "adapter_revision": "c28afd1e770d313f57cf11ebc647a9b9c3fea6e4"
+  },
+  "contract_version": "fingpt-benchmark-headline-label-mean-v1",
+  "contract_hash": "391a70c9f75099f46dbc978b669b115efc03df9e87b2269a3472f2af3e6be168",
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "runs": [],
+  "passed": false,
+  "status": "stage0-infeasible-stop-before-stage1",
+  "error": "ValueError: Target module QuantizedLinear() is not supported. Currently, only the following modules are supported: `torch.nn.Linear`, `torch.nn.Embedding`, `torch.nn.Conv2d`, `transformers.pytorch_utils.Conv1D`.",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\projects\\auto-trading\\executor\\evaluate_fingpt_chatglm2_stage0.py\", line 117, in main\n    model = PeftModel.from_pretrained(\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\peft_model.py\", line 355, in from_pretrained\n    model = MODEL_TYPE_TO_PEFT_MODEL_MAPPING[config.task_type](model, config, adapter_name)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\peft_model.py\", line 1094, in __init__\n    super().__init__(model, peft_config, adapter_name)\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\peft_model.py\", line 129, in __init__\n    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\tuners\\lora\\model.py\", line 136, in __init__\n    super().__init__(model, config, adapter_name)\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\tuners\\tuners_utils.py\", line 148, in __init__\n    self.inject_adapter(self.model, adapter_name)\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\tuners\\tuners_utils.py\", line 325, in inject_adapter\n    self._create_and_replace(peft_config, adapter_name, target, target_name, parent, current_key=key)\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\tuners\\lora\\model.py\", line 220, in _create_and_replace\n    new_module = self._create_new_module(lora_config, adapter_name, target, **kwargs)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Lib\\site-packages\\peft\\tuners\\lora\\model.py\", line 301, in _create_new_module\n    raise ValueError(\nValueError: Target module QuantizedLinear() is not supported. Currently, only the following modules are supported: `torch.nn.Linear`, `torch.nn.Embedding`, `torch.nn.Conv2d`, `transformers.pytorch_utils.Conv1D`.\n"
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-081--LLM-084-multicoin-short-v20",
+  "stage": "PREDECLARED_BEFORE_TARGET_BUILD",
+  "frozen_at": "2026-09-11T09:44:15.881652+00:00",
+  "target_values_consulted": false,
+  "eligible_assets": [
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-081",
+      "outcome_free_bucket_count": 1914,
+      "folds": [
+        {
+          "fold": 1,
+          "train_end": "2023-12-31T20:00:00+00:00",
+          "valid_start": "2024-01-01T04:00:00+00:00",
+          "valid_end": "2024-04-30T20:00:00+00:00",
+          "train_records": 859,
+          "valid_records": 249
+        },
+        {
+          "fold": 2,
+          "train_end": "2024-04-30T20:00:00+00:00",
+          "valid_start": "2024-05-01T04:00:00+00:00",
+          "valid_end": "2024-08-31T20:00:00+00:00",
+          "train_records": 1108,
+          "valid_records": 246
+        },
+        {
+          "fold": 3,
+          "train_end": "2024-08-31T20:00:00+00:00",
+          "valid_start": "2024-09-01T04:00:00+00:00",
+          "valid_end": "2024-12-31T20:00:00+00:00",
+          "train_records": 1355,
+          "valid_records": 181
+        },
+        {
+          "fold": 4,
+          "train_end": "2024-12-31T20:00:00+00:00",
+          "valid_start": "2025-01-01T04:00:00+00:00",
+          "valid_end": "2025-04-30T20:00:00+00:00",
+          "train_records": 1536,
+          "valid_records": 210
+        },
+        {
+          "fold": 5,
+          "train_end": "2025-04-30T20:00:00+00:00",
+          "valid_start": "2025-05-01T04:00:00+00:00",
+          "valid_end": "2025-08-27T20:00:00+00:00",
+          "train_records": 1746,
+          "valid_records": 168
+        }
+      ]
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-082",
+      "outcome_free_bucket_count": 876,
+      "folds": [
+        {
+          "fold": 1,
+          "train_end": "2023-12-31T20:00:00+00:00",
+          "valid_start": "2024-01-01T04:00:00+00:00",
+          "valid_end": "2024-04-30T20:00:00+00:00",
+          "train_records": 252,
+          "valid_records": 112
+        },
+        {
+          "fold": 2,
+          "train_end": "2024-04-30T20:00:00+00:00",
+          "valid_start": "2024-05-01T04:00:00+00:00",
+          "valid_end": "2024-08-31T20:00:00+00:00",
+          "train_records": 364,
+          "valid_records": 129
+        },
+        {
+          "fold": 3,
+          "train_end": "2024-08-31T20:00:00+00:00",
+          "valid_start": "2024-09-01T04:00:00+00:00",
+          "valid_end": "2024-12-31T20:00:00+00:00",
+          "train_records": 493,
+          "valid_records": 124
+        },
+        {
+          "fold": 4,
+          "train_end": "2024-12-31T20:00:00+00:00",
+          "valid_start": "2025-01-01T04:00:00+00:00",
+          "valid_end": "2025-04-30T20:00:00+00:00",
+          "train_records": 617,
+          "valid_records": 152
+        },
+        {
+          "fold": 5,
+          "train_end": "2025-04-30T20:00:00+00:00",
+          "valid_start": "2025-05-01T04:00:00+00:00",
+          "valid_end": "2025-08-27T20:00:00+00:00",
+          "train_records": 770,
+          "valid_records": 105
+        }
+      ]
+    }
+  },
+  "eligibility": {
+    "event_types": [
+      "macro_liquidity",
+      "regulation",
+      "etf_institutional_flow",
+      "exchange_security",
+      "liquidation_leverage",
+      "network_protocol",
+      "fraud_legal",
+      "adoption_business"
+    ],
+    "dedupe": "first global normalized headline",
+    "asset_relation": "affected_assets closed aliases"
+  },
+  "target": {
+    "field": "h4_return",
+    "formula": "open[next 4h]/open[current 4h]-1"
+  },
+  "feature_contract": {
+    "metadata": [
+      "meta_selected_event_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_mean",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co"
+    ],
+    "generic": [
+      "meta_selected_event_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_mean",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co",
+      "llm_direction_fraction::positive",
+      "llm_direction_fraction::negative",
+      "llm_direction_fraction::mixed",
+      "llm_direction_fraction::unclear",
+      "llm_severity_mean",
+      "llm_severity_max",
+      "llm_confidence_mean",
+      "llm_confidence_max",
+      "llm_directional_severity_mean"
+    ],
+    "event": [
+      "meta_selected_event_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_mean",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co",
+      "llm_direction_fraction::positive",
+      "llm_direction_fraction::negative",
+      "llm_direction_fraction::mixed",
+      "llm_direction_fraction::unclear",
+      "llm_severity_mean",
+      "llm_severity_max",
+      "llm_confidence_mean",
+      "llm_confidence_max",
+      "llm_directional_severity_mean",
+      "llm_reported_surprise_mean",
+      "llm_reported_surprise_max",
+      "llm_event_type_fraction::macro_liquidity",
+      "llm_event_type_fraction::regulation",
+      "llm_event_type_fraction::etf_institutional_flow",
+      "llm_event_type_fraction::exchange_security",
+      "llm_event_type_fraction::liquidation_leverage",
+      "llm_event_type_fraction::network_protocol",
+      "llm_event_type_fraction::fraud_legal",
+      "llm_event_type_fraction::adoption_business",
+      "llm_event_type_fraction::market_commentary",
+      "llm_event_type_fraction::other",
+      "llm_horizon_fraction::4h",
+      "llm_horizon_fraction::12h",
+      "llm_horizon_fraction::24h",
+      "llm_horizon_fraction::72h",
+      "llm_horizon_fraction::unknown"
+    ],
+    "comparator_note": "metadata conditional on LLM asset/event selection"
+  },
+  "model": {
+    "family": "Ridge",
+    "alpha": 10.0,
+    "standardization": "training fold only",
+    "tuning": false
+  },
+  "bootstrap": {
+    "iterations": 5000,
+    "block_length": 42,
+    "seed_base": 20260920
+  },
+  "gate": {
+    "minimum_fold_wins": 3,
+    "holm_alpha": 0.05,
+    "requires_both_comparators": true
+  },
+  "sources": {
+    "screen": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v20\\llm_only_multicoin_short_screen_v20.json",
+      "sha256": "561536f78d2dcb61eff31e0d4bf6f43f3bf574624f81e0da9c9a9432f90fef21"
+    },
+    "inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "bars": {
+      "ETHUSDT": {
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETHUSDT_1660348800000_1786492800000.json",
+        "sha256": "73e24db6a1e7e711f17f231dec43f9647509bc71c883bec8b88a48d063407172"
+      },
+      "SOLUSDT": {
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SOLUSDT_1660348800000_1786492800000.json",
+        "sha256": "bb20d8cfc63acb693c83d1e7cea3eba9c57e0106cb09a152dd549a055cfd4532"
+      }
+    },
+    "protocol": {
+      "path": "D:\\UIT\\KLTN\\paper\\working\\protocols\\LLM_Only_Multicoin_Short_Horizon_Transfer_Protocol_v20.md",
+      "sha256": "e9dd8bba9ed742af29100a9a29061b37ea9331c2aaa1bbaf5e9613bc7a2f2608"
+    },
+    "code": [
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\multicoin_event_transfer_v19_v20_common.py",
+        "sha256": "512ab0fc3fec5909a42aefb70a6820db5bc08d708ed4e4fe24fb7d472bfdc9c4"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\build_multicoin_short_panel_v20.py",
+        "sha256": "dae15a7058cb5703694a9d054cb4fb3ae37594b8c2e50ce4766edc8d0ce803b8"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_multicoin_short_transfer_v20.py",
+        "sha256": "bd8ec13e4ec031a747dd17ba8886d35d073b4a66beadd61fd0099cf342ffa81c"
+      }
+    ]
+  }
+}

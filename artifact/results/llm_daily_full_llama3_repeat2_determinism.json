@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "model": "llama3:latest",
+  "model_digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+  "prompt_version": "crypto-daily-information-set-v1",
+  "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+  "policy": {
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "market_outcomes_consulted": false
+  },
+  "information_sets": 2927,
+  "identical_information_set_hashes": true,
+  "both_success": 2927,
+  "status_failures": 0,
+  "exact_score_agreement": 2611,
+  "mean_absolute_score_difference": 0.015965152032798087,
+  "max_absolute_score_difference": 0.8999999999999999,
+  "exact_confidence_agreement": 2575,
+  "mean_absolute_confidence_difference": 0.012685343354970964,
+  "max_absolute_confidence_difference": 0.30000000000000004,
+  "long_flat_action_agreements": 2862,
+  "long_flat_action_disagreements": 65,
+  "long_flat_action_agreement_rate": 0.9777929620772121,
+  "score_deterministic": false,
+  "action_deterministic": false,
+  "inputs": {
+    "left": "results\\llm_daily_full_llama3_development.json",
+    "left_sha256": "468dba96d2842833aaa3a58d46f1f452cc9d268af68c43b56b8740bc0713ebc8",
+    "right": "results\\llm_daily_full_llama3_repeat2.json",
+    "right_sha256": "b67ddc758f8883eff928eff337f4230a641b10f127e8a82fa76d94c69c97410c"
+  }
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Orders Coinbase Inc. to Pay $6.5 Million for False, Misleading, or Inaccurate Reporting and Wash Trading </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8369-21</link>
+  <description/>
+  <pubDate>Fri, 19 Mar 2021 20:14:02 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8369-21</guid>
+    </item>
+<item>
+  <title>CFTC Charges Wisconsin Man with Fraud and Misappropriation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8367-21</link>
+  <description/>
+  <pubDate>Fri, 05 Mar 2021 20:52:01 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8367-21</guid>
+    </item>
+<item>
+  <title>CFTC Charges Two Individuals with Multi-Million Dollar Digital Asset Pump-and-Dump Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8366-21</link>
+  <description/>
+  <pubDate>Fri, 05 Mar 2021 14:46:26 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8366-21</guid>
+    </item>
+<item>
+  <title>Federal Court Sanctions Former New Jersey Energy Broker for Role in Disclosures of Material Nonpublic Information</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8364-21</link>
+  <description/>
+  <pubDate>Tue, 23 Feb 2021 19:22:06 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8364-21</guid>
+    </item>
+<item>
+  <title>CFTC Orders Nebraska Company to Pay $400,000 for Position Limits Violations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8358-21</link>
+  <description/>
+  <pubDate>Thu, 28 Jan 2021 19:32:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8358-21</guid>
+    </item>
+<item>
+  <title>CFTC Charges New York Man in Multi-Million Dollar Digital Asset Ponzi Scheme Involving Bitcoin and Ether</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8356-21</link>
+  <description/>
+  <pubDate>Tue, 26 Jan 2021 19:18:17 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8356-21</guid>
+    </item>
+<item>
+  <title>Federal Court Orders North Carolina Man to Pay Over $255,000 in Futures and Forex Fraud Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8344-20</link>
+  <description/>
+  <pubDate>Tue, 22 Dec 2020 20:00:00 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8344-20</guid>
+    </item>
+<item>
+  <title>Wisconsin Court Enters $740,968 Judgement Against Company and its Principal for Registration, Disclosure, and Recordkeeping Violations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8343-20</link>
+  <description/>
+  <pubDate>Tue, 22 Dec 2020 16:20:53 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8343-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Interdealer Broker to Pay $7 Million for Deceptive Trading Practices in the FX Options Markets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8335-20</link>
+  <description/>
+  <pubDate>Mon, 14 Dec 2020 20:59:39 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8335-20</guid>
+    </item>
+<item>
+  <title>CFTC Participates in Operation Income Illusion to Raise Retail Fraud Awareness </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8334-20</link>
+  <description/>
+  <pubDate>Mon, 14 Dec 2020 15:31:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8334-20</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LLM-072-ETH-event-conditioned-transfer-v17",
+  "status": "FAIL_STOP_BEFORE_LLM_ONLY_BACKTEST",
+  "passed": false,
+  "outcomes_consulted": true,
+  "trading_backtest_consulted": false,
+  "scope": "ETH transfer diagnostic using BTC-centric v3.9 extractor fields; development, not replication or sealed validation.",
+  "overall": {
+    "prior": {
+      "mse": 0.001334671857493719,
+      "rmse": 0.03653316106626579,
+      "mae": 0.024742573658183678,
+      "pearson": -0.060604752714572975,
+      "prediction_std": 0.00048134033363610515
+    },
+    "generic": {
+      "mse": 0.0013602513710191414,
+      "rmse": 0.03688158579859523,
+      "mae": 0.025035693587772585,
+      "pearson": -0.08284747802595047,
+      "prediction_std": 0.0030172163361065203
+    },
+    "event": {
+      "mse": 0.0014217712614098097,
+      "rmse": 0.037706382237093626,
+      "mae": 0.02572810398495858,
+      "pearson": -0.03740803051147358,
+      "prediction_std": 0.008191026315595464
+    }
+  },
+  "event_minus_generic": {
+    "delta_mse": -6.151989039066822e-05,
+    "delta_mse_95_ci": [
+      -0.0001240626115209684,
+      -1.2669398255128288e-05
+    ],
+    "pearson_95_ci": [
+      -0.09362149040610768,
+      0.03454468771297895
+    ],
+    "fold_wins": 0
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "records": 139,
+      "metrics": {
+        "prior": {
+          "mse": 0.0006792773474292698,
+          "rmse": 0.026062949706993445,
+          "mae": 0.018307728041084482,
+          "pearson": 3.8490622602943946e-18,
+          "prediction_std": 2.710505431213761e-20
+        },
+        "generic": {
+          "mse": 0.0006827239182388994,
+          "rmse": 0.02612898616936561,
+          "mae": 0.01851891253242134,
+          "pearson": 0.05708213185892889,
+          "prediction_std": 0.003346137663906265
+        },
+        "event": {
+          "mse": 0.0007069524020819467,
+          "rmse": 0.026588576533578226,
+          "mae": 0.019615563468276982,
+          "pearson": 0.09180455643538879,
+          "prediction_std": 0.007944179125650114
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "records": 139,
+      "metrics": {
+        "prior": {
+          "mse": 0.0012616207811139112,
+          "rmse": 0.035519301529082906,
+          "mae": 0.024214984077941294,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "generic": {
+          "mse": 0.0012783146884251752,
+          "rmse": 0.035753526936865614,
+          "mae": 0.024274426224622912,
+          "pearson": -0.0017238197171330195,
+          "prediction_std": 0.003262181625016008
+        },
+        "event": {
+          "mse": 0.0012886128085382981,
+          "rmse": 0.03589725349575226,
+          "mae": 0.024421187967220436,
+          "pearson": 0.04409459538810478,
+          "prediction_std": 0.005076689413837533
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "records": 139,
+      "metrics": {
+        "prior": {
+          "mse": 0.0013262341744063638,
+          "rmse": 0.03641749818983127,
+          "mae": 0.024378540484986267,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "generic": {
+          "mse": 0.0013875587089664688,
+          "rmse": 0.03724994911360912,
+          "mae": 0.024936423953466746,
+          "pearson": -0.23022695254164616,
+          "prediction_std": 0.0030756923483102067
+        },
+        "event": {
+          "mse": 0.0014472626834832615,
+          "rmse": 0.03804290582333665,
+          "mae": 0.025521894288490138,
+          "pearson": -0.06916895742543619,
+          "prediction_std": 0.008732570180680074
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "records": 139,
+      "metrics": {
+        "prior": {
+          "mse": 0.0015320146458065633,
+          "rmse": 0.03914095867255379,
+          "mae": 0.02646974336161298,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "generic": {
+          "mse": 0.0015438516104966237,
+          "rmse": 0.03929187715669263,
+          "mae": 0.026647175224422642,
+          "pearson": -0.05489203430222168,
+          "prediction_std": 0.0016842887107293165
+        },
+        "event": {
+          "mse": 0.0016815228627502488,
+          "rmse": 0.041006375879248935,
+          "mae": 0.02770280166201131,
+          "pearson": -0.0011894793893193428,
+          "prediction_std": 0.011140436078889888
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "records": 143,
+      "metrics": {
+        "prior": {
+          "mse": 0.001859120297279794,
+          "rmse": 0.0431175172903055,
+          "mae": 0.030185248586353252,
+          "pearson": -9.361737858317114e-17,
+          "prediction_std": 1.0842021724855044e-19
+        },
+        "generic": {
+          "mse": 0.00189346368958534,
+          "rmse": 0.04351394821876475,
+          "mae": 0.03064024786641441,
+          "pearson": -0.10228750853027554,
+          "prediction_std": 0.00292545564076248
+        },
+        "event": {
+          "mse": 0.0019687647309285655,
+          "rmse": 0.04437076437169598,
+          "mae": 0.031221003488337104,
+          "pearson": -0.1580041970742122,
+          "prediction_std": 0.005757472587275964
+        }
+      }
+    }
+  ],
+  "checks": {
+    "required_oos_records": true,
+    "event_minus_generic_mse_ci_lower_gt_zero": false,
+    "event_pearson_ci_lower_gt_zero": false,
+    "event_mse_wins_at_least_3_of_5_folds": false,
+    "event_prediction_nonconstant": true
+  },
+  "inputs": {
+    "predeclaration": {
+      "path": "paper\\input\\results\\llm\\v17\\llm_only_eth_transfer_v17_predeclared.json",
+      "sha256": "9b7bc848f3ac37e924d5c9360b847195ab73e32d8b7db52ddf2c2fed0e375774"
+    },
+    "target_panel": {
+      "path": "paper\\input\\results\\llm\\v17\\llm_only_eth_transfer_target_panel_v17.json",
+      "sha256": "9bd65169d5e94130eef7436018d9fd703c8bac352f0a5a57f63e5014fe271b3c"
+    }
+  },
+  "prediction_panel": {
+    "path": "paper\\input\\results\\llm\\v17\\llm_only_eth_transfer_prediction_panel_v17.json",
+    "sha256": "404b23755918ca9458ea5091823c44de9538fc9ce46961017adbadd220461d3d"
+  }
+}

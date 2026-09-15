@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "artifact_id": "HYB-010-design-lineage-postoutcome",
+  "documented_at": "2026-09-12T00:00:00+07:00",
+  "status": "POST_OUTCOME_DESIGN_PROVENANCE",
+  "purpose": "Record the actual evidence path that motivated HYB-010 without retroactively presenting it as an independent prior hypothesis.",
+  "outcomes_were_consulted": true,
+  "lineage": [
+    {
+      "experiment_id": "HYB-001",
+      "observation": "The LLM overlay reduced closed-trade drawdown from 5.2883% to 4.7886%, but compounded net return fell from 239.0022% to 111.4220%.",
+      "role_in_hyb010": "Early indication that changing exposure could reduce measured risk, while showing that indiscriminate attenuation destroyed too much return.",
+      "source": "paper/input/results/hybrid/tech_llm_conditional_overlay_v1_development.json"
+    },
+    {
+      "experiment_id": "HYB-007",
+      "observation": "Worst-bar improved by 0.3076 percentage points with a positive confidence interval, and cluster ES10 improved from -3.0630% to -1.7897% while beating the registered placebo; mean net delta remained negative.",
+      "role_in_hyb010": "Showed that the hybrid signal could add value on downside-risk dimensions even when the return trade-off was unfavorable.",
+      "source": "paper/input/results/hybrid/hyb007_historical_risk_attenuation_evaluation.json"
+    },
+    {
+      "experiment_id": "HYB-009",
+      "observation": "Among FinBERT, CryptoBERT and Ministral-direct under one sizing pipeline, CryptoBERT improved closed-trade MDD, ES10 and worst trade relative to Tech, shuffled weights and constant-0.75 sizing, although total return decreased.",
+      "role_in_hyb010": "Outcome-informed selection of CryptoBERT as the representation used by HYB-010.",
+      "source": "paper/input/results/hybrid/hyb009_model_substitution_v1_1_risk_audit.json"
+    },
+    {
+      "experiment_id": "HYB-010",
+      "design_decision": "Replace pure attenuation with bounded risk-budget reallocation: keep every Tech entry, direction, exit and execution rule, and map the CryptoBERT causal bearish percentile q to exposure w = 1.25 - 0.5*q.",
+      "source": "paper/input/results/hybrid/hyb010_risk_budget_reallocation_predeclared.json"
+    }
+  ],
+  "selection_statement": "HYB-010 and the choice of CryptoBERT were designed after observing HYB-001, HYB-007 and HYB-009 outcomes. HYB-010 is therefore post-outcome exploratory development and cannot be presented as an independent validation or sealed-holdout test.",
+  "claim_boundary": "HYB-010 may support an historical incremental-value finding within its evaluated sample and metrics. Generalization requires a new independent validation period using the frozen policy without further model or threshold selection."
+}

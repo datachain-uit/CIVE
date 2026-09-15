@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-08-13T15:02:01.395606+00:00",
+  "status": "development robustness; exclusions and final folds are inspected",
+  "base": {
+    "starting_balance": 10000,
+    "final_equity": 31747.81,
+    "return_pct": 217.4781,
+    "max_drawdown_pct": 10.5589,
+    "fills": 62
+  },
+  "leave_out": [
+    {
+      "excluded": [
+        "BTCUSDT"
+      ],
+      "starting_balance": 10000,
+      "final_equity": 16977.87,
+      "return_pct": 69.7787,
+      "max_drawdown_pct": 18.6415,
+      "fills": 36,
+      "return_delta_vs_base_pct_points": -147.6994,
+      "positive_folds": 4,
+      "final_two_compounded_return_pct": -11.2111
+    },
+    {
+      "excluded": [
+        "DOGEUSDT"
+      ],
+      "starting_balance": 10000,
+      "final_equity": 30280.55,
+      "return_pct": 202.8055,
+      "max_drawdown_pct": 14.6926,
+      "fills": 64,
+      "return_delta_vs_base_pct_points": -14.6726,
+      "positive_folds": 6,
+      "final_two_compounded_return_pct": -8.1058
+    },
+    {
+      "excluded": [
+        "ETHUSDT"
+      ],
+      "starting_balance": 10000,
+      "final_equity": 24912.24,
+      "return_pct": 149.1224,
+      "max_drawdown_pct": 9.9802,
+      "fills": 62,
+      "return_delta_vs_base_pct_points": -68.3557,
+      "positive_folds": 6,
+      "final_two_compounded_return_pct": -3.0296
+    },
+    {
+      "excluded": [
+        "SOLUSDT"
+      ],
+      "starting_balance": 10000,
+      "final_equity": 29715.26,
+      "return_pct": 197.1526,
+      "max_drawdown_pct": 10.5589,
+      "fills": 60,
+      "return_delta_vs_base_pct_points": -20.3255,
+      "positive_folds": 6,
+      "final_two_compounded_return_pct": -3.653
+    },
+    {
+      "excluded": [
+        "XRPUSDT"
+      ],
+      "starting_balance": 10000,
+      "final_equity": 23222.53,
+      "return_pct": 132.2253,
+      "max_drawdown_pct": 9.856,
+      "fills": 62,
+      "return_delta_vs_base_pct_points": -85.2528,
+      "positive_folds": 6,
+      "final_two_compounded_return_pct": -3.653
+    },
+    {
+      "excluded": [
+        "XRPUSDT",
+        "BTCUSDT"
+      ],
+      "starting_balance": 10000,
+      "final_equity": 14101.92,
+      "return_pct": 41.0192,
+      "max_drawdown_pct": 14.0926,
+      "fills": 26,
+      "return_delta_vs_base_pct_points": -176.4589,
+      "positive_folds": 5,
+      "final_two_compounded_return_pct": -10.9485
+    }
+  ],
+  "regime_definition": {
+    "decision_cutoff": "entry timestamp minus one completed daily candle",
+    "trend": "strong_up if BTC 14d return >=10%, otherwise mild_up",
+    "volatility": "high/low split at full-development-sample median BTC 30d annualized volatility",
+    "warning": "volatility threshold is descriptive and inspected, not a tradable pre-registered gate"
+  },
+  "fold_attribution": [
+    {
+      "fold": 1,
+      "start": "2022-08-13",
+      "return_pct": 27.571,
+      "max_drawdown_pct": 6.4917,
+      "trades": 5,
+      "trade_net_pnl": 2757.1022,
+      "gross_price_pnl": 2908.9088,
+      "costs_and_funding": 151.8067,
+      "stop_exits": 2,
+      "symbol_pnl": {
+        "BTCUSDT": 2189.1951,
+        "ETHUSDT": 567.9071
+      },
+      "decision_regime_pnl": {
+        "mild_up_low_vol": {
+          "trades": 3,
+          "net_pnl": 2210.0393
+        },
+        "strong_up_low_vol": {
+          "trades": 2,
+          "net_pnl": 547.0629
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "start": "2023-02-09",
+      "return_pct": 0.5521,
+      "max_drawdown_pct": 1.3589,
+      "trades": 1,
+      "trade_net_pnl": 70.4365,
+      "gross_price_pnl": 104.4716,
+      "costs_and_funding": 34.0351,
+      "stop_exits": 0,
+      "symbol_pnl": {
+        "BTCUSDT": 70.4365
+      },
+      "decision_regime_pnl": {
+        "mild_up_high_vol": {
+          "trades": 1,
+          "net_pnl": 70.4365
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "start": "2023-08-08",
+      "return_pct": 20.6952,
+      "max_drawdown_pct": 7.7521,
+      "trades": 6,
+      "trade_net_pnl": 2654.6911,
+      "gross_price_pnl": 3045.8222,
+      "costs_and_funding": 391.1312,
+      "stop_exits": 3,
+      "symbol_pnl": {
+        "BTCUSDT": 376.612,
+        "ETHUSDT": 1400.6634,
+        "SOLUSDT": 877.4157
+      },
+      "decision_regime_pnl": {
+        "mild_up_high_vol": {
+          "trades": 2,
+          "net_pnl": -968.1879
+        },
+        "mild_up_low_vol": {
+          "trades": 3,
+          "net_pnl": 2032.696
+        },
+        "strong_up_high_vol": {
+          "trades": 1,
+          "net_pnl": 1590.183
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "start": "2024-02-04",
+      "return_pct": 23.2419,
+      "max_drawdown_pct": 4.7377,
+      "trades": 4,
+      "trade_net_pnl": 3598.3683,
+      "gross_price_pnl": 3866.7568,
+      "costs_and_funding": 268.3885,
+      "stop_exits": 1,
+      "symbol_pnl": {
+        "BTCUSDT": 3598.3683
+      },
+      "decision_regime_pnl": {
+        "mild_up_low_vol": {
+          "trades": 1,
+          "net_pnl": 1995.3851
+        },
+        "strong_up_high_vol": {
+          "trades": 3,
+          "net_pnl": 1602.9832
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "start": "2024-08-02",
+      "return_pct": 3.1975,
+      "max_drawdown_pct": 1.3007,
+      "trades": 1,
+      "trade_net_pnl": 610.1004,
+      "gross_price_pnl": 664.5076,
+      "costs_and_funding": 54.4072,
+      "stop_exits": 0,
+      "symbol_pnl": {
+        "BTCUSDT": 610.1004
+      },
+      "decision_regime_pnl": {
+        "mild_up_low_vol": {
+          "trades": 1,
+          "net_pnl": 610.1004
+        }
+      }
+    },
+    {
+      "fold": 6,
+      "start": "2025-01-29",
+      "return_pct": 72.1636,
+      "max_drawdown_pct": 7.6468,
+      "trades": 7,
+      "trade_net_pnl": 14209.5244,
+      "gross_price_pnl": 14741.9453,
+      "costs_and_funding": 532.4209,
+      "stop_exits": 2,
+      "symbol_pnl": {
+        "BTCUSDT": 1015.6513,
+        "ETHUSDT": 2686.2164,
+        "XRPUSDT": 10507.6567
+      },
+      "decision_regime_pnl": {
+        "mild_up_high_vol": {
+          "trades": 1,
+          "net_pnl": 2686.2164
+        },
+        "mild_up_low_vol": {
+          "trades": 2,
+          "net_pnl": 10507.6567
+        },
+        "strong_up_high_vol": {
+          "trades": 2,
+          "net_pnl": 1477.2631
+        },
+        "strong_up_low_vol": {
+          "trades": 2,
+          "net_pnl": -461.6117
+        }
+      }
+    },
+    {
+      "fold": 7,
+      "start": "2025-07-28",
+      "return_pct": -0.3316,
+      "max_drawdown_pct": 3.817,
+      "trades": 3,
+      "trade_net_pnl": -112.4109,
+      "gross_price_pnl": 182.6371,
+      "costs_and_funding": 295.048,
+      "stop_exits": 0,
+      "symbol_pnl": {
+        "BTCUSDT": 145.2028,
+        "ETHUSDT": -257.6138
+      },
+      "decision_regime_pnl": {
+        "mild_up_low_vol": {
+          "trades": 3,
+          "net_pnl": -112.4109
+        }
+      }
+    },
+    {
+      "fold": 8,
+      "start": "2026-01-24",
+      "return_pct": -3.3325,
+      "max_drawdown_pct": 7.2149,
+      "trades": 4,
+      "trade_net_pnl": -2040.0,
+      "gross_price_pnl": -1734.3255,
+      "costs_and_funding": 305.6745,
+      "stop_exits": 2,
+      "symbol_pnl": {
+        "BTCUSDT": -572.6376,
+        "DOGEUSDT": -7.6576,
+        "ETHUSDT": -1459.7048
+      },
+      "decision_regime_pnl": {
+        "mild_up_low_vol": {
+          "trades": 2,
+          "net_pnl": -572.6376
+        },
+        "strong_up_high_vol": {
+          "trades": 1,
+          "net_pnl": -7.6576
+        },
+        "strong_up_low_vol": {
+          "trades": 1,
+          "net_pnl": -1459.7048
+        }
+      }
+    }
+  ]
+}

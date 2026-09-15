@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-19T15:14:10.500797+00:00",
+  "experiment_id": "llm-qwen3-8b-challenger-v1-development",
+  "candidate": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "architecture": "qwen3",
+    "parameters": "8B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0",
+    "rationale": "Qwen3 has native thinking/non-thinking mode and official documentation emphasizing improved instruction following and structured JSON output; selected from a different model family than Llama and using non-thinking mode to avoid verbose CoT degrading JSON parse rate",
+    "thinking_mode": "disabled",
+    "primary_sources": [
+      "https://qwenlm.github.io/blog/qwen3/",
+      "https://huggingface.co/Qwen/Qwen3-8B"
+    ]
+  },
+  "stage1_gate_passed": true,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "full_records": {
+      "observed": 2927,
+      "required": 2927,
+      "passed": true
+    },
+    "schema_errors": {
+      "observed": 0,
+      "required": 0,
+      "passed": true
+    },
+    "calibration_observations": {
+      "observed": 1110,
+      "required_min": 1000,
+      "passed": true
+    },
+    "long_rule_observations": {
+      "observed": 487,
+      "required_min": 100,
+      "passed": true
+    },
+    "pearson_ci_lower_bound": {
+      "observed": -0.07012485355494955,
+      "required_gt": 0.0,
+      "passed": false
+    },
+    "long_minus_flat_ci_lower_bound": {
+      "observed": -24.54175042413956,
+      "required_gt": 0.0,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "status": "stage2-fail-stop-before-repeat-or-backtest",
+  "inputs": {
+    "config": "configs\\llm_qwen3_8b_challenger_v1_development.json",
+    "config_sha256": "cdf3bffc8696e7a77c572985507be3f108fb02d0c40959e04db435694621bb6f",
+    "stage1": "results\\llm_qwen3_8b_challenger_gate_v1.json",
+    "stage1_sha256": "999a661560907d20c12229353f0036990f10e9c452cdc63dc53a2c9a43121046",
+    "full_run": "results\\llm_daily_full_qwen3_8b_v1_development.json",
+    "full_run_sha256": "f95d06275785e1a09a6844bb55fb5c0b22e45ffb9600f0947b20fabf3e03b017",
+    "calibration": "results\\llm_outcome_calibration_qwen3_8b_v1_development.json",
+    "calibration_sha256": "6551813ed43b8c19c0f2aac6db317408db18a50593ce3175fc0917990209d2f7"
+  }
+}

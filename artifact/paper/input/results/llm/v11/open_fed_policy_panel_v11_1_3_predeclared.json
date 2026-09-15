@@ -1,0 +1,36 @@
+{
+  "schema_version": "open-fed-policy-panel-predeclaration-v11.1.3",
+  "predeclared_at": "2026-09-05T07:55:20.991355+00:00",
+  "status": "FROZEN_AFTER_OUTCOME_BLIND_EXTRACTION_BEFORE_METRICS",
+  "sources": {
+    "events": {
+      "path": "paper/input/results/llm/v11/conditional_fed_policy_events_v11/events.json",
+      "sha256": "3ed9923fb3a21ca18642925605ab8be2d73612c1402728d8aa6e7f6b1a4ce661"
+    },
+    "extraction": {
+      "path": "paper/input/results/llm/v11/open_fed_policy_extraction_v11_1_3.json",
+      "sha256": "e900c86b5420c6c13890dc7d0525ef1005b299cbaff6259692ef3aaf214d9890"
+    },
+    "btc_4h": {
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BTCUSDT_1660348800000_1786492800000.json",
+      "sha256": "9757ea7ddb7f1562d3e9a9e3e157c8dd6ce7aefbf8c48cafaa589db2717505e0"
+    }
+  },
+  "code": {
+    "builder": {
+      "path": "tools/llm/build_open_fed_policy_panel_v11.py",
+      "sha256": "13d4b4ff3ee33edf4df25e1d265485e37a8ea72525d1960dddd0fc530cd53c65"
+    },
+    "tests": {
+      "path": "tools/llm/test_build_open_fed_policy_panel_v11.py",
+      "sha256": "aae11c83bafef27cfd9af29b445c046fecb51f46419bb0b39455cd316aeb264b"
+    }
+  },
+  "target": {
+    "asset": "BTCUSDT",
+    "horizon_hours": 4,
+    "rule": "strictly next UTC 4h open to following 4h open"
+  },
+  "predictive_feature_policy": "LLM output only; market data target-only",
+  "target_values_consulted_for_design": false
+}

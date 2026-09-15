@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title><a href="/PressRoom/PressReleases/8020-19" hreflang="en">CFTC Charges Trader and his Company with $7 Million Fraud</a></title>
+  <link>https://www.cftc.gov/PressReleases/8020-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-19T20:24:18Z">Thu, 19 Sep 2019 20:24:18 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8020-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8018-19" hreflang="en">CFTC Charges Former Head of International Binary Options Scheme with $10 Million Fraud</a></title>
+  <link>https://www.cftc.gov/PressReleases/8018-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-17T18:02:21Z">Tue, 17 Sep 2019 18:02:21 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8018-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8015-19" hreflang="en">CFTC Charges Futures Trader and Industrial Firm with Spoofing in Precious Metals Futures</a></title>
+  <link>https://www.cftc.gov/PressReleases/8015-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-16T18:33:35Z">Mon, 16 Sep 2019 18:33:35 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8015-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8014-19" hreflang="en">In CFTC Action, Former Precious Metal Trader Admits to Engaging in Spoofing at Two New York Banks</a></title>
+  <link>https://www.cftc.gov/PressReleases/8014-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-16T14:09:04Z">Mon, 16 Sep 2019 14:09:04 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8014-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8013-19" hreflang="en">CFTC Charges Traders at Major U.S. Bank with Manipulating the Precious Metals Futures Markets</a></title>
+  <link>https://www.cftc.gov/PressReleases/8013-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-16T13:34:10Z">Mon, 16 Sep 2019 13:34:10 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8013-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8012-19" hreflang="en">CFTC Orders Interdealer Broker to Pay $13 Million for Supervisory Failures and False Statements</a></title>
+  <link>https://www.cftc.gov/PressReleases/8012-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-13T19:24:53Z">Fri, 13 Sep 2019 19:24:53 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8012-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8008-19" hreflang="en">CFTC Orders Registrant to Pay $1.5 Million for Violations Related to Cyber Breach</a></title>
+  <link>https://www.cftc.gov/PressReleases/8008-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-12T20:55:30Z">Thu, 12 Sep 2019 20:55:30 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8008-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8007-19" hreflang="en">CFTC Orders Chief Compliance Officer of Trading Firm to Pay 150,000 for Fraud and False Statements to a Self-Regulatory Organization</a></title>
+  <link>https://www.cftc.gov/PressReleases/8007-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-12T20:02:20Z">Thu, 12 Sep 2019 20:02:20 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8007-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8006-19" hreflang="en">CFTC Charges Trading Systems Firm and its Principal with Solicitation Fraud and False Statements</a></title>
+  <link>https://www.cftc.gov/PressReleases/8006-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-10T21:53:45Z">Tue, 10 Sep 2019 21:53:45 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8006-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8005-19" hreflang="en">Merrill Lynch Ordered to Pay $300,000 Penalty for Failing to Promptly Produce Audit Trail Data</a></title>
+  <link>https://www.cftc.gov/PressReleases/8005-19</link>
+  <description/>
+  <pubDate><time datetime="2019-09-10T19:04:45Z">Tue, 10 Sep 2019 19:04:45 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8005-19</guid>
+    </item>
+
+  </channel>
+</rss>

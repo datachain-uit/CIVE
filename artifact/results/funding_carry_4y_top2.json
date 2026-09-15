@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-08-07T13:50:55.869451+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT"
+    ],
+    "position": "equal-notional long spot / short perpetual",
+    "selection": "top-2 trailing 3d realised funding; signal is lagged one day",
+    "min_trailing_funding_bps": 1.0,
+    "cost": "fee and slippage charged on both spot and perpetual legs",
+    "funding": "public Bybit settled historical funding"
+  },
+  "result": {
+    "return_pct": -73.2211,
+    "positive_folds": 0,
+    "folds_tested": 8,
+    "fold_returns_pct": [
+      -12.3459,
+      -10.6368,
+      -8.4939,
+      -12.0065,
+      -15.0613,
+      -16.9209,
+      -21.26,
+      -21.4656
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-008",
+  "status": "STAGE_A_INFORMATION_FAIL_STOP_BEFORE_POLICY",
+  "passed": false,
+  "evaluated_at": "2026-09-11T16:36:52.899553+00:00",
+  "research_role": "historical post-outcome development information gate; not validation, holdout, live evidence or economic value",
+  "oos_rows": 692,
+  "oos_dates": 331,
+  "positive_rate": 0.0968208092485549,
+  "arms": {
+    "tech": {
+      "brier": 0.08829182215207977,
+      "auc": 0.5624119402985075,
+      "log_loss": 0.3214049273808492,
+      "prediction_std": 0.06003551638455711
+    },
+    "metadata": {
+      "brier": 0.0896932771193652,
+      "auc": 0.5274746268656716,
+      "log_loss": 0.3446417223596683,
+      "prediction_std": 0.06453364676156645
+    },
+    "generic": {
+      "brier": 0.09118852964723777,
+      "auc": 0.503044776119403,
+      "log_loss": 0.353652595148351,
+      "prediction_std": 0.07114775933667696
+    },
+    "event": {
+      "brier": 0.09330703858128317,
+      "auc": 0.5009671641791045,
+      "log_loss": 0.3606716044888459,
+      "prediction_std": 0.08543773365727554
+    },
+    "permuted": {
+      "brier": 0.09356399448852723,
+      "auc": 0.46899104477611936,
+      "log_loss": 0.38386513419591306,
+      "prediction_std": 0.08267461897687937
+    }
+  },
+  "primary_generic_minus_event_brier": -0.0021185089340454016,
+  "primary_date_cluster_bootstrap_95_ci": [
+    -0.004993275925285047,
+    4.020480175380958e-06
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train_rows": 316,
+      "test_rows": 130,
+      "test_dates": [
+        "2023-08-21",
+        "2024-01-12"
+      ],
+      "tail_thresholds": {
+        "ETHUSDT": -0.012125345815143861,
+        "SOLUSDT": -0.02330932959758378
+      },
+      "positive_rate": 0.12307692307692308,
+      "arms": {
+        "tech": {
+          "brier": 0.11205619338636713,
+          "auc": 0.49561403508771934,
+          "log_loss": 0.39695669564031616
+        },
+        "metadata": {
+          "brier": 0.11831701724930795,
+          "auc": 0.450109649122807,
+          "log_loss": 0.5085472268962385
+        },
+        "generic": {
+          "brier": 0.1208553571323251,
+          "auc": 0.4555921052631579,
+          "log_loss": 0.5292984482627383
+        },
+        "event": {
+          "brier": 0.12294470926924964,
+          "auc": 0.5137061403508771,
+          "log_loss": 0.5135618150570176
+        },
+        "permuted": {
+          "brier": 0.12296252399431801,
+          "auc": 0.4797149122807018,
+          "log_loss": 0.5724633708059921
+        }
+      },
+      "generic_minus_event_brier": -0.00208935213692453
+    },
+    {
+      "fold": 2,
+      "train_rows": 446,
+      "test_rows": 139,
+      "test_dates": [
+        "2024-01-16",
+        "2024-05-19"
+      ],
+      "tail_thresholds": {
+        "ETHUSDT": -0.012647078892024384,
+        "SOLUSDT": -0.025175210889078016
+      },
+      "positive_rate": 0.09352517985611511,
+      "arms": {
+        "tech": {
+          "brier": 0.08741105430829968,
+          "auc": 0.5604395604395604,
+          "log_loss": 0.3156311163013699
+        },
+        "metadata": {
+          "brier": 0.08748736873853444,
+          "auc": 0.5818070818070818,
+          "log_loss": 0.3161041430504858
+        },
+        "generic": {
+          "brier": 0.09089907919959533,
+          "auc": 0.49450549450549447,
+          "log_loss": 0.33599577638217454
+        },
+        "event": {
+          "brier": 0.09607874175771003,
+          "auc": 0.45421245421245415,
+          "log_loss": 0.34902388831889286
+        },
+        "permuted": {
+          "brier": 0.09326674447042403,
+          "auc": 0.4951159951159951,
+          "log_loss": 0.3674118432389125
+        }
+      },
+      "generic_minus_event_brier": -0.005179662558114695
+    },
+    {
+      "fold": 3,
+      "train_rows": 585,
+      "test_rows": 160,
+      "test_dates": [
+        "2024-05-20",
+        "2024-10-16"
+      ],
+      "tail_thresholds": {
+        "ETHUSDT": -0.012467151837018076,
+        "SOLUSDT": -0.025321226311246715
+      },
+      "positive_rate": 0.0625,
+      "arms": {
+        "tech": {
+          "brier": 0.05677332771309733,
+          "auc": 0.7793333333333333,
+          "log_loss": 0.22050299014413435
+        },
+        "metadata": {
+          "brier": 0.05787711075973362,
+          "auc": 0.6759999999999999,
+          "log_loss": 0.22679151695589123
+        },
+        "generic": {
+          "brier": 0.057624814818740544,
+          "auc": 0.676,
+          "log_loss": 0.22620395009385544
+        },
+        "event": {
+          "brier": 0.0587695283630383,
+          "auc": 0.638,
+          "log_loss": 0.23082981110831743
+        },
+        "permuted": {
+          "brier": 0.05966669859041616,
+          "auc": 0.5593333333333333,
+          "log_loss": 0.24481885398490477
+        }
+      },
+      "generic_minus_event_brier": -0.0011447135442977582
+    },
+    {
+      "fold": 4,
+      "train_rows": 745,
+      "test_rows": 121,
+      "test_dates": [
+        "2024-10-21",
+        "2025-05-01"
+      ],
+      "tail_thresholds": {
+        "ETHUSDT": -0.012540124358517944,
+        "SOLUSDT": -0.022212696684092814
+      },
+      "positive_rate": 0.12396694214876033,
+      "arms": {
+        "tech": {
+          "brier": 0.11029942146417607,
+          "auc": 0.47547169811320755,
+          "log_loss": 0.3990943924346861
+        },
+        "metadata": {
+          "brier": 0.10947244870702104,
+          "auc": 0.49245283018867925,
+          "log_loss": 0.3970740708089117
+        },
+        "generic": {
+          "brier": 0.10949568872039939,
+          "auc": 0.5006289308176101,
+          "log_loss": 0.3962538390328387
+        },
+        "event": {
+          "brier": 0.11015440961902603,
+          "auc": 0.47044025157232705,
+          "log_loss": 0.40559529908947484
+        },
+        "permuted": {
+          "brier": 0.11136785633231067,
+          "auc": 0.46477987421383643,
+          "log_loss": 0.41349527292901816
+        }
+      },
+      "generic_minus_event_brier": -0.0006587208986266468
+    },
+    {
+      "fold": 5,
+      "train_rows": 866,
+      "test_rows": 142,
+      "test_dates": [
+        "2025-05-02",
+        "2025-08-26"
+      ],
+      "tail_thresholds": {
+        "ETHUSDT": -0.013554501585609734,
+        "SOLUSDT": -0.022181052526197797
+      },
+      "positive_rate": 0.09154929577464789,
+      "arms": {
+        "tech": {
+          "brier": 0.08415870992180942,
+          "auc": 0.6022659511031604,
+          "log_loss": 0.30538179042787045
+        },
+        "metadata": {
+          "brier": 0.08464286798892585,
+          "auc": 0.5646988670244484,
+          "log_loss": 0.3106327550108521
+        },
+        "generic": {
+          "brier": 0.0865306012237726,
+          "auc": 0.5169946332737031,
+          "log_loss": 0.31743688812246695
+        },
+        "event": {
+          "brier": 0.08802045976715166,
+          "auc": 0.5110316040548599,
+          "log_loss": 0.34012389369989954
+        },
+        "permuted": {
+          "brier": 0.08996405770939715,
+          "auc": 0.4245676803816339,
+          "log_loss": 0.3587341111731554
+        }
+      },
+      "generic_minus_event_brier": -0.0014898585433790607
+    }
+  ],
+  "positive_folds": 0,
+  "checks": {
+    "generic_minus_event_brier_ci_lower_positive": false,
+    "event_brier_better_than_all_comparators": false,
+    "event_beats_generic_at_least_3_of_5_folds": false,
+    "event_auc_above_generic": false,
+    "event_predictions_nonconstant": true,
+    "both_classes_in_every_fold": true
+  },
+  "predictions": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb008_conditional_downside_predictions.json",
+    "sha256": "4443b3dbf5e794901d893fa58216f8e4cbbef7f0b846a1b93ab3016685a52257"
+  },
+  "interpretation": "Stage A tests conditional downside information only; it is not a trading-performance or live-value result.",
+  "next_authorized_action": "Stop HYB-008 before policy/backtest; do not tune on these outcomes."
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.4-full-extraction",
+  "status": "predeclared-before-full-extraction",
+  "predeclared_at": "2026-08-24T03:40:17+07:00",
+  "research_role": "one full article-level event extraction after Stage 1 pass; no outcome join or trading action",
+  "selection_basis": "V3.4 passed every predeclared Stage 1 reliability requirement after a deterministic, source-preserving ellipsis alignment correction. The previously failing v3.3 raw response was also parsed into an exact frozen-headline substring without another model call. This config opens only one full extraction over the frozen 39,393-headline input. No market outcome, predictive metric, threshold, or trading result was consulted.",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0"
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086",
+      "records": 39393
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/llm_event_extractor_v3_2.txt",
+      "sha256": "ac3798d3ee52899f297f1187396c6cfee22bf43c120c38463622c3bf71199497"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/llm_event_extraction_batch_v3_2.schema.json",
+      "sha256": "0ac1073b90b469631bb58ab3fccc7b6c89ffcb46bf0faa1103c05b97073e8d87"
+    },
+    "postprocessor": {
+      "path": "tools/llm/score_llm_event_extractor_v3_4.py",
+      "sha256": "e06a14a68ba9aca57dd2c3f7b3a09b2d75fd4fa5f0b646a00f1e6aa6b4f7b35e"
+    },
+    "producer": {
+      "path": "tools/llm/score_llm_event_extractor_v3_4_full.py",
+      "sha256": "b60b7cf03bcd3090b6e19d02239f686a6bcf43b6a3297b8f038f476acb2139a4"
+    },
+    "stage1_gate": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_4_stage1_gate.json",
+      "sha256": "7bbfed8846784040e3b1925a5a5fae802e953d74617f0cbf8ad3e22fbc59ef29",
+      "required_status": "stage1-pass-full-extraction-authorized"
+    },
+    "identifier_mode": "ordinal_item_id",
+    "batch_size": 4,
+    "expected_batches": 9849,
+    "temperature": 0.0,
+    "seed": 20260823,
+    "workers": 1,
+    "request_delay_seconds": 10,
+    "transport_retries": 3
+  },
+  "completion_gate": {
+    "required": {
+      "schema_success": 39393,
+      "headline_count_match": 39393,
+      "headline_id_and_order_match": 39393,
+      "evidence_exact_substring": 39393,
+      "errors": 0
+    },
+    "decision": "all requirements must pass before the extraction artifact can be frozen for downstream design"
+  },
+  "prohibited": [
+    "joining market outcomes during full extraction",
+    "computing predictive metrics, selecting a target or horizon, or tuning a threshold",
+    "creating an action, position size, backtest, or Tech overlay",
+    "running more than one LLM worker",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

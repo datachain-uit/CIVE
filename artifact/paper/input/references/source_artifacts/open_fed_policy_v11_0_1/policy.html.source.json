@@ -1,0 +1,10 @@
+{
+  "url": "https://www.federalreserve.gov/disclaimer.htm",
+  "http_status": 200,
+  "content_range": null,
+  "partial_sample": false,
+  "bytes": 85130,
+  "sha256": "721a7ecfe37786cbdb78fbaaee6cb2a115bbaa3b032af7ce4542f5b5b4472f0c",
+  "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\policy.html",
+  "fetched_at": "2026-09-05T06:17:27.598251+00:00"
+}

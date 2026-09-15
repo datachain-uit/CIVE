@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "PROSPECTIVE_COLLECTION_ONLY_NO_MODEL_OR_OUTCOMES",
+  "protocol": "LLM_Only_Prospective_Official_Crypto_Tail_Risk_Protocol_v12.md",
+  "poll_id": "20260905T173902271803Z",
+  "initialized_at": "2026-09-06T00:36:59.128472+07:00",
+  "collector_script_sha256": "4ebc24194c0aed513a9bd36fca98aa96dde97f822ff57f452ca729171a8f4d8a",
+  "source_registry": {
+    "sec_press_releases": "https://www.sec.gov/news/pressreleases.rss",
+    "cftc_general_press_releases": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+    "cftc_enforcement_press_releases": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml"
+  },
+  "crypto_allowlist": [
+    "crypto asset",
+    "crypto-asset",
+    "cryptocurrency",
+    "digital asset",
+    "digital-asset",
+    "virtual currency",
+    "bitcoin",
+    "ether",
+    "stablecoin",
+    "blockchain",
+    "token",
+    "decentralized finance",
+    "defi",
+    "exchange token",
+    "custody of crypto"
+  ],
+  "records_admitted_total": 0,
+  "records_admitted_this_poll": 0,
+  "records_rejected_this_poll": 0,
+  "rejection_reason_counts": {},
+  "fetch_errors_this_poll": [],
+  "market_data_accessed": false,
+  "model_run": false,
+  "backfill_prohibited": true,
+  "baseline_urls_excluded": 45,
+  "files": {
+    "state.json": "085ec6944b78c1b96145e59cac7841386597edfc5eb11728a9a3764a4b900c6e",
+    "records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}

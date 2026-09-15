@@ -1,0 +1,61 @@
+{
+  "status": "REJECTED_FOR_LLM_ADMISSION_SOURCE_TERMS",
+  "candidate": "mouadja02/bitcoin-news-data at 29a72033d4e5d4f446e1971a185fcb8300048fe5",
+  "scope": "current official terms audit; not legal advice and not a historical-terms reconstruction",
+  "findings": [
+    {
+      "source_component": "The Guardian Open Platform content",
+      "verdict": "BLOCK",
+      "basis": "Current terms expressly prohibit use, copying, collection, mining or extraction for machine-learning/LLM/AI purposes and text/data aggregation, analysis or mining.",
+      "resolution_needed": "Written rights clearance that specifically covers the intended corpus and LLM use."
+    },
+    {
+      "source_component": "Finnhub data and derived results",
+      "verdict": "BLOCK",
+      "basis": "Current terms prohibit redistribution or sharing access to data or derived results without written approval, and require compliance with third-party copyright.",
+      "resolution_needed": "Written Finnhub approval plus evidence for each underlying publisher right."
+    },
+    {
+      "source_component": "Alpha Vantage platform content",
+      "verdict": "UNRESOLVED",
+      "basis": "Current terms describe a revocable, non-sublicensable, non-transferable license and distinguish personal non-commercial use from use needing written agreement.",
+      "resolution_needed": "Written confirmation covering the precise research corpus, storage and LLM use."
+    }
+  ],
+  "decision": {
+    "eligible_for_model_input": false,
+    "eligible_for_outcome_blind_corpus": false,
+    "market_data_accessed": false,
+    "model_run": false,
+    "next_step": "Do not seek a workaround from this dataset. Audit a different versioned source with explicit LLM/TDM-compatible rights."
+  },
+  "sources": [
+    {
+      "url": "https://www.theguardian.com/open-platform/terms-and-conditions",
+      "http_status": 200,
+      "bytes": 284946,
+      "sha256": "89c7daa8f6c84489953108f74172fd870ac49c305590dcb95076d12b438514d6",
+      "fetched_at": "2026-09-05T18:01:33.687681+00:00",
+      "content_type": "text/html",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_terms_v12_1\\guardian_open_platform_terms.html"
+    },
+    {
+      "url": "https://finnhub.io/terms-of-service",
+      "http_status": 200,
+      "bytes": 16106,
+      "sha256": "51f526f1de067c848089e1a3b84e62068f2e9c22c6ad68dd1f04bba69abe4433",
+      "fetched_at": "2026-09-05T18:01:34.399132+00:00",
+      "content_type": "text/html",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_terms_v12_1\\finnhub_terms.html"
+    },
+    {
+      "url": "https://www.alphavantage.co/terms_of_service/",
+      "http_status": 200,
+      "bytes": 156583,
+      "sha256": "88ed3d22fe0f3624e76e53a210db3498b4a90712ab0d934356cc84b19ed1468a",
+      "fetched_at": "2026-09-05T18:01:34.882367+00:00",
+      "content_type": "application/pdf",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_terms_v12_1\\alphavantage_terms.pdf"
+    }
+  ]
+}

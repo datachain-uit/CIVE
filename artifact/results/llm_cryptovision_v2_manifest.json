@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T17:00:45.216450+00:00",
+  "corpus_status": "development-not-frozen",
+  "source": {
+    "dataset": "cryptovision-v2",
+    "doi": "10.17632/3c3xtxtfb6.2",
+    "landing_page": "https://data.mendeley.com/datasets/3c3xtxtfb6/2",
+    "version": 2,
+    "license": "CC BY 4.0",
+    "snapshot_file": "data\\llm_sources\\cryptovision_v2.zip",
+    "snapshot_bytes": 15428311,
+    "snapshot_sha256": "0c0ce86fc0a3b90378d36fbb27cd08137fd1fd9f72030cfc50a4aa967380a142",
+    "archive_member": "CryptoVision A Comprehensive Dataset for Crypto Ne/CryptoDataSet.csv"
+  },
+  "input_rows": 188431,
+  "accepted_records": 117444,
+  "rejected_records": 70987,
+  "rejection_reasons": {
+    "duplicate_title": 70687,
+    "duplicate_url": 2,
+    "invalid_timestamp": 1,
+    "missing_or_disallowed_url": 1,
+    "missing_title": 296
+  },
+  "coverage_start": "2017-08-17T15:00:33+00:00",
+  "coverage_end": "2025-08-27T17:47:34+00:00",
+  "unique_utc_dates": 2927,
+  "source_domains": {
+    "blockworks.co": 7624,
+    "coindesk.com": 32625,
+    "cointelegraph.com": 30137,
+    "cryptonews.com": 10724,
+    "cryptopanic.com": 23596,
+    "decrypt.co": 12738
+  },
+  "coin_types": {
+    "Bitcoin": 69575,
+    "Ethereum": 21287,
+    "Solana": 7995,
+    "Ripple": 3784,
+    "Polygon": 2138,
+    "Terra": 2055,
+    "Dogecoin": 1792,
+    "Uniswap": 1349,
+    "Cardano": 1294,
+    "Chainlink": 1216,
+    "Avalanche": 1193,
+    "Litecoin": 1091,
+    "XRP": 1084,
+    "Polkadot": 581,
+    "Shiba Inu": 528,
+    "Binance Coin": 419,
+    "VeChain": 63
+  },
+  "timestamp_policy": "exact source timestamp converted to UTC; availability equals publication",
+  "deduplication": "first occurrence by normalized-title SHA-256, then normalized URL",
+  "allow_list": [
+    "blockworks.co",
+    "coindesk.com",
+    "cointelegraph.com",
+    "cryptonews.com",
+    "cryptopanic.com",
+    "decrypt.co"
+  ],
+  "columns_imported": [
+    "URL",
+    "Title",
+    "Date Time",
+    "Coin Type"
+  ],
+  "columns_explicitly_excluded_as_leakage": [
+    "Close",
+    "High",
+    "Low",
+    "Market_Move",
+    "Movement_HighLow_%",
+    "Movement_OpenClose_%",
+    "Open",
+    "Volume",
+    "sentiment_label",
+    "sentiment_score"
+  ],
+  "corpus_file": "data\\llm_sources\\cryptovision_v2_causal.jsonl.gz",
+  "corpus_bytes": 14818171,
+  "corpus_sha256": "5eee73c7d6f1f71e2c55841733eeeb7119e4cb1d87d7358437b9490ad769ab81"
+}

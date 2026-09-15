@@ -1,0 +1,91 @@
+{
+  "schema_version": "llm-only-event-response-panel-audit-v8",
+  "counts": {
+    "source_inputs": 39393,
+    "deduplicated_normalized_headlines": 1,
+    "excluded_by_relevance": 18265,
+    "excluded_by_event_type": 9157,
+    "eligible_events": 11970,
+    "labeled_four_hour_buckets": 4605,
+    "buckets_missing_market_target": 0
+  },
+  "eligible_event_type_counts": {
+    "adoption_business": 208,
+    "etf_institutional_flow": 4,
+    "exchange_security": 794,
+    "fraud_legal": 213,
+    "liquidation_leverage": 2907,
+    "macro_liquidity": 330,
+    "network_protocol": 628,
+    "regulation": 6886
+  },
+  "eligible_relevance_counts": {
+    "direct": 4993,
+    "systemic": 6977
+  },
+  "bucket_counts_by_year": {
+    "2022": 477,
+    "2023": 1492,
+    "2024": 1603,
+    "2025": 1033
+  },
+  "coverage": {
+    "start": "2022-09-12T08:00:00+00:00",
+    "end": "2025-08-27T20:00:00+00:00"
+  },
+  "sentiment_feature_names": [
+    "llm_sentiment_positive_fraction",
+    "llm_sentiment_negative_fraction",
+    "llm_sentiment_mixed_fraction",
+    "llm_sentiment_unclear_fraction",
+    "llm_sentiment_signed_mean",
+    "llm_sentiment_directional_severity_mean",
+    "llm_sentiment_directional_confidence_mean",
+    "llm_sentiment_severity_mean",
+    "llm_sentiment_severity_max",
+    "llm_sentiment_surprise_mean",
+    "llm_sentiment_surprise_max",
+    "llm_sentiment_confidence_mean"
+  ],
+  "event_feature_names": [
+    "llm_sentiment_positive_fraction",
+    "llm_sentiment_negative_fraction",
+    "llm_sentiment_mixed_fraction",
+    "llm_sentiment_unclear_fraction",
+    "llm_sentiment_signed_mean",
+    "llm_sentiment_directional_severity_mean",
+    "llm_sentiment_directional_confidence_mean",
+    "llm_sentiment_severity_mean",
+    "llm_sentiment_severity_max",
+    "llm_sentiment_surprise_mean",
+    "llm_sentiment_surprise_max",
+    "llm_sentiment_confidence_mean",
+    "llm_event_relevance_fraction::direct",
+    "llm_event_relevance_fraction::systemic",
+    "llm_event_type_fraction::macro_liquidity",
+    "llm_event_impact::macro_liquidity",
+    "llm_event_type_fraction::regulation",
+    "llm_event_impact::regulation",
+    "llm_event_type_fraction::etf_institutional_flow",
+    "llm_event_impact::etf_institutional_flow",
+    "llm_event_type_fraction::exchange_security",
+    "llm_event_impact::exchange_security",
+    "llm_event_type_fraction::liquidation_leverage",
+    "llm_event_impact::liquidation_leverage",
+    "llm_event_type_fraction::network_protocol",
+    "llm_event_impact::network_protocol",
+    "llm_event_type_fraction::fraud_legal",
+    "llm_event_impact::fraud_legal",
+    "llm_event_type_fraction::adoption_business",
+    "llm_event_impact::adoption_business"
+  ],
+  "target_audit_only": {
+    "finite": true,
+    "nonconstant": true,
+    "distribution_or_model_metric_consulted": false
+  },
+  "panel": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v8\\llm_only_event_response_panel_v8.json",
+    "sha256": "c9d852fe74924696e81d285c46d7c126aca1b956dd9d9a5645c0b2c04ffe1528"
+  }
+}

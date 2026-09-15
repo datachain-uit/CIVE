@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.1-stage1-reliability",
+  "status": "predeclared-before-event-extractor-inference",
+  "predeclared_at": "2026-08-23T00:00:00+07:00",
+  "research_role": "article-level structured event extraction; no return forecast and no trading action",
+  "selection_basis": "Operational correction after v3 returned severity values 2 and 3 despite the frozen [0,1] schema. V3.1 only makes all continuous scales explicit in the prompt; no market outcome or trading result was consulted.",
+  "supersedes_for_future_inference": "llm-event-extractor-ministral3-8b-v3-stage1-reliability",
+  "prior_operational_failure": {
+    "run1_sha256": "2c4004d433a8227911f58df4febb21fee33f25f28e18a3ace166f2f37b62f829",
+    "run2_sha256": "0849770051baccf3e951eb23e4ae1f7e0127cfd99d6c35781e7e3f5ece17efde",
+    "gate_sha256": "42988328f0b575b86d47c579a77b750c94cdda43abe750ab7c7d2e5e59b506f4",
+    "outcomes_consulted": false,
+    "reason": "severity outside [0,1] in the first four-item batch"
+  },
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0"
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086",
+      "records": 39393
+    },
+    "stage1_sample": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_stage1_sample_v3_frozen.json",
+      "sha256": "d58b812486ab9197158ed33c98cefd8dcc5356a2312c1a842dbfd39de474e4d2",
+      "records": 114,
+      "strata": 38
+    },
+    "sampler": {
+      "path": "tools/llm/build_llm_event_reliability_sample_v3.py",
+      "sha256": "c2d8220b1c5e7e2d97708e83d7b9dffc396a249352427ddf20cfe3629e5ccbc1"
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/llm_event_extractor_v3_1.txt",
+      "sha256": "5e838060e4e74f81a1b601467fff54db5ebc0e99e41049fbf7541c0bfe721414"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/llm_event_extraction_batch_v3.schema.json",
+      "sha256": "a8a0a40e08b6703a311b14d4243442f036d573cd35f28184153c3cb519b736ce"
+    },
+    "batch_size": 4,
+    "expected_batches_per_run": 29,
+    "temperature": 0.0,
+    "seed": 20260823,
+    "workers": 1,
+    "request_delay_seconds": 10
+  },
+  "stage1_gate": {
+    "independent_runs": 2,
+    "required": {
+      "schema_success_each_run": 114,
+      "headline_count_match_each_run": 114,
+      "headline_id_and_order_match_each_run": 114,
+      "evidence_exact_substring_each_run": 114,
+      "btc_relevance_exact_agreement_min": 108,
+      "event_type_exact_agreement_min": 103,
+      "direction_exact_agreement_min": 103,
+      "expected_horizon_exact_agreement_min": 97,
+      "affected_assets_mean_jaccard_min": 0.9,
+      "severity_mean_absolute_difference_max": 0.05,
+      "reported_surprise_mean_absolute_difference_max": 0.05,
+      "confidence_mean_absolute_difference_max": 0.05,
+      "continuous_field_max_absolute_difference_max": 0.25
+    },
+    "decision": "all requirements must pass before full-corpus extraction"
+  },
+  "stage2_only_if_stage1_passes": {
+    "scope": "one full extraction over 39393 articles; no outcome join, predictive test, threshold selection, backtest, or Tech overlay",
+    "required": {
+      "schema_success": 39393,
+      "headline_id_match": 39393,
+      "evidence_exact_substring": 39393
+    }
+  },
+  "prohibited": [
+    "changing prompt, schema, model digest, sample, batch size, or gate thresholds after Stage 1 begins",
+    "joining market outcomes before the full extraction artifact is complete and frozen",
+    "creating action, position size, or Tech overlay fields in the extractor",
+    "running more than one LLM worker",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

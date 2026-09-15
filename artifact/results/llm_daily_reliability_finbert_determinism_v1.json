@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "model": "ProsusAI/finbert",
+  "model_digest": "4556d13015211d73dccd3fdd39d39232506f3e43",
+  "prompt_version": "finbert-headline-mean-probability-v1",
+  "prompt_hash": "2c77eb833953e9f73fe6723a0cfba66fd107be71c7a0602cf60a5a3afd2e63f7",
+  "policy": {
+    "long_threshold": 0.0,
+    "minimum_confidence": 0.0,
+    "market_outcomes_consulted": false
+  },
+  "information_sets": 108,
+  "identical_information_set_hashes": true,
+  "both_success": 108,
+  "status_failures": 0,
+  "exact_score_agreement": 108,
+  "mean_absolute_score_difference": 0.0,
+  "max_absolute_score_difference": 0.0,
+  "exact_confidence_agreement": 108,
+  "mean_absolute_confidence_difference": 0.0,
+  "max_absolute_confidence_difference": 0.0,
+  "long_flat_action_agreements": 108,
+  "long_flat_action_disagreements": 0,
+  "long_flat_action_agreement_rate": 1.0,
+  "score_deterministic": true,
+  "action_deterministic": true,
+  "inputs": {
+    "left": "results\\llm_daily_reliability_finbert_run1_v1.json",
+    "left_sha256": "15f914059c979e0b07a3195c1235b625a3cc92e5be89f5af5df0627c7b1a1f88",
+    "right": "results\\llm_daily_reliability_finbert_run2_v1.json",
+    "right_sha256": "48b0951e49ac611d0faec47c0c48ce7029d8430ed8c1174b4d957ec11e682aea"
+  }
+}

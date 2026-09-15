@@ -1,0 +1,131 @@
+{
+  "schema_version": "tech-llm-conditional-state-fusion-v3-design",
+  "experiment_id": "HYB-003",
+  "status": "design-registered-pending-data-and-power-gates",
+  "registered_at": "2026-09-10T00:00:00+07:00",
+  "research_role": "post-HYB-001/HYB-002 architecture design; no HYB-003 performance result exists",
+  "outcomes_previously_seen": true,
+  "research_question": "Does causally available text add net decision value beyond an otherwise identical Tech-state risk model while frozen Tech-Control is long?",
+  "rationale": {
+    "hyb_001_failure": "Entry veto/downsize converted noisy daily text into trade-long opportunity cost.",
+    "hyb_002_failure": "A generic negative-event rule reduced exposure for one bar without conditioning on market state or the economic side and stage of the event.",
+    "replay_audit": "Independent replay reproduced all 24 frozen shadow trades and the HYB-002 primary estimate; the negative result is not explained by quantity reconstruction error.",
+    "semantic_audit": "The frozen liquidation_leverage bucket included bankruptcy, withdrawals, token unlocks and an explicitly bullish short-liquidation headline. Generic negative direction is therefore not a valid held-long action variable."
+  },
+  "controlled_arms": {
+    "T0": "Frozen Tech-Control execution with no learned risk overlay.",
+    "T1": "Tech-state-only risk policy using the same learner, target, folds, tuning budget and action set as T3, but no text-derived fields.",
+    "T2": "Text-only diagnostic using the same target and temporal folds; not the primary comparator.",
+    "T3": "Tech-state plus causal text-state features and predeclared text-by-Tech interaction terms."
+  },
+  "decision_contract": {
+    "eligible_timestamp": "Each 4h bar open strictly after a frozen Tech-Control entry and strictly before its shadow exit.",
+    "entry_authority": "Tech-Control only; HYB-003 cannot create, reverse, delay or veto entry.",
+    "shadow_exit": "All arms inherit the frozen Tech-Control exit timestamp and reason.",
+    "action_set": [0.5, 1.0],
+    "action_duration": "One 4h bar; restore only if the shadow trade remains open.",
+    "event_order": "shadow rebalance exit -> restore if required -> new overlay action -> funding -> shadow intrabar stop -> close mark",
+    "no_action_default": 1.0,
+    "turnover_deadband": "Act only when the training-fold estimate of net action advantage exceeds all registered round-trip execution costs plus a fixed uncertainty margin."
+  },
+  "prediction_target": {
+    "primary": "Exact counterfactual net utility difference for exposure 0.5 versus 1.0 from the current bar open to the next 4h boundary or earlier shadow exit.",
+    "utility": "Net PnL after adverse execution, fees and funding; drawdown is evaluated separately and is not folded into a tunable scalar.",
+    "why_aligned": "The supervised target is the same marginal decision that the overlay is allowed to take, rather than unconditional market direction or generic sentiment.",
+    "label_construction": "Event-driven paired replay under identical shadow lifecycle and execution semantics.",
+    "grouping": "All rows from one shadow Tech trade form one dependence cluster."
+  },
+  "tech_state_features_T1": [
+    "asset identity encoded from the training fold only",
+    "trade age in 4h bars",
+    "current close-to-entry return",
+    "distance to fixed/trailing shadow stop divided by ATR",
+    "ATR divided by price",
+    "past-only 4h returns and realized range at 4h, 12h and 24h horizons",
+    "current funding rate and past-only funding aggregates",
+    "frozen Tech rank/momentum score when materializable without future data"
+  ],
+  "causal_text_state_T2_T3": {
+    "required_fields": [
+      "affected asset and scope",
+      "held-long pressure: adverse, supportive, two-sided or unknown",
+      "mechanism: forced-long-selling, forced-short-buying, solvency, security-loss, protocol-outage, legal-restriction, flow-demand or other",
+      "event stage: rumor, initial-announcement, escalation, ongoing, resolution or retrospective",
+      "expected horizon distribution over 4h, 12h, 24h and 72h",
+      "novelty versus prior causally available reports",
+      "source-domain count, model confidence and extraction reliability"
+    ],
+    "forbidden_shortcut": "No action may be derived from generic sentiment, a generic negative direction field or event_type alone.",
+    "unknown_handling": "Unknown/two-sided pressure and missing/error extraction map to no-action evidence, not adverse evidence.",
+    "aggregation": "Deduplicate the same event across domains, preserve first availability, and decay event state only forward in time."
+  },
+  "registered_interactions_T3": [
+    "held-long adverse pressure x distance-to-stop/ATR",
+    "held-long supportive pressure x distance-to-stop/ATR",
+    "event novelty x trade age",
+    "event stage x recent realized range",
+    "event horizon mass at 4h x action horizon",
+    "asset scope x held asset identity"
+  ],
+  "learner_contract": {
+    "family": "Regularized linear conditional action-value model with calibrated uncertainty; no deep end-to-end trading agent.",
+    "same_capacity_rule": "T1 and T3 use the same loss, temporal training windows, optimizer, regularization search budget and action threshold procedure.",
+    "selection": "All regularization and deadband choices are nested inside expanding training folds.",
+    "embargo": "At least the maximum target horizon plus one 4h bar between train and evaluation windows.",
+    "prohibited": [
+      "Choosing text fields, horizons, thresholds or interactions after reading HYB-003 evaluation outcomes",
+      "Reporting in-sample action advantage as incremental value",
+      "Giving T3 a larger tuning budget than T1",
+      "Dropping losing assets, event mechanisms or folds after evaluation"
+    ]
+  },
+  "incremental_value_gates": {
+    "primary_contrast": "T3 minus T1 paired mean net utility at the same eligible timestamps",
+    "system_contrast": "T3 minus T0 net portfolio performance under the same execution contract",
+    "required_for_development_pass": [
+      "Lower bound of the 95% shadow-trade-cluster bootstrap CI for T3-T1 is above zero",
+      "Lower bound of the 95% shadow-trade-cluster bootstrap CI for T3-T0 is above zero",
+      "T3 has positive net contrast in at least two of three chronological folds",
+      "T3 beats timestamp-shuffled text, metadata-only text and delayed-text placebos",
+      "T3 portfolio intrabar MDD is no worse than T0 under one frozen MDD definition",
+      "Effective independent trade clusters meet a power-derived minimum frozen before evaluation"
+    ],
+    "interpretation": "Passing only T3-T1 establishes text-feature increment over the risk model; it does not establish a useful trading system unless T3 also passes T3-T0 after cost."
+  },
+  "stage_gates": [
+    {
+      "stage": "A_data",
+      "requirement": "Materialize a causal 4h Tech-state panel and a separate outcome-blind text-state extraction contract; audit timestamp, side/stage labels, deduplication and missingness."
+    },
+    {
+      "stage": "B_power",
+      "requirement": "Compute cluster count, intervention prevalence and minimum detectable effect without fitting T3. If power is insufficient, stop as INSUFFICIENT_DATA."
+    },
+    {
+      "stage": "C_freeze",
+      "requirement": "Freeze hashes, folds, learner, feature lists, target, costs, deadband procedure, placebos and exact assignments before reading evaluation metrics."
+    },
+    {
+      "stage": "D_development",
+      "requirement": "Run T0/T1/T2/T3 on already-seen historical data and label the result exploratory development only."
+    },
+    {
+      "stage": "E_confirmation",
+      "requirement": "Only a frozen candidate that passes development may enter a newly dated prospective sealed holdout; missed historical dates cannot be backfilled."
+    }
+  ],
+  "known_feasibility": {
+    "historical_frozen_trade_clusters": 24,
+    "historical_active_4h_rows_including_entry_excluding_exit": 549,
+    "historical_eligible_post_entry_4h_decisions": 525,
+    "warning": "The 525 eligible post-entry rows are nested in at most 24 trades and are not independent observations. Power must be based on trade clusters.",
+    "status": "No power pass has been established."
+  },
+  "inputs": {
+    "hyb_002_replay_audit": "paper/input/results/hybrid/tech_llm_intratrade_shock_shield_v2_replay_audit.json",
+    "hyb_002_predeclared": "paper/input/results/hybrid/tech_llm_intratrade_shock_shield_v2_predeclared.json",
+    "frozen_tech_lifecycle": "paper/input/results/hybrid/tech_llm_conditional_overlay_v1_predeclared.json",
+    "frozen_tech_result": "D:/projects/auto-trading/results/technical_bybit_lifecycle_1x_candidate_hardened.json"
+  },
+  "next_authorized_action": "Materialize Stage A panel/schema audit and Stage B power analysis only; do not evaluate HYB-003 performance yet."
+}

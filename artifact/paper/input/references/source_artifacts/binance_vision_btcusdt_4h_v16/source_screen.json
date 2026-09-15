@@ -1,0 +1,180 @@
+{
+  "checks": {
+    "august_is_first_available_2017_month": true,
+    "august_zip_and_checksum_available": true,
+    "january_through_july_absent": true,
+    "no_market_values_downloaded": true,
+    "no_outcomes_or_predictions_consulted": true
+  },
+  "first_available_month": "2017-08",
+  "market_values_downloaded": false,
+  "months": [
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-01.zip.CHECKSUM",
+      "month": "2017-01",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-01.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-02.zip.CHECKSUM",
+      "month": "2017-02",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-02.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-03.zip.CHECKSUM",
+      "month": "2017-03",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-03.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-04.zip.CHECKSUM",
+      "month": "2017-04",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-04.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-05.zip.CHECKSUM",
+      "month": "2017-05",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-05.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-06.zip.CHECKSUM",
+      "month": "2017-06",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-06.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-07.zip.CHECKSUM",
+      "month": "2017-07",
+      "zip_head": {
+        "content_length": 0,
+        "status": 404
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-07.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 88,
+        "status": 200
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-08.zip.CHECKSUM",
+      "month": "2017-08",
+      "zip_head": {
+        "content_length": 5863,
+        "status": 200
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-08.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 88,
+        "status": 200
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-09.zip.CHECKSUM",
+      "month": "2017-09",
+      "zip_head": {
+        "content_length": 11719,
+        "status": 200
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-09.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 88,
+        "status": 200
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-10.zip.CHECKSUM",
+      "month": "2017-10",
+      "zip_head": {
+        "content_length": 12093,
+        "status": 200
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-10.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 88,
+        "status": 200
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-11.zip.CHECKSUM",
+      "month": "2017-11",
+      "zip_head": {
+        "content_length": 12108,
+        "status": 200
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-11.zip"
+    },
+    {
+      "checksum_head": {
+        "content_length": 88,
+        "status": 200
+      },
+      "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-12.zip.CHECKSUM",
+      "month": "2017-12",
+      "zip_head": {
+        "content_length": 12440,
+        "status": 200
+      },
+      "zip_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-2017-12.zip"
+    }
+  ],
+  "schema_version": "binance-vision-btcusdt-4h-source-screen-v16",
+  "screened_at": "2026-09-09T08:54:49.715429+00:00",
+  "selection_uses_outcomes": false,
+  "source": {
+    "documentation": "https://github.com/binance/binance-public-data/blob/master/README.md",
+    "interval": "4h",
+    "market": "spot",
+    "publisher": "Binance Vision",
+    "symbol": "BTCUSDT"
+  },
+  "status": "SOURCE_START_SCREEN_PASS"
+}

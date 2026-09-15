@@ -1,0 +1,54 @@
+{
+  "schema_version": "cftc-rss-archive-corpus-intake-v15",
+  "experiment_id": "cftc-rss-internet-archive-v15-outcome-blind-corpus",
+  "frozen_at": "2026-09-08T11:16:33.4545651Z",
+  "status": "FROZEN_BEFORE_FULL_SNAPSHOT_DOWNLOAD",
+  "source_screen": {
+    "path": "paper/input/references/source_artifacts/cftc_rss_internet_archive_v15/source_screen.json",
+    "sha256": "b28bfe228a3954c429eb71befbe9ac677a96316537a74c4f4d38756037515c44",
+    "decision": "SOURCE_SCREEN_PASS_FULL_OUTCOME_BLIND_CORPUS_AUDIT_REQUIRED"
+  },
+  "sources": [
+    {
+      "id": "general",
+      "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+      "cdx_rows": 113
+    },
+    {
+      "id": "enforcement",
+      "url": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml",
+      "cdx_rows": 106
+    }
+  ],
+  "information_time": "archive_capture_at",
+  "publisher_pubdate_role": "provenance only; explicit UTC offset required; never used as information time",
+  "corpus_contract": {
+    "plain_text_fields": [
+      "title",
+      "description"
+    ],
+    "required_fields": [
+      "title",
+      "description",
+      "link",
+      "pubDate"
+    ],
+    "deduplicate": "canonical link plus first archived availability",
+    "third_party_content": "exclude",
+    "manual_filtering": false,
+    "keyword_filtering": false
+  },
+  "gates": [
+    "every pinned snapshot downloaded or explicitly failed",
+    "XML parses",
+    "every admitted pubDate has explicit offset and is not after archive capture",
+    "text reconstructs from raw XML",
+    "all records CFTC-authored plain text",
+    "no market/outcome/price feature fields"
+  ],
+  "market_data_accessed": false,
+  "outcomes_consulted": false,
+  "model_run": false,
+  "trading_backtest_consulted": false,
+  "downstream_authorization": "None until corpus audit and a separate predictive protocol are frozen."
+}

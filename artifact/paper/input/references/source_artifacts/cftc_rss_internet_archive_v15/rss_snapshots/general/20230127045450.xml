@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Approves Technical Corrections to Swap Dealer Regulations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8650-23</link>
+  <description/>
+  <pubDate>Wed, 25 Jan 2023 14:00:00 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8650-23</guid>
+    </item>
+<item>
+  <title>Commissioner Pham Announces CFTC Global Markets Advisory Committee Meeting and Leadership</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8649-23</link>
+  <description/>
+  <pubDate>Wed, 18 Jan 2023 18:08:57 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8649-23</guid>
+    </item>
+<item>
+  <title>Commissioner Pham Announces Members of the CFTC’s Global Markets Advisory Committee</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8648-23</link>
+  <description/>
+  <pubDate>Thu, 12 Jan 2023 18:53:43 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8648-23</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Regarding Investments of Customer Funds in Securities Benchmarked to SOFR</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8645-22</link>
+  <description/>
+  <pubDate>Fri, 23 Dec 2022 15:15:00 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8645-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Extends No-Action Letter Regarding Daily Reporting Requirements for Derivatives Clearing Organizations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8641-22</link>
+  <description/>
+  <pubDate>Mon, 19 Dec 2022 19:15:39 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8641-22</guid>
+    </item>
+<item>
+  <title>CFTC Grants TeraExchange, LLC Reinstatement of its Swap Execution Facility Registration </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8636-22</link>
+  <description/>
+  <pubDate>Tue, 06 Dec 2022 17:00:15 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8636-22</guid>
+    </item>
+<item>
+  <title>CFTC Grants SpectrAxe LLC Registration as a Swap Execution Facility</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8635-22</link>
+  <description/>
+  <pubDate>Mon, 05 Dec 2022 18:06:25 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8635-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Supplementing Staff Letters Regarding Swaps Trading on Certain Financial Markets Licensed in Australia </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8633-22</link>
+  <description/>
+  <pubDate>Fri, 02 Dec 2022 19:32:37 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8633-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Regarding Certain Swap Reporting Obligations for Counterparties Clearing Swaps Through DCOs Acting Consistent with Exemptive Orders or No Action Letters</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8632-22</link>
+  <description/>
+  <pubDate>Fri, 02 Dec 2022 19:00:00 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8632-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Advisory on Non-U.S. Swap Dealer Chief Compliance Officer Annual Reports </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8631-22</link>
+  <description/>
+  <pubDate>Fri, 02 Dec 2022 16:08:47 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8631-22</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,5037 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-predictive-gate-v3.1.1-development",
+  "status": "development-paired-oos-prediction-panel",
+  "target": {
+    "field": "h24_return",
+    "asset": "BTCUSDT",
+    "execution_delay_hours": 4,
+    "role": "single primary predictive target"
+  },
+  "feature_names": {
+    "market": [
+      "btc_return_24h",
+      "btc_return_72h",
+      "btc_return_168h",
+      "btc_realized_vol_daily_7d",
+      "btc_volume_zscore_30d",
+      "btc_funding_latest",
+      "btc_funding_24h",
+      "btc_funding_72h",
+      "cross_asset_mean_return_24h",
+      "cross_asset_breadth_24h",
+      "cross_asset_dispersion_24h"
+    ],
+    "metadata": [
+      "btc_return_24h",
+      "btc_return_72h",
+      "btc_return_168h",
+      "btc_realized_vol_daily_7d",
+      "btc_volume_zscore_30d",
+      "btc_funding_latest",
+      "btc_funding_24h",
+      "btc_funding_72h",
+      "cross_asset_mean_return_24h",
+      "cross_asset_breadth_24h",
+      "cross_asset_dispersion_24h",
+      "meta_article_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_count_mean",
+      "meta_exact_recurrence_30d_fraction",
+      "meta_token_novelty_30d_fraction",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co",
+      "meta_coin_type_fraction::Bitcoin",
+      "meta_coin_type_fraction::Ethereum",
+      "meta_coin_type_fraction::Solana",
+      "meta_coin_type_fraction::Ripple",
+      "meta_coin_type_fraction::Polygon",
+      "meta_coin_type_fraction::Terra",
+      "meta_coin_type_fraction::Dogecoin",
+      "meta_coin_type_fraction::Chainlink",
+      "meta_coin_type_fraction::Avalanche",
+      "meta_coin_type_fraction::Uniswap",
+      "meta_coin_type_fraction::Cardano",
+      "meta_coin_type_fraction::Shiba Inu",
+      "meta_coin_type_fraction::Litecoin",
+      "meta_coin_type_fraction::Polkadot",
+      "meta_coin_type_fraction::XRP",
+      "meta_coin_type_fraction::Binance Coin",
+      "meta_coin_type_fraction::VeChain"
+    ],
+    "event": [
+      "btc_return_24h",
+      "btc_return_72h",
+      "btc_return_168h",
+      "btc_realized_vol_daily_7d",
+      "btc_volume_zscore_30d",
+      "btc_funding_latest",
+      "btc_funding_24h",
+      "btc_funding_72h",
+      "cross_asset_mean_return_24h",
+      "cross_asset_breadth_24h",
+      "cross_asset_dispersion_24h",
+      "meta_article_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_count_mean",
+      "meta_exact_recurrence_30d_fraction",
+      "meta_token_novelty_30d_fraction",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co",
+      "meta_coin_type_fraction::Bitcoin",
+      "meta_coin_type_fraction::Ethereum",
+      "meta_coin_type_fraction::Solana",
+      "meta_coin_type_fraction::Ripple",
+      "meta_coin_type_fraction::Polygon",
+      "meta_coin_type_fraction::Terra",
+      "meta_coin_type_fraction::Dogecoin",
+      "meta_coin_type_fraction::Chainlink",
+      "meta_coin_type_fraction::Avalanche",
+      "meta_coin_type_fraction::Uniswap",
+      "meta_coin_type_fraction::Cardano",
+      "meta_coin_type_fraction::Shiba Inu",
+      "meta_coin_type_fraction::Litecoin",
+      "meta_coin_type_fraction::Polkadot",
+      "meta_coin_type_fraction::XRP",
+      "meta_coin_type_fraction::Binance Coin",
+      "meta_coin_type_fraction::VeChain",
+      "event_relevance_fraction::direct",
+      "event_relevance_fraction::systemic",
+      "event_relevance_fraction::indirect",
+      "event_relevance_fraction::none",
+      "event_type_fraction::macro_liquidity",
+      "event_type_fraction::regulation",
+      "event_type_fraction::etf_institutional_flow",
+      "event_type_fraction::exchange_security",
+      "event_type_fraction::liquidation_leverage",
+      "event_type_fraction::network_protocol",
+      "event_type_fraction::fraud_legal",
+      "event_type_fraction::adoption_business",
+      "event_type_fraction::market_commentary",
+      "event_type_fraction::other",
+      "event_direction_fraction::positive",
+      "event_direction_fraction::negative",
+      "event_direction_fraction::mixed",
+      "event_direction_fraction::unclear",
+      "event_horizon_fraction::4h",
+      "event_horizon_fraction::12h",
+      "event_horizon_fraction::24h",
+      "event_horizon_fraction::72h",
+      "event_horizon_fraction::unknown",
+      "event_severity_mean",
+      "event_severity_max",
+      "event_reported_surprise_mean",
+      "event_reported_surprise_max",
+      "event_confidence_mean",
+      "event_confidence_max",
+      "event_affected_asset_count_mean",
+      "event_evidence_fallback_fraction",
+      "event_high_severity_fraction",
+      "event_directional_severity_mean"
+    ]
+  },
+  "deduplicated_repeated_headlines": 1,
+  "records": [
+    {
+      "information_date": "2023-09-15",
+      "target": -0.00332664245923453,
+      "market_prediction": -0.001021456077572086,
+      "metadata_prediction": 0.0029260566774545397,
+      "event_prediction": 0.0008847501980602403
+    },
+    {
+      "information_date": "2023-09-16",
+      "target": 0.004985875866022393,
+      "market_prediction": 0.0013354250388507567,
+      "metadata_prediction": -0.026593804264463956,
+      "event_prediction": -0.010402376729473308
+    },
+    {
+      "information_date": "2023-09-17",
+      "target": 0.006038180514952973,
+      "market_prediction": 0.001791509347547007,
+      "metadata_prediction": 0.0028713430761835614,
+      "event_prediction": -0.0008747342081098431
+    },
+    {
+      "information_date": "2023-09-18",
+      "target": 0.011287675320799773,
+      "market_prediction": -0.005145740006277682,
+      "metadata_prediction": -0.0009058294261221877,
+      "event_prediction": -0.004013042162589422
+    },
+    {
+      "information_date": "2023-09-19",
+      "target": -0.0031685023570116044,
+      "market_prediction": -0.006685965203060642,
+      "metadata_prediction": 0.0034196943276886627,
+      "event_prediction": 0.014165536369120471
+    },
+    {
+      "information_date": "2023-09-20",
+      "target": -0.015197208479650115,
+      "market_prediction": -0.004483076871594466,
+      "metadata_prediction": -0.0046782142521309515,
+      "event_prediction": -0.004205594705867361
+    },
+    {
+      "information_date": "2023-09-21",
+      "target": -0.0036296685954759766,
+      "market_prediction": 0.003054983266094385,
+      "metadata_prediction": 0.003867599261905616,
+      "event_prediction": 0.010194434797425168
+    },
+    {
+      "information_date": "2023-09-22",
+      "target": 0.0014594190984031918,
+      "market_prediction": -0.0014442656201394963,
+      "metadata_prediction": 0.007333179314270627,
+      "event_prediction": 0.011546827468082941
+    },
+    {
+      "information_date": "2023-09-23",
+      "target": -0.01556704485974969,
+      "market_prediction": -0.0013860132490932466,
+      "metadata_prediction": 0.00040860278259472843,
+      "event_prediction": 0.0006000314855602291
+    },
+    {
+      "information_date": "2023-09-24",
+      "target": 0.0075126134637966135,
+      "market_prediction": 0.0009121679319762378,
+      "metadata_prediction": -0.010706693934184748,
+      "event_prediction": -0.008276716878847706
+    },
+    {
+      "information_date": "2023-09-25",
+      "target": -0.0027297819591405315,
+      "market_prediction": 0.00035617615997457345,
+      "metadata_prediction": 0.003959945657885436,
+      "event_prediction": 0.005510456472905486
+    },
+    {
+      "information_date": "2023-09-26",
+      "target": 0.0037803800938052134,
+      "market_prediction": -0.00896089492069608,
+      "metadata_prediction": -0.008179504309596915,
+      "event_prediction": -0.015120019526875294
+    },
+    {
+      "information_date": "2023-09-27",
+      "target": 0.021834524870574468,
+      "market_prediction": -0.009566030369494745,
+      "metadata_prediction": -0.0028297692049867283,
+      "event_prediction": -0.0047583543109648505
+    },
+    {
+      "information_date": "2023-09-28",
+      "target": -0.0015700276889043518,
+      "market_prediction": 5.095181094506146e-05,
+      "metadata_prediction": 0.003614355387549745,
+      "event_prediction": -0.0006102451561800557
+    },
+    {
+      "information_date": "2023-09-29",
+      "target": 0.0051338480812195275,
+      "market_prediction": -0.0035672009821293817,
+      "metadata_prediction": -0.0038468657813353,
+      "event_prediction": -0.00636951122902292
+    },
+    {
+      "information_date": "2023-09-30",
+      "target": 0.03971817442118497,
+      "market_prediction": -0.004014033982083095,
+      "metadata_prediction": -0.003559457952824716,
+      "event_prediction": -0.0032853572629919616
+    },
+    {
+      "information_date": "2023-10-01",
+      "target": -0.01845126085394444,
+      "market_prediction": 0.0012845915919399084,
+      "metadata_prediction": -0.004104691589852297,
+      "event_prediction": -0.01957005736461863
+    },
+    {
+      "information_date": "2023-10-02",
+      "target": -0.006331270023049229,
+      "market_prediction": -0.002293583940069536,
+      "metadata_prediction": -0.0009354310095335353,
+      "event_prediction": 0.0071443405185148195
+    },
+    {
+      "information_date": "2023-10-03",
+      "target": 0.008078487152834768,
+      "market_prediction": 0.0014667684821282126,
+      "metadata_prediction": 0.0006176937308442652,
+      "event_prediction": 0.004433274699716474
+    },
+    {
+      "information_date": "2023-10-04",
+      "target": -0.0033646888567293587,
+      "market_prediction": 0.004091336959052831,
+      "metadata_prediction": 0.011114468183606318,
+      "event_prediction": 0.010342201190197796
+    },
+    {
+      "information_date": "2023-10-05",
+      "target": 0.012367952953134642,
+      "market_prediction": 0.0016351655266123814,
+      "metadata_prediction": 0.0082971429289788,
+      "event_prediction": 0.007695741010478698
+    },
+    {
+      "information_date": "2023-10-06",
+      "target": 0.005669165976398105,
+      "market_prediction": -0.00491403092548352,
+      "metadata_prediction": -0.0009980287106362688,
+      "event_prediction": -7.105873000031837e-06
+    },
+    {
+      "information_date": "2023-10-07",
+      "target": -0.004934785244136264,
+      "market_prediction": 0.0031888524786401326,
+      "metadata_prediction": 0.017436096425953992,
+      "event_prediction": -0.012142354110412834
+    },
+    {
+      "information_date": "2023-10-08",
+      "target": -0.010284010692504508,
+      "market_prediction": 0.002089302771054531,
+      "metadata_prediction": 0.007950604570235898,
+      "event_prediction": -0.0029310407320554755
+    },
+    {
+      "information_date": "2023-10-09",
+      "target": -0.022624581830820722,
+      "market_prediction": -0.002196274409058773,
+      "metadata_prediction": 0.0006011722087197013,
+      "event_prediction": 0.006947522420743969
+    },
+    {
+      "information_date": "2023-10-10",
+      "target": -0.005926913744883411,
+      "market_prediction": -0.0013022175684535148,
+      "metadata_prediction": 0.002820936105957533,
+      "event_prediction": 0.003306501041017376
+    },
+    {
+      "information_date": "2023-10-11",
+      "target": -0.002440796705856063,
+      "market_prediction": -0.0020378542475469465,
+      "metadata_prediction": 0.0047030951646414975,
+      "event_prediction": 0.012478322131543937
+    },
+    {
+      "information_date": "2023-10-12",
+      "target": 0.0055024280911468715,
+      "market_prediction": 0.002222876540468233,
+      "metadata_prediction": 0.004466678872332267,
+      "event_prediction": 0.006334122551112763
+    },
+    {
+      "information_date": "2023-10-13",
+      "target": -0.0018538263495966323,
+      "market_prediction": -0.002939586853370618,
+      "metadata_prediction": -0.0038077817192010577,
+      "event_prediction": -0.008626031780065048
+    },
+    {
+      "information_date": "2023-10-14",
+      "target": 0.013168375056760162,
+      "market_prediction": -0.0022691578375330975,
+      "metadata_prediction": 0.0023092715149253544,
+      "event_prediction": 0.0009823178428620188
+    },
+    {
+      "information_date": "2023-10-15",
+      "target": 0.03810265528338208,
+      "market_prediction": -0.0007931127469954889,
+      "metadata_prediction": 0.004576994574276264,
+      "event_prediction": 0.018688504303620467
+    },
+    {
+      "information_date": "2023-10-16",
+      "target": 0.008510743708065593,
+      "market_prediction": -0.00023671903585945596,
+      "metadata_prediction": -0.001169676035544816,
+      "event_prediction": 0.0009257095599973008
+    },
+    {
+      "information_date": "2023-10-17",
+      "target": -0.008926660327240765,
+      "market_prediction": 0.004441412336322644,
+      "metadata_prediction": 0.008540559663981205,
+      "event_prediction": 0.011245314326829037
+    },
+    {
+      "information_date": "2023-10-18",
+      "target": 0.03464037246189533,
+      "market_prediction": 0.00023137691644409383,
+      "metadata_prediction": 0.0010115583314148154,
+      "event_prediction": -0.0046430387495843715
+    },
+    {
+      "information_date": "2023-10-19",
+      "target": 0.012562066050939347,
+      "market_prediction": -0.002082145425111092,
+      "metadata_prediction": -0.005121479775270629,
+      "event_prediction": -0.008059560605085113
+    },
+    {
+      "information_date": "2023-10-20",
+      "target": 0.010266982088543486,
+      "market_prediction": -0.005029224852973514,
+      "metadata_prediction": -0.0027586463722501717,
+      "event_prediction": -0.012270852035798209
+    },
+    {
+      "information_date": "2023-10-21",
+      "target": 0.027795061183255365,
+      "market_prediction": 0.0005986329777012855,
+      "metadata_prediction": 0.009596365755553098,
+      "event_prediction": 0.011280450987638899
+    },
+    {
+      "information_date": "2023-10-22",
+      "target": 0.10894492053624605,
+      "market_prediction": 0.0009649527306459277,
+      "metadata_prediction": -0.013235292729489605,
+      "event_prediction": 0.014572572050595606
+    },
+    {
+      "information_date": "2023-10-23",
+      "target": -0.0014087814040855129,
+      "market_prediction": 0.004663052076763634,
+      "metadata_prediction": 0.007602111664463294,
+      "event_prediction": 0.010658088477778526
+    },
+    {
+      "information_date": "2023-10-24",
+      "target": 0.022942628732659287,
+      "market_prediction": 0.0055266168416673285,
+      "metadata_prediction": 0.008653049150790794,
+      "event_prediction": 0.013272410355644504
+    },
+    {
+      "information_date": "2023-10-25",
+      "target": -0.019330778115536296,
+      "market_prediction": -0.006237652818369517,
+      "metadata_prediction": -0.004125627652196938,
+      "event_prediction": -0.0030961564866051634
+    },
+    {
+      "information_date": "2023-10-26",
+      "target": -0.0013945938977729666,
+      "market_prediction": -0.0006600699348164172,
+      "metadata_prediction": 0.006682290720660755,
+      "event_prediction": 0.008867735736834028
+    },
+    {
+      "information_date": "2023-10-27",
+      "target": -0.0027637439048003865,
+      "market_prediction": 0.0019450088960986222,
+      "metadata_prediction": 0.012408120744530399,
+      "event_prediction": 0.0062100978210522274
+    },
+    {
+      "information_date": "2023-10-28",
+      "target": 0.008779052662547748,
+      "market_prediction": 0.00030788138038586276,
+      "metadata_prediction": 0.009193198250946702,
+      "event_prediction": 0.004819441176358261
+    },
+    {
+      "information_date": "2023-10-29",
+      "target": -0.0018898519615964116,
+      "market_prediction": 0.0032801228572256693,
+      "metadata_prediction": 0.01888016990893595,
+      "event_prediction": 0.0414992650570215
+    },
+    {
+      "information_date": "2023-10-30",
+      "target": 0.006463376149791422,
+      "market_prediction": -0.005152584420254995,
+      "metadata_prediction": 0.007882713705107281,
+      "event_prediction": -0.010486248585571031
+    },
+    {
+      "information_date": "2023-10-31",
+      "target": 0.03358997584541057,
+      "market_prediction": -0.002743621978975553,
+      "metadata_prediction": 0.0027870036815503623,
+      "event_prediction": 0.010131379723671305
+    },
+    {
+      "information_date": "2023-11-01",
+      "target": -0.025588593835143114,
+      "market_prediction": -0.0008542571343240452,
+      "metadata_prediction": 0.005243481095629811,
+      "event_prediction": -0.010609028699784404
+    },
+    {
+      "information_date": "2023-11-02",
+      "target": 0.0007725391169992601,
+      "market_prediction": 0.001869428418605604,
+      "metadata_prediction": 0.0026244967249582267,
+      "event_prediction": -0.005664143537144464
+    },
+    {
+      "information_date": "2023-11-03",
+      "target": 0.01669182201534669,
+      "market_prediction": -0.001622160437931138,
+      "metadata_prediction": 0.006138682776808507,
+      "event_prediction": 0.010606283828901913
+    },
+    {
+      "information_date": "2023-11-04",
+      "target": -0.008473783965254889,
+      "market_prediction": -0.0014287732201886194,
+      "metadata_prediction": -9.329199180134679e-05,
+      "event_prediction": -0.010162492353319617
+    },
+    {
+      "information_date": "2023-11-05",
+      "target": -0.001685810617749639,
+      "market_prediction": -0.001022698486452001,
+      "metadata_prediction": -0.003437459227572378,
+      "event_prediction": -0.004925656336710414
+    },
+    {
+      "information_date": "2023-11-06",
+      "target": 0.01029794785197069,
+      "market_prediction": -0.000936977186036729,
+      "metadata_prediction": 0.01003608815511159,
+      "event_prediction": -0.006548180875825953
+    },
+    {
+      "information_date": "2023-11-07",
+      "target": 0.03293879678629286,
+      "market_prediction": 0.002228687903331197,
+      "metadata_prediction": 0.010312177850049366,
+      "event_prediction": 0.008186165313287598
+    },
+    {
+      "information_date": "2023-11-08",
+      "target": 0.008532287481315848,
+      "market_prediction": 3.0401927118495686e-06,
+      "metadata_prediction": 0.009029512521948066,
+      "event_prediction": 0.012646840568395512
+    },
+    {
+      "information_date": "2023-11-09",
+      "target": 0.00793525614180135,
+      "market_prediction": 0.002999918472125815,
+      "metadata_prediction": 0.007656171865777392,
+      "event_prediction": -0.002808489321173885
+    },
+    {
+      "information_date": "2023-11-10",
+      "target": -0.00136249338988359,
+      "market_prediction": -0.0007593928689195027,
+      "metadata_prediction": 0.005903521016824565,
+      "event_prediction": -0.0005087242329732514
+    },
+    {
+      "information_date": "2023-11-11",
+      "target": -0.001799324037726313,
+      "market_prediction": 0.00152833865435318,
+      "metadata_prediction": -0.0004338815664752053,
+      "event_prediction": -0.015086823562007674
+    },
+    {
+      "information_date": "2023-11-12",
+      "target": -0.012728940951030276,
+      "market_prediction": 0.0015567763599547949,
+      "metadata_prediction": -0.0011042494946904642,
+      "event_prediction": -0.013738010283653441
+    },
+    {
+      "information_date": "2023-11-13",
+      "target": -0.02941853770869307,
+      "market_prediction": 0.005699551928129734,
+      "metadata_prediction": 0.017083919878856803,
+      "event_prediction": 0.01848144227997215
+    },
+    {
+      "information_date": "2023-11-14",
+      "target": 0.058846624241962076,
+      "market_prediction": -0.0009743107274353145,
+      "metadata_prediction": 0.0063284710511677,
+      "event_prediction": 0.016197920015585746
+    },
+    {
+      "information_date": "2023-11-15",
+      "target": -0.026086167848844877,
+      "market_prediction": 0.0037516981364921044,
+      "metadata_prediction": 0.009216974969240063,
+      "event_prediction": 0.0020557471106196273
+    },
+    {
+      "information_date": "2023-11-16",
+      "target": -0.0030512689882605804,
+      "market_prediction": 0.0018479833244502523,
+      "metadata_prediction": 0.009851910297336395,
+      "event_prediction": 0.004812193546861178
+    },
+    {
+      "information_date": "2023-11-17",
+      "target": 0.0039287872960052095,
+      "market_prediction": 0.0025871068224114983,
+      "metadata_prediction": 0.004433904202689171,
+      "event_prediction": 0.001480689027693576
+    },
+    {
+      "information_date": "2023-11-18",
+      "target": 0.01651295804712527,
+      "market_prediction": 0.0015047357114166063,
+      "metadata_prediction": -0.009120482557989433,
+      "event_prediction": -0.019181535984309578
+    },
+    {
+      "information_date": "2023-11-19",
+      "target": 0.009102314211563378,
+      "market_prediction": -9.974899863087058e-05,
+      "metadata_prediction": -0.013077327955428479,
+      "event_prediction": -0.01544448286239136
+    },
+    {
+      "information_date": "2023-11-20",
+      "target": -0.02908557326752481,
+      "market_prediction": 0.0034020670832570197,
+      "metadata_prediction": 0.00824046234316819,
+      "event_prediction": -0.002525953693670146
+    },
+    {
+      "information_date": "2023-11-21",
+      "target": 0.025329533994828513,
+      "market_prediction": 6.539151222043668e-05,
+      "metadata_prediction": 0.007313245832831846,
+      "event_prediction": -0.0019306853811123376
+    },
+    {
+      "information_date": "2023-11-22",
+      "target": 2.9479472906990267e-05,
+      "market_prediction": 0.00188605869905069,
+      "metadata_prediction": 0.0073883429647045445,
+      "event_prediction": -0.0011419660312360887
+    },
+    {
+      "information_date": "2023-11-23",
+      "target": 0.013278771117399835,
+      "market_prediction": -0.0020223836877680495,
+      "metadata_prediction": 0.011274878502902175,
+      "event_prediction": 0.016400480102365878
+    },
+    {
+      "information_date": "2023-11-24",
+      "target": -0.001914801894701612,
+      "market_prediction": 0.00030700185199192883,
+      "metadata_prediction": 0.004827536013975533,
+      "event_prediction": -0.0003691542880223617
+    },
+    {
+      "information_date": "2023-11-25",
+      "target": -0.011248519408664448,
+      "market_prediction": -9.193443276921543e-05,
+      "metadata_prediction": -0.0008784782462409241,
+      "event_prediction": -0.011172159743600049
+    },
+    {
+      "information_date": "2023-11-26",
+      "target": -0.004526475459481483,
+      "market_prediction": 0.0030092147211987653,
+      "metadata_prediction": -0.002285762195042574,
+      "event_prediction": 0.009291050842265386
+    },
+    {
+      "information_date": "2023-11-27",
+      "target": 0.02170149872526239,
+      "market_prediction": 0.0036430000284891316,
+      "metadata_prediction": 0.014819540182628866,
+      "event_prediction": 0.015032774754422063
+    },
+    {
+      "information_date": "2023-11-28",
+      "target": 0.0027034860741481648,
+      "market_prediction": -0.0008666939974757479,
+      "metadata_prediction": 0.00487306629645468,
+      "event_prediction": 0.008671483123964773
+    },
+    {
+      "information_date": "2023-11-29",
+      "target": -0.0001445329745412005,
+      "market_prediction": 0.0006929163378754491,
+      "metadata_prediction": 0.0048327474226822755,
+      "event_prediction": -0.00573283901214294
+    },
+    {
+      "information_date": "2023-11-30",
+      "target": 0.01941752676217745,
+      "market_prediction": 0.0012302327460625277,
+      "metadata_prediction": 0.010155841338572053,
+      "event_prediction": 0.0197597872393224
+    },
+    {
+      "information_date": "2023-12-01",
+      "target": 0.015600628047098386,
+      "market_prediction": 0.0007524105335047735,
+      "metadata_prediction": 0.006409337439858488,
+      "event_prediction": -0.008112769189947933
+    },
+    {
+      "information_date": "2023-12-02",
+      "target": 0.03441815597075548,
+      "market_prediction": -0.0012021934063985293,
+      "metadata_prediction": 0.010172317910941635,
+      "event_prediction": 0.006184093760345024
+    },
+    {
+      "information_date": "2023-12-03",
+      "target": 0.027046858971527366,
+      "market_prediction": 0.0016698091645442814,
+      "metadata_prediction": 0.0021298366384400864,
+      "event_prediction": -0.024240626040828783
+    },
+    {
+      "information_date": "2023-12-04",
+      "target": 0.045780276655380314,
+      "market_prediction": 0.009719928295093794,
+      "metadata_prediction": 0.008527076328705434,
+      "event_prediction": 0.008372697958876801
+    },
+    {
+      "information_date": "2023-12-05",
+      "target": 0.004412120879773607,
+      "market_prediction": 0.0028323101730054123,
+      "metadata_prediction": 0.011595729188434314,
+      "event_prediction": 0.009012035111892034
+    },
+    {
+      "information_date": "2023-12-06",
+      "target": -0.012313774912475095,
+      "market_prediction": 0.00010495680078362085,
+      "metadata_prediction": 0.00608813637474491,
+      "event_prediction": 0.009546177813050514
+    },
+    {
+      "information_date": "2023-12-07",
+      "target": 0.017799233490566113,
+      "market_prediction": -0.006193091383836816,
+      "metadata_prediction": -0.0014673356010683216,
+      "event_prediction": -0.0055614450883249514
+    },
+    {
+      "information_date": "2023-12-08",
+      "target": -0.0068747963358558595,
+      "market_prediction": 0.0071020135166965205,
+      "metadata_prediction": 0.015931678805414445,
+      "event_prediction": 0.018017543911542526
+    },
+    {
+      "information_date": "2023-12-09",
+      "target": -0.03501296523312347,
+      "market_prediction": 0.0032164798602924557,
+      "metadata_prediction": 0.008471524453935342,
+      "event_prediction": 0.0011799986453650156
+    },
+    {
+      "information_date": "2023-12-10",
+      "target": -0.013742621015348289,
+      "market_prediction": -0.0035758212406894092,
+      "metadata_prediction": 0.006613801461395024,
+      "event_prediction": 0.012976052202855764
+    },
+    {
+      "information_date": "2023-12-11",
+      "target": -0.021739130434782594,
+      "market_prediction": -0.00988275782580165,
+      "metadata_prediction": -0.005056474087941676,
+      "event_prediction": 0.009801657262526211
+    },
+    {
+      "information_date": "2023-12-12",
+      "target": 0.04616984826235937,
+      "market_prediction": -0.0010222248326092458,
+      "metadata_prediction": 0.006917100878633662,
+      "event_prediction": 0.011515128131961382
+    },
+    {
+      "information_date": "2023-12-13",
+      "target": 0.0018948919794603558,
+      "market_prediction": 0.0051948917629280784,
+      "metadata_prediction": 0.012013767883225597,
+      "event_prediction": 0.008629408011831197
+    },
+    {
+      "information_date": "2023-12-14",
+      "target": -0.01091588348607786,
+      "market_prediction": -0.007233213077874894,
+      "metadata_prediction": -0.003544260945120229,
+      "event_prediction": 0.0022726410808950846
+    },
+    {
+      "information_date": "2023-12-15",
+      "target": -0.00965297450424929,
+      "market_prediction": 0.001292620661843007,
+      "metadata_prediction": 0.01143071861249709,
+      "event_prediction": 0.02353740885343255
+    },
+    {
+      "information_date": "2023-12-16",
+      "target": -0.020109127055071174,
+      "market_prediction": 0.00041401149949217466,
+      "metadata_prediction": 0.012234218777548931,
+      "event_prediction": 0.007987923760398944
+    },
+    {
+      "information_date": "2023-12-17",
+      "target": 0.04861886517058922,
+      "market_prediction": -0.0005663192080140402,
+      "metadata_prediction": -0.0056212554644029826,
+      "event_prediction": -0.009495735117627033
+    },
+    {
+      "information_date": "2023-12-18",
+      "target": -0.015308738206425532,
+      "market_prediction": 0.003067926242079411,
+      "metadata_prediction": 0.006780176349764221,
+      "event_prediction": 0.008586148945121224
+    },
+    {
+      "information_date": "2023-12-19",
+      "target": 0.02902733342442909,
+      "market_prediction": 0.005263613384579298,
+      "metadata_prediction": 0.015031081812219974,
+      "event_prediction": 0.012536505004395857
+    },
+    {
+      "information_date": "2023-12-20",
+      "target": 0.008345105006376086,
+      "market_prediction": -0.0014802647151910646,
+      "metadata_prediction": 0.004220092512365463,
+      "event_prediction": -0.0013573283399155355
+    },
+    {
+      "information_date": "2023-12-21",
+      "target": -0.01127539575140557,
+      "market_prediction": -0.0025507859645353716,
+      "metadata_prediction": 0.009267181222512962,
+      "event_prediction": 0.01298857782886222
+    },
+    {
+      "information_date": "2023-12-22",
+      "target": 0.007419705967455448,
+      "market_prediction": 0.002833305391028283,
+      "metadata_prediction": 0.014116947934836793,
+      "event_prediction": 0.003973018720777084
+    },
+    {
+      "information_date": "2023-12-23",
+      "target": -0.015723980095419865,
+      "market_prediction": -0.0015595264119589898,
+      "metadata_prediction": 0.0018747436062793517,
+      "event_prediction": 0.01965421358285766
+    },
+    {
+      "information_date": "2023-12-24",
+      "target": 0.007100591715976323,
+      "market_prediction": 0.0008758805516348744,
+      "metadata_prediction": 0.0033525344207868167,
+      "event_prediction": -0.012907297735133447
+    },
+    {
+      "information_date": "2023-12-25",
+      "target": -0.027887071960925325,
+      "market_prediction": -0.016325181819760837,
+      "metadata_prediction": -0.00558445518259275,
+      "event_prediction": -0.01559507237665777
+    },
+    {
+      "information_date": "2023-12-26",
+      "target": 0.02783547100540762,
+      "market_prediction": -0.001653216326050688,
+      "metadata_prediction": -0.0012443522487124142,
+      "event_prediction": 0.01639806243321654
+    },
+    {
+      "information_date": "2023-12-27",
+      "target": -0.016446452367198217,
+      "market_prediction": 0.009125007340111718,
+      "metadata_prediction": 0.01759768726503152,
+      "event_prediction": 0.031171682507557884
+    },
+    {
+      "information_date": "2023-12-28",
+      "target": -0.01697417837629145,
+      "market_prediction": -0.002162633558424731,
+      "metadata_prediction": 0.007142773963307376,
+      "event_prediction": 0.010836252494830693
+    },
+    {
+      "information_date": "2023-12-29",
+      "target": 0.0050083194279471055,
+      "market_prediction": -0.0018652235282712358,
+      "metadata_prediction": 0.003921343411865751,
+      "event_prediction": -0.0049818085848515855
+    },
+    {
+      "information_date": "2023-12-30",
+      "target": 0.0038748948970286357,
+      "market_prediction": 0.0033431125660052068,
+      "metadata_prediction": 0.014146462115336269,
+      "event_prediction": 0.02058840171884875
+    },
+    {
+      "information_date": "2023-12-31",
+      "target": 0.07196094761950822,
+      "market_prediction": 0.003018548538407796,
+      "metadata_prediction": -0.0022899924542096224,
+      "event_prediction": -0.010681222349509693
+    },
+    {
+      "information_date": "2024-01-01",
+      "target": -0.0027490365166251696,
+      "market_prediction": -0.0011207142598250218,
+      "metadata_prediction": -0.008948352357684446,
+      "event_prediction": -0.010335072925372104
+    },
+    {
+      "information_date": "2024-01-02",
+      "target": -0.04784458785412227,
+      "market_prediction": 0.00533974645724499,
+      "metadata_prediction": 0.007961740060116976,
+      "event_prediction": 0.003260218753451438
+    },
+    {
+      "information_date": "2024-01-03",
+      "target": 0.007663172729674983,
+      "market_prediction": 0.004502470441998672,
+      "metadata_prediction": 0.006405941398809341,
+      "event_prediction": 0.0066380332616497
+    },
+    {
+      "information_date": "2024-01-04",
+      "target": 0.010627530364372362,
+      "market_prediction": 0.0021752344297449114,
+      "metadata_prediction": 0.011338755559692836,
+      "event_prediction": -0.00012799565388367702
+    },
+    {
+      "information_date": "2024-01-05",
+      "target": 0.00024354713889018775,
+      "market_prediction": -0.0008972497850860828,
+      "metadata_prediction": 0.009320487622420636,
+      "event_prediction": 0.0033037014329752004
+    },
+    {
+      "information_date": "2024-01-06",
+      "target": -0.009489198925012543,
+      "market_prediction": 0.004600215209668035,
+      "metadata_prediction": 0.004191583111433879,
+      "event_prediction": -0.0007683886191319325
+    },
+    {
+      "information_date": "2024-01-07",
+      "target": 0.07860511812018545,
+      "market_prediction": 0.004812298324019874,
+      "metadata_prediction": 0.008544082174181256,
+      "event_prediction": 0.002794376493104952
+    },
+    {
+      "information_date": "2024-01-08",
+      "target": -0.017467816278019632,
+      "market_prediction": 0.005600033778333937,
+      "metadata_prediction": 0.002855654172154092,
+      "event_prediction": -0.0030168529882104254
+    },
+    {
+      "information_date": "2024-01-09",
+      "target": 0.008231246653414015,
+      "market_prediction": -0.00029855029007411704,
+      "metadata_prediction": 0.00011270235177146982,
+      "event_prediction": -0.008555965858497718
+    },
+    {
+      "information_date": "2024-01-10",
+      "target": -0.01104307141874239,
+      "market_prediction": -0.003770983670993269,
+      "metadata_prediction": -0.006101217799958813,
+      "event_prediction": -0.021050503124107993
+    },
+    {
+      "information_date": "2024-01-11",
+      "target": -0.07317285281942465,
+      "market_prediction": 0.0009648358584458762,
+      "metadata_prediction": -0.002493392342992588,
+      "event_prediction": -0.014415301717981917
+    },
+    {
+      "information_date": "2024-01-12",
+      "target": 0.0017546493516242823,
+      "market_prediction": -0.003979786706530427,
+      "metadata_prediction": 0.003006885614740639,
+      "event_prediction": -0.003268176754659979
+    },
+    {
+      "information_date": "2024-01-13",
+      "target": -0.0029973492192841844,
+      "market_prediction": -0.0013100845660825263,
+      "metadata_prediction": 0.003544349331064399,
+      "event_prediction": -0.016261256799805144
+    },
+    {
+      "information_date": "2024-01-14",
+      "target": 0.008030270290583452,
+      "market_prediction": 0.0031384883281828464,
+      "metadata_prediction": -0.00661906891992454,
+      "event_prediction": -0.012034009676790433
+    },
+    {
+      "information_date": "2024-01-15",
+      "target": -0.0018057565187810098,
+      "market_prediction": -0.0020871079466175703,
+      "metadata_prediction": 0.0006568739139593058,
+      "event_prediction": -0.003262780121664863
+    },
+    {
+      "information_date": "2024-01-16",
+      "target": -0.005753860805587152,
+      "market_prediction": 0.0007576208325338613,
+      "metadata_prediction": 0.007318310368672523,
+      "event_prediction": 0.00814633879590214
+    },
+    {
+      "information_date": "2024-01-17",
+      "target": -0.03612220414468614,
+      "market_prediction": -0.0068207520096927,
+      "metadata_prediction": -0.0030209040389320603,
+      "event_prediction": -0.0061396466945017455
+    },
+    {
+      "information_date": "2024-01-18",
+      "target": 0.014229449260395155,
+      "market_prediction": 0.0017432269990905816,
+      "metadata_prediction": 0.011101480282456135,
+      "event_prediction": 0.01798794652407914
+    },
+    {
+      "information_date": "2024-01-19",
+      "target": 0.0009654201859272682,
+      "market_prediction": 0.0036375046276132016,
+      "metadata_prediction": 0.013032282375577594,
+      "event_prediction": 0.01767409374949421
+    },
+    {
+      "information_date": "2024-01-20",
+      "target": -0.01135553897423458,
+      "market_prediction": 0.0037750842120471877,
+      "metadata_prediction": 0.007390304829178252,
+      "event_prediction": 0.02506588860894033
+    },
+    {
+      "information_date": "2024-01-21",
+      "target": -0.029351951619635552,
+      "market_prediction": 0.004094056477253003,
+      "metadata_prediction": -0.004025058743880195,
+      "event_prediction": -0.01041494076346252
+    },
+    {
+      "information_date": "2024-01-22",
+      "target": -0.009583146862413239,
+      "market_prediction": -0.0003092622639964839,
+      "metadata_prediction": 0.0036329497432675234,
+      "event_prediction": 0.0037175597761424633
+    },
+    {
+      "information_date": "2024-01-23",
+      "target": 0.009945978694400948,
+      "market_prediction": 0.0007210227996100864,
+      "metadata_prediction": 0.007699462910239913,
+      "event_prediction": 0.008061043388476479
+    },
+    {
+      "information_date": "2024-01-24",
+      "target": 0.0011497700459908167,
+      "market_prediction": 2.7614972681091836e-05,
+      "metadata_prediction": 0.0060993346011053075,
+      "event_prediction": 0.012966605514217773
+    },
+    {
+      "information_date": "2024-01-25",
+      "target": 0.04381584860438403,
+      "market_prediction": 0.003600641151455189,
+      "metadata_prediction": 0.00543370397500543,
+      "event_prediction": 0.010809766979585576
+    },
+    {
+      "information_date": "2024-01-26",
+      "target": 0.009450118395560647,
+      "market_prediction": 0.0010388893587638792,
+      "metadata_prediction": 0.004638126396609305,
+      "event_prediction": 0.015566439635762932
+    },
+    {
+      "information_date": "2024-01-27",
+      "target": 0.002345743659976085,
+      "market_prediction": 0.004175039728618179,
+      "metadata_prediction": 0.001284798922904938,
+      "event_prediction": -0.0013309576248170035
+    },
+    {
+      "information_date": "2024-01-28",
+      "target": 0.02838562658528576,
+      "market_prediction": -0.000166672832994055,
+      "metadata_prediction": -0.005846777570318397,
+      "event_prediction": -0.024573015814306723
+    },
+    {
+      "information_date": "2024-01-29",
+      "target": -0.01359648215447351,
+      "market_prediction": 0.001851010673415844,
+      "metadata_prediction": 0.0057952500712559986,
+      "event_prediction": 0.016219114095194543
+    },
+    {
+      "information_date": "2024-01-30",
+      "target": -0.02119200976873825,
+      "market_prediction": 0.00263956001088396,
+      "metadata_prediction": 0.0007242772788132611,
+      "event_prediction": -0.0031411293327843343
+    },
+    {
+      "information_date": "2024-01-31",
+      "target": 0.02414827512320561,
+      "market_prediction": 0.0046063779503304845,
+      "metadata_prediction": 0.008445476196062287,
+      "event_prediction": 0.015094792098002248
+    },
+    {
+      "information_date": "2024-02-04",
+      "target": 0.0031850042505754406,
+      "market_prediction": 0.002635104475752717,
+      "metadata_prediction": -0.0023156741872331424,
+      "event_prediction": -0.011459434136204056
+    },
+    {
+      "information_date": "2024-02-05",
+      "target": -0.0010621882010733996,
+      "market_prediction": -0.0021670250084133112,
+      "metadata_prediction": -0.00060540341065664,
+      "event_prediction": 0.0014021265069733989
+    },
+    {
+      "information_date": "2024-02-06",
+      "target": 0.04026818974260693,
+      "market_prediction": 0.0032206432735721255,
+      "metadata_prediction": 0.004490133484942943,
+      "event_prediction": 0.0027712592153979936
+    },
+    {
+      "information_date": "2024-02-07",
+      "target": 0.03442535668794111,
+      "market_prediction": 0.0008457772749314244,
+      "metadata_prediction": 0.0010852516662234015,
+      "event_prediction": -0.007477297328767195
+    },
+    {
+      "information_date": "2024-02-08",
+      "target": 0.02875162065842707,
+      "market_prediction": 0.00471479555638693,
+      "metadata_prediction": 0.005486326114386547,
+      "event_prediction": 0.010795645103045705
+    },
+    {
+      "information_date": "2024-02-09",
+      "target": 0.02438463162339022,
+      "market_prediction": 0.0009795018439323784,
+      "metadata_prediction": -0.00288238393161481,
+      "event_prediction": -0.006758556104769491
+    },
+    {
+      "information_date": "2024-02-10",
+      "target": -0.00767231803746915,
+      "market_prediction": 0.002069993882478473,
+      "metadata_prediction": 0.004937566813210542,
+      "event_prediction": 0.014158331848957874
+    },
+    {
+      "information_date": "2024-02-11",
+      "target": 0.03460234918841687,
+      "market_prediction": 0.003017359726447225,
+      "metadata_prediction": -0.00010956139988864562,
+      "event_prediction": 0.001215071279971823
+    },
+    {
+      "information_date": "2024-02-12",
+      "target": -0.005616331118649565,
+      "market_prediction": 0.001907731128559751,
+      "metadata_prediction": 0.0039911070928318115,
+      "event_prediction": 0.01030154336381966
+    },
+    {
+      "information_date": "2024-02-13",
+      "target": 0.057645258704218216,
+      "market_prediction": 0.0014249722638359215,
+      "metadata_prediction": 0.0010726018071593848,
+      "event_prediction": 0.004410924219985143
+    },
+    {
+      "information_date": "2024-02-14",
+      "target": -0.0016833699463116858,
+      "market_prediction": 0.0038810942744296603,
+      "metadata_prediction": 0.0023201241190063705,
+      "event_prediction": 0.0032009804108434218
+    },
+    {
+      "information_date": "2024-02-15",
+      "target": -0.005787021547908666,
+      "market_prediction": 0.0039020406527622608,
+      "metadata_prediction": 0.0011876920523453689,
+      "event_prediction": 0.0058349651156353035
+    },
+    {
+      "information_date": "2024-02-16",
+      "target": -0.009393508191677613,
+      "market_prediction": 0.00577603720199199,
+      "metadata_prediction": 0.008240970566181054,
+      "event_prediction": 0.008972135239338517
+    },
+    {
+      "information_date": "2024-02-17",
+      "target": 0.011406275781075559,
+      "market_prediction": 0.0023700865953326144,
+      "metadata_prediction": 0.003855002681825338,
+      "event_prediction": 0.007846276238216005
+    },
+    {
+      "information_date": "2024-02-18",
+      "target": -0.009462008978352587,
+      "market_prediction": -0.0012733459771194372,
+      "metadata_prediction": 0.007436148436257143,
+      "event_prediction": -0.009331393318747138
+    },
+    {
+      "information_date": "2024-02-19",
+      "target": 0.007868614864144696,
+      "market_prediction": 0.0036454186395483692,
+      "metadata_prediction": 0.0012949323503058737,
+      "event_prediction": 0.0018245660277399862
+    },
+    {
+      "information_date": "2024-02-20",
+      "target": -0.008145539274302949,
+      "market_prediction": 0.0035501573070464178,
+      "metadata_prediction": 0.0063456698586585114,
+      "event_prediction": 0.01801624422481761
+    },
+    {
+      "information_date": "2024-02-21",
+      "target": -0.009078838978533676,
+      "market_prediction": 0.003762416965791238,
+      "metadata_prediction": 0.008961160522094306,
+      "event_prediction": 0.02027008317098964
+    },
+    {
+      "information_date": "2024-02-22",
+      "target": -0.004972214669793695,
+      "market_prediction": 0.0008072642218886373,
+      "metadata_prediction": -0.0031789423569217505,
+      "event_prediction": 0.007660718713624294
+    },
+    {
+      "information_date": "2024-02-23",
+      "target": 0.015478701550425633,
+      "market_prediction": 0.0031520056366228996,
+      "metadata_prediction": 0.00434766523902476,
+      "event_prediction": 0.008617832660721315
+    },
+    {
+      "information_date": "2024-02-24",
+      "target": -0.0016435237614045306,
+      "market_prediction": 0.0013993369466831203,
+      "metadata_prediction": -0.008142107043924738,
+      "event_prediction": 0.0014890169534034776
+    },
+    {
+      "information_date": "2024-02-25",
+      "target": 0.08143115309739324,
+      "market_prediction": -0.0004258569142665538,
+      "metadata_prediction": 0.0010763136200318917,
+      "event_prediction": 0.021423464009270244
+    },
+    {
+      "information_date": "2024-02-26",
+      "target": 0.021424729254823305,
+      "market_prediction": 0.0013542412026949352,
+      "metadata_prediction": 0.0018849915231362554,
+      "event_prediction": -0.00336774980203358
+    },
+    {
+      "information_date": "2024-02-27",
+      "target": 0.08197040737691541,
+      "market_prediction": 0.00995122165116261,
+      "metadata_prediction": 0.002925185062072444,
+      "event_prediction": 0.0009871664212597832
+    },
+    {
+      "information_date": "2024-02-28",
+      "target": -0.007695115718770573,
+      "market_prediction": -0.0007217781502366872,
+      "metadata_prediction": -0.0028383069723098312,
+      "event_prediction": 0.006807867727505374
+    },
+    {
+      "information_date": "2024-02-29",
+      "target": 0.019713156165082513,
+      "market_prediction": 0.006064255593536063,
+      "metadata_prediction": 0.0027633876527117032,
+      "event_prediction": 0.000173583457862716
+    },
+    {
+      "information_date": "2024-03-01",
+      "target": -0.005953383070457785,
+      "market_prediction": -0.0020498999397455028,
+      "metadata_prediction": -0.005934849586255582,
+      "event_prediction": -0.0075861108270281925
+    },
+    {
+      "information_date": "2024-03-02",
+      "target": 0.024743292374098003,
+      "market_prediction": -0.003688055814270905,
+      "metadata_prediction": -0.002706673673085351,
+      "event_prediction": -0.010344110484330864
+    },
+    {
+      "information_date": "2024-03-03",
+      "target": 0.07386361847676559,
+      "market_prediction": -0.007805374469260759,
+      "metadata_prediction": -0.00810351826474516,
+      "event_prediction": -0.020160201461468758
+    },
+    {
+      "information_date": "2024-03-04",
+      "target": -0.07181574596325002,
+      "market_prediction": -0.0024058921152796675,
+      "metadata_prediction": -0.00668359349164797,
+      "event_prediction": -0.003987989707949918
+    },
+    {
+      "information_date": "2024-03-05",
+      "target": 0.04087095352924752,
+      "market_prediction": 0.01154099813470429,
+      "metadata_prediction": 0.005521960870955845,
+      "event_prediction": -6.17032423623385e-05
+    },
+    {
+      "information_date": "2024-03-06",
+      "target": 0.019635330851228483,
+      "market_prediction": 0.00563815687234298,
+      "metadata_prediction": 0.0024523964615214126,
+      "event_prediction": 0.0022474322148351017
+    },
+    {
+      "information_date": "2024-03-07",
+      "target": 0.016131000208314816,
+      "market_prediction": 0.0033167406620810457,
+      "metadata_prediction": 0.0015340937200014292,
+      "event_prediction": -0.004125172945754509
+    },
+    {
+      "information_date": "2024-03-08",
+      "target": 0.013256679958002504,
+      "market_prediction": 0.0005807626860015091,
+      "metadata_prediction": -0.0022254668063489405,
+      "event_prediction": 0.0016560498774949239
+    },
+    {
+      "information_date": "2024-03-09",
+      "target": -0.007981744451220574,
+      "market_prediction": 0.0017734136849664147,
+      "metadata_prediction": 0.002411247361681747,
+      "event_prediction": 0.004933704210713307
+    },
+    {
+      "information_date": "2024-03-10",
+      "target": 0.044238969393864735,
+      "market_prediction": 0.00737411056340061,
+      "metadata_prediction": 0.008559531138209934,
+      "event_prediction": 0.016325234011444083
+    },
+    {
+      "information_date": "2024-03-11",
+      "target": 0.006455096135870919,
+      "market_prediction": 0.005728546197639863,
+      "metadata_prediction": 0.0010272362844804337,
+      "event_prediction": -0.0010592385112147237
+    },
+    {
+      "information_date": "2024-03-12",
+      "target": 0.01672107287659852,
+      "market_prediction": 0.008307596648482506,
+      "metadata_prediction": 0.0007604684079108336,
+      "event_prediction": 0.010557847418325552
+    },
+    {
+      "information_date": "2024-03-13",
+      "target": -0.06945853238226118,
+      "market_prediction": 0.006365874481893118,
+      "metadata_prediction": 0.0029503810647984125,
+      "event_prediction": 0.005116498635461216
+    },
+    {
+      "information_date": "2024-03-14",
+      "target": 0.014446018627452428,
+      "market_prediction": -0.006391040381770102,
+      "metadata_prediction": -0.009334878208101489,
+      "event_prediction": -0.006223689823589677
+    },
+    {
+      "information_date": "2024-03-15",
+      "target": -0.03875933165896661,
+      "market_prediction": 0.004016244078885704,
+      "metadata_prediction": 0.001723348637909397,
+      "event_prediction": 0.0067724093662339365
+    },
+    {
+      "information_date": "2024-03-16",
+      "target": 0.02223227217818291,
+      "market_prediction": 0.001272576285446903,
+      "metadata_prediction": -0.0007036230896216285,
+      "event_prediction": -0.0174165946740396
+    },
+    {
+      "information_date": "2024-03-17",
+      "target": -0.03142155414551984,
+      "market_prediction": 0.0013817553640282085,
+      "metadata_prediction": 0.008381445568104695,
+      "event_prediction": -0.00914310674696795
+    },
+    {
+      "information_date": "2024-03-18",
+      "target": -0.06130962407224472,
+      "market_prediction": 0.0064585989603494634,
+      "metadata_prediction": 0.004336043154093409,
+      "event_prediction": 0.0015248283077056958
+    },
+    {
+      "information_date": "2024-03-19",
+      "target": 0.07733021221149716,
+      "market_prediction": -0.0017347255926699362,
+      "metadata_prediction": 8.498790339222183e-05,
+      "event_prediction": 0.004282806770841675
+    },
+    {
+      "information_date": "2024-03-20",
+      "target": -0.009462557921778636,
+      "market_prediction": 0.0011562238565694016,
+      "metadata_prediction": 0.0014271995791297707,
+      "event_prediction": 0.009626500818144916
+    },
+    {
+      "information_date": "2024-03-21",
+      "target": -0.03670903334292763,
+      "market_prediction": 0.000408699171781667,
+      "metadata_prediction": -0.001424751876320651,
+      "event_prediction": -0.005522215841542281
+    },
+    {
+      "information_date": "2024-03-22",
+      "target": 0.006230754956139339,
+      "market_prediction": 0.0033483849891033585,
+      "metadata_prediction": 0.005915483141596457,
+      "event_prediction": 0.0013325565443492251
+    },
+    {
+      "information_date": "2024-03-23",
+      "target": 0.05310858964741194,
+      "market_prediction": 0.0023027512939480686,
+      "metadata_prediction": 0.00019997898212690038,
+      "event_prediction": 0.002607070333199242
+    },
+    {
+      "information_date": "2024-03-24",
+      "target": 0.045975118020957995,
+      "market_prediction": 0.0033508739002197476,
+      "metadata_prediction": 0.0005505597720380717,
+      "event_prediction": 0.012681704310480844
+    },
+    {
+      "information_date": "2024-03-25",
+      "target": -0.0005065266742337871,
+      "market_prediction": 0.0065796191066641785,
+      "metadata_prediction": 0.006622075105495044,
+      "event_prediction": 0.0007150065407384326
+    },
+    {
+      "information_date": "2024-03-26",
+      "target": -0.015444826621884289,
+      "market_prediction": -0.003083437152801326,
+      "metadata_prediction": -0.009106854929183008,
+      "event_prediction": -0.00880541576132286
+    },
+    {
+      "information_date": "2024-03-27",
+      "target": 0.01633449304533241,
+      "market_prediction": 0.0011565196109219874,
+      "metadata_prediction": -0.007358876270090712,
+      "event_prediction": 0.0006281731056380949
+    },
+    {
+      "information_date": "2024-03-28",
+      "target": -0.009096428956492542,
+      "market_prediction": -0.0019825260415089075,
+      "metadata_prediction": -0.004688656773382733,
+      "event_prediction": -0.0004055464630937568
+    },
+    {
+      "information_date": "2024-03-29",
+      "target": 0.0019742870232504206,
+      "market_prediction": 0.00549411875341676,
+      "metadata_prediction": 0.0031091521439575755,
+      "event_prediction": 0.004291134960960144
+    },
+    {
+      "information_date": "2024-03-30",
+      "target": 0.009631940147944107,
+      "market_prediction": 0.003747439113194225,
+      "metadata_prediction": -0.00617465661127439,
+      "event_prediction": 0.0012106691947901466
+    },
+    {
+      "information_date": "2024-03-31",
+      "target": -0.055600056609114046,
+      "market_prediction": -0.006764635489487924,
+      "metadata_prediction": -0.0048717398715642,
+      "event_prediction": 0.0005605995242118093
+    },
+    {
+      "information_date": "2024-04-01",
+      "target": -0.007133084474601925,
+      "market_prediction": 0.005679542963998709,
+      "metadata_prediction": 0.003079283343065625,
+      "event_prediction": 0.004542004852799463
+    },
+    {
+      "information_date": "2024-04-02",
+      "target": -0.00921133856461298,
+      "market_prediction": 0.002408792834199671,
+      "metadata_prediction": 0.001191889727052616,
+      "event_prediction": 0.005989534458838702
+    },
+    {
+      "information_date": "2024-04-03",
+      "target": 0.03397973950795952,
+      "market_prediction": 0.0027000318138709683,
+      "metadata_prediction": 0.004499024985770755,
+      "event_prediction": 0.012131859462502005
+    },
+    {
+      "information_date": "2024-04-04",
+      "target": -0.0012360848375558842,
+      "market_prediction": 0.004237076073376184,
+      "metadata_prediction": 0.006661468771456682,
+      "event_prediction": 0.005025598952097946
+    },
+    {
+      "information_date": "2024-04-05",
+      "target": 0.023578107644446344,
+      "market_prediction": 0.004569912281736559,
+      "metadata_prediction": 0.003343755204619609,
+      "event_prediction": 0.00102012849884808
+    },
+    {
+      "information_date": "2024-04-06",
+      "target": 0.0008228839560684431,
+      "market_prediction": 0.0014307804163463703,
+      "metadata_prediction": 0.009090567464135378,
+      "event_prediction": 0.009691048207150828
+    },
+    {
+      "information_date": "2024-04-07",
+      "target": 0.027387713255538015,
+      "market_prediction": -0.00208704054667628,
+      "metadata_prediction": -0.005886859269797841,
+      "event_prediction": -0.010077992998752013
+    },
+    {
+      "information_date": "2024-04-08",
+      "target": -0.030291860315182273,
+      "market_prediction": 0.0005666780833908059,
+      "metadata_prediction": 0.0018412884046021666,
+      "event_prediction": 0.0032297325890648255
+    },
+    {
+      "information_date": "2024-04-09",
+      "target": 0.02439299357257574,
+      "market_prediction": 0.0037337380873661346,
+      "metadata_prediction": 0.0044477156689109185,
+      "event_prediction": 0.00391782687705171
+    },
+    {
+      "information_date": "2024-04-10",
+      "target": 0.0017467224263354453,
+      "market_prediction": 0.0019024392818424972,
+      "metadata_prediction": 0.0011122536451559789,
+      "event_prediction": 0.010688235048818056
+    },
+    {
+      "information_date": "2024-04-11",
+      "target": -0.05442299512390247,
+      "market_prediction": 0.002521802413149001,
+      "metadata_prediction": 0.004350879575231065,
+      "event_prediction": 0.007031799806049617
+    },
+    {
+      "information_date": "2024-04-12",
+      "target": -0.05554595638068727,
+      "market_prediction": 0.0033177242706142708,
+      "metadata_prediction": 0.0027418153767558243,
+      "event_prediction": 0.007587157813433805
+    },
+    {
+      "information_date": "2024-04-13",
+      "target": 0.02678598183461256,
+      "market_prediction": 0.0025570471385788236,
+      "metadata_prediction": 0.008204542096274253,
+      "event_prediction": 0.010877715775491329
+    },
+    {
+      "information_date": "2024-04-14",
+      "target": -0.03331095911662285,
+      "market_prediction": -0.0010035338179215589,
+      "metadata_prediction": 0.017600510353840252,
+      "event_prediction": 0.003358685475955004
+    },
+    {
+      "information_date": "2024-04-15",
+      "target": 0.01396815812889285,
+      "market_prediction": -0.00025964794199562755,
+      "metadata_prediction": -0.0017570003679856173,
+      "event_prediction": 0.0008701744468052502
+    },
+    {
+      "information_date": "2024-04-16",
+      "target": -0.02897119960636274,
+      "market_prediction": 0.0029289297973490516,
+      "metadata_prediction": 0.0028181548966070046,
+      "event_prediction": 0.006405247290972103
+    },
+    {
+      "information_date": "2024-04-17",
+      "target": -0.003196898959595851,
+      "market_prediction": 0.00018685053360471024,
+      "metadata_prediction": 0.0018228630565451144,
+      "event_prediction": 0.005419319741493333
+    },
+    {
+      "information_date": "2024-04-18",
+      "target": 0.034956498651409706,
+      "market_prediction": 0.0027262918419402107,
+      "metadata_prediction": 0.0017595781296832588,
+      "event_prediction": -0.0013128947441603857
+    },
+    {
+      "information_date": "2024-04-19",
+      "target": 0.019081020032098772,
+      "market_prediction": 0.0011277072201118516,
+      "metadata_prediction": 0.0025942934635361722,
+      "event_prediction": 0.0037706146992851743
+    },
+    {
+      "information_date": "2024-04-20",
+      "target": 0.008351855490335902,
+      "market_prediction": -0.00018523815852916907,
+      "metadata_prediction": -0.0015085615623844962,
+      "event_prediction": 0.013845405330675464
+    },
+    {
+      "information_date": "2024-04-21",
+      "target": 0.010763982445163744,
+      "market_prediction": 0.002499318522372009,
+      "metadata_prediction": -0.0020415913443610247,
+      "event_prediction": 0.008908595344535893
+    },
+    {
+      "information_date": "2024-04-22",
+      "target": 0.002992541988963815,
+      "market_prediction": 0.004340679820527948,
+      "metadata_prediction": 0.004020132502044708,
+      "event_prediction": 0.007602104163600763
+    },
+    {
+      "information_date": "2024-04-23",
+      "target": -0.035147176078237696,
+      "market_prediction": -0.0013062139694300205,
+      "metadata_prediction": -0.0042738890998442886,
+      "event_prediction": -0.009898018203883877
+    },
+    {
+      "information_date": "2024-04-24",
+      "target": 0.0016465285948168429,
+      "market_prediction": 0.0018714909800813804,
+      "metadata_prediction": 0.004547082998840571,
+      "event_prediction": 0.005871840335999473
+    },
+    {
+      "information_date": "2024-04-25",
+      "target": -0.020092538788294978,
+      "market_prediction": 0.0016202000816756344,
+      "metadata_prediction": 0.00147253875754253,
+      "event_prediction": 0.005259483158263182
+    },
+    {
+      "information_date": "2024-04-26",
+      "target": 0.014625251708446418,
+      "market_prediction": 0.0021133765135576132,
+      "metadata_prediction": 0.0017556272613360516,
+      "event_prediction": 0.008874716783543358
+    },
+    {
+      "information_date": "2024-04-27",
+      "target": -0.027213031751141536,
+      "market_prediction": 0.0017301447419935869,
+      "metadata_prediction": -9.453442941582241e-05,
+      "event_prediction": 0.004427568921402821
+    },
+    {
+      "information_date": "2024-04-28",
+      "target": 0.022141365461847418,
+      "market_prediction": 0.0034945965304889848,
+      "metadata_prediction": 0.006737071601680125,
+      "event_prediction": 0.0015451370356177234
+    },
+    {
+      "information_date": "2024-04-29",
+      "target": -0.053520210346653996,
+      "market_prediction": 0.004254178475678081,
+      "metadata_prediction": -0.000373166263136033,
+      "event_prediction": -0.0018934328478466122
+    },
+    {
+      "information_date": "2024-04-30",
+      "target": -0.04665999146504074,
+      "market_prediction": -0.00032380905192902596,
+      "metadata_prediction": 0.00034000382924033305,
+      "event_prediction": -0.0007388466588325725
+    },
+    {
+      "information_date": "2024-05-01",
+      "target": 0.039536410806630506,
+      "market_prediction": -0.004046492445203205,
+      "metadata_prediction": -0.002020982462343882,
+      "event_prediction": -0.0005995536382069446
+    },
+    {
+      "information_date": "2024-05-02",
+      "target": 0.05032940813768794,
+      "market_prediction": 0.001819716044913543,
+      "metadata_prediction": 0.0023833857368834917,
+      "event_prediction": 0.0025201993306180398
+    },
+    {
+      "information_date": "2024-05-03",
+      "target": 0.008252162344105418,
+      "market_prediction": 0.006145331424998611,
+      "metadata_prediction": 0.002557355631175688,
+      "event_prediction": 0.0007749260970860438
+    },
+    {
+      "information_date": "2024-05-04",
+      "target": 0.010097478161948725,
+      "market_prediction": -0.0005735493420630921,
+      "metadata_prediction": -0.0009383358682533533,
+      "event_prediction": -0.009286944575344359
+    },
+    {
+      "information_date": "2024-05-05",
+      "target": -0.00976001729266418,
+      "market_prediction": 0.0038570235297119464,
+      "metadata_prediction": 0.008479938033411724,
+      "event_prediction": 0.009434162183072003
+    },
+    {
+      "information_date": "2024-05-06",
+      "target": -0.005188313639886699,
+      "market_prediction": 0.0012425841381213428,
+      "metadata_prediction": 0.0036654269389238756,
+      "event_prediction": 0.012252792799607492
+    },
+    {
+      "information_date": "2024-05-07",
+      "target": -0.019827956305353722,
+      "market_prediction": 0.004619120607482139,
+      "metadata_prediction": 0.008586429865632225,
+      "event_prediction": 0.011513109654441219
+    },
+    {
+      "information_date": "2024-05-08",
+      "target": 0.019998702225682896,
+      "market_prediction": 0.0020187295875548194,
+      "metadata_prediction": -0.0023530652930754143,
+      "event_prediction": -0.008868800406829256
+    },
+    {
+      "information_date": "2024-05-09",
+      "target": -0.03430200010178641,
+      "market_prediction": 0.002605047686288488,
+      "metadata_prediction": 0.001163168035509185,
+      "event_prediction": -0.0025003011554482375
+    },
+    {
+      "information_date": "2024-05-10",
+      "target": 0.0030648880105401677,
+      "market_prediction": 0.0007561170616476969,
+      "metadata_prediction": 0.0026611980331434533,
+      "event_prediction": 0.003596676477293649
+    },
+    {
+      "information_date": "2024-05-11",
+      "target": 0.0036630156913675105,
+      "market_prediction": 0.0017313136613965779,
+      "metadata_prediction": 0.0011525102058493157,
+      "event_prediction": 0.0015865055555379039
+    },
+    {
+      "information_date": "2024-05-12",
+      "target": 0.021744109198222894,
+      "market_prediction": 0.004680010432315946,
+      "metadata_prediction": 0.0042617500673436766,
+      "event_prediction": -0.004089195111405668
+    },
+    {
+      "information_date": "2024-05-13",
+      "target": -0.008500057638364145,
+      "market_prediction": 0.0011536778991046504,
+      "metadata_prediction": -0.003371170372903013,
+      "event_prediction": -0.00026599249400360955
+    },
+    {
+      "information_date": "2024-05-14",
+      "target": 0.06476121270840896,
+      "market_prediction": 0.0004621168192297403,
+      "metadata_prediction": 0.0014415914963308836,
+      "event_prediction": 0.004818571807524207
+    },
+    {
+      "information_date": "2024-05-15",
+      "target": -0.005752373441717973,
+      "market_prediction": 0.006046151600294269,
+      "metadata_prediction": 0.0036824655598968964,
+      "event_prediction": 0.0038746207115092106
+    },
+    {
+      "information_date": "2024-05-16",
+      "target": 0.02067307618973535,
+      "market_prediction": 0.0020859980982124385,
+      "metadata_prediction": 0.003538593527148002,
+      "event_prediction": -0.0024646858093092944
+    },
+    {
+      "information_date": "2024-05-17",
+      "target": 0.003287802253638894,
+      "market_prediction": 0.003108885301388198,
+      "metadata_prediction": 0.0021137003266221387,
+      "event_prediction": 7.666094016453248e-05
+    },
+    {
+      "information_date": "2024-05-18",
+      "target": -0.007334584562218804,
+      "market_prediction": 0.003498709680175691,
+      "metadata_prediction": -0.0010597797452084306,
+      "event_prediction": -0.013807324779271777
+    },
+    {
+      "information_date": "2024-05-19",
+      "target": 0.06915200115243314,
+      "market_prediction": 0.006234243682458913,
+      "metadata_prediction": 0.003947933180224318,
+      "event_prediction": -0.0017163259385919755
+    },
+    {
+      "information_date": "2024-05-20",
+      "target": -0.017633684210526246,
+      "market_prediction": -0.0010909158556122649,
+      "metadata_prediction": -0.0014192740043566813,
+      "event_prediction": 0.00258408986389963
+    },
+    {
+      "information_date": "2024-05-21",
+      "target": -0.007107792712476524,
+      "market_prediction": -0.005210092831828353,
+      "metadata_prediction": -0.007848707084610638,
+      "event_prediction": -0.01081910945494433
+    },
+    {
+      "information_date": "2024-05-22",
+      "target": -0.02296675640791357,
+      "market_prediction": 0.004136813066398908,
+      "metadata_prediction": 0.004493921957978825,
+      "event_prediction": -0.0008130433853572579
+    },
+    {
+      "information_date": "2024-05-23",
+      "target": 0.012949926362297637,
+      "market_prediction": -0.0021854401573390223,
+      "metadata_prediction": -0.006091476118595865,
+      "event_prediction": -0.01399951716007928
+    },
+    {
+      "information_date": "2024-05-24",
+      "target": 0.0044664601122721415,
+      "market_prediction": 0.0040976979358096095,
+      "metadata_prediction": 0.0026136184015924345,
+      "event_prediction": -0.0017457289722933326
+    },
+    {
+      "information_date": "2024-05-25",
+      "target": -0.002712541524031331,
+      "market_prediction": -8.34145253199635e-05,
+      "metadata_prediction": -0.003433654640751414,
+      "event_prediction": 0.0016565797184383277
+    },
+    {
+      "information_date": "2024-05-26",
+      "target": -0.012428319092702256,
+      "market_prediction": 0.0007761216159424283,
+      "metadata_prediction": 0.00029790466466922297,
+      "event_prediction": 0.0008626046244542489
+    },
+    {
+      "information_date": "2024-05-27",
+      "target": 0.012187917016936334,
+      "market_prediction": 4.8347204352838704e-05,
+      "metadata_prediction": -0.0003263030682997784,
+      "event_prediction": -0.002462068229970668
+    },
+    {
+      "information_date": "2024-05-28",
+      "target": -0.010484651985346871,
+      "market_prediction": 0.0030941213657065866,
+      "metadata_prediction": 0.00024777405429918654,
+      "event_prediction": 0.0035080297748117544
+    },
+    {
+      "information_date": "2024-05-29",
+      "target": 0.005644900953778453,
+      "market_prediction": 0.0035939583755151827,
+      "metadata_prediction": 0.004703303075000151,
+      "event_prediction": 0.0013242318919536179
+    },
+    {
+      "information_date": "2024-05-30",
+      "target": -0.011556189784153181,
+      "market_prediction": 0.004872298740590098,
+      "metadata_prediction": 0.0024531771619803466,
+      "event_prediction": 0.008341192773464286
+    },
+    {
+      "information_date": "2024-05-31",
+      "target": 0.0010835115813219165,
+      "market_prediction": -0.0006991691567083613,
+      "metadata_prediction": 0.0017502620008005264,
+      "event_prediction": -0.0018030618687561366
+    },
+    {
+      "information_date": "2024-06-01",
+      "target": 0.008605626097637487,
+      "market_prediction": 0.0015331484044164394,
+      "metadata_prediction": -0.00040128625962410134,
+      "event_prediction": 0.008682843267103089
+    },
+    {
+      "information_date": "2024-06-02",
+      "target": 0.011714963662121436,
+      "market_prediction": 0.005143627948028475,
+      "metadata_prediction": 0.001179214073985704,
+      "event_prediction": -0.005117297223559098
+    },
+    {
+      "information_date": "2024-06-03",
+      "target": 0.025795870001878773,
+      "market_prediction": 0.0028805378058507566,
+      "metadata_prediction": 0.0020471361587888134,
+      "event_prediction": 0.0023864194044255563
+    },
+    {
+      "information_date": "2024-06-04",
+      "target": 0.0013044807363693511,
+      "market_prediction": 0.003000852094727796,
+      "metadata_prediction": 0.0024908795919063023,
+      "event_prediction": 0.00034669573144638865
+    },
+    {
+      "information_date": "2024-06-05",
+      "target": -0.0008075555686865021,
+      "market_prediction": 0.000751834073373425,
+      "metadata_prediction": -0.004205315626041791,
+      "event_prediction": 0.0020230975237551588
+    },
+    {
+      "information_date": "2024-06-06",
+      "target": -0.021690675895822853,
+      "market_prediction": 0.004792357850207641,
+      "metadata_prediction": 0.0009976785356517182,
+      "event_prediction": 0.0007318934069798601
+    },
+    {
+      "information_date": "2024-06-07",
+      "target": -0.0027460823709571924,
+      "market_prediction": 0.00234743675765183,
+      "metadata_prediction": -0.0003526621337586911,
+      "event_prediction": -0.005748327483094357
+    },
+    {
+      "information_date": "2024-06-08",
+      "target": 0.004791456198585564,
+      "market_prediction": 0.004339988794287364,
+      "metadata_prediction": 0.00333085324106274,
+      "event_prediction": -0.003645367934494841
+    },
+    {
+      "information_date": "2024-06-09",
+      "target": -0.016919939099709902,
+      "market_prediction": -0.0007137572588263362,
+      "metadata_prediction": 0.004208777669747604,
+      "event_prediction": 0.02514848449593829
+    },
+    {
+      "information_date": "2024-06-10",
+      "target": -0.015450587341476196,
+      "market_prediction": 0.0047919983532852175,
+      "metadata_prediction": -0.0012898957653113996,
+      "event_prediction": 0.0038568843232903846
+    },
+    {
+      "information_date": "2024-06-11",
+      "target": 0.0008236071023128844,
+      "market_prediction": 0.000435198160858623,
+      "metadata_prediction": -0.002022204200734185,
+      "event_prediction": 0.00030744877843798496
+    },
+    {
+      "information_date": "2024-06-12",
+      "target": -0.010647667625515389,
+      "market_prediction": -0.0011496923224595253,
+      "metadata_prediction": -0.0008725865445539549,
+      "event_prediction": -0.0013958008253409564
+    },
+    {
+      "information_date": "2024-06-13",
+      "target": -0.00732720959056643,
+      "market_prediction": 0.0031824302929693528,
+      "metadata_prediction": 0.005408625363574262,
+      "event_prediction": 0.01163140500530696
+    },
+    {
+      "information_date": "2024-06-14",
+      "target": -0.001953649882992292,
+      "market_prediction": -0.0009660253329379688,
+      "metadata_prediction": 0.0007488329789112874,
+      "event_prediction": 0.004131405140292532
+    },
+    {
+      "information_date": "2024-06-15",
+      "target": 0.0012601050440506079,
+      "market_prediction": -0.000787580851726728,
+      "metadata_prediction": -0.0028040532483930786,
+      "event_prediction": -0.0013514774480825984
+    },
+    {
+      "information_date": "2024-06-16",
+      "target": -0.010797883028725308,
+      "market_prediction": 0.0016149026422570725,
+      "metadata_prediction": 0.0031082966884698696,
+      "event_prediction": 0.008046298121949881
+    },
+    {
+      "information_date": "2024-06-17",
+      "target": -0.0014249887742041611,
+      "market_prediction": 0.006289476149651481,
+      "metadata_prediction": 0.0044151147726970595,
+      "event_prediction": 0.004059235289790993
+    },
+    {
+      "information_date": "2024-06-18",
+      "target": -0.003224183209469489,
+      "market_prediction": 0.001075476027015399,
+      "metadata_prediction": 0.0002454893311749191,
+      "event_prediction": 0.009180486103146443
+    },
+    {
+      "information_date": "2024-06-19",
+      "target": -0.01087308443596069,
+      "market_prediction": -2.9035642278849418e-05,
+      "metadata_prediction": -0.002727243267705852,
+      "event_prediction": -0.009040835790153676
+    },
+    {
+      "information_date": "2024-06-20",
+      "target": -0.002713247442271749,
+      "market_prediction": 0.004568123200140962,
+      "metadata_prediction": 0.000390488744328184,
+      "event_prediction": -0.0014183996183245206
+    },
+    {
+      "information_date": "2024-06-21",
+      "target": 0.0013906475066343127,
+      "market_prediction": -0.0037948240279021524,
+      "metadata_prediction": -0.003998295367772068,
+      "event_prediction": 0.0009635406408055691
+    },
+    {
+      "information_date": "2024-06-25",
+      "target": -0.01425397671731976,
+      "market_prediction": -0.0004143630984723952,
+      "metadata_prediction": -0.0038578183569008325,
+      "event_prediction": -0.004948807747542803
+    },
+    {
+      "information_date": "2024-06-26",
+      "target": 0.012770184217815839,
+      "market_prediction": -1.7260070166330924e-05,
+      "metadata_prediction": 0.002306145945402978,
+      "event_prediction": -0.00786869583582283
+    },
+    {
+      "information_date": "2024-06-27",
+      "target": -0.017391613959901853,
+      "market_prediction": 0.0006749970646626573,
+      "metadata_prediction": -0.002954711167690675,
+      "event_prediction": -0.010166947272893561
+    },
+    {
+      "information_date": "2024-06-28",
+      "target": 0.002370136608151663,
+      "market_prediction": 0.0007427393525518394,
+      "metadata_prediction": -0.0007515504281175099,
+      "event_prediction": -0.0025729275854667133
+    },
+    {
+      "information_date": "2024-06-29",
+      "target": 0.04174492299248911,
+      "market_prediction": 0.004606607763044867,
+      "metadata_prediction": 0.007427842228356658,
+      "event_prediction": 0.0029994621357395234
+    },
+    {
+      "information_date": "2024-06-30",
+      "target": -0.004802975478799043,
+      "market_prediction": -0.0006023294383326618,
+      "metadata_prediction": 0.0009088064014572464,
+      "event_prediction": 0.0017582083326315744
+    },
+    {
+      "information_date": "2024-07-01",
+      "target": -0.03369591575704067,
+      "market_prediction": 0.0032052776729017073,
+      "metadata_prediction": 0.00407844420986699,
+      "event_prediction": 0.0008609520620299392
+    },
+    {
+      "information_date": "2024-07-02",
+      "target": -0.031078751535649096,
+      "market_prediction": 0.0007894522279358685,
+      "metadata_prediction": -0.002937605371745986,
+      "event_prediction": -0.0022043544304285873
+    },
+    {
+      "information_date": "2024-07-03",
+      "target": -0.06532267757296495,
+      "market_prediction": 0.0007904696743477211,
+      "metadata_prediction": 0.0022059911384416987,
+      "event_prediction": -0.005343467609605691
+    },
+    {
+      "information_date": "2024-07-04",
+      "target": 0.021224650949666968,
+      "market_prediction": 0.00046199475136121486,
+      "metadata_prediction": 0.000873755806029654,
+      "event_prediction": -0.0025913371623177443
+    },
+    {
+      "information_date": "2024-07-05",
+      "target": 0.027478452098038453,
+      "market_prediction": 0.001435272256389495,
+      "metadata_prediction": 0.004000857532578447,
+      "event_prediction": 0.006925625135021527
+    },
+    {
+      "information_date": "2024-07-06",
+      "target": -0.048409090124517995,
+      "market_prediction": -0.0011478238959589044,
+      "metadata_prediction": -0.0024377355749418744,
+      "event_prediction": 0.006482162338918664
+    },
+    {
+      "information_date": "2024-07-07",
+      "target": 0.036505909582302376,
+      "market_prediction": 0.0033973915052620015,
+      "metadata_prediction": 0.009029098098219897,
+      "event_prediction": 0.003285898731406711
+    },
+    {
+      "information_date": "2024-07-08",
+      "target": 0.017923329728367632,
+      "market_prediction": -0.002765630510800892,
+      "metadata_prediction": -0.003670960906102887,
+      "event_prediction": -0.01237041759004772
+    },
+    {
+      "information_date": "2024-07-09",
+      "target": -0.010842805960706636,
+      "market_prediction": 0.002173061940619727,
+      "metadata_prediction": 0.00279525674532218,
+      "event_prediction": -0.004929196025199498
+    },
+    {
+      "information_date": "2024-07-10",
+      "target": -0.01133707238311421,
+      "market_prediction": 0.0021231056134232724,
+      "metadata_prediction": 0.0006193795803521817,
+      "event_prediction": 0.003609491494543229
+    },
+    {
+      "information_date": "2024-07-11",
+      "target": 0.015842600633563464,
+      "market_prediction": 0.003073114340755608,
+      "metadata_prediction": 0.005488452637402705,
+      "event_prediction": 0.006828425211860253
+    },
+    {
+      "information_date": "2024-07-12",
+      "target": 0.02872678062776668,
+      "market_prediction": 0.002696334976881665,
+      "metadata_prediction": -0.002360137592147063,
+      "event_prediction": 0.0028801737763366865
+    },
+    {
+      "information_date": "2024-07-13",
+      "target": 0.05327710283989773,
+      "market_prediction": 0.003502046876120567,
+      "metadata_prediction": 0.003754043563105101,
+      "event_prediction": -0.004040162172393184
+    },
+    {
+      "information_date": "2024-07-14",
+      "target": 0.03377738453258039,
+      "market_prediction": 0.004046290126941904,
+      "metadata_prediction": 0.005431139513594758,
+      "event_prediction": 0.003336213813417294
+    },
+    {
+      "information_date": "2024-07-15",
+      "target": 0.014548617441037637,
+      "market_prediction": 0.0026677451179202777,
+      "metadata_prediction": 0.005595909938795867,
+      "event_prediction": 0.001968784621710017
+    },
+    {
+      "information_date": "2024-07-16",
+      "target": -0.012736506292875704,
+      "market_prediction": 0.001483145874588677,
+      "metadata_prediction": 0.001840428926923134,
+      "event_prediction": 0.0049944577846431516
+    },
+    {
+      "information_date": "2024-07-17",
+      "target": -0.008165582086927858,
+      "market_prediction": 0.004554353889003807,
+      "metadata_prediction": 0.0039887692236095194,
+      "event_prediction": 0.004293475924805029
+    },
+    {
+      "information_date": "2024-07-18",
+      "target": 0.03518926593648586,
+      "market_prediction": 0.0011375597590961364,
+      "metadata_prediction": 0.0016963186111028244,
+      "event_prediction": 0.0018774013380996612
+    },
+    {
+      "information_date": "2024-07-19",
+      "target": 0.008734123019837225,
+      "market_prediction": 0.0013242150797359836,
+      "metadata_prediction": 0.0003716937372767574,
+      "event_prediction": 0.0034100575651030605
+    },
+    {
+      "information_date": "2024-07-20",
+      "target": 0.010454533946705702,
+      "market_prediction": 0.002564017571116156,
+      "metadata_prediction": 0.002127170171186588,
+      "event_prediction": 0.0054210192048039394
+    },
+    {
+      "information_date": "2024-07-21",
+      "target": -0.006084017809900755,
+      "market_prediction": 0.0019969548529195527,
+      "metadata_prediction": 0.008936254977823764,
+      "event_prediction": 0.006181334309494694
+    },
+    {
+      "information_date": "2024-07-22",
+      "target": -0.020840160683066267,
+      "market_prediction": 0.004875213232929158,
+      "metadata_prediction": 0.0035201573623699052,
+      "event_prediction": 0.004439885587463952
+    },
+    {
+      "information_date": "2024-07-23",
+      "target": -0.029740261117008893,
+      "market_prediction": -0.000715731243777773,
+      "metadata_prediction": -0.0017480773171584842,
+      "event_prediction": -9.618531712675838e-05
+    },
+    {
+      "information_date": "2024-07-24",
+      "target": 0.04592939678060315,
+      "market_prediction": 0.0005772177919602397,
+      "metadata_prediction": -0.0013585743996101735,
+      "event_prediction": 0.0029894326888410616
+    },
+    {
+      "information_date": "2024-07-25",
+      "target": 0.011334044664642162,
+      "market_prediction": 0.005665587238264018,
+      "metadata_prediction": 0.006747649983908823,
+      "event_prediction": 0.009698171200007231
+    },
+    {
+      "information_date": "2024-07-26",
+      "target": 0.0027563818798879147,
+      "market_prediction": 0.0004525618756921518,
+      "metadata_prediction": -0.00270735081119267,
+      "event_prediction": -0.0005915248629116258
+    },
+    {
+      "information_date": "2024-07-27",
+      "target": 0.020657241070797916,
+      "market_prediction": 0.002202762336289877,
+      "metadata_prediction": 0.0037976334562239075,
+      "event_prediction": -0.0013867330524402004
+    },
+    {
+      "information_date": "2024-07-28",
+      "target": -0.04012364368243637,
+      "market_prediction": 0.002531459879450227,
+      "metadata_prediction": 0.0010785926753167374,
+      "event_prediction": -0.00468805340151602
+    },
+    {
+      "information_date": "2024-07-29",
+      "target": -0.008385703299608305,
+      "market_prediction": -0.00060410731205463,
+      "metadata_prediction": 0.003016451576044807,
+      "event_prediction": -0.0015921380050673934
+    },
+    {
+      "information_date": "2024-07-30",
+      "target": -0.0319467186110729,
+      "market_prediction": -0.0010284931804477853,
+      "metadata_prediction": -0.002674235833050949,
+      "event_prediction": -0.005918926078434301
+    },
+    {
+      "information_date": "2024-07-31",
+      "target": 0.010470942040550657,
+      "market_prediction": 0.0010987574676036243,
+      "metadata_prediction": 0.0028752989493101384,
+      "event_prediction": 0.013693035516018501
+    },
+    {
+      "information_date": "2024-08-01",
+      "target": -0.042254960560178634,
+      "market_prediction": 0.0019060222544650504,
+      "metadata_prediction": 0.004247349320044325,
+      "event_prediction": 0.005858583109038781
+    },
+    {
+      "information_date": "2024-08-02",
+      "target": -0.018505883532253464,
+      "market_prediction": 0.003281021647676582,
+      "metadata_prediction": 0.00763114972376854,
+      "event_prediction": 0.008200835508630752
+    },
+    {
+      "information_date": "2024-08-03",
+      "target": -0.11285375415939114,
+      "market_prediction": 0.0017878533363533873,
+      "metadata_prediction": 0.006488040406631544,
+      "event_prediction": 0.01596106470308216
+    },
+    {
+      "information_date": "2024-08-04",
+      "target": 0.033138922776116075,
+      "market_prediction": 0.0012968513960791989,
+      "metadata_prediction": 0.0002716636694398216,
+      "event_prediction": -0.012951427420395376
+    },
+    {
+      "information_date": "2024-08-05",
+      "target": 0.02153314713568344,
+      "market_prediction": -0.002409794106935575,
+      "metadata_prediction": 0.003959840380824269,
+      "event_prediction": 0.009633131828027084
+    },
+    {
+      "information_date": "2024-08-06",
+      "target": 0.003400899751750064,
+      "market_prediction": 0.0003519419640081872,
+      "metadata_prediction": -0.0007439785510201346,
+      "event_prediction": 0.0004425595131636775
+    },
+    {
+      "information_date": "2024-08-07",
+      "target": 0.07536050442564779,
+      "market_prediction": 0.0008217220137567128,
+      "metadata_prediction": -0.0006895079664389252,
+      "event_prediction": -0.010773816695464095
+    },
+    {
+      "information_date": "2024-08-08",
+      "target": -0.01474667001472385,
+      "market_prediction": 0.007514278912377721,
+      "metadata_prediction": 0.008305498049252194,
+      "event_prediction": 0.001027902028335352
+    },
+    {
+      "information_date": "2024-08-09",
+      "target": 0.010551976261363505,
+      "market_prediction": 0.008230587399859221,
+      "metadata_prediction": 0.008988740857259776,
+      "event_prediction": 0.00464946515514712
+    },
+    {
+      "information_date": "2024-08-10",
+      "target": -0.04214056791178855,
+      "market_prediction": 0.0073232833512486195,
+      "metadata_prediction": 0.018791784276428334,
+      "event_prediction": 0.014127473659964342
+    },
+    {
+      "information_date": "2024-08-11",
+      "target": 0.009181197864217339,
+      "market_prediction": 0.0036326696900337526,
+      "metadata_prediction": 0.007147177208582175,
+      "event_prediction": 0.009754793015379064
+    },
+    {
+      "information_date": "2024-08-12",
+      "target": 0.032097665270109266,
+      "market_prediction": 0.0020842606904867313,
+      "metadata_prediction": -0.00015859465860852294,
+      "event_prediction": 0.001131373871546331
+    },
+    {
+      "information_date": "2024-08-13",
+      "target": -0.04116663137488563,
+      "market_prediction": 0.006631769405553145,
+      "metadata_prediction": 0.006029704464618453,
+      "event_prediction": 0.004469041289061155
+    },
+    {
+      "information_date": "2024-08-14",
+      "target": -0.009273652350169859,
+      "market_prediction": 0.004070030482503768,
+      "metadata_prediction": 0.0027970642322813887,
+      "event_prediction": -0.0017688731919205435
+    },
+    {
+      "information_date": "2024-08-15",
+      "target": 0.02170686231987995,
+      "market_prediction": 0.0030592293642253323,
+      "metadata_prediction": 0.003769781131253827,
+      "event_prediction": 0.0065168458625044865
+    },
+    {
+      "information_date": "2024-08-16",
+      "target": 0.003034131441821186,
+      "market_prediction": 0.002810234856338024,
+      "metadata_prediction": 0.004883148400396522,
+      "event_prediction": 0.006151890204790621
+    },
+    {
+      "information_date": "2024-08-17",
+      "target": -0.010175916043212663,
+      "market_prediction": 0.0021141286470631815,
+      "metadata_prediction": 0.005601347144246354,
+      "event_prediction": 0.004866858501507897
+    },
+    {
+      "information_date": "2024-08-18",
+      "target": 0.03223333651317151,
+      "market_prediction": 0.004384398966997275,
+      "metadata_prediction": 0.006236087151146882,
+      "event_prediction": 0.010236947070019379
+    },
+    {
+      "information_date": "2024-08-19",
+      "target": -0.021542889394244424,
+      "market_prediction": 0.002592272468397016,
+      "metadata_prediction": 0.002687077366506534,
+      "event_prediction": 0.0018192794645787475
+    },
+    {
+      "information_date": "2024-08-20",
+      "target": 0.020806206780232817,
+      "market_prediction": 0.005582259921295773,
+      "metadata_prediction": 0.006075352278310554,
+      "event_prediction": 0.0035233057865107003
+    },
+    {
+      "information_date": "2024-08-21",
+      "target": 0.0007385548777667506,
+      "market_prediction": 0.00427035947708815,
+      "metadata_prediction": 0.0072120639725218585,
+      "event_prediction": 0.008087735660483045
+    },
+    {
+      "information_date": "2024-08-22",
+      "target": 0.05335959569609838,
+      "market_prediction": 0.001496364848004073,
+      "metadata_prediction": 0.0013677644871578417,
+      "event_prediction": -0.018695845032623865
+    },
+    {
+      "information_date": "2024-08-23",
+      "target": 0.004310331315575899,
+      "market_prediction": 0.004603228928441355,
+      "metadata_prediction": 0.0048123943275724095,
+      "event_prediction": 0.00937688701536294
+    },
+    {
+      "information_date": "2024-08-24",
+      "target": 0.00015294528928522233,
+      "market_prediction": 0.001589165830474792,
+      "metadata_prediction": 0.0010964524705114416,
+      "event_prediction": 0.0021437128100208905
+    },
+    {
+      "information_date": "2024-08-25",
+      "target": -0.01785129125380358,
+      "market_prediction": 0.0056392245810337315,
+      "metadata_prediction": 0.0038969882891275688,
+      "event_prediction": 0.008005465731627547
+    },
+    {
+      "information_date": "2024-08-26",
+      "target": -0.05305603660571012,
+      "market_prediction": 0.0027807410378153184,
+      "metadata_prediction": 0.001604738252354619,
+      "event_prediction": 0.006203498805746339
+    },
+    {
+      "information_date": "2024-08-27",
+      "target": -0.008093742449867158,
+      "market_prediction": 0.004958171124065979,
+      "metadata_prediction": 0.006042428814364119,
+      "event_prediction": 0.014028598950237198
+    },
+    {
+      "information_date": "2024-08-28",
+      "target": -0.001960446014154349,
+      "market_prediction": -0.00012235644727054623,
+      "metadata_prediction": -0.001033024056710366,
+      "event_prediction": -0.004241053084225053
+    },
+    {
+      "information_date": "2024-08-29",
+      "target": 0.0034252321480323644,
+      "market_prediction": 0.007577507141777482,
+      "metadata_prediction": 0.010686931183054228,
+      "event_prediction": 0.006115243191314641
+    },
+    {
+      "information_date": "2024-08-30",
+      "target": -0.011841825238913972,
+      "market_prediction": 0.0018442063845085402,
+      "metadata_prediction": -0.001100683653962251,
+      "event_prediction": 0.0017437228277992307
+    },
+    {
+      "information_date": "2024-08-31",
+      "target": -0.013383631630495496,
+      "market_prediction": 0.003074042514546527,
+      "metadata_prediction": 0.0002606565375671496,
+      "event_prediction": 0.002930021801603083
+    },
+    {
+      "information_date": "2024-09-01",
+      "target": 0.023701822377527826,
+      "market_prediction": 0.005075076358944719,
+      "metadata_prediction": 0.008871602185707674,
+      "event_prediction": 0.010805321348255459
+    },
+    {
+      "information_date": "2024-09-02",
+      "target": -0.041509983178032006,
+      "market_prediction": 0.0006620334236454089,
+      "metadata_prediction": 0.00429122374909832,
+      "event_prediction": 0.008579781922069096
+    },
+    {
+      "information_date": "2024-09-03",
+      "target": 0.008077815405585831,
+      "market_prediction": 0.0033744052644338815,
+      "metadata_prediction": 0.0024022269029827996,
+      "event_prediction": -5.442617556050515e-05
+    },
+    {
+      "information_date": "2024-09-04",
+      "target": -0.009389761814267983,
+      "market_prediction": 0.0020881500074416237,
+      "metadata_prediction": 0.000575180491806935,
+      "event_prediction": 0.005209622557475773
+    },
+    {
+      "information_date": "2024-09-05",
+      "target": -0.04881714346334731,
+      "market_prediction": 0.003815308543585795,
+      "metadata_prediction": 0.0037935327055768076,
+      "event_prediction": -0.003383457949159614
+    },
+    {
+      "information_date": "2024-09-06",
+      "target": 0.01057865680242398,
+      "market_prediction": 0.0002794432022216681,
+      "metadata_prediction": 0.0035831345103157063,
+      "event_prediction": 0.00996681180124458
+    },
+    {
+      "information_date": "2024-09-07",
+      "target": 0.013383339985763243,
+      "market_prediction": -0.0006026881990872516,
+      "metadata_prediction": -0.0003954769830488451,
+      "event_prediction": -0.004293033955675531
+    },
+    {
+      "information_date": "2024-09-08",
+      "target": 0.02544392553050545,
+      "market_prediction": -0.0011831727701724993,
+      "metadata_prediction": -9.770772785610811e-05,
+      "event_prediction": -0.005600758064229054
+    },
+    {
+      "information_date": "2024-09-09",
+      "target": 0.00509775114832145,
+      "market_prediction": -0.0005901033460511572,
+      "metadata_prediction": -0.0032981938148120534,
+      "event_prediction": 0.0036849506437959187
+    },
+    {
+      "information_date": "2024-09-10",
+      "target": 0.02512173430662079,
+      "market_prediction": 0.0034086094161960142,
+      "metadata_prediction": 0.001355161194635051,
+      "event_prediction": 0.012334789654494027
+    },
+    {
+      "information_date": "2024-09-11",
+      "target": -0.006667239305961137,
+      "market_prediction": 0.006443066531445788,
+      "metadata_prediction": 0.008733693017636875,
+      "event_prediction": 0.011005094693448021
+    },
+    {
+      "information_date": "2024-09-12",
+      "target": 0.0427156492609202,
+      "market_prediction": 0.0029053928936907903,
+      "metadata_prediction": 0.00023606789809718057,
+      "event_prediction": 0.00522536011060035
+    },
+    {
+      "information_date": "2024-09-13",
+      "target": -0.0026537605445516865,
+      "market_prediction": 0.0036462556664585742,
+      "metadata_prediction": 0.005337088715558588,
+      "event_prediction": 0.004125524415683071
+    },
+    {
+      "information_date": "2024-09-14",
+      "target": -0.026355439218516685,
+      "market_prediction": 0.0023378612526001926,
+      "metadata_prediction": 0.0012925026348873782,
+      "event_prediction": -0.0008903191788992575
+    },
+    {
+      "information_date": "2024-09-15",
+      "target": -0.008697285941209554,
+      "market_prediction": 0.005784742844194663,
+      "metadata_prediction": 0.010276592562070978,
+      "event_prediction": 0.002416123184875897
+    },
+    {
+      "information_date": "2024-09-16",
+      "target": 0.04225349685894364,
+      "market_prediction": -0.0009434662134842663,
+      "metadata_prediction": -0.0010675012656537431,
+      "event_prediction": 0.004902260922765231
+    },
+    {
+      "information_date": "2024-09-17",
+      "target": 0.02637952326083126,
+      "market_prediction": 0.004002994860690073,
+      "metadata_prediction": 0.0061634710991705305,
+      "event_prediction": 0.004605497698236144
+    },
+    {
+      "information_date": "2024-09-18",
+      "target": 0.026482706190465333,
+      "market_prediction": 0.0015474162257517402,
+      "metadata_prediction": -0.0004510248067635986,
+      "event_prediction": 0.0020453488869799407
+    },
+    {
+      "information_date": "2024-09-19",
+      "target": -0.013637219519849308,
+      "market_prediction": 0.002535763125751509,
+      "metadata_prediction": 0.0013320927907636202,
+      "event_prediction": 0.0055361933756153
+    },
+    {
+      "information_date": "2024-09-20",
+      "target": 0.0035109265059838357,
+      "market_prediction": 0.002046527759009346,
+      "metadata_prediction": 0.0018624577996334626,
+      "event_prediction": -0.0024753863807104705
+    },
+    {
+      "information_date": "2024-09-21",
+      "target": 0.019804507178004416,
+      "market_prediction": 0.002707931411473731,
+      "metadata_prediction": 0.0023911583758707807,
+      "event_prediction": -0.012257999364834769
+    },
+    {
+      "information_date": "2024-09-22",
+      "target": -0.019133884338630502,
+      "market_prediction": 0.0003746509247711898,
+      "metadata_prediction": 0.002660196447847648,
+      "event_prediction": -0.001858305724897509
+    },
+    {
+      "information_date": "2024-09-23",
+      "target": 0.021329635499207633,
+      "market_prediction": -9.771758071969432e-05,
+      "metadata_prediction": 0.0002642650916479595,
+      "event_prediction": 3.219330388547345e-05
+    },
+    {
+      "information_date": "2024-09-24",
+      "target": -0.014893111896955524,
+      "market_prediction": -0.0030519298588531788,
+      "metadata_prediction": -0.003522154651933957,
+      "event_prediction": -0.008101624192677969
+    },
+    {
+      "information_date": "2024-09-25",
+      "target": 0.029004774273423628,
+      "market_prediction": 0.0026607382497477587,
+      "metadata_prediction": 0.002251143056520689,
+      "event_prediction": 0.009055218572328596
+    },
+    {
+      "information_date": "2024-09-26",
+      "target": 0.011056599441276793,
+      "market_prediction": 0.00015440537053489686,
+      "metadata_prediction": 0.0017328909302827794,
+      "event_prediction": 0.006570198620262026
+    },
+    {
+      "information_date": "2024-09-27",
+      "target": -0.003933395710509435,
+      "market_prediction": -0.000642659228089512,
+      "metadata_prediction": -0.00435067168192328,
+      "event_prediction": -0.00477185860578458
+    },
+    {
+      "information_date": "2024-09-28",
+      "target": -0.019063687490500025,
+      "market_prediction": 0.001357014310841718,
+      "metadata_prediction": 0.005479410039268476,
+      "event_prediction": 0.012333982570779046
+    },
+    {
+      "information_date": "2024-09-29",
+      "target": -0.013163236529182276,
+      "market_prediction": 0.0016127049323756252,
+      "metadata_prediction": 0.005830863870707978,
+      "event_prediction": 0.001714931412342201
+    },
+    {
+      "information_date": "2024-09-30",
+      "target": -0.030769568965381966,
+      "market_prediction": 0.002147864430720957,
+      "metadata_prediction": 0.0021154196366390274,
+      "event_prediction": 0.003799853008233811
+    },
+    {
+      "information_date": "2024-10-01",
+      "target": -0.004618746830788001,
+      "market_prediction": -0.002322202683049969,
+      "metadata_prediction": -0.0023624039607525243,
+      "event_prediction": -0.0036577072536699137
+    },
+    {
+      "information_date": "2024-10-02",
+      "target": -0.008474714200151001,
+      "market_prediction": -0.0003807619275720559,
+      "metadata_prediction": 0.005981410639822723,
+      "event_prediction": 0.007359555630914321
+    },
+    {
+      "information_date": "2024-10-03",
+      "target": 0.015183623354218412,
+      "market_prediction": 0.0018539887413295776,
+      "metadata_prediction": -0.007211601691172507,
+      "event_prediction": -0.015445952774309366
+    },
+    {
+      "information_date": "2024-10-04",
+      "target": 0.00016330912800999187,
+      "market_prediction": 0.00040064724099264475,
+      "metadata_prediction": -0.002751363534260964,
+      "event_prediction": -0.008201583476888905
+    },
+    {
+      "information_date": "2024-10-05",
+      "target": 0.026568158303155842,
+      "market_prediction": 0.002745873678288414,
+      "metadata_prediction": 0.008710901777881648,
+      "event_prediction": -0.0019857435928345253
+    },
+    {
+      "information_date": "2024-10-06",
+      "target": -0.014107219910739377,
+      "market_prediction": 0.0019237237629928508,
+      "metadata_prediction": -0.0031663086205623425,
+      "event_prediction": -0.004014419435283791
+    },
+    {
+      "information_date": "2024-10-07",
+      "target": -0.0038080877138055858,
+      "market_prediction": 0.0029053846135359226,
+      "metadata_prediction": 0.003183851444758512,
+      "event_prediction": 0.005223003116117284
+    },
+    {
+      "information_date": "2024-10-08",
+      "target": -0.02431163533509073,
+      "market_prediction": 0.0026698638110645785,
+      "metadata_prediction": 0.0037861558944188283,
+      "event_prediction": 0.0033467990694614194
+    },
+    {
+      "information_date": "2024-10-09",
+      "target": -0.004407632007099482,
+      "market_prediction": 0.0037282187305078146,
+      "metadata_prediction": 0.0024476999122949126,
+      "event_prediction": -0.0001900749583968967
+    },
+    {
+      "information_date": "2024-10-10",
+      "target": 0.032358436996540174,
+      "market_prediction": 0.0021331335299267437,
+      "metadata_prediction": 0.0013806078509755312,
+      "event_prediction": 0.003163710469112041
+    },
+    {
+      "information_date": "2024-10-11",
+      "target": 0.0021777678998291528,
+      "market_prediction": -0.0016924610161558641,
+      "metadata_prediction": 0.0006686385762588755,
+      "event_prediction": 0.004846791414149761
+    },
+    {
+      "information_date": "2024-10-12",
+      "target": 0.025698299065211705,
+      "market_prediction": 0.000420970414532773,
+      "metadata_prediction": 0.004883363279827508,
+      "event_prediction": 0.002169682238443737
+    },
+    {
+      "information_date": "2024-10-13",
+      "target": 0.017320495271279324,
+      "market_prediction": 0.0027144704940468014,
+      "metadata_prediction": 0.0015667729162799355,
+      "event_prediction": -0.006982681665578329
+    },
+    {
+      "information_date": "2024-10-14",
+      "target": 0.02580063148398737,
+      "market_prediction": 0.0005927975560098462,
+      "metadata_prediction": -0.001293744873419427,
+      "event_prediction": 0.0007506860242087691
+    },
+    {
+      "information_date": "2024-10-15",
+      "target": 0.007217289298229845,
+      "market_prediction": 0.004298063748781689,
+      "metadata_prediction": 0.004166007285816941,
+      "event_prediction": 0.00847716282278745
+    },
+    {
+      "information_date": "2024-10-16",
+      "target": -0.0007192211101756385,
+      "market_prediction": 0.002929095116130701,
+      "metadata_prediction": 0.00012800682869666268,
+      "event_prediction": -0.007747303433421422
+    },
+    {
+      "information_date": "2024-10-17",
+      "target": 0.013454375819147213,
+      "market_prediction": 0.004771748903962446,
+      "metadata_prediction": 0.005298124223413392,
+      "event_prediction": 0.005208286757842346
+    },
+    {
+      "information_date": "2024-10-18",
+      "target": -0.0038913974252188233,
+      "market_prediction": -0.0001906736449048276,
+      "metadata_prediction": 0.0007734875481246362,
+      "event_prediction": 5.7541613837036685e-05
+    },
+    {
+      "information_date": "2024-10-19",
+      "target": 0.011466009063076266,
+      "market_prediction": 0.0027391529939833994,
+      "metadata_prediction": 0.009612591352807176,
+      "event_prediction": 0.01616565686599241
+    },
+    {
+      "information_date": "2024-10-20",
+      "target": -0.022499466991934614,
+      "market_prediction": 0.0007280965450686535,
+      "metadata_prediction": 0.0037890071760186576,
+      "event_prediction": 0.00441881806440749
+    },
+    {
+      "information_date": "2024-10-21",
+      "target": -0.004917132810065672,
+      "market_prediction": 0.0022377645290648607,
+      "metadata_prediction": 0.001883043594678087,
+      "event_prediction": -0.0003696495827685731
+    },
+    {
+      "information_date": "2024-10-22",
+      "target": 0.0021262763622482694,
+      "market_prediction": 0.0014677800093971145,
+      "metadata_prediction": 0.005005528669889797,
+      "event_prediction": 0.01265861168908338
+    },
+    {
+      "information_date": "2024-10-23",
+      "target": 0.011334926392910338,
+      "market_prediction": -0.0002939453656382674,
+      "metadata_prediction": 0.004797789480721262,
+      "event_prediction": 0.005824295373552031
+    },
+    {
+      "information_date": "2024-10-24",
+      "target": -0.015979108430189903,
+      "market_prediction": 0.0007529791103434626,
+      "metadata_prediction": -0.003627550853970452,
+      "event_prediction": 0.004660865183246125
+    },
+    {
+      "information_date": "2024-10-25",
+      "target": 0.005735311487518047,
+      "market_prediction": 0.003133213948656157,
+      "metadata_prediction": 0.0072447518790834655,
+      "event_prediction": 0.0189818791313021
+    },
+    {
+      "information_date": "2024-10-26",
+      "target": 0.0063418441297804495,
+      "market_prediction": -7.48487432537118e-05,
+      "metadata_prediction": 0.004851975093579647,
+      "event_prediction": 0.006457067452412899
+    },
+    {
+      "information_date": "2024-10-27",
+      "target": 0.04786827803309279,
+      "market_prediction": 0.000776950849416333,
+      "metadata_prediction": 0.0012432935349209154,
+      "event_prediction": -0.015338826791990643
+    },
+    {
+      "information_date": "2024-10-28",
+      "target": 0.018886437488105257,
+      "market_prediction": 0.001468890611408808,
+      "metadata_prediction": -0.0008739177883925063,
+      "event_prediction": -0.0015063856929435583
+    },
+    {
+      "information_date": "2024-10-29",
+      "target": 0.0014334299099818537,
+      "market_prediction": -0.0007347907082110895,
+      "metadata_prediction": 0.0010299633941256686,
+      "event_prediction": 0.0005258600604907656
+    },
+    {
+      "information_date": "2024-10-30",
+      "target": -0.04118528056945647,
+      "market_prediction": 0.002954171230088097,
+      "metadata_prediction": 0.001533980990913058,
+      "event_prediction": -0.002144740935837379
+    },
+    {
+      "information_date": "2024-10-31",
+      "target": 0.0028891780468580652,
+      "market_prediction": 0.003203607602041066,
+      "metadata_prediction": 0.0013759600967345237,
+      "event_prediction": 0.006569115010353236
+    },
+    {
+      "information_date": "2024-11-01",
+      "target": -0.017766468287608417,
+      "market_prediction": 0.0005573768821835361,
+      "metadata_prediction": 0.003086345291173513,
+      "event_prediction": -0.0025525245103128714
+    },
+    {
+      "information_date": "2024-11-02",
+      "target": 0.009890156507594394,
+      "market_prediction": 0.0018644469263566182,
+      "metadata_prediction": 0.005039117341252317,
+      "event_prediction": -0.003743769856695965
+    },
+    {
+      "information_date": "2024-11-03",
+      "target": -0.011598128539768493,
+      "market_prediction": 0.0016851702564981584,
+      "metadata_prediction": 0.0053640901323471065,
+      "event_prediction": 0.010731227345066763
+    },
+    {
+      "information_date": "2024-11-04",
+      "target": 0.0902540143589261,
+      "market_prediction": 0.0007674964788567243,
+      "metadata_prediction": -0.002298679841717259,
+      "event_prediction": -0.01225120351719294
+    },
+    {
+      "information_date": "2024-11-05",
+      "target": 0.009102774518145784,
+      "market_prediction": -0.0010555386867474328,
+      "metadata_prediction": 0.0005939644322359226,
+      "event_prediction": -0.0036641693339417936
+    },
+    {
+      "information_date": "2024-11-06",
+      "target": 0.011494283495466329,
+      "market_prediction": -0.0003863886403143628,
+      "metadata_prediction": 0.0017725600008574992,
+      "event_prediction": 0.007972339717609564
+    },
+    {
+      "information_date": "2024-11-07",
+      "target": 0.005466517416211403,
+      "market_prediction": 0.003583267624509906,
+      "metadata_prediction": 0.0018551326515515213,
+      "event_prediction": 0.004285989513631087
+    },
+    {
+      "information_date": "2024-11-08",
+      "target": 0.011681713579942743,
+      "market_prediction": 0.004253260579117311,
+      "metadata_prediction": 0.003262409298620895,
+      "event_prediction": 0.0034104729198039703
+    },
+    {
+      "information_date": "2024-11-09",
+      "target": 0.05745578830170106,
+      "market_prediction": -0.001187085831061563,
+      "metadata_prediction": -0.00048431530240558704,
+      "event_prediction": 0.002684456344783515
+    },
+    {
+      "information_date": "2024-11-10",
+      "target": 0.07929725759059747,
+      "market_prediction": -0.006682782376488442,
+      "metadata_prediction": -0.00653216124993627,
+      "event_prediction": -0.003480208646414346
+    },
+    {
+      "information_date": "2024-11-14",
+      "target": 0.0348925628638419,
+      "market_prediction": 0.005645528248068015,
+      "metadata_prediction": 0.005537221560191808,
+      "event_prediction": 0.01339147262996868
+    },
+    {
+      "information_date": "2024-11-15",
+      "target": -0.011029190342231154,
+      "market_prediction": 0.002131775123461165,
+      "metadata_prediction": 0.00135410293006463,
+      "event_prediction": -0.0006772406416601135
+    },
+    {
+      "information_date": "2024-11-16",
+      "target": 0.004887387462201298,
+      "market_prediction": 0.0068307182995233,
+      "metadata_prediction": 0.015101876361975705,
+      "event_prediction": 0.008293988883786624
+    },
+    {
+      "information_date": "2024-11-17",
+      "target": 0.008367536953683086,
+      "market_prediction": 0.0065877432855661775,
+      "metadata_prediction": 0.010175622659973897,
+      "event_prediction": 0.012981708257416671
+    },
+    {
+      "information_date": "2024-11-18",
+      "target": 0.006308262370390061,
+      "market_prediction": 0.00678670898580421,
+      "metadata_prediction": 0.006700950277053989,
+      "event_prediction": 0.014062236976001233
+    },
+    {
+      "information_date": "2024-11-19",
+      "target": 0.04091008793361439,
+      "market_prediction": 0.009928474064889373,
+      "metadata_prediction": 0.010345956659714765,
+      "event_prediction": 0.006767132525591505
+    },
+    {
+      "information_date": "2024-11-20",
+      "target": 0.031885140470917284,
+      "market_prediction": 0.00522569308030711,
+      "metadata_prediction": 0.004807660182636661,
+      "event_prediction": 0.003983318857064064
+    },
+    {
+      "information_date": "2024-11-21",
+      "target": -0.0018884672075959452,
+      "market_prediction": 0.0013228117775792654,
+      "metadata_prediction": 0.0022822496052389445,
+      "event_prediction": -0.0011071684130450092
+    },
+    {
+      "information_date": "2024-11-22",
+      "target": -0.00460247909943734,
+      "market_prediction": 0.00383446837098162,
+      "metadata_prediction": -0.0024016735225921466,
+      "event_prediction": -0.005959095086754615
+    },
+    {
+      "information_date": "2024-11-23",
+      "target": -0.0031584838463494247,
+      "market_prediction": -0.001976315002282114,
+      "metadata_prediction": 0.004514918755640317,
+      "event_prediction": 0.01393863899983732
+    },
+    {
+      "information_date": "2024-11-24",
+      "target": -0.0349758994575593,
+      "market_prediction": 0.0016833844654918007,
+      "metadata_prediction": 0.005946257925226326,
+      "event_prediction": 0.0050865026939046105
+    },
+    {
+      "information_date": "2024-11-25",
+      "target": -0.01988719903700298,
+      "market_prediction": 0.007197780519904251,
+      "metadata_prediction": 0.00460030231359639,
+      "event_prediction": 0.006450440040609842
+    },
+    {
+      "information_date": "2024-11-26",
+      "target": 0.031155398178896343,
+      "market_prediction": -0.0007794065238778737,
+      "metadata_prediction": 0.002396813302276216,
+      "event_prediction": 0.0029160198102847904
+    },
+    {
+      "information_date": "2024-11-27",
+      "target": 0.011652113299611022,
+      "market_prediction": 0.0032555544646819708,
+      "metadata_prediction": 0.00034724691478106866,
+      "event_prediction": 0.0009047130782077317
+    },
+    {
+      "information_date": "2024-11-28",
+      "target": 0.000698337026760365,
+      "market_prediction": -0.0007368039537132805,
+      "metadata_prediction": -0.000717391614840857,
+      "event_prediction": 0.006267137934286069
+    },
+    {
+      "information_date": "2024-11-29",
+      "target": -0.0033414077127381647,
+      "market_prediction": 0.0032694701171126746,
+      "metadata_prediction": -0.0006152436461256774,
+      "event_prediction": -0.002727995138327409
+    },
+    {
+      "information_date": "2024-11-30",
+      "target": 0.0013972666683954582,
+      "market_prediction": 0.002227003789919826,
+      "metadata_prediction": 0.00743882566661671,
+      "event_prediction": 0.01402893193924837
+    },
+    {
+      "information_date": "2024-12-01",
+      "target": -0.004072005403098378,
+      "market_prediction": 0.002030397658530307,
+      "metadata_prediction": 0.0053179827473629135,
+      "event_prediction": 0.0006195647025811352
+    },
+    {
+      "information_date": "2024-12-02",
+      "target": -0.0028488487593103518,
+      "market_prediction": 0.00028466518823348384,
+      "metadata_prediction": -0.002253173641624093,
+      "event_prediction": 0.0013784931753130787
+    },
+    {
+      "information_date": "2024-12-03",
+      "target": 0.07583795590287701,
+      "market_prediction": -3.210725940584573e-05,
+      "metadata_prediction": -0.0023990816234529012,
+      "event_prediction": -0.0008103386120276576
+    },
+    {
+      "information_date": "2024-12-04",
+      "target": -0.05176322076229789,
+      "market_prediction": 0.003998847351684086,
+      "metadata_prediction": -0.000545022106304784,
+      "event_prediction": -0.0075912683440352725
+    },
+    {
+      "information_date": "2024-12-05",
+      "target": 0.015930160865995413,
+      "market_prediction": 0.020829925623358735,
+      "metadata_prediction": 0.01884109492078354,
+      "event_prediction": 0.018335103840510392
+    },
+    {
+      "information_date": "2024-12-06",
+      "target": 0.006444249641958111,
+      "market_prediction": 0.00020640568804721144,
+      "metadata_prediction": -0.000758537271192075,
+      "event_prediction": 0.0007003246208396106
+    },
+    {
+      "information_date": "2024-12-07",
+      "target": -0.008451983096033788,
+      "market_prediction": -0.002815783646410497,
+      "metadata_prediction": 0.000994248427020254,
+      "event_prediction": 0.003045424900169187
+    },
+    {
+      "information_date": "2024-12-08",
+      "target": -0.022274217134789054,
+      "market_prediction": 0.005626341347858693,
+      "metadata_prediction": 0.007953958571708896,
+      "event_prediction": 0.00613302887716724
+    },
+    {
+      "information_date": "2024-12-09",
+      "target": 0.004299282902717305,
+      "market_prediction": 0.004973348294412809,
+      "metadata_prediction": 0.004118232599757531,
+      "event_prediction": 0.003897725261580054
+    },
+    {
+      "information_date": "2024-12-10",
+      "target": 0.0381057730230725,
+      "market_prediction": 0.0024022949106720375,
+      "metadata_prediction": 0.00023870328161681325,
+      "event_prediction": 4.354592719039898e-05
+    },
+    {
+      "information_date": "2024-12-11",
+      "target": -0.013388303340249097,
+      "market_prediction": 0.003198333402094424,
+      "metadata_prediction": -0.000755339423862739,
+      "event_prediction": -0.0035851149968367108
+    },
+    {
+      "information_date": "2024-12-12",
+      "target": 0.023775547758175142,
+      "market_prediction": 0.0023317203018393792,
+      "metadata_prediction": 0.0027291458303154727,
+      "event_prediction": 0.0011730537044078678
+    },
+    {
+      "information_date": "2024-12-13",
+      "target": -0.003453781430292624,
+      "market_prediction": 0.00205712918617933,
+      "metadata_prediction": 0.0013204107207353578,
+      "event_prediction": -0.0031769870327712684
+    },
+    {
+      "information_date": "2024-12-14",
+      "target": 0.027929474023574263,
+      "market_prediction": 0.002723452180178523,
+      "metadata_prediction": 0.006315451614744428,
+      "event_prediction": 0.005668802642787791
+    },
+    {
+      "information_date": "2024-12-15",
+      "target": 0.02197745455866773,
+      "market_prediction": 0.0025509190144635983,
+      "metadata_prediction": 0.010189156390666993,
+      "event_prediction": 0.017567169545049728
+    },
+    {
+      "information_date": "2024-12-16",
+      "target": -0.02016124882225856,
+      "market_prediction": 0.003004202859692477,
+      "metadata_prediction": 0.004809343572805365,
+      "event_prediction": 0.005802007581843445
+    },
+    {
+      "information_date": "2024-12-17",
+      "target": -0.03420531208372535,
+      "market_prediction": 0.0019528487535839037,
+      "metadata_prediction": 0.0006074373925228458,
+      "event_prediction": -0.0031419390418657555
+    },
+    {
+      "information_date": "2024-12-18",
+      "target": -0.04039295481375571,
+      "market_prediction": 0.0032735393578143647,
+      "metadata_prediction": 0.0023527367182878973,
+      "event_prediction": 0.006274856679367941
+    },
+    {
+      "information_date": "2024-12-19",
+      "target": 0.003957509066930598,
+      "market_prediction": 0.0033022132163033546,
+      "metadata_prediction": 0.007738612334221341,
+      "event_prediction": 0.004302787834010809
+    },
+    {
+      "information_date": "2024-12-20",
+      "target": -0.005139567796010103,
+      "market_prediction": 0.005552490941975628,
+      "metadata_prediction": 0.0031452691854511865,
+      "event_prediction": -0.0011357830605047987
+    },
+    {
+      "information_date": "2024-12-21",
+      "target": -0.010001103783501608,
+      "market_prediction": 0.00326342862383103,
+      "metadata_prediction": 0.01160715493931619,
+      "event_prediction": 0.013144186005414869
+    },
+    {
+      "information_date": "2024-12-22",
+      "target": -0.017303360015338165,
+      "market_prediction": 0.0038625439484371703,
+      "metadata_prediction": 0.014167531894631236,
+      "event_prediction": 0.010337775435497708
+    },
+    {
+      "information_date": "2024-12-23",
+      "target": 0.03913616062907965,
+      "market_prediction": 0.001313090363479442,
+      "metadata_prediction": 0.0022884687268443257,
+      "event_prediction": 0.01059361193195469
+    },
+    {
+      "information_date": "2024-12-24",
+      "target": 0.009702030916294957,
+      "market_prediction": 0.0037707255760820475,
+      "metadata_prediction": 0.008704346932199226,
+      "event_prediction": 0.017308916017024174
+    },
+    {
+      "information_date": "2024-12-25",
+      "target": -0.02598157267897505,
+      "market_prediction": 0.004712915666425538,
+      "metadata_prediction": 0.006576670493476609,
+      "event_prediction": 0.009165906334701443
+    },
+    {
+      "information_date": "2024-12-26",
+      "target": -0.019122224527910348,
+      "market_prediction": 0.005443735345772336,
+      "metadata_prediction": 0.011427322780032593,
+      "event_prediction": 0.007844198361776897
+    },
+    {
+      "information_date": "2024-12-27",
+      "target": 0.006215555814125695,
+      "market_prediction": 0.0032347423466924973,
+      "metadata_prediction": 0.005375996661708232,
+      "event_prediction": 0.0032911220006459027
+    },
+    {
+      "information_date": "2024-12-28",
+      "target": -0.01531990673285355,
+      "market_prediction": 0.000636008519852552,
+      "metadata_prediction": 0.0030301317655521375,
+      "event_prediction": 0.013982995196188442
+    },
+    {
+      "information_date": "2024-12-29",
+      "target": -0.012813436492778107,
+      "market_prediction": 0.005144118328597221,
+      "metadata_prediction": 0.012859131544770457,
+      "event_prediction": 0.00945011709443802
+    },
+    {
+      "information_date": "2024-12-30",
+      "target": 0.014436486058284403,
+      "market_prediction": 0.0017227760099950973,
+      "metadata_prediction": 0.0034108835449010834,
+      "event_prediction": 0.0037466553963238333
+    },
+    {
+      "information_date": "2024-12-31",
+      "target": 0.012620199995735826,
+      "market_prediction": 0.001275306014560658,
+      "metadata_prediction": 0.0043245820470699135,
+      "event_prediction": 0.006656683537974519
+    },
+    {
+      "information_date": "2025-01-01",
+      "target": 0.02146004981797267,
+      "market_prediction": -0.0001696340800958606,
+      "metadata_prediction": 0.0027717215348442986,
+      "event_prediction": 0.008895572427137894
+    },
+    {
+      "information_date": "2025-01-02",
+      "target": 0.011542481154186435,
+      "market_prediction": 0.0016262129291877978,
+      "metadata_prediction": -0.0020353629274640532,
+      "event_prediction": -0.0034765301791212667
+    },
+    {
+      "information_date": "2025-01-03",
+      "target": 0.0001793281511572875,
+      "market_prediction": 0.001473500694642917,
+      "metadata_prediction": -0.00015582624516583205,
+      "event_prediction": -0.003207927325450815
+    },
+    {
+      "information_date": "2025-01-04",
+      "target": 0.0085573090115596,
+      "market_prediction": 0.0009193042317785891,
+      "metadata_prediction": 0.007352626003131032,
+      "event_prediction": 0.00790772614827013
+    },
+    {
+      "information_date": "2025-01-05",
+      "target": 0.02675913645927297,
+      "market_prediction": 0.0023423837713985643,
+      "metadata_prediction": 0.010129593130106555,
+      "event_prediction": 0.009590312830108187
+    },
+    {
+      "information_date": "2025-01-06",
+      "target": -0.050795418437023176,
+      "market_prediction": 0.003880353963192221,
+      "metadata_prediction": 0.004769873033031573,
+      "event_prediction": 0.012448797088191481
+    },
+    {
+      "information_date": "2025-01-07",
+      "target": -0.026131882368182313,
+      "market_prediction": 0.00204873611278733,
+      "metadata_prediction": 0.0037265325233276766,
+      "event_prediction": 0.006139091039667254
+    },
+    {
+      "information_date": "2025-01-08",
+      "target": -0.003301190535735854,
+      "market_prediction": 0.0014995838587561023,
+      "metadata_prediction": 0.004039545548042887,
+      "event_prediction": 0.0026328338848111933
+    },
+    {
+      "information_date": "2025-01-09",
+      "target": 0.005415569120578834,
+      "market_prediction": 0.0014609530956271647,
+      "metadata_prediction": -1.2730174935702502e-05,
+      "event_prediction": 0.0031942208924538463
+    },
+    {
+      "information_date": "2025-01-10",
+      "target": 0.004504949391003432,
+      "market_prediction": 0.0016301365814333558,
+      "metadata_prediction": 0.0016347237807675832,
+      "event_prediction": -0.00042271807487406993
+    },
+    {
+      "information_date": "2025-01-11",
+      "target": -0.00391384467047895,
+      "market_prediction": 0.00013273136556712396,
+      "metadata_prediction": 0.003843882122859173,
+      "event_prediction": 0.01000919334105666
+    },
+    {
+      "information_date": "2025-01-12",
+      "target": 0.00671003459032371,
+      "market_prediction": 0.0020916508013583404,
+      "metadata_prediction": 0.010128503840510743,
+      "event_prediction": 0.002863182649862403
+    },
+    {
+      "information_date": "2025-01-13",
+      "target": 0.025640674206346192,
+      "market_prediction": 0.001094369101333852,
+      "metadata_prediction": 0.0007107631066592588,
+      "event_prediction": 9.502979580299853e-05
+    },
+    {
+      "information_date": "2025-01-14",
+      "target": 0.022164588672231922,
+      "market_prediction": 0.002855050262713844,
+      "metadata_prediction": -0.0015004274372037167,
+      "event_prediction": 0.0027908804306096217
+    },
+    {
+      "information_date": "2025-01-15",
+      "target": 0.015875298554368422,
+      "market_prediction": 0.0011043322992747013,
+      "metadata_prediction": -0.00025878658197998807,
+      "event_prediction": 0.0010111606381871304
+    },
+    {
+      "information_date": "2025-01-16",
+      "target": 0.02488613201261969,
+      "market_prediction": 0.0029079705909414388,
+      "metadata_prediction": -0.001043958670717899,
+      "event_prediction": -0.006499825437716444
+    },
+    {
+      "information_date": "2025-01-17",
+      "target": 0.013765092243794186,
+      "market_prediction": 0.002446119279869031,
+      "metadata_prediction": -0.004478613142494244,
+      "event_prediction": -0.007795588887329948
+    },
+    {
+      "information_date": "2025-01-18",
+      "target": -0.029299195560768432,
+      "market_prediction": 0.0012499052856667632,
+      "metadata_prediction": 0.0006090697637907581,
+      "event_prediction": 0.01107968001807385
+    },
+    {
+      "information_date": "2025-01-19",
+      "target": 0.010166862976050295,
+      "market_prediction": 0.0041978092360888,
+      "metadata_prediction": 0.006179598854335399,
+      "event_prediction": 0.00630865654172828
+    },
+    {
+      "information_date": "2025-01-20",
+      "target": 0.02597366002110446,
+      "market_prediction": 0.004068320373605519,
+      "metadata_prediction": 0.007573240877974266,
+      "event_prediction": 0.008119844001032469
+    },
+    {
+      "information_date": "2025-01-21",
+      "target": -0.030091231180550126,
+      "market_prediction": 0.004784921619380085,
+      "metadata_prediction": -0.00018840005003409148,
+      "event_prediction": -0.0017096655306286586
+    },
+    {
+      "information_date": "2025-01-22",
+      "target": 0.013864640333712153,
+      "market_prediction": 0.00329484631254962,
+      "metadata_prediction": 0.0049531999647967236,
+      "event_prediction": 0.003472453241599756
+    },
+    {
+      "information_date": "2025-01-23",
+      "target": 0.012664750099921518,
+      "market_prediction": 0.005996291316798845,
+      "metadata_prediction": 0.004203371565833072,
+      "event_prediction": -0.0048206621295283384
+    },
+    {
+      "information_date": "2025-01-24",
+      "target": -0.0011602858868340338,
+      "market_prediction": 0.004596970538647334,
+      "metadata_prediction": -0.0021486023266138778,
+      "event_prediction": 0.0031033999770477697
+    },
+    {
+      "information_date": "2025-01-25",
+      "target": -0.035034682383634275,
+      "market_prediction": 0.0028108813319396102,
+      "metadata_prediction": 0.00798032900911658,
+      "event_prediction": -0.0036294557125740104
+    },
+    {
+      "information_date": "2025-01-26",
+      "target": 0.012333119542157878,
+      "market_prediction": 0.004224066897096617,
+      "metadata_prediction": 0.01598249321954178,
+      "event_prediction": 0.015092244092155049
+    },
+    {
+      "information_date": "2025-01-27",
+      "target": -0.006087047211898455,
+      "market_prediction": 0.0031035215713196996,
+      "metadata_prediction": 0.0032089156495905234,
+      "event_prediction": 0.0029344248769042906
+    },
+    {
+      "information_date": "2025-01-28",
+      "target": 0.03134144810650952,
+      "market_prediction": 0.004159591585123013,
+      "metadata_prediction": 0.005298593435705606,
+      "event_prediction": 0.007894690605961305
+    },
+    {
+      "information_date": "2025-01-29",
+      "target": -0.008492264156863993,
+      "market_prediction": 0.0022903851377413485,
+      "metadata_prediction": 0.00048269064326736453,
+      "event_prediction": -0.0002486036785427992
+    },
+    {
+      "information_date": "2025-01-30",
+      "target": -0.02014036204892522,
+      "market_prediction": 0.003619783816686359,
+      "metadata_prediction": 0.00014429452904843516,
+      "event_prediction": 0.005444914936631527
+    },
+    {
+      "information_date": "2025-01-31",
+      "target": -0.029518532764494787,
+      "market_prediction": 0.006293784273434409,
+      "metadata_prediction": 0.004687728773753742,
+      "event_prediction": 0.0036797286026823296
+    },
+    {
+      "information_date": "2025-02-01",
+      "target": -0.052027540135804795,
+      "market_prediction": 0.002080299996429607,
+      "metadata_prediction": 0.007492597585761392,
+      "event_prediction": 0.002667764649569188
+    },
+    {
+      "information_date": "2025-02-02",
+      "target": 0.07002580900485333,
+      "market_prediction": 0.0017169484180352013,
+      "metadata_prediction": 0.0060870365792042025,
+      "event_prediction": 0.004775867482674178
+    },
+    {
+      "information_date": "2025-02-03",
+      "target": -0.025653083848260816,
+      "market_prediction": 0.002721166991236167,
+      "metadata_prediction": 0.0037029051311064797,
+      "event_prediction": 0.0005503462595027736
+    },
+    {
+      "information_date": "2025-02-04",
+      "target": -0.007055080443631345,
+      "market_prediction": 0.005825968901097179,
+      "metadata_prediction": 0.00597742180702405,
+      "event_prediction": 0.0038019226453203455
+    },
+    {
+      "information_date": "2025-02-05",
+      "target": 0.001014295711903035,
+      "market_prediction": 0.003165640012546457,
+      "metadata_prediction": 0.004597102693085633,
+      "event_prediction": 0.00312265529943145
+    },
+    {
+      "information_date": "2025-02-06",
+      "target": -0.0078104788538061465,
+      "market_prediction": 0.004063352156059379,
+      "metadata_prediction": 0.0016594122644054518,
+      "event_prediction": 0.004886237154095786
+    },
+    {
+      "information_date": "2025-02-07",
+      "target": 0.006415111519470829,
+      "market_prediction": 0.005466040797532859,
+      "metadata_prediction": 0.0033671165201745795,
+      "event_prediction": 0.01233662233376221
+    },
+    {
+      "information_date": "2025-02-08",
+      "target": -0.005166202650853102,
+      "market_prediction": 0.0019253978200562997,
+      "metadata_prediction": 0.004093701399123061,
+      "event_prediction": 0.0108943967881702
+    },
+    {
+      "information_date": "2025-02-09",
+      "target": 0.008345019805858112,
+      "market_prediction": 0.0033063171851034022,
+      "metadata_prediction": 0.006306478384166546,
+      "event_prediction": 0.010991126530193577
+    },
+    {
+      "information_date": "2025-02-10",
+      "target": -0.02373431667756465,
+      "market_prediction": 0.0015879082560941444,
+      "metadata_prediction": -0.002840394387010248,
+      "event_prediction": -0.00648562753725393
+    },
+    {
+      "information_date": "2025-02-11",
+      "target": 0.023165994792978983,
+      "market_prediction": 0.0015428192219582718,
+      "metadata_prediction": 0.00024922722184706034,
+      "event_prediction": -0.005150961982430483
+    },
+    {
+      "information_date": "2025-02-12",
+      "target": -0.003629080663679507,
+      "market_prediction": -0.0005505883875835805,
+      "metadata_prediction": 0.0022547857956564834,
+      "event_prediction": 0.006561691721608488
+    },
+    {
+      "information_date": "2025-02-13",
+      "target": 0.005319795281590878,
+      "market_prediction": 0.0003819823595792764,
+      "metadata_prediction": -0.0017568198273784819,
+      "event_prediction": 0.013047112046645803
+    },
+    {
+      "information_date": "2025-02-14",
+      "target": -0.001381809689261937,
+      "market_prediction": 0.0020070289421630205,
+      "metadata_prediction": -0.002426846327923101,
+      "event_prediction": -0.007102247645228158
+    },
+    {
+      "information_date": "2025-02-15",
+      "target": -0.013594117182459509,
+      "market_prediction": 0.0009175331741778066,
+      "metadata_prediction": 0.00433885784275958,
+      "event_prediction": 0.0023471351899908184
+    },
+    {
+      "information_date": "2025-02-16",
+      "target": -0.0001528616321462284,
+      "market_prediction": 0.0008124461228708835,
+      "metadata_prediction": 0.006125675181651662,
+      "event_prediction": 0.011979862168091972
+    },
+    {
+      "information_date": "2025-02-17",
+      "target": -0.0049162408594009,
+      "market_prediction": 0.001483266090964434,
+      "metadata_prediction": -0.0023159600359502304,
+      "event_prediction": -0.003918104125804508
+    },
+    {
+      "information_date": "2025-02-18",
+      "target": 0.014102510503982035,
+      "market_prediction": 0.001549806619000066,
+      "metadata_prediction": -0.003997233001161681,
+      "event_prediction": -0.004781687200194326
+    },
+    {
+      "information_date": "2025-02-19",
+      "target": 0.011194787446419774,
+      "market_prediction": 0.0002460606560627074,
+      "metadata_prediction": 5.0355537988541494e-05,
+      "event_prediction": -0.0009192116568869481
+    },
+    {
+      "information_date": "2025-02-20",
+      "target": -0.018381772131256136,
+      "market_prediction": 0.0030143254615994453,
+      "metadata_prediction": -0.0010195353091567933,
+      "event_prediction": -0.0012567548137142007
+    },
+    {
+      "information_date": "2025-02-21",
+      "target": 0.001149413352715234,
+      "market_prediction": -0.0090954480462643,
+      "metadata_prediction": -0.009842756501156567,
+      "event_prediction": -0.0064638101882849314
+    },
+    {
+      "information_date": "2025-02-22",
+      "target": -0.010102602449473919,
+      "market_prediction": 0.002481399072174383,
+      "metadata_prediction": 0.0021256574614972657,
+      "event_prediction": 0.007085908417332626
+    },
+    {
+      "information_date": "2025-02-23",
+      "target": -0.03476917983458816,
+      "market_prediction": 0.0013239491348582741,
+      "metadata_prediction": 0.0026341689189165554,
+      "event_prediction": 0.0007402708365383897
+    },
+    {
+      "information_date": "2025-02-24",
+      "target": -0.03522924626606472,
+      "market_prediction": 0.0034015358300366716,
+      "metadata_prediction": 0.000797368559871201,
+      "event_prediction": 0.0003028933087791154
+    },
+    {
+      "information_date": "2025-02-25",
+      "target": -0.04164378999666973,
+      "market_prediction": 0.00044015342934312636,
+      "metadata_prediction": 0.001211338496637688,
+      "event_prediction": -0.0015827539462239721
+    },
+    {
+      "information_date": "2025-02-26",
+      "target": -0.0561287141498692,
+      "market_prediction": 0.008222849345925968,
+      "metadata_prediction": 0.008867813613693893,
+      "event_prediction": 0.008381775719491263
+    },
+    {
+      "information_date": "2025-02-27",
+      "target": 0.06116798652734645,
+      "market_prediction": -0.0003196507160128227,
+      "metadata_prediction": 0.004915013530077539,
+      "event_prediction": 0.0010481882738389622
+    },
+    {
+      "information_date": "2025-02-28",
+      "target": 0.006013985358272134,
+      "market_prediction": -0.000862362383009299,
+      "metadata_prediction": -0.0015600334591780564,
+      "event_prediction": -6.390262115319465e-05
+    },
+    {
+      "information_date": "2025-03-01",
+      "target": 0.08003061834374336,
+      "market_prediction": 0.0031284271342569303,
+      "metadata_prediction": 0.007560478553609842,
+      "event_prediction": 0.004694228236539718
+    },
+    {
+      "information_date": "2025-03-02",
+      "target": -0.09449946062567427,
+      "market_prediction": 0.0006526093140782939,
+      "metadata_prediction": 0.008984168167882528,
+      "event_prediction": 0.01304860770298369
+    },
+    {
+      "information_date": "2025-03-03",
+      "target": 0.034418673360344876,
+      "market_prediction": 0.010516897092616172,
+      "metadata_prediction": 0.004099518264617824,
+      "event_prediction": 0.00428212344252126
+    },
+    {
+      "information_date": "2025-03-04",
+      "target": 0.05464533738727839,
+      "market_prediction": 0.0026865223603689406,
+      "metadata_prediction": 0.008022945439549746,
+      "event_prediction": 0.010665497274021348
+    },
+    {
+      "information_date": "2025-03-05",
+      "target": -0.05046749179350429,
+      "market_prediction": 0.008955787842594567,
+      "metadata_prediction": 0.009648671161867284,
+      "event_prediction": 0.012849521150028638
+    },
+    {
+      "information_date": "2025-03-06",
+      "target": -0.01244820436032179,
+      "market_prediction": 0.007575891366515926,
+      "metadata_prediction": 0.004235579135742592,
+      "event_prediction": 0.010292042640976126
+    },
+    {
+      "information_date": "2025-03-07",
+      "target": 0.0024467246380863727,
+      "market_prediction": 0.0060184608469366595,
+      "metadata_prediction": 0.0020041698234293625,
+      "event_prediction": 0.000325143923465665
+    },
+    {
+      "information_date": "2025-03-08",
+      "target": -0.04746398698884757,
+      "market_prediction": 0.0056560977902857315,
+      "metadata_prediction": 0.01148261702895737,
+      "event_prediction": 0.007885902550981993
+    },
+    {
+      "information_date": "2025-03-09",
+      "target": -0.03058383326645875,
+      "market_prediction": 0.01178032338921892,
+      "metadata_prediction": 0.022693220581456446,
+      "event_prediction": 0.023004226274776378
+    },
+    {
+      "information_date": "2025-03-10",
+      "target": 0.0328558524329885,
+      "market_prediction": 0.0032757964419313393,
+      "metadata_prediction": 0.004637218114959797,
+      "event_prediction": 0.006402186807537824
+    },
+    {
+      "information_date": "2025-03-11",
+      "target": 0.017683700738871266,
+      "market_prediction": 0.002267971876137938,
+      "metadata_prediction": -0.00047537782612988317,
+      "event_prediction": -0.004355900018423281
+    },
+    {
+      "information_date": "2025-03-12",
+      "target": -0.020299222022740926,
+      "market_prediction": 0.003377419887212081,
+      "metadata_prediction": 0.00030348876551401457,
+      "event_prediction": 0.00324868756877161
+    },
+    {
+      "information_date": "2025-03-13",
+      "target": 0.03183473012925453,
+      "market_prediction": 0.00732603281786625,
+      "metadata_prediction": 0.009980429831447554,
+      "event_prediction": 0.01180312622273756
+    },
+    {
+      "information_date": "2025-03-14",
+      "target": -0.0019642480801518314,
+      "market_prediction": 0.0020627328123162467,
+      "metadata_prediction": 0.00022096860070171015,
+      "event_prediction": -0.0013792030640089998
+    },
+    {
+      "information_date": "2025-03-15",
+      "target": -0.007873642102216194,
+      "market_prediction": 0.0022043485503268176,
+      "metadata_prediction": 0.010654663650620101,
+      "event_prediction": 0.011586611125511839
+    },
+    {
+      "information_date": "2025-03-16",
+      "target": -0.006333836341417265,
+      "market_prediction": 0.003915783455185157,
+      "metadata_prediction": 0.005579360259909251,
+      "event_prediction": -0.0017164813856827875
+    },
+    {
+      "information_date": "2025-03-17",
+      "target": -0.0012358529732070522,
+      "market_prediction": 0.004007027722424333,
+      "metadata_prediction": 0.005484821409505351,
+      "event_prediction": 0.004870833342508576
+    },
+    {
+      "information_date": "2025-03-18",
+      "target": 0.03442018945080472,
+      "market_prediction": 0.004072691517153138,
+      "metadata_prediction": 0.0008364192754442897,
+      "event_prediction": 0.0010944202000935594
+    },
+    {
+      "information_date": "2025-03-19",
+      "target": -0.016908820261232527,
+      "market_prediction": 0.0031169967539957408,
+      "metadata_prediction": 0.0004023962985289706,
+      "event_prediction": 0.0006114637316557009
+    },
+    {
+      "information_date": "2025-03-20",
+      "target": -0.002236889964681188,
+      "market_prediction": 0.003623348700722215,
+      "metadata_prediction": 0.0018657342088685878,
+      "event_prediction": 0.010347297150067374
+    },
+    {
+      "information_date": "2025-03-21",
+      "target": -0.00018405468917914725,
+      "market_prediction": 0.0010824054960122727,
+      "metadata_prediction": -0.00045751179811635064,
+      "event_prediction": -0.0006001600448868227
+    },
+    {
+      "information_date": "2025-03-22",
+      "target": 0.02734606038580223,
+      "market_prediction": 0.0024198563612114485,
+      "metadata_prediction": 0.007921725127697388,
+      "event_prediction": 0.0242587597091314
+    },
+    {
+      "information_date": "2025-03-23",
+      "target": -0.00037687382010176407,
+      "market_prediction": 0.0009613086109283781,
+      "metadata_prediction": 0.005347952485939509,
+      "event_prediction": 0.01247079504748885
+    },
+    {
+      "information_date": "2025-03-24",
+      "target": 0.007559978489276364,
+      "market_prediction": 0.001943917054772482,
+      "metadata_prediction": -0.003476223024146031,
+      "event_prediction": -0.0016308241195878638
+    },
+    {
+      "information_date": "2025-03-25",
+      "target": 0.00579071694700084,
+      "market_prediction": 0.0016912144255965262,
+      "metadata_prediction": -0.002366356271791584,
+      "event_prediction": 0.00042873744899530946
+    },
+    {
+      "information_date": "2025-03-26",
+      "target": -0.010067707673574344,
+      "market_prediction": 0.0028996337683538614,
+      "metadata_prediction": 9.059541369851572e-05,
+      "event_prediction": 0.003037157397985848
+    },
+    {
+      "information_date": "2025-03-27",
+      "target": -0.030255520522915025,
+      "market_prediction": 0.0016073892660538333,
+      "metadata_prediction": 0.001375493817655288,
+      "event_prediction": 0.004520056946818174
+    },
+    {
+      "information_date": "2025-03-28",
+      "target": -0.012813837375178272,
+      "market_prediction": 0.0016408456108082466,
+      "metadata_prediction": 0.0032133483103885894,
+      "event_prediction": -0.0021796956056626925
+    },
+    {
+      "information_date": "2025-03-29",
+      "target": -0.01873025850743193,
+      "market_prediction": 0.0010322886209053015,
+      "metadata_prediction": 0.006166266579225233,
+      "event_prediction": 0.0069811108410713155
+    },
+    {
+      "information_date": "2025-03-30",
+      "target": 0.017691230593458895,
+      "market_prediction": 0.0010395158066734914,
+      "metadata_prediction": 0.009345676152205544,
+      "event_prediction": 0.007308232353431542
+    },
+    {
+      "information_date": "2025-03-31",
+      "target": 0.01900075125138212,
+      "market_prediction": 0.004679332482047979,
+      "metadata_prediction": 0.004580503818397662,
+      "event_prediction": 0.006180387715047079
+    },
+    {
+      "information_date": "2025-04-01",
+      "target": -0.012562718924547966,
+      "market_prediction": 0.0017196841124861618,
+      "metadata_prediction": 0.0014492903907416994,
+      "event_prediction": 0.0022725730344528585
+    },
+    {
+      "information_date": "2025-04-05",
+      "target": -0.06798153487177394,
+      "market_prediction": 0.002029531555966891,
+      "metadata_prediction": 0.001770555379779851,
+      "event_prediction": 0.007189443796472997
+    },
+    {
+      "information_date": "2025-04-06",
+      "target": 0.028551191242755847,
+      "market_prediction": 0.005842764216307358,
+      "metadata_prediction": 0.011386757853731215,
+      "event_prediction": 0.0155403176477985
+    },
+    {
+      "information_date": "2025-04-07",
+      "target": -0.06078730890104789,
+      "market_prediction": 0.00010234867912169371,
+      "metadata_prediction": 0.0013968012840447795,
+      "event_prediction": 0.006729684761518542
+    },
+    {
+      "information_date": "2025-04-08",
+      "target": 0.08990149589199614,
+      "market_prediction": 0.003506076983631502,
+      "metadata_prediction": 0.0036567948139952632,
+      "event_prediction": 0.00020721573033524385
+    },
+    {
+      "information_date": "2025-04-09",
+      "target": -0.011615078073971552,
+      "market_prediction": -0.0049068670182141234,
+      "metadata_prediction": -0.008739870154477402,
+      "event_prediction": -0.014032665004253568
+    },
+    {
+      "information_date": "2025-04-10",
+      "target": 0.026319762592474483,
+      "market_prediction": 0.0059543066147683035,
+      "metadata_prediction": 0.005721947115592799,
+      "event_prediction": 0.007374702528011332
+    },
+    {
+      "information_date": "2025-04-11",
+      "target": 0.02961788431625534,
+      "market_prediction": 0.002826498502668753,
+      "metadata_prediction": 0.0017028586564015382,
+      "event_prediction": -0.0005281194981510248
+    },
+    {
+      "information_date": "2025-04-12",
+      "target": -0.010062150644167378,
+      "market_prediction": 0.0009136869271909533,
+      "metadata_prediction": 0.0021262282949377036,
+      "event_prediction": 0.012733106203005582
+    },
+    {
+      "information_date": "2025-04-13",
+      "target": 0.009904164315433173,
+      "market_prediction": 0.005385452226526735,
+      "metadata_prediction": 0.008308263699630234,
+      "event_prediction": 0.007744668066950471
+    },
+    {
+      "information_date": "2025-04-14",
+      "target": -0.020296998967988866,
+      "market_prediction": 0.001692554100268152,
+      "metadata_prediction": 0.00325938826087749,
+      "event_prediction": -0.00032679760418053956
+    },
+    {
+      "information_date": "2025-04-15",
+      "target": 0.0037616010598482408,
+      "market_prediction": 0.006000979125921412,
+      "metadata_prediction": 0.004087244264722746,
+      "event_prediction": 0.0034996062714437517
+    },
+    {
+      "information_date": "2025-04-16",
+      "target": 0.010095391022189704,
+      "market_prediction": -0.0006917969922074661,
+      "metadata_prediction": -0.0015521794618141098,
+      "event_prediction": -0.0031816272489149817
+    },
+    {
+      "information_date": "2025-04-17",
+      "target": 0.0004917644200777005,
+      "market_prediction": 0.0013312693188470765,
+      "metadata_prediction": -0.0035355430788595026,
+      "event_prediction": -0.004492417860940902
+    },
+    {
+      "information_date": "2025-04-18",
+      "target": 0.0033086432558842027,
+      "market_prediction": 0.0015642886330956814,
+      "metadata_prediction": -0.0016952276886403259,
+      "event_prediction": 0.006489046300491869
+    },
+    {
+      "information_date": "2025-04-19",
+      "target": 0.02415086625680951,
+      "market_prediction": -0.0010852399957252618,
+      "metadata_prediction": -0.0005313488917075486,
+      "event_prediction": 0.004755080047717493
+    },
+    {
+      "information_date": "2025-04-20",
+      "target": 0.010812757815331864,
+      "market_prediction": -0.0013828777599339814,
+      "metadata_prediction": -0.0020702549913910228,
+      "event_prediction": -0.008056286783132
+    },
+    {
+      "information_date": "2025-04-21",
+      "target": 0.056866180799705957,
+      "market_prediction": 0.0028477485994917017,
+      "metadata_prediction": 0.0023357006832999475,
+      "event_prediction": 0.0035310926145886404
+    },
+    {
+      "information_date": "2025-04-22",
+      "target": -0.005439807233676652,
+      "market_prediction": -0.0005520385653999737,
+      "metadata_prediction": -0.0007294232230607945,
+      "event_prediction": -0.002977819336066015
+    },
+    {
+      "information_date": "2025-04-23",
+      "target": 0.006890393935762296,
+      "market_prediction": 0.0032774819592830077,
+      "metadata_prediction": -0.0010189359764650949,
+      "event_prediction": -0.00026755847059354654
+    },
+    {
+      "information_date": "2025-04-24",
+      "target": 0.015331348200030348,
+      "market_prediction": 0.0002084218515950294,
+      "metadata_prediction": -0.003620680483005176,
+      "event_prediction": -0.0030863787134261505
+    },
+    {
+      "information_date": "2025-04-25",
+      "target": -0.006016493874201667,
+      "market_prediction": 0.004256000523151603,
+      "metadata_prediction": 0.0008361877859631478,
+      "event_prediction": 0.004736147417237002
+    },
+    {
+      "information_date": "2025-04-26",
+      "target": -0.003269230769230691,
+      "market_prediction": 0.0021387563456307522,
+      "metadata_prediction": 0.006677457795843353,
+      "event_prediction": 0.008121775060238727
+    },
+    {
+      "information_date": "2025-04-27",
+      "target": 0.008532996206254362,
+      "market_prediction": -0.000723065227720256,
+      "metadata_prediction": -0.0028143881397046707,
+      "event_prediction": 0.006027989172435766
+    },
+    {
+      "information_date": "2025-04-28",
+      "target": 0.00409246951786657,
+      "market_prediction": 0.00224955079222195,
+      "metadata_prediction": -0.00030179923079439765,
+      "event_prediction": 0.0019193847467265613
+    },
+    {
+      "information_date": "2025-04-29",
+      "target": -0.00275263157894734,
+      "market_prediction": 0.0013186104720277953,
+      "metadata_prediction": -0.0012486222406274568,
+      "event_prediction": -0.0011819475149486246
+    },
+    {
+      "information_date": "2025-04-30",
+      "target": 0.02452540413876081,
+      "market_prediction": -8.697385247635704e-05,
+      "metadata_prediction": -0.0038321143422286085,
+      "event_prediction": 0.0023624765958850094
+    },
+    {
+      "information_date": "2025-05-01",
+      "target": -0.00792380128165504,
+      "market_prediction": 0.0030080340174473783,
+      "metadata_prediction": 0.0009877465028985315,
+      "event_prediction": 0.000630941801314999
+    },
+    {
+      "information_date": "2025-05-02",
+      "target": -0.006427265146236039,
+      "market_prediction": 0.0034859426365278093,
+      "metadata_prediction": 0.0025716066513883484,
+      "event_prediction": 0.012359405155956606
+    },
+    {
+      "information_date": "2025-05-03",
+      "target": -0.017367309822940435,
+      "market_prediction": 0.0005640278168479436,
+      "metadata_prediction": -0.001496021376673359,
+      "event_prediction": 0.004754052801896395
+    },
+    {
+      "information_date": "2025-05-04",
+      "target": 0.004303687598657291,
+      "market_prediction": 0.0019042738371102162,
+      "metadata_prediction": 0.004647205384548419,
+      "event_prediction": 0.008977905162490172
+    },
+    {
+      "information_date": "2025-05-05",
+      "target": 0.021755616043720893,
+      "market_prediction": 0.0009871129562099672,
+      "metadata_prediction": -0.006012150638603885,
+      "event_prediction": -0.005691289785942416
+    },
+    {
+      "information_date": "2025-05-06",
+      "target": 0.027310769753843278,
+      "market_prediction": 0.0022374717954491133,
+      "metadata_prediction": 0.005017492097229814,
+      "event_prediction": 0.0003320053597215362
+    },
+    {
+      "information_date": "2025-05-07",
+      "target": 0.03334315448742653,
+      "market_prediction": 0.0013529547736820797,
+      "metadata_prediction": 0.005793190416631484,
+      "event_prediction": 0.006661962464638902
+    },
+    {
+      "information_date": "2025-05-08",
+      "target": 0.007543186574006766,
+      "market_prediction": -0.003148460389933894,
+      "metadata_prediction": -0.00031120213497234147,
+      "event_prediction": 0.0008182218139822037
+    },
+    {
+      "information_date": "2025-05-09",
+      "target": 0.007550677050826238,
+      "market_prediction": 0.00046674248311676624,
+      "metadata_prediction": 0.004663971645746902,
+      "event_prediction": 0.016281158546480316
+    },
+    {
+      "information_date": "2025-05-10",
+      "target": 0.0010657750579778913,
+      "market_prediction": 8.07271687494459e-05,
+      "metadata_prediction": 0.0003129372733193514,
+      "event_prediction": -0.00020733345900129062
+    },
+    {
+      "information_date": "2025-05-11",
+      "target": -0.0231184546956118,
+      "market_prediction": 0.002241812435480113,
+      "metadata_prediction": 0.006867934744300417,
+      "event_prediction": 0.003902938234796031
+    },
+    {
+      "information_date": "2025-05-12",
+      "target": 0.018370813648913575,
+      "market_prediction": 0.0005550451286313006,
+      "metadata_prediction": 0.009144439036805544,
+      "event_prediction": 0.008007597281172524
+    },
+    {
+      "information_date": "2025-05-13",
+      "target": -0.008154777542536462,
+      "market_prediction": -0.0001926309054029649,
+      "metadata_prediction": 0.0022712509298542993,
+      "event_prediction": -0.0023640782029741396
+    },
+    {
+      "information_date": "2025-05-14",
+      "target": 0.012479294498690674,
+      "market_prediction": 0.002963975698648049,
+      "metadata_prediction": -0.00014774495536188184,
+      "event_prediction": 0.002806111729310983
+    },
+    {
+      "information_date": "2025-05-15",
+      "target": -0.00492153626567271,
+      "market_prediction": 0.003284908237393124,
+      "metadata_prediction": 0.008877661112794344,
+      "event_prediction": 0.013580178069455563
+    },
+    {
+      "information_date": "2025-05-16",
+      "target": -0.0021863543266521512,
+      "market_prediction": 0.001377986118779084,
+      "metadata_prediction": 0.008780923757750043,
+      "event_prediction": 0.008225877947947902
+    },
+    {
+      "information_date": "2025-05-17",
+      "target": 0.0032266595113805696,
+      "market_prediction": 0.0003678262417732537,
+      "metadata_prediction": -0.0010711943164014148,
+      "event_prediction": 0.005386404899221405
+    },
+    {
+      "information_date": "2025-05-18",
+      "target": 0.020774997392986938,
+      "market_prediction": 0.0011480241640765177,
+      "metadata_prediction": 0.016301519382433606,
+      "event_prediction": 0.009247144760238987
+    },
+    {
+      "information_date": "2025-05-19",
+      "target": 0.0101174440778522,
+      "market_prediction": 0.0021630819244699727,
+      "metadata_prediction": 0.00854760146951747,
+      "event_prediction": 0.011122087818279955
+    },
+    {
+      "information_date": "2025-05-20",
+      "target": 0.04639940817320287,
+      "market_prediction": 0.002436320286606725,
+      "metadata_prediction": 0.006812216274539112,
+      "event_prediction": 0.005885971288359836
+    },
+    {
+      "information_date": "2025-05-21",
+      "target": -0.006184732989746977,
+      "market_prediction": 0.0027877608348991427,
+      "metadata_prediction": 0.00604592403354744,
+      "event_prediction": 0.0016991249068972966
+    },
+    {
+      "information_date": "2025-05-22",
+      "target": -0.024819048408040167,
+      "market_prediction": 0.0032022538455053953,
+      "metadata_prediction": 0.008702201299025668,
+      "event_prediction": 0.004275270894926559
+    },
+    {
+      "information_date": "2025-05-23",
+      "target": -0.0021801439763019514,
+      "market_prediction": 0.003590700810406136,
+      "metadata_prediction": 0.008731867049793344,
+      "event_prediction": 0.009645469904961774
+    },
+    {
+      "information_date": "2025-05-24",
+      "target": 0.0142551094535881,
+      "market_prediction": 0.0009326982650591618,
+      "metadata_prediction": 0.00938208230568259,
+      "event_prediction": 0.0048737772235903035
+    },
+    {
+      "information_date": "2025-05-25",
+      "target": -0.007114969995410503,
+      "market_prediction": 0.0014742359038889467,
+      "metadata_prediction": 0.006945007781778043,
+      "event_prediction": 0.0028153733555204416
+    },
+    {
+      "information_date": "2025-05-26",
+      "target": -0.00024168329196538885,
+      "market_prediction": 0.002149760116609042,
+      "metadata_prediction": 0.0073750179426429535,
+      "event_prediction": 0.00559713767597523
+    },
+    {
+      "information_date": "2025-05-27",
+      "target": -0.007274311587608939,
+      "market_prediction": 0.0028882715800102998,
+      "metadata_prediction": 0.005745663282293329,
+      "event_prediction": 0.0006202306580478448
+    },
+    {
+      "information_date": "2025-05-28",
+      "target": -0.018706991696480713,
+      "market_prediction": -0.00032966727126260923,
+      "metadata_prediction": 0.005150252354905051,
+      "event_prediction": 0.005228102869919143
+    },
+    {
+      "information_date": "2025-05-29",
+      "target": -0.022069785435262612,
+      "market_prediction": 2.4327852282056547e-05,
+      "metadata_prediction": 0.010160343109818481,
+      "event_prediction": 0.012413298257557144
+    },
+    {
+      "information_date": "2025-05-30",
+      "target": 0.006658433275763986,
+      "market_prediction": 0.0030455032814484554,
+      "metadata_prediction": 0.005388112754053845,
+      "event_prediction": 0.011142197759243811
+    },
+    {
+      "information_date": "2025-05-31",
+      "target": 0.004348572025560493,
+      "market_prediction": 0.0006272421174400122,
+      "metadata_prediction": 0.014704267050149877,
+      "event_prediction": 0.008395280477291364
+    },
+    {
+      "information_date": "2025-06-01",
+      "target": 0.006107639511846896,
+      "market_prediction": 0.0007819178584079908,
+      "metadata_prediction": 0.01096985215670973,
+      "event_prediction": 0.009741279703774613
+    },
+    {
+      "information_date": "2025-06-02",
+      "target": 0.0003443147283233028,
+      "market_prediction": 0.0013808301537331534,
+      "metadata_prediction": 0.005353048052918178,
+      "event_prediction": -6.469292459976772e-05
+    },
+    {
+      "information_date": "2025-06-03",
+      "target": -0.004573163504581257,
+      "market_prediction": 0.0014134890373345291,
+      "metadata_prediction": 0.007526955322961159,
+      "event_prediction": 0.001127865338663765
+    },
+    {
+      "information_date": "2025-06-04",
+      "target": -0.02410821788365114,
+      "market_prediction": 0.0009762941843986324,
+      "metadata_prediction": 0.012281642030221881,
+      "event_prediction": 0.00813305869439762
+    },
+    {
+      "information_date": "2025-06-05",
+      "target": 0.023355806106204025,
+      "market_prediction": 0.0020684469641509564,
+      "metadata_prediction": 0.013892285395438183,
+      "event_prediction": 0.013274501914522478
+    },
+    {
+      "information_date": "2025-06-06",
+      "target": 0.00546628425250395,
+      "market_prediction": 0.0016435177543265038,
+      "metadata_prediction": 0.001976191822271781,
+      "event_prediction": 0.0034297557173278764
+    },
+    {
+      "information_date": "2025-06-07",
+      "target": 0.0018488689551281468,
+      "market_prediction": 0.0010026738002289033,
+      "metadata_prediction": 0.008396488713228224,
+      "event_prediction": 0.00547147488234355
+    },
+    {
+      "information_date": "2025-06-08",
+      "target": 0.036994357579298365,
+      "market_prediction": 0.0009782750587221986,
+      "metadata_prediction": 0.01184709992303258,
+      "event_prediction": 0.01444239114105942
+    },
+    {
+      "information_date": "2025-06-09",
+      "target": 0.0013961213575524045,
+      "market_prediction": 0.0007741953182707016,
+      "metadata_prediction": 0.0012731944548892565,
+      "event_prediction": 0.004680069369341917
+    },
+    {
+      "information_date": "2025-06-10",
+      "target": -0.016772954647827243,
+      "market_prediction": 0.00044997751088331466,
+      "metadata_prediction": 0.0014755481504744505,
+      "event_prediction": 0.005272226451804349
+    },
+    {
+      "information_date": "2025-06-11",
+      "target": -0.033200996743982025,
+      "market_prediction": 0.001912992879409738,
+      "metadata_prediction": 0.0031633331679035122,
+      "event_prediction": 0.009676163744664212
+    },
+    {
+      "information_date": "2025-06-12",
+      "target": 0.008962024345090303,
+      "market_prediction": 0.0029666697960614593,
+      "metadata_prediction": 0.0029678260740414256,
+      "event_prediction": 0.0026459566414600284
+    },
+    {
+      "information_date": "2025-06-13",
+      "target": 0.0023311242160264367,
+      "market_prediction": 0.0026941838868563975,
+      "metadata_prediction": 0.006995129074828843,
+      "event_prediction": 0.008008584959100321
+    },
+    {
+      "information_date": "2025-06-14",
+      "target": 0.004219841506964306,
+      "market_prediction": -0.000335626430894321,
+      "metadata_prediction": 0.0012420869796192294,
+      "event_prediction": -0.003260971578600105
+    },
+    {
+      "information_date": "2025-06-15",
+      "target": 0.01589982186608041,
+      "market_prediction": 0.000398395013788206,
+      "metadata_prediction": 0.0025815256930579867,
+      "event_prediction": 0.009918154469044552
+    },
+    {
+      "information_date": "2025-06-16",
+      "target": -0.02263134211240736,
+      "market_prediction": 0.0024574342400224777,
+      "metadata_prediction": 0.0032290669883348394,
+      "event_prediction": -0.002351698628427391
+    },
+    {
+      "information_date": "2025-06-17",
+      "target": -0.0007933442790746259,
+      "market_prediction": 0.00257109766331739,
+      "metadata_prediction": 0.0034998133949989954,
+      "event_prediction": 0.00108527869019174
+    },
+    {
+      "information_date": "2025-06-18",
+      "target": -0.004627707985057183,
+      "market_prediction": 0.0010652694273859914,
+      "metadata_prediction": 0.009714774154725611,
+      "event_prediction": 0.010670375383208816
+    },
+    {
+      "information_date": "2025-06-19",
+      "target": -0.010703447273256006,
+      "market_prediction": -0.0004712143040579322,
+      "metadata_prediction": -0.0017417422250390092,
+      "event_prediction": -0.0015127684031606059
+    },
+    {
+      "information_date": "2025-06-20",
+      "target": -0.010593023705479654,
+      "market_prediction": 0.002460434598788353,
+      "metadata_prediction": 0.008558390432741302,
+      "event_prediction": 0.008448148898837712
+    },
+    {
+      "information_date": "2025-06-21",
+      "target": -0.0119688920200548,
+      "market_prediction": 0.002348718789304614,
+      "metadata_prediction": 0.00781440303360463,
+      "event_prediction": 0.013491359321138487
+    },
+    {
+      "information_date": "2025-06-22",
+      "target": 0.03718820278612367,
+      "market_prediction": 0.00346020075041084,
+      "metadata_prediction": 0.011549163228013077,
+      "event_prediction": 0.007909603747374521
+    },
+    {
+      "information_date": "2025-06-23",
+      "target": 0.012408975577755443,
+      "market_prediction": -0.0008896836875401121,
+      "metadata_prediction": 0.001217838887218052,
+      "event_prediction": -0.006315298448038206
+    },
+    {
+      "information_date": "2025-06-24",
+      "target": 0.01534794225873548,
+      "market_prediction": 0.0026466385733376436,
+      "metadata_prediction": 0.005435915380768641,
+      "event_prediction": -0.001320742243830901
+    },
+    {
+      "information_date": "2025-06-25",
+      "target": -0.0035879031637180425,
+      "market_prediction": 0.0048724323073641,
+      "metadata_prediction": 0.010417256741948653,
+      "event_prediction": 0.006673034481992215
+    },
+    {
+      "information_date": "2025-06-26",
+      "target": -0.0016635651308556376,
+      "market_prediction": 0.0029948002111870606,
+      "metadata_prediction": 0.007387638413930788,
+      "event_prediction": 0.007313029374377718
+    },
+    {
+      "information_date": "2025-06-27",
+      "target": -0.0007842135298746777,
+      "market_prediction": 0.001192199338059381,
+      "metadata_prediction": 0.009216714977251787,
+      "event_prediction": 0.005146936517938895
+    },
+    {
+      "information_date": "2025-06-28",
+      "target": 0.012220375504749637,
+      "market_prediction": -0.0011627583609313164,
+      "metadata_prediction": 0.010114546633144208,
+      "event_prediction": -0.010996405806669616
+    },
+    {
+      "information_date": "2025-06-29",
+      "target": -0.012133689080325194,
+      "market_prediction": -0.00013645742413036775,
+      "metadata_prediction": 0.0014583659577604555,
+      "event_prediction": 0.018636772968641087
+    },
+    {
+      "information_date": "2025-06-30",
+      "target": -0.009350399671490095,
+      "market_prediction": 0.0001601490659232322,
+      "metadata_prediction": 0.006393019363809388,
+      "event_prediction": 0.006343931908078922
+    },
+    {
+      "information_date": "2025-07-01",
+      "target": 0.02302432627467521,
+      "market_prediction": 0.001506641346282082,
+      "metadata_prediction": 0.010528121311875763,
+      "event_prediction": 0.009150890344978634
+    },
+    {
+      "information_date": "2025-07-02",
+      "target": 0.005472748603496003,
+      "market_prediction": -0.0010985692244183227,
+      "metadata_prediction": 0.005962543302576544,
+      "event_prediction": 0.0017032900370193018
+    },
+    {
+      "information_date": "2025-07-03",
+      "target": -0.009889464761798195,
+      "market_prediction": 0.00040162645510019275,
+      "metadata_prediction": 0.00860900733575674,
+      "event_prediction": 0.0025716016145159296
+    },
+    {
+      "information_date": "2025-07-04",
+      "target": -0.0009934592640077344,
+      "market_prediction": 0.0005654561657027193,
+      "metadata_prediction": 0.00285616520374207,
+      "event_prediction": 0.0040636132188344165
+    },
+    {
+      "information_date": "2025-07-05",
+      "target": 0.012550034861207982,
+      "market_prediction": 0.0012215274222328494,
+      "metadata_prediction": 0.019990684732887613,
+      "event_prediction": 0.01628209456146959
+    },
+    {
+      "information_date": "2025-07-06",
+      "target": -0.013762503989297237,
+      "market_prediction": -0.0007477875376535256,
+      "metadata_prediction": 0.009942846036243133,
+      "event_prediction": 0.012926417499772165
+    },
+    {
+      "information_date": "2025-07-07",
+      "target": 0.004288359491553484,
+      "market_prediction": 0.0025673806692796657,
+      "metadata_prediction": 0.01625751802053678,
+      "event_prediction": 0.014817033659204637
+    },
+    {
+      "information_date": "2025-07-08",
+      "target": 0.025049717207416222,
+      "market_prediction": 0.0005634058731674623,
+      "metadata_prediction": 0.005639170562827053,
+      "event_prediction": 0.006567988987696827
+    },
+    {
+      "information_date": "2025-07-09",
+      "target": 0.052486899441390955,
+      "market_prediction": -0.0006621204231260329,
+      "metadata_prediction": 0.0077679942537492545,
+      "event_prediction": 0.004272085725491912
+    },
+    {
+      "information_date": "2025-07-10",
+      "target": 0.007695980940188196,
+      "market_prediction": -0.0013202174156843813,
+      "metadata_prediction": 0.012269083280364164,
+      "event_prediction": 0.013133362938889304
+    },
+    {
+      "information_date": "2025-07-11",
+      "target": -0.00038980064117533075,
+      "market_prediction": 0.001865191894838662,
+      "metadata_prediction": 0.006613840004149925,
+      "event_prediction": 0.011510722912859728
+    },
+    {
+      "information_date": "2025-07-12",
+      "target": 0.02564342186419455,
+      "market_prediction": 0.0021307663108294274,
+      "metadata_prediction": 0.01636063326440628,
+      "event_prediction": 0.02117853687943825
+    },
+    {
+      "information_date": "2025-07-13",
+      "target": -0.029114102298612554,
+      "market_prediction": 0.0013881711046877469,
+      "metadata_prediction": 0.009651068908534408,
+      "event_prediction": 0.01093753276639396
+    },
+    {
+      "information_date": "2025-07-14",
+      "target": 0.0024724810639347172,
+      "market_prediction": 0.0012276520090489097,
+      "metadata_prediction": 0.015511761915113977,
+      "event_prediction": 0.011455710728963073
+    },
+    {
+      "information_date": "2025-07-15",
+      "target": 0.0050178723404255,
+      "market_prediction": 0.001063308705105684,
+      "metadata_prediction": 0.012655681835268691,
+      "event_prediction": 0.007548488160733077
+    },
+    {
+      "information_date": "2025-07-16",
+      "target": 0.018361481451372397,
+      "market_prediction": -0.002539534173367119,
+      "metadata_prediction": 0.004875174792951237,
+      "event_prediction": 0.0037272813592039624
+    },
+    {
+      "information_date": "2025-07-17",
+      "target": -0.01586839617189384,
+      "market_prediction": -0.0007969208454683121,
+      "metadata_prediction": 0.00822608833935729,
+      "event_prediction": 0.00869889234393214
+    },
+    {
+      "information_date": "2025-07-18",
+      "target": -0.0031618188823622217,
+      "market_prediction": -0.00025567505712107644,
+      "metadata_prediction": 0.008311407055587854,
+      "event_prediction": 0.01057908599768477
+    },
+    {
+      "information_date": "2025-07-19",
+      "target": 0.003846564622794313,
+      "market_prediction": 0.0004674466492618366,
+      "metadata_prediction": 0.02575066550772511,
+      "event_prediction": 0.019194344754162082
+    },
+    {
+      "information_date": "2025-07-20",
+      "target": -0.010082817413272993,
+      "market_prediction": -0.0019686653868245052,
+      "metadata_prediction": 0.00989600318352044,
+      "event_prediction": 0.003170126466597812
+    },
+    {
+      "information_date": "2025-07-21",
+      "target": 0.012283010804784666,
+      "market_prediction": 1.1701398915082636e-05,
+      "metadata_prediction": 0.014764687143725901,
+      "event_prediction": 0.010850598229678737
+    },
+    {
+      "information_date": "2025-07-22",
+      "target": -0.0013650715272200964,
+      "market_prediction": 0.0013625605110594145,
+      "metadata_prediction": 0.006969251617870639,
+      "event_prediction": 0.00420327073643622
+    },
+    {
+      "information_date": "2025-07-23",
+      "target": -0.026267138400733803,
+      "market_prediction": 0.004492823940351285,
+      "metadata_prediction": 0.015062615757698072,
+      "event_prediction": 0.011207013786414527
+    },
+    {
+      "information_date": "2025-07-24",
+      "target": 0.01792979382166915,
+      "market_prediction": 0.0015701790789875015,
+      "metadata_prediction": 0.002920025456929544,
+      "event_prediction": 0.0015232874922983235
+    },
+    {
+      "information_date": "2025-07-25",
+      "target": 0.006005829613209279,
+      "market_prediction": 0.0006058545244611302,
+      "metadata_prediction": 0.013066346264365725,
+      "event_prediction": 0.009396427355641081
+    },
+    {
+      "information_date": "2025-07-26",
+      "target": 0.009417413371897831,
+      "market_prediction": 0.001114394254159478,
+      "metadata_prediction": 0.024252745525507748,
+      "event_prediction": 0.02133407936438554
+    },
+    {
+      "information_date": "2025-07-27",
+      "target": -0.004406996200778668,
+      "market_prediction": 0.0005481143397635293,
+      "metadata_prediction": 0.017520935427038024,
+      "event_prediction": 0.011489513008148256
+    },
+    {
+      "information_date": "2025-07-28",
+      "target": -0.0053207299647445305,
+      "market_prediction": 0.002132207549563843,
+      "metadata_prediction": 0.00661447457517506,
+      "event_prediction": 0.013359227287940976
+    },
+    {
+      "information_date": "2025-07-29",
+      "target": 0.0026614746465758454,
+      "market_prediction": 0.0011224117731735838,
+      "metadata_prediction": 0.01201895051905038,
+      "event_prediction": 0.007077845547246434
+    },
+    {
+      "information_date": "2025-07-30",
+      "target": -0.024098226678509027,
+      "market_prediction": 0.0012935225632311842,
+      "metadata_prediction": 0.0052019767813687705,
+      "event_prediction": 0.0012582340154893854
+    },
+    {
+      "information_date": "2025-07-31",
+      "target": -0.014940725892615414,
+      "market_prediction": 0.0034159061406228448,
+      "metadata_prediction": 0.005786655840798796,
+      "event_prediction": 0.01351314883121747
+    },
+    {
+      "information_date": "2025-08-01",
+      "target": -0.0026417689312867587,
+      "market_prediction": 0.000336270860333417,
+      "metadata_prediction": 0.015884570378175547,
+      "event_prediction": 0.013086676615820973
+    },
+    {
+      "information_date": "2025-08-02",
+      "target": 0.008450867937687123,
+      "market_prediction": 0.0019304676637812322,
+      "metadata_prediction": 0.009422460754432448,
+      "event_prediction": -0.001815307768959707
+    },
+    {
+      "information_date": "2025-08-03",
+      "target": -0.002704283893051107,
+      "market_prediction": -1.1318627808314195e-05,
+      "metadata_prediction": 0.013322500428530342,
+      "event_prediction": 0.005978317862918677
+    },
+    {
+      "information_date": "2025-08-04",
+      "target": -0.006505428924905687,
+      "market_prediction": -0.0017149339986926725,
+      "metadata_prediction": 0.011808892863193638,
+      "event_prediction": 0.008467063212392083
+    },
+    {
+      "information_date": "2025-08-05",
+      "target": 0.009069413488934863,
+      "market_prediction": 0.002125330360728104,
+      "metadata_prediction": 0.012916032245504028,
+      "event_prediction": 0.013963494452388326
+    },
+    {
+      "information_date": "2025-08-06",
+      "target": 0.019112930835714748,
+      "market_prediction": 0.0007291343924512965,
+      "metadata_prediction": 0.003904446655398224,
+      "event_prediction": 0.007150136297390559
+    },
+    {
+      "information_date": "2025-08-07",
+      "target": -0.0031237466448647,
+      "market_prediction": -0.00039289147443099127,
+      "metadata_prediction": 0.005108619484839937,
+      "event_prediction": 0.003471317984808349
+    },
+    {
+      "information_date": "2025-08-08",
+      "target": 0.01862583528695705,
+      "market_prediction": 0.0006827618131793531,
+      "metadata_prediction": 0.008978534417447146,
+      "event_prediction": 0.004183027600128396
+    },
+    {
+      "information_date": "2025-08-09",
+      "target": 0.0271797611421829,
+      "market_prediction": -0.0005093280947263612,
+      "metadata_prediction": 0.031601321149385846,
+      "event_prediction": 0.029533385841559144
+    },
+    {
+      "information_date": "2025-08-10",
+      "target": -0.023537212409230457,
+      "market_prediction": 0.002195826130941071,
+      "metadata_prediction": 0.01711381556232419,
+      "event_prediction": 0.014442897723392972
+    },
+    {
+      "information_date": "2025-08-11",
+      "target": 0.005183234927598868,
+      "market_prediction": 0.0027089898210716627,
+      "metadata_prediction": 0.020301879528090615,
+      "event_prediction": 0.01237346017149453
+    },
+    {
+      "information_date": "2025-08-12",
+      "target": 0.03297737247479726,
+      "market_prediction": -0.0021890518775804692,
+      "metadata_prediction": 0.005355445215561042,
+      "event_prediction": 0.00011565730788903623
+    },
+    {
+      "information_date": "2025-08-13",
+      "target": -0.03619929303194003,
+      "market_prediction": 0.0013323654712794756,
+      "metadata_prediction": 0.014568373262816642,
+      "event_prediction": 0.012285920544462162
+    },
+    {
+      "information_date": "2025-08-14",
+      "target": -0.012973669252992481,
+      "market_prediction": 0.003004191190927897,
+      "metadata_prediction": 0.01627260417666443,
+      "event_prediction": 0.014982243707477567
+    },
+    {
+      "information_date": "2025-08-15",
+      "target": 0.002028278340099998,
+      "market_prediction": 0.002112223478921261,
+      "metadata_prediction": 0.007892777421254292,
+      "event_prediction": 0.0019171767295750454
+    },
+    {
+      "information_date": "2025-08-16",
+      "target": -0.020060648670430448,
+      "market_prediction": 0.001147892119515293,
+      "metadata_prediction": 0.03173047130195186,
+      "event_prediction": 0.026162507838759418
+    },
+    {
+      "information_date": "2025-08-17",
+      "target": -0.004493851751474431,
+      "market_prediction": 0.00027807483557326,
+      "metadata_prediction": 0.05498075534082472,
+      "event_prediction": 0.03632509011796193
+    },
+    {
+      "information_date": "2025-08-18",
+      "target": -0.011044822423586509,
+      "market_prediction": 0.002342647434835035,
+      "metadata_prediction": 0.04743110344718153,
+      "event_prediction": 0.03265496141548132
+    },
+    {
+      "information_date": "2025-08-19",
+      "target": 0.0038278793689285884,
+      "market_prediction": 0.0010826513872438893,
+      "metadata_prediction": 0.027011019269506158,
+      "event_prediction": 0.028129774741443868
+    },
+    {
+      "information_date": "2025-08-20",
+      "target": -0.008900292843248225,
+      "market_prediction": -0.0009512705904076552,
+      "metadata_prediction": 0.0020498027959057995,
+      "event_prediction": -0.00010974318566048117
+    },
+    {
+      "information_date": "2025-08-21",
+      "target": 0.023262302298330484,
+      "market_prediction": 0.001866478908361653,
+      "metadata_prediction": -0.010038348986659326,
+      "event_prediction": -0.02033360952152024
+    },
+    {
+      "information_date": "2025-08-22",
+      "target": -0.004220545122007202,
+      "market_prediction": -0.0021912956899787332,
+      "metadata_prediction": -0.009605600669148107,
+      "event_prediction": -0.009600208864401027
+    },
+    {
+      "information_date": "2025-08-25",
+      "target": 0.014033282959780013,
+      "market_prediction": 0.0039831029419253264,
+      "metadata_prediction": -0.004598609538556785,
+      "event_prediction": -0.008444172131776756
+    },
+    {
+      "information_date": "2025-08-26",
+      "target": 0.0050131298395241775,
+      "market_prediction": -0.0004242849974608778,
+      "metadata_prediction": -0.007132355145368667,
+      "event_prediction": -0.0031027260432676083
+    },
+    {
+      "information_date": "2025-08-27",
+      "target": -0.0027147041562040064,
+      "market_prediction": 0.0014276845999494972,
+      "metadata_prediction": -0.014126018351921175,
+      "event_prediction": -0.022083879862863094
+    }
+  ]
+}

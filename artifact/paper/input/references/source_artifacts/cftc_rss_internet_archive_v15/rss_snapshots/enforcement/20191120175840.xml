@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title><a href="/PressRoom/PressReleases/8078-19" hreflang="en">CFTC Charges Unregistered Commodity Pool Operator, Two California Men with $2.3 Million Fraud</a></title>
+  <link>https://www.cftc.gov/PressReleases/8078-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-13T20:45:11Z">Wed, 13 Nov 2019 20:45:11 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8078-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8077-19" hreflang="en">CFTC Orders Wells Fargo to Pay Over $14 Million for Violating Swap Dealer Business Conduct Standards</a></title>
+  <link>https://www.cftc.gov/PressReleases/8077-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-08T16:21:39Z">Fri, 08 Nov 2019 16:21:39 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8077-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8075-19" hreflang="en">CFTC Orders Mitsubishi Corporation RtM Japan Ltd. to Pay $500,000 for Spoofing</a></title>
+  <link>https://www.cftc.gov/PressReleases/8075-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-07T18:56:11Z">Thu, 07 Nov 2019 18:56:11 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8075-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8074-19" hreflang="en">CFTC Orders Proprietary Trading Firm to Pay Record $67.4 Million for Engaging in a Manipulative and Deceptive Scheme and Spoofing</a></title>
+  <link>https://www.cftc.gov/PressReleases/8074-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-07T16:44:32Z">Thu, 07 Nov 2019 16:44:32 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8074-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8073-19" hreflang="en">CFTC Charges Denari Capital, LLC and its Owners with $8.3 Million Forex Fraud</a></title>
+  <link>https://www.cftc.gov/PressReleases/8073-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-05T22:11:36Z">Tue, 05 Nov 2019 22:11:36 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8073-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8071-19" hreflang="en">CFTC Charges Companies and Associates with Failing to Register with the CFTC</a></title>
+  <link>https://www.cftc.gov/PressReleases/8071-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-04T20:51:36Z">Mon, 04 Nov 2019 20:51:36 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8071-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8070-19" hreflang="en">CFTC Charges Alabama Resident and His Company with Binary Options Fraud </a></title>
+  <link>https://www.cftc.gov/PressReleases/8070-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-04T19:26:58Z">Mon, 04 Nov 2019 19:26:58 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8070-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8069-19" hreflang="en">Federal Court Orders Defendants to Pay More than $4.25 Million for Fraud and Misappropriation </a></title>
+  <link>https://www.cftc.gov/PressReleases/8069-19</link>
+  <description/>
+  <pubDate><time datetime="2019-11-01T14:27:06Z">Fri, 01 Nov 2019 14:27:06 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/61" hreflang="en">dfaulk-white</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8069-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8068-19" hreflang="en">CFTC Charges Foreign Trading Platform for Failing to Register with the CFTC</a></title>
+  <link>https://www.cftc.gov/PressReleases/8068-19</link>
+  <description/>
+  <pubDate><time datetime="2019-10-31T15:43:41Z">Thu, 31 Oct 2019 15:43:41 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8068-19</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/8066-19" hreflang="en">Florida Federal Court Orders Defendant to Pay More than $2 Million in a Foreign Currency Fraud Scheme</a></title>
+  <link>https://www.cftc.gov/PressReleases/8066-19</link>
+  <description/>
+  <pubDate><time datetime="2019-10-30T16:21:26Z">Wed, 30 Oct 2019 16:21:26 +0000</time>
+</pubDate>
+    <dc:creator><a href="/user/1001" hreflang="en">mkatz</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/8066-19</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-08-07T09:30:30.872489+00:00",
+  "candidate": {
+    "label": "CHANNEL|j=10|x=0|d=1|c=0.1|exit=reverse|regime=UPUP-market|side=long",
+    "spec": {
+      "family": "CHANNEL",
+      "lookback": 10,
+      "threshold": 0.0,
+      "persistence": 1,
+      "fast": 0,
+      "slow": 0,
+      "channel_width": 0.1,
+      "holding": 0,
+      "up_up_gate": true,
+      "market_regime_gate": true,
+      "side": "long"
+    }
+  },
+  "protocol": {
+    "daily_data": "closed UTC candles only; close-to-close accounting",
+    "market_state_proxy": "BTC/USDT",
+    "warmup_days": 365,
+    "test_days": 180,
+    "step_days": 180,
+    "fee_bps_per_position_change": 10.0,
+    "promotion": "majority of folds pass and median fold return is positive; then 4H execution test only"
+  },
+  "per_asset": {
+    "BTC/USDT": {
+      "folds": [
+        {
+          "start_index": 365,
+          "end_index": 545,
+          "return_pct": 49.282115875639356,
+          "profit_factor": 1.5898051068516654,
+          "max_dd_pct": 15.782537979426381,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 545,
+          "end_index": 725,
+          "return_pct": 44.43268484964828,
+          "profit_factor": 1.4032874883128217,
+          "max_dd_pct": 18.427684128867703,
+          "turnover": 3,
+          "trades": 3
+        },
+        {
+          "start_index": 725,
+          "end_index": 905,
+          "return_pct": 48.11130746676855,
+          "profit_factor": 1.6204510469076048,
+          "max_dd_pct": 12.806072339486917,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 905,
+          "end_index": 1085,
+          "return_pct": 5.864625895633613,
+          "profit_factor": 1.1494701156721754,
+          "max_dd_pct": 16.6624022771919,
+          "turnover": 6,
+          "trades": 6
+        },
+        {
+          "start_index": 1085,
+          "end_index": 1265,
+          "return_pct": -12.572721157070998,
+          "profit_factor": 0.279518005520813,
+          "max_dd_pct": 12.572721157070998,
+          "turnover": 5,
+          "trades": 5
+        },
+        {
+          "start_index": 1265,
+          "end_index": 1445,
+          "return_pct": -2.3591928536255025,
+          "profit_factor": 0.8362842251875686,
+          "max_dd_pct": 6.9265546319947084,
+          "turnover": 3,
+          "trades": 3
+        }
+      ],
+      "median_fold_return_pct": 25.1487,
+      "mean_fold_return_pct": 22.1265,
+      "passing_folds": 2,
+      "folds_tested": 6,
+      "eligible_for_4h_execution_test": false
+    },
+    "ETH/USDT": {
+      "folds": [
+        {
+          "start_index": 365,
+          "end_index": 545,
+          "return_pct": 29.4012964652288,
+          "profit_factor": 1.344114076720436,
+          "max_dd_pct": 15.318944221510378,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 545,
+          "end_index": 725,
+          "return_pct": 60.68876360298947,
+          "profit_factor": 1.4354119117993305,
+          "max_dd_pct": 29.222714418737162,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 725,
+          "end_index": 905,
+          "return_pct": 0.0,
+          "profit_factor": 0.0,
+          "max_dd_pct": 0.0,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 905,
+          "end_index": 1085,
+          "return_pct": 71.91047425776983,
+          "profit_factor": 1.82889129057098,
+          "max_dd_pct": 20.911829056914712,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 1085,
+          "end_index": 1265,
+          "return_pct": -2.042023314476449,
+          "profit_factor": 1.0288314135498065,
+          "max_dd_pct": 23.371333839440812,
+          "turnover": 2,
+          "trades": 2
+        },
+        {
+          "start_index": 1265,
+          "end_index": 1445,
+          "return_pct": -25.365241338651767,
+          "profit_factor": 0.8705222044625645,
+          "max_dd_pct": 39.64690129436463,
+          "turnover": 2,
+          "trades": 2
+        }
+      ],
+      "median_fold_return_pct": 14.7006,
+      "mean_fold_return_pct": 22.4322,
+      "passing_folds": 0,
+      "folds_tested": 6,
+      "eligible_for_4h_execution_test": false
+    },
+    "XRP/USDT": {
+      "folds": [
+        {
+          "start_index": 365,
+          "end_index": 545,
+          "return_pct": 0.0,
+          "profit_factor": 0.0,
+          "max_dd_pct": 0.0,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 545,
+          "end_index": 725,
+          "return_pct": -11.432405058971684,
+          "profit_factor": 0.9651357492002292,
+          "max_dd_pct": 33.83998894569573,
+          "turnover": 2,
+          "trades": 2
+        },
+        {
+          "start_index": 725,
+          "end_index": 905,
+          "return_pct": 399.2445846105033,
+          "profit_factor": 2.1802031403494295,
+          "max_dd_pct": 24.477064220183486,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 905,
+          "end_index": 1085,
+          "return_pct": 1.8034765026253785,
+          "profit_factor": 1.0835135060737666,
+          "max_dd_pct": 42.574827321565614,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 1085,
+          "end_index": 1265,
+          "return_pct": -8.766363403382883,
+          "profit_factor": 0.911843232873611,
+          "max_dd_pct": 16.897715628955478,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 1265,
+          "end_index": 1445,
+          "return_pct": -8.232495517437355,
+          "profit_factor": 0.3918338571970482,
+          "max_dd_pct": 9.562059670294953,
+          "turnover": 3,
+          "trades": 3
+        }
+      ],
+      "median_fold_return_pct": -4.1162,
+      "mean_fold_return_pct": 62.1028,
+      "passing_folds": 0,
+      "folds_tested": 6,
+      "eligible_for_4h_execution_test": false
+    },
+    "SOL/USDT": {
+      "folds": [
+        {
+          "start_index": 365,
+          "end_index": 545,
+          "return_pct": 346.6113884333756,
+          "profit_factor": 1.8674712711611825,
+          "max_dd_pct": 30.743421922517534,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 545,
+          "end_index": 725,
+          "return_pct": 60.0205409824041,
+          "profit_factor": 1.2305173234519937,
+          "max_dd_pct": 37.50154149710197,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 725,
+          "end_index": 905,
+          "return_pct": 49.354902089200216,
+          "profit_factor": 1.2187898594882283,
+          "max_dd_pct": 29.842911579438525,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 905,
+          "end_index": 1085,
+          "return_pct": -19.75005481254122,
+          "profit_factor": 0.9939510584249568,
+          "max_dd_pct": 55.76228475430496,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 1085,
+          "end_index": 1265,
+          "return_pct": -30.52292224468598,
+          "profit_factor": 0.9199137892350956,
+          "max_dd_pct": 51.68748231680205,
+          "turnover": 0,
+          "trades": 0
+        },
+        {
+          "start_index": 1265,
+          "end_index": 1445,
+          "return_pct": -40.36964215493503,
+          "profit_factor": 0.836526683849675,
+          "max_dd_pct": 51.112858828155616,
+          "turnover": 0,
+          "trades": 0
+        }
+      ],
+      "median_fold_return_pct": 14.8024,
+      "mean_fold_return_pct": 60.8907,
+      "passing_folds": 0,
+      "folds_tested": 6,
+      "eligible_for_4h_execution_test": false
+    },
+    "BNB/USDT": {
+      "folds": [
+        {
+          "start_index": 365,
+          "end_index": 545,
+          "return_pct": 33.11058672062093,
+          "profit_factor": 1.4142979880930886,
+          "max_dd_pct": 11.677115987460818,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 545,
+          "end_index": 725,
+          "return_pct": 85.79563361785935,
+          "profit_factor": 1.7110811949470177,
+          "max_dd_pct": 19.79470983024082,
+          "turnover": 1,
+          "trades": 1
+        },
+        {
+          "start_index": 725,
+          "end_index": 905,
+          "return_pct": -8.486206019905607,
+          "profit_factor": 0.8680500194514036,
+          "max_dd_pct": 17.669935745688193,
+          "turnover": 4,
+          "trades": 4
+        },
+        {
+          "start_index": 905,
+          "end_index": 1085,
+          "return_pct": 16.9236623001606,
+          "profit_factor": 1.4971947046140128,
+          "max_dd_pct": 7.954688410017486,
+          "turnover": 5,
+          "trades": 5
+        },
+        {
+          "start_index": 1085,
+          "end_index": 1265,
+          "return_pct": -0.024314905625011374,
+          "profit_factor": 1.045993438336108,
+          "max_dd_pct": 36.90743316400018,
+          "turnover": 3,
+          "trades": 3
+        },
+        {
+          "start_index": 1265,
+          "end_index": 1445,
+          "return_pct": -9.197352191112785,
+          "profit_factor": 0.8574033788718749,
+          "max_dd_pct": 20.414695240745896,
+          "turnover": 2,
+          "trades": 2
+        }
+      ],
+      "median_fold_return_pct": 8.4497,
+      "mean_fold_return_pct": 19.687,
+      "passing_folds": 1,
+      "folds_tested": 6,
+      "eligible_for_4h_execution_test": false
+    }
+  }
+}

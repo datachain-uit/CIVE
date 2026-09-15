@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC and the Bank of England Comment on Report on Initial Margin Transparency and Responsiveness in Centrally Cleared Markets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9034-25</link>
+  <description/>
+  <pubDate>Wed, 15 Jan 2025 17:11:11 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9034-25</guid>
+    </item>
+<item>
+  <title>CFTC’s Review of Nadex Sports Contract Submissions  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9033-25</link>
+  <description/>
+  <pubDate>Tue, 14 Jan 2025 18:36:33 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9033-25</guid>
+    </item>
+<item>
+  <title>CFTC Announces Departure of Clearing and Risk Director Clark Hutchison </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9030-25</link>
+  <description/>
+  <pubDate>Mon, 13 Jan 2025 16:19:54 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9030-25</guid>
+    </item>
+<item>
+  <title>CFTC Announces Departure of Enforcement Director Ian McGinley  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9029-25</link>
+  <description/>
+  <pubDate>Fri, 10 Jan 2025 16:23:14 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9029-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Advisory Regarding the Compliance Date for Certain DCO Reporting Requirements </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9028-25</link>
+  <description/>
+  <pubDate>Fri, 10 Jan 2025 14:16:26 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9028-25</guid>
+    </item>
+<item>
+  <title>CFTC Approves Final Rule on Margin Adequacy, Treatment of Separate Accounts of a Customer by Futures Commission Merchants</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9027-24</link>
+  <description/>
+  <pubDate>Fri, 20 Dec 2024 14:15:23 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9027-24</guid>
+    </item>
+<item>
+  <title>Commissioner Johnson Announces Executive Staff Appointments</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9026-24</link>
+  <description/>
+  <pubDate>Fri, 20 Dec 2024 13:13:49 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9026-24</guid>
+    </item>
+<item>
+  <title>Resolve to Spot Scams in 2025 Says a New CFTC Customer Advisory</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9025-24</link>
+  <description/>
+  <pubDate>Wed, 18 Dec 2024 15:18:20 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9025-24</guid>
+    </item>
+<item>
+  <title>CFTC Approves Final Rule Regarding Safeguarding and Investment of Customer Funds</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9024-24</link>
+  <description/>
+  <pubDate>Tue, 17 Dec 2024 22:53:41 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9024-24</guid>
+    </item>
+<item>
+  <title>CFTC Grants QC Clearing LLC DCO Registration</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9023-24</link>
+  <description/>
+  <pubDate>Tue, 17 Dec 2024 22:15:22 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9023-24</guid>
+    </item>
+
+  </channel>
+</rss>

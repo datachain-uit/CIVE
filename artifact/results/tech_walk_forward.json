@@ -1,0 +1,269 @@
+{
+  "generated_at": "2026-08-05T11:25:48.718899+00:00",
+  "symbol": "XRP/USDT:USDT",
+  "exchange": "bybit",
+  "assumptions": {
+    "days": 365,
+    "train_days": 240,
+    "holdout_days": 125,
+    "balance": 50.0,
+    "fee_rate_per_fill": 0.0004,
+    "adverse_slippage_bps_per_fill": 5.0,
+    "fill_mode": "signal_close",
+    "pyramiding_layers": "999"
+  },
+  "trials_considered": 12,
+  "holdout_passed": [],
+  "top_train_candidates": [
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 18,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.0,
+        "VIBE_ATR_TP_MULTIPLIER": 3.0
+      },
+      "train": {
+        "return_pct": 57.5833,
+        "max_drawdown_pct": 57.2696,
+        "profit_factor": 1.3865,
+        "trades": 124,
+        "win_rate_pct": 37.0968,
+        "score": 14.6311
+      },
+      "holdout": {
+        "return_pct": -49.7448,
+        "max_drawdown_pct": 63.7162,
+        "profit_factor": 0.6884,
+        "trades": 176,
+        "win_rate_pct": 31.8182,
+        "score": -97.532
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 25,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.0,
+        "VIBE_ATR_TP_MULTIPLIER": 3.0
+      },
+      "train": {
+        "return_pct": 52.3329,
+        "max_drawdown_pct": 57.3367,
+        "profit_factor": 1.3638,
+        "trades": 121,
+        "win_rate_pct": 36.3636,
+        "score": 9.3303
+      },
+      "holdout": {
+        "return_pct": -49.7448,
+        "max_drawdown_pct": 63.7162,
+        "profit_factor": 0.6884,
+        "trades": 176,
+        "win_rate_pct": 31.8182,
+        "score": -97.532
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 25,
+        "VIBE_CHOP_ADX": 18,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.0,
+        "VIBE_ATR_TP_MULTIPLIER": 3.0
+      },
+      "train": {
+        "return_pct": 49.1317,
+        "max_drawdown_pct": 57.3367,
+        "profit_factor": 1.3496,
+        "trades": 118,
+        "win_rate_pct": 35.5932,
+        "score": 6.1292
+      },
+      "holdout": {
+        "return_pct": -48.6458,
+        "max_drawdown_pct": 62.9227,
+        "profit_factor": 0.6958,
+        "trades": 174,
+        "win_rate_pct": 32.1839,
+        "score": -95.8378
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 18,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.0,
+        "VIBE_ATR_TP_MULTIPLIER": 2.0
+      },
+      "train": {
+        "return_pct": 25.2807,
+        "max_drawdown_pct": 55.6687,
+        "profit_factor": 1.1525,
+        "trades": 124,
+        "win_rate_pct": 38.7097,
+        "score": -16.4708
+      },
+      "holdout": {
+        "return_pct": -35.5656,
+        "max_drawdown_pct": 57.2289,
+        "profit_factor": 0.817,
+        "trades": 176,
+        "win_rate_pct": 36.3636,
+        "score": -78.4873
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 25,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.0,
+        "VIBE_ATR_TP_MULTIPLIER": 2.0
+      },
+      "train": {
+        "return_pct": 18.0059,
+        "max_drawdown_pct": 55.6705,
+        "profit_factor": 1.1164,
+        "trades": 121,
+        "win_rate_pct": 38.0165,
+        "score": -23.747
+      },
+      "holdout": {
+        "return_pct": -35.5656,
+        "max_drawdown_pct": 57.2289,
+        "profit_factor": 0.817,
+        "trades": 176,
+        "win_rate_pct": 36.3636,
+        "score": -78.4873
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 25,
+        "VIBE_CHOP_ADX": 18,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.0,
+        "VIBE_ATR_TP_MULTIPLIER": 2.0
+      },
+      "train": {
+        "return_pct": 15.0286,
+        "max_drawdown_pct": 55.6705,
+        "profit_factor": 1.0993,
+        "trades": 118,
+        "win_rate_pct": 37.2881,
+        "score": -26.7243
+      },
+      "holdout": {
+        "return_pct": -34.1565,
+        "max_drawdown_pct": 56.2935,
+        "profit_factor": 0.8246,
+        "trades": 174,
+        "win_rate_pct": 36.7816,
+        "score": -76.3766
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 18,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.5,
+        "VIBE_ATR_TP_MULTIPLIER": 2.0
+      },
+      "train": {
+        "return_pct": -9.9445,
+        "max_drawdown_pct": 55.5957,
+        "profit_factor": 0.9278,
+        "trades": 124,
+        "win_rate_pct": 41.129,
+        "score": -51.6412
+      },
+      "holdout": {
+        "return_pct": -6.0459,
+        "max_drawdown_pct": 57.8461,
+        "profit_factor": 0.9679,
+        "trades": 176,
+        "win_rate_pct": 47.1591,
+        "score": -49.4304
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 18,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.5,
+        "VIBE_ATR_TP_MULTIPLIER": 3.0
+      },
+      "train": {
+        "return_pct": -10.0901,
+        "max_drawdown_pct": 60.3156,
+        "profit_factor": 0.9243,
+        "trades": 124,
+        "win_rate_pct": 38.7097,
+        "score": -55.3268
+      },
+      "holdout": {
+        "return_pct": -33.6949,
+        "max_drawdown_pct": 62.5847,
+        "profit_factor": 0.7867,
+        "trades": 176,
+        "win_rate_pct": 41.4773,
+        "score": -80.6335
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 25,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.5,
+        "VIBE_ATR_TP_MULTIPLIER": 2.0
+      },
+      "train": {
+        "return_pct": -17.4974,
+        "max_drawdown_pct": 55.5829,
+        "profit_factor": 0.863,
+        "trades": 121,
+        "win_rate_pct": 39.6694,
+        "score": -59.1846
+      },
+      "holdout": {
+        "return_pct": -6.0459,
+        "max_drawdown_pct": 57.8461,
+        "profit_factor": 0.9679,
+        "trades": 176,
+        "win_rate_pct": 47.1591,
+        "score": -49.4304
+      }
+    },
+    {
+      "parameters": {
+        "VIBE_TREND_ADX": 25,
+        "VIBE_CHOP_ADX": 12,
+        "VIBE_HIGH_ATR_PCT": 0.05,
+        "VIBE_ATR_SL_MULTIPLIER": 1.5,
+        "VIBE_ATR_TP_MULTIPLIER": 3.0
+      },
+      "train": {
+        "return_pct": -14.4863,
+        "max_drawdown_pct": 60.6383,
+        "profit_factor": 0.8868,
+        "trades": 121,
+        "win_rate_pct": 37.1901,
+        "score": -59.965
+      },
+      "holdout": {
+        "return_pct": -33.6949,
+        "max_drawdown_pct": 62.5847,
+        "profit_factor": 0.7867,
+        "trades": 176,
+        "win_rate_pct": 41.4773,
+        "score": -80.6335
+      }
+    }
+  ]
+}

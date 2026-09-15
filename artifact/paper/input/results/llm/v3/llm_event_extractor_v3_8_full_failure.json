@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-27T14:17:19.9726136Z",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.8-full-extraction",
+  "status": "full-extraction-fail-stop-direct-relevance-without-btc-asset-label",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records_attempted": 1252,
+    "schema_success": 1248,
+    "errors": 4,
+    "evidence_fallbacks": 32,
+    "completed_batches": 313,
+    "expected_records": 39393,
+    "failed_batch_index": 312,
+    "failed_information_date": "2022-10-14"
+  },
+  "stop_reason": "One item classified btc_relevance=direct listed only NYDIG in affected_assets. The v3.8 contract retained the v3.5 cross-field requirement that every direct item include BTC or Bitcoin, so the atomic four-record batch failed although all other fields were schema-valid.",
+  "next_authorized_step": "predeclare v3.9 removing only the direct-relevance-to-BTC-asset cross-field requirement while retaining asset canonicalization, deterministic dedupe, schema validation, and all other checks; rerun Stage 1 and only then start a new full extraction from record 0 if Stage 1 passes",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_8_full_predeclared.json",
+      "sha256": "6a1c72a1e322f3a2e80bfd5c610fd900e6bd12010ec89b8bc46cb736fc3f86e8"
+    },
+    "stage1_gate": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_8_stage1_gate.json",
+      "sha256": "4884dbc3485339dbb55d06d2f1bac28eba89c8172b30d04f1f0999f71b3f23bc"
+    },
+    "checkpoint": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_8_full_failed_checkpoint.ndjson",
+      "sha256": "614c0c770f75197c0031b1143d2921fe90196f870aac44b771607b5325b4f465"
+    },
+    "progress": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_8_full_failed_progress.json",
+      "sha256": "86f1a477472371ead1f3d0966d02c21995b34923718b18144ee821511a57d296"
+    },
+    "scorer_stdout": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_8_full_failed_scorer_stdout.log",
+      "sha256": "e8f3583d8c72d79e1c318cb36718b09c27b9d1494bdb1036ff92e80ac4ef754a"
+    },
+    "supervisor_stdout": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_8_full_failed_supervisor_stdout.log",
+      "sha256": "f8945b83f1146aced36722b8ca414cc3203d80f692d49e3768d47a4ebdf025cb"
+    }
+  }
+}

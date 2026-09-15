@@ -1,0 +1,72 @@
+{
+  "checks": {
+    "information_set_count_matches": true,
+    "manifest_hashes_match": true,
+    "manifest_outcome_blind": true,
+    "minimum_information_sets_met": true,
+    "outcome_blind": true,
+    "predeclaration_frozen_before_corpus_build": true,
+    "publisher_time_not_after_information_time": true,
+    "record_count_matches": true,
+    "timestamps_ordered": true,
+    "title_only_contract": true,
+    "unique_canonical_links": true,
+    "unique_record_ids": true
+  },
+  "counts": {
+    "corpus_records": 2249,
+    "downloaded_snapshots": 597,
+    "excluded_item_or_snapshot_records": 442,
+    "information_sets": 400,
+    "minimum_information_sets": 96,
+    "parseable_snapshots": 572
+  },
+  "exclusion_reason_classes": {
+    "missing_required_field": 12,
+    "publisher_pubdate_without_explicit_offset": 405,
+    "xml_parse_error:not well-formed (invalid token): line 1, column 0": 17,
+    "xml_parse_error:not well-formed (invalid token): line 100, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 110, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 145, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 15, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 175, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 30, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 50, column 46": 1,
+    "xml_parse_error:not well-formed (invalid token): line 90, column 46": 1
+  },
+  "extraction_authorized": true,
+  "information_time_range": {
+    "first": "2010-03-11T18:50:00+00:00",
+    "last": "2026-08-31T02:15:20+00:00"
+  },
+  "inputs": {
+    "auditor": {
+      "path": "tools/llm/audit_ecb_rss_archive_corpus_v16.py",
+      "sha256": "976eca5890a02e80b605030a8f0f8600b1f201c5e80103895abaf10a9704b081"
+    },
+    "corpus": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_corpus_v16/corpus.json",
+      "sha256": "e168d61f384856356bf4ab248e7aed60856a6ab978b97562d05d4d2450fad082"
+    },
+    "excluded": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_corpus_v16/excluded.json",
+      "sha256": "fa9e7191f066e2c1585de00371cc7193decb711b18914aff142c08ca4864f7c3"
+    },
+    "manifest": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_corpus_v16/manifest.json",
+      "sha256": "c161a871ac8df7d74224e6026576e6f004ba61330df3f1556cfb8f6f8703ef1f"
+    },
+    "predeclared": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_corpus_v16/predeclared.json",
+      "sha256": "f0a4643a6289e97c05df5ed1172c252539bbc24f144d018e18f4881dd82d7670"
+    }
+  },
+  "interpretation": "Pass authorizes only outcome-blind LLM extraction from the frozen title-only corpus. Market targets, predictive metrics, thresholds, backtests, Tech+LLM, and sealed holdout remain prohibited.",
+  "market_data_accessed": false,
+  "model_run": false,
+  "outcomes_consulted": false,
+  "passed": true,
+  "schema_version": "ecb-rss-archive-corpus-gate-v16",
+  "status": "OUTCOME_BLIND_CORPUS_GATE_PASS_EXTRACTION_AUTHORIZED",
+  "target_join_authorized": false
+}

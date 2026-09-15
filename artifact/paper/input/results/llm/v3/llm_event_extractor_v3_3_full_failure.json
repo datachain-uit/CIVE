@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.3-full-extraction",
+  "status": "full-extraction-fail-stop-evidence-not-source-substring",
+  "failed_at": "2026-08-24T02:45:11+07:00",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "attempted": 20,
+    "success": 16,
+    "errors": 4,
+    "failed_batch": 5,
+    "root_error": "ValueError: evidence_span is not an exact or punctuation-normalized headline substring",
+    "root_cause": "The model abbreviated intervening source words with an ellipsis in one evidence span; batch-level validation marked all four records as errors."
+  },
+  "decision": "Preserve v3.3 as failed evidence. Do not resume this checkpoint. Re-gate a new v3.4 contract before another full extraction.",
+  "artifacts": {
+    "config": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_3_full_predeclared.json",
+      "sha256": "5b55834c1920ec8e440ca4bde05c3a374d5c7fbf015fdfc668281718479ecf9a"
+    },
+    "checkpoint": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_3_full_failed_checkpoint.ndjson",
+      "sha256": "4f195566d31dd6e34aabaf61e527ccaea42ed19cbac569e6156315312efd6ee9"
+    },
+    "progress": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_3_full_failed_progress.json",
+      "sha256": "c00a4b0e664faa294ca8b9cb38fb215a25ea40561b74b8843b350310acccaa2c"
+    },
+    "stdout": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_3_full_failed_stdout.log",
+      "sha256": "898bb44865bf5a6190bc44bce3b21ca263e7ef5cf9a961c63d184f336325427a"
+    }
+  }
+}

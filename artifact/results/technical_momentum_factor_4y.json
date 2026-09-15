@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-08-07T15:05:16.913023+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT",
+      "DOGE/USDT",
+      "ADA/USDT",
+      "AVAX/USDT",
+      "LINK/USDT",
+      "LTC/USDT"
+    ],
+    "universe_bias": "fixed current-liquid allow-list; not survivorship-free",
+    "signal": "long top-2, short bottom-2 by return from t-12 to t-2; hold t to t+1",
+    "gross_exposure": 1.0,
+    "net_exposure": 0.0,
+    "cost_bps_per_weight_turnover": 10.0,
+    "execution": "daily close-to-close; no funding, leverage, stops or pyramiding; promotion requires funding-aware 4H simulation"
+  },
+  "full_period": {
+    "return_pct": -40.1528,
+    "profit_factor": 0.9513,
+    "max_dd_pct": 55.5814
+  },
+  "folds": [
+    {
+      "return_pct": -0.8623,
+      "profit_factor": 1.0233,
+      "max_dd_pct": 25.3779
+    },
+    {
+      "return_pct": -18.3948,
+      "profit_factor": 0.7679,
+      "max_dd_pct": 25.8546
+    },
+    {
+      "return_pct": 7.2515,
+      "profit_factor": 1.0976,
+      "max_dd_pct": 17.0792
+    },
+    {
+      "return_pct": -20.1233,
+      "profit_factor": 0.8376,
+      "max_dd_pct": 26.1275
+    },
+    {
+      "return_pct": 19.0118,
+      "profit_factor": 1.2036,
+      "max_dd_pct": 26.2297
+    },
+    {
+      "return_pct": -26.1904,
+      "profit_factor": 0.7256,
+      "max_dd_pct": 32.6276
+    },
+    {
+      "return_pct": 9.0547,
+      "profit_factor": 1.1487,
+      "max_dd_pct": 9.9947
+    },
+    {
+      "return_pct": -9.114,
+      "profit_factor": 0.8361,
+      "max_dd_pct": 10.0682
+    }
+  ],
+  "passing_folds": 3,
+  "folds_tested": 8,
+  "eligible_for_further_research": false
+}

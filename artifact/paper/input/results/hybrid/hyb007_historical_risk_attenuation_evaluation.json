@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-007",
+  "status": "HISTORICAL_INCREMENTAL_VALUE_FAIL",
+  "evaluated_at": "2026-09-11T15:31:36.213471+00:00",
+  "research_role": "historical exploratory development transfer; not prospective, validation, holdout or live evidence",
+  "economic_increment_pass": false,
+  "risk_control_increment_pass": false,
+  "incremental_value_evidence": false,
+  "arms": {
+    "primary": {
+      "clusters": 113,
+      "mean_net_delta": -0.0010127003825482633,
+      "net_delta_bootstrap_95_ci": [
+        -0.00250284627541195,
+        0.0004788158642932992
+      ],
+      "fold_mean_net_deltas": [
+        7.037540681032435e-05,
+        -0.0007762617110291123,
+        -0.002014985055415998,
+        -0.002246837266211641,
+        -9.228062965615688e-05
+      ],
+      "positive_folds": 1,
+      "mean_worst_bar_improvement": 0.0030762344018537865,
+      "worst_bar_improvement_bootstrap_95_ci": [
+        0.0024661261883298534,
+        0.003718926229137641
+      ],
+      "tech_cluster_es10": -0.030629980317241564,
+      "llm_cluster_es10": -0.017897059186689334,
+      "mean_extra_cost": 0.0006283185840707965
+    },
+    "delayed_24h": {
+      "clusters": 113,
+      "mean_net_delta": -0.0018181074164183712,
+      "net_delta_bootstrap_95_ci": [
+        -0.0035606096482349164,
+        -0.0003355056772732057
+      ],
+      "fold_mean_net_deltas": [
+        -0.0019591327243153912,
+        -0.0022911985037594933,
+        0.0002035994583112706,
+        -0.0015106629918630922,
+        -0.003451373556689819
+      ],
+      "positive_folds": 1,
+      "mean_worst_bar_improvement": 0.002602124262832535,
+      "worst_bar_improvement_bootstrap_95_ci": [
+        0.0019385207847277281,
+        0.0033247117360608513
+      ],
+      "tech_cluster_es10": -0.017908833091368342,
+      "llm_cluster_es10": -0.010299770177083056,
+      "mean_extra_cost": 0.0005265486725663717
+    },
+    "supportive_sign": {
+      "clusters": 87,
+      "mean_net_delta": -0.0009276988493143085,
+      "net_delta_bootstrap_95_ci": [
+        -0.0023886692377184464,
+        0.0004881844757310568
+      ],
+      "fold_mean_net_deltas": [
+        0.0012751994874687176,
+        -0.0007626551654006971,
+        -0.001216959165650196,
+        0.00011417692711868122,
+        -0.0038588220080452906
+      ],
+      "positive_folds": 2,
+      "mean_worst_bar_improvement": 0.002482685030463317,
+      "worst_bar_improvement_bootstrap_95_ci": [
+        0.0018788798716245702,
+        0.00314620545491709
+      ],
+      "tech_cluster_es10": -0.021918312420382564,
+      "llm_cluster_es10": -0.012415306828380978,
+      "mean_extra_cost": 0.0005574712643678161
+    },
+    "metadata_hash_matched": {
+      "clusters": 130,
+      "mean_net_delta": -0.000836180560470481,
+      "net_delta_bootstrap_95_ci": [
+        -0.0020588631254261575,
+        0.0003606807901400111
+      ],
+      "fold_mean_net_deltas": [
+        0.0010011755697607694,
+        0.0006716448398276961,
+        -0.004109700386837527,
+        0.00018965115597020725,
+        -0.0019336739810735502
+      ],
+      "positive_folds": 3,
+      "mean_worst_bar_improvement": 0.002600541573916755,
+      "worst_bar_improvement_bootstrap_95_ci": [
+        0.002144489158811287,
+        0.0030942933614124873
+      ],
+      "tech_cluster_es10": -0.025575856811947382,
+      "llm_cluster_es10": -0.014886087958558947,
+      "mean_extra_cost": 0.0005692307692307692
+    }
+  },
+  "economic_checks": {
+    "net_delta_ci_lower_positive": false,
+    "positive_folds_at_least_3_of_5": false,
+    "mean_net_delta_exceeds_placebos": false
+  },
+  "risk_control_checks": {
+    "worst_bar_improvement_ci_lower_positive": true,
+    "cluster_es10_improves": true,
+    "net_delta_noninferior_within_5bps": false,
+    "worst_bar_improvement_exceeds_placebos": true
+  },
+  "interpretation": "Economic and risk-control incremental value are separate claims; a risk PASS is not an alpha claim.",
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb007_historical_risk_attenuation_predeclared.json",
+    "sha256": "a44314c1f05cb05d7141fabc039bf359c368bcb61847c0c264a050d38280ae8b"
+  },
+  "sample_audit": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb007_historical_risk_attenuation_sample_audit.json",
+    "sha256": "49d16a0e4f60babf8dc9fc0667fe3de75693b17148174d03fc6d1e975a9ebfbc"
+  },
+  "cluster_panel": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb007_historical_risk_attenuation_cluster_panel.json",
+    "sha256": "9fbe948d2f2ac95aa97c69af47b3cc8870ff8fe384b99d9289cde76d9dc59315"
+  }
+}

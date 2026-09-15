@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.cftc.gov/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description></description>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Charges Five Entities and Five Individuals with $58 Million Foreign Currency Fraud and Misappropriation Scheme  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8486-22</link>
+  <description></description>
+  <pubDate>Fri, 28 Jan 2022 15:21:45 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8486-22</guid>
+    </item>
+<item>
+  <title>CFTC Orders Two Florida Men to Pay $280,000 for Registration and Reporting Violations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8485-22</link>
+  <description></description>
+  <pubDate>Thu, 27 Jan 2022 19:00:00 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8485-22</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Kentucky Resident to Pay $17 Million for Defrauding Commodity Futures Clients</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8481-22</link>
+  <description></description>
+  <pubDate>Wed, 19 Jan 2022 20:17:13 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8481-22</guid>
+    </item>
+<item>
+  <title>CFTC Issues Order Suspending Mississippi Man’s Registrations as a Commodity Trading Advisor and Associated Person</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8480-22</link>
+  <description></description>
+  <pubDate>Wed, 12 Jan 2022 19:00:00 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8480-22</guid>
+    </item>
+<item>
+  <title>CFTC Orders Event-Based Binary Options Markets Operator to Pay $1.4 Million Penalty</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8478-22</link>
+  <description></description>
+  <pubDate>Mon, 03 Jan 2022 19:43:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8478-22</guid>
+    </item>
+<item>
+  <title>CFTC Charges New Jersey-Based Entities and Individuals  With Multi-Million Dollar Forex Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8477-21</link>
+  <description></description>
+  <pubDate>Tue, 28 Dec 2021 14:58:35 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8477-21</guid>
+    </item>
+<item>
+  <title>CFTC Orders Dubai Traders and Their Firms to Pay $100,000 for Wash Sales</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8476-21</link>
+  <description></description>
+  <pubDate>Mon, 27 Dec 2021 16:40:53 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8476-21</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Washington State Feedyard to Pay $263 Million for Phantom Cattle Fraud Scheme and Violating Position Limits</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8471-21</link>
+  <description></description>
+  <pubDate>Fri, 17 Dec 2021 20:39:29 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8471-21</guid>
+    </item>
+<item>
+  <title>CFTC Orders JPMorgan to Pay $75 Million for Widespread Use by Employees of Unapproved Communication Methods and Related Recordkeeping and Supervision Failures</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8470-21</link>
+  <description></description>
+  <pubDate>Fri, 17 Dec 2021 12:58:38 +0000
+</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8470-21</guid>
+    </item>
+<item>
+  <title>CFTC Charges Puerto Rico Resident and His Firm for Misappropriation of Nonpublic Information and Fictitious Trading</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8468-21</link>
+  <description></description>
+  <pubDate>Fri, 10 Dec 2021 17:23:49 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8468-21</guid>
+    </item>
+
+  </channel>
+</rss>

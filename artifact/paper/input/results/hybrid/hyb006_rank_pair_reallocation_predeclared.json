@@ -1,0 +1,110 @@
+{
+  "schema_version": "hyb006-rank-pair-predeclaration-v1",
+  "experiment_id": "HYB-006",
+  "status": "PREDECLARED_BEFORE_SAMPLE_AUDIT",
+  "frozen_at": "2026-09-11T08:22:45.160967+00:00",
+  "outcomes_consulted": false,
+  "research_role": "exploratory development transfer diagnostic; not canonical Tech-Control, validation, holdout or live evidence",
+  "rationale": "Daily Tech momentum rank defines a persistent two-asset estimand; LLM may only reallocate within that frozen pair.",
+  "selection": {
+    "universe": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "XRPUSDT",
+      "SOLUSDT",
+      "BNBUSDT"
+    ],
+    "rank_feature": "close_t / close_t-20 - 1",
+    "top_n": 2,
+    "tie_break": "ticker ascending"
+  },
+  "weights": {
+    "tech": "0.5/0.5",
+    "llm": "w_first=clip(0.5+0.25*(score_first-score_second),0.25,0.75); w_second=1-w_first",
+    "gross_exposure": 1.0
+  },
+  "sample_gate": {
+    "minimum_pair_days": 1000,
+    "minimum_active_days": 600,
+    "minimum_active_days_each_chronological_third": 150,
+    "minimum_selected_days_each_asset": 50
+  },
+  "evaluation": {
+    "target": "next daily close-to-close simple return",
+    "turnover": "first day sum(abs(w)); thereafter 0.5*sum(abs(w_t-w_t-1))",
+    "cost_bps_per_unit_turnover": 10,
+    "primary_contrast": "LLM primary net daily return minus Tech equal-weight net daily return",
+    "bootstrap": {
+      "replicates": 5000,
+      "moving_block_days": 7,
+      "seed": 20260912
+    },
+    "folds": 5,
+    "placebos": [
+      "opposite-sign",
+      "one-day-delayed",
+      "deterministically-shuffled-tilts"
+    ],
+    "pass_rule": "paired mean net delta 95% block-bootstrap CI lower > 0; positive delta in >=3/5 folds; primary mean net return exceeds every placebo; LLM MDD no more than 5 percentage points worse than Tech"
+  },
+  "inputs": {
+    "events": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "extractor_inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "daily_candles": [
+      {
+        "symbol": "BTCUSDT",
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\BTCUSDT_1660348800000_1786406400000.json",
+        "sha256": "7ed956ce1a316e011736e06561df190c6f305632b6c15e6339001b284cf3bb00"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ETHUSDT_1660348800000_1786406400000.json",
+        "sha256": "bdb53a779224bc3c6295a8c8936f8ca49a50819d4c0d9aebbea81fed0e835642"
+      },
+      {
+        "symbol": "XRPUSDT",
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\XRPUSDT_1660348800000_1786406400000.json",
+        "sha256": "1d108840df12de6ed9e35410f046a07a5fb70e556e2e1b972cdacd2aa5c43ac8"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\SOLUSDT_1660348800000_1786406400000.json",
+        "sha256": "f4923b381319f792f4f38572981c24a4e314b79cfbbcff1c660f2386313d01e9"
+      },
+      {
+        "symbol": "BNBUSDT",
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\BNBUSDT_1660348800000_1786406400000.json",
+        "sha256": "eea433dd59f3f5776fd7ce24bf7affe0d89455b9067275cf15bdafff0008f4e8"
+      }
+    ],
+    "protocol": {
+      "path": "D:\\UIT\\KLTN\\paper\\working\\protocols\\Tech_LLM_Rank_Pair_Reallocation_Protocol_HYB006.md",
+      "sha256": "08c9bf289e8cf3ec211bb721f9d67781238cabfd32db3742f41a7e67b764883e"
+    },
+    "scripts": [
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\hyb005_cross_asset_common.py",
+        "sha256": "c089626aa0a196c5bcc846755981def4db729d06ad10afc2527326eff4a3ca97"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\hyb006_rank_pair_common.py",
+        "sha256": "43abf934ee2492d47b45fd26597e3943b38f687e693ef121ed147b3d4af47845"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\audit_hyb006_rank_pair_reallocation.py",
+        "sha256": "aac419c4241bab3c7530837eb02c2104e9bf17706436b8af955a9c5a5ef27f08"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_hyb006_rank_pair_reallocation.py",
+        "sha256": "a03342122a6a3bade40504245e7befe6b88a0dbe95df9fc81a9fbc6cbeb96146"
+      }
+    ]
+  },
+  "next_authorized_action": "Run outcome-free effective-sample audit only."
+}

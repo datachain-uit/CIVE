@@ -1,0 +1,38 @@
+{
+  "schema_version": "sec-rss-archive-llm-only-predictive-v14",
+  "experiment_id": "sec-rss-archive-llm-only-event-conditioned-v14-development",
+  "predeclared_at": "2026-09-08T00:00:00+07:00",
+  "status": "FROZEN_PENDING_CANDLE_ARTIFACT_AUDIT",
+  "scope": "Independent outcome-unseen LLM-only candidate using the closed SEC RSS Internet Archive corpus. No v3-v8 outcome, panel, prediction, threshold, backtest, or gate result is an input.",
+  "outcomes_consulted_for_design": false,
+  "market_data_accessed": false,
+  "model_run": false,
+  "corpus": {
+    "id": "sec-rss-internet-archive-v14",
+    "manifest_sha256": "dfd7fee0bd38b6c72fbe4f4abf0cf0eaeb36cae420af43b0415278603abb4fc0",
+    "corpus_sha256": "3da9172fb8b3b07a5e2fe50fa45aebe389b5f36de1983a0665af08fcc655aff3",
+    "information_time": "archive_capture_at",
+    "aggregation_unit": "one information set per archive_capture_at"
+  },
+  "candle_candidate": {
+    "publisher": "Binance Vision",
+    "asset": "BTCUSDT spot",
+    "interval": "4h",
+    "path_template": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-YYYY-MM.zip",
+    "checksum_template": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/4h/BTCUSDT-4h-YYYY-MM.zip.CHECKSUM",
+    "required_audit": ["pin URLs", "verify published checksum against local SHA-256", "verify CSV schema", "verify UTC open-time interpretation", "verify bar uniqueness and continuity", "verify target coverage"],
+    "interpretation": "post-hoc versioned evaluation artifact; not a claim of historical candle availability at archive_capture_at"
+  },
+  "target": {
+    "name": "btc_usdt_spot_h24_simple_return",
+    "execution_rule": "first 4h candle open strictly after archive_capture_at",
+    "formula": "open[t+24h] / open[t] - 1",
+    "role": "target and evaluation only"
+  },
+  "data_gate": {"minimum_eligible_information_sets": 96, "required_oos_records": 72, "purge_hours": 24},
+  "model": {"family": "linear-ridge", "alpha": 10.0, "standardization": "training-fold only", "hyperparameter_tuning": false},
+  "folds": {"type": "expanding", "count": 3, "oos_information_sets_per_fold": 24, "ordering": "archive_capture_at ascending"},
+  "bootstrap": {"method": "paired moving-block within fold", "iterations": 5000, "block_information_sets": 4, "seed": 20260908, "confidence_level": 0.95},
+  "gate": {"minimum_fold_wins": 2, "requirements": ["MSE(sentiment)-MSE(event) 95% CI lower bound > 0", "event Pearson 95% CI lower bound > 0", "event MSE wins at least 2 of 3 folds", "exactly 72 OOS predictions and nonconstant event predictions"]},
+  "stop_rule": "On any data, extraction, or predictive-gate failure: freeze the artifact and stop before threshold, action mapping, backtest, Tech+LLM, or sealed holdout."
+}

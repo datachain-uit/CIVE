@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-010-v1-cryptobert-risk-budget-reallocation",
+  "frozen_at": "2026-09-12T05:16:16.848589+00:00",
+  "research_role": "post-outcome exploratory development; CryptoBERT was selected from the descriptive HYB-009 risk audit",
+  "hypothesis": "CryptoBERT bearish percentile can reallocate exposure away from high-downside entries toward low-downside entries, preserving some tail-risk benefit while recovering or increasing return relative to Tech-Control.",
+  "policy": {
+    "bearish_percentile_recovery": "q = 2 * (1 - HYB009_downsize_weight)",
+    "primary_weight": "1.25 - 0.5*q, algebraically HYB009_downsize_weight + 0.25",
+    "bounds": [
+      0.75,
+      1.25
+    ],
+    "execution": "same frozen Tech entries, directions, exits, costs, funding and stop prices; exposure scales gross PnL and costs linearly"
+  },
+  "comparators": {
+    "tech_control": "constant 1.0 exposure",
+    "shuffled_reallocation": "same primary weights permuted once with seed 20260914",
+    "constant_matched_budget": "constant exposure equal to the primary arm's feature-only mean weight"
+  },
+  "sample": {
+    "n_opportunities": 24,
+    "primary_mean_weight": 1.0449576465201467,
+    "primary_min_weight": 0.8021978021978022,
+    "primary_max_weight": 1.228021978021978
+  },
+  "gates": {
+    "allocation_selectivity": "primary mean net delta and MDD must beat both shuffled and constant-matched-budget arms",
+    "return_conversion": "compounded return > Tech; paired-net cluster-bootstrap CI95 lower > 0; at least 2/3 folds positive",
+    "risk_preservation": "closed-trade MDD <= Tech, ES10 >= Tech and worst trade >= Tech",
+    "strong_pass": "all allocation-selectivity, return-conversion and risk-preservation conditions pass"
+  },
+  "folds": [
+    [
+      "2022-09-13T00:00:00+00:00",
+      "2023-09-01T00:00:00+00:00"
+    ],
+    [
+      "2023-09-01T00:00:00+00:00",
+      "2024-09-01T00:00:00+00:00"
+    ],
+    [
+      "2024-09-01T00:00:00+00:00",
+      "2025-08-29T00:00:00+00:00"
+    ]
+  ],
+  "assignments": {
+    "tech_control": {
+      "1666742400000::ETHUSDT": 1.0,
+      "1667606400000::BTCUSDT": 1.0,
+      "1670976000000::ETHUSDT": 1.0,
+      "1673481600000::BTCUSDT": 1.0,
+      "1673740800000::BTCUSDT": 1.0,
+      "1681171200000::BTCUSDT": 1.0,
+      "1696118400000::SOLUSDT": 1.0,
+      "1697500800000::BTCUSDT": 1.0,
+      "1698105600000::ETHUSDT": 1.0,
+      "1700006400000::ETHUSDT": 1.0,
+      "1701475200000::BTCUSDT": 1.0,
+      "1704240000000::BTCUSDT": 1.0,
+      "1707350400000::BTCUSDT": 1.0,
+      "1708992000000::BTCUSDT": 1.0,
+      "1709164800000::BTCUSDT": 1.0,
+      "1715817600000::BTCUSDT": 1.0,
+      "1730160000000::BTCUSDT": 1.0,
+      "1742860800000::BTCUSDT": 1.0,
+      "1745280000000::BTCUSDT": 1.0,
+      "1746748800000::ETHUSDT": 1.0,
+      "1747612800000::BTCUSDT": 1.0,
+      "1747699200000::BTCUSDT": 1.0,
+      "1752105600000::XRPUSDT": 1.0,
+      "1752278400000::XRPUSDT": 1.0
+    },
+    "cryptobert_reallocation": {
+      "1666742400000::ETHUSDT": 1.1243131868131868,
+      "1667606400000::BTCUSDT": 0.9375,
+      "1670976000000::ETHUSDT": 1.195054945054945,
+      "1673481600000::BTCUSDT": 1.1380494505494505,
+      "1673740800000::BTCUSDT": 1.2197802197802199,
+      "1681171200000::BTCUSDT": 1.1414835164835164,
+      "1696118400000::SOLUSDT": 1.1971153846153846,
+      "1697500800000::BTCUSDT": 0.8021978021978022,
+      "1698105600000::ETHUSDT": 0.9258241758241759,
+      "1700006400000::ETHUSDT": 1.1861263736263736,
+      "1701475200000::BTCUSDT": 0.9965659340659341,
+      "1704240000000::BTCUSDT": 0.9203296703296704,
+      "1707350400000::BTCUSDT": 0.8523351648351649,
+      "1708992000000::BTCUSDT": 0.8042582417582418,
+      "1709164800000::BTCUSDT": 1.0817307692307692,
+      "1715817600000::BTCUSDT": 1.066620879120879,
+      "1730160000000::BTCUSDT": 0.9326923076923077,
+      "1742860800000::BTCUSDT": 1.0693681318681318,
+      "1745280000000::BTCUSDT": 1.2005494505494505,
+      "1746748800000::ETHUSDT": 1.0570054945054945,
+      "1747612800000::BTCUSDT": 0.8482142857142857,
+      "1747699200000::BTCUSDT": 0.9993131868131868,
+      "1752105600000::XRPUSDT": 1.228021978021978,
+      "1752278400000::XRPUSDT": 1.1545329670329672
+    },
+    "shuffled_reallocation": {
+      "1666742400000::ETHUSDT": 0.9993131868131868,
+      "1667606400000::BTCUSDT": 0.8021978021978022,
+      "1670976000000::ETHUSDT": 0.9375,
+      "1673481600000::BTCUSDT": 0.9326923076923077,
+      "1673740800000::BTCUSDT": 0.8523351648351649,
+      "1681171200000::BTCUSDT": 1.066620879120879,
+      "1696118400000::SOLUSDT": 1.0693681318681318,
+      "1697500800000::BTCUSDT": 1.1380494505494505,
+      "1698105600000::ETHUSDT": 1.1545329670329672,
+      "1700006400000::ETHUSDT": 1.195054945054945,
+      "1701475200000::BTCUSDT": 1.1414835164835164,
+      "1704240000000::BTCUSDT": 1.228021978021978,
+      "1707350400000::BTCUSDT": 1.2197802197802199,
+      "1708992000000::BTCUSDT": 0.9965659340659341,
+      "1709164800000::BTCUSDT": 0.9258241758241759,
+      "1715817600000::BTCUSDT": 1.1971153846153846,
+      "1730160000000::BTCUSDT": 1.1861263736263736,
+      "1742860800000::BTCUSDT": 0.8482142857142857,
+      "1745280000000::BTCUSDT": 1.1243131868131868,
+      "1746748800000::ETHUSDT": 1.2005494505494505,
+      "1747612800000::BTCUSDT": 0.9203296703296704,
+      "1747699200000::BTCUSDT": 1.0817307692307692,
+      "1752105600000::XRPUSDT": 1.0570054945054945,
+      "1752278400000::XRPUSDT": 0.8042582417582418
+    },
+    "constant_matched_budget": {
+      "1666742400000::ETHUSDT": 1.0449576465201467,
+      "1667606400000::BTCUSDT": 1.0449576465201467,
+      "1670976000000::ETHUSDT": 1.0449576465201467,
+      "1673481600000::BTCUSDT": 1.0449576465201467,
+      "1673740800000::BTCUSDT": 1.0449576465201467,
+      "1681171200000::BTCUSDT": 1.0449576465201467,
+      "1696118400000::SOLUSDT": 1.0449576465201467,
+      "1697500800000::BTCUSDT": 1.0449576465201467,
+      "1698105600000::ETHUSDT": 1.0449576465201467,
+      "1700006400000::ETHUSDT": 1.0449576465201467,
+      "1701475200000::BTCUSDT": 1.0449576465201467,
+      "1704240000000::BTCUSDT": 1.0449576465201467,
+      "1707350400000::BTCUSDT": 1.0449576465201467,
+      "1708992000000::BTCUSDT": 1.0449576465201467,
+      "1709164800000::BTCUSDT": 1.0449576465201467,
+      "1715817600000::BTCUSDT": 1.0449576465201467,
+      "1730160000000::BTCUSDT": 1.0449576465201467,
+      "1742860800000::BTCUSDT": 1.0449576465201467,
+      "1745280000000::BTCUSDT": 1.0449576465201467,
+      "1746748800000::ETHUSDT": 1.0449576465201467,
+      "1747612800000::BTCUSDT": 1.0449576465201467,
+      "1747699200000::BTCUSDT": 1.0449576465201467,
+      "1752105600000::XRPUSDT": 1.0449576465201467,
+      "1752278400000::XRPUSDT": 1.0449576465201467
+    }
+  },
+  "sources": {
+    "hyb009_assignments": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb009_model_substitution_sample_audit_v1_1.json",
+      "sha256": "37a4325610d2c22de773c3777dbe50e5b3fac0eb30a8d0fb9783d711c5628de7"
+    },
+    "tech": {
+      "path": "D:\\projects\\auto-trading\\results\\technical_bybit_lifecycle_1x_candidate_hardened.json",
+      "sha256": "7e8e8653c207e759e6cd3093e78705486fd732ba588362620ffe0ff372c60cf7"
+    },
+    "evaluator": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_hyb010_risk_budget_reallocation.py",
+      "sha256": "fd599f0a43ed7d91f4f8fbd6c87ed06f509016d7025e0364d8780d2e1d5ca093"
+    }
+  },
+  "prohibited": [
+    "retuning the 0.25 offset or 0.75/1.25 bounds after evaluation",
+    "calling this validation, sealed holdout or live evidence",
+    "attributing a gain to LLM unless the primary arm also beats the same-budget placebos",
+    "claiming intrabar drawdown from closed-trade MDD"
+  ]
+}

@@ -1,0 +1,11 @@
+# Separate environment recorded for the FinGPT/ChatGLM2 experiment on 2026-09-15.
+# Python 3.12.10; CUDA-enabled PyTorch build.
+accelerate==0.29.3
+bitsandbytes==0.50.1
+huggingface-hub==0.23.5
+numpy==1.26.4
+peft==0.10.0
+protobuf==5.29.5
+sentencepiece==0.2.1
+torch==2.8.0
+transformers==4.40.2

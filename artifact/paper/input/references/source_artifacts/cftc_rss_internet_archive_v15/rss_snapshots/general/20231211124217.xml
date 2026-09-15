@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Chairman Behnam Announces Agenda for the December 14 Agricultural Advisory Committee Meeting</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8833-23</link>
+  <description/>
+  <pubDate>Fri, 08 Dec 2023 19:29:35 +0000
+</pubDate>
+    <dc:creator>LDozier</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8833-23</guid>
+    </item>
+<item>
+  <title>AgCon2024 Set for April 11-12 </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8832-23</link>
+  <description/>
+  <pubDate>Fri, 08 Dec 2023 17:35:29 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8832-23</guid>
+    </item>
+<item>
+  <title>Commissioner Johnson Announced Agenda for December 11 Meeting of the Market Risk Advisory Committee</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8831-23</link>
+  <description/>
+  <pubDate>Fri, 08 Dec 2023 13:51:27 +0000
+</pubDate>
+    <dc:creator>LDozier</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8831-23</guid>
+    </item>
+<item>
+  <title>CFTC to Hold a Commission Open Meeting on December 13</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8830-23</link>
+  <description/>
+  <pubDate>Wed, 06 Dec 2023 22:41:56 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8830-23</guid>
+    </item>
+<item>
+  <title>CFTC Issues Proposed Guidance Regarding the Listing of Voluntary Carbon Credit Derivative Contracts  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8829-23</link>
+  <description/>
+  <pubDate>Mon, 04 Dec 2023 12:51:31 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8829-23</guid>
+    </item>
+<item>
+  <title>CFTC Chairman Announces Melanie Devoe Director of the Office of Customer Education and Outreach </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8828-23</link>
+  <description/>
+  <pubDate>Thu, 30 Nov 2023 19:36:09 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8828-23</guid>
+    </item>
+<item>
+  <title>Chairman Behnam Announces CFTC Agricultural Advisory Committee to Meet December 14 </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8827-23</link>
+  <description/>
+  <pubDate>Tue, 28 Nov 2023 16:17:53 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8827-23</guid>
+    </item>
+<item>
+  <title>The Market Risk Advisory Committee to Meet on December 11</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8824-23</link>
+  <description/>
+  <pubDate>Tue, 21 Nov 2023 15:30:03 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8824-23</guid>
+    </item>
+<item>
+  <title>Inter-Agency Working Group Releases New Report on Treasury Market Resilience Efforts </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8820-23</link>
+  <description/>
+  <pubDate>Mon, 06 Nov 2023 17:29:00 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8820-23</guid>
+    </item>
+<item>
+  <title>CFTC Seeks Public Comment on a Proposal on Investment of Customer Funds</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8818-23</link>
+  <description/>
+  <pubDate>Fri, 03 Nov 2023 16:18:09 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8818-23</guid>
+    </item>
+
+  </channel>
+</rss>

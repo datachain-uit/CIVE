@@ -1,0 +1,38 @@
+{
+  "status": "EVENT_CORPUS_READY_FOR_ARCHIVE_AUDIT_NOT_MODEL_RUN",
+  "source": "paper\\input\\results\\llm\\v11\\open_fed_policy_corpus_v11_0_1\\corpus.json",
+  "source_sha256": "ade8903aeb52d82b88bea71b00512de0a122b6576d008fd052c247eedef6ae42",
+  "documents": 162,
+  "events": 155,
+  "same_time_documents_collapsed": 7,
+  "events_per_year": {
+    "2022": 54,
+    "2023": 47,
+    "2024": 54
+  },
+  "event_category_sets": {
+    "Monetary Policy": 52,
+    "Banking and Consumer Regulatory Policy": 102,
+    "Banking and Consumer Regulatory Policy+Monetary Policy": 1
+  },
+  "text_chars": {
+    "min": 388,
+    "median_lower": 1161,
+    "max": 5315
+  },
+  "approximate_two_sided_correlation_mde": 0.22340636845549294,
+  "planning_assumptions": {
+    "alpha": 0.05,
+    "power": 0.8,
+    "independent_event_correlation": true,
+    "optimistic_for_temporal_modeling": true
+  },
+  "model_run": false,
+  "market_data_accessed": false,
+  "historical_availability_certified": false,
+  "next_gate": [
+    "Archive-version audit without outcome selection",
+    "Freeze one target/window and temporal split",
+    "Freeze model hash, prompt, decoding and thermal runner"
+  ]
+}

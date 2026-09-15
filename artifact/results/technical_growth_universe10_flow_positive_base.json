@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-08-11T02:43:32.677968+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT",
+      "DOGE/USDT",
+      "ADA/USDT",
+      "AVAX/USDT",
+      "LINK/USDT",
+      "LTC/USDT"
+    ],
+    "daily_selection": "market UP-UP + channel event + top-N 20d momentum",
+    "volume_veto": "off",
+    "oi_gate": "off",
+    "funding_crowding_veto": "off",
+    "basis_gate": "off",
+    "flow_mode": "positive-confirmation",
+    "fill": "next daily 4H open",
+    "stops": "4H ATR fixed plus trailing, adverse OHLC stop",
+    "pyramiding": "off",
+    "max_pyramid_layers": 1,
+    "pyramid_step_atr": null,
+    "fee_bps": 6.0,
+    "slippage_bps": 3.0,
+    "spread_bps": 2.0,
+    "impact_bps": 1.0,
+    "effective_adverse_execution_bps": 5.0,
+    "funding_source": "bybit-history",
+    "funding_bps_8h": null
+  },
+  "result": {
+    "starting_balance": 10000,
+    "final_equity": 30046.58,
+    "return_pct": 200.4658,
+    "max_drawdown_pct": 15.6035,
+    "fills": 68
+  },
+  "walk_forward_folds": [
+    {
+      "start": "2022-09-02",
+      "return_pct": 7.1524,
+      "max_drawdown_pct": 15.6035
+    },
+    {
+      "start": "2023-03-01",
+      "return_pct": -1.9209,
+      "max_drawdown_pct": 3.7818
+    },
+    {
+      "start": "2023-08-28",
+      "return_pct": 38.2888,
+      "max_drawdown_pct": 7.1442
+    },
+    {
+      "start": "2024-02-24",
+      "return_pct": 14.4381,
+      "max_drawdown_pct": 4.7439
+    },
+    {
+      "start": "2024-08-22",
+      "return_pct": 2.5043,
+      "max_drawdown_pct": 7.4657
+    },
+    {
+      "start": "2025-02-18",
+      "return_pct": 74.698,
+      "max_drawdown_pct": 6.8319
+    },
+    {
+      "start": "2025-08-17",
+      "return_pct": 5.9524,
+      "max_drawdown_pct": 3.604
+    },
+    {
+      "start": "2026-02-13",
+      "return_pct": -4.7821,
+      "max_drawdown_pct": 13.7017
+    }
+  ],
+  "positive_folds": 6,
+  "folds_tested": 8,
+  "applied_funding_events": 453,
+  "missing_funding_events": 0
+}

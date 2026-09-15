@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Federal Court Orders Defendant to Pay More Than $2 Million for Operating Commodity Pool Fraud Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9012-24</link>
+  <description/>
+  <pubDate>Thu, 05 Dec 2024 13:54:25 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9012-24</guid>
+    </item>
+<item>
+  <title>CFTC Releases FY 2024 Enforcement Results</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9011-24</link>
+  <description/>
+  <pubDate>Wed, 04 Dec 2024 14:30:08 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9011-24</guid>
+    </item>
+<item>
+  <title>Customer Alert Regarding CFTC v. Traders Domain FX Ltd</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9007-24</link>
+  <description/>
+  <pubDate>Thu, 14 Nov 2024 18:57:34 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9007-24</guid>
+    </item>
+<item>
+  <title>CFTC Awards $4M to Two Whistleblowers</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9006-24</link>
+  <description/>
+  <pubDate>Tue, 12 Nov 2024 19:43:10 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9006-24</guid>
+    </item>
+<item>
+  <title>CFTC Charges two Louisiana-Based Companies and Cofounder with Multi-Million Dollar Forex Fraud, Failing to Register</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9003-24</link>
+  <description/>
+  <pubDate>Mon, 28 Oct 2024 18:22:53 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9003-24</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Precious Metals Dealer, its CEO and President to Pay $49M for Fraudulent Misappropriation Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9001-24</link>
+  <description/>
+  <pubDate>Fri, 25 Oct 2024 13:20:38 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9001-24</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Foreign Trader to Pay $390K for Fictitious Sales Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9000-24</link>
+  <description/>
+  <pubDate>Thu, 24 Oct 2024 19:22:02 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9000-24</guid>
+    </item>
+<item>
+  <title>CFTC Charges Several People and Companies in a $280 Million Ponzi Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8997-24</link>
+  <description/>
+  <pubDate>Tue, 15 Oct 2024 17:43:58 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8997-24</guid>
+    </item>
+<item>
+  <title>CFTC Charges Former CEO of Carbon Credit Project Developer with Fraud Involving Voluntary Carbon Credits</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8994-24</link>
+  <description/>
+  <pubDate>Wed, 02 Oct 2024 20:03:25 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8994-24</guid>
+    </item>
+<item>
+  <title>CFTC Charges Oregon Resident and His Corporation with Fraud Related to Leveraged Foreign Currency and Metals, and Failing to Register</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8993-24</link>
+  <description/>
+  <pubDate>Wed, 02 Oct 2024 15:58:39 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8993-24</guid>
+    </item>
+
+  </channel>
+</rss>

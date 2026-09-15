@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Secures Court Order Requiring Florida Resident to Pay Over $1.3 Million in Disgorgement and Imposes Trading Ban for Commodity Pool Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9213-26</link>
+  <description/>
+  <pubDate>Wed, 15 Apr 2026 16:02:06 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9213-26</guid>
+    </item>
+<item>
+  <title>CFTC Secures Court Order Against Florida Resident to Pay Over $1.3 Million in Restitution, Penalties for Commodity Pool Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9212-26</link>
+  <description/>
+  <pubDate>Mon, 13 Apr 2026 17:10:00 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9212-26</guid>
+    </item>
+<item>
+  <title>Federal Court Grants CFTC Motion for Summary Judgment, Orders Former Hedge Fund Manager to Pay $2.2 Million for Swap Valuation Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9205-26</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2026 16:12:42 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9205-26</guid>
+    </item>
+<item>
+  <title>CFTC Resolves Action Against Former FTX Head of Engineering</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9204-26</link>
+  <description/>
+  <pubDate>Wed, 01 Apr 2026 15:56:39 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9204-26</guid>
+    </item>
+<item>
+  <title>Federal Court Enters Permanent Injunction Against Peken Global Limited</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9203-26</link>
+  <description/>
+  <pubDate>Mon, 30 Mar 2026 21:14:05 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9203-26</guid>
+    </item>
+<item>
+  <title>CFTC Secures Judgement Against New York Companies to Pay Over $2.4 Million in Restitution, Penalties for Forex Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9195-26</link>
+  <description/>
+  <pubDate>Fri, 13 Mar 2026 19:30:21 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9195-26</guid>
+    </item>
+<item>
+  <title>CFTC Enforcement Division Issues Prediction Markets Advisory</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9185-26</link>
+  <description/>
+  <pubDate>Wed, 25 Feb 2026 20:08:52 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9185-26</guid>
+    </item>
+<item>
+  <title>Texas Resident to Pay Over $14 million for Misappropriation of Confidential Information, Illegal Kickbacks</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9178-26</link>
+  <description/>
+  <pubDate>Mon, 02 Feb 2026 21:13:32 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9178-26</guid>
+    </item>
+<item>
+  <title>CFTC Enforcement Updates</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9168-26</link>
+  <description/>
+  <pubDate>Fri, 16 Jan 2026 22:00:24 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9168-26</guid>
+    </item>
+<item>
+  <title>CFTC Awards Two Whistleblowers More Than $1.8M</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9159-25</link>
+  <description/>
+  <pubDate>Fri, 19 Dec 2025 17:34:17 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9159-25</guid>
+    </item>
+
+  </channel>
+</rss>

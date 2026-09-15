@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-08-11T04:08:30.414582+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT",
+      "DOGE/USDT",
+      "ADA/USDT",
+      "AVAX/USDT",
+      "LINK/USDT",
+      "LTC/USDT"
+    ],
+    "daily_selection": "market UP-UP + channel event + top-N 20d momentum",
+    "volume_veto": "off",
+    "oi_gate": "off",
+    "funding_crowding_veto": "off",
+    "basis_gate": "off",
+    "flow_mode": "off",
+    "gross_leverage": 1.5,
+    "maintenance_margin_rate": 0.01,
+    "liquidation_fee_bps": 50.0,
+    "fill": "next daily 4H open",
+    "stops": "4H ATR fixed plus trailing, adverse OHLC stop",
+    "pyramiding": "off",
+    "max_pyramid_layers": 1,
+    "pyramid_step_atr": null,
+    "fee_bps": 15.0,
+    "slippage_bps": 15.0,
+    "spread_bps": 8.0,
+    "impact_bps": 10.0,
+    "effective_adverse_execution_bps": 29.0,
+    "funding_source": "bybit-history",
+    "funding_bps_8h": null
+  },
+  "result": {
+    "starting_balance": 10000,
+    "final_equity": 41388.55,
+    "return_pct": 313.8855,
+    "max_drawdown_pct": 26.3346,
+    "fills": 80
+  },
+  "walk_forward_folds": [
+    {
+      "start": "2022-09-02",
+      "return_pct": 2.3672,
+      "max_drawdown_pct": 26.3346
+    },
+    {
+      "start": "2023-03-01",
+      "return_pct": -4.8156,
+      "max_drawdown_pct": 6.7853
+    },
+    {
+      "start": "2023-08-28",
+      "return_pct": 65.2842,
+      "max_drawdown_pct": 15.8236
+    },
+    {
+      "start": "2024-02-24",
+      "return_pct": 18.4218,
+      "max_drawdown_pct": 7.7138
+    },
+    {
+      "start": "2024-08-22",
+      "return_pct": 14.6423,
+      "max_drawdown_pct": 12.9528
+    },
+    {
+      "start": "2025-02-18",
+      "return_pct": 110.5698,
+      "max_drawdown_pct": 10.7146
+    },
+    {
+      "start": "2025-08-17",
+      "return_pct": 1.3154,
+      "max_drawdown_pct": 10.1841
+    },
+    {
+      "start": "2026-02-13",
+      "return_pct": -12.8142,
+      "max_drawdown_pct": 24.2855
+    }
+  ],
+  "positive_folds": 6,
+  "folds_tested": 8,
+  "applied_funding_events": 510,
+  "missing_funding_events": 0,
+  "liquidation_events": 0
+}

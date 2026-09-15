@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-minilm-external-impact-v4-development",
+  "predeclared_at": "2026-09-03T16:35:01.9697271Z",
+  "scope": "Sequential development transfer screen. Stage A uses only external labels; Stage B reuses the already-seen project h24_return target and is not confirmatory or sealed.",
+  "prior_v3_project_outcomes_consulted": true,
+  "stage_a_project_outcomes_consulted": false,
+  "protocol": {
+    "path": "paper/working/protocols/LLM_External_Impact_Protocol_v4.md",
+    "sha256": "dcbf11954d9bf61d78229eba838b1ef7e9e170973149952b471e36e86eb758a3"
+  },
+  "code": {
+    "representation": {
+      "path": "tools/llm/run_minilm_external_impact_v4.py",
+      "sha256": "c53d70be73851b998beaff40358fd7c7aad1c23b672e48947e67f8478dcdd5cc"
+    },
+    "transfer_evaluator": {
+      "path": "tools/llm/evaluate_minilm_impact_transfer_v4.py",
+      "sha256": "15853a1e7ca1048dd5f92713f3293b0c24e4a361fd025ec566759bb69016600b"
+    },
+    "v3_feature_dependency": {
+      "path": "tools/llm/evaluate_llm_event_predictive_gate_v3.py",
+      "sha256": "4b5f0479fd300e0ffe9b48755b090091c232857bd215cce684f653b5ffc4e7da"
+    },
+    "representation_tests": {
+      "path": "tools/llm/test_minilm_external_impact_v4.py",
+      "sha256": "f9434f32c8ea875b994bafc639b7a622c4b55bd62beb99654d424b650f52c9e4"
+    },
+    "transfer_tests": {
+      "path": "tools/llm/test_evaluate_minilm_impact_transfer_v4.py",
+      "sha256": "0b73b20580a1eb4a6b4e459fa7e0ec5f0e86db4de600fa22a4681b35da70eee5"
+    }
+  },
+  "tests": {
+    "status": "6 tests passed before Stage A",
+    "python": "D:/projects/auto-trading/.venv/Scripts/python.exe"
+  },
+  "external_provenance": {
+    "repository": "https://github.com/SahandNZ/cryptonews-articles-with-price-momentum-labels",
+    "commit": "2915946457bcf0604563b63d933d63313e71aeb2",
+    "license_from_dataset_card": "openrail",
+    "label_definition": "BTCUSDT daily close[t+7] > close[t]",
+    "labeler_base": {
+      "path": "runtime/external/cryptonews_market_impact_source/src/labeler/labler.py",
+      "sha256": "d08eb3e4f66410188adf772587825f10aa19544150fe364ca37ca19b1eca4638"
+    },
+    "labeler_color": {
+      "path": "runtime/external/cryptonews_market_impact_source/src/labeler/color.py",
+      "sha256": "19111932e507c43f681bfc6f003b3c41186668d2eeb795031860796030dc9973"
+    },
+    "audit": {
+      "raw_rows": 180345,
+      "unique_urls": 480,
+      "unique_dates": 171,
+      "date_start": "2022-10-14",
+      "date_end": "2023-05-31",
+      "project_url_overlap": 0,
+      "source_split_url_overlap": 4,
+      "policy": "Ignore source row-level splits; regroup and evaluate by URL/date."
+    }
+  },
+  "sources": {
+    "external_dataset": {
+      "path": "runtime/external/cryptonews_market_impact_source/data/dataset/cryptonews/color/dataset.csv",
+      "sha256": "e0ee24d54a80d86b5f35ac959fd3dfcf9200d8172f4965b4831e1bf207aacffc"
+    },
+    "project_corpus": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "market_features": {
+      "path": "paper/input/results/llm/llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    "target_panel": {
+      "path": "paper/input/results/llm/v3/llm_event_risk_target_panel_v3_development.json",
+      "sha256": "fb56005b63964da995d2af974f9568d4c559429d1594723e9d9a9e0e5a7fb0a7"
+    }
+  },
+  "encoder": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "path": "C:/Users/MN/.cache/huggingface/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "device": "cpu",
+    "max_length": 128,
+    "batch_size": 32,
+    "seed": 20260904,
+    "cpu_threads": 4,
+    "files": {
+      "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+      "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "README.md": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+      "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+    }
+  },
+  "representation": {
+    "max_chunks_per_article": 8,
+    "chunk_selection": "first unique chunks in source order",
+    "chunk_pooling": "attention-mask mean then L2 normalize",
+    "article_pooling": "mean selected chunk embeddings then L2 normalize",
+    "encoder_fine_tuning": false
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-only mean/std",
+    "hyperparameter_tuning": false
+  },
+  "external_folds": [
+    {
+      "fold": 1,
+      "train_start": "2022-10-14",
+      "train_end": "2023-03-13",
+      "valid_start": "2023-03-15",
+      "valid_end": "2023-04-21",
+      "train_records": 383,
+      "valid_records": 43
+    },
+    {
+      "fold": 2,
+      "train_start": "2022-10-14",
+      "train_end": "2023-04-21",
+      "valid_start": "2023-04-24",
+      "valid_end": "2023-05-31",
+      "train_records": 426,
+      "valid_records": 54
+    }
+  ],
+  "external_gate": {
+    "required_articles": 480,
+    "required_oos_articles": 97,
+    "all_required_checks": [
+      "date-cluster bootstrap AUC 95% CI lower bound > 0.5",
+      "date-cluster bootstrap score-separation 95% CI lower bound > 0",
+      "both fold AUC > 0.5",
+      "predictions nonconstant"
+    ]
+  },
+  "data_gate": {
+    "required_dates": 1079,
+    "required_project_headlines": 39393,
+    "required_project_scores": 39393
+  },
+  "target": {
+    "field": "h24_return",
+    "asset": "BTCUSDT",
+    "execution_delay_hours": 4,
+    "role": "single primary seen-development transfer target"
+  },
+  "feature_contract": {
+    "market_numeric": [
+      "btc_return_24h",
+      "btc_return_72h",
+      "btc_return_168h",
+      "btc_realized_vol_daily_7d",
+      "btc_volume_zscore_30d",
+      "btc_funding_latest",
+      "btc_funding_24h",
+      "btc_funding_72h",
+      "cross_asset_mean_return_24h",
+      "cross_asset_breadth_24h",
+      "cross_asset_dispersion_24h"
+    ],
+    "source_domains": [
+      "cointelegraph.com",
+      "coindesk.com",
+      "decrypt.co",
+      "cryptonews.com",
+      "blockworks.co"
+    ],
+    "coin_types": [
+      "Bitcoin",
+      "Ethereum",
+      "Solana",
+      "Ripple",
+      "Polygon",
+      "Terra",
+      "Dogecoin",
+      "Chainlink",
+      "Avalanche",
+      "Uniswap",
+      "Cardano",
+      "Shiba Inu",
+      "Litecoin",
+      "Polkadot",
+      "XRP",
+      "Binance Coin",
+      "VeChain"
+    ],
+    "recurrence_lookback_days": 30,
+    "impact_features": [
+      "impact_score_mean",
+      "impact_score_max",
+      "impact_score_min",
+      "impact_score_std",
+      "impact_score_abs_mean"
+    ]
+  },
+  "project_folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-09-11",
+      "valid_start": "2023-09-15",
+      "valid_end": "2024-01-31",
+      "train_records": 365,
+      "valid_records": 139
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-01-31",
+      "valid_start": "2024-02-04",
+      "valid_end": "2024-06-21",
+      "train_records": 507,
+      "valid_records": 139
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-21",
+      "valid_start": "2024-06-25",
+      "valid_end": "2024-11-10",
+      "train_records": 649,
+      "valid_records": 139
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-11-10",
+      "valid_start": "2024-11-14",
+      "valid_end": "2025-04-01",
+      "train_records": 791,
+      "valid_records": 139
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-01",
+      "valid_start": "2025-04-05",
+      "valid_end": "2025-08-27",
+      "train_records": 933,
+      "valid_records": 143
+    }
+  ],
+  "bootstrap": {
+    "iterations": 5000,
+    "seed": 20260904,
+    "block_length_days": 7,
+    "confidence_level": 0.95
+  },
+  "project_gate": {
+    "required_oos_records": 699,
+    "minimum_fold_wins": 3,
+    "all_required_checks": [
+      "paired MSE(metadata)-MSE(external-impact) 95% CI lower bound > 0",
+      "external-impact prediction Pearson 95% CI lower bound > 0",
+      "external-impact MSE wins at least 3 of 5 folds",
+      "predictions nonconstant"
+    ]
+  },
+  "on_external_fail": "Stop before project corpus scoring.",
+  "on_project_fail": "Freeze negative result and stop before threshold, action mapping, backtest, Tech+LLM, or sealed holdout.",
+  "on_project_pass": "Authorize only a new development overlay predeclaration."
+}

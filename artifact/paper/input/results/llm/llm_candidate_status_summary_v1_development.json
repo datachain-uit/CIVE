@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-18T03:17:58.174872+00:00",
+  "experiment_id": "llm-candidate-status-summary-v1-development",
+  "scope": "research candidates only; excludes smoke tests, raw ledgers not tied to current gates, and manifests",
+  "selection_rule": "manual whitelist of LLM candidates discussed in current protocol",
+  "summary": {
+    "candidate_count": 8,
+    "allowed_for_backtest_count": 0,
+    "all_candidates_stopped_before_new_backtest": true
+  },
+  "candidates": [
+    {
+      "candidate": "FinBERT / ProsusAI",
+      "family": "financial sentiment classifier",
+      "stage0": "n/a",
+      "stage1_reliability": "pass",
+      "full_inference": "pass",
+      "predictive_gate": "fail",
+      "final_stage": "predictive gate",
+      "status": "stage2-fail-stop-before-threshold-selection-or-backtest",
+      "allowed_for_backtest": false,
+      "key_metrics": "n=1110; Pearson=0.0099; Pearson CI=[-0.0496, 0.0671]; tercile=-1.85 bps; tercile CI=[-34.38, 34.73] bps",
+      "stop_reason": "predictive confidence interval crosses zero",
+      "artifacts": [
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_finbert_operational_gate_v1.json",
+          "sha256": "d5654dd936b05b699fbfd35e7982bc5315f0296eed1ee263fd649210ae0f9a42"
+        },
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_finbert_predictive_gate_v1_development.json",
+          "sha256": "46c4fa055a74bfa31e138ea734ec4681999f4f8eaf84cd603b5a13bab7b734b6"
+        }
+      ]
+    },
+    {
+      "candidate": "CryptoBERT / ElKulako",
+      "family": "crypto sentiment classifier",
+      "stage0": "pass",
+      "stage1_reliability": "pass",
+      "full_inference": "pass",
+      "predictive_gate": "fail",
+      "final_stage": "predictive gate",
+      "status": "stage2-fail-stop-before-threshold-selection-or-backtest",
+      "allowed_for_backtest": false,
+      "key_metrics": "full=2927/2927; n=1117; Pearson=0.0474; Pearson CI=[-0.0155, 0.1140]; tercile=32.94 bps; tercile CI=[-4.51, 67.28] bps",
+      "stop_reason": "predictive confidence interval crosses zero",
+      "artifacts": [
+        {
+          "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_full_v1_development.json",
+          "sha256": "3e7f580aff68727db8377ca5d5391585d963b830bdba629204d2665708af0145"
+        },
+        {
+          "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_predictive_gate_v1_development.json",
+          "sha256": "c02e253cfb03df1faf4f712cac0a7e27167d3df1f3f06bf2281cc77caa42b5ae"
+        }
+      ]
+    },
+    {
+      "candidate": "Llama 3 dual-run consensus",
+      "family": "local LLM daily action consensus",
+      "stage0": "n/a",
+      "stage1_reliability": "pass",
+      "full_inference": "pass",
+      "predictive_gate": "fail",
+      "final_stage": "calibration / diagnostic backtest",
+      "status": "development-calibration-not-freeze-evidence",
+      "allowed_for_backtest": false,
+      "key_metrics": "diagnostic return=32.75%; MDD=23.22%; long-flat=15.16 bps; long-flat CI=[-21.74, 49.54] bps",
+      "stop_reason": "calibration confidence interval crosses zero; diagnostic backtest is not freeze evidence",
+      "artifacts": [
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_bybit_lifecycle_dual_run_consensus_v1_development.json",
+          "sha256": "666e2f39713488e9dfed623f13282cfa3154fe94a016109acac59e3c49359242"
+        },
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_outcome_calibration_dual_run_consensus_v1_development.json",
+          "sha256": "25b8c0935780997335790399574171373b62524facb5e02a041d4b67b6dff134"
+        }
+      ]
+    },
+    {
+      "candidate": "Llama 3 single run",
+      "family": "local LLM daily action",
+      "stage0": "n/a",
+      "stage1_reliability": "partial/pass before consensus",
+      "full_inference": "pass",
+      "predictive_gate": "superseded by consensus calibration",
+      "final_stage": "diagnostic backtest",
+      "status": "development-not-frozen",
+      "allowed_for_backtest": false,
+      "key_metrics": "diagnostic return=36.35%; MDD=23.22%; fills=326",
+      "stop_reason": "single stochastic run is superseded by dual-run consensus and calibration gate",
+      "artifacts": [
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_bybit_lifecycle_full_v1_development.json",
+          "sha256": "e0c2f27cf498cf94bce64d78bbc8642826bb24d6c49525d813f3fc5d383102a7"
+        }
+      ]
+    },
+    {
+      "candidate": "Qwen 2.5 7B",
+      "family": "local LLM challenger",
+      "stage0": "n/a",
+      "stage1_reliability": "pass",
+      "full_inference": "pass",
+      "predictive_gate": "fail",
+      "final_stage": "stage2 calibration",
+      "status": "stage2-fail-stop-before-repeat-or-backtest",
+      "allowed_for_backtest": false,
+      "key_metrics": "full=2927; schema errors=0; Pearson CI lower=-0.0669; long-flat CI lower=-42.04 bps",
+      "stop_reason": "stage2 predictive lower bounds are negative",
+      "artifacts": [
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_qwen25_7b_challenger_gate_v1.json",
+          "sha256": "52a7c4d02c7371dde87933d98748db79b998628a23558ee8c254a05b64dfcb47"
+        },
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_qwen25_7b_challenger_stage2_v1.json",
+          "sha256": "b2ffa10f15ff72fb470c6878ddb15b654e94d9be720361fe2234ff2bd132d62a"
+        }
+      ]
+    },
+    {
+      "candidate": "Gemma 3 4B",
+      "family": "local LLM challenger",
+      "stage0": "n/a",
+      "stage1_reliability": "fail-fast",
+      "full_inference": "n/a",
+      "predictive_gate": "n/a",
+      "final_stage": "stage1 reliability",
+      "status": "stage1-fail-fast-stop-before-completing-run1",
+      "allowed_for_backtest": false,
+      "key_metrics": "observed=10/108; schema success=8; errors=2; max possible success=106",
+      "stop_reason": "cannot reach required 108/108 schema success after early parse errors",
+      "artifacts": [
+        {
+          "path": "D:\\projects\\auto-trading\\results\\llm_gemma3_4b_challenger_gate_v1.json",
+          "sha256": "9eb103defbbc75e74424fa44fc2bd34983d4a114c48fae6a191a85306bb1f05c"
+        }
+      ]
+    },
+    {
+      "candidate": "FinGPT ChatGLM2 6B LoRA bnb-nf4",
+      "family": "financial instruction LLM",
+      "stage0": "pass",
+      "stage1_reliability": "fail",
+      "full_inference": "n/a",
+      "predictive_gate": "n/a",
+      "final_stage": "stage1 reliability",
+      "status": "stage1-fail-stop-before-full-inference",
+      "allowed_for_backtest": false,
+      "key_metrics": "information sets=108; schema success each run=[30, 0]; headline matches each run=[30, 0]",
+      "stop_reason": "operational reliability gate failed before full inference",
+      "artifacts": [
+        {
+          "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_fingpt_chatglm2_6b_bnb_nf4_stage0_v2_development.json",
+          "sha256": "27b37af34e766cf5a6dbe70a10fdbc287d75e5a444883d85ad33bc5f587d112c"
+        },
+        {
+          "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_fingpt_chatglm2_6b_bnb_nf4_stage1_reliability_v2_development.json",
+          "sha256": "3d5af715ca4fcc3f8c4dc146dff4e6d10703142e2c050f5ae4947c48f15e511c"
+        }
+      ]
+    },
+    {
+      "candidate": "FinMem official implementation",
+      "family": "memory agent framework",
+      "stage0": "infeasible",
+      "stage1_reliability": "n/a",
+      "full_inference": "n/a",
+      "predictive_gate": "n/a",
+      "final_stage": "stage0 preflight",
+      "status": "stage0-infeasible-stop-before-finmem-run",
+      "allowed_for_backtest": false,
+      "key_metrics": "repo=be814aa47970de9bf2fdd6a1d5a60ae5cf361b46; model input .pkl count=0; OPENAI_API_KEY=missing",
+      "stop_reason": "no FinMem model input .pkl found under data/03_model_input; OPENAI_API_KEY is not present in the process environment; repo .env contains the placeholder OpenAI key, not a usable credential",
+      "artifacts": [
+        {
+          "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_finmem_official_preflight_v1_development.json",
+          "sha256": "d5c62dd44618e0efa84afbef34aec16a966a1d7e9a204e75bf8f00e8e38f84cf"
+        }
+      ]
+    }
+  ]
+}

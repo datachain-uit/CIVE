@@ -1,0 +1,13 @@
+{
+  "Jobson_Korkie": {
+    "Z_statistic": NaN,
+    "p_value": NaN,
+    "significant": false
+  },
+  "Diebold_Mariano": {
+    "DM_statistic": 3.1291713682440063,
+    "p_value": 0.0008765001973601823,
+    "significant": true
+  },
+  "Information_Ratio": 2.2126582939801236
+}

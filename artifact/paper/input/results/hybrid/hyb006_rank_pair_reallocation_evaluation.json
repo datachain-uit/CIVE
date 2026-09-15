@@ -1,0 +1,86 @@
+{
+  "schema_version": "hyb006-rank-pair-evaluation-v1",
+  "experiment_id": "HYB-006",
+  "status": "EXPLORATORY_TRANSFER_FAIL",
+  "passed": false,
+  "evaluated_at": "2026-09-11T08:23:24.173999+00:00",
+  "research_role": "exploratory development transfer diagnostic; not canonical Tech-Control, validation, holdout or live evidence",
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb006_rank_pair_reallocation_predeclared.json",
+    "sha256": "1b804886cbb7e45d039cdf29345295d6ed46397a79e3d517a94b2c1389fc4681"
+  },
+  "sample_audit": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb006_rank_pair_reallocation_feasibility.json",
+    "sha256": "e1de9f3b346054b6e263e50987300e399d6ca6ea5bace9646501d8c2daf75973"
+  },
+  "daily_panel": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb006_rank_pair_reallocation_daily_panel.json",
+    "sha256": "783bdeb729bfce61a0d6ced19c435cefc9533aed6d6261cf9c86c8426a035ef6",
+    "rows": 1081
+  },
+  "cost_bps_per_unit_turnover": 10,
+  "arms": {
+    "tech": {
+      "total_return": 15.546466288269098,
+      "annualized_return": 1.5792665460091992,
+      "mean_daily_net_return": 0.0031659011845267316,
+      "max_drawdown": 0.38070044035744643,
+      "total_turnover": 147.5,
+      "total_cost": 0.1475
+    },
+    "primary": {
+      "total_return": 15.039267933427581,
+      "annualized_return": 1.5522954773266124,
+      "mean_daily_net_return": 0.003146177401591924,
+      "max_drawdown": 0.4099545021171809,
+      "total_turnover": 221.15788125,
+      "total_cost": 0.22115788125000002
+    },
+    "opposite": {
+      "total_return": 13.587813970898857,
+      "annualized_return": 1.4718474993175348,
+      "mean_daily_net_return": 0.0030498713885993736,
+      "max_drawdown": 0.38702619839693464,
+      "total_turnover": 220.5917375,
+      "total_cost": 0.2205917375
+    },
+    "delayed": {
+      "total_return": 14.392807685975445,
+      "annualized_return": 1.517087159966628,
+      "mean_daily_net_return": 0.0031063216724739034,
+      "max_drawdown": 0.41219983470635124,
+      "total_turnover": 222.68441875,
+      "total_cost": 0.22268441875
+    },
+    "shuffled": {
+      "total_return": 12.022643297147509,
+      "annualized_return": 1.3789128225684144,
+      "mean_daily_net_return": 0.0029383291878980976,
+      "max_drawdown": 0.3785065542339311,
+      "total_turnover": 226.08215,
+      "total_cost": 0.22608215
+    }
+  },
+  "primary_contrast": {
+    "mean_daily_net_delta": -1.9723782934806987e-05,
+    "block_bootstrap_95_ci": [
+      -0.00019781544087714808,
+      0.00016393400403607163
+    ],
+    "fold_mean_deltas": [
+      6.307332923455826e-05,
+      -0.00017169042747562475,
+      0.00014942880145851976,
+      -6.036106777373598e-05,
+      -7.879606731967412e-05
+    ],
+    "positive_folds": 2
+  },
+  "checks": {
+    "bootstrap_ci_lower_positive": false,
+    "positive_folds_at_least_3_of_5": false,
+    "primary_exceeds_all_placebos": true,
+    "mdd_not_worse_by_more_than_5pp": true
+  },
+  "interpretation": "No incremental-value evidence under the frozen HYB-006 pass rule; do not retune on these outcomes."
+}

@@ -1,0 +1,10 @@
+{
+  "input_rows": 5000,
+  "unique_records": 1113,
+  "duplicates_removed": 3887,
+  "rejected": 0,
+  "unique_publication_dates": 14,
+  "coverage_start": "2022-10-14T00:00:00+00:00",
+  "coverage_end": "2022-10-28T00:00:00+00:00",
+  "adequate_for_four_year_backtest": false
+}

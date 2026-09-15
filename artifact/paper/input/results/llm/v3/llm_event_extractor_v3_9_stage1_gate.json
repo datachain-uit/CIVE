@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-27T15:10:29.348970+00:00",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.9-stage1-reliability",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records_left": 114,
+    "records_right": 114,
+    "schema_success_left": 114,
+    "schema_success_right": 114,
+    "headline_count_match_left": 114,
+    "headline_count_match_right": 114,
+    "headline_id_and_order_match_left": 114,
+    "headline_id_and_order_match_right": 114,
+    "evidence_exact_substring_left": 114,
+    "evidence_exact_substring_right": 114,
+    "evidence_fallbacks_left": 0,
+    "evidence_fallbacks_right": 0,
+    "paired_success": 114,
+    "categorical_exact_agreement": {
+      "btc_relevance": 114,
+      "event_type": 114,
+      "direction": 114,
+      "expected_horizon": 114
+    },
+    "affected_assets_mean_jaccard": 1.0,
+    "continuous": {
+      "severity": {
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0
+      },
+      "reported_surprise": {
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0
+      },
+      "confidence": {
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0
+      }
+    },
+    "continuous_field_max_absolute_difference": 0.0
+  },
+  "checks": {
+    "record_count": true,
+    "schema_success": true,
+    "headline_count_match": true,
+    "headline_id_and_order_match": true,
+    "evidence_exact_substring": true,
+    "evidence_fallback_limit": true,
+    "btc_relevance_agreement": true,
+    "event_type_agreement": true,
+    "direction_agreement": true,
+    "expected_horizon_agreement": true,
+    "affected_assets_jaccard": true,
+    "severity_difference": true,
+    "reported_surprise_difference": true,
+    "confidence_difference": true,
+    "continuous_max_difference": true
+  },
+  "passed": true,
+  "status": "stage1-pass-full-extraction-authorized",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_event_extractor_v3_9_stage1_predeclared.json",
+      "sha256": "2dca09d110c9f9ba55d77a7206ccab24a2ca3041de004db0a33d07d14d960dac"
+    },
+    "left": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_extractor_v3_9_stage1_run1.json",
+      "sha256": "dab196cf5b64f3de0a496c93a3eaca1886f0416a575ea07af44c312d4822787a"
+    },
+    "right": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_extractor_v3_9_stage1_run2.json",
+      "sha256": "c3101d6c10e08a2f1c2a773e1a92c8e32842dc059230700f85a4fb2ce412c077"
+    }
+  }
+}

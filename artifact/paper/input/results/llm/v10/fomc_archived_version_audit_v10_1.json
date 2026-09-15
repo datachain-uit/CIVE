@@ -1,0 +1,409 @@
+{
+  "status": "ARCHIVED_VERSION_AUDITED_NOT_AVAILABILITY_CERTIFIED",
+  "corpus_sha256": "4be7ad5a42e008ee0096af28d12f67175bf4264874e1b3567ac624818510ac1e",
+  "records": 24,
+  "status_counts": {
+    "TEXT_MATCH": 8,
+    "ARCHIVE_CHECK_ERROR": 16
+  },
+  "results": [
+    {
+      "id": "monetary20220126a",
+      "release_utc": "2022-01-26T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm",
+      "current_text_sha256": "87c80ec17c876486b7cbb616f7fedf11609cf0086debc9005540b523062ebbe0",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2022-01-26T19:04:43+00:00",
+      "capture_offset_seconds": 283,
+      "archived_text_sha256": "87c80ec17c876486b7cbb616f7fedf11609cf0086debc9005540b523062ebbe0",
+      "wayback_digest": "LA4BEBD7IX4MDD3R2HK6W34O6QJBGDNT",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20220126a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20220125190000&to=20220127190000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 2868,
+        "sha256": "3693e6c4e3070a4b37da2935fc11be8d00de9adf64f43892e0dc2e54e74feaca",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220126a_cdx.json",
+        "fetched_at": "2026-09-05T05:57:55.989698+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20220126190443id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 79359,
+        "sha256": "ad69ef19dd79cdaca698230823ce8c6ce31e098e48f7afb2fbabbbfd4c0bc61b",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220126a_20220126190443.html",
+        "fetched_at": "2026-09-05T05:57:58.011257+00:00"
+      }
+    },
+    {
+      "id": "monetary20220316a",
+      "release_utc": "2022-03-16T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+      "current_text_sha256": "904456d0fd545aa530206880235b44308085abeb117614e795334e441d712403",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2022-03-16T18:13:58+00:00",
+      "capture_offset_seconds": 838,
+      "archived_text_sha256": "904456d0fd545aa530206880235b44308085abeb117614e795334e441d712403",
+      "wayback_digest": "NBLSMBMDJ7DL7RLRTXEG2XTLSNNKOFHK",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20220316a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20220315180000&to=20220317180000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 2869,
+        "sha256": "ab4c5a1cc09ad56748290bd8d17d89cdf2e4cebc96ac27c373b1dabeded8e505",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220316a_cdx.json",
+        "fetched_at": "2026-09-05T05:58:33.272267+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20220316181358id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 79086,
+        "sha256": "312665491c3fd6d0a7eb586e216c56388a1ad6185b96e64c2fefd8650d29eebd",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220316a_20220316181358.html",
+        "fetched_at": "2026-09-05T05:58:35.135192+00:00"
+      }
+    },
+    {
+      "id": "monetary20220504a",
+      "release_utc": "2022-05-04T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm",
+      "current_text_sha256": "abad9a5e704ad9c9d29ac745777d52a3bcbcfa0e2119929f3533d7a4b681a910",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2022-05-04T18:05:36+00:00",
+      "capture_offset_seconds": 336,
+      "archived_text_sha256": "abad9a5e704ad9c9d29ac745777d52a3bcbcfa0e2119929f3533d7a4b681a910",
+      "wayback_digest": "U3OBMB5UQOGUPSJMI7EEOSB3DJ65XT7D",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20220504a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20220503180000&to=20220505180000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 2587,
+        "sha256": "edcc1d2ca3120dacb7e4e56177b5793f2a9b0648a6937e550f418bbb6364bc71",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220504a_cdx.json",
+        "fetched_at": "2026-09-05T05:58:39.324403+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20220504180536id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 79601,
+        "sha256": "ab08f124d6d58b5d4b40ef25c96556420702da149faaccc25b73932abb86f884",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220504a_20220504180536.html",
+        "fetched_at": "2026-09-05T05:58:40.924429+00:00"
+      }
+    },
+    {
+      "id": "monetary20220615a",
+      "release_utc": "2022-06-15T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a.htm",
+      "current_text_sha256": "2b273e438f427753c98cacc9c0917d0e2d2b5827097ae7e183f3dd081816b600",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2022-06-15T18:04:39+00:00",
+      "capture_offset_seconds": 279,
+      "archived_text_sha256": "2b273e438f427753c98cacc9c0917d0e2d2b5827097ae7e183f3dd081816b600",
+      "wayback_digest": "WBZXZ3RYWYMHHABZL3HWRZ63QSOQWAAA",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20220615a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20220614180000&to=20220616180000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 2869,
+        "sha256": "459a47ba72e3d8e370744c2db9a6e7fc53120d90f197e0c4eb9b8d1f01a95259",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220615a_cdx.json",
+        "fetched_at": "2026-09-05T05:58:46.075235+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20220615180439id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 72402,
+        "sha256": "9251e320f96fe93bbc419212ab58e315cab0155c53b3f94435b7d3cce184ba2b",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20220615a_20220615180439.html",
+        "fetched_at": "2026-09-05T05:58:48.269353+00:00"
+      }
+    },
+    {
+      "id": "monetary20220727a",
+      "release_utc": "2022-07-27T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220727a.htm",
+      "current_text_sha256": "fb402d385a17b4361781c235f4b485752643fdcce2dc39757f1d14d1ea66d354",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20220921a",
+      "release_utc": "2022-09-21T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220921a.htm",
+      "current_text_sha256": "f3c4436231dfba573835b4dd1217eafd92fda7236d18e1bd01e1974872cce64c",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20221102a",
+      "release_utc": "2022-11-02T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221102a.htm",
+      "current_text_sha256": "1f9d90e0cba5f93a417cd21a45b540744eab6be87aaa89d5af54d0e9a1b6246f",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20221214a",
+      "release_utc": "2022-12-14T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm",
+      "current_text_sha256": "4a4e964952fe8c3cf445783d930ed393fb0ded686c63420aaaee30918453e378",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20230201a",
+      "release_utc": "2023-02-01T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201a.htm",
+      "current_text_sha256": "5870a0b3f468e57c28a747065baef89c2003b398f86e386a26a79231797e51ae",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20230322a",
+      "release_utc": "2023-03-22T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm",
+      "current_text_sha256": "4fd3317b21b9dbe09590665b8dcea21513ea677ec48e6b4ca3dffd973cbe6890",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20230503a",
+      "release_utc": "2023-05-03T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a.htm",
+      "current_text_sha256": "169d199c31ca51fb71069f9514c67c2a31fe95a146992cf0d0956239c46c7f1a",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2023-05-03T18:03:36+00:00",
+      "capture_offset_seconds": 216,
+      "archived_text_sha256": "169d199c31ca51fb71069f9514c67c2a31fe95a146992cf0d0956239c46c7f1a",
+      "wayback_digest": "KNCDGE5LMCOGARCPM6JDQIOZ7LDJREPH",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20230503a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20230502180000&to=20230504180000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 1459,
+        "sha256": "2f147d007ed9136b6838bdc3b82ceff0949be9d79a97358797f1191ae439d9ed",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20230503a_cdx.json",
+        "fetched_at": "2026-09-05T06:00:34.641637+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20230503180336id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 77458,
+        "sha256": "062dd495711943cfcda1b9b07e0bc4d92e30a43c86b7c1824e13ca441e976998",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20230503a_20230503180336.html",
+        "fetched_at": "2026-09-05T06:00:36.128293+00:00"
+      }
+    },
+    {
+      "id": "monetary20230614a",
+      "release_utc": "2023-06-14T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230614a.htm",
+      "current_text_sha256": "acf463302808e56ab0c9cc2d7bea60716469ea3f3d624430badd82f8e686c3c3",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "monetary20230726a",
+      "release_utc": "2023-07-26T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230726a.htm",
+      "current_text_sha256": "5871bc7ecf0c75cb70ea63e71875016925196e82f2fbc84afedb2e71400450ee",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20230920a",
+      "release_utc": "2023-09-20T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230920a.htm",
+      "current_text_sha256": "f37624239512f015004708838dca392fe1a250e5de6b066ac0f04ae29945d9e3",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "id": "monetary20231101a",
+      "release_utc": "2023-11-01T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231101a.htm",
+      "current_text_sha256": "32c87d5ab93e60f75a3df0de322647474d383d5108f21f2dd930e516fde5d5b5",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "monetary20231213a",
+      "release_utc": "2023-12-13T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231213a.htm",
+      "current_text_sha256": "38806ffd8fc296804b9fe27f7d9159364eb60cb76d554b0273d362118c3d5e4c",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "monetary20240131a",
+      "release_utc": "2024-01-31T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131a.htm",
+      "current_text_sha256": "0b9605ed33ffadb2c17202b30800d1e4ab9c548b5af55dd627cd7ff7397426a4",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20240320a",
+      "release_utc": "2024-03-20T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240320a.htm",
+      "current_text_sha256": "95bfa0fe0b503229c61ca812ff8dccf65b0147a242453ac654b9c748d3f9f5f1",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20240501a",
+      "release_utc": "2024-05-01T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240501a.htm",
+      "current_text_sha256": "cd5e9cec31c47f0b6277fa979dc34377031c0cb70e989292d908acabb088a85d",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20240612a",
+      "release_utc": "2024-06-12T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612a.htm",
+      "current_text_sha256": "549a8b8adcf188cb1ef4bbc2adaa88aff3fcd4c8b8b00a2fa46a832c2080762e",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "monetary20240731a",
+      "release_utc": "2024-07-31T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm",
+      "current_text_sha256": "24b02c974a73bc6c81d1a8474689c0f71a4aa7411d76b4790cdcef8c02ed0201",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2024-07-31T18:25:07+00:00",
+      "capture_offset_seconds": 1507,
+      "archived_text_sha256": "24b02c974a73bc6c81d1a8474689c0f71a4aa7411d76b4790cdcef8c02ed0201",
+      "wayback_digest": "MWPIJK2QSNY65PGQ3S545F7NKN7NG3YR",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20240731a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20240730180000&to=20240801180000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 1600,
+        "sha256": "efea5b8626f3810c134b15b97e9819113f71c3e840684ef13fafc1850615fa5d",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20240731a_cdx.json",
+        "fetched_at": "2026-09-05T06:05:11.594013+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20240731182507id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 78677,
+        "sha256": "bb7ac2a7db68446292262e41514e1b25f06750ddb1dbe943bf210e7aae055932",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20240731a_20240731182507.html",
+        "fetched_at": "2026-09-05T06:05:14.270491+00:00"
+      }
+    },
+    {
+      "id": "monetary20240918a",
+      "release_utc": "2024-09-18T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "current_text_sha256": "0de57a5e42629d83b71c208d44c9b6afcfea2679435822d98947efc55d3450f2",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "id": "monetary20241107a",
+      "release_utc": "2024-11-07T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm",
+      "current_text_sha256": "ffa3212b6fcfc6d075cf6104c7fc6eff6c7744373f60d3030bb629ab688272f9",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2024-11-07T19:00:50+00:00",
+      "capture_offset_seconds": 50,
+      "archived_text_sha256": "ffa3212b6fcfc6d075cf6104c7fc6eff6c7744373f60d3030bb629ab688272f9",
+      "wayback_digest": "UK5NHSBHCT325S536DRYNU4ERMHSIBTQ",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20241107a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20241106190000&to=20241108190000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 895,
+        "sha256": "c2a0750c193398a1ecc0ca566a8f3d8cdc23061bb616b1034e7da28c3108b2b9",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20241107a_cdx.json",
+        "fetched_at": "2026-09-05T06:05:27.675263+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20241107190050id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 78561,
+        "sha256": "5ae0201f426e1b7d25ce244e439150ae6fbd14d5f05f99e29e66809ef643f272",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20241107a_20241107190050.html",
+        "fetched_at": "2026-09-05T06:05:29.404338+00:00"
+      }
+    },
+    {
+      "id": "monetary20241218a",
+      "release_utc": "2024-12-18T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+      "current_text_sha256": "789d9c7daf3a6818e215fe9b4dee816d931f09d728c7ca9c1256ad40529556a4",
+      "status": "TEXT_MATCH",
+      "capture_timestamp_utc": "2024-12-18T19:10:12+00:00",
+      "capture_offset_seconds": 612,
+      "archived_text_sha256": "789d9c7daf3a6818e215fe9b4dee816d931f09d728c7ca9c1256ad40529556a4",
+      "wayback_digest": "V2RPYGLUOYLA7PRQSGOIMIG3QVJ253A4",
+      "cdx_source": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.federalreserve.gov%2Fnewsevents%2Fpressreleases%2Fmonetary20241218a.htm&output=json&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&fl=timestamp%2Coriginal%2Cdigest%2Cstatuscode&from=20241217190000&to=20241219190000&limit=20",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 1318,
+        "sha256": "93f5982fd82f1a5da90d5689a528ad264c5e4b5a70bef903473fa60ff0bb8863",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20241218a_cdx.json",
+        "fetched_at": "2026-09-05T06:05:31.541864+00:00"
+      },
+      "archive_source": {
+        "url": "https://web.archive.org/web/20241218191012id_/https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+        "http_status": 200,
+        "content_range": null,
+        "partial_sample": false,
+        "bytes": 78734,
+        "sha256": "3dd148aaae6a55c0fa9c8e62e9f0f4145e3abe4dd558ead9447acc8596007959",
+        "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\wayback_near_release_v10_1\\monetary20241218a_20241218191012.html",
+        "fetched_at": "2026-09-05T06:05:33.612091+00:00"
+      }
+    }
+  ],
+  "interpretation": [
+    "TEXT_MATCH verifies equality with a near-release archived representation only.",
+    "Wayback capture time does not prove the Board page was publicly available to a trader then.",
+    "NO_NEAR_RELEASE_CAPTURE is missing evidence, not a mismatch.",
+    "This audit does not access prices, run a model, or establish predictive value."
+  ]
+}

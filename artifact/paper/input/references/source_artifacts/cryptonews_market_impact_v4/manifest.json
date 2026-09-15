@@ -1,0 +1,12 @@
+{
+  "source": "https://github.com/SahandNZ/cryptonews-articles-with-price-momentum-labels",
+  "commit": "2915946457bcf0604563b63d933d63313e71aeb2",
+  "retrieved_at": "2026-09-03",
+  "files": {
+    "README.md": "d24c46d54085720bb458580fd3148a256c597f1e2b06d3ba664ad71672cfb65c",
+    "labler.py": "d08eb3e4f66410188adf772587825f10aa19544150fe364ca37ca19b1eca4638",
+    "color.py": "19111932e507c43f681bfc6f003b3c41186668d2eeb795031860796030dc9973"
+  },
+  "verified_contract": "BTCUSDT daily binary direction label: close[t+7] > close[t].",
+  "note": "Public repository source artifact; not a peer-reviewed paper."
+}

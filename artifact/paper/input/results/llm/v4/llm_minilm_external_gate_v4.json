@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-03T16:36:40.680316+00:00",
+  "experiment_id": "llm-minilm-external-impact-v4-development",
+  "status": "external-gate-fail-stop-before-corpus-scoring",
+  "passed": false,
+  "project_target_outcomes_consulted": false,
+  "external_articles": 480,
+  "selected_chunks": 3718,
+  "oos_articles": 97,
+  "overall": {
+    "auc": 0.417306052855925,
+    "mean_score_label_1": 0.3040510021948151,
+    "mean_score_label_0": 0.4786060509892778,
+    "score_separation": -0.17455504879446265,
+    "mse": 0.6626392389097026,
+    "prediction_std": 0.5657838806531253
+  },
+  "uncertainty": {
+    "auc_95_ci": [
+      0.30408742055816523,
+      0.5345917997097243
+    ],
+    "score_separation_95_ci": [
+      -0.39492272406844847,
+      0.04002869830740734
+    ]
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_records": 383,
+      "validation_records": 43,
+      "metrics": {
+        "auc": 0.6451612903225806,
+        "mean_score_label_1": 0.7035171839659498,
+        "mean_score_label_0": 0.517309614849829,
+        "score_separation": 0.1862075691161208,
+        "mse": 0.5524088051478258,
+        "prediction_std": 0.5847446578326754
+      }
+    },
+    {
+      "fold": 2,
+      "train_records": 426,
+      "validation_records": 54,
+      "metrics": {
+        "auc": 0.3764705882352941,
+        "mean_score_label_1": 0.1630629380402971,
+        "mean_score_label_0": 0.4186155270054236,
+        "score_separation": -0.2555525889651265,
+        "mse": 0.7504153250534193,
+        "prediction_std": 0.5096162397547473
+      }
+    }
+  ],
+  "checks": {
+    "oos_articles": true,
+    "auc_ci_lower_gt_half": false,
+    "score_separation_ci_lower_gt_zero": false,
+    "both_fold_auc_gt_half": false,
+    "predictions_nonconstant": true
+  },
+  "predictions": [
+    {
+      "information_date": "2023-03-15",
+      "article_id": "3d374f0f0ddce14e6c0165cb889c46f05e6b31ba1953e4e2c51674e9cbb41410",
+      "label": 0,
+      "prediction": 1.3558178867322377
+    },
+    {
+      "information_date": "2023-03-15",
+      "article_id": "53563b398a8493322374e72d623c090656ba9988a6cfd655c25972fd4b84fb36",
+      "label": 0,
+      "prediction": 1.4299530515311991
+    },
+    {
+      "information_date": "2023-03-15",
+      "article_id": "863507b009fc9384b3c66e152280128269340cb132be6729d16cf5b93636427a",
+      "label": 0,
+      "prediction": 0.9950204078352354
+    },
+    {
+      "information_date": "2023-03-15",
+      "article_id": "8fe41c2ee77e5fd630ebf1dc701e638f4ec325a18f027fde5dfcfe494493308a",
+      "label": 0,
+      "prediction": 0.17140658387336122
+    },
+    {
+      "information_date": "2023-03-15",
+      "article_id": "dc7d550041afe173a9212105708253de68d68c9f300c5498ed244209ff09032f",
+      "label": 0,
+      "prediction": -0.3216918766418924
+    },
+    {
+      "information_date": "2023-03-16",
+      "article_id": "ac5894f9c0121286c7c9b16061139e56b65bf197f19c8e36d988944ddf4018b2",
+      "label": 0,
+      "prediction": 0.21082514955905302
+    },
+    {
+      "information_date": "2023-03-16",
+      "article_id": "f55ee74212ca0093b715bdbf36f0fd5de7ff20fd891bfba82f8e7c171c21ec8a",
+      "label": 0,
+      "prediction": 0.2014717073356636
+    },
+    {
+      "information_date": "2023-03-19",
+      "article_id": "5a0ca463e652be4ceb2af0da403ec9929e795b0f2027229940437b8de3438963",
+      "label": 0,
+      "prediction": 1.2444406717311347
+    },
+    {
+      "information_date": "2023-03-20",
+      "article_id": "8493deeb0d8b5de497464e2c7be31e2e3d0cc5fdb36ba5f2c5e662e06f58656c",
+      "label": 0,
+      "prediction": 0.3940029809108547
+    },
+    {
+      "information_date": "2023-03-21",
+      "article_id": "0641a310a06d1b0b3b22742d0a0ec918603fe298dcba0a575f9cf30964ccb513",
+      "label": 0,
+      "prediction": 0.5235851353843888
+    },
+    {
+      "information_date": "2023-03-21",
+      "article_id": "15641fc0eb75ad9b50e1ada8e91c5443ee62dd50ea25ceb3f90c91eadc980705",
+      "label": 0,
+      "prediction": 0.4155196260084428
+    },
+    {
+      "information_date": "2023-03-21",
+      "article_id": "d07b61b168e2cedc321fddc65fe75321bf1cb4948f5840468c387d9314888cdb",
+      "label": 0,
+      "prediction": 0.30224722258569814
+    },
+    {
+      "information_date": "2023-03-22",
+      "article_id": "53d4a3eeff4ab7427b5dbdb195b650be6981ac77dfd52184748f3380059e296c",
+      "label": 0,
+      "prediction": 0.13952213147361026
+    },
+    {
+      "information_date": "2023-03-22",
+      "article_id": "9223611e76ec618235dd7e7fc611017978b2a7885673591d1372743dcd8a3fae",
+      "label": 0,
+      "prediction": 0.8625990060881412
+    },
+    {
+      "information_date": "2023-03-23",
+      "article_id": "cb14cbdfee75c50e66065166bc5f539b1f8f30b03f90167f50790ce10ec8ee73",
+      "label": 0,
+      "prediction": 0.4503435891008451
+    },
+    {
+      "information_date": "2023-03-23",
+      "article_id": "ce93eca047bac83ab2d1d52ff1dcdd37d49586d6d860f85d4b7ece88369b8566",
+      "label": 0,
+      "prediction": 0.6052443128484487
+    },
+    {
+      "information_date": "2023-03-23",
+      "article_id": "fbc5407a6e1bd4d9cfc0550c9d377612f4f77f1ee79b148b1af2874ce4f1b4e4",
+      "label": 0,
+      "prediction": -0.3945428836191614
+    },
+    {
+      "information_date": "2023-03-24",
+      "article_id": "7317b840ebee46296470b01c1f290ee2e93d5ecd2a779c99c72776501f6f2fe0",
+      "label": 0,
+      "prediction": -0.26089211814554675
+    },
+    {
+      "information_date": "2023-03-25",
+      "article_id": "1c4fa2102acb41037743a3f53b832390c9d39679bddb590364211a9ee47f046d",
+      "label": 0,
+      "prediction": 0.28686589763008824
+    },
+    {
+      "information_date": "2023-03-27",
+      "article_id": "c5c3ef7eb4f6f19be4ce295d680788b492f71f20284da18b8a329e359cd8642e",
+      "label": 1,
+      "prediction": 1.5304784675344774
+    },
+    {
+      "information_date": "2023-03-27",
+      "article_id": "dbba725a138d42df6b21252eb7f57e1c0782f5e09ccb8caa52b9b0b58bcab890",
+      "label": 1,
+      "prediction": -1.0543495370170064
+    },
+    {
+      "information_date": "2023-03-28",
+      "article_id": "2a102c1b45df134cc274ef895773cf0b3fe5c9839ee983fe6aa1a48a8493c545",
+      "label": 1,
+      "prediction": 0.797009294154889
+    },
+    {
+      "information_date": "2023-03-28",
+      "article_id": "9a8796a1c624f6a73dd2e22d1a4303489bf7a97e438ea8b6bae8f1425bb2e49b",
+      "label": 1,
+      "prediction": 1.2532493753569358
+    },
+    {
+      "information_date": "2023-03-29",
+      "article_id": "88c74980d68ee5cb97620b9a2619b36910f530540d05ae5d115821f1c7d537b2",
+      "label": 0,
+      "prediction": 0.4650397737865013
+    },
+    {
+      "information_date": "2023-04-03",
+      "article_id": "0d21296df037efab57bc1f2dc2c4d3f098cc2b54f17d9ef8cfe816e1c35a6466",
+      "label": 0,
+      "prediction": 0.9442708891801521
+    },
+    {
+      "information_date": "2023-04-04",
+      "article_id": "649063260cb15add21ef80df1f7a9a5435603f4fbec23d76084dbb85de624940",
+      "label": 0,
+      "prediction": 0.8772207197826141
+    },
+    {
+      "information_date": "2023-04-05",
+      "article_id": "1278fc907e60a45ad87c4fde36193f15dbef46d49c9a65d20c84f7aac8ded510",
+      "label": 1,
+      "prediction": -0.31974983366030524
+    },
+    {
+      "information_date": "2023-04-06",
+      "article_id": "3533e25e911794772aaceb61ac671e913c00e0f48192e78045b2177e906bcf57",
+      "label": 0,
+      "prediction": 0.744065936533396
+    },
+    {
+      "information_date": "2023-04-06",
+      "article_id": "81715ef665c908fb5a645c0ea59a220ff9d6a3dbec4fecf6ac75805e1dd1c4bb",
+      "label": 0,
+      "prediction": 1.0477942413920371
+    },
+    {
+      "information_date": "2023-04-06",
+      "article_id": "f729f1f38df4e6d0380ebf8f68563161692c07338f31c7dae86bbc403ed40342",
+      "label": 0,
+      "prediction": -0.5712406335805564
+    },
+    {
+      "information_date": "2023-04-08",
+      "article_id": "8dcb2801bab84e1f19f2c361216eefb46138ac9713445da3543d2a66b2d98f5d",
+      "label": 1,
+      "prediction": 0.5346306914995628
+    },
+    {
+      "information_date": "2023-04-11",
+      "article_id": "a1459c3fb710744a9edbf8186c59283bef0cf6b8d7a77c58c7bb690d63a3f7f9",
+      "label": 0,
+      "prediction": 0.41603492764899863
+    },
+    {
+      "information_date": "2023-04-12",
+      "article_id": "8bcdc810c8d01c1336b0fa9a339506fa375919372c0ccf6a5ab591f69c3dd1bf",
+      "label": 0,
+      "prediction": 0.9973499816519167
+    },
+    {
+      "information_date": "2023-04-13",
+      "article_id": "11379e8ef3ea15a14f8a4b5e726af21002a99bdb4e0b244c56bf76ae82585ce1",
+      "label": 0,
+      "prediction": -0.03729619983614213
+    },
+    {
+      "information_date": "2023-04-13",
+      "article_id": "8fdda9e338b343fa9d2309a5799ee63623e6b3f16d263abb04d5ae6d7bd3aabf",
+      "label": 0,
+      "prediction": 0.43683785181858226
+    },
+    {
+      "information_date": "2023-04-14",
+      "article_id": "1732aa15cf56fc54747b37b26a8a173d0e0a70f73e09e1a97e2db45b24c9679c",
+      "label": 0,
+      "prediction": 0.9411098374338267
+    },
+    {
+      "information_date": "2023-04-17",
+      "article_id": "a9e937ff3746f01d6ce78df6965e98a49bafb301e76930e111749899080f073a",
+      "label": 1,
+      "prediction": 1.1055047567690794
+    },
+    {
+      "information_date": "2023-04-18",
+      "article_id": "bf5abac634e91db16b7896d3683e6d5e7297d25a130171d94cc65a7cc893ef31",
+      "label": 0,
+      "prediction": 1.1636722523115695
+    },
+    {
+      "information_date": "2023-04-19",
+      "article_id": "7df3a75c849c876cab2999894855daaf2dfbdeb4752459ec4d6eabbd3441b188",
+      "label": 1,
+      "prediction": 1.1834565477562096
+    },
+    {
+      "information_date": "2023-04-20",
+      "article_id": "643c7b85fb943111bdf43730235d8118deecab0bb5e5b324b701cd2cc512287b",
+      "label": 1,
+      "prediction": 1.339445715977513
+    },
+    {
+      "information_date": "2023-04-20",
+      "article_id": "97842e910961ba228268d8b8b4f1e6221e41145d2a92be825b6848389968254f",
+      "label": 1,
+      "prediction": 0.23447352368693325
+    },
+    {
+      "information_date": "2023-04-20",
+      "article_id": "bb5892a72f624ad16b63fd8786e65c77b2e0a59ba571740b00134767f95030d6",
+      "label": 1,
+      "prediction": 0.8855447557321936
+    },
+    {
+      "information_date": "2023-04-21",
+      "article_id": "cce92e224d09a362d4202e55fbd4bde5525b48afbd261d2c166f582889e11f15",
+      "label": 1,
+      "prediction": 0.9525124498009141
+    },
+    {
+      "information_date": "2023-04-24",
+      "article_id": "1477252926e929b92c0cc2489d19c78adbeb2842c54494cc5955ab4e4ce87d4f",
+      "label": 1,
+      "prediction": 0.34760141748513096
+    },
+    {
+      "information_date": "2023-04-24",
+      "article_id": "1f56522bc42837ecdad5341a9d008e98eaedb2279f12aa6506701029271a5022",
+      "label": 1,
+      "prediction": -0.30396076604987066
+    },
+    {
+      "information_date": "2023-04-24",
+      "article_id": "eb651020984e9458216ed60f6c383ae0dc2b0255f41ac33e61bdb92e4110cdf5",
+      "label": 1,
+      "prediction": 0.09516270435312668
+    },
+    {
+      "information_date": "2023-04-25",
+      "article_id": "0fd4d8393aecfa42542331d422d3d89c883d87d028f408ba02ac0e62ed41c481",
+      "label": 1,
+      "prediction": 0.03941582570799712
+    },
+    {
+      "information_date": "2023-04-25",
+      "article_id": "fb7144fd1d46e3543e608af2a05af0caa93aff124638292436391a93f6c784a0",
+      "label": 1,
+      "prediction": 0.2660618117661232
+    },
+    {
+      "information_date": "2023-04-26",
+      "article_id": "2a3207cb8173f63c385ed9090c1aa718f3d3f48557c68113045ce431eb142acb",
+      "label": 1,
+      "prediction": 0.2817249486613056
+    },
+    {
+      "information_date": "2023-04-26",
+      "article_id": "a28c6c96e6f5bf969a20a47ff84e18ce27fb5cd27d54bd40cbe077071b2b4706",
+      "label": 1,
+      "prediction": -1.0742390566083686
+    },
+    {
+      "information_date": "2023-04-27",
+      "article_id": "003c36a8c016340763db6ee7fe8b039f1605402bb5301587d73464ca5f162b70",
+      "label": 0,
+      "prediction": 0.2054945849469474
+    },
+    {
+      "information_date": "2023-04-27",
+      "article_id": "3072deabe8d8c0aa29c2f5fc326c6041d22e79e48dfbeec6998e242a4ad08b11",
+      "label": 0,
+      "prediction": -0.09527170253663098
+    },
+    {
+      "information_date": "2023-04-27",
+      "article_id": "3fff23f9591b5f025359e96ee4c7f56a6750ed98eed1aa84f19ea2c57ad2fbc4",
+      "label": 0,
+      "prediction": 0.6377936417807142
+    },
+    {
+      "information_date": "2023-04-27",
+      "article_id": "9c2e1dbe855221c992bc7fd3de91bb292f793be31164278bed7d87612c9f6926",
+      "label": 0,
+      "prediction": 0.10841282274668645
+    },
+    {
+      "information_date": "2023-04-28",
+      "article_id": "250311f507b39181b33b42645e56913be9329f2b52813fbfb99331ea056478a4",
+      "label": 0,
+      "prediction": 0.8735443119571377
+    },
+    {
+      "information_date": "2023-04-28",
+      "article_id": "6a120d09d00205912f264ef935f7e9727391bb0c337b5c3e80a097b3ba9f3030",
+      "label": 0,
+      "prediction": 0.4872195895831494
+    },
+    {
+      "information_date": "2023-04-28",
+      "article_id": "86886eb3cd5de69b99dac6b3e796f009301c292668c442d459b7bcafb73ef532",
+      "label": 0,
+      "prediction": 0.43900926327671014
+    },
+    {
+      "information_date": "2023-04-30",
+      "article_id": "f054185b606bdcf1b5e234cbe320bec2e7c98fa373acb0307c91277571e806bb",
+      "label": 0,
+      "prediction": 0.8973958529260545
+    },
+    {
+      "information_date": "2023-05-02",
+      "article_id": "0a436a05c678d92ad7a0f990f5926ac41b1514f379ca532aa574958fa324dcf1",
+      "label": 0,
+      "prediction": -0.32662072751991955
+    },
+    {
+      "information_date": "2023-05-02",
+      "article_id": "88feb17e8025f6cb81cb28bc613c7ccdff4a7ac34436ff0b2bf44312b6a69306",
+      "label": 0,
+      "prediction": 1.0671943733152058
+    },
+    {
+      "information_date": "2023-05-02",
+      "article_id": "ab0dae4ddbf94930b30a8bfb4dc3bc809658c362bf88d0acd0bf14225f27901e",
+      "label": 0,
+      "prediction": 1.1594333069505611
+    },
+    {
+      "information_date": "2023-05-03",
+      "article_id": "1a3cd474d3ed50628ddf751bc69d7b44a3d2ca6524fa6c366d8a493636f51f28",
+      "label": 0,
+      "prediction": 0.4981413452388972
+    },
+    {
+      "information_date": "2023-05-03",
+      "article_id": "8367ee42ee77f2e73c3e0c235e8f480b3947c5fd4afff6e1d5ebd683eb8a8892",
+      "label": 0,
+      "prediction": 0.04945538988008058
+    },
+    {
+      "information_date": "2023-05-04",
+      "article_id": "113cd6f0b59e948f9773943c5e55ac3ffa900ba8c0c42369218a099fdd12404e",
+      "label": 1,
+      "prediction": 0.33110382828725327
+    },
+    {
+      "information_date": "2023-05-04",
+      "article_id": "70f99efa57feba0d6f3a564f76d7c4aa344672c634f5611183487128177ea725",
+      "label": 1,
+      "prediction": 1.2184509463841993
+    },
+    {
+      "information_date": "2023-05-04",
+      "article_id": "ee3d104cbdb0766a4aea30bb6928f40f05388012fa68aa8b51dd5a8e76e4d6a6",
+      "label": 1,
+      "prediction": 1.3415093468008907
+    },
+    {
+      "information_date": "2023-05-05",
+      "article_id": "7a21cc55587910a63d71595fc87e077f19e7670e963e4eadb0946142ade54591",
+      "label": 0,
+      "prediction": 0.6918200445688498
+    },
+    {
+      "information_date": "2023-05-06",
+      "article_id": "a54e72cefc83add10be49c55b96d4ee6348afdbfe67613354135e12db015e3d4",
+      "label": 1,
+      "prediction": 0.008210526078340885
+    },
+    {
+      "information_date": "2023-05-09",
+      "article_id": "26b38374c8d8fbb10ffcc6787d742989b63d7d0730a2e8ca47629c43b4bf99d6",
+      "label": 1,
+      "prediction": -0.33577769952169345
+    },
+    {
+      "information_date": "2023-05-09",
+      "article_id": "26d63d87ff0ecb512a5a1ec1d929f03d0267035b32dd7c27273ac8969006f643",
+      "label": 1,
+      "prediction": 0.1555097278241539
+    },
+    {
+      "information_date": "2023-05-09",
+      "article_id": "6404800ae5e8852ca29415d4abb8c327063da2f91b2efc08a85d286249235ae2",
+      "label": 1,
+      "prediction": 0.09364919317081916
+    },
+    {
+      "information_date": "2023-05-10",
+      "article_id": "24e44cc43563a35782d0f2145d34882847a765d260336b5822875534f5190c27",
+      "label": 1,
+      "prediction": 0.09470659457087999
+    },
+    {
+      "information_date": "2023-05-10",
+      "article_id": "91797eee897edf2e8634ab4a142d3834caec32f1b3e19a01d376dce422715f63",
+      "label": 1,
+      "prediction": 0.5759122638280793
+    },
+    {
+      "information_date": "2023-05-11",
+      "article_id": "16bca9c52924c0eb8c60043e5e3a219b15b2aa758cdf224e9b52c442dfb2341e",
+      "label": 1,
+      "prediction": 0.2782821458716632
+    },
+    {
+      "information_date": "2023-05-11",
+      "article_id": "7a4e6d8c4f5724cdf8d52d11abfc78456ab45501de6c5b4c23d12e77b05c7c93",
+      "label": 1,
+      "prediction": 0.3351886711335299
+    },
+    {
+      "information_date": "2023-05-12",
+      "article_id": "94aebfba13f1071a74c577b02d3f2cc212a26110466edf04b599ce81f653da8e",
+      "label": 1,
+      "prediction": -0.6700053378803676
+    },
+    {
+      "information_date": "2023-05-15",
+      "article_id": "69319d39c808eeaea2220feaf89dc3ec9db3b3f02db861160a05285b6d49d76a",
+      "label": 1,
+      "prediction": 0.7329085599936845
+    },
+    {
+      "information_date": "2023-05-15",
+      "article_id": "e264b0e3c1208623832b2d049bca65910258d5daa92604cc085f83c7813b8aa8",
+      "label": 1,
+      "prediction": 0.2111168872104494
+    },
+    {
+      "information_date": "2023-05-16",
+      "article_id": "3a47d407fe8f7dbba362be87c07b9ae7823f61202bf19a2f1c2aafec5b5764c4",
+      "label": 1,
+      "prediction": -0.2920560886840071
+    },
+    {
+      "information_date": "2023-05-16",
+      "article_id": "44a610daa5c097b6c5a28d2d5be7d16e7bcd1d121a0f7a98a136ac4e2a84dab1",
+      "label": 1,
+      "prediction": -0.03156826255888978
+    },
+    {
+      "information_date": "2023-05-16",
+      "article_id": "851962152dfddb4c3f2fb765d40a2ab33cd1fe4886aba0613eb18fb3f77c49d4",
+      "label": 1,
+      "prediction": -0.80923376979428
+    },
+    {
+      "information_date": "2023-05-17",
+      "article_id": "b3cff8fc02502bcfcb0f183f7084cc1a0d0a629f3a66c6222e6bf7eaa8d97d4b",
+      "label": 1,
+      "prediction": 0.4107276222469431
+    },
+    {
+      "information_date": "2023-05-17",
+      "article_id": "e98cae9cb77af5724e3391aee8d11108393f118ae4e5764257b434c904dc7f7c",
+      "label": 1,
+      "prediction": 0.35178632772021823
+    },
+    {
+      "information_date": "2023-05-17",
+      "article_id": "eab4c4726c5ab3985b8a1992faca680f440f50e38f06c5b092172dbfbad78f0e",
+      "label": 1,
+      "prediction": 0.1893673670098991
+    },
+    {
+      "information_date": "2023-05-19",
+      "article_id": "2476847a48f27f6c147c431c6cf10e37bda794634f6c3856681b60193f3e8cca",
+      "label": 0,
+      "prediction": 0.064689067550188
+    },
+    {
+      "information_date": "2023-05-19",
+      "article_id": "e45b12ac76687887c8ed6dc01e64c39a4248c72e6c94381927f262a0535cee41",
+      "label": 0,
+      "prediction": -0.00221967210423768
+    },
+    {
+      "information_date": "2023-05-20",
+      "article_id": "e098ba5a148014e674a5199b4453062f16bb3db5fa31619299a0fb5435763de0",
+      "label": 0,
+      "prediction": 0.6487417800888351
+    },
+    {
+      "information_date": "2023-05-21",
+      "article_id": "2c0775d2ebd17a47e952002347c8a27ded7658412510cc316ed5da6b0857e267",
+      "label": 1,
+      "prediction": -0.19378041140371194
+    },
+    {
+      "information_date": "2023-05-22",
+      "article_id": "8b6b9b5a9d7a959c385304823436f6f2f120f6139c770734bb2c05d3d5a30d14",
+      "label": 1,
+      "prediction": -0.4902869780173147
+    },
+    {
+      "information_date": "2023-05-22",
+      "article_id": "ef1becf6f824ba59d316bc57f8f0bd6324a0ce3aa8c8bddb89ddc8359492e556",
+      "label": 1,
+      "prediction": 1.076634490201946
+    },
+    {
+      "information_date": "2023-05-24",
+      "article_id": "2a150e228c919a52ecca5e6a68e9bf67d05e0e4896c6f3ed411a1da12cd4751f",
+      "label": 1,
+      "prediction": 0.156213517510834
+    },
+    {
+      "information_date": "2023-05-24",
+      "article_id": "68b84296e2a2adcedbab267ea78cd4a664d1cef398c51fd059e68adb8b27692b",
+      "label": 1,
+      "prediction": 0.5637601345174967
+    },
+    {
+      "information_date": "2023-05-25",
+      "article_id": "2648c2b39e7ca28d6f10d4208283c5113cea0d46fa487408c7f71fa6227b031e",
+      "label": 1,
+      "prediction": 0.5703318949832072
+    },
+    {
+      "information_date": "2023-05-25",
+      "article_id": "756c91c8a491df9464c4bffb534119eb143e6ed8eba43b39fe936c67098ac2c4",
+      "label": 1,
+      "prediction": 0.01971151057043341
+    },
+    {
+      "information_date": "2023-05-30",
+      "article_id": "49abc7830e4e1c37e8cfd0c3a8638320d77af2d2363a4b46603500a71a2bae79",
+      "label": 0,
+      "prediction": -0.18669747468118114
+    },
+    {
+      "information_date": "2023-05-30",
+      "article_id": "7961dcf1e3af04f6f8699155f4711c598adb8a4bdc807af416618f87a4b314c4",
+      "label": 0,
+      "prediction": 1.2457707757457086
+    },
+    {
+      "information_date": "2023-05-31",
+      "article_id": "fe3e542239549b726a2b1837e0264cabe09902cba79d1d7d90432884ce2b1809",
+      "label": 0,
+      "prediction": -0.09099603360528519
+    }
+  ],
+  "embedding_artifact": {
+    "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_minilm_external_article_embeddings_v4.json",
+    "sha256": "26feb3a8a08a73cc878bb057c1105339ffb0ceec0a70d6736b4e589e4d5a82bc"
+  }
+}

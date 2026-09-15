@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-009-model-substitution-family",
+  "audited_at": "2026-09-12T04:05:37.071344+00:00",
+  "outcomes_consulted_by_audit": false,
+  "policy": {
+    "calibration": "trailing 365 calendar days, available before entry, minimum 180 observations",
+    "risk": "empirical lower-tail percentile of raw bullish score",
+    "confirm": "<0.70",
+    "downsize": "[0.70,0.85)",
+    "veto": ">=0.85"
+  },
+  "status": "FAIL",
+  "checks": {
+    "opportunities_are_24": true,
+    "finbert_coverage_24": true,
+    "finbert_active_at_least_6": false,
+    "cryptobert_coverage_24": true,
+    "cryptobert_active_at_least_6": false,
+    "ministral_direct_coverage_24": true,
+    "ministral_direct_active_at_least_6": false
+  },
+  "diagnostics": {
+    "finbert": {
+      "covered": 24,
+      "active": 0,
+      "veto": 0,
+      "downsize": 0,
+      "rows": [
+        {
+          "key": "1666742400000::ETHUSDT",
+          "information_date": "2022-10-25",
+          "score": -0.03227744315518066,
+          "history_n": 364,
+          "bearish_percentile": 0.6346153846153846,
+          "weight": 1.0
+        },
+        {
+          "key": "1667606400000::BTCUSDT",
+          "information_date": "2022-11-04",
+          "score": -0.009799719176953658,
+          "history_n": 364,
+          "bearish_percentile": 0.5439560439560439,
+          "weight": 1.0
+        },
+        {
+          "key": "1670976000000::ETHUSDT",
+          "information_date": "2022-12-13",
+          "score": 0.015562906288929904,
+          "history_n": 364,
+          "bearish_percentile": 0.39285714285714285,
+          "weight": 1.0
+        },
+        {
+          "key": "1673481600000::BTCUSDT",
+          "information_date": "2023-01-11",
+          "score": 0.04280312536866404,
+          "history_n": 364,
+          "bearish_percentile": 0.30494505494505497,
+          "weight": 1.0
+        },
+        {
+          "key": "1673740800000::BTCUSDT",
+          "information_date": "2023-01-14",
+          "score": 0.20988532920212796,
+          "history_n": 364,
+          "bearish_percentile": 0.03021978021978022,
+          "weight": 1.0
+        },
+        {
+          "key": "1681171200000::BTCUSDT",
+          "information_date": "2023-04-10",
+          "score": 0.08383671161201266,
+          "history_n": 364,
+          "bearish_percentile": 0.1510989010989011,
+          "weight": 1.0
+        },
+        {
+          "key": "1696118400000::SOLUSDT",
+          "information_date": "2023-09-30",
+          "score": 0.21300361012108623,
+          "history_n": 364,
+          "bearish_percentile": 0.038461538461538464,
+          "weight": 1.0
+        },
+        {
+          "key": "1697500800000::BTCUSDT",
+          "information_date": "2023-10-16",
+          "score": 0.020688870658531137,
+          "history_n": 364,
+          "bearish_percentile": 0.4175824175824176,
+          "weight": 1.0
+        },
+        {
+          "key": "1698105600000::ETHUSDT",
+          "information_date": "2023-10-23",
+          "score": 0.060158640631319336,
+          "history_n": 364,
+          "bearish_percentile": 0.2664835164835165,
+          "weight": 1.0
+        },
+        {
+          "key": "1700006400000::ETHUSDT",
+          "information_date": "2023-11-14",
+          "score": 0.0250202782820755,
+          "history_n": 364,
+          "bearish_percentile": 0.4258241758241758,
+          "weight": 1.0
+        },
+        {
+          "key": "1701475200000::BTCUSDT",
+          "information_date": "2023-12-01",
+          "score": 0.07404369061502318,
+          "history_n": 364,
+          "bearish_percentile": 0.2857142857142857,
+          "weight": 1.0
+        },
+        {
+          "key": "1704240000000::BTCUSDT",
+          "information_date": "2024-01-02",
+          "score": 0.0605129373466803,
+          "history_n": 364,
+          "bearish_percentile": 0.3598901098901099,
+          "weight": 1.0
+        },
+        {
+          "key": "1707350400000::BTCUSDT",
+          "information_date": "2024-02-07",
+          "score": 0.25895798167524237,
+          "history_n": 364,
+          "bearish_percentile": 0.057692307692307696,
+          "weight": 1.0
+        },
+        {
+          "key": "1708992000000::BTCUSDT",
+          "information_date": "2024-02-26",
+          "score": 0.00807926138319696,
+          "history_n": 364,
+          "bearish_percentile": 0.5576923076923077,
+          "weight": 1.0
+        },
+        {
+          "key": "1709164800000::BTCUSDT",
+          "information_date": "2024-02-28",
+          "score": 0.21582108030755384,
+          "history_n": 364,
+          "bearish_percentile": 0.08791208791208792,
+          "weight": 1.0
+        },
+        {
+          "key": "1715817600000::BTCUSDT",
+          "information_date": "2024-05-15",
+          "score": -0.0038413112342823297,
+          "history_n": 364,
+          "bearish_percentile": 0.6153846153846154,
+          "weight": 1.0
+        },
+        {
+          "key": "1730160000000::BTCUSDT",
+          "information_date": "2024-10-28",
+          "score": 0.05546266189776361,
+          "history_n": 364,
+          "bearish_percentile": 0.4642857142857143,
+          "weight": 1.0
+        },
+        {
+          "key": "1742860800000::BTCUSDT",
+          "information_date": "2025-03-24",
+          "score": 0.26280847875750624,
+          "history_n": 364,
+          "bearish_percentile": 0.02197802197802198,
+          "weight": 1.0
+        },
+        {
+          "key": "1745280000000::BTCUSDT",
+          "information_date": "2025-04-21",
+          "score": 0.29359508818985586,
+          "history_n": 364,
+          "bearish_percentile": 0.019230769230769232,
+          "weight": 1.0
+        },
+        {
+          "key": "1746748800000::ETHUSDT",
+          "information_date": "2025-05-08",
+          "score": 0.18372047199712446,
+          "history_n": 364,
+          "bearish_percentile": 0.10714285714285714,
+          "weight": 1.0
+        },
+        {
+          "key": "1747612800000::BTCUSDT",
+          "information_date": "2025-05-18",
+          "score": 0.11141701498510022,
+          "history_n": 364,
+          "bearish_percentile": 0.2857142857142857,
+          "weight": 1.0
+        },
+        {
+          "key": "1747699200000::BTCUSDT",
+          "information_date": "2025-05-19",
+          "score": -0.015006243260965372,
+          "history_n": 364,
+          "bearish_percentile": 0.6785714285714286,
+          "weight": 1.0
+        },
+        {
+          "key": "1752105600000::XRPUSDT",
+          "information_date": "2025-07-09",
+          "score": 0.2213439336240602,
+          "history_n": 364,
+          "bearish_percentile": 0.06318681318681318,
+          "weight": 1.0
+        },
+        {
+          "key": "1752278400000::XRPUSDT",
+          "information_date": "2025-07-11",
+          "score": 0.19621977374966568,
+          "history_n": 364,
+          "bearish_percentile": 0.0989010989010989,
+          "weight": 1.0
+        }
+      ]
+    },
+    "cryptobert": {
+      "covered": 24,
+      "active": 4,
+      "veto": 2,
+      "downsize": 2,
+      "rows": [
+        {
+          "key": "1666742400000::ETHUSDT",
+          "information_date": "2022-10-25",
+          "score": 0.25,
+          "history_n": 364,
+          "bearish_percentile": 0.25137362637362637,
+          "weight": 1.0
+        },
+        {
+          "key": "1667606400000::BTCUSDT",
+          "information_date": "2022-11-04",
+          "score": 0.14583333333333334,
+          "history_n": 364,
+          "bearish_percentile": 0.625,
+          "weight": 1.0
+        },
+        {
+          "key": "1670976000000::ETHUSDT",
+          "information_date": "2022-12-13",
+          "score": 0.2916666666666667,
+          "history_n": 364,
+          "bearish_percentile": 0.10989010989010989,
+          "weight": 1.0
+        },
+        {
+          "key": "1673481600000::BTCUSDT",
+          "information_date": "2023-01-11",
+          "score": 0.25,
+          "history_n": 364,
+          "bearish_percentile": 0.2239010989010989,
+          "weight": 1.0
+        },
+        {
+          "key": "1673740800000::BTCUSDT",
+          "information_date": "2023-01-14",
+          "score": 0.3333333333333333,
+          "history_n": 364,
+          "bearish_percentile": 0.06043956043956044,
+          "weight": 1.0
+        },
+        {
+          "key": "1681171200000::BTCUSDT",
+          "information_date": "2023-04-10",
+          "score": 0.26666666666666666,
+          "history_n": 364,
+          "bearish_percentile": 0.21703296703296704,
+          "weight": 1.0
+        },
+        {
+          "key": "1696118400000::SOLUSDT",
+          "information_date": "2023-09-30",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.10576923076923077,
+          "weight": 1.0
+        },
+        {
+          "key": "1697500800000::BTCUSDT",
+          "information_date": "2023-10-16",
+          "score": 0.021739130434782608,
+          "history_n": 364,
+          "bearish_percentile": 0.8956043956043956,
+          "weight": 0.0
+        },
+        {
+          "key": "1698105600000::ETHUSDT",
+          "information_date": "2023-10-23",
+          "score": 0.14583333333333334,
+          "history_n": 364,
+          "bearish_percentile": 0.6483516483516484,
+          "weight": 1.0
+        },
+        {
+          "key": "1700006400000::ETHUSDT",
+          "information_date": "2023-11-14",
+          "score": 0.2916666666666667,
+          "history_n": 364,
+          "bearish_percentile": 0.12774725274725274,
+          "weight": 1.0
+        },
+        {
+          "key": "1701475200000::BTCUSDT",
+          "information_date": "2023-12-01",
+          "score": 0.1875,
+          "history_n": 364,
+          "bearish_percentile": 0.5068681318681318,
+          "weight": 1.0
+        },
+        {
+          "key": "1704240000000::BTCUSDT",
+          "information_date": "2024-01-02",
+          "score": 0.15555555555555556,
+          "history_n": 364,
+          "bearish_percentile": 0.6593406593406593,
+          "weight": 1.0
+        },
+        {
+          "key": "1707350400000::BTCUSDT",
+          "information_date": "2024-02-07",
+          "score": 0.10416666666666667,
+          "history_n": 364,
+          "bearish_percentile": 0.7953296703296703,
+          "weight": 0.5
+        },
+        {
+          "key": "1708992000000::BTCUSDT",
+          "information_date": "2024-02-26",
+          "score": 0.020833333333333332,
+          "history_n": 364,
+          "bearish_percentile": 0.8914835164835165,
+          "weight": 0.0
+        },
+        {
+          "key": "1709164800000::BTCUSDT",
+          "information_date": "2024-02-28",
+          "score": 0.22916666666666666,
+          "history_n": 364,
+          "bearish_percentile": 0.33653846153846156,
+          "weight": 1.0
+        },
+        {
+          "key": "1715817600000::BTCUSDT",
+          "information_date": "2024-05-15",
+          "score": 0.20833333333333334,
+          "history_n": 364,
+          "bearish_percentile": 0.36675824175824173,
+          "weight": 1.0
+        },
+        {
+          "key": "1730160000000::BTCUSDT",
+          "information_date": "2024-10-28",
+          "score": 0.14583333333333334,
+          "history_n": 364,
+          "bearish_percentile": 0.6346153846153846,
+          "weight": 1.0
+        },
+        {
+          "key": "1742860800000::BTCUSDT",
+          "information_date": "2025-03-24",
+          "score": 0.20833333333333334,
+          "history_n": 364,
+          "bearish_percentile": 0.36126373626373626,
+          "weight": 1.0
+        },
+        {
+          "key": "1745280000000::BTCUSDT",
+          "information_date": "2025-04-21",
+          "score": 0.2916666666666667,
+          "history_n": 364,
+          "bearish_percentile": 0.0989010989010989,
+          "weight": 1.0
+        },
+        {
+          "key": "1746748800000::ETHUSDT",
+          "information_date": "2025-05-08",
+          "score": 0.20833333333333334,
+          "history_n": 364,
+          "bearish_percentile": 0.385989010989011,
+          "weight": 1.0
+        },
+        {
+          "key": "1747612800000::BTCUSDT",
+          "information_date": "2025-05-18",
+          "score": 0.10526315789473684,
+          "history_n": 364,
+          "bearish_percentile": 0.8035714285714286,
+          "weight": 0.5
+        },
+        {
+          "key": "1747699200000::BTCUSDT",
+          "information_date": "2025-05-19",
+          "score": 0.1875,
+          "history_n": 364,
+          "bearish_percentile": 0.5013736263736264,
+          "weight": 1.0
+        },
+        {
+          "key": "1752105600000::XRPUSDT",
+          "information_date": "2025-07-09",
+          "score": 0.3333333333333333,
+          "history_n": 364,
+          "bearish_percentile": 0.04395604395604396,
+          "weight": 1.0
+        },
+        {
+          "key": "1752278400000::XRPUSDT",
+          "information_date": "2025-07-11",
+          "score": 0.2708333333333333,
+          "history_n": 364,
+          "bearish_percentile": 0.19093406593406592,
+          "weight": 1.0
+        }
+      ]
+    },
+    "ministral_direct": {
+      "covered": 24,
+      "active": 0,
+      "veto": 0,
+      "downsize": 0,
+      "rows": [
+        {
+          "key": "1666742400000::ETHUSDT",
+          "information_date": "2022-10-25",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.24862637362637363,
+          "weight": 1.0
+        },
+        {
+          "key": "1667606400000::BTCUSDT",
+          "information_date": "2022-11-04",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.24175824175824176,
+          "weight": 1.0
+        },
+        {
+          "key": "1670976000000::ETHUSDT",
+          "information_date": "2022-12-13",
+          "score": 0.6,
+          "history_n": 364,
+          "bearish_percentile": 0.04945054945054945,
+          "weight": 1.0
+        },
+        {
+          "key": "1673481600000::BTCUSDT",
+          "information_date": "2023-01-11",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.20054945054945056,
+          "weight": 1.0
+        },
+        {
+          "key": "1673740800000::BTCUSDT",
+          "information_date": "2023-01-14",
+          "score": 0.85,
+          "history_n": 364,
+          "bearish_percentile": 0.0,
+          "weight": 1.0
+        },
+        {
+          "key": "1681171200000::BTCUSDT",
+          "information_date": "2023-04-10",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.20741758241758243,
+          "weight": 1.0
+        },
+        {
+          "key": "1696118400000::SOLUSDT",
+          "information_date": "2023-09-30",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.2774725274725275,
+          "weight": 1.0
+        },
+        {
+          "key": "1697500800000::BTCUSDT",
+          "information_date": "2023-10-16",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.2802197802197802,
+          "weight": 1.0
+        },
+        {
+          "key": "1698105600000::ETHUSDT",
+          "information_date": "2023-10-23",
+          "score": 0.7,
+          "history_n": 364,
+          "bearish_percentile": 0.034340659340659344,
+          "weight": 1.0
+        },
+        {
+          "key": "1700006400000::ETHUSDT",
+          "information_date": "2023-11-14",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.3159340659340659,
+          "weight": 1.0
+        },
+        {
+          "key": "1701475200000::BTCUSDT",
+          "information_date": "2023-12-01",
+          "score": 0.7,
+          "history_n": 364,
+          "bearish_percentile": 0.046703296703296704,
+          "weight": 1.0
+        },
+        {
+          "key": "1704240000000::BTCUSDT",
+          "information_date": "2024-01-02",
+          "score": 0.7,
+          "history_n": 364,
+          "bearish_percentile": 0.061813186813186816,
+          "weight": 1.0
+        },
+        {
+          "key": "1707350400000::BTCUSDT",
+          "information_date": "2024-02-07",
+          "score": 0.6,
+          "history_n": 364,
+          "bearish_percentile": 0.1510989010989011,
+          "weight": 1.0
+        },
+        {
+          "key": "1708992000000::BTCUSDT",
+          "information_date": "2024-02-26",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.39697802197802196,
+          "weight": 1.0
+        },
+        {
+          "key": "1709164800000::BTCUSDT",
+          "information_date": "2024-02-28",
+          "score": 0.8,
+          "history_n": 364,
+          "bearish_percentile": 0.013736263736263736,
+          "weight": 1.0
+        },
+        {
+          "key": "1715817600000::BTCUSDT",
+          "information_date": "2024-05-15",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.4258241758241758,
+          "weight": 1.0
+        },
+        {
+          "key": "1730160000000::BTCUSDT",
+          "information_date": "2024-10-28",
+          "score": 0.6,
+          "history_n": 364,
+          "bearish_percentile": 0.22939560439560439,
+          "weight": 1.0
+        },
+        {
+          "key": "1742860800000::BTCUSDT",
+          "information_date": "2025-03-24",
+          "score": 0.6,
+          "history_n": 364,
+          "bearish_percentile": 0.24313186813186813,
+          "weight": 1.0
+        },
+        {
+          "key": "1745280000000::BTCUSDT",
+          "information_date": "2025-04-21",
+          "score": 0.85,
+          "history_n": 364,
+          "bearish_percentile": 0.008241758241758242,
+          "weight": 1.0
+        },
+        {
+          "key": "1746748800000::ETHUSDT",
+          "information_date": "2025-05-08",
+          "score": 0.7,
+          "history_n": 364,
+          "bearish_percentile": 0.11813186813186813,
+          "weight": 1.0
+        },
+        {
+          "key": "1747612800000::BTCUSDT",
+          "information_date": "2025-05-18",
+          "score": 0.7,
+          "history_n": 364,
+          "bearish_percentile": 0.12225274725274725,
+          "weight": 1.0
+        },
+        {
+          "key": "1747699200000::BTCUSDT",
+          "information_date": "2025-05-19",
+          "score": 0.3,
+          "history_n": 364,
+          "bearish_percentile": 0.5151098901098901,
+          "weight": 1.0
+        },
+        {
+          "key": "1752105600000::XRPUSDT",
+          "information_date": "2025-07-09",
+          "score": 0.6,
+          "history_n": 364,
+          "bearish_percentile": 0.28708791208791207,
+          "weight": 1.0
+        },
+        {
+          "key": "1752278400000::XRPUSDT",
+          "information_date": "2025-07-11",
+          "score": 0.85,
+          "history_n": 364,
+          "bearish_percentile": 0.01098901098901099,
+          "weight": 1.0
+        }
+      ]
+    }
+  },
+  "assignments": {
+    "finbert": {
+      "1666742400000::ETHUSDT": 1.0,
+      "1667606400000::BTCUSDT": 1.0,
+      "1670976000000::ETHUSDT": 1.0,
+      "1673481600000::BTCUSDT": 1.0,
+      "1673740800000::BTCUSDT": 1.0,
+      "1681171200000::BTCUSDT": 1.0,
+      "1696118400000::SOLUSDT": 1.0,
+      "1697500800000::BTCUSDT": 1.0,
+      "1698105600000::ETHUSDT": 1.0,
+      "1700006400000::ETHUSDT": 1.0,
+      "1701475200000::BTCUSDT": 1.0,
+      "1704240000000::BTCUSDT": 1.0,
+      "1707350400000::BTCUSDT": 1.0,
+      "1708992000000::BTCUSDT": 1.0,
+      "1709164800000::BTCUSDT": 1.0,
+      "1715817600000::BTCUSDT": 1.0,
+      "1730160000000::BTCUSDT": 1.0,
+      "1742860800000::BTCUSDT": 1.0,
+      "1745280000000::BTCUSDT": 1.0,
+      "1746748800000::ETHUSDT": 1.0,
+      "1747612800000::BTCUSDT": 1.0,
+      "1747699200000::BTCUSDT": 1.0,
+      "1752105600000::XRPUSDT": 1.0,
+      "1752278400000::XRPUSDT": 1.0
+    },
+    "cryptobert": {
+      "1666742400000::ETHUSDT": 1.0,
+      "1667606400000::BTCUSDT": 1.0,
+      "1670976000000::ETHUSDT": 1.0,
+      "1673481600000::BTCUSDT": 1.0,
+      "1673740800000::BTCUSDT": 1.0,
+      "1681171200000::BTCUSDT": 1.0,
+      "1696118400000::SOLUSDT": 1.0,
+      "1697500800000::BTCUSDT": 0.0,
+      "1698105600000::ETHUSDT": 1.0,
+      "1700006400000::ETHUSDT": 1.0,
+      "1701475200000::BTCUSDT": 1.0,
+      "1704240000000::BTCUSDT": 1.0,
+      "1707350400000::BTCUSDT": 0.5,
+      "1708992000000::BTCUSDT": 0.0,
+      "1709164800000::BTCUSDT": 1.0,
+      "1715817600000::BTCUSDT": 1.0,
+      "1730160000000::BTCUSDT": 1.0,
+      "1742860800000::BTCUSDT": 1.0,
+      "1745280000000::BTCUSDT": 1.0,
+      "1746748800000::ETHUSDT": 1.0,
+      "1747612800000::BTCUSDT": 0.5,
+      "1747699200000::BTCUSDT": 1.0,
+      "1752105600000::XRPUSDT": 1.0,
+      "1752278400000::XRPUSDT": 1.0
+    },
+    "ministral_direct": {
+      "1666742400000::ETHUSDT": 1.0,
+      "1667606400000::BTCUSDT": 1.0,
+      "1670976000000::ETHUSDT": 1.0,
+      "1673481600000::BTCUSDT": 1.0,
+      "1673740800000::BTCUSDT": 1.0,
+      "1681171200000::BTCUSDT": 1.0,
+      "1696118400000::SOLUSDT": 1.0,
+      "1697500800000::BTCUSDT": 1.0,
+      "1698105600000::ETHUSDT": 1.0,
+      "1700006400000::ETHUSDT": 1.0,
+      "1701475200000::BTCUSDT": 1.0,
+      "1704240000000::BTCUSDT": 1.0,
+      "1707350400000::BTCUSDT": 1.0,
+      "1708992000000::BTCUSDT": 1.0,
+      "1709164800000::BTCUSDT": 1.0,
+      "1715817600000::BTCUSDT": 1.0,
+      "1730160000000::BTCUSDT": 1.0,
+      "1742860800000::BTCUSDT": 1.0,
+      "1745280000000::BTCUSDT": 1.0,
+      "1746748800000::ETHUSDT": 1.0,
+      "1747612800000::BTCUSDT": 1.0,
+      "1747699200000::BTCUSDT": 1.0,
+      "1752105600000::XRPUSDT": 1.0,
+      "1752278400000::XRPUSDT": 1.0
+    }
+  },
+  "sources": {
+    "opportunities": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_overlay_v1_predeclared.json",
+      "sha256": "95f92272739f6f1a1105ddc65b55e4f457be6d3659a1b94942e9de1bd899440f"
+    },
+    "finbert": {
+      "path": "D:\\projects\\auto-trading\\results\\llm_daily_full_finbert_v1_development.json",
+      "sha256": "e756e22427b80e85e29bf11cef0994f85c5d6083600d28aef5c684e9ee8872f8"
+    },
+    "cryptobert": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_cryptobert_full_v1_development.json",
+      "sha256": "3e7f580aff68727db8377ca5d5391585d963b830bdba629204d2665708af0145"
+    },
+    "ministral_direct": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_full_ministral3_8b_v1_development.json",
+      "sha256": "737f5632f89ea2a48a8bdeea53a0fbc57afbb6313906ae84a5664ea713a6594c"
+    }
+  }
+}

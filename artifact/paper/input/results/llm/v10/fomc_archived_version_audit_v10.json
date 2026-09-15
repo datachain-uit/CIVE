@@ -1,0 +1,232 @@
+{
+  "status": "ARCHIVED_VERSION_AUDITED_NOT_AVAILABILITY_CERTIFIED",
+  "corpus_sha256": "4be7ad5a42e008ee0096af28d12f67175bf4264874e1b3567ac624818510ac1e",
+  "records": 24,
+  "status_counts": {
+    "ARCHIVE_CHECK_ERROR": 24
+  },
+  "results": [
+    {
+      "id": "monetary20220126a",
+      "release_utc": "2022-01-26T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm",
+      "current_text_sha256": "87c80ec17c876486b7cbb616f7fedf11609cf0086debc9005540b523062ebbe0",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20220316a",
+      "release_utc": "2022-03-16T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+      "current_text_sha256": "904456d0fd545aa530206880235b44308085abeb117614e795334e441d712403",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20220504a",
+      "release_utc": "2022-05-04T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm",
+      "current_text_sha256": "abad9a5e704ad9c9d29ac745777d52a3bcbcfa0e2119929f3533d7a4b681a910",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20220615a",
+      "release_utc": "2022-06-15T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a.htm",
+      "current_text_sha256": "2b273e438f427753c98cacc9c0917d0e2d2b5827097ae7e183f3dd081816b600",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20220727a",
+      "release_utc": "2022-07-27T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220727a.htm",
+      "current_text_sha256": "fb402d385a17b4361781c235f4b485752643fdcce2dc39757f1d14d1ea66d354",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20220921a",
+      "release_utc": "2022-09-21T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220921a.htm",
+      "current_text_sha256": "f3c4436231dfba573835b4dd1217eafd92fda7236d18e1bd01e1974872cce64c",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20221102a",
+      "release_utc": "2022-11-02T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221102a.htm",
+      "current_text_sha256": "1f9d90e0cba5f93a417cd21a45b540744eab6be87aaa89d5af54d0e9a1b6246f",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20221214a",
+      "release_utc": "2022-12-14T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm",
+      "current_text_sha256": "4a4e964952fe8c3cf445783d930ed393fb0ded686c63420aaaee30918453e378",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20230201a",
+      "release_utc": "2023-02-01T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201a.htm",
+      "current_text_sha256": "5870a0b3f468e57c28a747065baef89c2003b398f86e386a26a79231797e51ae",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20230322a",
+      "release_utc": "2023-03-22T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm",
+      "current_text_sha256": "4fd3317b21b9dbe09590665b8dcea21513ea677ec48e6b4ca3dffd973cbe6890",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20230503a",
+      "release_utc": "2023-05-03T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a.htm",
+      "current_text_sha256": "169d199c31ca51fb71069f9514c67c2a31fe95a146992cf0d0956239c46c7f1a",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20230614a",
+      "release_utc": "2023-06-14T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230614a.htm",
+      "current_text_sha256": "acf463302808e56ab0c9cc2d7bea60716469ea3f3d624430badd82f8e686c3c3",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20230726a",
+      "release_utc": "2023-07-26T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230726a.htm",
+      "current_text_sha256": "5871bc7ecf0c75cb70ea63e71875016925196e82f2fbc84afedb2e71400450ee",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20230920a",
+      "release_utc": "2023-09-20T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230920a.htm",
+      "current_text_sha256": "f37624239512f015004708838dca392fe1a250e5de6b066ac0f04ae29945d9e3",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20231101a",
+      "release_utc": "2023-11-01T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231101a.htm",
+      "current_text_sha256": "32c87d5ab93e60f75a3df0de322647474d383d5108f21f2dd930e516fde5d5b5",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20231213a",
+      "release_utc": "2023-12-13T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231213a.htm",
+      "current_text_sha256": "38806ffd8fc296804b9fe27f7d9159364eb60cb76d554b0273d362118c3d5e4c",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20240131a",
+      "release_utc": "2024-01-31T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131a.htm",
+      "current_text_sha256": "0b9605ed33ffadb2c17202b30800d1e4ab9c548b5af55dd627cd7ff7397426a4",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20240320a",
+      "release_utc": "2024-03-20T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240320a.htm",
+      "current_text_sha256": "95bfa0fe0b503229c61ca812ff8dccf65b0147a242453ac654b9c748d3f9f5f1",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "URLError",
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "id": "monetary20240501a",
+      "release_utc": "2024-05-01T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240501a.htm",
+      "current_text_sha256": "cd5e9cec31c47f0b6277fa979dc34377031c0cb70e989292d908acabb088a85d",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "URLError",
+      "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    },
+    {
+      "id": "monetary20240612a",
+      "release_utc": "2024-06-12T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612a.htm",
+      "current_text_sha256": "549a8b8adcf188cb1ef4bbc2adaa88aff3fcd4c8b8b00a2fa46a832c2080762e",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "id": "monetary20240731a",
+      "release_utc": "2024-07-31T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm",
+      "current_text_sha256": "24b02c974a73bc6c81d1a8474689c0f71a4aa7411d76b4790cdcef8c02ed0201",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "id": "monetary20240918a",
+      "release_utc": "2024-09-18T18:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "current_text_sha256": "0de57a5e42629d83b71c208d44c9b6afcfea2679435822d98947efc55d3450f2",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "URLError",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "id": "monetary20241107a",
+      "release_utc": "2024-11-07T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm",
+      "current_text_sha256": "ffa3212b6fcfc6d075cf6104c7fc6eff6c7744373f60d3030bb629ab688272f9",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    },
+    {
+      "id": "monetary20241218a",
+      "release_utc": "2024-12-18T19:00:00+00:00",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+      "current_text_sha256": "789d9c7daf3a6818e215fe9b4dee816d931f09d728c7ca9c1256ad40529556a4",
+      "status": "ARCHIVE_CHECK_ERROR",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: BAD REQUEST"
+    }
+  ],
+  "interpretation": [
+    "TEXT_MATCH verifies equality with a near-release archived representation only.",
+    "Wayback capture time does not prove the Board page was publicly available to a trader then.",
+    "NO_NEAR_RELEASE_CAPTURE is missing evidence, not a mismatch.",
+    "This audit does not access prices, run a model, or establish predictive value."
+  ]
+}

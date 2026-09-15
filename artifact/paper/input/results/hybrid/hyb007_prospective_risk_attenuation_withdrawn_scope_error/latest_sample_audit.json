@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-007",
+  "status": "COLLECTING_INSUFFICIENT_EFFECTIVE_SAMPLE",
+  "poll_id": "20260911T143413282723Z",
+  "initialized_at": "2026-09-11T14:34:13.282723+00:00",
+  "records_admitted_total": 0,
+  "records_admitted_this_poll": 0,
+  "records_rejected_this_poll": 0,
+  "rejection_reason_counts": {},
+  "fetch_errors": [],
+  "required_independent_clusters": 30,
+  "independent_clusters": null,
+  "reason_clusters_unavailable": "LLM extraction and causal Tech-state join are prohibited until a later outcome-free sample-audit stage.",
+  "market_outcomes_accessed": false,
+  "model_run": false,
+  "backfill_prohibited": true,
+  "baseline_urls_excluded": 30,
+  "files": {
+    "state.json": "fd844a153bceb0bcfa349bfef8cbbac8e3c265b148955c27d64dc629417aba52",
+    "records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "collector.py": "b98f61582f7a8275db120f4f8a962a7fea5679d800bf63ca5ccf4f5d3e7ae2a0"
+  }
+}

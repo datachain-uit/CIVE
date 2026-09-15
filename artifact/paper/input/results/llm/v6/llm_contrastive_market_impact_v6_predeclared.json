@@ -1,0 +1,132 @@
+{
+  "schema_version": "llm-contrastive-market-impact-predeclaration-v6",
+  "experiment_id": "llm-contrastive-market-impact-v6-development",
+  "predeclared_at": "2026-09-04T12:48:01.320144+00:00",
+  "scope": "Post-v5 development branch; fold-local supervised contrastive projection, not sealed confirmation.",
+  "prior_v5_outcomes_consulted": true,
+  "protocol": {
+    "path": "paper/working/protocols/LLM_Contrastive_Market_Impact_Protocol_v6.md",
+    "sha256": "76684212c3e5fc877a33b7144d251a423b1bfa11234422505652a13354ee6fa1"
+  },
+  "code": {
+    "runner": {
+      "path": "tools/llm/run_contrastive_market_impact_v6.py",
+      "sha256": "d9ef83c816f9fb80ade3e87945f37e6b43cfd0ad5f4fd8a91eeaa9f25a52b7a9"
+    },
+    "tests": {
+      "path": "tools/llm/test_run_contrastive_market_impact_v6.py",
+      "sha256": "d08ab5f53c941d6f393975c8a0f270c46b4684c361d045ec82082f9a99d7dd4f"
+    },
+    "v5_dependency": {
+      "path": "tools/llm/run_fulltext_market_impact_v5.py",
+      "sha256": "865b0b2462b45ae7e5ab3a7e8d8483706c568c7f48a63bf7b1d3dbec609aa74a"
+    },
+    "ridge_dependency": {
+      "path": "tools/llm/run_minilm_external_impact_v4.py",
+      "sha256": "c53d70be73851b998beaff40358fd7c7aad1c23b672e48947e67f8478dcdd5cc"
+    }
+  },
+  "tests": {
+    "status": "2 tests passed before training",
+    "python": "D:/projects/auto-trading/.venv/Scripts/python.exe"
+  },
+  "sources": {
+    "panel": {
+      "path": "runtime/external/crypto_news_fulltext_v5/fulltext_market_impact_panel_v5.json",
+      "sha256": "426c4022e2a18857ee6946dc422c4b496cc7a8ab11e828e9100deb958336a65c"
+    },
+    "v5_embeddings": {
+      "path": "runtime/ministral3_8b_challenger/results/llm_fulltext_bucket_embeddings_v5.npz",
+      "sha256": "e67525cd8d03669c9e2b25efabc6f7582112ada95b4df48152e198c4ac1982c7"
+    },
+    "v5_embedding_metadata": {
+      "path": "runtime/ministral3_8b_challenger/results/llm_fulltext_bucket_embeddings_v5.json",
+      "sha256": "b44d8bde06a804a4788956eed308237827ab75eb4527a64c29cc55a16bfe5e27"
+    },
+    "v5_predeclaration": {
+      "path": "runtime/ministral3_8b_challenger/configs/llm_fulltext_market_impact_v5_predeclared.json",
+      "sha256": "8ffedf5fefdc07d5cdcb304c2c74e4857aed335fb2ee33872ba9b23212a64c64"
+    },
+    "v5_gate": {
+      "path": "runtime/ministral3_8b_challenger/results/llm_fulltext_market_impact_gate_v5.json",
+      "sha256": "b56d291dfb6b2346ae49f09c5cea768fd161598710d2178d2f6881f723ea96ac"
+    }
+  },
+  "data_gate": {
+    "required_buckets": 5187,
+    "required_oos_records": 2177
+  },
+  "projection": {
+    "input_dimensions": 768,
+    "hidden_dimensions": 128,
+    "output_dimensions": 32,
+    "activation": "GELU",
+    "output_normalization": "L2",
+    "dropout": 0.0
+  },
+  "training": {
+    "objective": "supervised contrastive loss over training-only return-tertile classes",
+    "class_thresholds": "training-only 1/3 and 2/3 raw h24 return quantiles",
+    "temperature": 0.1,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 256,
+    "epochs": 20,
+    "scheduler": null,
+    "early_stopping": false,
+    "seed_base": 20260906,
+    "cpu_threads": 4,
+    "device": "cpu"
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 100.0,
+    "standardization": "training-only mean/std",
+    "hyperparameter_tuning": false
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-12-31T20:00:00+00:00",
+      "valid_start": "2024-01-02T00:00:00+00:00",
+      "valid_end": "2024-04-30T20:00:00+00:00",
+      "train_records": 2799,
+      "valid_records": 720
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-04-30T20:00:00+00:00",
+      "valid_start": "2024-05-02T00:00:00+00:00",
+      "valid_end": "2024-08-31T20:00:00+00:00",
+      "train_records": 3525,
+      "valid_records": 732
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-08-31T20:00:00+00:00",
+      "valid_start": "2024-09-02T00:00:00+00:00",
+      "valid_end": "2024-12-31T20:00:00+00:00",
+      "train_records": 4263,
+      "valid_records": 725
+    }
+  ],
+  "bootstrap": {
+    "iterations": 5000,
+    "seed": 20260906,
+    "block_length_records": 42,
+    "confidence_level": 0.95
+  },
+  "gate": {
+    "required_oos_records": 2177,
+    "minimum_fold_wins": 2,
+    "all_required_checks": [
+      "paired MSE(market)-MSE(market+contrastive) 95% CI lower bound > 0",
+      "market+contrastive prediction Pearson 95% CI lower bound > 0",
+      "market+contrastive MSE wins at least 2 of 3 folds",
+      "2177 OOS records and nonconstant predictions"
+    ]
+  },
+  "on_fail": "Freeze negative result and stop before threshold, action mapping, backtest, Tech+LLM, or sealed holdout.",
+  "on_pass": "Authorize only a separate development overlay predeclaration."
+}

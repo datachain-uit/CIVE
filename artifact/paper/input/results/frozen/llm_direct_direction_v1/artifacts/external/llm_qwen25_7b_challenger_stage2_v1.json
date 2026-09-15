@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-15T17:15:38.385883+00:00",
+  "experiment_id": "llm-qwen25-7b-challenger-v1-development",
+  "candidate": {
+    "model": "qwen2.5:7b",
+    "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+    "architecture": "qwen2",
+    "parameters": "7.6B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0",
+    "rationale": "same local hardware class as the baseline and officially documented for improved instruction following and structured JSON output",
+    "primary_sources": [
+      "https://qwenlm.github.io/blog/qwen2.5/",
+      "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+    ]
+  },
+  "stage1_gate_passed": true,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "full_records": {
+      "observed": 2927,
+      "required": 2927,
+      "passed": true
+    },
+    "schema_errors": {
+      "observed": 0,
+      "required": 0,
+      "passed": true
+    },
+    "calibration_observations": {
+      "observed": 1110,
+      "required_min": 1000,
+      "passed": true
+    },
+    "long_rule_observations": {
+      "observed": 415,
+      "required_min": 100,
+      "passed": true
+    },
+    "pearson_ci_lower_bound": {
+      "observed": -0.06688526074886603,
+      "required_gt": 0.0,
+      "passed": false
+    },
+    "long_minus_flat_ci_lower_bound": {
+      "observed": -42.044598798795484,
+      "required_gt": 0.0,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "status": "stage2-fail-stop-before-repeat-or-backtest",
+  "inputs": {
+    "config": "configs\\llm_qwen25_7b_challenger_v1_development.json",
+    "config_sha256": "a725a78f1d0be6621f0caf7c23fad6b03752b2faa6da87f34d3d87ee3e292b4f",
+    "stage1": "results\\llm_qwen25_7b_challenger_gate_v1.json",
+    "stage1_sha256": "52a7c4d02c7371dde87933d98748db79b998628a23558ee8c254a05b64dfcb47",
+    "full_run": "results\\llm_daily_full_qwen2_5_7b_v1_development.json",
+    "full_run_sha256": "e76e2160b4a22eb8b9f8d2e32c48087544a2bc40d2e869ca6ab2f07063636262",
+    "calibration": "results\\llm_outcome_calibration_qwen2_5_7b_v1_development.json",
+    "calibration_sha256": "70f9a3ba98827394c34b30f10dcae1029605dc0bd86404b3b4c0097cfbbfdee0"
+  }
+}

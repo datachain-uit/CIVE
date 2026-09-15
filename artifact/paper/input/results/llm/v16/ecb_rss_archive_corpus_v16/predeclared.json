@@ -1,0 +1,42 @@
+{
+  "schema_version": "ecb-rss-archive-corpus-predeclaration-v16",
+  "candidate_id": "ecb-rss-press-internet-archive-v16",
+  "predeclared_at": "2026-09-09T01:03:36.3817779Z",
+  "status": "FROZEN_BEFORE_FULL_SNAPSHOT_DOWNLOAD",
+  "source_screen": {
+    "path": "paper/input/references/source_artifacts/ecb_rss_internet_archive_v16/source_screen.json",
+    "sha256": "231f9463fbce208f7dad999ccbad1f270967867450d1d53a8ee21c296bc60562",
+    "expected_snapshots": 597
+  },
+  "feed": "https://www.ecb.europa.eu/rss/press.html",
+  "information_time": "archive_capture_at",
+  "publication_time_rule": "pubDate must include an explicit UTC offset and must not be later than archive_capture_at",
+  "record_contract": {
+    "required_fields": [
+      "title",
+      "link",
+      "pubDate"
+    ],
+    "model_text": "TITLE: {normalized title}",
+    "description_used": false,
+    "allowed_hosts": [
+      "ecb.europa.eu",
+      "www.ecb.europa.eu",
+      "ecb.int",
+      "www.ecb.int"
+    ],
+    "allowed_path_prefix": "/press/",
+    "canonicalization": "https://www.ecb.europa.eu + normalized path; drop query and fragment; map legacy ecb.int host",
+    "deduplication": "canonical link; retain first valid archive capture",
+    "keyword_filter": false,
+    "topic_filter": false,
+    "manual_filter": false
+  },
+  "rights_scope": "Use only ECB RSS title metadata with ECB attribution; do not ingest linked full documents, media, logos, named-author papers, or third-party content.",
+  "minimum_information_sets_for_extraction": 96,
+  "market_data_accessed": false,
+  "outcomes_consulted": false,
+  "model_run": false,
+  "trading_backtest_consulted": false,
+  "stop_rule": "Corpus gate may authorize only outcome-blind LLM extraction. Market targets, predictive metrics, thresholds and backtests remain prohibited."
+}

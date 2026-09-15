@@ -1,0 +1,61 @@
+{
+  "configuration_files": {
+    "controlled_experiment_v1.json": "dc3ea55fd215e606ad52fd2fea32834f0ba2bade61de50ff79c275463cbc0d73",
+    "sealed_forward_holdout_v1.json": "c91bd87fa71ea8cdd7a44038261ba72d89909cdd2f2235585b9fa981701a1e94",
+    "technical_control_v1.json": "1ecd72c6842b8349af04c89ce03e8c42c4854f46fcd4c153da50c405410f332b"
+  },
+  "configuration_hashes": {
+    "controlled_experiment_v1.json": "4a70da64ef58e2217425b8fbf163dfc0c1320e028b0fbf4c022ce361eb750910",
+    "sealed_forward_holdout_v1.json": "d5a096d017687ead4f27c450794cdb775e86a8dd0ddb3af1d2799368a6665bc1",
+    "technical_control_v1.json": "dcf7b703b53fc893482b7f2bbbca9d5f1bbea9a43329f4ad4313ecd016e0c032"
+  },
+  "evidence_files": {
+    "D:\\projects\\auto-trading\\results\\technical_bybit_lifecycle_1x_candidate_hardened.json": "7e8e8653c207e759e6cd3093e78705486fd732ba588362620ffe0ff372c60cf7",
+    "D:\\projects\\auto-trading\\results\\technical_bybit_lifecycle_1x_candidate_hardened.manifest.json": "a43a4223cbd8307eead1e5b8e277113618b666ff6149e8f1e6a481c428b4a007",
+    "D:\\projects\\auto-trading\\results\\technical_lifecycle_concentration_regime_v2.json": "4f74305118e9d629e4050349f6edb3a9c08b2ef6b88bb126545299995d3f3b4f",
+    "D:\\projects\\auto-trading\\results\\technical_lifecycle_robustness_report_v2.json": "0212f6bc4d30ac251f30da7ed8f2a629bf988be22b8a6cb3f75b6f0b2373f100",
+    "D:\\projects\\auto-trading\\results\\technical_selection_inference_v2.json": "204d042f149a1b8e0608eae689572995558e170c1a82aad3266b5ed6b5afe443"
+  },
+  "freeze_id": "tech-control-v1-freeze",
+  "generated_at": "2026-08-13T15:32:53.635359+00:00",
+  "holdout": {
+    "current_blocker": "LLM-only and Tech+LLM pipelines are not yet frozen",
+    "development_data_end_utc": "2026-08-11T00:00:00Z",
+    "embargo_days": 3,
+    "end_utc_exclusive": "2027-02-10T00:00:00Z",
+    "holdout_id": "sealed-forward-2026-08-14-180d-v1",
+    "minimum_calendar_days": 180,
+    "open_policy": {
+      "allow_data_quality_monitoring_without_performance": true,
+      "allow_interim_performance_read": false,
+      "allow_parameter_or_prompt_changes": false,
+      "open_once_after_end": true
+    },
+    "required_arms": [
+      "tech-only",
+      "llm-only",
+      "tech-plus-llm"
+    ],
+    "required_freezes_before_collection": [
+      "tech-control-v1",
+      "llm-pipeline-v1",
+      "hybrid-overlay-v1",
+      "three-arm-controlled-v1"
+    ],
+    "schema_version": 1,
+    "start_utc": "2026-08-14T00:00:00Z",
+    "status": "scheduled-blocked-not-collecting"
+  },
+  "schema_version": 1,
+  "source_files": {
+    "D:\\projects\\auto-trading\\executor\\controlled_arm_contract.py": "d0b228b10a84461381992c78d35da4a45d21d2d7b2eab76b3431bf59ebc8ed65",
+    "D:\\projects\\auto-trading\\executor\\freeze_experiment.py": "d69f5c1466f03d85525e606d2e256b19a7f20f0f5c42be97d29f2e657686fb5c",
+    "D:\\projects\\auto-trading\\executor\\technical_bybit_lifecycle_execution.py": "7792de767b630ed945c43e9f9868ce5524805420c81a0eef01c56e907f413ab8",
+    "D:\\projects\\auto-trading\\executor\\technical_execution_semantics.py": "33b66d520dde411b432c0cda1b5c665781e5166a2d000a9acba2fd1a3a37a16a"
+  },
+  "status": "Tech frozen; three-arm collection blocked until LLM and Hybrid freezes exist",
+  "unresolved_requirements": [
+    "llm-pipeline-v1 freeze",
+    "hybrid-overlay-v1 freeze"
+  ]
+}

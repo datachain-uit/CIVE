@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.4-full-extraction",
+  "status": "full-extraction-fail-stop-evidence-not-source-substring",
+  "failed_at": "2026-08-24T03:52:54+07:00",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "attempted": 56,
+    "success": 52,
+    "errors": 4,
+    "failed_batch": 14,
+    "root_error": "ValueError: evidence_span is not an exact or punctuation-normalized headline substring",
+    "root_causes": [
+      "One frozen headline contains replacement characters where quotation marks were corrupted, while model evidence used a normal curly quote.",
+      "One btc_relevance=none record supplied Bitcoin as evidence even though Bitcoin was absent from the frozen headline."
+    ]
+  },
+  "decision": "Preserve v3.4 as failed evidence. Do not resume this checkpoint. Re-gate a new contract with an explicit, flagged full-headline fallback before another full extraction.",
+  "artifacts": {
+    "config": {"path": "paper/input/results/llm/v3/llm_event_extractor_v3_4_full_predeclared.json", "sha256": "2dd1adfc655b9b34e89bd3394a3209d90ed8adf7d9f90258e92d3c6a5a02a881"},
+    "checkpoint": {"path": "paper/input/results/llm/v3/llm_event_extractor_v3_4_full_failed_checkpoint.ndjson", "sha256": "489846cb103793738cd151187977e4c9e228efefa8cb67a50346f605f5deb103"},
+    "progress": {"path": "paper/input/results/llm/v3/llm_event_extractor_v3_4_full_failed_progress.json", "sha256": "c007e7fa726154c478136d87be3d402e8080f8fcad6fd77e7573819f4a3ea12f"},
+    "supervisor_stdout": {"path": "paper/input/results/llm/v3/llm_event_extractor_v3_4_full_failed_supervisor_stdout.log", "sha256": "2e825823409297a484820c44c398022ae2f5164a2ffd7b45679d71333191539f"},
+    "scorer_stdout": {"path": "paper/input/results/llm/v3/llm_event_extractor_v3_4_full_failed_scorer_stdout.log", "sha256": "ea20cce8e6bec149c344862c9a621c61455c159667e39e8205dbfe1c29f594db"}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "model": "llama3:latest",
+  "model_digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+  "common": 18,
+  "both_success": 18,
+  "exact_score_agreement": 16,
+  "mean_absolute_score_difference": 0.04444444444444444,
+  "max_absolute_score_difference": 0.7,
+  "deterministic": false
+}

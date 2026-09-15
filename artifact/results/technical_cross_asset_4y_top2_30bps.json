@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-08-07T09:35:05.084356+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT"
+    ],
+    "market_state": "BTC/USDT 7d>=0 for two consecutive weeks",
+    "entry": "10d compressed-channel breakout; only top-N by trailing momentum among fresh events",
+    "exit": "opposite compressed-channel breakout or market state off",
+    "top_n": 2,
+    "rank_days": 20,
+    "fee_bps_per_weight_turnover": 30.0,
+    "execution": "daily close-to-close; no leverage, stops or pyramiding"
+  },
+  "full_period": {
+    "return_pct": 106.5349,
+    "profit_factor": 1.6538,
+    "max_dd_pct": 21.2311
+  },
+  "folds": [
+    {
+      "return_pct": -0.2837,
+      "profit_factor": 1.0424,
+      "max_dd_pct": 21.2311
+    },
+    {
+      "return_pct": -0.6694,
+      "profit_factor": 0.8002,
+      "max_dd_pct": 3.0989
+    },
+    {
+      "return_pct": 37.8317,
+      "profit_factor": 2.3291,
+      "max_dd_pct": 5.8875
+    },
+    {
+      "return_pct": 3.7935,
+      "profit_factor": 1.5999,
+      "max_dd_pct": 4.1598
+    },
+    {
+      "return_pct": 18.2553,
+      "profit_factor": 3.4804,
+      "max_dd_pct": 4.935
+    },
+    {
+      "return_pct": 40.9197,
+      "profit_factor": 3.5189,
+      "max_dd_pct": 4.1342
+    },
+    {
+      "return_pct": -0.2591,
+      "profit_factor": 0.9749,
+      "max_dd_pct": 4.4868
+    }
+  ],
+  "passing_folds": 4,
+  "folds_tested": 7,
+  "eligible_for_execution_test": true
+}

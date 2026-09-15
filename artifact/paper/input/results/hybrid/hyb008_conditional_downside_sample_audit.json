@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-008",
+  "status": "PASS_STAGE_A_AUTHORIZED",
+  "passed": true,
+  "audited_at": "2026-09-11T16:36:49.288532+00:00",
+  "outcomes_consulted_by_this_audit": false,
+  "historical_outcomes_seen_in_prior_experiments": true,
+  "sample": {
+    "rows": 1008,
+    "rows_by_asset": {
+      "ETHUSDT": 634,
+      "SOLUSDT": 374
+    },
+    "utc_dates": 474,
+    "chronological_thirds": [
+      336,
+      336,
+      336
+    ],
+    "start": "2022-09-14T08:00:00+00:00",
+    "end": "2025-08-26T00:00:00+00:00"
+  },
+  "checks": {
+    "rows_at_least_900": true,
+    "eth_rows_at_least_500": true,
+    "sol_rows_at_least_300": true,
+    "each_third_at_least_250": true,
+    "utc_dates_at_least_400": true,
+    "history_coverage_at_least_95pct": true
+  },
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb008_conditional_downside_predeclared.json",
+    "sha256": "9625584bd1470543120d3c349b965d13c56449ad1ac72f74967222d42f63af4c"
+  },
+  "next_authorized_action": "Run frozen Stage-A downside information evaluation."
+}

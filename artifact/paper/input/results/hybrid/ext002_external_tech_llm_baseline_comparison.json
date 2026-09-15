@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXT-002-external-tech-llm-baseline-transfer-audit",
+  "built_at": "2026-09-11T22:53:24.353092+00:00",
+  "research_role": "post-outcome development audit and evidence synthesis; not validation",
+  "admissibility": [
+    {
+      "candidate": "Bennett et al. (2024)",
+      "admitted": true,
+      "implementation": "HYB-004 v1.1",
+      "claim": "adaptive recent-MSFE component transfer; not replication"
+    },
+    {
+      "candidate": "FinMem",
+      "admitted": false,
+      "reason": "missing official input and embedding credential"
+    },
+    {
+      "candidate": "FinAgent",
+      "admitted": false,
+      "reason": "insufficient implementation/data for same-testbed end-to-end transfer"
+    },
+    {
+      "candidate": "Jung and Lee (2026)",
+      "admitted": false,
+      "reason": "three-day original horizon and incompatible agent contract"
+    },
+    {
+      "candidate": "Kirtac and Germano (2024)",
+      "admitted": false,
+      "reason": "LLM-only sentiment strategy, not a Tech+LLM fusion method"
+    }
+  ],
+  "same_context_external_baseline": {
+    "experiment": "HYB-004 v1.1",
+    "role": "external_method_transfer",
+    "source_method": "Bennett et al. (2024) adaptive recent-MSFE component",
+    "asset_horizon": "ETHUSDT, 24h",
+    "oos_units": 699,
+    "predictive_metric": "MSE",
+    "tech_value": 0.0013506878764879865,
+    "hybrid_value": 0.0013674629886334462,
+    "improvement_positive_is_better": -1.6775112145459946e-05,
+    "improvement_95_ci": [
+      -3.974345645340756e-05,
+      1.0311083510479432e-05
+    ],
+    "mean_net_delta": -0.002546255231609067,
+    "mean_net_delta_95_ci": [
+      -0.005073549647777112,
+      0.0012142144780046675
+    ],
+    "positive_or_winning_folds": 2,
+    "folds": 5,
+    "tech_total_return": -0.41301441580095877,
+    "hybrid_total_return": -0.9023868572912717,
+    "tech_max_drawdown": 0.6198323394760359,
+    "hybrid_max_drawdown": 0.922823047812463,
+    "status": "EXPLORATORY_TRANSFER_FAIL",
+    "directly_comparable_to_tech": true,
+    "source": {
+      "path": "paper/input/results/hybrid/hyb004_bennett_adaptive_eth_transfer_v1_1_remediation.json",
+      "sha256": "2d50a02c68ba5035b8abea3d2f0d85f1db69c3af28d43dbdfbbecbe522815ae2"
+    }
+  },
+  "hybrid_evidence_map": [
+    {
+      "experiment": "HYB-004 v1.1",
+      "role": "external_method_transfer",
+      "source_method": "Bennett et al. (2024) adaptive recent-MSFE component",
+      "asset_horizon": "ETHUSDT, 24h",
+      "oos_units": 699,
+      "predictive_metric": "MSE",
+      "tech_value": 0.0013506878764879865,
+      "hybrid_value": 0.0013674629886334462,
+      "improvement_positive_is_better": -1.6775112145459946e-05,
+      "improvement_95_ci": [
+        -3.974345645340756e-05,
+        1.0311083510479432e-05
+      ],
+      "mean_net_delta": -0.002546255231609067,
+      "mean_net_delta_95_ci": [
+        -0.005073549647777112,
+        0.0012142144780046675
+      ],
+      "positive_or_winning_folds": 2,
+      "folds": 5,
+      "tech_total_return": -0.41301441580095877,
+      "hybrid_total_return": -0.9023868572912717,
+      "tech_max_drawdown": 0.6198323394760359,
+      "hybrid_max_drawdown": 0.922823047812463,
+      "status": "EXPLORATORY_TRANSFER_FAIL",
+      "directly_comparable_to_tech": true,
+      "source": {
+        "path": "paper/input/results/hybrid/hyb004_bennett_adaptive_eth_transfer_v1_1_remediation.json",
+        "sha256": "2d50a02c68ba5035b8abea3d2f0d85f1db69c3af28d43dbdfbbecbe522815ae2"
+      }
+    },
+    {
+      "experiment": "HYB-001",
+      "role": "internal_conditional_overlay",
+      "asset_horizon": "Frozen Tech trade opportunities",
+      "oos_units": 24,
+      "mean_net_delta": -0.021520785023643185,
+      "mean_net_delta_95_ci": [
+        -0.048203439621363205,
+        -0.0018625507203628398
+      ],
+      "positive_or_winning_folds": 0,
+      "folds": 3,
+      "tech_total_return": 2.3900222885119993,
+      "hybrid_total_return": 1.1142198216491206,
+      "tech_max_drawdown": 0.05288294101964863,
+      "hybrid_max_drawdown": 0.04788593564326693,
+      "status": "exploratory-development-fail",
+      "directly_comparable_to_tech": true,
+      "source": {
+        "path": "paper/input/results/hybrid/tech_llm_conditional_overlay_v1_development.json",
+        "sha256": "92fa557ec1a776f16375e00ea6c8303aa55933405a489f7f5fbadd9fdb0403fd"
+      }
+    },
+    {
+      "experiment": "HYB-002",
+      "role": "internal_intratrade_shield",
+      "asset_horizon": "Frozen Tech intratrade windows",
+      "oos_units": 13,
+      "mean_net_delta": -0.0021577140755681076,
+      "mean_net_delta_95_ci": [
+        -0.0037873502114959094,
+        -0.0006255231833584209
+      ],
+      "positive_or_winning_folds": 1,
+      "folds": 3,
+      "status": "exploratory-development-fail",
+      "directly_comparable_to_tech": true,
+      "source": {
+        "path": "paper/input/results/hybrid/tech_llm_intratrade_shock_shield_v2_development.json",
+        "sha256": "1264ffabf25f5e14f8c7fff5fb541f936482d747ef80c6068413de99dd262952"
+      }
+    },
+    {
+      "experiment": "HYB-006",
+      "role": "internal_rank_pair_reallocation",
+      "asset_horizon": "Multi-asset daily",
+      "oos_units": 1081,
+      "mean_net_delta": -1.9723782934806987e-05,
+      "mean_net_delta_95_ci": [
+        -0.00019781544087714808,
+        0.00016393400403607163
+      ],
+      "positive_or_winning_folds": 2,
+      "folds": 5,
+      "tech_total_return": 15.546466288269098,
+      "hybrid_total_return": 15.039267933427581,
+      "tech_max_drawdown": 0.38070044035744643,
+      "hybrid_max_drawdown": 0.4099545021171809,
+      "status": "EXPLORATORY_TRANSFER_FAIL",
+      "directly_comparable_to_tech": false,
+      "source": {
+        "path": "paper/input/results/hybrid/hyb006_rank_pair_reallocation_evaluation.json",
+        "sha256": "ff1559b48e1ce7cf00f4b021a25e0d1a913f5539b2ddce6e90f79713e0e864ec"
+      }
+    },
+    {
+      "experiment": "HYB-007",
+      "role": "internal_historical_risk_attenuation",
+      "asset_horizon": "ETH/SOL, 4h intervention",
+      "oos_units": 113,
+      "mean_net_delta": -0.0010127003825482633,
+      "mean_net_delta_95_ci": [
+        -0.00250284627541195,
+        0.0004788158642932992
+      ],
+      "positive_or_winning_folds": 1,
+      "folds": 5,
+      "worst_bar_improvement": 0.0030762344018537865,
+      "worst_bar_improvement_95_ci": [
+        0.0024661261883298534,
+        0.003718926229137641
+      ],
+      "tech_es10": -0.030629980317241564,
+      "hybrid_es10": -0.017897059186689334,
+      "status": "HISTORICAL_INCREMENTAL_VALUE_FAIL",
+      "directly_comparable_to_tech": false,
+      "source": {
+        "path": "paper/input/results/hybrid/hyb007_historical_risk_attenuation_evaluation.json",
+        "sha256": "72641cfb7e5b9ef6f0cf1dc6169e55c0473e642c43512d898d4564c8576680b9"
+      }
+    },
+    {
+      "experiment": "HYB-008",
+      "role": "internal_downside_information_gate",
+      "asset_horizon": "ETH/SOL selected event rows",
+      "oos_units": 692,
+      "predictive_metric": "Brier",
+      "tech_value": 0.08829182215207977,
+      "hybrid_value": 0.09330703858128317,
+      "improvement_positive_is_better": -0.005015216429203398,
+      "semantic_vs_generic_improvement": -0.0021185089340454016,
+      "semantic_vs_generic_95_ci": [
+        -0.004993275925285047,
+        4.020480175380958e-06
+      ],
+      "positive_or_winning_folds": 0,
+      "folds": 5,
+      "status": "STAGE_A_INFORMATION_FAIL_STOP_BEFORE_POLICY",
+      "directly_comparable_to_tech": false,
+      "source": {
+        "path": "paper/input/results/hybrid/hyb008_conditional_downside_evaluation.json",
+        "sha256": "e247587bcfae272d17a7bddad9079a230f9e182ee533a331f4f3c53a58a0edbe"
+      }
+    }
+  ],
+  "protocol_realism": {
+    "project_common_strengths": [
+      "causal available_at",
+      "action delay",
+      "walk-forward OOS",
+      "fees/adverse execution",
+      "funding where applicable",
+      "frozen artifacts and hashes",
+      "stop rules"
+    ],
+    "not_uniform_across_all_hybs": [
+      "effective-sample gate",
+      "placebos",
+      "intrabar risk materialization",
+      "same asset/horizon/comparator"
+    ],
+    "sealed_or_live_evidence": false
+  },
+  "regime_coverage": {
+    "chronological_fold_stability_available": true,
+    "common_predeclared_bull_bear_volatility_regimes_available": false,
+    "status": "MISSING_DO_NOT_CHERRY_PICK_POST_HOC_WINNING_PERIODS"
+  },
+  "conclusion": {
+    "external_baselines_admitted": 1,
+    "external_baseline_passes_incremental_value_gate": 0,
+    "performance_claim": "No verified predictive or economic incremental value for the admitted external transfer.",
+    "risk_claim": "HYB-007 shows local tail attenuation, but economic non-inferiority fails and semantic causation is not verified.",
+    "protocol_claim": "The project supports stronger causal/audit discipline than naive backtests; this is not evidence of superior returns."
+  }
+}

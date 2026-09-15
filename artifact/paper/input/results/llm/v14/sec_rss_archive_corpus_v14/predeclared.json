@@ -1,0 +1,22 @@
+{
+  "version": "v14.0.0",
+  "corpus_id": "sec-rss-internet-archive-v14",
+  "source": {
+    "publisher": "U.S. Securities and Exchange Commission",
+    "rss_url": "https://www.sec.gov/news/pressreleases.rss",
+    "archive": "Internet Archive CDX / replay",
+    "cdx_url": "https://web.archive.org/cdx/search/cdx?url=www.sec.gov%2Fnews%2Fpressreleases.rss&output=json&filter=statuscode:200&fl=timestamp,digest,length&collapse=timestamp:8&from=2021&to=2026"
+  },
+  "record_contract": {
+    "permitted_fields": ["title", "description", "link", "guid", "pubDate", "archive_capture_at", "archive_digest", "archive_length", "snapshot_sha256"],
+    "text": "TITLE plus DESCRIPTION from the archived SEC RSS item only",
+    "publisher_time_rule": "pubDate must parse with an explicit UTC offset and must be no later than archive_capture_at",
+    "decision_time": "archive_capture_at",
+    "deduplication": "first archived availability by GUID; deterministic fallback hash only when GUID is absent",
+    "excluded_content": ["images", "logos", "article pages", "third-party material", "market data", "prices", "market labels", "features", "outcomes", "reflections"]
+  },
+  "selection_uses_outcomes": false,
+  "market_data_accessed": false,
+  "model_run": false,
+  "next_permitted_action": "Build and verify the outcome-blind corpus only; do not join outcomes or run an LLM."
+}

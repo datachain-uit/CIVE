@@ -1,0 +1,71 @@
+{
+  "status": "VERSIONED_SNAPSHOT_AUDITED_NOT_ADMITTED_PENDING_TERMS_AND_PIT_GATE",
+  "scope": "pinned snapshot identity and outcome-blind TSV schema only",
+  "source_audit": "paper\\input\\results\\llm\\v12_1\\bitcoin_news_source_audit_v12_1.json",
+  "revision": "29a72033d4e5d4f446e1971a185fcb8300048fe5",
+  "snapshot": {
+    "parquet": {
+      "bytes": 887735,
+      "sha256": "d933f329bc2c2ec5f4e30856d8f5ae0b831c11b2a7c000a0e7e9fc966f30c69e",
+      "lfs_oid_verified": true
+    },
+    "tsv": {
+      "bytes": 1960707,
+      "sha256": "23233e66ce1d42a9a9588cd8b884064658bd0640ad51848229114b742ac84612",
+      "lfs_oid_verified": true
+    }
+  },
+  "tsv_schema_audit": {
+    "row_count": 4027,
+    "columns": [
+      "DATETIME",
+      "HEADLINE",
+      "SUMMARY",
+      "SOURCE",
+      "URL",
+      "CATEGORIES",
+      "TAGS",
+      "API_SOURCE",
+      "FILE_NAME",
+      "CREATED_AT"
+    ],
+    "datetime_min_lexical": "2014-10-02 16:08:00",
+    "datetime_max_lexical": "2026-09-04 21:16:04",
+    "datetime_has_explicit_timezone": false,
+    "created_at_has_explicit_timezone": false,
+    "null_or_empty_counts": {
+      "DATETIME": 0,
+      "HEADLINE": 0,
+      "SUMMARY": 0,
+      "SOURCE": 0,
+      "URL": 0,
+      "CATEGORIES": 1159,
+      "TAGS": 3222,
+      "API_SOURCE": 0,
+      "FILE_NAME": 0,
+      "CREATED_AT": 154
+    },
+    "duplicate_url_count": 0,
+    "api_source_counts": {
+      "alphavantage": 805,
+      "finnhub": 1159,
+      "guardian": 2063
+    }
+  },
+  "admission": {
+    "outcome_blind": true,
+    "market_data_accessed": false,
+    "model_run": false,
+    "eligible_for_model_input": false,
+    "blocking_reasons": [
+      "DATETIME and CREATED_AT lack explicit timezone in the audited TSV.",
+      "Dataset timestamp fields do not independently certify historical point-in-time availability.",
+      "README requires review of original publishers' terms before text is admitted."
+    ]
+  },
+  "next_gate": [
+    "Document source-term assessment for The Guardian, Finnhub and AlphaVantage-derived text.",
+    "Define conservative timezone policy or exclude records with ambiguous timestamps.",
+    "Freeze an outcome-blind corpus contract before any market-data join."
+  ]
+}

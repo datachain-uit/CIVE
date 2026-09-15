@@ -1,0 +1,90 @@
+{
+  "audited_at": "2026-09-08T06:28:57.770952+00:00",
+  "category_counts": {
+    "btc_relevance": {
+      "direct": 56,
+      "indirect": 9,
+      "none": 1005,
+      "systemic": 50
+    },
+    "event_type": {
+      "adoption_business": 45,
+      "fraud_legal": 85,
+      "market_commentary": 6,
+      "regulation": 984
+    }
+  },
+  "checks": {
+    "all_records_schema_and_evidence_valid": true,
+    "backtest_remains_unconsulted": true,
+    "corpus_identity_matches_predeclaration": true,
+    "count_and_order_match_corpus": true,
+    "extraction_declares_complete": true,
+    "minimum_eligible_information_sets_met": false,
+    "outcomes_remain_unconsulted": true,
+    "record_count_matches": true,
+    "zero_extraction_errors": true
+  },
+  "counts": {
+    "corpus_records": 1120,
+    "eligible_information_sets": 64,
+    "eligible_records": 106,
+    "extraction_errors": 0,
+    "extraction_success": 1120,
+    "minimum_eligible_information_sets": 96,
+    "shortfall_information_sets": 32,
+    "total_information_sets": 125
+  },
+  "eligibility_contract": {
+    "btc_relevance": [
+      "direct",
+      "systemic"
+    ],
+    "event_type": [
+      "adoption_business",
+      "etf_institutional_flow",
+      "exchange_security",
+      "fraud_legal",
+      "liquidation_leverage",
+      "macro_liquidity",
+      "network_protocol",
+      "regulation"
+    ],
+    "manual_filtering": false
+  },
+  "eligible_information_time_range": {
+    "first": "2021-01-16T03:18:13+00:00",
+    "last": "2026-08-24T20:19:40+00:00"
+  },
+  "experiment_id": "sec-rss-archive-llm-only-event-conditioned-v14-development",
+  "extraction_gate_passed": true,
+  "inputs": {
+    "auditor": {
+      "path": "tools\\llm\\audit_sec_rss_archive_extraction_gate_v14.py",
+      "sha256": "98a0d541993881c3e87ee9386a68a251b09660f8980602811b95c94a91932e89"
+    },
+    "corpus": {
+      "path": "paper\\input\\results\\llm\\v14\\sec_rss_archive_corpus_v14\\corpus.json",
+      "sha256": "3da9172fb8b3b07a5e2fe50fa45aebe389b5f36de1983a0665af08fcc655aff3"
+    },
+    "extraction": {
+      "path": "paper\\input\\results\\llm\\v14\\sec_rss_archive_predictive_v14\\extraction\\extraction.json",
+      "sha256": "b72aad22794bb0d4fb9b3914a3fecc0c37ef1dcd08bcf4851290d6484465a885"
+    },
+    "predeclared": {
+      "path": "paper\\input\\results\\llm\\v14\\sec_rss_archive_predictive_v14\\predeclared.json",
+      "sha256": "bfe69cb59f20465d684fe8e61a1c1fea1169bd2b21d19a687a1c6cc216fa64db"
+    },
+    "progress": {
+      "path": "paper\\input\\results\\llm\\v14\\sec_rss_archive_predictive_v14\\extraction\\extraction_progress.json",
+      "sha256": "1101cf33681a22ebecb241abb89717c6a2e7698d47138f8028ae44365c10859e"
+    }
+  },
+  "outcomes_consulted": false,
+  "passed": false,
+  "schema_version": "sec-rss-archive-extraction-data-gate-v14",
+  "status": "DATA_GATE_FAIL_STOP_BEFORE_TARGET_JOIN",
+  "stop_rule": "Data-gate failure freezes this negative artifact and prohibits target join, predictive evaluation, threshold selection, action mapping, backtest, Tech+LLM, and sealed holdout.",
+  "target_join_authorized": false,
+  "trading_backtest_consulted": false
+}

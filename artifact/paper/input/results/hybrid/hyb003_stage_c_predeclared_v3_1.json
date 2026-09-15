@@ -1,0 +1,175 @@
+{
+  "schema_version": "hyb003-stage-c-predeclaration-v3.1",
+  "experiment_id": "HYB-003",
+  "stage": "C_freeze",
+  "status": "frozen-before-any-model-fit",
+  "frozen_at": "2026-09-10T17:57:53.727464+00:00",
+  "research_role": "This predeclaration locks the full experimental design. No T1/T2/T3 fitting, metric reading or action mapping is permitted before this file is committed and hashed. Any deviation constitutes a protocol violation and the affected results must not be reported as development.",
+  "upstream_artifacts": {
+    "panel": {
+      "path": "paper\\input\\results\\hybrid\\tech_llm_conditional_state_fusion_v3_panel.json",
+      "sha256": "cbcf95feeec96e8120bac2e3da45922981500763f3e55488e2a82ae8f39e2c64"
+    },
+    "text_state": {
+      "path": "paper\\input\\results\\hybrid\\tech_llm_conditional_state_v3_1.json",
+      "sha256": "0fb895ce5961b602a0f00751ea08ccf04c22c0acb141ea29ca8b7b54db0a9ce5"
+    },
+    "stage_b_predeclaration": {
+      "path": "paper\\input\\results\\hybrid\\tech_llm_conditional_state_stage_b_v3_1_predeclared.json",
+      "sha256": "437574adef5cdde4a0cee10f0bd350c14a62cb9f64c291b5215c433feaf71ee0"
+    },
+    "stage_b_power_audit": {
+      "path": "paper\\input\\results\\hybrid\\tech_llm_conditional_state_stage_b_power_audit_v3_1.json",
+      "sha256": "c2c9a6084d844bf8a88ea38c4d8ddedee7f9c09884c1f02240408cdf86d32a09"
+    },
+    "full_extraction": {
+      "path": "paper\\input\\results\\hybrid\\hyb003_text_state_full_v3_1\\extraction.json",
+      "sha256": "de47f0829634b0894cac94ace494115895e278b835a72a1a836631bcb112dc8d"
+    },
+    "full_extraction_gate": {
+      "path": "paper\\input\\results\\hybrid\\hyb003_text_state_full_v3_1\\gate.json",
+      "sha256": "7fc88ef53af8581f2bb3123b5902947bdb2d5945ad5fc54f287a093c7cda9ef8"
+    }
+  },
+  "arms": {
+    "T0": "Frozen Tech-Control execution — no learned overlay.",
+    "T1": "Tech-state-only regularized linear model.",
+    "T2": "Text-state-only diagnostic arm — not primary comparator.",
+    "T3": "Tech-state + causal text-state regularized linear model with registered interactions."
+  },
+  "primary_contrast": "T3 minus T1 paired mean net utility at identical eligible timestamps",
+  "system_contrast": "T3 minus T0 net portfolio performance under identical execution contract",
+  "target": {
+    "name": "net_action_value",
+    "definition": "Counterfactual net PnL of exposure 0.5 minus exposure 1.0 from current 4h bar open to next 4h open or earlier shadow exit, after adverse execution, fees and funding. Already materialized in panel rows['target']['net_action_value'].",
+    "units": "fraction of notional",
+    "label_source": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_panel.json",
+    "grouping": "shadow_trade cluster (trade_id field)"
+  },
+  "t1_features": [
+    "asset_identity_fold_encoded",
+    "trade_age_bars",
+    "return_from_entry",
+    "dist_to_stop_over_atr",
+    "atr_over_price",
+    "realized_range_4h",
+    "realized_range_24h",
+    "return_4h_lag1",
+    "return_12h_lag1",
+    "return_24h_lag1",
+    "funding_current",
+    "funding_mean_24h",
+    "tech_rank_score"
+  ],
+  "t3_additional_text_features": [
+    "adverse_mass",
+    "supportive_mass",
+    "adverse_h4_mass",
+    "supportive_h4_mass",
+    "applicable_headline_count",
+    "adverse_headline_count",
+    "supportive_headline_count",
+    "source_domain_count",
+    "novel_signature_count",
+    "text_available_this_bar",
+    "dominant_stage_encoded",
+    "dominant_mechanism_encoded"
+  ],
+  "t3_registered_interactions": [
+    "adverse_mass * dist_to_stop_over_atr",
+    "supportive_mass * dist_to_stop_over_atr",
+    "novel_signature_count * trade_age_bars",
+    "dominant_stage_encoded * realized_range_24h",
+    "adverse_h4_mass * (action horizon == 4h indicator)",
+    "asset_scope_direct * asset_identity_fold_encoded"
+  ],
+  "learner": {
+    "family": "Ridge regression (regularized linear)",
+    "implementation": "sklearn.linear_model.Ridge",
+    "regularization_search": "nested 3-fold CV inside each expanding training window",
+    "alpha_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "standardization": "StandardScaler fit on training window only",
+    "capacity_rule": "T1 and T3 use the same alpha grid, CV budget and training window. T3 must not have a larger regularization budget than T1.",
+    "inference": "cluster-bootstrap with 10000 draws; cluster = trade_id",
+    "seed": 20260911
+  },
+  "folds": [
+    {
+      "fold_id": 1,
+      "train_end_iso": "2024-03-31T23:59:59+00:00",
+      "eval_start_iso": "2024-04-04T04:00:00+00:00",
+      "eval_end_iso": "2024-08-31T23:59:59+00:00"
+    },
+    {
+      "fold_id": 2,
+      "train_end_iso": "2024-08-31T23:59:59+00:00",
+      "eval_start_iso": "2024-09-04T04:00:00+00:00",
+      "eval_end_iso": "2024-12-31T23:59:59+00:00"
+    },
+    {
+      "fold_id": 3,
+      "train_end_iso": "2024-12-31T23:59:59+00:00",
+      "eval_start_iso": "2025-01-04T04:00:00+00:00",
+      "eval_end_iso": "2025-08-28T23:59:59+00:00"
+    }
+  ],
+  "cost_contract": {
+    "round_trip_fee_fraction": "2 * taker_fee as recorded in panel overlay_cost",
+    "adverse_execution_slippage": "included in panel overlay_cost per row",
+    "funding_portion": "included in panel overlay_cost per row",
+    "uncertainty_deadband_rule": "Take action w=0.5 only when the ridge estimate of net_action_value exceeds overlay_cost for that row plus one cluster-robust standard error estimated from the training fold. Otherwise hold w=1.0 (no-action default).",
+    "note": "overlay_cost is already materialized; no post-hoc cost adjustment is permitted."
+  },
+  "placebos": [
+    {
+      "name": "timestamp_shuffled_text",
+      "description": "Shuffle decision-row timestamps within each fold, keeping the text-state vector fixed, to destroy the causal signal while preserving the marginal feature distribution.",
+      "expectation": "T3 must beat this placebo for the text signal to be non-spurious."
+    },
+    {
+      "name": "metadata_only_text",
+      "description": "Replace all text-derived features with only headline count and source domain count; set all mass/pressure/mechanism/stage fields to zero. This tests whether raw volume rather than content drives any result.",
+      "expectation": "T3 must beat this placebo to claim content-level signal."
+    },
+    {
+      "name": "delayed_text_24h",
+      "description": "Shift every text record's available_at timestamp forward by exactly 24h before aggregation; this makes the state causally invalid but preserves the distribution of content. Represents a strict PIT failure scenario.",
+      "expectation": "T3 must beat this placebo to confirm the PIT advantage of causally available text."
+    }
+  ],
+  "mdd_definition": "Maximum drop from equity peak to trough within any shadow trade window, measured at 4h close marks, aggregated across the full evaluation period. This definition is frozen here and must not change after Stage C.",
+  "development_pass_criteria": [
+    "lower bound of 95% cluster-bootstrap CI for T3-T1 paired net utility > 0",
+    "lower bound of 95% cluster-bootstrap CI for T3-T0 paired net portfolio utility > 0",
+    "T3 net contrast positive in at least 2 of 3 chronological folds (both T3-T1 and T3-T0)",
+    "T3 beats all three placebos on paired mean net utility at the same eligible timestamps",
+    "T3 portfolio intrabar MDD <= T0 intrabar MDD under the one frozen MDD definition below",
+    "effective independent trade clusters >= minimum set in Stage B power audit"
+  ],
+  "prohibited_actions": [
+    "Adding, removing or renaming features after reading any Stage D metric",
+    "Adding interaction terms after reading any Stage D metric",
+    "Changing fold boundaries after this file is written",
+    "Adjusting the deadband rule after reading any outcome",
+    "Reporting Stage D results as validation, holdout or live evidence",
+    "Selecting placebos after reading any Stage D metric",
+    "Giving T3 a larger tuning budget than T1"
+  ],
+  "stage_b_summary": {
+    "panel_trade_clusters": 23,
+    "new_text_trade_clusters": 16,
+    "active_applicable_trade_clusters": 17,
+    "new_text_decisions": 71,
+    "all_decision_mde": 0.0010321567533318526,
+    "applicable_text_mde": 0.0009657629934560855,
+    "median_overlay_cost": 0.0011463993819951948
+  }
+}

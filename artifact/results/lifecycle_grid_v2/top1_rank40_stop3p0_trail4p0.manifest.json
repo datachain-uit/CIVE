@@ -1,0 +1,727 @@
+{
+  "configuration": {
+    "balance": 10000,
+    "daily_cache_dir": "results\\bybit_lifecycle_daily",
+    "exclude_symbols": "",
+    "fee_bps": 6.0,
+    "fold_days": 180,
+    "four_h_cache_dir": "results\\bybit_lifecycle_4h",
+    "funding_cache_dir": "results\\bybit_lifecycle_funding",
+    "gross_leverage": 1.0,
+    "impact_bps": 1.0,
+    "manifest": "results\\bybit_lifecycle_universe.json",
+    "rank_days": 40,
+    "slippage_bps": 3.0,
+    "spread_bps": 2.0,
+    "stop_atr": 3.0,
+    "top_n": 1,
+    "trail_atr": 4.0,
+    "workers": 6
+  },
+  "data": [
+    {
+      "bytes": 607240,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\1000BONKUSDT_1672971039000_1786492800000.json",
+      "sha256": "d34f837da4d0f9d1d29aa82b57cb263fe259503d8cae388a4bd783b7a673004d"
+    },
+    {
+      "bytes": 597647,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\1000LUNCUSDT_1662681601000_1786492800000.json",
+      "sha256": "a1f8dc1a6d2ff9d1cf309b9a25be3ceff94ea6f7be9f577def4138a9bd19332d"
+    },
+    {
+      "bytes": 582250,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\1000PEPEUSDT_1683108271000_1786492800000.json",
+      "sha256": "876942e98f00f448dd0406861d364848daa43e06042c343bef0b1ce155bb1355"
+    },
+    {
+      "bytes": 595838,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ADAUSDT_1660348800000_1786492800000.json",
+      "sha256": "426501d59dd74790cdb98d89c57a677053500184ab864166ba4cd405955e68ee"
+    },
+    {
+      "bytes": 559432,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\APTUSDT_1666107272000_1786492800000.json",
+      "sha256": "279d33b59dc5336a900362fa81200a01e5e25c0d77774139ca86f5ad8ba81053"
+    },
+    {
+      "bytes": 514031,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ARBUSDT_1679563660000_1786492800000.json",
+      "sha256": "25d190a23c986ddff325f7cd5328615a08cc9c1b5bed3e28b8fdf6e33caf58ad"
+    },
+    {
+      "bytes": 552743,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ATOMUSDT_1660348800000_1786492800000.json",
+      "sha256": "b7339cbdfd948e4a5600a62fc777af1ec22415ef69aea3c7ad082d5e75ad76f0"
+    },
+    {
+      "bytes": 560763,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\AVAXUSDT_1660348800000_1786492800000.json",
+      "sha256": "0322232eb1a927c1cde752ce0c66ef19b49c40f7c58c05cb9b40aa2fbaaa28b3"
+    },
+    {
+      "bytes": 542627,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BCHUSDT_1660348800000_1786492800000.json",
+      "sha256": "ebb2d181c600c23504bed34ffd472005237e192dd34ba2e876b9d74d42f0b193"
+    },
+    {
+      "bytes": 364345,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BLZUSDT_1660348800000_1735034400000.json",
+      "sha256": "76b9d6aea729a726f4d2e6a6272f1f3a55ba9356c7c7afb038527682b9714090"
+    },
+    {
+      "bytes": 642116,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BTCUSDT_1660348800000_1786492800000.json",
+      "sha256": "9757ea7ddb7f1562d3e9a9e3e157c8dd6ce7aefbf8c48cafaa589db2717505e0"
+    },
+    {
+      "bytes": 408089,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\CYBERUSDT_1692124015000_1786492800000.json",
+      "sha256": "6f4367b81f06b128caa480b41d66e4e388ddfd9f8e4daa99e739693d0165628c"
+    },
+    {
+      "bytes": 646563,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\DOGEUSDT_1660348800000_1786492800000.json",
+      "sha256": "060b95dda1e54d8746329dbaeea47c1b03c835046aa4f101c1bddd89771c53ba"
+    },
+    {
+      "bytes": 558947,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETCUSDT_1660348800000_1786492800000.json",
+      "sha256": "e84b3c9752c139502178549a37cbd7990fe3de13dee4d4a319f6c198cfe4621c"
+    },
+    {
+      "bytes": 626939,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETHUSDT_1660348800000_1786492800000.json",
+      "sha256": "73e24db6a1e7e711f17f231dec43f9647509bc71c883bec8b88a48d063407172"
+    },
+    {
+      "bytes": 251975,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\FARTCOINUSDT_1734683847000_1786492800000.json",
+      "sha256": "04bb8659f94a0e651937d6e811d55102ef1f3764e6580f69f30ff064b30f3846"
+    },
+    {
+      "bytes": 652949,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\GALAUSDT_1660348800000_1786492800000.json",
+      "sha256": "d5b553920b5779f6100da6348feb9389dc4f858699f786ec1655fddb1a232f27"
+    },
+    {
+      "bytes": 374233,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\GASUSDT_1698044952000_1786492800000.json",
+      "sha256": "183ae0e7b589a1d47ad4516171d50e36eebd0143bab5602adaca64c9524d3960"
+    },
+    {
+      "bytes": 317262,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\HIFIUSDT_1693210322000_1761814800000.json",
+      "sha256": "2ed1408ce817082672e03cf8cae80abaad095a2886739f531cdc5ce5f1003b48"
+    },
+    {
+      "bytes": 252496,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\HYPEUSDT_1733316740000_1786492800000.json",
+      "sha256": "34c2a177857e4594f88a29376c43b46835056bef82fefe907f3343b3a7659a69"
+    },
+    {
+      "bytes": 420939,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\LINAUSDT_1660348800000_1743066000000.json",
+      "sha256": "606b3f321395c88db37c9e89262997bc1d0486f391b8f75be8a60b0b735abdbd"
+    },
+    {
+      "bytes": 566367,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\LINKUSDT_1660348800000_1786492800000.json",
+      "sha256": "7c998e8d68ed537b646f903439d97e9ad2d3d228963956bdb6da290eb84eca92"
+    },
+    {
+      "bytes": 158006,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\LOOMUSDT_1695276752000_1727172000000.json",
+      "sha256": "5fe082d4468b0cc4391fbcba608d8b37fdedf55b7be0d25e575de871a6e53387"
+    },
+    {
+      "bytes": 575898,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\LUNA2USDT_1660348800000_1786492800000.json",
+      "sha256": "00c991023adeccd4c5578e71d8af6e68b44a8b4b0579bec182d2cd3100ad2aa2"
+    },
+    {
+      "bytes": 306885,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\MATICUSDT_1660348800000_1725616800000.json",
+      "sha256": "0637d60606ff767aab4baaaae31e60db5ca1df59afef5f32b489edb6478ba8be"
+    },
+    {
+      "bytes": 389431,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\NOTUSDT_1715874083000_1786492800000.json",
+      "sha256": "04f1350526289273dad9fa0f33373511d300dd90358217db048fe75c11699bed"
+    },
+    {
+      "bytes": 599363,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\OPUSDT_1660348800000_1786492800000.json",
+      "sha256": "2d6bf548cb05705473c4bc6e7466f80953307a644adadf103d1b6c1b263228a0"
+    },
+    {
+      "bytes": 460360,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ORDIUSDT_1684739410000_1786492800000.json",
+      "sha256": "b62e9bf0455c5a313f29974138222dd053fbcc7100387c941b5e697281989d18"
+    },
+    {
+      "bytes": 630781,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\PEOPLEUSDT_1660348800000_1786492800000.json",
+      "sha256": "abe6751c1a311c16146bbfbb367da927927035c1d96304763bd2663d2e28478d"
+    },
+    {
+      "bytes": 408564,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\RAREUSDT_1701067684000_1786492800000.json",
+      "sha256": "7a1ae5f7bdc637e29a591a3e1fdfc419272183e5f9375dec86f7b345dca39edb"
+    },
+    {
+      "bytes": 101380,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\RAVEUSDT_1765777812000_1786492800000.json",
+      "sha256": "83546b9259e57c6024eb142a24e8d83061ef8653931aa772270e64def6040789"
+    },
+    {
+      "bytes": 110236,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\RIVERUSDT_1761136287000_1786492800000.json",
+      "sha256": "ab56010875faf9ea93ab55717b855a1cea6462e118964d5c34521274007755bf"
+    },
+    {
+      "bytes": 286487,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\RNDRUSDT_1660348800000_1721642400000.json",
+      "sha256": "2c050858c7f4b16e11884efa73b94fe7cae81250d7e8695e44a96cef828cd8d9"
+    },
+    {
+      "bytes": 456795,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SEIUSDT_1692156527000_1786492800000.json",
+      "sha256": "18aa5bc391479ad02c88f5432716e86636fe9621f93fc66bb9386828049607ce"
+    },
+    {
+      "bytes": 582267,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SOLUSDT_1660348800000_1786492800000.json",
+      "sha256": "bb20d8cfc63acb693c83d1e7cea3eba9c57e0106cb09a152dd549a055cfd4532"
+    },
+    {
+      "bytes": 33138,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SOXLUSDT_1779178631000_1786492800000.json",
+      "sha256": "ead2f5437be061e6ea4de7cf76289c1b370829fa811b52fdf81d7cd8c324a3b0"
+    },
+    {
+      "bytes": 486044,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SUIUSDT_1683029724000_1786492800000.json",
+      "sha256": "e00cc80b3502c329f807cccfe9842d1b3e8dfb5fed21b82e9c1b172f0205dda2"
+    },
+    {
+      "bytes": 394916,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\TIAUSDT_1698768749000_1786492800000.json",
+      "sha256": "0dbe39dc1c2f731eab33a2eb02e562aa54d3781c61ba595e5122f83aa35fb7b2"
+    },
+    {
+      "bytes": 554191,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\TRBUSDT_1660348800000_1786492800000.json",
+      "sha256": "cb27abd9a6df94361925404f626c2ad168880a995211dbe39bcd67ca2e9df234"
+    },
+    {
+      "bytes": 217242,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\TRUMPUSDT_1737181907000_1786492800000.json",
+      "sha256": "1fdb05df2ef50ae2ff68afafa5a361d2d1a3dc3f9b6e9ed357c22f9acd159e51"
+    },
+    {
+      "bytes": 438201,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\WLDUSDT_1690184920000_1786492800000.json",
+      "sha256": "92f1ec49ec2b1f8d440dd80fcb1ec48c38b17d5968f582843228fd165b8b9ea7"
+    },
+    {
+      "bytes": 604825,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\XRPUSDT_1660348800000_1786492800000.json",
+      "sha256": "e562859371a5e6442cb16b235c5c79c9ce2e8e2d0e2c6ab2cce33362d3075377"
+    },
+    {
+      "bytes": 530975,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ZECUSDT_1660348800000_1786492800000.json",
+      "sha256": "a4d09d8615b239e721e6a467b63cbe5746be42e507980dd0b159760e5d8e0a93"
+    },
+    {
+      "bytes": 103391,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\1000BONKUSDT_1672971039000_1786406400000.json",
+      "sha256": "74f0e2c973e2e2bf5552fbca501224ca03a37068d17dd056859088301942623a"
+    },
+    {
+      "bytes": 101962,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\1000LUNCUSDT_1662681601000_1786406400000.json",
+      "sha256": "011d7e74d03151e51258b236df269a8fdd089c38d7f628dc61bc8442d34a2bba"
+    },
+    {
+      "bytes": 98961,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\1000PEPEUSDT_1683108271000_1786406400000.json",
+      "sha256": "921b6a1cd8511de2723d323c1d343e85ae7a540e3cf8934dadbca9aa9f803c70"
+    },
+    {
+      "bytes": 101668,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ADAUSDT_1660348800000_1786406400000.json",
+      "sha256": "b8085e585241c7889ca9d344c3736b2276deedc2b886a9b423e0d7fb7ab9c8a9"
+    },
+    {
+      "bytes": 95505,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\APTUSDT_1666107272000_1786406400000.json",
+      "sha256": "857fb92bc4c99de6028474a37b236ba624dd3e47ba6f82c19d6db4cce60f6e7e"
+    },
+    {
+      "bytes": 87675,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ARBUSDT_1679563660000_1786406400000.json",
+      "sha256": "9b1a70b4222432c7b3d7841f7e1d38f495bd0ff310154f6c5e6b97316f2d43d7"
+    },
+    {
+      "bytes": 94518,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ATOMUSDT_1660348800000_1786406400000.json",
+      "sha256": "40f648f2dc6076f75456576c32a1b5b46997507f608d1851005b40a551d09e65"
+    },
+    {
+      "bytes": 95901,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\AVAXUSDT_1660348800000_1786406400000.json",
+      "sha256": "0906611bd1a32ed63aa962fc57d150a17245979144c40f4ea1bc9998e581a4fc"
+    },
+    {
+      "bytes": 92817,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\BCHUSDT_1660348800000_1786406400000.json",
+      "sha256": "1c87da9a556c3ff8dccac2e819b1416d4694a9b5e4e28c81c641c911fc69dd6b"
+    },
+    {
+      "bytes": 62274,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\BLZUSDT_1660348800000_1735034400000.json",
+      "sha256": "274777ae158634adfdf8935d54206d04dd7a83a19f1d2ea3d4c2aedc61ef4f90"
+    },
+    {
+      "bytes": 109382,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\BTCUSDT_1660348800000_1786406400000.json",
+      "sha256": "7ed956ce1a316e011736e06561df190c6f305632b6c15e6339001b284cf3bb00"
+    },
+    {
+      "bytes": 69836,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\CYBERUSDT_1692124015000_1786406400000.json",
+      "sha256": "10ee2d23a6bcc5487474d766cabd161bf963832585e856baafdbbc0be6beec77"
+    },
+    {
+      "bytes": 110238,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\DOGEUSDT_1660348800000_1786406400000.json",
+      "sha256": "efa491dc38423042865eb76a43df7d31855fce57ac13273d89c21dd53c00099c"
+    },
+    {
+      "bytes": 95495,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ETCUSDT_1660348800000_1786406400000.json",
+      "sha256": "4e4045d6be4ac30e1cf1051aa693e3d0830c4fd6449872bec482b21c7a6c9f64"
+    },
+    {
+      "bytes": 106900,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ETHUSDT_1660348800000_1786406400000.json",
+      "sha256": "bdb53a779224bc3c6295a8c8936f8ca49a50819d4c0d9aebbea81fed0e835642"
+    },
+    {
+      "bytes": 42915,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\FARTCOINUSDT_1734683847000_1786406400000.json",
+      "sha256": "2525c44f8ec7e7e09d48376556e1fe58b5390f5d0e6b1bc5e2f750b4b373df30"
+    },
+    {
+      "bytes": 111304,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\GALAUSDT_1660348800000_1786406400000.json",
+      "sha256": "622e03a44941d30f2f350533dde76492cf451719c8469750a329cf201fa1f666"
+    },
+    {
+      "bytes": 64112,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\GASUSDT_1698044952000_1786406400000.json",
+      "sha256": "c1dbb81807791578fe7d34401819b65d099ebd099d5dbe3d5f0fa4f912fb9f10"
+    },
+    {
+      "bytes": 54152,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\HIFIUSDT_1693210322000_1761814800000.json",
+      "sha256": "171d637b6dabdd6f8e37e08f9388b80dd613b93dfe09f7ac74a2dc8dd3507423"
+    },
+    {
+      "bytes": 43047,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\HYPEUSDT_1733316740000_1786406400000.json",
+      "sha256": "952a97b2a989ea4f5907a78895c0fa404a43bbead4892f66c21d574976bf4d00"
+    },
+    {
+      "bytes": 71760,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\LINAUSDT_1660348800000_1743066000000.json",
+      "sha256": "45c1cc6df661de30ff686cd5e2794c87490c58434e4d73a3a7ecc24b6853b728"
+    },
+    {
+      "bytes": 96681,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\LINKUSDT_1660348800000_1786406400000.json",
+      "sha256": "ab9a2a64bf7f379f812948d3fcd5ee49ae5b81962b803d8d35b860af727abab6"
+    },
+    {
+      "bytes": 26911,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\LOOMUSDT_1695276752000_1727172000000.json",
+      "sha256": "2dd6e16fbd38ffa0cc3c89d668523fc96b47f24e6b2da8cc816ec2d46829c1e1"
+    },
+    {
+      "bytes": 98420,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\LUNA2USDT_1660348800000_1786406400000.json",
+      "sha256": "77982583df108ffb8972e8b46cc14be76b653ad002eca93dca595b9d8ed3da67"
+    },
+    {
+      "bytes": 52349,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\MATICUSDT_1660348800000_1725616800000.json",
+      "sha256": "0be3f9239ad7dfc2407db94c1a88d0bd573086862c0bf22f951b723c9c4181d8"
+    },
+    {
+      "bytes": 66189,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\NOTUSDT_1715874083000_1786406400000.json",
+      "sha256": "312037571d0966e0850defb3a3a7661f214aca607a9f991750645f45d1e0e002"
+    },
+    {
+      "bytes": 102168,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\OPUSDT_1660348800000_1786406400000.json",
+      "sha256": "ff5ab621f19ebe4add64a3efbf654d841b2b3ea581cacbf7b33f19c4469f0e74"
+    },
+    {
+      "bytes": 78621,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ORDIUSDT_1684739410000_1786406400000.json",
+      "sha256": "17893ec76fc26bd3eec4f3ed6154a352ab3b3550a2352457e07462fa84806f14"
+    },
+    {
+      "bytes": 107535,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\PEOPLEUSDT_1660348800000_1786406400000.json",
+      "sha256": "7566adc75dc2c57a187bb876670c3f28098ef032ab89b0be154a20ae167d9c08"
+    },
+    {
+      "bytes": 69760,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\RAREUSDT_1701067684000_1786406400000.json",
+      "sha256": "69602977e181134a4ddef231ee839eee5c29edc620832e376c0693c962ef7b07"
+    },
+    {
+      "bytes": 17250,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\RAVEUSDT_1765777812000_1786406400000.json",
+      "sha256": "7f99bd3f97cbf131ccd605757a3923072e6a6cd43fbe808754bef0999d18ad22"
+    },
+    {
+      "bytes": 18784,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\RIVERUSDT_1761136287000_1786406400000.json",
+      "sha256": "26888dfd6f63ee02b112995bfad8536e51dbb5c375c4872164fd0bfcacb56410"
+    },
+    {
+      "bytes": 48904,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\RNDRUSDT_1660348800000_1721642400000.json",
+      "sha256": "295033c23fd4a743858a99ba16a5838495b07480834abfb7304e0157402c680f"
+    },
+    {
+      "bytes": 77837,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\SEIUSDT_1692156527000_1786406400000.json",
+      "sha256": "1bfab5242466e746c728a5f6e6b9ce8a3db04041198836a77ef26fa528d6b0ae"
+    },
+    {
+      "bytes": 99393,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\SOLUSDT_1660348800000_1786406400000.json",
+      "sha256": "f4923b381319f792f4f38572981c24a4e314b79cfbbcff1c660f2386313d01e9"
+    },
+    {
+      "bytes": 5639,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\SOXLUSDT_1779178631000_1786406400000.json",
+      "sha256": "9da894477810e16097eb258cd6f9a8a69e68b322135c3c5042f1ede2e633d165"
+    },
+    {
+      "bytes": 82865,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\SUIUSDT_1683029724000_1786406400000.json",
+      "sha256": "db9762315c85775c79777f9afe649e27cb214ad7cdb788a285467f22a678acc8"
+    },
+    {
+      "bytes": 67513,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\TIAUSDT_1698768749000_1786406400000.json",
+      "sha256": "c217fba5922236230b026c290c6621ccebb881f83f3a188e70ad5b68b1b18d27"
+    },
+    {
+      "bytes": 94755,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\TRBUSDT_1660348800000_1786406400000.json",
+      "sha256": "8b4d2919e21db2e63ec330e10e0546bfd1bb634afa036609121f686c4234addf"
+    },
+    {
+      "bytes": 37091,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\TRUMPUSDT_1737181907000_1786406400000.json",
+      "sha256": "01c1b39bb014d6764fdc211961d75d2e2beef14f40cbb85ceb7b0e156ea1128a"
+    },
+    {
+      "bytes": 74754,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\WLDUSDT_1690184920000_1786406400000.json",
+      "sha256": "a6627fc8aae612442f95156d99e580e27c9d3a01676212ea972f1bad6afc2a2a"
+    },
+    {
+      "bytes": 103248,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\XRPUSDT_1660348800000_1786406400000.json",
+      "sha256": "1d108840df12de6ed9e35410f046a07a5fb70e556e2e1b972cdacd2aa5c43ac8"
+    },
+    {
+      "bytes": 90939,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_daily\\ZECUSDT_1660348800000_1786406400000.json",
+      "sha256": "ec70dd3bbe121133510fd82b7504839f293e74334be8b281e756f712ec9f9d6b"
+    },
+    {
+      "bytes": 136221,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\1000BONKUSDT_1672971039000_1786492800000.json",
+      "sha256": "b1e69bc32cb31f2fc04ff23b5b17e6e43c3fb851ae312582001304d30967e0f3"
+    },
+    {
+      "bytes": 106017,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\1000LUNCUSDT_1662681601000_1786492800000.json",
+      "sha256": "6cc07ff007029abe77360fb9e3009624cd1d80561f2041b09b96f13b604fe136"
+    },
+    {
+      "bytes": 88304,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\1000PEPEUSDT_1683108271000_1786492800000.json",
+      "sha256": "335c010970a31056788f936745ac2a65f187ac209e764d7f990350f976ad1b2b"
+    },
+    {
+      "bytes": 108271,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ADAUSDT_1660348800000_1786492800000.json",
+      "sha256": "106031e19867bb2f74698b50706f8f0cc3839bba7500cb571fa6bfd6007e9339"
+    },
+    {
+      "bytes": 105895,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\APTUSDT_1666107272000_1786492800000.json",
+      "sha256": "967f0bc7409484646acb5b5d57183267af8b52dfda76300496c9db9010eab81a"
+    },
+    {
+      "bytes": 91474,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ARBUSDT_1679563660000_1786492800000.json",
+      "sha256": "89f13cc4394889be42f33f4df2ee407f6d74b4f23afd659deaadbd00c16e46f0"
+    },
+    {
+      "bytes": 110569,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ATOMUSDT_1660348800000_1786492800000.json",
+      "sha256": "93226036791c2f0a773741caeda1fbc53deeacfc8a0a72570947a31188ddf679"
+    },
+    {
+      "bytes": 109709,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\AVAXUSDT_1660348800000_1786492800000.json",
+      "sha256": "d9238757001c0f044a853b9614adcb5607782406fb6c064d4048fe5a52248e66"
+    },
+    {
+      "bytes": 112262,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\BCHUSDT_1660348800000_1786492800000.json",
+      "sha256": "41b473476ced096c66fe3266d9527ecd4093fb263c7b27a2f384cfc6d02f2a32"
+    },
+    {
+      "bytes": 65186,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\BLZUSDT_1660348800000_1735034400000.json",
+      "sha256": "40435b00a37669e7351437d3b2c30c2ec0c39bd7bee4a271570a820704b49052"
+    },
+    {
+      "bytes": 109968,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\BTCUSDT_1660348800000_1786492800000.json",
+      "sha256": "5b34211d092d5e500f8d610a4dde3529775a5d55a8d200e86ada9a3a37a51e90"
+    },
+    {
+      "bytes": 122028,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\CYBERUSDT_1692124015000_1786492800000.json",
+      "sha256": "3c169b1f319278493101743c1b2f33528de94463844db4593a4f10fc52845fea"
+    },
+    {
+      "bytes": 108252,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\DOGEUSDT_1660348800000_1786492800000.json",
+      "sha256": "be50b6393ed117b7163779b3ff2a8a92829a5d61d7a959c47cccaafc23a739b7"
+    },
+    {
+      "bytes": 108691,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ETCUSDT_1660348800000_1786492800000.json",
+      "sha256": "0aea3fc932d223b81dd1df6a41e3677d09d67104deed5158940d65e0d1d9aa84"
+    },
+    {
+      "bytes": 110166,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ETHUSDT_1660348800000_1786492800000.json",
+      "sha256": "4072967d06c3792a30e079e1f94b345e0395464bb4face78ca402e319d58745f"
+    },
+    {
+      "bytes": 81300,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\FARTCOINUSDT_1734683847000_1786492800000.json",
+      "sha256": "5f9c1e4b33bfcf075fdf9ec0cadbbeab69e0a5e38c7e8a11333301d1dac09833"
+    },
+    {
+      "bytes": 106931,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\GALAUSDT_1660348800000_1786492800000.json",
+      "sha256": "9d7cd83214195b9c47daa0ea199c2ca42760ffd7f34a8bfb6805e66eea2dcb4c"
+    },
+    {
+      "bytes": 163956,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\GASUSDT_1698044952000_1786492800000.json",
+      "sha256": "ee5f8e7635e6170d7866f64111b3a1d8586490de86adc85b32df76d0d612d8b1"
+    },
+    {
+      "bytes": 77661,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\HIFIUSDT_1693210322000_1761814800000.json",
+      "sha256": "a58fe77119a8ef9c453850ec917b65e03b9195b404e414687acfd4b249d29b0b"
+    },
+    {
+      "bytes": 45552,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\HYPEUSDT_1733316740000_1786492800000.json",
+      "sha256": "89a449d757e5240be0dd7cc714031887041759fca1f34829235901b96ad5883e"
+    },
+    {
+      "bytes": 68834,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\LINAUSDT_1660348800000_1743066000000.json",
+      "sha256": "a4ae90b6f7f3033f5b675a9e7f094e3907926134c6771c8151c4458f3c56dae4"
+    },
+    {
+      "bytes": 107909,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\LINKUSDT_1660348800000_1786492800000.json",
+      "sha256": "f1f24567c246da8be05fdfe47c3d81372b0109c0402e98e494f7e4d98bc02f77"
+    },
+    {
+      "bytes": 52045,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\LOOMUSDT_1695276752000_1727172000000.json",
+      "sha256": "f5a650f5ba4eb8291899064ff17ebe85734507ed87af442a2d3fad3787325843"
+    },
+    {
+      "bytes": 150951,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\LUNA2USDT_1660348800000_1786492800000.json",
+      "sha256": "99af61600c44961c337b76050d774388660adf532389c860bef384bea1111d23"
+    },
+    {
+      "bytes": 56436,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\MATICUSDT_1660348800000_1725616800000.json",
+      "sha256": "74f749b1f93981e2af519b19f5cdfa0e8415243195f2ab57b3ae875e228bc353"
+    },
+    {
+      "bytes": 96820,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\NOTUSDT_1715874083000_1786492800000.json",
+      "sha256": "8cae754ceceafc5c9a54dce2c557655833a84a39eaf7d6467601850bb0e861b9"
+    },
+    {
+      "bytes": 108283,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\OPUSDT_1660348800000_1786492800000.json",
+      "sha256": "fd0393b990b569f8facf46aee6a4e609a0152073056cffb9791d0c6a464342b6"
+    },
+    {
+      "bytes": 124033,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ORDIUSDT_1684739410000_1786492800000.json",
+      "sha256": "64cd4403d3b6615c2a05b4ebe9a7513258396ab550aa2b4e30a6e6eb78dbc8aa"
+    },
+    {
+      "bytes": 105069,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\PEOPLEUSDT_1660348800000_1786492800000.json",
+      "sha256": "d80647769f6001839569058f071cae2994ce45f6e76d83789eeec665bcce3383"
+    },
+    {
+      "bytes": 119226,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\RAREUSDT_1701067684000_1786492800000.json",
+      "sha256": "0e7a51f33158779052f868c558bf95185b930e38260781ceae97c1a27aa68aa0"
+    },
+    {
+      "bytes": 47911,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\RAVEUSDT_1765777812000_1786492800000.json",
+      "sha256": "6553f147dc638c97fd904c0002161d0c68676a5a5913dfbe2293d67c8cb73548"
+    },
+    {
+      "bytes": 97299,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\RIVERUSDT_1761136287000_1786492800000.json",
+      "sha256": "197453a238e1682f2517081d93a642bcf13e28c64f82742e0668bda9cd4abf71"
+    },
+    {
+      "bytes": 52981,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\RNDRUSDT_1660348800000_1721642400000.json",
+      "sha256": "6f04e4c6b8dfd3446779090c454888679bc680930f171a6bfe9c08da117e2975"
+    },
+    {
+      "bytes": 83358,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\SEIUSDT_1692156527000_1786492800000.json",
+      "sha256": "79e6c3fc83855e06bd27e5e86516fba41d27aa61da3e2c43f4b4e3c69cf32547"
+    },
+    {
+      "bytes": 119629,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\SOLUSDT_1660348800000_1786492800000.json",
+      "sha256": "634c812f286e9f8d92d493acdc77b3698c9b33329e365ab9beabc585e7dd8226"
+    },
+    {
+      "bytes": 6035,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\SOXLUSDT_1779178631000_1786492800000.json",
+      "sha256": "d6c0aef88fa854b7841f24f9e5fedac72e4d4914e58e93f233cfbaecb54f153a"
+    },
+    {
+      "bytes": 89253,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\SUIUSDT_1683029724000_1786492800000.json",
+      "sha256": "1fc94152973d00f20e473f694a771787459f70b1177a90adc0b81d7f3e4cc8c3"
+    },
+    {
+      "bytes": 115756,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\TIAUSDT_1698768749000_1786492800000.json",
+      "sha256": "845630a30936156dbfe06061709be591ec8f7aa777eea9da5219a48f9b0dd3f9"
+    },
+    {
+      "bytes": 168794,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\TRBUSDT_1660348800000_1786492800000.json",
+      "sha256": "5bcdc1249adfcb22385ab2e02ed751b0b8327eb75a7a03f66d726765bec1f883"
+    },
+    {
+      "bytes": 85280,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\TRUMPUSDT_1737181907000_1786492800000.json",
+      "sha256": "123d7e5bad65549a453f1a55c38552008d935139af7a7ffbe9c423cff8229f81"
+    },
+    {
+      "bytes": 83403,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\WLDUSDT_1690184920000_1786492800000.json",
+      "sha256": "cba9c6f8a9547a7fd76fb847f87660b2ab31e088ce8cb99ae2c49fe65a66e65e"
+    },
+    {
+      "bytes": 108935,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\XRPUSDT_1660348800000_1786492800000.json",
+      "sha256": "ec2743922cd207cdbcad594a95fab4bddb2a04966f81b2561365a4c5f6eec5e1"
+    },
+    {
+      "bytes": 105574,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ZECUSDT_1660348800000_1786492800000.json",
+      "sha256": "e77e2d6c7a44dab8037dd17d58b24e1e6c193240dd861fc0908d2626a9539c42"
+    },
+    {
+      "bytes": 106802,
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_universe.json",
+      "sha256": "b9d91cdfa9b34be339e209f4d3d48203931df2cf59b8505826045123632ec5f6"
+    }
+  ],
+  "event_order": [
+    "delisting_exit",
+    "bar_open_rebalance",
+    "funding_settlement",
+    "intrabar_stop",
+    "close_mark"
+  ],
+  "execution_semantics": "open_funding_intrabar_v2",
+  "generated_at": "2026-08-13T15:12:46.567145+00:00",
+  "git_revision": "9e543b46fa0e0b4c2c26304b64a659b420182b77",
+  "git_status_porcelain": "D README_HACKATHON.md\n D deep-research-report.md\n M executor/backtest_report.py\n M executor/backtester.py\n M executor/executor.py\n M main.tex\n M references.bib\n?? Literature_Matrix_Sheets.py\n?? Literature_Matrix_Sheets.xlsx\n?? data/\n?? executor/batch_llm_scorer.py\n?? executor/download_and_score_news.py\n?? executor/fetch_historical_microstructure.py\n?? executor/funding_carry_research.py\n?? executor/microstructure_recorder.py\n?? executor/multi_backtest.py\n?? executor/optimize_tech.py\n?? executor/research_statistics.py\n?? executor/sentiment_models.py\n?? executor/shift_dates.py\n?? executor/statistical_tests.py\n?? executor/technical_autoquant_evaluator.py\n?? executor/technical_basis_factor_research.py\n?? executor/technical_bear_research.py\n?? executor/technical_bybit_lifecycle_execution.py\n?? executor/technical_bybit_lifecycle_universe.py\n?? executor/technical_channel_walkforward.py\n?? executor/technical_cross_asset_execution.py\n?? executor/technical_cross_asset_research.py\n?? executor/technical_ensemble_evaluator.py\n?? executor/technical_execution_semantics.py\n?? executor/technical_experiment_manifest.py\n?? executor/technical_lifecycle_concentration_regime.py\n?? executor/technical_lifecycle_robustness.py\n?? executor/technical_lifecycle_robustness_report.py\n?? executor/technical_momentum_factor_research.py\n?? executor/technical_pit_optimizer.py\n?? executor/technical_reversal_liquidity_research.py\n?? executor/technical_rule_research.py\n?? executor/technical_selection_inference.py\n?? executor/test_technical_cross_asset_execution.py\n?? executor/test_technical_execution_semantics.py\n?? executor/test_technical_selection_inference.py\n?? results/ablation_ai_180d.json\n?? results/ablation_ai_llama3_730d.json\n?? results/ablation_hybrid_180d.json\n?? results/ablation_hybrid_llama3_730d.json\n?? results/ablation_hybrid_llama3_730d_trades.json\n?? results/ablation_vibe_180d.json\n?? results/ablation_vibe_730d.json\n?? results/ablation_vibe_730d_trades.json\n?? results/ai_comparison.json\n?? results/basis_cache/\n?? results/bybit_lifecycle_4h/\n?? results/bybit_lifecycle_daily/\n?? results/bybit_lifecycle_funding/\n?? results/bybit_lifecycle_universe.json\n?? results/funding_cache/\n?? results/funding_carry_4y_top2.json\n?? results/historical_ai_data.json\n?? results/historical_ai_data_shifted.json\n?? results/historical_ai_data_test.json\n?? results/historical_microstructure.json\n?? results/lifecycle_cost_sweep_v2_100bps.json\n?? results/lifecycle_cost_sweep_v2_100bps.manifest.json\n?? results/lifecycle_cost_sweep_v2_150bps.json\n?? results/lifecycle_cost_sweep_v2_150bps.manifest.json\n?? results/lifecycle_cost_sweep_v2_175bps.json\n?? results/lifecycle_cost_sweep_v2_175bps.manifest.json\n?? results/lifecycle_cost_sweep_v2_200bps.json\n?? results/lifecycle_cost_sweep_v2_200bps.manifest.json\n?? results/lifecycle_cost_sweep_v2_25bps.json\n?? results/lifecycle_cost_sweep_v2_25bps.manifest.json\n?? results/lifecycle_cost_sweep_v2_50bps.json\n?? results/lifecycle_cost_sweep_v2_50bps.manifest.json\n?? results/lifecycle_grid/\n?? results/lifecycle_grid_v2/\n?? results/lifecycle_leave_one_out_v2/\n?? results/llm_sentiment_llama3.json\n?? results/llm_sentiment_qwen2_5_7b.json\n?? results/market_data_cache/\n?? results/multi_asset_2y_vibe.json\n?? results/open_interest_cache/\n?? results/order_flow_cache/\n?? results/risk_limit_cache/\n?? results/statistical_significance.json\n?? results/tech_regime_breakout_10_walk_forward.json\n?? results/tech_regime_breakout_walk_forward.json\n?? results/tech_regime_momentum_walk_forward.json\n?? results/tech_walk_forward.json\n?? results/technical_amihud_asset-veto_2x_base.json\n?? results/technical_amihud_asset-veto_3x_base.json\n?? results/technical_amihud_asset-veto_5x_base.json\n?? results/technical_amihud_combined-veto_2x_base.json\n?? results/technical_amihud_combined-veto_3x_base.json\n?? results/technical_amihud_combined-veto_5x_base.json\n?? results/technical_amihud_control_2026-08-12_base.json\n?? results/technical_amihud_market-veto_2x_base.json\n?? results/technical_amihud_market-veto_3x_base.json\n?? results/technical_amihud_market-veto_5x_base.json\n?? results/technical_autoquant/\n?? results/technical_autoquant_evaluation.json\n?? results/technical_basis_factor_bybit_long.json\n?? results/technical_basis_factor_bybit_long_base.json\n?? results/technical_basis_factor_consensus_high_low.json\n?? results/technical_basis_factor_consensus_high_low_paper5.json\n?? results/technical_basis_factor_consensus_long.json\n?? results/technical_basis_factor_consensus_long_paper5.json\n?? results/technical_bear_4y_top2_rank20.json\n?? results/technical_bybit_lifecycle_1x_base.json\n?? results/technical_bybit_lifecycle_1x_candidate_hardened.json\n?? results/technical_bybit_lifecycle_1x_candidate_hardened.manifest.json\n?? results/technical_bybit_lifecycle_1x_candidate_hardened_harsh.json\n?? results/technical_bybit_lifecycle_1x_candidate_hardened_harsh.manifest.json\n?? results/technical_bybit_lifecycle_1x_candidate_hardened_stress.json\n?? results/technical_bybit_lifecycle_1x_candidate_hardened_stress.manifest.json\n?? results/technical_bybit_lifecycle_1x_winner.json\n?? results/technical_bybit_lifecycle_1x_winner_harsh.json\n?? results/technical_bybit_lifecycle_1x_winner_stress.json\n?? results/technical_channel_walkforward_4y.json\n?? results/technical_cross_asset_4y_liquid10_top2_rank20.json\n?? results/technical_cross_asset_4y_top1.json\n?? results/technical_cross_asset_4y_top2.json\n?? results/technical_cross_asset_4y_top2_30bps.json\n?? results/technical_cross_asset_4y_top2_rank7.json\n?? results/technical_cross_asset_4y_top3.json\n?? results/technical_cross_asset_execution_4y.json\n?? results/technical_cross_asset_execution_4y_actual_funding.json\n?? results/technical_cross_asset_execution_4y_fixed_stop.json\n?? results/technical_cross_asset_execution_4y_fixed_stop_folds.json\n?? results/technical_cross_asset_execution_4y_liquid10_actual_funding.json\n?? results/technical_cross_asset_execution_4y_no_atr_exit.json\n?? results/technical_cross_asset_execution_4y_pyramid3_actual_funding.json\n?? results/technical_cross_asset_execution_730d.json\n?? results/technical_cross_asset_inversevol10_4y.json\n?? results/technical_cross_asset_inversevol20_4y.json\n?? results/technical_cross_asset_inversevol40_4y.json\n?? results/technical_ensemble/\n?? results/technical_ensemble_evaluation.json\n?? results/technical_growth_730d_actual_funding.json\n?? results/technical_growth_basis_bybit_base.json\n?? results/technical_growth_basis_consensus_base.json\n?? results/technical_growth_basis_consensus_funding_base.json\n?? results/technical_growth_basis_okx_base.json\n?? results/technical_growth_derivatives_combined_base.json\n?? results/technical_growth_derivatives_control_base.json\n?? results/technical_growth_derivatives_funding_base.json\n?? results/technical_growth_derivatives_funding_harsh.json\n?? results/technical_growth_derivatives_funding_stress.json\n?? results/technical_growth_derivatives_oi_base.json\n?? results/technical_growth_flow_control_base.json\n?? results/technical_growth_flow_divergence_base.json\n?? results/technical_growth_flow_positive_base.json\n?? results/technical_growth_flow_rank_base.json\n?? results/technical_growth_pit_liquidity5_1_5x_tiered_base.json\n?? results/technical_growth_pit_liquidity5_1_5x_tiered_harsh.json\n?? results/technical_growth_pit_liquidity5_1_5x_tiered_stress.json\n?? results/technical_growth_pit_liquidity5_1x_base.json\n?? results/technical_growth_universe10_control_base.json\n?? results/technical_growth_universe10_flow_positive_base.json\n?? results/technical_growth_universe10_flow_rank_base.json\n?? results/technical_growth_universe10_funding_base.json\n?? results/technical_growth_universe10_harsh.json\n?? results/technical_growth_universe10_leverage_1_5x_730d.json\n?? results/technical_growth_universe10_leverage_1_5x_base.json\n?? results/technical_growth_universe10_leverage_1_5x_harsh.json\n?? results/technical_growth_universe10_leverage_1_5x_stress.json\n?? results/technical_growth_universe10_leverage_2x_730d.json\n?? results/technical_growth_universe10_leverage_2x_base.json\n?? results/technical_growth_universe10_leverage_2x_harsh.json\n?? results/technical_growth_universe10_leverage_2x_stress.json\n?? results/technical_growth_universe10_pyramid3.json\n?? results/technical_growth_universe10_stress.json\n?? results/technical_growth_volume_veto_base.json\n?? results/technical_growth_volume_veto_harsh.json\n?? results/technical_growth_volume_veto_stress.json\n?? results/technical_lifecycle_concentration_regime_v2.json\n?? results/technical_lifecycle_robustness_report_v2.json\n?? results/technical_lifecycle_robustness_v2.json\n?? results/technical_momentum_factor_4y.json\n?? results/technical_momentum_factor_4y_30bps.json\n?? results/technical_pit_optimizer/\n?? results/technical_pit_optimizer_summary.json\n?? results/technical_pit_search_control_cache.json\n?? results/technical_pit_top1_1_5x_tiered_base.json\n?? results/technical_pit_top1_1_5x_tiered_harsh.json\n?? results/technical_pit_top1_1_5x_tiered_stress.json\n?? results/technical_pit_top1_momentum_1_5x_base.json\n?? results/technical_pit_top1_momentum_1_5x_harsh.json\n?? results/technical_pit_top1_momentum_1_5x_stress.json\n?? results/technical_pit_top1_momentum_1x_harsh.json\n?? results/technical_pit_top1_momentum_1x_stress.json\n?? results/technical_pit_top1_momentum_samebarfix_base.json\n?? results/technical_reversal_all_4y.json\n?? results/technical_reversal_high_4y.json\n?? results/technical_reversal_low_4y.json\n?? results/technical_reversal_low_4y_30bps.json\n?? results/technical_rule_research_4y_all5families.json\n?? results/technical_rule_research_4y_market_state.json\n?? results/technical_rule_research_4y_split730.json\n?? results/technical_rule_research_730d.json\n?? results/technical_rule_research_730d_long_short.json\n?? results/technical_rule_research_730d_market_state.json\n?? results/technical_rule_research_730d_regime.json\n?? results/technical_rule_research_730d_shortfix.json\n?? results/technical_rule_research_730d_train_ranked.json\n?? results/technical_rule_research_730d_trend_side.json\n?? results/technical_sr_portfolio_4y_eligible4.json\n?? results/technical_sr_walkforward_4y.json\n?? results/technical_weekly_oscillator_top1_gate_base.json\n?? results/technical_weekly_oscillator_top1_nogate_base.json\n?? results/technical_weekly_oscillator_top2_gate_base.json\n?? results/technical_weekly_oscillator_top2_nogate_base.json\n?? results/test_3pair_2y.json",
+  "result": {
+    "bytes": 40657,
+    "path": "D:\\projects\\auto-trading\\results\\lifecycle_grid_v2\\top1_rank40_stop3p0_trail4p0.json",
+    "sha256": "b14e374a0eb22f59281fb93fd125bf7ccfcdbb620d7159508baa7620cfc8f448"
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "bytes": 22825,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_bybit_lifecycle_execution.py",
+      "sha256": "7792de767b630ed945c43e9f9868ce5524805420c81a0eef01c56e907f413ab8"
+    },
+    {
+      "bytes": 8863,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_bybit_lifecycle_universe.py",
+      "sha256": "78ed5d3db00c19731793cdcfe78287016b8b045003f42901e8fb4207fa1c9d11"
+    },
+    {
+      "bytes": 52567,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_cross_asset_execution.py",
+      "sha256": "fe5e0cafef1054097335786646de69111ef678c4c33c0e90d123c2e6e58d1a64"
+    },
+    {
+      "bytes": 10337,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_cross_asset_research.py",
+      "sha256": "1bc791d38ff8cb321e4110eab3415bb591951ba513a07a9cea1ccaca1895e7c4"
+    },
+    {
+      "bytes": 1733,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_execution_semantics.py",
+      "sha256": "33b66d520dde411b432c0cda1b5c665781e5166a2d000a9acba2fd1a3a37a16a"
+    },
+    {
+      "bytes": 2299,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_experiment_manifest.py",
+      "sha256": "06ef042f0963725d85df7cf8c15e59bcb02f84eaa3a665fa8ede103c915a895f"
+    },
+    {
+      "bytes": 21073,
+      "path": "D:\\projects\\auto-trading\\executor\\technical_rule_research.py",
+      "sha256": "3292e0ae7a6856242b3b91d74325ed4361e5f76ae0cc64357fcb8e1f3a092e72"
+    }
+  ]
+}

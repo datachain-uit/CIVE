@@ -1,0 +1,394 @@
+[
+  {
+    "id": "monetary20220111a",
+    "listed_date": "1/11/2022",
+    "last_update_label": "Last Update: October 18, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220128a",
+    "listed_date": "1/28/2022",
+    "last_update_label": "Last Update: February 04, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220210a",
+    "listed_date": "2/10/2022",
+    "last_update_label": "Last Update: February 11, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220322a",
+    "listed_date": "3/22/2022",
+    "last_update_label": "Last Update: April 13, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "monetary20220412a",
+    "listed_date": "4/12/2022",
+    "last_update_label": "Last Update: June 03, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220511a",
+    "listed_date": "5/11/2022",
+    "last_update_label": "Last Update: May 31, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220701b",
+    "listed_date": "7/1/2022",
+    "last_update_label": "Last Update: October 14, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220816a",
+    "listed_date": "8/16/2022",
+    "last_update_label": "Last Update: April 24, 2025",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220923a",
+    "listed_date": "9/23/2022",
+    "last_update_label": "Last Update: October 06, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20220928a",
+    "listed_date": "9/28/2022",
+    "last_update_label": "Last Update: October 04, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221003a",
+    "listed_date": "10/3/2022",
+    "last_update_label": "Last Update: March 02, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221013a",
+    "listed_date": "10/13/2022",
+    "last_update_label": "Last Update: October 21, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221013b",
+    "listed_date": "10/13/2022",
+    "last_update_label": "Last Update: October 21, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221014a",
+    "listed_date": "10/14/2022",
+    "last_update_label": "Last Update: November 01, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221129a",
+    "listed_date": "11/29/2022",
+    "last_update_label": "Last Update: December 09, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221215a",
+    "listed_date": "12/15/2022",
+    "last_update_label": "Last Update: December 19, 2022",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221216a",
+    "listed_date": "12/16/2022",
+    "last_update_label": "Last Update: January 26, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221219a",
+    "listed_date": "12/19/2022",
+    "last_update_label": "Last Update: March 02, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20221221a",
+    "listed_date": "12/21/2022",
+    "last_update_label": "Last Update: January 06, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230103a",
+    "listed_date": "1/3/2023",
+    "last_update_label": "Last Update: April 24, 2025",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230127a",
+    "listed_date": "1/27/2023",
+    "last_update_label": "Last Update: February 07, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230223a",
+    "listed_date": "2/23/2023",
+    "last_update_label": "Last Update: April 24, 2025",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230601a",
+    "listed_date": "6/1/2023",
+    "last_update_label": "Last Update: June 22, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230606a",
+    "listed_date": "6/6/2023",
+    "last_update_label": "Last Update: June 12, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230608a",
+    "listed_date": "6/8/2023",
+    "last_update_label": "Last Update: July 26, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20230808a",
+    "listed_date": "8/8/2023",
+    "last_update_label": "Last Update: August 15, 2025",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231006a",
+    "listed_date": "10/6/2023",
+    "last_update_label": "Last Update: May 08, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231020a",
+    "listed_date": "10/20/2023",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231020b",
+    "listed_date": "10/20/2023",
+    "last_update_label": "Last Update: October 25, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231024b",
+    "listed_date": "10/24/2023",
+    "last_update_label": "Last Update: October 30, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231025a",
+    "listed_date": "10/25/2023",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231113a",
+    "listed_date": "11/13/2023",
+    "last_update_label": "Last Update: November 29, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231113b",
+    "listed_date": "11/13/2023",
+    "last_update_label": "Last Update: November 29, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231117a",
+    "listed_date": "11/17/2023",
+    "last_update_label": "Last Update: November 24, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231122a",
+    "listed_date": "11/22/2023",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20231220a",
+    "listed_date": "12/20/2023",
+    "last_update_label": "Last Update: December 21, 2023",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240122a",
+    "listed_date": "1/22/2024",
+    "last_update_label": "Last Update: January 30, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240321a",
+    "listed_date": "3/21/2024",
+    "last_update_label": "Last Update: March 29, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240503a",
+    "listed_date": "5/3/2024",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240621b",
+    "listed_date": "6/21/2024",
+    "last_update_label": "Last Update: June 26, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240717a",
+    "listed_date": "7/17/2024",
+    "last_update_label": "Last Update: August 08, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240719a",
+    "listed_date": "7/19/2024",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240725c",
+    "listed_date": "7/25/2024",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240802a",
+    "listed_date": "8/2/2024",
+    "last_update_label": "Last Update: November 18, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240805a",
+    "listed_date": "8/5/2024",
+    "last_update_label": "Last Update: August 15, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20240913a",
+    "listed_date": "9/13/2024",
+    "last_update_label": "Last Update: September 19, 2024",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20241113a",
+    "listed_date": "11/13/2024",
+    "last_update_label": "Last Update: May 18, 2026",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20241203a",
+    "listed_date": "12/3/2024",
+    "last_update_label": "Last Update: May 18, 2026",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  },
+  {
+    "id": "bcreg20241219a",
+    "listed_date": "12/19/2024",
+    "last_update_label": "Last Update: January 03, 2025",
+    "reasons": [
+      "last_update_not_release_day"
+    ]
+  }
+]

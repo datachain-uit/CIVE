@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-20T05:13:31.039995+00:00",
+  "experiment_id": "llm-nemotron3-nano4b-challenger-v1-development",
+  "candidate": {
+    "model": "nemotron-3-nano:4b",
+    "digest": "6cc467f054393a55e98a74098abde0c762ffb6d1d8cd64becf30458f38886197",
+    "architecture": "nemotron_h hybrid Mamba-Transformer",
+    "parameters": "4.0B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 2837597147,
+    "license": "NVIDIA Open Model License Agreement",
+    "rationale": "compact NVIDIA challenger with a model family distinct from prior Qwen, Gemma, Llama, and DeepSeek candidates; selected for local instruction following and tool-use capability, with thinking disabled to protect the frozen JSON contract",
+    "thinking_mode": "disabled",
+    "primary_sources": [
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+      "https://ollama.com/library/nemotron-3-nano:4b"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "information_sets": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run1": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run2": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "exact_score_agreement": {
+      "observed": 102,
+      "required_min": 103,
+      "passed": false
+    },
+    "long_flat_action_agreements": {
+      "observed": 108,
+      "required_min": 107,
+      "passed": true
+    },
+    "mean_absolute_score_difference": {
+      "observed": 0.012037037037037037,
+      "required_max": 0.01,
+      "passed": false
+    },
+    "max_absolute_score_difference": {
+      "observed": 0.4,
+      "required_max": 0.4,
+      "passed": true
+    }
+  },
+  "passed": false,
+  "status": "stage1-fail-stop-before-full-inference",
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\configs\\llm_nemotron3_nano4b_challenger_v1_development.json",
+    "config_sha256": "1b577d38d0554689ff07f47869d052c2b8e25d98ebcceb2edebd6a3ba3f3713a",
+    "audit": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_determinism_v1.json",
+    "audit_sha256": "c243dbbeb4a41851dfdd110aab446bb2bfd09e20de963a08c943d075486bc29a",
+    "left": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_run1_v1.json",
+    "left_sha256": "b53916dc7288f6125256a4536fbb27beff834c3b793271b3cc79ce0cdc782626",
+    "right": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_run2_v1.json",
+    "right_sha256": "cccf8e432d8b9039770f07d970ab71df89336e00f375612059d5b8d2accebd7b"
+  }
+}

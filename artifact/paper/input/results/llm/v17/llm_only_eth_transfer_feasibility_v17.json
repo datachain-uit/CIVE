@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LLM-072-ETH-transfer-feasibility-v17",
+  "generated_at": "2026-09-11T03:54:54.588811+00:00",
+  "status": "PASS_TARGET_AND_EVALUATION_AUTHORIZED",
+  "outcomes_consulted": false,
+  "eth_alias_contract": [
+    "eth",
+    "ether",
+    "ethereum"
+  ],
+  "summary": {
+    "calendar_dates": 1079,
+    "eth_event_records": 5341,
+    "eth_event_dates": 1000,
+    "coverage_start": "2022-09-12",
+    "coverage_end": "2025-08-27",
+    "fallback_records": 119,
+    "direction_counts": {
+      "negative": 2221,
+      "positive": 3049,
+      "mixed": 29,
+      "unclear": 42
+    },
+    "fold_counts": [
+      {
+        "fold": 1,
+        "calendar_dates": 139,
+        "eth_event_dates": 118,
+        "eth_event_records": 620
+      },
+      {
+        "fold": 2,
+        "calendar_dates": 139,
+        "eth_event_dates": 131,
+        "eth_event_records": 820
+      },
+      {
+        "fold": 3,
+        "calendar_dates": 139,
+        "eth_event_dates": 134,
+        "eth_event_records": 619
+      },
+      {
+        "fold": 4,
+        "calendar_dates": 139,
+        "eth_event_dates": 132,
+        "eth_event_records": 594
+      },
+      {
+        "fold": 5,
+        "calendar_dates": 143,
+        "eth_event_dates": 137,
+        "eth_event_records": 701
+      }
+    ]
+  },
+  "checks": {
+    "extractor_input_one_to_one": true,
+    "all_extractions_successful": true,
+    "calendar_is_frozen_1079_dates": true,
+    "direct_eth_records_at_least_1000": true,
+    "direct_eth_dates_at_least_700": true,
+    "each_oos_fold_has_at_least_100_eth_event_dates": true,
+    "fallback_fraction_below_0_05": true
+  },
+  "passed": true,
+  "inputs": {
+    "extraction_inputs": {
+      "path": "paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "information_sets": {
+      "path": "paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    }
+  },
+  "scope": "Outcome-free coverage/power screen only; no predictive or trading claim."
+}

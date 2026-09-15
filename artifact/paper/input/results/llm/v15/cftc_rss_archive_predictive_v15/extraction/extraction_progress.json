@@ -1,0 +1,10 @@
+{
+  "status": "EXTRACTION_IN_PROGRESS",
+  "updated_at": "2026-09-08T19:13:37.309536+00:00",
+  "expected_records": 1892,
+  "records": 1892,
+  "success": 1892,
+  "errors": 0,
+  "checkpoint": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v15\\cftc_rss_archive_predictive_v15\\extraction\\extraction_checkpoint.ndjson",
+  "outcomes_consulted": false
+}

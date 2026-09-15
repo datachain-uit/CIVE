@@ -1,0 +1,100 @@
+{
+  "status": "CONDITIONAL_CANDIDATE_NEEDS_FULL_SNAPSHOT_AND_SCHEMA_AUDIT",
+  "scope": "source identity, pinned revision, license and Git LFS pointer only",
+  "candidate": {
+    "owner": "mouadja02",
+    "repository": "bitcoin-news-data",
+    "revision": "29a72033d4e5d4f446e1971a185fcb8300048fe5",
+    "commit_date": "2026-09-05T01:02:06Z",
+    "dataset_files": {
+      "parquet": {
+        "path": "bitcoin-news.parquet",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "daaa416b3e20130c21a78314a87e38fd9452c024",
+        "size": 131,
+        "url": "https://api.github.com/repos/mouadja02/bitcoin-news-data/git/blobs/daaa416b3e20130c21a78314a87e38fd9452c024"
+      },
+      "tsv": {
+        "path": "bitcoin-news.tsv",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dcf982e0f02e2d9cc7bd242c694da6ffe20f7814",
+        "size": 132,
+        "url": "https://api.github.com/repos/mouadja02/bitcoin-news-data/git/blobs/dcf982e0f02e2d9cc7bd242c694da6ffe20f7814"
+      }
+    },
+    "parquet_lfs": {
+      "sha256": "d933f329bc2c2ec5f4e30856d8f5ae0b831c11b2a7c000a0e7e9fc966f30c69e",
+      "bytes": 887735
+    }
+  },
+  "license": {
+    "detected_mit": true,
+    "source_terms_note": "README requires respecting original publishers' terms."
+  },
+  "reproducibility": {
+    "reviewer_checkout": "git clone https://github.com/mouadja02/bitcoin-news-data.git && git checkout 29a72033d4e5d4f446e1971a185fcb8300048fe5 && git lfs pull",
+    "immutable_revision_pinned": true,
+    "full_snapshot_local": false,
+    "full_snapshot_sha256_verified": false,
+    "schema_audited": false
+  },
+  "provenance_limitations": [
+    "Repository README says the dataset is continuously updated; only the pinned commit is in scope.",
+    "Historical publication timestamps are dataset fields, not independent proof of strict point-in-time availability.",
+    "Underlying publisher/API terms require review before model admission.",
+    "No market outcome, model input, LLM inference or predictive metric was accessed in this audit."
+  ],
+  "next_gate": [
+    "Download exact Git LFS object at pinned revision.",
+    "Verify full-file SHA-256 against the LFS pointer.",
+    "Audit schema, timestamp timezone/precision, duplicates and leakage fields.",
+    "Write a reviewer package and freeze an outcome-blind corpus contract before any market join."
+  ],
+  "sources": [
+    {
+      "url": "https://api.github.com/repos/mouadja02/bitcoin-news-data/commits/main",
+      "http_status": 200,
+      "bytes": 5190,
+      "sha256": "8d6b7e079752a9927a2bc313c38f838971bd954edbdb73ba07f157efa2d23464",
+      "fetched_at": "2026-09-05T17:54:04.848561+00:00",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_v12_1\\commit_main.json"
+    },
+    {
+      "url": "https://api.github.com/repos/mouadja02/bitcoin-news-data/git/trees/29a72033d4e5d4f446e1971a185fcb8300048fe5?recursive=1",
+      "http_status": 200,
+      "bytes": 1351,
+      "sha256": "b520d2a98277c016fd0b77a59449f5c323c032f51be949577482dafe311073ec",
+      "fetched_at": "2026-09-05T17:54:05.479143+00:00",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_v12_1\\tree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mouadja02/bitcoin-news-data/29a72033d4e5d4f446e1971a185fcb8300048fe5/README.md",
+      "http_status": 200,
+      "bytes": 5068,
+      "sha256": "9cc75d5442ac16b0083918465a616a5d0d0c1db781e144e08824e9205f2cb36f",
+      "fetched_at": "2026-09-05T17:54:05.959607+00:00",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_v12_1\\README.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mouadja02/bitcoin-news-data/29a72033d4e5d4f446e1971a185fcb8300048fe5/LICENSE",
+      "http_status": 200,
+      "bytes": 1071,
+      "sha256": "af46f7348118351fcd85da217ba8e4dcb952a7160e825e218dd579e67d54da96",
+      "fetched_at": "2026-09-05T17:54:06.444872+00:00",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_v12_1\\LICENSE"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mouadja02/bitcoin-news-data/29a72033d4e5d4f446e1971a185fcb8300048fe5/bitcoin-news.parquet",
+      "http_status": 200,
+      "bytes": 131,
+      "sha256": "cf598dcdffc09bfe5e0d23bed39b4114d9168c361f2858ba506192d0c90a543c",
+      "fetched_at": "2026-09-05T17:54:06.914357+00:00",
+      "path": "paper\\input\\references\\source_artifacts\\bitcoin_news_mouadja02_v12_1\\bitcoin-news.parquet.lfs-pointer"
+    }
+  ],
+  "readme_sha256": "9cc75d5442ac16b0083918465a616a5d0d0c1db781e144e08824e9205f2cb36f",
+  "market_data_accessed": false,
+  "model_run": false
+}

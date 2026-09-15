@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-077--LLM-080-multicoin-risk-v19",
+  "evaluated_at": "2026-09-11T09:42:39.416173+00:00",
+  "status": "FAIL_RISK_TRANSFER",
+  "passed": false,
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-077",
+      "oos_records": 699,
+      "targets": {
+        "h24_realized_volatility": {
+          "overall": {
+            "metadata": {
+              "mse": 0.0003687932127900088,
+              "mae": 0.012605903609526242,
+              "pearson": 0.054854153625476944,
+              "prediction_std": 0.003875549707036473
+            },
+            "generic": {
+              "mse": 0.00037404923451748545,
+              "mae": 0.012634439749241153,
+              "pearson": 0.044765067392825125,
+              "prediction_std": 0.0044867523842440325
+            },
+            "event": {
+              "mse": 0.00038759293799328837,
+              "mae": 0.012829463745100684,
+              "pearson": 0.020652360904546672,
+              "prediction_std": 0.005517551614161282
+            }
+          },
+          "event_minus_metadata": {
+            "delta_mse": -1.8799725203279597e-05,
+            "fold_wins": 0
+          },
+          "event_minus_generic": {
+            "delta_mse": -1.3543703475802922e-05,
+            "fold_wins": 1
+          },
+          "uncertainty": {
+            "event_minus_metadata_delta_mse_95_ci": [
+              -3.332707730405067e-05,
+              -6.249004900388153e-06
+            ],
+            "event_minus_generic_delta_mse_95_ci": [
+              -2.589956955227399e-05,
+              -2.2892365474238787e-06
+            ],
+            "event_pearson_95_ci": [
+              -0.06998729781771468,
+              0.09024309219202287
+            ],
+            "one_sided_p_event_vs_metadata": 0.9994001199760048,
+            "one_sided_p_event_vs_generic": 0.9946010797840432,
+            "one_sided_p_pearson": 0.3787242551489702
+          }
+        },
+        "h24_adverse_excursion_magnitude": {
+          "overall": {
+            "metadata": {
+              "mse": 0.0009237603458602415,
+              "mae": 0.01908941292707108,
+              "pearson": 0.05646597508412915,
+              "prediction_std": 0.0039061491509324686
+            },
+            "generic": {
+              "mse": 0.0009389584849199863,
+              "mae": 0.01941542509655825,
+              "pearson": 0.03256933233076419,
+              "prediction_std": 0.005450997750044701
+            },
+            "event": {
+              "mse": 0.0009625472081570568,
+              "mae": 0.019813041731689983,
+              "pearson": 0.03016249909334081,
+              "prediction_std": 0.0074215432302813375
+            }
+          },
+          "event_minus_metadata": {
+            "delta_mse": -3.8786862296815296e-05,
+            "fold_wins": 0
+          },
+          "event_minus_generic": {
+            "delta_mse": -2.3588723237070552e-05,
+            "fold_wins": 0
+          },
+          "uncertainty": {
+            "event_minus_metadata_delta_mse_95_ci": [
+              -6.453488037377593e-05,
+              -7.244453334207988e-06
+            ],
+            "event_minus_generic_delta_mse_95_ci": [
+              -3.897507741054262e-05,
+              -3.804499659690962e-06
+            ],
+            "event_pearson_95_ci": [
+              -0.0457805443477562,
+              0.1283268990223392
+            ],
+            "one_sided_p_event_vs_metadata": 0.9928014397120576,
+            "one_sided_p_event_vs_generic": 0.9922015596880623,
+            "one_sided_p_pearson": 0.17976404719056188
+          }
+        }
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "records": 139,
+          "metrics": {
+            "h24_realized_volatility": {
+              "metadata": {
+                "mse": 0.0001855324148365257,
+                "mae": 0.010278657050513168,
+                "pearson": -0.14079052613537668,
+                "prediction_std": 0.004587851246797273
+              },
+              "generic": {
+                "mse": 0.0001906444978758746,
+                "mae": 0.01027844479379226,
+                "pearson": -0.10085003197114134,
+                "prediction_std": 0.005392410974127476
+              },
+              "event": {
+                "mse": 0.00023024403895925225,
+                "mae": 0.01077048252833397,
+                "pearson": -0.2746121868951731,
+                "prediction_std": 0.006324422362505654
+              }
+            },
+            "h24_adverse_excursion_magnitude": {
+              "metadata": {
+                "mse": 0.0003818861298377937,
+                "mae": 0.014163587021889515,
+                "pearson": 0.15714406217672042,
+                "prediction_std": 0.003922819296207168
+              },
+              "generic": {
+                "mse": 0.00039564255164168207,
+                "mae": 0.015050943313891315,
+                "pearson": 0.1509148603102158,
+                "prediction_std": 0.006359789330890514
+              },
+              "event": {
+                "mse": 0.00043475747052608714,
+                "mae": 0.015921460105319127,
+                "pearson": 0.12158629832386081,
+                "prediction_std": 0.009348829180690396
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "records": 139,
+          "metrics": {
+            "h24_realized_volatility": {
+              "metadata": {
+                "mse": 0.0003309389336783497,
+                "mae": 0.01148850255970207,
+                "pearson": -0.041032542528804804,
+                "prediction_std": 0.003104576841806068
+              },
+              "generic": {
+                "mse": 0.0003320898348384317,
+                "mae": 0.011569649240032101,
+                "pearson": 0.004830005755000052,
+                "prediction_std": 0.00414540518812888
+              },
+              "event": {
+                "mse": 0.00034117054318957363,
+                "mae": 0.011715364743199959,
+                "pearson": 0.006308935488780563,
+                "prediction_std": 0.004777293879033322
+              }
+            },
+            "h24_adverse_excursion_magnitude": {
+              "metadata": {
+                "mse": 0.0007015429301581787,
+                "mae": 0.018536902061749228,
+                "pearson": 0.11881380163463466,
+                "prediction_std": 0.0036436685655939194
+              },
+              "generic": {
+                "mse": 0.0006860345794621412,
+                "mae": 0.01849407664967359,
+                "pearson": 0.1835843486579246,
+                "prediction_std": 0.005594696629635574
+              },
+              "event": {
+                "mse": 0.0007050714762004552,
+                "mae": 0.018828282213210857,
+                "pearson": 0.1370221251183997,
+                "prediction_std": 0.006822163745774995
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "records": 139,
+          "metrics": {
+            "h24_realized_volatility": {
+              "metadata": {
+                "mse": 0.00034060116550046435,
+                "mae": 0.011564171006889267,
+                "pearson": -0.08806645986591674,
+                "prediction_std": 0.0030490296177864114
+              },
+              "generic": {
+                "mse": 0.00035108792134263053,
+                "mae": 0.0116624030810017,
+                "pearson": -0.10822780833202697,
+                "prediction_std": 0.0036484672348729573
+              },
+              "event": {
+                "mse": 0.0003583407821190767,
+                "mae": 0.011943862226222941,
+                "pearson": -0.056884512098797246,
+                "prediction_std": 0.00488391545505814
+              }
+            },
+            "h24_adverse_excursion_magnitude": {
+              "metadata": {
+                "mse": 0.0011101878591367503,
+                "mae": 0.020050480520353093,
+                "pearson": -0.07464995510269326,
+                "prediction_std": 0.0036784495133023996
+              },
+              "generic": {
+                "mse": 0.0011612675035137232,
+                "mae": 0.020471728666375574,
+                "pearson": -0.15145932124926217,
+                "prediction_std": 0.0052444638353156
+              },
+              "event": {
+                "mse": 0.001176411633553568,
+                "mae": 0.020788801232656636,
+                "pearson": -0.11721625417965875,
+                "prediction_std": 0.0064509638954537065
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "records": 139,
+          "metrics": {
+            "h24_realized_volatility": {
+              "metadata": {
+                "mse": 0.0005977151293973687,
+                "mae": 0.015412204869188179,
+                "pearson": -0.051154318556411234,
+                "prediction_std": 0.0021186524245871015
+              },
+              "generic": {
+                "mse": 0.0006126826275879639,
+                "mae": 0.01544892230976691,
+                "pearson": -0.11395749522093407,
+                "prediction_std": 0.0030685285865523887
+              },
+              "event": {
+                "mse": 0.0006025347650068091,
+                "mae": 0.015344507503448634,
+                "pearson": -0.02227745183976494,
+                "prediction_std": 0.005016118603137093
+              }
+            },
+            "h24_adverse_excursion_magnitude": {
+              "metadata": {
+                "mse": 0.0016716104500166286,
+                "mae": 0.02375625820085387,
+                "pearson": 0.06968497846807233,
+                "prediction_std": 0.0033105100489373555
+              },
+              "generic": {
+                "mse": 0.0017018433792681958,
+                "mae": 0.024205225352956494,
+                "pearson": -0.03172472048533629,
+                "prediction_std": 0.004438577093829314
+              },
+              "event": {
+                "mse": 0.0017175939189614374,
+                "mae": 0.02456482604143058,
+                "pearson": 0.038283426593130915,
+                "prediction_std": 0.007220389851628936
+              }
+            }
+          }
+        },
+        {
+          "fold": 5,
+          "records": 143,
+          "metrics": {
+            "h24_realized_volatility": {
+              "metadata": {
+                "mse": 0.0003886082049360119,
+                "mae": 0.01423898734590321,
+                "pearson": -0.03488447953516397,
+                "prediction_std": 0.0030857039514823833
+              },
+              "generic": {
+                "mse": 0.0003834701844690985,
+                "mae": 0.014168629962945054,
+                "pearson": 0.015130031316479798,
+                "prediction_std": 0.0033624943692373717
+              },
+              "event": {
+                "mse": 0.00040516878103582957,
+                "mae": 0.01432992303956512,
+                "pearson": -0.0686178950257391,
+                "prediction_std": 0.004362047720518067
+              }
+            },
+            "h24_adverse_excursion_magnitude": {
+              "metadata": {
+                "mse": 0.0007583348073045383,
+                "mae": 0.01894402077726666,
+                "pearson": 0.01524283763657213,
+                "prediction_std": 0.004494324278824506
+              },
+              "generic": {
+                "mse": 0.0007552898393633023,
+                "mae": 0.018870823488612146,
+                "pearson": 0.038871816999788485,
+                "prediction_std": 0.005117842239281435
+              },
+              "event": {
+                "mse": 0.0007840384832671863,
+                "mae": 0.018985648930611936,
+                "pearson": -0.01018448017257852,
+                "prediction_std": 0.00645115954678657
+              }
+            }
+          }
+        }
+      ],
+      "holm_adjusted_p": 0.9994001199760048,
+      "checks": {
+        "required_oos_records": true,
+        "delta_mse_ci_lower_gt_zero": false,
+        "event_pearson_ci_lower_gt_zero": false,
+        "fold_wins_at_least_3": false,
+        "prediction_nonconstant": true,
+        "holm_p_below_alpha": false
+      },
+      "passed": false
+    }
+  },
+  "stopped_assets": [
+    "SOLUSDT",
+    "XRPUSDT",
+    "BNBUSDT"
+  ],
+  "inputs": {
+    "predeclaration": {
+      "path": "paper\\input\\results\\llm\\v19\\llm_only_multicoin_risk_evaluation_v19_predeclared.json",
+      "sha256": "555dce5a6b235162da9cb320bf6ca92b8fc9c93a439569d2aad19360fd7bc198"
+    },
+    "panel": {
+      "path": "paper\\input\\results\\llm\\v19\\llm_only_multicoin_risk_panel_v19.json",
+      "sha256": "11fa6f5cab0ae9b0d9b3a39454efc34acc321fdefa6d59786484b353e5e92bb7"
+    },
+    "predictions": {
+      "path": "paper\\input\\results\\llm\\v19\\llm_only_multicoin_risk_predictions_v19.json",
+      "sha256": "59c89efdbfa889f288eb923705bd7ea6ef1def7263fa3cad17e1f9406518d2b1"
+    }
+  },
+  "next_action": "Stop before Tech drawdown/cost evaluation"
+}

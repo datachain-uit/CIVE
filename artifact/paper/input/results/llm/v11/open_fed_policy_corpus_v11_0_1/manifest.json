@@ -1,0 +1,75 @@
+{
+  "status": "REPRODUCIBLE_EXPANDED_TEXT_CORPUS_NOT_PREDICTIVE_FREEZE",
+  "archive_links": 174,
+  "admitted_documents": 162,
+  "excluded_documents": 12,
+  "per_year": {
+    "2022": 55,
+    "2023": 51,
+    "2024": 56
+  },
+  "exclusion_reason_counts": {
+    "release_timestamp_missing_or_ambiguous": 2,
+    "body_too_short": 10
+  },
+  "same_timestamp_groups": 7,
+  "documents_in_same_timestamp_groups": 14,
+  "files": {
+    "build_open_fed_policy_corpus_v11.py": "2b1afa4773043d748965a499b799b10cd691a642f107b792b1bc6cfb6f684fb3",
+    "corpus.json": "ade8903aeb52d82b88bea71b00512de0a122b6576d008fd052c247eedef6ae42",
+    "excluded.json": "f3c5011a6e10a38c14d44527cd1bae597f287ccffd405acfd559d1886d3c19fc",
+    "NOTICE.md": "505ee7f0ce7cd59e6bdeda562d740c344ab4468c294625abc2f07958102e0410",
+    "predeclared.json": "f4c429ce35500efc8d4c38d5104056bcffbdaf036d02ef8ece845039db9d12aa",
+    "verify.py": "36440fec675f5a5e3f27dc3e737a78d4b2b9aa6567481134b0ea05f54e7487ed"
+  },
+  "sources": [
+    {
+      "url": "https://www.federalreserve.gov/disclaimer.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 85130,
+      "sha256": "721a7ecfe37786cbdb78fbaaee6cb2a115bbaa3b032af7ce4542f5b5b4472f0c",
+      "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\policy.html",
+      "fetched_at": "2026-09-05T06:17:27.598251+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/2022-press.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 191510,
+      "sha256": "c73f788aadbe52b274f142ff1234bdf5cfdd1e716c02fb2971c714ea44f2707b",
+      "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\2022-press.html",
+      "fetched_at": "2026-09-05T06:17:28.230061+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/2023-press.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 174288,
+      "sha256": "723a2652521de9c7dcc27a049c1a6c7eec7b15b903bb11f3add8213d2fb29aa8",
+      "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\2023-press.html",
+      "fetched_at": "2026-09-05T06:17:28.933723+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/2024-press.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 169824,
+      "sha256": "f42429fbae576c264be2d178c15875c108468334ad94d18d717f775269d811ec",
+      "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\2024-press.html",
+      "fetched_at": "2026-09-05T06:17:29.718044+00:00"
+    }
+  ],
+  "market_data_accessed": false,
+  "model_run": false,
+  "historical_first_version_verified": false,
+  "next_gate": [
+    "Archive-version audit",
+    "Event-level grouping and sample-size assessment",
+    "Freeze model/prompt/split/target before joining outcomes"
+  ]
+}

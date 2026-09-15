@@ -1,0 +1,95 @@
+{
+  "audited_at": "2026-09-09T08:33:30.502052+00:00",
+  "category_counts": {
+    "btc_relevance": {
+      "direct": 2,
+      "indirect": 9,
+      "none": 1980,
+      "systemic": 258
+    },
+    "event_type": {
+      "adoption_business": 26,
+      "etf_institutional_flow": 6,
+      "exchange_security": 6,
+      "fraud_legal": 13,
+      "liquidation_leverage": 55,
+      "macro_liquidity": 317,
+      "market_commentary": 71,
+      "other": 51,
+      "regulation": 1704
+    }
+  },
+  "checks": {
+    "all_records_schema_and_evidence_valid": true,
+    "backtest_remains_unconsulted": true,
+    "corpus_identity_matches_predeclaration": true,
+    "count_and_order_match_corpus": true,
+    "extraction_declares_complete": true,
+    "minimum_eligible_information_sets_met": true,
+    "outcomes_remain_unconsulted": true,
+    "record_count_matches": true,
+    "zero_extraction_errors": true
+  },
+  "counts": {
+    "corpus_records": 2249,
+    "eligible_information_sets": 135,
+    "eligible_records": 245,
+    "extraction_errors": 0,
+    "extraction_success": 2249,
+    "minimum_eligible_information_sets": 96,
+    "shortfall_information_sets": 0,
+    "total_information_sets": 400
+  },
+  "eligibility_contract": {
+    "btc_relevance": [
+      "direct",
+      "systemic"
+    ],
+    "event_type": [
+      "adoption_business",
+      "etf_institutional_flow",
+      "exchange_security",
+      "fraud_legal",
+      "liquidation_leverage",
+      "macro_liquidity",
+      "network_protocol",
+      "regulation"
+    ],
+    "manual_filtering": false
+  },
+  "eligible_information_time_range": {
+    "first": "2010-03-11T18:50:00+00:00",
+    "last": "2026-08-31T02:15:20+00:00"
+  },
+  "experiment_id": "ecb-rss-archive-llm-only-event-conditioned-v16-development",
+  "extraction_gate_passed": true,
+  "inputs": {
+    "auditor": {
+      "path": "tools\\llm\\audit_ecb_rss_archive_extraction_gate_v16.py",
+      "sha256": "f13ed50e5ac2e9603a998d066b8bd94cbe3b6df46a1cb71335d6fb405a945d67"
+    },
+    "corpus": {
+      "path": "paper\\input\\results\\llm\\v16\\ecb_rss_archive_corpus_v16\\corpus.json",
+      "sha256": "e168d61f384856356bf4ab248e7aed60856a6ab978b97562d05d4d2450fad082"
+    },
+    "extraction": {
+      "path": "paper\\input\\results\\llm\\v16\\ecb_rss_archive_predictive_v16\\extraction\\extraction.json",
+      "sha256": "f602740b7a1752332da7a8b0cd371ad1d94277fb4a7efe10bb1665f462f80986"
+    },
+    "predeclared": {
+      "path": "paper\\input\\results\\llm\\v16\\ecb_rss_archive_predictive_v16\\predeclared.json",
+      "sha256": "e795b94535babe2de04f5b21175e867b4b87288aa8d5c0490ee3395eadbc95ce"
+    },
+    "progress": {
+      "path": "paper\\input\\results\\llm\\v16\\ecb_rss_archive_predictive_v16\\extraction\\extraction_progress.json",
+      "sha256": "9c35f19d5dc2a34007eaf48705ee19d7678693cadb8cf4bcb2701a50cfd8b78c"
+    }
+  },
+  "outcomes_consulted": false,
+  "passed": true,
+  "schema_version": "ecb-rss-archive-extraction-data-gate-v16",
+  "status": "DATA_GATE_PASS_TARGET_JOIN_AUTHORIZED",
+  "stop_rule": "Data-gate failure freezes this negative artifact and prohibits target join, predictive evaluation, threshold selection, action mapping, backtest, Tech+LLM, and sealed holdout.",
+  "target_join_authorized": true,
+  "trading_backtest_consulted": false
+}

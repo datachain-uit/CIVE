@@ -1,0 +1,16 @@
+# Paths mirrored from artifact/ to the ignored cowork/ workspace.
+configs
+data
+executor
+paper/input
+paper/working/audits
+paper/working/implementation
+paper/working/protocols
+reproduction
+results
+tools/llm
+tools/reproduction
+draw_equity.py
+requirements-fingpt-reproduction.txt
+requirements-reproduction.txt
+statistical_validation.py

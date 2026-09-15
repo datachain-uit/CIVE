@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-predictive-gate-v3.1-development",
+  "predeclared_at": "2026-09-03T12:39:24.1769540Z",
+  "outcomes_consulted_before_lock": false,
+  "trading_backtest_consulted": false,
+  "scope": "Development-only paired OOS predictive gate. This is not a trading backtest or sealed holdout.",
+  "protocol": {
+    "path": "paper/working/protocols/LLM_Event_Risk_Protocol_v3.md",
+    "sha256": "8215EDFED126CEEBDFEF5436AE375215C8ACA6F374F62F2CE4C4F2B75F02F8E2"
+  },
+  "evaluator": {
+    "path": "tools/llm/evaluate_llm_event_predictive_gate_v3.py",
+    "sha256": "4B5F0479FD300E0FFE9B48755B090091C232857BD215CCE684F653B5FFC4E7DA"
+  },
+  "tests": {
+    "path": "tools/llm/test_evaluate_llm_event_predictive_gate_v3.py",
+    "sha256": "26E7F00E35A9CCD253FBE4CB917B4E037035194BB31642A3E43DE9B7FB31D479",
+    "status": "5 tests passed before target evaluation"
+  },
+  "sources": {
+    "extraction_gate": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_full_gate.json",
+      "sha256": "0905906C04AA26469F3CCE2AB3F16851C91C17CCC0B2A98CDE6AF0E653204049"
+    },
+    "extraction_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906E6F6B591523FF28C0DCA124FCD2FE5FC64C363A58A6E3EF008FC1086"
+    },
+    "extraction": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_full_development.json",
+      "sha256": "E084343DB1B70E31B1C11988C007B4C8B089940720DB97BDEF05EC3D9484707B"
+    },
+    "market_features": {
+      "path": "paper/input/results/llm/llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496E75C8E1B70159ACDE2BCBA4749CE5FFA1CF0ED3EF0C6AA64648ABAA2AA0"
+    },
+    "target_panel": {
+      "path": "paper/input/results/llm/v3/llm_event_risk_target_panel_v3_development.json",
+      "sha256": "FB56005B63964DA995D2AF974F9568D4C559429D1594723E9D9A9E0E5A7FB0A7"
+    }
+  },
+  "data_gate": {
+    "required_dates": 1079,
+    "date_start": "2022-09-12",
+    "date_end": "2025-08-27",
+    "required_extraction_records": 39393,
+    "preflight_deduplicated_normalized_headlines": 1,
+    "preflight_kept_semantic_records": 39392
+  },
+  "target": {
+    "field": "h24_return",
+    "asset": "BTCUSDT",
+    "execution_delay_hours": 4,
+    "role": "single primary predictive target"
+  },
+  "arms": {
+    "market": "market-only",
+    "metadata": "market plus deterministic text metadata",
+    "event": "metadata-only plus v3.9 event-vector; single primary treatment"
+  },
+  "feature_contract": {
+    "market_numeric": [
+      "btc_return_24h",
+      "btc_return_72h",
+      "btc_return_168h",
+      "btc_realized_vol_daily_7d",
+      "btc_volume_zscore_30d",
+      "btc_funding_latest",
+      "btc_funding_24h",
+      "btc_funding_72h",
+      "cross_asset_mean_return_24h",
+      "cross_asset_breadth_24h",
+      "cross_asset_dispersion_24h"
+    ],
+    "source_domains": [
+      "cointelegraph.com",
+      "coindesk.com",
+      "decrypt.co",
+      "cryptonews.com",
+      "blockworks.co"
+    ],
+    "coin_types": [
+      "Bitcoin",
+      "Ethereum",
+      "Solana",
+      "Ripple",
+      "Polygon",
+      "Terra",
+      "Dogecoin",
+      "Chainlink",
+      "Avalanche",
+      "Uniswap",
+      "Cardano",
+      "Shiba Inu",
+      "Litecoin",
+      "Polkadot",
+      "XRP",
+      "Binance Coin",
+      "VeChain"
+    ],
+    "btc_relevance": ["direct", "systemic", "indirect", "none"],
+    "event_types": [
+      "macro_liquidity",
+      "regulation",
+      "etf_institutional_flow",
+      "exchange_security",
+      "liquidation_leverage",
+      "network_protocol",
+      "fraud_legal",
+      "adoption_business",
+      "market_commentary",
+      "other"
+    ],
+    "directions": ["positive", "negative", "mixed", "unclear"],
+    "expected_horizons": ["4h", "12h", "24h", "72h", "unknown"],
+    "recurrence_lookback_days": 30,
+    "normalized_duplicate_rule": "Only the first global normalized-headline occurrence contributes metadata composition and semantic event features; recurrence uses all prior headline flow."
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-fold mean/std only; constant columns use scale 1",
+    "hyperparameter_tuning": false
+  },
+  "folds": [
+    {"fold": 1, "train_start": "2022-09-12", "train_end": "2023-09-11", "purge_start": "2023-09-12", "purge_end": "2023-09-14", "valid_start": "2023-09-15", "valid_end": "2024-01-31", "train_records": 365, "valid_records": 139},
+    {"fold": 2, "train_start": "2022-09-12", "train_end": "2024-01-31", "purge_start": "2024-02-01", "purge_end": "2024-02-03", "valid_start": "2024-02-04", "valid_end": "2024-06-21", "train_records": 507, "valid_records": 139},
+    {"fold": 3, "train_start": "2022-09-12", "train_end": "2024-06-21", "purge_start": "2024-06-22", "purge_end": "2024-06-24", "valid_start": "2024-06-25", "valid_end": "2024-11-10", "train_records": 649, "valid_records": 139},
+    {"fold": 4, "train_start": "2022-09-12", "train_end": "2024-11-10", "purge_start": "2024-11-11", "purge_end": "2024-11-13", "valid_start": "2024-11-14", "valid_end": "2025-04-01", "train_records": 791, "valid_records": 139},
+    {"fold": 5, "train_start": "2022-09-12", "train_end": "2025-04-01", "purge_start": "2025-04-02", "purge_end": "2025-04-04", "valid_start": "2025-04-05", "valid_end": "2025-08-27", "train_records": 933, "valid_records": 143}
+  ],
+  "bootstrap": {
+    "method": "paired moving-block bootstrap within fold",
+    "iterations": 5000,
+    "block_length_days": 7,
+    "seed": 20260903,
+    "confidence_level": 0.95
+  },
+  "predictive_gate": {
+    "required_oos_records": 699,
+    "minimum_fold_wins": 3,
+    "all_required_checks": [
+      "paired 95% CI lower bound of MSE(metadata)-MSE(event) > 0",
+      "paired-bootstrap 95% CI lower bound of event Pearson > 0",
+      "event MSE wins in at least 3 of 5 folds",
+      "event predictions are nonconstant"
+    ]
+  },
+  "on_fail": "Stop before threshold selection, action mapping, expanded ablation, trading backtest, Tech+LLM, or sealed holdout.",
+  "on_pass": "Authorize only development-data ablation and overlay design; no trading or holdout claim.",
+  "prohibited_before_result": [
+    "changing target or horizon after reading outcomes",
+    "hyperparameter tuning",
+    "threshold or action mapping",
+    "trading backtest",
+    "Tech+LLM evaluation",
+    "sealed holdout access"
+  ]
+}

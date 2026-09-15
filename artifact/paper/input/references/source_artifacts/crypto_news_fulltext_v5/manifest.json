@@ -1,0 +1,12 @@
+{
+  "schema_version": "source-artifact-manifest-v5",
+  "dataset_repository": "https://huggingface.co/datasets/maryamfakhari/crypto-news-coindesk-2020-2025",
+  "revision": "d7bbdb7360291a81328d121080102f86258139b9",
+  "license_from_dataset_card": "cc-by-nc-4.0",
+  "dataset_card": {
+    "path": "paper/input/references/source_artifacts/crypto_news_fulltext_v5/README.md",
+    "sha256": "6c2990f07ea4eabf59071b510b7e5e535c7fba99b91812eee7e8f97ff2b26292"
+  },
+  "corpus_sha256": "d17b24d672c6e343ce43e267c2ab5c37438edbb88004d8548e626ba28bd2339c",
+  "note": "Dataset card and audit are retained as evidence; the 240 MB corpus remains under runtime/external and is not redistributed in paper/input."
+}

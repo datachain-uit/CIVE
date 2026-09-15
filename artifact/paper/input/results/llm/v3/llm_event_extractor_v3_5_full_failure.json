@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.5-full-extraction",
+  "status": "full-extraction-fail-stop-noncanonical-btc-asset-alias",
+  "failed_at": "2026-08-24T15:02:33+07:00",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "attempted": 432,
+    "success": 428,
+    "errors": 4,
+    "evidence_fallbacks": 8,
+    "failed_batch": 108,
+    "root_error": "ValueError: direct BTC relevance requires BTC or Bitcoin in affected_assets",
+    "root_cause": "The model returned the semantically equivalent asset label Bitcoin (BTC), while the validator accepted only the exact labels BTC or Bitcoin. Atomic batch validation marked all four records as errors."
+  },
+  "decision": "Preserve v3.5 as failed operational evidence. Do not resume this checkpoint. Re-gate a v3.6 contract with a closed allowlist for canonical BTC aliases before another full extraction.",
+  "artifacts": {
+    "config": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_5_full_predeclared.json",
+      "sha256": "5e94228a00446199af1675c1575b494e4a6432cb540e8d6f91d8fa5dbec52e32"
+    },
+    "checkpoint": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_5_full_failed_checkpoint.ndjson",
+      "sha256": "0dc660263620d4d39a72f08a7fa6a492d6162aec6e1989f8d1cb3b86babcb894"
+    },
+    "progress": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_5_full_failed_progress.json",
+      "sha256": "d645b8a8a5e9944f18b729b7e8f372eacc5f84538883f86b4e02cf090f79a8e9"
+    },
+    "supervisor_stdout": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_5_full_failed_supervisor_stdout.log",
+      "sha256": "62c0357ee46a24a95c97a38348246c2e77271740b1004635b5ee3d346e61e687"
+    },
+    "scorer_stdout": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_5_full_failed_scorer_stdout.log",
+      "sha256": "ec965ef1a390a776aa54be0cf885860d0fbe44a5d89e0455a64c3e4905dd67f3"
+    }
+  }
+}

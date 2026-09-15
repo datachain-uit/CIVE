@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Staff Issues No-Action Letter Extension Regarding Counterparties Clearing Swaps through Relief DCOs </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9093-25</link>
+  <description/>
+  <pubDate>Wed, 09 Jul 2025 16:08:15 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9093-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues FCM FAQs</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9091-25</link>
+  <description/>
+  <pubDate>Mon, 30 Jun 2025 14:34:24 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9091-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter to MIAX Futures Exchange, LLC</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9090-25</link>
+  <description/>
+  <pubDate>Wed, 25 Jun 2025 20:21:47 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9090-25</guid>
+    </item>
+<item>
+  <title>CFTC’s Division of Market Oversight Seeks Public Comment on Proposed No-Action Position to MIAX Futures Exchange, LLC</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9089-25</link>
+  <description/>
+  <pubDate>Mon, 23 Jun 2025 22:47:00 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9089-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Extension Regarding Non-U.S. Swap Dealers  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9088-25</link>
+  <description/>
+  <pubDate>Mon, 23 Jun 2025 18:53:21 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9088-25</guid>
+    </item>
+<item>
+  <title>CFTC Announces Additional Cost Savings From Office Leases</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9086-25</link>
+  <description/>
+  <pubDate>Thu, 12 Jun 2025 21:29:14 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9086-25</guid>
+    </item>
+<item>
+  <title>CFTC, SEC Further Extend Form PF Amendments Compliance Date</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9085-25</link>
+  <description/>
+  <pubDate>Wed, 11 Jun 2025 22:22:20 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9085-25</guid>
+    </item>
+<item>
+  <title>CFTC Names Paul Hayeck as Acting Director of Division of Enforcement</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9082-25</link>
+  <description/>
+  <pubDate>Mon, 02 Jun 2025 12:14:37 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9082-25</guid>
+    </item>
+<item>
+  <title>CFTC Resolves Technical Issues with Comment Portal</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9079-25</link>
+  <description/>
+  <pubDate>Thu, 22 May 2025 21:12:11 +0000</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9079-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Advisory on Market Volatility Controls</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9078-25</link>
+  <description/>
+  <pubDate>Thu, 22 May 2025 19:34:45 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9078-25</guid>
+    </item>
+
+  </channel>
+</rss>

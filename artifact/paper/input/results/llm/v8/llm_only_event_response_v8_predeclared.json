@@ -1,0 +1,186 @@
+{
+  "schema_version": "llm-only-event-response-predeclaration-v8",
+  "experiment_id": "llm-only-short-horizon-event-response-v8-development",
+  "predeclared_at": "2026-09-04T16:23:46.531532+00:00",
+  "scope": "Post-v7 development branch; publication-time four-hour response; not sealed confirmation.",
+  "prior_v3_v7_outcomes_consulted": true,
+  "v8_target_distribution_or_model_outcomes_consulted": false,
+  "technical_or_market_features_allowed": false,
+  "protocol": {
+    "path": "paper/working/protocols/LLM_Only_Short_Horizon_Event_Response_Protocol_v8.md",
+    "sha256": "ff85af23cc86b961edb8a466a818b8cbde0c865036b29239b0c093bfbd997f8d"
+  },
+  "code": {
+    "evaluator": {
+      "path": "tools/llm/evaluate_llm_only_event_response_v8.py",
+      "sha256": "1c179446ef8075da8a143b660d5939d7ae59b5fed1ea413b6852093c7f7fa1ab"
+    },
+    "tests": {
+      "path": "tools/llm/test_evaluate_llm_only_event_response_v8.py",
+      "sha256": "99d2eab00e90f920e98f415578c85b7e8240e2dab5cc151c2c5544ffb857c854"
+    },
+    "ridge_and_guard_dependency": {
+      "path": "tools/llm/evaluate_llm_only_event_conditioned_v7.py",
+      "sha256": "b8ddb86f6965b4376b6bff1e6090eeb7819389b6fdc75b2fe7c1ee8fcd98c389"
+    }
+  },
+  "tests": {
+    "status": "3 evaluator tests and 4 panel tests passed before predictive evaluation"
+  },
+  "sources": {
+    "panel": {
+      "path": "paper\\input\\results\\llm\\v8\\llm_only_event_response_panel_v8.json",
+      "sha256": "c9d852fe74924696e81d285c46d7c126aca1b956dd9d9a5645c0b2c04ffe1528"
+    },
+    "panel_audit": {
+      "path": "paper\\input\\results\\llm\\v8\\llm_only_event_response_panel_audit_v8.json",
+      "sha256": "b07bb24600b4a3777d00c99cfcaadbafa253dde5641ffd48efc5edfbb657cfd2"
+    },
+    "panel_predeclaration": {
+      "path": "paper/input/results/llm/v8/llm_only_event_response_panel_v8_predeclared.json",
+      "sha256": "3fa5a7676755fd0b0bac12e6b9dc63fba30eb2b8395fc612e01eeef43db5fa3e"
+    }
+  },
+  "data_gate": {
+    "required_panel_records": 4605,
+    "required_eligible_events": 11970,
+    "required_oos_records": 2633
+  },
+  "target": {
+    "field": "target_h4_return",
+    "asset": "BTCUSDT",
+    "horizon_hours": 4,
+    "role": "single primary target"
+  },
+  "arms": {
+    "prior": "training-fold target mean; diagnostic only",
+    "sentiment": "generic LLM sentiment; direct comparator",
+    "event": "LLM event-conditioned representation; single treatment"
+  },
+  "feature_contract": {
+    "sentiment_feature_names": [
+      "llm_sentiment_positive_fraction",
+      "llm_sentiment_negative_fraction",
+      "llm_sentiment_mixed_fraction",
+      "llm_sentiment_unclear_fraction",
+      "llm_sentiment_signed_mean",
+      "llm_sentiment_directional_severity_mean",
+      "llm_sentiment_directional_confidence_mean",
+      "llm_sentiment_severity_mean",
+      "llm_sentiment_severity_max",
+      "llm_sentiment_surprise_mean",
+      "llm_sentiment_surprise_max",
+      "llm_sentiment_confidence_mean"
+    ],
+    "event_feature_names": [
+      "llm_sentiment_positive_fraction",
+      "llm_sentiment_negative_fraction",
+      "llm_sentiment_mixed_fraction",
+      "llm_sentiment_unclear_fraction",
+      "llm_sentiment_signed_mean",
+      "llm_sentiment_directional_severity_mean",
+      "llm_sentiment_directional_confidence_mean",
+      "llm_sentiment_severity_mean",
+      "llm_sentiment_severity_max",
+      "llm_sentiment_surprise_mean",
+      "llm_sentiment_surprise_max",
+      "llm_sentiment_confidence_mean",
+      "llm_event_relevance_fraction::direct",
+      "llm_event_relevance_fraction::systemic",
+      "llm_event_type_fraction::macro_liquidity",
+      "llm_event_impact::macro_liquidity",
+      "llm_event_type_fraction::regulation",
+      "llm_event_impact::regulation",
+      "llm_event_type_fraction::etf_institutional_flow",
+      "llm_event_impact::etf_institutional_flow",
+      "llm_event_type_fraction::exchange_security",
+      "llm_event_impact::exchange_security",
+      "llm_event_type_fraction::liquidation_leverage",
+      "llm_event_impact::liquidation_leverage",
+      "llm_event_type_fraction::network_protocol",
+      "llm_event_impact::network_protocol",
+      "llm_event_type_fraction::fraud_legal",
+      "llm_event_impact::fraud_legal",
+      "llm_event_type_fraction::adoption_business",
+      "llm_event_impact::adoption_business"
+    ],
+    "prohibited": [
+      "OHLCV",
+      "lagged returns",
+      "volatility",
+      "volume",
+      "funding",
+      "breadth",
+      "regime",
+      "technical indicators",
+      "deterministic text metadata"
+    ]
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-fold mean/std only",
+    "hyperparameter_tuning": false
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-12-31T20:00:00+00:00",
+      "valid_start": "2024-01-01T04:00:00+00:00",
+      "valid_end": "2024-04-30T20:00:00+00:00",
+      "train_records": 1969,
+      "valid_records": 518
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-04-30T20:00:00+00:00",
+      "valid_start": "2024-05-01T04:00:00+00:00",
+      "valid_end": "2024-08-31T20:00:00+00:00",
+      "train_records": 2487,
+      "valid_records": 532
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-08-31T20:00:00+00:00",
+      "valid_start": "2024-09-01T04:00:00+00:00",
+      "valid_end": "2024-12-31T20:00:00+00:00",
+      "train_records": 3020,
+      "valid_records": 552
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-12-31T20:00:00+00:00",
+      "valid_start": "2025-01-01T04:00:00+00:00",
+      "valid_end": "2025-04-30T20:00:00+00:00",
+      "train_records": 3572,
+      "valid_records": 559
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-30T20:00:00+00:00",
+      "valid_start": "2025-05-01T04:00:00+00:00",
+      "valid_end": "2025-08-27T20:00:00+00:00",
+      "train_records": 4132,
+      "valid_records": 472
+    }
+  ],
+  "bootstrap": {
+    "method": "paired moving-block within fold",
+    "iterations": 5000,
+    "block_length_records": 42,
+    "seed": 20260908,
+    "confidence_level": 0.95
+  },
+  "gate": {
+    "required_oos_records": 2633,
+    "minimum_fold_wins": 3,
+    "all_required_checks": [
+      "paired MSE(sentiment)-MSE(event) 95% CI lower bound > 0",
+      "event prediction Pearson 95% CI lower bound > 0",
+      "event MSE wins at least 3 of 5 folds",
+      "required OOS predictions and nonconstant event predictions"
+    ]
+  },
+  "on_fail": "Freeze negative result and stop before threshold, action mapping, backtest, or sealed holdout.",
+  "on_pass": "Authorize only a separate LLM-only development backtest predeclaration."
+}

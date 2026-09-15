@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-08-07T16:01:26.713654+00:00",
+  "status": "research diagnostic; not live approval",
+  "predeclared_grid": [
+    {
+      "top_n": 1,
+      "rank_days": 10,
+      "stop_atr": 0.0
+    },
+    {
+      "top_n": 1,
+      "rank_days": 10,
+      "stop_atr": 2.5
+    },
+    {
+      "top_n": 1,
+      "rank_days": 20,
+      "stop_atr": 0.0
+    },
+    {
+      "top_n": 1,
+      "rank_days": 20,
+      "stop_atr": 2.5
+    },
+    {
+      "top_n": 2,
+      "rank_days": 10,
+      "stop_atr": 0.0
+    },
+    {
+      "top_n": 2,
+      "rank_days": 10,
+      "stop_atr": 2.5
+    },
+    {
+      "top_n": 2,
+      "rank_days": 20,
+      "stop_atr": 0.0
+    },
+    {
+      "top_n": 2,
+      "rank_days": 20,
+      "stop_atr": 2.5
+    },
+    {
+      "top_n": 3,
+      "rank_days": 10,
+      "stop_atr": 0.0
+    },
+    {
+      "top_n": 3,
+      "rank_days": 10,
+      "stop_atr": 2.5
+    },
+    {
+      "top_n": 3,
+      "rank_days": 20,
+      "stop_atr": 0.0
+    },
+    {
+      "top_n": 3,
+      "rank_days": 20,
+      "stop_atr": 2.5
+    }
+  ],
+  "cost_scenarios": [
+    {
+      "name": "base_decomposed",
+      "fee_bps": 6.0,
+      "slippage_bps": 3.0,
+      "spread_bps": 2.0,
+      "impact_bps": 1.0
+    },
+    {
+      "name": "stress",
+      "fee_bps": 10.0,
+      "slippage_bps": 8.0,
+      "spread_bps": 4.0,
+      "impact_bps": 5.0
+    },
+    {
+      "name": "harsh",
+      "fee_bps": 15.0,
+      "slippage_bps": 15.0,
+      "spread_bps": 8.0,
+      "impact_bps": 10.0
+    }
+  ],
+  "locked_core": {
+    "top_n": 2,
+    "rank_days": 20,
+    "stop_atr": 2.5
+  },
+  "locked_cost_stress": {
+    "base_decomposed": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 22395.89,
+        "return_pct": 123.9589,
+        "max_drawdown_pct": 17.696,
+        "fills": 132
+      },
+      "positive_folds": 6,
+      "folds_tested": 8,
+      "applied_funding_events": 716,
+      "missing_funding_events": 0
+    },
+    "stress": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 19849.08,
+        "return_pct": 98.4908,
+        "max_drawdown_pct": 19.4304,
+        "fills": 132
+      },
+      "positive_folds": 5,
+      "folds_tested": 8,
+      "applied_funding_events": 713,
+      "missing_funding_events": 0
+    },
+    "harsh": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 17121.98,
+        "return_pct": 71.2198,
+        "max_drawdown_pct": 21.781,
+        "fills": 132
+      },
+      "positive_folds": 5,
+      "folds_tested": 8,
+      "applied_funding_events": 713,
+      "missing_funding_events": 0
+    }
+  },
+  "configuration_summary": {
+    "top1_rank10_stop0p0": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 25319.43,
+        "return_pct": 153.1943,
+        "max_drawdown_pct": 24.1675,
+        "fills": 72
+      },
+      "positive_folds": 4,
+      "folds_tested": 8
+    },
+    "top1_rank10_stop2p5": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 23507.06,
+        "return_pct": 135.0706,
+        "max_drawdown_pct": 24.8009,
+        "fills": 90
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    },
+    "top1_rank20_stop0p0": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 30253.37,
+        "return_pct": 202.5337,
+        "max_drawdown_pct": 15.6035,
+        "fills": 72
+      },
+      "positive_folds": 6,
+      "folds_tested": 8
+    },
+    "top1_rank20_stop2p5": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 28204.52,
+        "return_pct": 182.0452,
+        "max_drawdown_pct": 19.622,
+        "fills": 88
+      },
+      "positive_folds": 6,
+      "folds_tested": 8
+    },
+    "top2_rank10_stop0p0": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 23148.49,
+        "return_pct": 131.4849,
+        "max_drawdown_pct": 21.7893,
+        "fills": 104
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    },
+    "top2_rank10_stop2p5": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 21737.86,
+        "return_pct": 117.3786,
+        "max_drawdown_pct": 18.5425,
+        "fills": 134
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    },
+    "top2_rank20_stop0p0": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 23857.38,
+        "return_pct": 138.5738,
+        "max_drawdown_pct": 21.3043,
+        "fills": 104
+      },
+      "positive_folds": 6,
+      "folds_tested": 8
+    },
+    "top2_rank20_stop2p5": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 22395.89,
+        "return_pct": 123.9589,
+        "max_drawdown_pct": 17.696,
+        "fills": 132
+      },
+      "positive_folds": 6,
+      "folds_tested": 8
+    },
+    "top3_rank10_stop0p0": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 21602.69,
+        "return_pct": 116.0269,
+        "max_drawdown_pct": 22.1008,
+        "fills": 120
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    },
+    "top3_rank10_stop2p5": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 20284.33,
+        "return_pct": 102.8433,
+        "max_drawdown_pct": 18.203,
+        "fills": 152
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    },
+    "top3_rank20_stop0p0": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 21602.85,
+        "return_pct": 116.0285,
+        "max_drawdown_pct": 22.1031,
+        "fills": 120
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    },
+    "top3_rank20_stop2p5": {
+      "result": {
+        "starting_balance": 10000,
+        "final_equity": 20282.48,
+        "return_pct": 102.8248,
+        "max_drawdown_pct": 18.2023,
+        "fills": 152
+      },
+      "positive_folds": 5,
+      "folds_tested": 8
+    }
+  },
+  "cscv_pbo": {
+    "method": "CSCV on common non-overlapping 180-day fold-return matrix; performance statistic is compounded log return",
+    "configurations": 12,
+    "folds": 8,
+    "partitions": 70,
+    "pbo": 0.228571,
+    "median_oos_rank_logit": 1.704748,
+    "mean_selected_oos_regret_log_return": -0.082029,
+    "is_winner_frequency": {
+      "top1_rank20_stop0p0": 36,
+      "top1_rank20_stop2p5": 23,
+      "top1_rank10_stop0p0": 7,
+      "top3_rank10_stop0p0": 3,
+      "top2_rank10_stop0p0": 1
+    },
+    "winner_specific_diagnostics": {
+      "top1_rank20_stop2p5": {
+        "selections": 23,
+        "pbo_when_selected": 0.26087,
+        "median_oos_rank_logit": 0.81093,
+        "mean_oos_regret_log_return": -0.10385
+      },
+      "top1_rank20_stop0p0": {
+        "selections": 36,
+        "pbo_when_selected": 0.0,
+        "median_oos_rank_logit": 2.484907,
+        "mean_oos_regret_log_return": -0.008382
+      },
+      "top1_rank10_stop0p0": {
+        "selections": 7,
+        "pbo_when_selected": 0.857143,
+        "median_oos_rank_logit": -1.704748,
+        "mean_oos_regret_log_return": -0.225237
+      },
+      "top3_rank10_stop0p0": {
+        "selections": 3,
+        "pbo_when_selected": 1.0,
+        "median_oos_rank_logit": -2.484907,
+        "mean_oos_regret_log_return": -0.398823
+      },
+      "top2_rank10_stop0p0": {
+        "selections": 1,
+        "pbo_when_selected": 1.0,
+        "median_oos_rank_logit": -0.154151,
+        "mean_oos_regret_log_return": -0.278553
+      }
+    },
+    "interpretation": "high overfit risk",
+    "limitation": "Eight coarse folds provide a diagnostic, not a definitive bar-level PBO estimate."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-18T14:28:52.408984+00:00",
+  "experiment_id": "llm-qwen3-8b-challenger-v1-development",
+  "candidate": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "architecture": "qwen3",
+    "parameters": "8B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0",
+    "rationale": "Qwen3 has native thinking/non-thinking mode and official documentation emphasizing improved instruction following and structured JSON output; selected from a different model family than Llama and using non-thinking mode to avoid verbose CoT degrading JSON parse rate",
+    "thinking_mode": "disabled",
+    "primary_sources": [
+      "https://qwenlm.github.io/blog/qwen3/",
+      "https://huggingface.co/Qwen/Qwen3-8B"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "information_sets": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run1": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run2": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "exact_score_agreement": {
+      "observed": 108,
+      "required_min": 103,
+      "passed": true
+    },
+    "long_flat_action_agreements": {
+      "observed": 108,
+      "required_min": 107,
+      "passed": true
+    },
+    "mean_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.01,
+      "passed": true
+    },
+    "max_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.4,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "status": "stage1-pass-full-calibration-authorized",
+  "inputs": {
+    "config": "configs\\llm_qwen3_8b_challenger_v1_development.json",
+    "config_sha256": "cdf3bffc8696e7a77c572985507be3f108fb02d0c40959e04db435694621bb6f",
+    "audit": "results\\llm_daily_reliability_qwen3_8b_determinism_v1.json",
+    "audit_sha256": "97a2c58bfaaa63a786135a9e15ddc18677e8ef02a8352225fc73909fff96cd7f",
+    "left": "results\\llm_daily_reliability_qwen3_8b_run1_v1.json",
+    "left_sha256": "e610ebb249441eb23317602565f4fce757a50e8b512f5860dc91635f3b570642",
+    "right": "results\\llm_daily_reliability_qwen3_8b_run2_v1.json",
+    "right_sha256": "f0be8ed50d31fce4be5d278e244f0700bdb85a1d154d646bbaf01c7e997585bf"
+  }
+}

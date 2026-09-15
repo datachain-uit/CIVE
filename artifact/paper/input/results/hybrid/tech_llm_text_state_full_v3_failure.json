@@ -1,0 +1,25 @@
+{
+  "schema_version": "tech-llm-text-state-full-failure-v3",
+  "recorded_at": "2026-09-10T06:03:25.219838+00:00",
+  "status": "full-extraction-operational-fail-stop-before-model-fit",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "attempted": 312,
+    "success": 308,
+    "errors": 4,
+    "evidence_fallbacks": 0
+  },
+  "cause": {
+    "type": "decimal_boundary_validation",
+    "message": "ValueError: horizon_mass must sum to one",
+    "observed_horizon_sum": 0.999,
+    "intended_absolute_tolerance": 0.001,
+    "affected_batch_records": 4
+  },
+  "checkpoint": {
+    "path": "paper/input/results/hybrid/hyb003_text_state_full_v3_failure_checkpoint.json",
+    "sha256": "7db556c2a2ff80dbef39088583c6351ef16b068add36d3863ce232e6c49bfa15"
+  },
+  "decision": "Register a new v3.1 postprocessor contract, rerun outcome-blind reliability, and restart full extraction from record 0; do not resume v3 under a changed hash."
+}

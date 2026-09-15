@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-23T16:29:12.104823+00:00",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3-stage1-reliability",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records_left": 4,
+    "records_right": 4,
+    "schema_success_left": 0,
+    "schema_success_right": 0,
+    "headline_count_match_left": 4,
+    "headline_count_match_right": 4,
+    "headline_id_and_order_match_left": 4,
+    "headline_id_and_order_match_right": 4,
+    "evidence_exact_substring_left": 0,
+    "evidence_exact_substring_right": 0,
+    "paired_success": 0,
+    "categorical_exact_agreement": {
+      "btc_relevance": 0,
+      "event_type": 0,
+      "direction": 0,
+      "expected_horizon": 0
+    },
+    "affected_assets_mean_jaccard": 0.0,
+    "continuous": {
+      "severity": {
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0
+      },
+      "reported_surprise": {
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0
+      },
+      "confidence": {
+        "mean_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0
+      }
+    },
+    "continuous_field_max_absolute_difference": 0.0
+  },
+  "checks": {
+    "record_count": false,
+    "schema_success": false,
+    "headline_count_match": false,
+    "headline_id_and_order_match": false,
+    "evidence_exact_substring": false,
+    "btc_relevance_agreement": false,
+    "event_type_agreement": false,
+    "direction_agreement": false,
+    "expected_horizon_agreement": false,
+    "affected_assets_jaccard": false,
+    "severity_difference": true,
+    "reported_surprise_difference": true,
+    "confidence_difference": true,
+    "continuous_max_difference": true
+  },
+  "passed": false,
+  "status": "stage1-fail-stop-before-full-extraction",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_event_extractor_v3_stage1_predeclared.json",
+      "sha256": "5083a2464b6ad190f874774eefaafc1d0ba32737141a0e18001ad7991394f568"
+    },
+    "left": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_extractor_v3_stage1_run1.json",
+      "sha256": "2c4004d433a8227911f58df4febb21fee33f25f28e18a3ace166f2f37b62f829"
+    },
+    "right": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_extractor_v3_stage1_run2.json",
+      "sha256": "0849770051baccf3e951eb23e4ae1f7e0127cfd99d6c35781e7e3f5ece17efde"
+    }
+  }
+}

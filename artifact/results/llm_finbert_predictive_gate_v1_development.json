@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-16T14:27:32.538142+00:00",
+  "experiment_id": "llm-finbert-financial-sentiment-v1-development",
+  "model": {
+    "model": "ProsusAI/finbert",
+    "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "digest": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "architecture": "BERT sequence classification",
+    "task": "three-class financial sentiment",
+    "labels": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "primary_sources": [
+      "https://arxiv.org/abs/1908.10063",
+      "https://huggingface.co/ProsusAI/finbert",
+      "https://github.com/ProsusAI/finBERT"
+    ]
+  },
+  "policy": {
+    "execution_delay_hours": 4,
+    "forward_horizon_hours": 24,
+    "price_definition": "BTCUSDT open at 04:00 UTC to open exactly 24 hours later",
+    "score_definition": "finbert-headline-mean-probability-v1",
+    "parameter_search": false,
+    "trading_backtest_consulted": false
+  },
+  "observations": 1110,
+  "pearson_score_forward_return": 0.009938043407166206,
+  "spearman_score_forward_return": -0.005626087917689485,
+  "top_minus_bottom_tercile_mean_bps": -1.8481163748624674,
+  "top_tercile_observations": 370,
+  "bottom_tercile_observations": 370,
+  "uncertainty": {
+    "method": "moving-block percentile bootstrap",
+    "block_days": 7,
+    "samples": 10000,
+    "seed": 20260816,
+    "pearson_score_forward_return_95_ci": [
+      -0.049551879707262596,
+      0.0670512364483935
+    ],
+    "top_minus_bottom_tercile_mean_bps_95_ci": [
+      -34.38104689695067,
+      34.727302004088564
+    ]
+  },
+  "checks": {
+    "pearson_ci_lower_gt_zero": {
+      "observed": -0.049551879707262596,
+      "required": "> 0",
+      "passed": false
+    },
+    "tercile_difference_ci_lower_gt_zero": {
+      "observed": -34.38104689695067,
+      "required": "> 0",
+      "passed": false
+    }
+  },
+  "passed": false,
+  "status": "stage2-fail-stop-before-threshold-selection-or-backtest",
+  "inputs": {
+    "config": "configs\\llm_finbert_financial_sentiment_v1_development.json",
+    "config_sha256": "6474fd77fa9470982ad1dc06bfeac888db4faf41aac6eee03e5214c221ec4a31",
+    "scores": "results\\llm_daily_full_finbert_v1_development.json",
+    "scores_sha256": "e756e22427b80e85e29bf11cef0994f85c5d6083600d28aef5c684e9ee8872f8",
+    "btc_bars": "results\\bybit_lifecycle_4h\\BTCUSDT_1660348800000_1786492800000.json",
+    "btc_bars_sha256": "9757ea7ddb7f1562d3e9a9e3e157c8dd6ce7aefbf8c48cafaa589db2717505e0"
+  }
+}

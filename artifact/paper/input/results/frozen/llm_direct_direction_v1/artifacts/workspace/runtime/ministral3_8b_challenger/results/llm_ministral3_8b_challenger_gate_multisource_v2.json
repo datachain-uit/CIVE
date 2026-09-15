@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-21T06:11:56.538350+00:00",
+  "experiment_id": "llm-ministral3-8b-multisource-causal-memory-v2-development",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 6022236616,
+    "license": "Apache-2.0"
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "stage1_partial_run": {
+    "expected_information_sets": 48,
+    "observed_information_sets": 15,
+    "schema_success": 14,
+    "schema_errors": 1,
+    "required_schema_success": 48,
+    "maximum_possible_schema_success_if_completed": 47
+  },
+  "passed": false,
+  "status": "stage1-fail-fast-stop-before-completing-run1",
+  "stopping_rule_basis": "schema success must equal the full expected sample; after the first schema error, the required count is mathematically unreachable",
+  "next_action": "stop before run 2, full inference, calibration and trading backtest",
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_multisource_v2_development.json",
+    "config_sha256": "cf5bbeeb0a8f22e81d2e293fab5fef2f6ca97e1512ae10f513f771ebf1469a16",
+    "partial_run": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_multisource_v2.json",
+    "partial_run_sha256": "d2d18f7bd910273833b6a3f65cb89f45796bd2c366f35c7f603102df52746033"
+  }
+}

@@ -1,0 +1,59 @@
+# Tệp hệ điều hành và trình soạn thảo
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+~$*.xlsx
+
+# Workspace nội bộ: tồn tại cục bộ nhưng không bao giờ commit/push
+/cowork/
+
+# Cấu hình và bộ nhớ cục bộ của công cụ
+/.agents/
+/.codex/
+/.codex_tmp_matrix/
+/.codex_artifacts/
+/AGENTS.md
+
+# Python / Node cache
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Mô hình tải cục bộ của artifact
+/artifact/models/
+
+# Output có thể tái tạo ở cấp artifact
+/artifact/runtime/
+/artifact/outputs/
+/artifact/output/
+/artifact/out/
+/artifact/scratch/
+/artifact/tmp/
+*.inspect.ndjson
+verification_*.ndjson
+
+# Phụ phẩm biên dịch LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+
+# Artefact trung gian khi render/review tài liệu
+/artifact/paper/working/docx_review_current/
+
+# Biến môi trường và khóa cục bộ
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+secrets*.json

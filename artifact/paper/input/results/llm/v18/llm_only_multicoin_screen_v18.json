@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-073--LLM-076-multicoin-transfer-v18",
+  "generated_at": "2026-09-11T08:57:12.144046+00:00",
+  "status": "SCREEN_COMPLETE",
+  "outcomes_consulted": false,
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v18\\llm_only_multicoin_screen_v18_predeclared.json",
+    "sha256": "51b29acfa94a517f10c413ab50fb078882408a94819a3bb09589a08315a72456"
+  },
+  "thresholds": {
+    "minimum_direct_event_records": 1000,
+    "minimum_direct_event_dates": 700,
+    "minimum_event_dates_each_oos_fold": 100,
+    "maximum_evidence_fallback_fraction": 0.05
+  },
+  "assets": {
+    "BTCUSDT": {
+      "experiment_id": "LLM-073",
+      "aliases": [
+        "bitcoin",
+        "btc"
+      ],
+      "passed": true,
+      "status": "PASS_TARGET_AND_EVALUATION_PREDECLARATION_AUTHORIZED",
+      "summary": {
+        "calendar_dates": 1079,
+        "event_records": 18115,
+        "event_dates": 1067,
+        "coverage_start": "2022-09-12",
+        "coverage_end": "2025-08-26",
+        "fallback_records": 414,
+        "fallback_fraction": 0.022853988407397184,
+        "direction_counts": {
+          "positive": 9958,
+          "negative": 7949,
+          "mixed": 73,
+          "unclear": 135
+        },
+        "fold_counts": [
+          {
+            "fold": 1,
+            "calendar_dates": 139,
+            "event_dates": 132,
+            "event_records": 2138
+          },
+          {
+            "fold": 2,
+            "calendar_dates": 139,
+            "event_dates": 139,
+            "event_records": 2433
+          },
+          {
+            "fold": 3,
+            "calendar_dates": 139,
+            "event_dates": 139,
+            "event_records": 2446
+          },
+          {
+            "fold": 4,
+            "calendar_dates": 139,
+            "event_dates": 139,
+            "event_records": 2746
+          },
+          {
+            "fold": 5,
+            "calendar_dates": 143,
+            "event_dates": 141,
+            "event_records": 2642
+          }
+        ]
+      },
+      "checks": {
+        "extractor_input_one_to_one": true,
+        "all_extractions_successful": true,
+        "calendar_is_frozen_1079_dates": true,
+        "direct_records": true,
+        "direct_dates": true,
+        "each_oos_fold": true,
+        "fallback_fraction": true
+      }
+    },
+    "XRPUSDT": {
+      "experiment_id": "LLM-074",
+      "aliases": [
+        "ripple",
+        "xrp"
+      ],
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "calendar_dates": 1079,
+        "event_records": 1383,
+        "event_dates": 623,
+        "coverage_start": "2022-09-16",
+        "coverage_end": "2025-08-20",
+        "fallback_records": 23,
+        "fallback_fraction": 0.016630513376717282,
+        "direction_counts": {
+          "negative": 611,
+          "positive": 744,
+          "mixed": 15,
+          "unclear": 13
+        },
+        "fold_counts": [
+          {
+            "fold": 1,
+            "calendar_dates": 139,
+            "event_dates": 54,
+            "event_records": 96
+          },
+          {
+            "fold": 2,
+            "calendar_dates": 139,
+            "event_dates": 46,
+            "event_records": 85
+          },
+          {
+            "fold": 3,
+            "calendar_dates": 139,
+            "event_dates": 84,
+            "event_records": 178
+          },
+          {
+            "fold": 4,
+            "calendar_dates": 139,
+            "event_dates": 114,
+            "event_records": 276
+          },
+          {
+            "fold": 5,
+            "calendar_dates": 143,
+            "event_dates": 126,
+            "event_records": 389
+          }
+        ]
+      },
+      "checks": {
+        "extractor_input_one_to_one": true,
+        "all_extractions_successful": true,
+        "calendar_is_frozen_1079_dates": true,
+        "direct_records": true,
+        "direct_dates": false,
+        "each_oos_fold": false,
+        "fallback_fraction": true
+      }
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-075",
+      "aliases": [
+        "sol",
+        "solana"
+      ],
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "calendar_dates": 1079,
+        "event_records": 2510,
+        "event_dates": 846,
+        "coverage_start": "2022-09-13",
+        "coverage_end": "2025-08-27",
+        "fallback_records": 31,
+        "fallback_fraction": 0.012350597609561753,
+        "direction_counts": {
+          "positive": 1475,
+          "negative": 998,
+          "mixed": 20,
+          "unclear": 17
+        },
+        "fold_counts": [
+          {
+            "fold": 1,
+            "calendar_dates": 139,
+            "event_dates": 98,
+            "event_records": 264
+          },
+          {
+            "fold": 2,
+            "calendar_dates": 139,
+            "event_dates": 113,
+            "event_records": 365
+          },
+          {
+            "fold": 3,
+            "calendar_dates": 139,
+            "event_dates": 123,
+            "event_records": 409
+          },
+          {
+            "fold": 4,
+            "calendar_dates": 139,
+            "event_dates": 128,
+            "event_records": 497
+          },
+          {
+            "fold": 5,
+            "calendar_dates": 143,
+            "event_dates": 130,
+            "event_records": 434
+          }
+        ]
+      },
+      "checks": {
+        "extractor_input_one_to_one": true,
+        "all_extractions_successful": true,
+        "calendar_is_frozen_1079_dates": true,
+        "direct_records": true,
+        "direct_dates": true,
+        "each_oos_fold": false,
+        "fallback_fraction": true
+      }
+    },
+    "BNBUSDT": {
+      "experiment_id": "LLM-076",
+      "aliases": [
+        "binance coin",
+        "bnb"
+      ],
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "calendar_dates": 1079,
+        "event_records": 236,
+        "event_dates": 189,
+        "coverage_start": "2022-09-16",
+        "coverage_end": "2025-08-11",
+        "fallback_records": 3,
+        "fallback_fraction": 0.012711864406779662,
+        "direction_counts": {
+          "negative": 135,
+          "positive": 99,
+          "unclear": 1,
+          "mixed": 1
+        },
+        "fold_counts": [
+          {
+            "fold": 1,
+            "calendar_dates": 139,
+            "event_dates": 12,
+            "event_records": 16
+          },
+          {
+            "fold": 2,
+            "calendar_dates": 139,
+            "event_dates": 17,
+            "event_records": 18
+          },
+          {
+            "fold": 3,
+            "calendar_dates": 139,
+            "event_dates": 13,
+            "event_records": 13
+          },
+          {
+            "fold": 4,
+            "calendar_dates": 139,
+            "event_dates": 22,
+            "event_records": 23
+          },
+          {
+            "fold": 5,
+            "calendar_dates": 143,
+            "event_dates": 26,
+            "event_records": 35
+          }
+        ]
+      },
+      "checks": {
+        "extractor_input_one_to_one": true,
+        "all_extractions_successful": true,
+        "calendar_is_frozen_1079_dates": true,
+        "direct_records": false,
+        "direct_dates": false,
+        "each_oos_fold": false,
+        "fallback_fraction": true
+      }
+    }
+  },
+  "eligible_assets": [
+    "BTCUSDT"
+  ],
+  "stopped_assets": [
+    "XRPUSDT",
+    "SOLUSDT",
+    "BNBUSDT"
+  ],
+  "next_authorized_action": "Predeclare target/evaluation only for eligible_assets."
+}

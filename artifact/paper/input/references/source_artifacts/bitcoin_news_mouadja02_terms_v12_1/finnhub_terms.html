@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="Finnhub.io"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<link rel="shortcut icon"
+      href="/static/img/webp/finnhub-logo.webp"/>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64068110-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64068110-3');
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.0/umd/react-dom.production.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.3.0/css/iziToast.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.3.0/js/iziToast.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.3.1/redux.min.js"></script>
+<script src="https://unpkg.com/react-redux@5.0.7/dist/react-redux.min.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css"/>
+
+<script type="text/javascript">
+
+  var protocol = location.protocol;
+  var wsprotocol
+  if (protocol === "https:") {
+    wsprotocol = "wss:";
+  } else {
+    wsprotocol = "ws:";
+  }
+  var slashes = protocol.concat("//");
+  var host = slashes.concat(window.location.host);
+
+  window.wsUrl = ""
+  if (window.wsUrl === '') {
+    window.wsUrl = window.location.host
+  }
+
+  window.pushNoti = function toastrNoti(message, duration, type) {
+    if (type === "error") {
+      iziToast.error({
+        title: 'Error',
+        message: message,
+        theme: 'dark',
+        backgroundColor: "#3e3e3e",
+        messageColor: "white",
+        titleColor: "#f44242",
+        position: 'bottomCenter',
+        timeout: duration,
+        class: 'toaster',
+      });
+    } else {
+      iziToast.success({
+        title: 'OK',
+        message: message,
+        theme: 'dark',
+        backgroundColor: "#3e3e3e",
+        messageColor: "white",
+        titleColor: "#1db954",
+        position: 'bottomCenter',
+        timeout: duration,
+        class: 'toaster',
+      });
+    }
+  }
+
+  window.getCookie = function getcookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  window.setCookie = function setcookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  window.toTitle = function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  }
+
+  window.getUrlParams = function (key) {
+    let url = location.href
+    var params = {};
+    (url + '?').split('?')[1].split('&').forEach(function (pair) {
+      pair = (pair + '=').split('=').map(decodeURIComponent);
+      if (pair[0].length) {
+        params[pair[0]] = pair[1];
+      }
+    });
+    return params[key];
+  };
+
+  window.stripHtml = function (html) {
+    let tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || "";
+  }
+
+  window.timeConverter = function tConverter(UNIX_timestamp) {
+    var a = new Date(UNIX_timestamp * 1000);
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var dates = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    var month = months[a.getMonth()];
+    var date = a.getDate();
+    var time = dates[a.getDay()] + ' ' + month + ' ' + date
+    return time;
+  }
+
+  window.roundToX = function (num, X) {
+    return +(Math.round(num + "e+" + X) + "e-" + X);
+  }
+</script>
+
+
+    <meta name="description"
+      content="Finnhub - Free stock API for realtime market data, global company fundamentals, economic data, and alternative data."/>
+<meta name="keywords"
+      content="stock api,realtime,stock,equity,forex,crypto,fundamental data,economic data,alternative data">
+<meta property="og:title" content="Finnhub - Free realtime APIs for stock, forex and cryptocurrency.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://finnhub.io/">
+<meta property="og:image"
+      content="https://static.finnhub.io/img/finnhub_2020-05-09_20_51/logo/logo-transparent-thumbnail.png">
+<meta property="og:description"
+      content="Finnhub - Free APIs for realtime stock, forex, and cryptocurrency. Company fundamentals, Economic data, and Alternative data.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title"
+      content="Finnhub - Free realtime APIs for stock, forex and cryptocurrency.">
+<meta name="twitter:image"
+      content="https://static.finnhub.io/img/finnhub_2020-05-09_20_51/logo/logo-transparent-thumbnail.png">
+<meta name="twitter:description"
+      content="Finnhub - Free APIs for realtime stock, forex, and cryptocurrency. Company fundamentals, Economic data, and Alternative data.">
+<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>Finnhub Stock API - Terms of Service</title>
+</head>
+<body>
+<div class="container">
+    <div class="row py-5">
+        <div class="col-sm-12">
+            <h1 class="text-center">Terms of Service - Finnhub Stock API</h1>
+            <br/>
+            <h3>Introduction</h3>
+            <p>
+                By using Finnhub, you are agreeing to be legally bound by the Terms. We may change the Terms from time
+                to
+                time
+                without notice, so be sure to check this page regularly. If you do not agree to any Terms, you should
+                not
+                use the
+                Website.
+            </p>
+
+            <p>
+                If you are entering into this agreement on behalf of a legal entity, you represent that you have the
+                authority to
+                bind
+                such entity, in which case the terms “you” or “your” shall refer to such entity.
+            </p>
+
+
+            <h3>Overview about the service</h3>
+            <p>Finnhub provides fundamental data, market data, estimates and alternative data for global stock
+                markets.</p>
+            <p>Finnhub is not engaged in rendering legal, accounting, investment advising, or other professional
+                service.
+                Your use
+                of
+                the Website and of any content, information or data accessed on or through the Website is at your own
+                risk.
+                We do
+                not
+                guarantee or make any warranties about the accuracy or completeness of any content, information or data
+                accessed on
+                or
+                through the Website. Some content, information or data accessed on or through the Website may be
+                inaccurate,
+                incomplete
+                or unfit for a particular purpose.</p>
+
+            <h3>Intellectual Property</h3>
+            <p>
+                Using the Website does not give you ownership or license of any intellectual property rights in the
+                website
+                or in
+                any
+                content, information or data accessed on or through the Website, including content, information and data
+                obtained
+                from a
+                third-party website.
+            </p>
+            <p>
+                <b>All data must be deleted should your subscription to that data ends.</b>
+            </p>
+
+            <p>
+                It is your responsibility to comply with any copyright laws that govern the content, information or data
+                accessed on
+                or
+                through the Website. Neither these Terms nor your use of the Website grant you any right to use any
+                trademark or
+                service-mark accessed on or through the Website. By making a query on the Website, you agree that we can
+                store the
+                query
+                in log files, and use it to generate the results given back to you. You also agree that we may use your
+                queries to
+                evaluate and enhance performance of the Website and to study usage patterns.
+            </p>
+
+
+            <h3>Redistribution Rights and Personal Use</h3>
+            <p>You hereby agree to not redistribute or share access to data or derived results from the data obtained
+                from
+                Finnhub
+                with
+                anyone or any 3rd party without written approval from Finnhub. All plan listed on Finnhub website is
+                strictly for
+                personal use unless explicitly stated otherwise. Personal plan can’t be used by any business even
+                internally
+                without
+                a
+                written approval.</p>
+            <p>You are also not qualified for any personal use plans if you fall into ONE of the following
+                categories:</p>
+            <ul>
+                <li>You are securities professional (registered with FINRA, SEC, CFTC or relevant regulatory bodies)
+                </li>
+                <li>You are using this data for your business or registering under your business name regardless of the
+                    industry
+                </li>
+                <li>You are going to deduct this expense as a business expense</li>
+                <li>For more information, please refer to Page 23-24 of <a
+                        href="https://www.utpplan.com/DOC/datapolicies.pdf" target="_blank" rel="nofollow noopener">UTP
+                    plan data policies</a></li>
+            </ul>
+            <p>Your signature if signed up as for personal use will be used in the form <a
+                    href="https://www.utpplan.com/DOC/subagreement.pdf" target="_blank" rel="nofollow noopener">Subscriber
+                Agreement</a> to certify that you are Non-Professional individual subscriber. You hereby authorize
+                us and our data partners to use your name and email information to furnish this form on your behalf. To
+                request a copy of this signed form, please email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ffcfaffffe0fdfbcfe9e6e1e1e7faeda1e6e0">[email&#160;protected]</a>.
+            </p>
+
+            <h3>Refund Policy</h3>
+            <p>
+                We do not offer refund for any plans on our website. It’s your duty to cancel the subscription on time.
+                You
+                hereby
+                agree
+                to not use chargeback against our company in case of a dispute without reaching out to our support
+                first.
+            </p>
+            <p>If requesting cancellation via emails, you would need to give us a minimum of 30-day advance notice for the
+                cancellation to take effect and any new invoices generated during that 30 days will still need to be
+                paid in full.</p>
+
+            <h3>API Limit and Access</h3>
+            <p>You will have 1 API limit for Fundamental data and 1 API limit for Market data API. Subscribing to
+                multiple data plans will not increase your API limit.</p>
+            <p>There is a 30 API calls/second limit on top of all plan's limit</p>
+            <p>Your access to API will be revoked immediately should you choose to cancel your subscription.</p>
+
+            <h3>Privacy</h3>
+            <p>The Website collects some personal information from its users, which we may use to operate the Website,
+                to
+                evaluate
+                and
+                enhance performance of the Website and to study usage patterns. We will not share any of your personal
+                information
+                with
+                any third party, except we may share personal information with another company in the event that we
+                merge
+                with or
+                are
+                acquired by that company. We may send you announcements, messages or other information, but you may
+                choose
+                to
+                opt-out of
+                these communications.</p>
+            <p>Finnhub will automatically delete inactive users from time to time. If you wish to resume the service,
+                please create a new account.</p>
+
+            <h3>Limitation of Liability</h3>
+            <p>
+                You agree to defend, indemnify and hold Finnhub and its affiliates harmless from any and all claims,
+                liabilities,
+                costs
+                and expenses, including reasonable attorneys' fees, arising in any way from your use of the Service or
+                the
+                placement
+                or
+                transmission of any message, information, Software and/or Service or other materials through the
+                Software
+                and/or
+                Service
+                by you or users of your account or related to any violation of these Terms and Conditions by you or
+                users of
+                your
+                account.
+            </p>
+
+            <h3>Failure to Comply with Terms and Conditions and Termination</h3>
+
+            <p>Subscription to this Software and/or Service may be terminated at any time, and without cause, by either
+                Finnhub or
+                the
+                Owner and/or Subscriber, upon notification by telephone or e-mail. You acknowledge and agree that we may
+                terminate
+                your
+                password or account or deny you access to all or part of the Service without prior notice if you engage
+                in
+                any
+                conduct
+                or activities that we, in our sole discretion, believe violate any of these Terms and Conditions,
+                violate
+                the rights
+                of
+                Finnhub or is otherwise inappropriate for continued access.</p>
+        </div>
+    </div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"9cc7141d96db443ea49714537441cd0d","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

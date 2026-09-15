@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-qwen3-8b-challenger-v1-development",
+  "status": "predeclared-before-challenger-scoring",
+  "predeclared_at": "2026-08-18T13:25:00+07:00",
+  "selection_basis": "operational reliability and task calibration only; no challenger trading return exists or may be consulted",
+  "candidate": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "architecture": "qwen3",
+    "parameters": "8B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0",
+    "rationale": "Qwen3 has native thinking/non-thinking mode and official documentation emphasizing improved instruction following and structured JSON output; selected from a different model family than Llama and using non-thinking mode to avoid verbose CoT degrading JSON parse rate",
+    "thinking_mode": "disabled",
+    "primary_sources": [
+      "https://qwenlm.github.io/blog/qwen3/",
+      "https://huggingface.co/Qwen/Qwen3-8B"
+    ]
+  },
+  "frozen_input_contract": {
+    "artifact": "results/llm_daily_information_sets_v1.json",
+    "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338",
+    "prompt_version": "crypto-daily-information-set-v1",
+    "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+    "temperature": 0.0,
+    "seed": 20260814,
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "threshold_optimization_prohibited": true
+  },
+  "stage1_operational_gate": {
+    "sampling": "twelve deterministic calendar samples per year for 2017-2025",
+    "sample_per_year": 12,
+    "expected_information_sets": 108,
+    "independent_component_runs": 2,
+    "workers_per_run": 1,
+    "request_delay_seconds": 10,
+    "disable_thinking": true,
+    "required": {
+      "schema_success_each_run": 108,
+      "exact_score_agreement_min": 103,
+      "long_flat_action_agreements_min": 107,
+      "mean_absolute_score_difference_max": 0.01,
+      "max_absolute_score_difference_max": 0.4
+    },
+    "decision": "all requirements must pass; otherwise reject the challenger and stop before full inference, calibration or backtest"
+  },
+  "stage2_only_if_stage1_passes": {
+    "work": "one full 2927-record inference followed by outcome calibration only",
+    "minimum_observations": 1000,
+    "minimum_long_rule_observations": 100,
+    "required": {
+      "schema_errors": 0,
+      "pearson_score_forward_return_95_ci_lower_bound_gt": 0.0,
+      "long_minus_flat_mean_bps_95_ci_lower_bound_gt": 0.0
+    },
+    "decision": "all requirements must pass before authorizing a full repeat, consensus construction or any lifecycle trading backtest"
+  },
+  "prohibited": [
+    "consulting challenger trading return during model selection",
+    "changing prompt or action thresholds within this experiment",
+    "running multiple heavy jobs or LLM workers",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ],
+  "baseline_reference": {
+    "model": "llama3:latest",
+    "stage1_exact_score_agreement": "98/108",
+    "stage1_long_flat_action_agreement": "104/108",
+    "full_consensus_calibration_intervals_span_zero": true
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-08-11T02:46:56.870653+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT",
+      "DOGE/USDT",
+      "ADA/USDT",
+      "AVAX/USDT",
+      "LINK/USDT",
+      "LTC/USDT"
+    ],
+    "daily_selection": "market UP-UP + channel event + top-N 20d momentum",
+    "volume_veto": "off",
+    "oi_gate": "off",
+    "funding_crowding_veto": "off",
+    "basis_gate": "off",
+    "flow_mode": "off",
+    "fill": "next daily 4H open",
+    "stops": "4H ATR fixed plus trailing, adverse OHLC stop",
+    "pyramiding": "winner-only",
+    "max_pyramid_layers": 3,
+    "pyramid_step_atr": 1.0,
+    "fee_bps": 6.0,
+    "slippage_bps": 3.0,
+    "spread_bps": 2.0,
+    "impact_bps": 1.0,
+    "effective_adverse_execution_bps": 5.0,
+    "funding_source": "bybit-history",
+    "funding_bps_8h": null
+  },
+  "result": {
+    "starting_balance": 10000,
+    "final_equity": 28080.85,
+    "return_pct": 180.8085,
+    "max_drawdown_pct": 11.3127,
+    "fills": 121
+  },
+  "walk_forward_folds": [
+    {
+      "start": "2022-09-02",
+      "return_pct": 18.7056,
+      "max_drawdown_pct": 5.0081
+    },
+    {
+      "start": "2023-03-01",
+      "return_pct": -0.982,
+      "max_drawdown_pct": 1.6589
+    },
+    {
+      "start": "2023-08-28",
+      "return_pct": 29.5561,
+      "max_drawdown_pct": 11.3127
+    },
+    {
+      "start": "2024-02-24",
+      "return_pct": 10.0815,
+      "max_drawdown_pct": 3.6599
+    },
+    {
+      "start": "2024-08-22",
+      "return_pct": 6.4256,
+      "max_drawdown_pct": 7.0515
+    },
+    {
+      "start": "2025-02-18",
+      "return_pct": 56.2474,
+      "max_drawdown_pct": 6.4755
+    },
+    {
+      "start": "2025-08-17",
+      "return_pct": 3.5012,
+      "max_drawdown_pct": 2.982
+    },
+    {
+      "start": "2026-02-13",
+      "return_pct": -3.1585,
+      "max_drawdown_pct": 10.0233
+    }
+  ],
+  "positive_folds": 6,
+  "folds_tested": 8,
+  "applied_funding_events": 510,
+  "missing_funding_events": 0
+}

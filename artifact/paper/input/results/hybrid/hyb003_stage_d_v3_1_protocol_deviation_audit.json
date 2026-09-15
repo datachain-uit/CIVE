@@ -1,0 +1,106 @@
+{
+  "schema_version": "hyb003-stage-d-v3.1-protocol-deviation-audit-v1",
+  "experiment_id": "HYB-003",
+  "audited_at": "2026-09-11T02:05:55.397769+00:00",
+  "status": "PROTOCOL_DEVIATION_RESULT_NOT_REPORTABLE_AS_FROZEN_STAGE_D",
+  "outcomes_consulted": true,
+  "research_role": "Implementation audit after v3.1 development outcomes were observed. It invalidates the frozen-contract interpretation; it is not a new result.",
+  "frozen_contract": {
+    "t1_features": [
+      "asset_identity_fold_encoded",
+      "trade_age_bars",
+      "return_from_entry",
+      "dist_to_stop_over_atr",
+      "atr_over_price",
+      "realized_range_4h",
+      "realized_range_24h",
+      "return_4h_lag1",
+      "return_12h_lag1",
+      "return_24h_lag1",
+      "funding_current",
+      "funding_mean_24h",
+      "tech_rank_score"
+    ],
+    "t3_additional_text_features": [
+      "adverse_mass",
+      "supportive_mass",
+      "adverse_h4_mass",
+      "supportive_h4_mass",
+      "applicable_headline_count",
+      "adverse_headline_count",
+      "supportive_headline_count",
+      "source_domain_count",
+      "novel_signature_count",
+      "text_available_this_bar",
+      "dominant_stage_encoded",
+      "dominant_mechanism_encoded"
+    ],
+    "t3_registered_interactions": [
+      "adverse_mass * dist_to_stop_over_atr",
+      "supportive_mass * dist_to_stop_over_atr",
+      "novel_signature_count * trade_age_bars",
+      "dominant_stage_encoded * realized_range_24h",
+      "adverse_h4_mass * (action horizon == 4h indicator)",
+      "asset_scope_direct * asset_identity_fold_encoded"
+    ]
+  },
+  "materialized_panel_feature_keys": [
+    "distance_to_active_stop_atr",
+    "entry_atr_over_open",
+    "last_observed_funding_rate",
+    "open_to_raw_entry_return",
+    "past_average_range_12h",
+    "past_average_range_24h",
+    "past_funding_sum_24h",
+    "past_return_12h",
+    "past_return_24h",
+    "past_return_4h",
+    "symbol",
+    "trade_age_4h"
+  ],
+  "deviations": [
+    {
+      "id": "feature_contract_not_implemented",
+      "detail": "The evaluator omits frozen asset_identity_fold_encoded and tech_rank_score, maps realized/funding features to different materialized quantities, and does not document those mappings."
+    },
+    {
+      "id": "interaction_contract_not_implemented",
+      "detail": "The evaluator omits dominant_stage*range and direct_scope*asset, changes the registered 4h-horizon interaction into a distance-to-stop condition, and adds adverse/supportive*range interactions."
+    },
+    {
+      "id": "net_target_cost_counted_again",
+      "detail": "net_action_value already includes overlay execution cost, fees and funding, but the action rule adds overlay_cost again to the threshold."
+    },
+    {
+      "id": "half_exposure_effect_scaled_twice",
+      "detail": "The panel target is already the PnL difference produced by reducing the frozen position by one half; the evaluator multiplies it by 0.5 again."
+    },
+    {
+      "id": "primary_contrast_not_paired",
+      "detail": "The registered T3-T1 estimand is paired by row, but v3.1 subtracts two arm means and reuses the T3-vs-zero confidence interval."
+    }
+  ],
+  "decision": {
+    "v3_1_performance_claim_withdrawn": true,
+    "stage_e_authorized": false,
+    "reason": "The implementation differs materially from the frozen contract. Any corrected evaluation is post-outcome remediation and remains exploratory."
+  },
+  "inputs": {
+    "predeclaration": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb003_stage_c_predeclared_v3_1.json",
+      "sha256": "ccfd5ffbab9793cf3dce83370a5fc01d3bbea61ff448cdb1d5531529740853cd"
+    },
+    "panel": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_state_fusion_v3_panel.json",
+      "sha256": "cbcf95feeec96e8120bac2e3da45922981500763f3e55488e2a82ae8f39e2c64"
+    },
+    "stage_d_v3_1": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb003_stage_d_development_v3_1.json",
+      "sha256": "334cfba5e7b7efa2e30d5cf476eabe1f6202f9c67c0f43844eb3fcfaa3bc1485"
+    },
+    "auditor": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\audit_hyb003_stage_d_v3_1.py",
+      "sha256": "c9fb92f5c7ede3f4df3e7ed361a642f3ac5a6f649a612c02d714f0d35f518b01"
+    }
+  }
+}

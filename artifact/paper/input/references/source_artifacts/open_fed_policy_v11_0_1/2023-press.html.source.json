@@ -1,0 +1,10 @@
+{
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/2023-press.htm",
+  "http_status": 200,
+  "content_range": null,
+  "partial_sample": false,
+  "bytes": 174288,
+  "sha256": "723a2652521de9c7dcc27a049c1a6c7eec7b15b903bb11f3add8213d2fb29aa8",
+  "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11_0_1\\2023-press.html",
+  "fetched_at": "2026-09-05T06:17:28.933723+00:00"
+}

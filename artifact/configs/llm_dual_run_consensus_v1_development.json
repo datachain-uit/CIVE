@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "policy_id": "llm-dual-run-consensus-v1-development",
+  "status": "predeclared-before-consensus-backtest",
+  "motivation": "single-worker repeated inference changed 4 of 108 predeclared long-flat actions",
+  "component_contract": {
+    "runs": 2,
+    "model": "llama3:latest",
+    "model_digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "prompt_version": "crypto-daily-information-set-v1",
+    "workers_per_run": 1,
+    "temperature": 0.0,
+    "seed": 20260814
+  },
+  "consensus_rule": {
+    "combined_score": "minimum component score",
+    "combined_confidence": "minimum component confidence",
+    "long_when": "both runs have status=success, score >= 0.30 and confidence >= 0.70",
+    "disagreement_missing_or_error": "flat",
+    "threshold_changed": false
+  },
+  "selection_basis": "reliability only; no consensus trading return was available when declared",
+  "research_status": "predeclaration retained; full second inference and development evaluation completed; not ready to freeze"
+}

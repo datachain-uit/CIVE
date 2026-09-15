@@ -1,0 +1,177 @@
+{
+  "version": "v9.0-intake",
+  "status": "DATA_NOT_ADMITTED",
+  "scope": "source_code_and_metadata_audit_plus_bounded_tweet_prefix",
+  "model_run": false,
+  "outcomes_opened": false,
+  "technical_features_used": false,
+  "sources": [
+    {
+      "url": "https://huggingface.co/api/datasets/Joi123/bitcoin-tweets-2023",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 647,
+      "sha256": "36b8b76260dcf59a5d06cfdc889c11c068cdad642b33372ce5a96711b0220924",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\tweet_metadata.json",
+      "fetched_at": "2026-09-05T05:02:29.798236+00:00"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Joi123/bitcoin-tweets-2023/raw/bc775656e516f53ee6e2edf846a60892bae379cb/README.md",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 115,
+      "sha256": "4f37359d71ad0bf4434f6cc9681b57d8ff16a7343c95e1d2386f072a782c2942",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\tweet_README.md",
+      "fetched_at": "2026-09-05T05:02:30.165045+00:00"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Joi123/bitcoin-tweets-2023/discussions/1",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 103561,
+      "sha256": "dc927ddd1f46319866e87a210a5b7d239e7a7f7e9d20049b14cd2892c6c9293a",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\tweet_description.html",
+      "fetched_at": "2026-09-05T05:02:30.760106+00:00"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/Joi123/bitcoin-tweets-2023/tree/bc775656e516f53ee6e2edf846a60892bae379cb?recursive=true",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 490,
+      "sha256": "724f4e4fa41d4506f8dd60c88856ad994c29a1d1b20e9f12053139a93efb1250",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\tweet_tree.json",
+      "fetched_at": "2026-09-05T05:02:31.234625+00:00"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Joi123/bitcoin-tweets-2023/resolve/bc775656e516f53ee6e2edf846a60892bae379cb/tweets.csv",
+      "http_status": 206,
+      "content_range": "bytes 0-1048575/50174754",
+      "partial_sample": true,
+      "bytes": 1048576,
+      "sha256": "5f263c00a47a4405ebef693a636d4b2ded9fb5529bbcc86bf9b053c416b33d14",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\tweet_prefix.bin",
+      "fetched_at": "2026-09-05T05:02:34.723502+00:00"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/danilocorsi/LLMs-Sentiment-Augmented-Bitcoin-Dataset",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 2481,
+      "sha256": "a877ca6ec4559bfcc7fa7d5bc73904a08fe92dd09ac5db62b00966de187944d4",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\reddit_metadata.json",
+      "fetched_at": "2026-09-05T05:02:35.229079+00:00"
+    },
+    {
+      "url": "https://huggingface.co/datasets/danilocorsi/LLMs-Sentiment-Augmented-Bitcoin-Dataset/raw/77ef953e0c716d4c641e342208b47a2e529ad384/README.md",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 7242,
+      "sha256": "192bbc0398a7561a84ac5911abc9bde7b3e1cfd8da5c5631f628432911ddb344",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\reddit_README.md",
+      "fetched_at": "2026-09-05T05:02:35.639696+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CorsiDanilo/Leveraging-LLMs-for-Informed-Bitcoin-Trading-Decisions/b8d0ead2c6d6cace48fa9159a765350f8c88aa14/data_mining/utils/reddit_to_csv.py",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 7594,
+      "sha256": "c4aa1f6702389a637d5c3f43c952f3f249e05faeac70735661a95720edfa8bd1",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\upstream_reddit_to_csv.py",
+      "fetched_at": "2026-09-05T05:02:36.266157+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/CorsiDanilo/Leveraging-LLMs-for-Informed-Bitcoin-Trading-Decisions/b8d0ead2c6d6cace48fa9159a765350f8c88aa14/data_mining/reddit.ipynb",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 51667,
+      "sha256": "0a912afaa72caa5fed70681cb3a536d41f408b07fc9465ba76cae77ce0bc122e",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\upstream_reddit.ipynb",
+      "fetched_at": "2026-09-05T05:02:37.193540+00:00"
+    },
+    {
+      "url": "https://api.github.com/repos/ArthurHeitmann/arctic_shift/commits/master",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 4855,
+      "sha256": "28445be1287a8bfdf307229bb6bdd18ca87c35cdce4ad4164a9f6d97c98918d8",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\arctic_commit.json",
+      "fetched_at": "2026-09-05T05:02:37.995351+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ArthurHeitmann/arctic_shift/ec2e6b75b0dbb40788dc297a2ef73e61a0629522/file_content_explanations.md",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 1917,
+      "sha256": "20201e3b4f38dd68e61df81ee6e03337c7286a62a11089ee80a0c9cad467f070",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\arctic_collection.md",
+      "fetched_at": "2026-09-05T05:02:38.560881+00:00"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "danilocorsi/LLMs-Sentiment-Augmented-Bitcoin-Dataset",
+      "revision": "77ef953e0c716d4c641e342208b47a2e529ad384",
+      "decision": "REJECT_AS_PIT_INPUT",
+      "evidence": {
+        "notebook_cell_indices_zero_based": {
+          "MIN_COMMENTS = 10": [
+            62
+          ],
+          "MIN_SCORE = 10": [
+            68,
+            75
+          ],
+          "comment[2].startswith(curr_timestamp)": [
+            94
+          ]
+        },
+        "local_timezone_conversion": true
+      },
+      "reasons": [
+        "Selection uses archive score/comment totals without as-of snapshots.",
+        "Local timezone conversion drops timezone and seconds.",
+        "Dropping score columns cannot reverse upstream selection.",
+        "Raw merged table also contains future-price targets: prohibit direct model ingestion."
+      ]
+    },
+    {
+      "id": "Joi123/bitcoin-tweets-2023",
+      "revision": "bc775656e516f53ee6e2edf846a60892bae379cb",
+      "decision": "QUARANTINE",
+      "encoding_check": "utf8_prefix_error_at_byte_235745",
+      "dataset_card_license": null,
+      "reasons": [
+        "Uploader real-time and latency description is not a per-record receipt log.",
+        "No verified usage permission or complete schema/encoding audit.",
+        "Prefix is not representative; no corpus counts or coverage inferred."
+      ]
+    },
+    {
+      "id": "ArthurHeitmann/arctic_shift",
+      "revision": "ec2e6b75b0dbb40788dc297a2ef73e61a0629522",
+      "decision": "NEXT_RAW_ARCHIVE_CANDIDATE",
+      "reasons": [
+        "Preserves retrieved_on in documented newer dumps.",
+        "Second retrieval can restore text: gate text versions and restoration metadata.",
+        "Need bounded raw pilot, coverage and usage review before admission."
+      ]
+    }
+  ],
+  "next_gate": [
+    "Verify usage basis and original raw snapshot.",
+    "Preserve UTC creation AND observation time; reject ambiguous timestamps.",
+    "No hindsight engagement selection or future edited/restored text.",
+    "Deduplicate IDs with version-aware as-of selection before temporal split.",
+    "Freeze social-only protocol before joining any market labels."
+  ]
+}

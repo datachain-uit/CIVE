@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Charges Syracuse, N.Y., Man, His Firm with Fraud, Misappropriation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9072-25</link>
+  <description/>
+  <pubDate>Fri, 09 May 2025 04:44:51 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9072-25</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Recovery of Nearly $2.3M for Victims of an Online Romance Scam</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9058-25</link>
+  <description/>
+  <pubDate>Fri, 21 Mar 2025 20:30:10 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9058-25</guid>
+    </item>
+<item>
+  <title>CFTC Releases Enforcement Advisory on Self-Reporting, Cooperation, and Remediation </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9054-25</link>
+  <description/>
+  <pubDate>Tue, 25 Feb 2025 20:11:12 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9054-25</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Florida Man to Pay Over $7.6 Million for Digital Asset Fraud </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9051-25</link>
+  <description/>
+  <pubDate>Mon, 10 Feb 2025 16:55:23 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9051-25</guid>
+    </item>
+<item>
+  <title>Federal Court Orders New York Resident to Pay Over $1.5 Million in Digital Assets Trading Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9050-25</link>
+  <description/>
+  <pubDate>Mon, 10 Feb 2025 14:19:13 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9050-25</guid>
+    </item>
+<item>
+  <title>Florida Court Orders Brazilian Nationals to Pay Over $128 Million for Fraudulent Commodity Pool Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9045-25</link>
+  <description/>
+  <pubDate>Tue, 04 Feb 2025 19:06:12 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9045-25</guid>
+    </item>
+<item>
+  <title>Federal Court Orders International Enterprise to Pay Over $451 Million for Global Binary Options Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9040-25</link>
+  <description/>
+  <pubDate>Wed, 29 Jan 2025 20:05:38 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9040-25</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Lions of Forex and Owner to Pay $685,000 For Foreign Currency Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9039-25</link>
+  <description/>
+  <pubDate>Mon, 27 Jan 2025 17:32:41 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9039-25</guid>
+    </item>
+<item>
+  <title>Mosaic Exchange Ltd. and CEO Ordered to Pay Over $1.1 Million for Fraudulent Digital Asset Commodity Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9032-25</link>
+  <description/>
+  <pubDate>Mon, 13 Jan 2025 19:01:32 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9032-25</guid>
+    </item>
+<item>
+  <title>Gemini Trust Ordered to pay $5 Million for Making False or Misleading Statements, Omissions to the CFTC</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9031-25</link>
+  <description/>
+  <pubDate>Mon, 13 Jan 2025 18:54:04 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9031-25</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+{
+  "schema_version": "tech-llm-text-state-full-gate-v3",
+  "evaluated_at": "2026-09-10T17:44:32.289961+00:00",
+  "experiment_id": "hyb-003-text-state-ministral3-8b-v3.1-full-extraction",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records": 2534,
+    "schema_success": 2534,
+    "errors": 0,
+    "context_id_and_order_match": 2534,
+    "headline_id_and_order_match": 2534,
+    "evidence_exact_substring": 2534,
+    "evidence_fallbacks": 14
+  },
+  "checks": {
+    "record_count": true,
+    "schema_success": true,
+    "errors": true,
+    "context_id_and_order": true,
+    "headline_id_and_order": true,
+    "evidence_exact_substring": true,
+    "evidence_fallback_limit": true,
+    "input_hash": true,
+    "outcomes_not_consulted": true
+  },
+  "passed": true,
+  "status": "full-extraction-pass-power-freeze-authorized",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\tech_llm_text_state_extractor_v3_1_full_predeclared.json",
+      "sha256": "fb8af70257f8b534643b5ce59a68f111434dcedc53f8ee19f70cd68eadb65daf"
+    },
+    "input": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_state_fusion_v3_text_inputs.json",
+      "sha256": "2871c55fee6ceafe2e6263069e4906cb1613110261dc56462a9d66523559a39f"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\tech_llm_text_state_v3_1_full_development.json",
+      "sha256": "de47f0829634b0894cac94ace494115895e278b835a72a1a836631bcb112dc8d"
+    }
+  }
+}

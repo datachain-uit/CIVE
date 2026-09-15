@@ -1,0 +1,32 @@
+{
+  "scope": "bounded_schema_provenance_pilot_not_prediction",
+  "created_at": "2026-09-05T05:10:02.342311+00:00",
+  "windows": [
+    [
+      "2023-04-01",
+      "2023-04-02"
+    ],
+    [
+      "2024-01-01",
+      "2024-01-02"
+    ],
+    [
+      "2025-01-01",
+      "2025-01-02"
+    ]
+  ],
+  "kinds": [
+    "posts",
+    "comments"
+  ],
+  "subreddit": "Bitcoin",
+  "sort": "asc",
+  "limit_per_request": 100,
+  "requests": 6,
+  "pagination": false,
+  "max_bytes_per_response": 4000000,
+  "engagement_selection": false,
+  "outcomes_accessed": false,
+  "sampling_note": "Earliest bounded records, not representative or complete.",
+  "script_sha256": "4747d9952846efdf333b560b3b7154c02672040d8020ac2d27788341e12b81d6"
+}

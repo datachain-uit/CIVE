@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-19T15:39:28.980762+00:00",
+  "run_id": "deepseek_r1_7b-stage1-run1-v1",
+  "model": "deepseek-r1:7b",
+  "model_digest": "755ced02ce7befdb13b7ca74e1e4d08cddba4986afdb63a480f2c93d3140383f",
+  "prompt_version": "crypto-daily-information-set-v1",
+  "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+  "thinking": false,
+  "workers": 1,
+  "request_delay_seconds": 10.0,
+  "seed_checkpoint": null,
+  "records": [
+    {
+      "content_hash": "076e8798396e478ffde054aacd7657dcd6c9a36a8e64e2d001c762b178cb930e",
+      "information_date": "2017-08-17",
+      "available_at": "2017-08-18T00:00:00+00:00",
+      "source_snapshot_hash": "66e3e263123682a52962d65cbc4c61024e06655fd0b2b35ddd7dcb04f6944e1b",
+      "article_count": 6,
+      "selected_article_count": 6,
+      "model": "deepseek-r1:7b",
+      "model_digest": "755ced02ce7befdb13b7ca74e1e4d08cddba4986afdb63a480f2c93d3140383f",
+      "prompt_version": "crypto-daily-information-set-v1",
+      "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+      "thinking": false,
+      "status": "error",
+      "score": null,
+      "confidence": null,
+      "reason_code": null,
+      "error": "JSONDecodeError: Expecting value: line 3 column 1 (char 2)"
+    }
+  ],
+  "summary": {
+    "attempted": 1,
+    "success": 0,
+    "errors": 1
+  }
+}

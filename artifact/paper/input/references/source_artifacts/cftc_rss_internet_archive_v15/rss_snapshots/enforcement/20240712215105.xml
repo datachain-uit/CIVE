@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Federal Court Enters Summary Judgment Against Oregon Man and Orders $83 Million in Restitution for Fraud Victims</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8931-24</link>
+  <description/>
+  <pubDate>Wed, 03 Jul 2024 15:51:02 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8931-24</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Unregistered Michigan Pool Operator and its President to Pay Over $13 Million for Forex Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8930-24</link>
+  <description/>
+  <pubDate>Tue, 02 Jul 2024 17:01:44 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8930-24</guid>
+    </item>
+<item>
+  <title>CFTC Awards Over $8 Million to Insider Whistleblower Who Aided CFTC and Other Agency Actions</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8922-24</link>
+  <description/>
+  <pubDate>Mon, 17 Jun 2024 20:03:49 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8922-24</guid>
+    </item>
+<item>
+  <title>CFTC Orders Trafigura to Pay $55 Million for Fraud, Manipulation and Impeding Communications with the CFTC</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8921-24</link>
+  <description/>
+  <pubDate>Mon, 17 Jun 2024 15:56:46 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8921-24</guid>
+    </item>
+<item>
+  <title>CFTC Permanently Revokes Registrations of Mississippi-based Commodity Trading Advisor and Associated Person</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8920-24</link>
+  <description/>
+  <pubDate>Thu, 13 Jun 2024 13:28:09 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8920-24</guid>
+    </item>
+<item>
+  <title>CFTC Charges Unregistered Commodity Pool Operator and Its Owner with Futures Fraud and Misappropriation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8919-24</link>
+  <description/>
+  <pubDate>Thu, 06 Jun 2024 18:00:49 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8919-24</guid>
+    </item>
+<item>
+  <title>CFTC Announces Whistleblower Award Over $4.5 Million  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8917-24</link>
+  <description/>
+  <pubDate>Mon, 03 Jun 2024 18:39:06 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8917-24</guid>
+    </item>
+<item>
+  <title>CFTC Orders J.P. Morgan to Pay $200 Million for Supervision Failures</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8914-24</link>
+  <description/>
+  <pubDate>Thu, 23 May 2024 20:06:05 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8914-24</guid>
+    </item>
+<item>
+  <title>CFTC Charges Agridime and Its Co-Founders with a Fraudulent Cattle Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8911-24</link>
+  <description/>
+  <pubDate>Tue, 14 May 2024 16:27:04 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8911-24</guid>
+    </item>
+<item>
+  <title>Miami Federal Court Orders Multiple Individuals and Entities to Pay Over  $225 Million for Foreign Currency Fraud and Misappropriation Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8910-24</link>
+  <description/>
+  <pubDate>Tue, 14 May 2024 15:06:08 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8910-24</guid>
+    </item>
+
+  </channel>
+</rss>

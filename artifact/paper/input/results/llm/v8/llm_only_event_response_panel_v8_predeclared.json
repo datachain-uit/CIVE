@@ -1,0 +1,66 @@
+{
+  "schema_version": "llm-only-event-response-panel-predeclaration-v8",
+  "experiment_id": "llm-only-short-horizon-event-response-v8-development",
+  "predeclared_at": "2026-09-04T16:15:09.737267+00:00",
+  "prior_v3_v7_outcomes_consulted": true,
+  "target_values_consulted_for_v8_design": false,
+  "protocol": {
+    "path": "paper/working/protocols/LLM_Only_Short_Horizon_Event_Response_Protocol_v8.md",
+    "sha256": "ff85af23cc86b961edb8a466a818b8cbde0c865036b29239b0c093bfbd997f8d"
+  },
+  "code": {
+    "builder": {
+      "path": "tools/llm/build_llm_only_event_response_panel_v8.py",
+      "sha256": "0394420073eda2fc2dc1718e272c983dcbecd889b78f33362e787f2f02546ed0"
+    },
+    "tests": {
+      "path": "tools/llm/test_build_llm_only_event_response_panel_v8.py",
+      "sha256": "a195a82595c57654e5609c9f39d3f07f7b74017fea40e9d72ac59a00dc0ad592"
+    },
+    "llm_feature_guard_dependency": {
+      "path": "tools/llm/evaluate_llm_only_event_conditioned_v7.py",
+      "sha256": "b8ddb86f6965b4376b6bff1e6090eeb7819389b6fdc75b2fe7c1ee8fcd98c389"
+    }
+  },
+  "tests": {
+    "status": "4 tests passed before target-panel construction"
+  },
+  "sources": {
+    "inputs": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "btc_4h": {
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\BTCUSDT_1660348800000_1786492800000.json",
+      "sha256": "9757ea7ddb7f1562d3e9a9e3e157c8dd6ce7aefbf8c48cafaa589db2717505e0"
+    }
+  },
+  "eligibility": {
+    "btc_relevance": [
+      "direct",
+      "systemic"
+    ],
+    "event_types": [
+      "macro_liquidity",
+      "regulation",
+      "etf_institutional_flow",
+      "exchange_security",
+      "liquidation_leverage",
+      "network_protocol",
+      "fraud_legal",
+      "adoption_business"
+    ],
+    "excluded_event_types": [
+      "market_commentary",
+      "other"
+    ],
+    "deduplication": "first global normalized headline by published_at"
+  },
+  "decision_time": "strictly next UTC 4h open after published_at",
+  "target": "Bybit BTCUSDT open[t+4h] / open[t] - 1",
+  "predictive_feature_policy": "LLM extractor output only; market data is target-only"
+}

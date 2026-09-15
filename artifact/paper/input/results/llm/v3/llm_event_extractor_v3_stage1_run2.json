@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-23T16:29:11.154364+00:00",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3-stage1-reliability",
+  "run_id": "event-v3-stage1-run2",
+  "model": "ministral-3:8b",
+  "model_digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+  "config_sha256": "5083a2464b6ad190f874774eefaafc1d0ba32737141a0e18001ad7991394f568",
+  "input_sha256": "d58b812486ab9197158ed33c98cefd8dcc5356a2312c1a842dbfd39de474e4d2",
+  "prompt_sha256": "b23ed0b31f1eebdf58ae30398cd4b6080abf5a9f8e1aeef3b363a5c03b92a5e6",
+  "response_schema_sha256": "a8a0a40e08b6703a311b14d4243442f036d573cd35f28184153c3cb519b736ce",
+  "batch_size": 4,
+  "workers": 1,
+  "outcomes_consulted": false,
+  "records": [
+    {
+      "headline_id": "9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9",
+      "information_date": "2022-09-16",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"headline_id\": \"9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"crypto assets\"],\n      \"direction\": \"positive\",\n      \"severity\": 3,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"SBI Group Crypto Arm Wins Singapore Securities License\"\n    },\n    {\n      \"headline_id\": \"f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"DAO\", \"crypto assets\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.85,\n      \"evidence_span\": \"CFTC Pursues First Case Against a DAO\"\n    },\n    {\n      \"headline_id\": \"699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323\",\n      \"btc_relevance\": \"direct\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"BTC\", \"Marathon Digital\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"Bitcoin Miner Marathon Digital Downgraded\"\n    },\n    {\n      \"headline_id\": \"c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7\",\n      \"btc_relevance\": \"indirect\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"Ethereum\"],\n      \"direction\": \"negative\",\n      \"severity\": 1,\n      \"reported_surprise\": 0,\n      \"expected_horizon\": \"unknown\",\n      \"confidence\": 0.7,\n      \"evidence_span\": \"What’s Next for Ethereum in a Post-Merge World?\"\n    }\n  ]\n}"
+    },
+    {
+      "headline_id": "f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f",
+      "information_date": "2022-09-23",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"headline_id\": \"9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"crypto assets\"],\n      \"direction\": \"positive\",\n      \"severity\": 3,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"SBI Group Crypto Arm Wins Singapore Securities License\"\n    },\n    {\n      \"headline_id\": \"f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"DAO\", \"crypto assets\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.85,\n      \"evidence_span\": \"CFTC Pursues First Case Against a DAO\"\n    },\n    {\n      \"headline_id\": \"699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323\",\n      \"btc_relevance\": \"direct\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"BTC\", \"Marathon Digital\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"Bitcoin Miner Marathon Digital Downgraded\"\n    },\n    {\n      \"headline_id\": \"c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7\",\n      \"btc_relevance\": \"indirect\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"Ethereum\"],\n      \"direction\": \"negative\",\n      \"severity\": 1,\n      \"reported_surprise\": 0,\n      \"expected_horizon\": \"unknown\",\n      \"confidence\": 0.7,\n      \"evidence_span\": \"What’s Next for Ethereum in a Post-Merge World?\"\n    }\n  ]\n}"
+    },
+    {
+      "headline_id": "699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323",
+      "information_date": "2022-09-23",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"headline_id\": \"9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"crypto assets\"],\n      \"direction\": \"positive\",\n      \"severity\": 3,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"SBI Group Crypto Arm Wins Singapore Securities License\"\n    },\n    {\n      \"headline_id\": \"f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"DAO\", \"crypto assets\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.85,\n      \"evidence_span\": \"CFTC Pursues First Case Against a DAO\"\n    },\n    {\n      \"headline_id\": \"699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323\",\n      \"btc_relevance\": \"direct\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"BTC\", \"Marathon Digital\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"Bitcoin Miner Marathon Digital Downgraded\"\n    },\n    {\n      \"headline_id\": \"c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7\",\n      \"btc_relevance\": \"indirect\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"Ethereum\"],\n      \"direction\": \"negative\",\n      \"severity\": 1,\n      \"reported_surprise\": 0,\n      \"expected_horizon\": \"unknown\",\n      \"confidence\": 0.7,\n      \"evidence_span\": \"What’s Next for Ethereum in a Post-Merge World?\"\n    }\n  ]\n}"
+    },
+    {
+      "headline_id": "c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7",
+      "information_date": "2022-09-23",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"headline_id\": \"9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"crypto assets\"],\n      \"direction\": \"positive\",\n      \"severity\": 3,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"SBI Group Crypto Arm Wins Singapore Securities License\"\n    },\n    {\n      \"headline_id\": \"f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f\",\n      \"btc_relevance\": \"systemic\",\n      \"event_type\": \"regulation\",\n      \"affected_assets\": [\"DAO\", \"crypto assets\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.85,\n      \"evidence_span\": \"CFTC Pursues First Case Against a DAO\"\n    },\n    {\n      \"headline_id\": \"699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323\",\n      \"btc_relevance\": \"direct\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"BTC\", \"Marathon Digital\"],\n      \"direction\": \"negative\",\n      \"severity\": 2,\n      \"reported_surprise\": 1,\n      \"expected_horizon\": \"24h\",\n      \"confidence\": 0.9,\n      \"evidence_span\": \"Bitcoin Miner Marathon Digital Downgraded\"\n    },\n    {\n      \"headline_id\": \"c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7\",\n      \"btc_relevance\": \"indirect\",\n      \"event_type\": \"market_commentary\",\n      \"affected_assets\": [\"Ethereum\"],\n      \"direction\": \"negative\",\n      \"severity\": 1,\n      \"reported_surprise\": 0,\n      \"expected_horizon\": \"unknown\",\n      \"confidence\": 0.7,\n      \"evidence_span\": \"What’s Next for Ethereum in a Post-Merge World?\"\n    }\n  ]\n}"
+    }
+  ],
+  "summary": {
+    "attempted": 4,
+    "success": 0,
+    "errors": 4
+  }
+}

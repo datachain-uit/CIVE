@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "model": "ministral-3:8b",
+  "model_digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+  "prompt_version": "crypto-multisource-causal-memory-v2.1",
+  "prompt_hash": "ebc9094d4b8377f1a08841b113e89b956863508c52c2526c039cceb9748dd1e9",
+  "policy": {
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "market_outcomes_consulted": false
+  },
+  "information_sets": 48,
+  "identical_information_set_hashes": true,
+  "both_success": 48,
+  "status_failures": 0,
+  "exact_score_agreement": 48,
+  "mean_absolute_score_difference": 0.0,
+  "max_absolute_score_difference": 0.0,
+  "exact_confidence_agreement": 48,
+  "mean_absolute_confidence_difference": 0.0,
+  "max_absolute_confidence_difference": 0.0,
+  "long_flat_action_agreements": 48,
+  "long_flat_action_disagreements": 0,
+  "long_flat_action_agreement_rate": 1.0,
+  "score_deterministic": true,
+  "action_deterministic": true,
+  "inputs": {
+    "left": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_multisource_v2_1.json",
+    "left_sha256": "9e16100a370eb3021ebdbcd70bdf312aea33657c2554b85df2594a880f098021",
+    "right": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run2_multisource_v2_1.json",
+    "right_sha256": "d9a2d3cb5854cee286545171ad2cdef251e861a508b4b0ce50962c40cb3666dc"
+  }
+}

@@ -1,0 +1,2149 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T14:45:07.922526+00:00",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.9-stage1-reliability",
+  "run_id": "event-v3_9-stage1-run1",
+  "model": "ministral-3:8b",
+  "model_digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+  "config_sha256": "2dca09d110c9f9ba55d77a7206ccab24a2ca3041de004db0a33d07d14d960dac",
+  "input_sha256": "d58b812486ab9197158ed33c98cefd8dcc5356a2312c1a842dbfd39de474e4d2",
+  "prompt_sha256": "ac3798d3ee52899f297f1187396c6cfee22bf43c120c38463622c3bf71199497",
+  "response_schema_sha256": "0ac1073b90b469631bb58ab3fccc7b6c89ffcb46bf0faa1103c05b97073e8d87",
+  "batch_size": 4,
+  "workers": 1,
+  "outcomes_consulted": false,
+  "records": [
+    {
+      "headline_id": "9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Singapore securities market",
+        "crypto custody",
+        "institutional crypto access"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "SBI Group Crypto Arm Wins Singapore Securities License",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-16"
+    },
+    {
+      "headline_id": "f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f",
+      "btc_relevance": "indirect",
+      "event_type": "regulation",
+      "affected_assets": [
+        "DAO governance",
+        "crypto compliance",
+        "decentralized entities"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.5,
+      "expected_horizon": "72h",
+      "confidence": 0.8,
+      "evidence_span": "CFTC Pursues First Case Against a DAO",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-23"
+    },
+    {
+      "headline_id": "699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323",
+      "btc_relevance": "direct",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Bitcoin",
+        "Marathon Digital",
+        "BTIG"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.7,
+      "expected_horizon": "24h",
+      "confidence": 0.95,
+      "evidence_span": "Bitcoin Miner Marathon Digital Downgraded at BTIG on Headwinds From Compute North’s Bankruptcy",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-23"
+    },
+    {
+      "headline_id": "c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Ethereum"
+      ],
+      "direction": "negative",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.3,
+      "evidence_span": "What’s Next for Ethereum in a Post-Merge World?",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-23"
+    },
+    {
+      "headline_id": "a8aac5cd5a22dae3687edabcf51f5a5c452a12c089683ba5ea680948628f4ed3",
+      "btc_relevance": "indirect",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "ETHW"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "ETHW Surges",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-29"
+    },
+    {
+      "headline_id": "bf42ca309e1915aff211370cacd0273610af23b794d907108a8fd85c8059c444",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "crypto-asset"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "Basel Committee crypto-asset prudential treatment proposals",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-10-04"
+    },
+    {
+      "headline_id": "11d957a75312fbeb9a7c58b442d709f406753677496f581d1e9f583a58bfee07",
+      "btc_relevance": "none",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Anchorage"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.5,
+      "expected_horizon": "72h",
+      "confidence": 0.8,
+      "evidence_span": "‘What we want is clarity’",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-10-07"
+    },
+    {
+      "headline_id": "e4785fa7d53986433988ed0e4aa10b47de67d7f4b438b633ac30e6fddc4e46c1",
+      "btc_relevance": "indirect",
+      "event_type": "network_protocol",
+      "affected_assets": [
+        "Polygon",
+        "Ethereum"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "zkEVM Public Testnet",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-10-10"
+    },
+    {
+      "headline_id": "09e699318f50b18d129cde24b0efa56903f5cd4bd59f395dcee5d34d52d2a552",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "crypto ATM hub",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-10-22"
+    },
+    {
+      "headline_id": "e7061565c32e00379dc2dd4224e131d150d44d3b20fcbd4d40887caa5aff10b2",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Dogecoin",
+        "Twitter",
+        "Bluesky"
+      ],
+      "direction": "negative",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Elon Musk, Twitter, Dogecoin",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-10-30"
+    },
+    {
+      "headline_id": "05c553ca2cb75cd374c6e413ed2b10385f1b1236f7f954db723ae74c2d1ccdc7",
+      "btc_relevance": "none",
+      "event_type": "network_protocol",
+      "affected_assets": [
+        "Ethereum"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Proof of Stake",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-11-03"
+    },
+    {
+      "headline_id": "42ad056870da15aab1a94aa276e99bbc26d86bf9f7acb3fa1cb89643938e0d93",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Stablecoins",
+        "Circle",
+        "Tether",
+        "FTX",
+        "Alameda"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.9,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "Distance Themselves From FTX, Alameda",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-11-09"
+    },
+    {
+      "headline_id": "228d6f45ee410e6fbb18c9c8b2142deaa41b96342b691e88de2f2b90dd586c59",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "Singapore Banks' Exposure to Bitcoin 'Insignificant' but Subject to Highest Risk Weight",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-11-28"
+    },
+    {
+      "headline_id": "349a3535f08a10b8c6a1f7e719035cef46432cb2b6fafc1fe18a1ec5dc6a823d",
+      "btc_relevance": "none",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Polygon"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.3,
+      "evidence_span": "Minting of Reddit Avatar Tokens",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-05"
+    },
+    {
+      "headline_id": "558f51b91a4d54da5940a9bfcf4518b5c9a261b816d3c4e88c4796baebc2ea94",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Solana"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.8,
+      "evidence_span": "Tensions Erupt Between Magic Eden and Metaplex Over Future of Solana NFTs",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-08"
+    },
+    {
+      "headline_id": "2542a33728983aeea530abf4dd03b121b159d12aaf5016055b7532bbf82ca9df",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "More Fall Victim to Persistent Layoffs",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-09"
+    },
+    {
+      "headline_id": "7332d81719c08cf86e13163670be926295d64315ba5caeb5b611e2c9458ef17d",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Crypto.com's stablecoin reserves",
+        "Crypto.com's client funds"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.3,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "Reserves",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-09"
+    },
+    {
+      "headline_id": "abc18c45b69f14178dc0f34801ca38d4fe83a15f7260b8a5dae69d7b21d74071",
+      "btc_relevance": "indirect",
+      "event_type": "network_protocol",
+      "affected_assets": [
+        "Web3 infrastructure"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "Sustainable Architecture",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-14"
+    },
+    {
+      "headline_id": "29611cb12ead6ae05862a7da2e7ae9dd0bccb1e0b83e8ba8cf881e14a6d1d75c",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Metaverse identity systems"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.5,
+      "evidence_span": "Identity in the metaverse at risk",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-15"
+    },
+    {
+      "headline_id": "dab0da331a85cc8a987fe1025278e189f4aa126e22aeb6158c9be3de2a58f706",
+      "btc_relevance": "indirect",
+      "event_type": "exchange_security",
+      "affected_assets": [
+        "Solana ecosystem",
+        "Raydium DeFi platform"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.9,
+      "expected_horizon": "24h",
+      "confidence": 0.95,
+      "evidence_span": "$2 Million",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-16"
+    },
+    {
+      "headline_id": "a7f374618f1d42b0e914b9acd276e77b30af11d086338b0d84009f21d6701731",
+      "btc_relevance": "direct",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.9,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "Continued Viability in ‘Substantial Doubt’",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-20"
+    },
+    {
+      "headline_id": "bc12f78e1654e232f8f37251a0c6c5cde9fb71468b1bcb1df85667b7e7976c2d",
+      "btc_relevance": "indirect",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Ethereum",
+        "Web3 infrastructure"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.3,
+      "expected_horizon": "72h",
+      "confidence": 0.8,
+      "evidence_span": "ConsenSys Shareholders Win Battle",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-20"
+    },
+    {
+      "headline_id": "43c995c9f1e84e2f5ec719c0385ab73f32d8ff19c2b4bba930d6651d2be7b860",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Bitcoin and these 4 altcoins are showing bullish signs",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-25"
+    },
+    {
+      "headline_id": "0470f69a9a4eb4e3ebc1ca92d87f4d8e9c4e7a224d5470c8231d05f7a62fcbbf",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Web3"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "Positive-Sum Games",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-12-26"
+    },
+    {
+      "headline_id": "d285acb9f58ecb29a69a30d56b125a982373edd498b8802264727c524d59021b",
+      "btc_relevance": "direct",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.9,
+      "reported_surprise": 0.7,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "Bitcoin Surge Causes Over $500M in Liquidations",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-01-16"
+    },
+    {
+      "headline_id": "7767eb507df5a38929c1986819f6e61aa07aaa867353482ec6ab5cdaa9f068d7",
+      "btc_relevance": "direct",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Bitcoin",
+        "Celsius Network Token"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "72h",
+      "confidence": 0.9,
+      "evidence_span": "Celsius Looking to Raise $14.4M Selling Bitcoin Mining Coupons",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-02-10"
+    },
+    {
+      "headline_id": "23148c8cf091534dc530c4dc69de6c72ae392a98e8b57281e97c30a578a6908b",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "US Labor Department",
+        "Crypto 401(k)"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Republican Initiative Would Counter Labor Department Crypto 401(k) Caution",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-02-15"
+    },
+    {
+      "headline_id": "229e1defe44e96cd16d6862686ca331407a747edc2d23f634322606b65b01fd9",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Solana"
+      ],
+      "direction": "negative",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Solana Spaces Closing Stores",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-02-21"
+    },
+    {
+      "headline_id": "c7b3ecd1882f6354a44c391b4be64dc680c17ec7ddddc07591d9017a3f00b4f1",
+      "btc_relevance": "indirect",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Polygon",
+        "ZK-proof protocols"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "ZK proof-of-solvency protocol",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-09"
+    },
+    {
+      "headline_id": "e74430034f77a6c25b289c18aa9b0ac85d19e8d3f5a2469ae44e5e53894136a1",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Ethereum",
+        "KuCoin",
+        "US crypto exchanges"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.5,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "New York Attorney General Sues KuCoin, Claims Ethereum Is a Security",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-09"
+    },
+    {
+      "headline_id": "88b97657fd9f96d182fbce1e296307c96bbc0a98ead359ca3252b9e230d07c34",
+      "btc_relevance": "indirect",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "SVB",
+        "Rippling",
+        "US financial institutions"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.8,
+      "evidence_span": "SVB Contagion Reaches Clients",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-10"
+    },
+    {
+      "headline_id": "7f730bfefb9eb9add0878de0cbf7517e845ad4e37e5082d5c033c671b75f1722",
+      "btc_relevance": "systemic",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "USDC",
+        "stablecoins"
+      ],
+      "direction": "positive",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "USDC bounces back toward $1 peg",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-13"
+    },
+    {
+      "headline_id": "9de692f920d59472acb8b43e9fa6a1ff869a1bf8232c5bb28ee11d0e93ba72c9",
+      "btc_relevance": "indirect",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Shiba Inu"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "allegations of code, chain ID plagiarism",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-16"
+    },
+    {
+      "headline_id": "9ea0a1e857c8c0a37be61eb9abeb7b85024a4963136659cae1155420f8682f77",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [],
+      "direction": "negative",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "DeFi insurance payouts amounted to $34.4M",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-21"
+    },
+    {
+      "headline_id": "125c8e5704e170480fda1af9e1904b1a0618608db0dcd4fd6a466bfd55ad25c7",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Binance",
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.9,
+      "reported_surprise": 0.8,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "CFTC Could Force Binance to Cease U.S. Operations",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-03-28"
+    },
+    {
+      "headline_id": "f015c0bc017c61c8e9c9f1852cb1aff7d5249d56faaa323858cdf18371974d92",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Ethereum"
+      ],
+      "direction": "positive",
+      "severity": 0.1,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "Remember POGs? They’re Back",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-04-04"
+    },
+    {
+      "headline_id": "c643cb3c3345de35f82edd8485aa210eb8b1acd26ce218819764b037c1a82eac",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Bitcoin Strategy Is Paying Off",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-04-11"
+    },
+    {
+      "headline_id": "b65ed44c7907e6c6aecf06622552dc239e94a3c2635a21418c9f2a846df814dd",
+      "btc_relevance": "systemic",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "USDC",
+        "stablecoin_plumbing"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.5,
+      "expected_horizon": "24h",
+      "confidence": 0.8,
+      "evidence_span": "USDC Depeg Insurance",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-04-27"
+    },
+    {
+      "headline_id": "8e4349823139231b491731c1457fed3c4c3b81dbae2828cea2d1e89a563b6f5b",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin options traders positioning for the US banking crisis",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-05-04"
+    },
+    {
+      "headline_id": "d495e0fd03bf272e6454d6ef8efccc59805885c63a20f94b23942e4ad4573b06",
+      "btc_relevance": "indirect",
+      "event_type": "regulation",
+      "affected_assets": [
+        "blockchain"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "Privacy in Blockchain",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-05-24"
+    },
+    {
+      "headline_id": "c5c330998941961f0730c98e4a83af07def15928d047c81465878095113d56b1",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.3,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "SEC has pushed investors into ‘toxic’ crypto products",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-07-03"
+    },
+    {
+      "headline_id": "4c68f32e018f7126299065dfd63fb54804176eda38a79f2abac8c8bb103bac95",
+      "btc_relevance": "indirect",
+      "event_type": "network_protocol",
+      "affected_assets": [
+        "Polygon",
+        "Ethereum"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Avail, Spun Out of Polygon, Launches Data Attestation Bridge to Ethereum",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-07-07"
+    },
+    {
+      "headline_id": "dac2cdde9f34a4181a247d92293cee253a06adcfa562cafa91c97ba7fd4c54e4",
+      "btc_relevance": "systemic",
+      "event_type": "macro_liquidity",
+      "affected_assets": [
+        "BTC",
+        "crypto"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Crypto Can’t Be Used as Money Due to ‘Inherent Flaws,’ BIS Tells G20",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-07-11"
+    },
+    {
+      "headline_id": "86a1f16e3a6b908a4bc98945766f93c536194a040de3f617cd12c4ba962a7a36",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Grimace NFTs"
+      ],
+      "direction": "negative",
+      "severity": 0.1,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "No Trading Option",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-08-17"
+    },
+    {
+      "headline_id": "92179152e739b8fea24c5467378c4cf86c3225163ec36b991d5bfd8178faca5e",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "EOS"
+      ],
+      "direction": "positive",
+      "severity": 0.1,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.3,
+      "evidence_span": "EOS Network's Token Receives Trading Approval in Japan",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-08-30"
+    },
+    {
+      "headline_id": "f11256b37292147ee4fe5192a95c7e7c4366d6d9aa1447618b3e3227e432bc4b",
+      "btc_relevance": "systemic",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "stablecoins",
+        "forex market",
+        "global liquidity"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "stablecoin forex market debut",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-09-13"
+    },
+    {
+      "headline_id": "b1a80280e22bd855ccf1e88cdb7f56538438628e8123986fa4a0a6434a357876",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "RGB Protocol",
+        "Bitfinex"
+      ],
+      "direction": "positive",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin Stablecoins",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-10-20"
+    },
+    {
+      "headline_id": "e3368f776ed852e6328b1b398c22e7786a66751f376441152b80be5a84a66a0a",
+      "btc_relevance": "none",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Coinbase"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.4,
+      "evidence_span": "Coinbase Bolsters Global Advisory Council",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-11-07"
+    },
+    {
+      "headline_id": "632b5421dee403e1e203160cebf94e63aa8f73add821e22eef36a641191627de",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Solana"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Experts Say It's No Surprise",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-11-08"
+    },
+    {
+      "headline_id": "6d22f0943b6308754755b40119c094c326509beb6d5b8634c669aa638701cbb6",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Chainalysis",
+        "crypto_fraud_prevention",
+        "KPMG_Canada"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "KPMG Canada Teams Up With Chainalysis",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-11-22"
+    },
+    {
+      "headline_id": "086b0cf1a11da9c3a6f66da6a8b0a760d0bb00421eb0cd246422d43e17c3ef04",
+      "btc_relevance": "indirect",
+      "event_type": "adoption_business",
+      "affected_assets": [
+        "Bitcoin",
+        "Tron"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "Terrorist Groups: Report",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-11-27"
+    },
+    {
+      "headline_id": "69c033defad2ba73e9955011050273981227084a3f8096e0256bcf67e7399f30",
+      "btc_relevance": "none",
+      "event_type": "adoption_business",
+      "affected_assets": [
+        "Ethereum",
+        "Immutable",
+        "Merit_Circle_DAO"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Partners with Immutable",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-12-07"
+    },
+    {
+      "headline_id": "187e12c872bd9425fff8248ed8beb045c076060147a20e1a46e2726e6204de73",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Ripple",
+        "XRP",
+        "crypto custody services"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Standard Chartered Zodia Integrates Ripple-Owned Metaco’s Crypto Safekeeping",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-12-19"
+    },
+    {
+      "headline_id": "a361bc3aa61c98e177f65789c31f16c1b298610c76d980f7fe6a3b9fb53bcde2",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "Ordinals",
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin Ordinals Critic Caves as Jack Dorsey-Backed Ocean Mining Pool Flips on Inscriptions",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2023-12-21"
+    },
+    {
+      "headline_id": "b1491dbd4290797b882c2a4cf26bab2e9d3f41a3beb08d6c1547a11fa7cead47",
+      "btc_relevance": "none",
+      "event_type": "regulation",
+      "affected_assets": [
+        "SEC",
+        "X (Twitter)"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.7,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "SEC should be held accountable for X account compromise",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-01-09"
+    },
+    {
+      "headline_id": "45d978e9f55c5ba7bb10e06b34039a9298633fa81aec579eda659abb169862b7",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "BTC",
+        "SEC",
+        "X (Twitter)"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.8,
+      "expected_horizon": "unknown",
+      "confidence": 1.0,
+      "evidence_span": "Twitter Safety: ‘Compromised’ SEC Account Posted Fake Bitcoin ETF Tweet",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-01-10"
+    },
+    {
+      "headline_id": "bd79d965e5ae493f99300ff687499b87585988ab4c5d813604d0d9b76cfe1813",
+      "btc_relevance": "indirect",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "JUP",
+        "Solana"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Jupiter Finally Sets a Date for JUP Airdrop",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-01-15"
+    },
+    {
+      "headline_id": "67aa537cd5d4dc02d51f1be47e2ba008b81c772f03364c58325c78eec94336df",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 1.0,
+      "evidence_span": "Jamie Dimon Bashes Bitcoin Again: 'A Pet Rock'",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-01-17"
+    },
+    {
+      "headline_id": "d87c4827a48661086fb1fb15997e9c5ac9f3647d00cb2b7d8759f14d906e16b9",
+      "btc_relevance": "none",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "WEN",
+        "Solana"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "New Solana Meme Coin ‘WEN’ Airdropped",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-01-27"
+    },
+    {
+      "headline_id": "37ed1b9ca36e699ca4b67112515b38bd69e17c974f61a202ca30450ae3ed4d52",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "Stacks"
+      ],
+      "direction": "positive",
+      "severity": 0.5,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Bitcoin is just 25% below its record high",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-02-15"
+    },
+    {
+      "headline_id": "8d4e104816d6adb1182609861f4f01c313b2415d57951924196587504bea4c28",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [],
+      "direction": "negative",
+      "severity": 0.0,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.0,
+      "evidence_span": "Zama Raises $73M",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-03-07"
+    },
+    {
+      "headline_id": "2f36ee4c32623b1bce65de5c06db7eac0527f136d8a27b6fe915c40016cd2357",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.5,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin price briefly tops $70K to reach new all-time high",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-03-08"
+    },
+    {
+      "headline_id": "50c10c0efafb7e3322e1050ad68c0781ae101b18e32f0cdba0f00447a3ffbe63",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "crypto market"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "72h",
+      "confidence": 0.7,
+      "evidence_span": "America should look to the Caribbean for crypto regulation",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-03-25"
+    },
+    {
+      "headline_id": "2fdf4a518ee905622e3f474d1436a3f70979786f3b1a45b1028799f06659b770",
+      "btc_relevance": "direct",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "Craig Wright"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "UK Court Freezes £6 Million of Craig Wright’s Assets",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-03-29"
+    },
+    {
+      "headline_id": "85dd0d2b513a1892070f6c5f80795776bdd7fb30d6ddb1d0980b80f90934b426",
+      "btc_relevance": "direct",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "BTC",
+        "Liquid Staked Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Liquid staked bitcoin provides new yield option for BTC holders",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-04-10"
+    },
+    {
+      "headline_id": "105df687c10650903c4215aceb26260bbb36481dc336efcdfe20b74a11582465",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "LUNC"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Terra Luna Classic as LUNC Plummets 30% in a Month – Is It Going to Zero?",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-04-12"
+    },
+    {
+      "headline_id": "206e16f5ea2df5002b5e5d2613731e969ebcdc05e45f623d61a4f956403ece96",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "SOL"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Solana's SOL Could Hit $200 By Month End",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-05-17"
+    },
+    {
+      "headline_id": "3baa26616c42cb7cf28d02f3271036bea486020e299792e354ef1d7ccec3c67e",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "BTC",
+        "meme coins"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.6,
+      "evidence_span": "Bitcoin Runes Are Back? Meme Coin Surge Pushes Market Cap Over $2 Billion",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-05-31"
+    },
+    {
+      "headline_id": "8c8e8f3298c1b67dcffff790812321cdec4e9ccfc8a35f7d569b89b089b2674c",
+      "btc_relevance": "indirect",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Ethereum",
+        "Layer 2s"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.3,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "halt highlights slow decentralization",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-06-03"
+    },
+    {
+      "headline_id": "1913b2e11403279e6b8c9d325b4d99c871c5a33bf3a76f8442979727b4a1c6b6",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "WeatherXM",
+        "Web3",
+        "IoT"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Revolutionizing weather data with Web3",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-06-03"
+    },
+    {
+      "headline_id": "ad1100be0d78f57a9c2de5872deab56216e1265e58bd00231fa72520851462e2",
+      "btc_relevance": "none",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Worldcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.8,
+      "expected_horizon": "24h",
+      "confidence": 0.95,
+      "evidence_span": "No further police action",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-06-20"
+    },
+    {
+      "headline_id": "2f0f045c26db4d95bb91264ead18868059571c8ec5d10158f7cfd95c7bcb4a55",
+      "btc_relevance": "direct",
+      "event_type": "adoption_business",
+      "affected_assets": [
+        "Bitcoin",
+        "Lightning Network"
+      ],
+      "direction": "positive",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "72h",
+      "confidence": 1.0,
+      "evidence_span": "Bitcoin Lightning Network-powered platform",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-06-21"
+    },
+    {
+      "headline_id": "abf6b6a517a218093e46eb3f77953ff556c57440aed1bec82c4625f580565e54",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Price Target Cut",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-06-24"
+    },
+    {
+      "headline_id": "19a7ce905bbe2c3380b9a21e8405533b873f958ed87784e462bb836ff913f71e",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "ETF Outflows",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-06-25"
+    },
+    {
+      "headline_id": "a84105c2a6a7821f88fe5381abf34a1aa6be4427d15a28c27e7bae0b6861fbee",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "BlockFi customers",
+        "crypto custody"
+      ],
+      "direction": "positive",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Make Customers Whole",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-07-23"
+    },
+    {
+      "headline_id": "b887373568354df65c79c85f6e92e5e08a6b92359f194ff393ac0709f6b54d2e",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "bulls pressure $62K BTC price wall",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-08-22"
+    },
+    {
+      "headline_id": "7dd1dbb8b084ac1f9cc469ee614970dd9c9f35d204c0d803af8ed7f2dee8e711",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Binance Says It Helped India's Enforcement Directorate Trace",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-09-25"
+    },
+    {
+      "headline_id": "af23bd1e2c14780e8f50b3744b4f83c95f4c0aef0bf19b163eb4b544d706b442",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Dogecoin"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Whales Boost MOODENG Price",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-09-30"
+    },
+    {
+      "headline_id": "88e2074f8b6ed58eb63934d23b58009a7ffb12a3480ea7cd4657b99bb858534a",
+      "btc_relevance": "none",
+      "event_type": "exchange_security",
+      "affected_assets": [
+        "Ethereum",
+        "Uniswap"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Pepe Holder Loses $1.4 Million in Uniswap Permit2 Phishing Attack",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-10-14"
+    },
+    {
+      "headline_id": "28e7fb27968815af238ac0a875d578c0b18e45a46d7c21eaf2bea2d94054a495",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Bitcoin price could fast-track to $100K high",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-11-14"
+    },
+    {
+      "headline_id": "11069507cdbec7b496b04e69cccf46a36a64197a4dc474e52ff7c2420827a75e",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.0,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.3,
+      "evidence_span": "Bitcoin’s mission to flip gold",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-11-18"
+    },
+    {
+      "headline_id": "08cfba04acb56677993470c637db6c951b4b3b58c9e6c0f67614811a33b874eb",
+      "btc_relevance": "indirect",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "XRP",
+        "Bitcoin"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.4,
+      "evidence_span": "10x More Than Bitcoin",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-12-02"
+    },
+    {
+      "headline_id": "c754db597611d01d19237040c218390b696052323143794a686d7b4e3b01cf92",
+      "btc_relevance": "none",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Crypto"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.9,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "Crypto Cash Seized Political Power in Congress",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-12-12"
+    },
+    {
+      "headline_id": "90e95aaae3af5fea92284767dbec63e6c15c84e01fd7cf872277c62646411196",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin Jumps to Record Price",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2024-12-16"
+    },
+    {
+      "headline_id": "f5f003706dbfce5769d7a805c77209ac724eba76748d172050d76511e0125c19",
+      "btc_relevance": "direct",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "Metaplanet To Expand Bitcoin Holdings by 470%",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-01-06"
+    },
+    {
+      "headline_id": "844675be7c15e09ebc01c63ca151dc132267a7c69a6add299d96b3c943331e9b",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "crypto"
+      ],
+      "direction": "negative",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "NY Attorney General files lawsuit to recoup $2.2M in crypto",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-01-12"
+    },
+    {
+      "headline_id": "4329dad289cff8f05eca0ce01296110e2732f3d667f69eacdc2fba48bb7a6710",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Solana"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "MoonPay acquires Solana startup",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-01-13"
+    },
+    {
+      "headline_id": "5aff76c0b46d148e8b54c67ee3184a50b8b772de6cee40ee4e8a00cd6ab30690",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "blockchain"
+      ],
+      "direction": "positive",
+      "severity": 0.8,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 1.0,
+      "evidence_span": "Eight U.S. Blockchain Lobby Groups Unite Ahead of Trump's Crypto Friendly Regime",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-01-15"
+    },
+    {
+      "headline_id": "83cfe2d7286b2636f8af2527363008cebba586dcc33addc9e46c48a1f37721da",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "USD"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin Not a 'Threat' to US Dollar",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-01-22"
+    },
+    {
+      "headline_id": "ad887745dd05351e075103f9cf6609563bf42d633b372a9f83ecab0151bed301",
+      "btc_relevance": "systemic",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "USD",
+        "global_liquidity"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "M2 Money Supply Approaches All-Time High",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-01-29"
+    },
+    {
+      "headline_id": "44b50c9acd1c5bf642c32761e95916cbb4203bcebe5975e32494e0c6aa31dd23",
+      "btc_relevance": "systemic",
+      "event_type": "regulation",
+      "affected_assets": [
+        "crypto",
+        "Klarna"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "‘embrace crypto,’",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-02-11"
+    },
+    {
+      "headline_id": "9452f2f6986cbb02dc5285f1306ec899677b0aac68a39cbad6655f6128874272",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Ethereum"
+      ],
+      "direction": "negative",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Ethereum Foundation not behind",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-03-11"
+    },
+    {
+      "headline_id": "ba0bf989bc89c3dc4be79a89b030be1f2764315830ac94c3784909c1e92ee456",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Ether",
+        "ETH"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Ether Whale",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-03-11"
+    },
+    {
+      "headline_id": "2b1122ad9a4241fbc222e644952827ad0a9b390e24e2b453e1f36cbf01e7e9d8",
+      "btc_relevance": "systemic",
+      "event_type": "macro_liquidity",
+      "affected_assets": [
+        "US Dollar",
+        "Crypto Market Liquidity"
+      ],
+      "direction": "negative",
+      "severity": 0.8,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.95,
+      "evidence_span": "US recession",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-03-17"
+    },
+    {
+      "headline_id": "08686ed8796590fb0399a36e16f23b63bfd1e6e9f08283ffd898a14c7259f238",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "BTC"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.95,
+      "evidence_span": "Bitcoin Whales Move",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-03-25"
+    },
+    {
+      "headline_id": "7762f02791acbc7d3ee920b477f772c558a50dc6c2b0e35a9d78179fb75e7392",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin",
+        "BTC"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin has two",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-09"
+    },
+    {
+      "headline_id": "8af9c7b19c12d254e5e99d58268a74b3798603204bd29329f818ff97027c80cc",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "PAXG",
+        "XAUT",
+        "crypto market"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Gold ETF Inflows Hit Three-Year High as PAXG, XAUT Outperform",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-13"
+    },
+    {
+      "headline_id": "78b10911ba8fce681181aa3d4a20868cb29040abfae53b0c874dbe663f20bceb",
+      "btc_relevance": "none",
+      "event_type": "regulation",
+      "affected_assets": [
+        "NFTs"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Pennsylvania Man Who Made Millions Flipping NFTs Faces Charges After IRS Investigation",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-14"
+    },
+    {
+      "headline_id": "cb4096c8f6e741439d685a5f631b0e12771ca5d1756841c64dfa1537f4aaab3a",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "bitcoin to top all-time highs",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-14"
+    },
+    {
+      "headline_id": "35569243f4073f44a0032771a37598180463103b489eaefdefe5d496a0fda724",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "ME token",
+        "Magic Eden"
+      ],
+      "direction": "positive",
+      "severity": 0.1,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Magic Eden unveils Season 2 of ME token rewards",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-18"
+    },
+    {
+      "headline_id": "ea5dd10c83d9eacab6c026f041b97d2eb93576d0845d467e84892c319722de47",
+      "btc_relevance": "indirect",
+      "event_type": "regulation",
+      "affected_assets": [
+        "NFTs",
+        "Ethereum"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Yuga Labs Demands $400K in Influencer’s Crypto Wallets Over NFT Lawsuit",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-23"
+    },
+    {
+      "headline_id": "732fc92d64a49917d0b7449d15e7f09ed06e789c7a5e76b33d30ff411abb32b3",
+      "btc_relevance": "direct",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "SEC",
+        "El Salvador"
+      ],
+      "direction": "positive",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin-Friendly El Salvador Pitches Tokenized Real Estate 'Sandbox' to Trump's SEC",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-24"
+    },
+    {
+      "headline_id": "d5d8c88301b5ca204f81b0a1c1da3a71cee23760f4c82c98e4a6507b35126e6c",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Solana"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.7,
+      "evidence_span": "Now dominant in crypto",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-25"
+    },
+    {
+      "headline_id": "10066d94eeca5582b453580945ce2fa6be0e2aee6901aa0fac2b113022b95499",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "BONK",
+        "Shiba Inu",
+        "Solana"
+      ],
+      "direction": "positive",
+      "severity": 0.6,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "BONK price gains 60% in a week",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-04-29"
+    },
+    {
+      "headline_id": "29bd8b870ad3617db480e75dfbd532ae800cf30d2573c7717408c31869cf5b70",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "IMX"
+      ],
+      "direction": "positive",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Soars 24% in 4-Hour Rally",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-05-02"
+    },
+    {
+      "headline_id": "11d8a5d3d51f8bd8fcf8d6efe948bb26cd8641c81a250ead8876e38440b27266",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "DOGE"
+      ],
+      "direction": "positive",
+      "severity": 0.4,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "180% DOGE price rally if Bitcoin gains continue",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-05-13"
+    },
+    {
+      "headline_id": "72b8637bb71c4ddbd53bb4bb56fec49be384b8ed6cfed646134387265c712be3",
+      "btc_relevance": "direct",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "BTC"
+      ],
+      "direction": "positive",
+      "severity": 0.2,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Pays Real BTC",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-06-10"
+    },
+    {
+      "headline_id": "a7f52d4945af94a548b56fd422b504707f2ffdb922afc39fa6e80d8be1c5b560",
+      "btc_relevance": "systemic",
+      "event_type": "liquidation_leverage",
+      "affected_assets": [
+        "Bitcoin Cash",
+        "BTC"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.5,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Bitcoin Cash Futures Jump 24% as Active Addresses Hit Six-Year Low",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-07-04"
+    },
+    {
+      "headline_id": "25c9ddc80cd5f6431f6ca554901ec1439fc60b4d543864a32548bba239886b4a",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [],
+      "direction": "negative",
+      "severity": 0.0,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.0,
+      "evidence_span": "Crypto",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-07-22"
+    },
+    {
+      "headline_id": "6cbe2eb085fdabca501826a250d8f98f7576daac56f3cecfb38c0a80e5085c11",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Dogecoin"
+      ],
+      "direction": "negative",
+      "severity": 0.9,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.9,
+      "evidence_span": "Doge Price News: Dogecoin Plunges 9%",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-07-29"
+    },
+    {
+      "headline_id": "814659c42a6dd70abefeb7433b71ee39825b23706b66bbd62388720570c83d0f",
+      "btc_relevance": "none",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Ether"
+      ],
+      "direction": "positive",
+      "severity": 0.0,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.0,
+      "evidence_span": "Ether Price (ETH) News",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-08-08"
+    },
+    {
+      "headline_id": "a3f5da86189e4fbb7243bb49b0b6f300d2259f908af01f496ca8ff706712ae6d",
+      "btc_relevance": "direct",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "direction": "positive",
+      "severity": 0.0,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.0,
+      "evidence_span": "Crypto Up Today",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-08-13"
+    },
+    {
+      "headline_id": "1673746661a4d3aeea02999653a346fa1eeb0813f6a95345890a5b0ecfd4e554",
+      "btc_relevance": "indirect",
+      "event_type": "market_commentary",
+      "affected_assets": [
+        "Ethereum"
+      ],
+      "direction": "negative",
+      "severity": 0.3,
+      "reported_surprise": 0.0,
+      "expected_horizon": "unknown",
+      "confidence": 0.8,
+      "evidence_span": "Ethereum ETF Flows",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-08-13"
+    },
+    {
+      "headline_id": "7e2b763ab20b1a3c4cc406b3c324fae22c88d0d0fcf428c4f9676c40d8eefdd0",
+      "btc_relevance": "direct",
+      "event_type": "regulation",
+      "affected_assets": [
+        "Bitcoin",
+        "crypto markets"
+      ],
+      "direction": "negative",
+      "severity": 0.7,
+      "reported_surprise": 0.0,
+      "expected_horizon": "24h",
+      "confidence": 0.9,
+      "evidence_span": "CFTC to adopt Nasdaq surveillance",
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2025-08-27"
+    }
+  ],
+  "summary": {
+    "attempted": 114,
+    "success": 114,
+    "errors": 0,
+    "evidence_fallbacks": 0
+  }
+}

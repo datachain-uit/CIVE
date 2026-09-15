@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Cancelled — June 24 Commission Open Meeting </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8924-24</link>
+  <description/>
+  <pubDate>Sat, 22 Jun 2024 23:05:24 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8924-24</guid>
+    </item>
+<item>
+  <title>CFTC to Hold a Commission Open Meeting June 24</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8923-24</link>
+  <description/>
+  <pubDate>Mon, 17 Jun 2024 20:57:43 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8923-24</guid>
+    </item>
+<item>
+  <title>CFTC’s Global Markets Advisory Committee Advances Recommendations on Basel III Endgame and Variation Margin Processes</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8918-24</link>
+  <description/>
+  <pubDate>Tue, 04 Jun 2024 19:50:34 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8918-24</guid>
+    </item>
+<item>
+  <title>Commissioner Pham Announces Agenda for Global Markets Advisory Committee Meeting on June 4</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8916-24</link>
+  <description/>
+  <pubDate>Thu, 30 May 2024 20:43:53 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8916-24</guid>
+    </item>
+<item>
+  <title>IOSCO Board Re-Elects CFTC Chairman Behnam as Vice Chair </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8915-24</link>
+  <description/>
+  <pubDate>Tue, 28 May 2024 18:46:00 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8915-24</guid>
+    </item>
+<item>
+  <title>CFTC Staff Announces Updated Part 43 Block and Cap Sizes and Further Extends No-Action Letter Regarding the Block and Cap Implementation Timeline</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8913-24</link>
+  <description/>
+  <pubDate>Thu, 23 May 2024 17:22:34 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8913-24</guid>
+    </item>
+<item>
+  <title>Commissioner Pham Announces CFTC Global Markets Advisory Committee Meeting on June 4 </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8912-24</link>
+  <description/>
+  <pubDate>Thu, 23 May 2024 14:20:48 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8912-24</guid>
+    </item>
+<item>
+  <title>CFTC Warns Students and Job Seekers Not to Become “Money Mules”</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8908-24</link>
+  <description/>
+  <pubDate>Mon, 13 May 2024 15:32:03 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8908-24</guid>
+    </item>
+<item>
+  <title>CFTC Issues Proposal on Event Contracts</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8907-24</link>
+  <description/>
+  <pubDate>Fri, 10 May 2024 17:49:21 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8907-24</guid>
+    </item>
+<item>
+  <title>CFTC to Hold a Commission Open Meeting May 10</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8906-24</link>
+  <description/>
+  <pubDate>Fri, 03 May 2024 20:30:38 +0000</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8906-24</guid>
+    </item>
+
+  </channel>
+</rss>

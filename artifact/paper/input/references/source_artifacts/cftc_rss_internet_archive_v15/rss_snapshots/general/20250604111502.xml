@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Names Paul Hayeck as Acting Director of Division of Enforcement</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9082-25</link>
+  <description/>
+  <pubDate>Mon, 02 Jun 2025 12:14:37 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9082-25</guid>
+    </item>
+<item>
+  <title>CFTC Resolves Technical Issues with Comment Portal</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9079-25</link>
+  <description/>
+  <pubDate>Thu, 22 May 2025 21:12:11 +0000</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9079-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Advisory on Market Volatility Controls</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9078-25</link>
+  <description/>
+  <pubDate>Thu, 22 May 2025 19:34:45 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9078-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Interpretation Regarding Certain Cross-Border Definitions</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9077-25</link>
+  <description/>
+  <pubDate>Wed, 21 May 2025 18:15:55 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9077-25</guid>
+    </item>
+<item>
+  <title>CFTC Releases Procedures on Registered Non-U.S. Swap Entities Using Substituted Compliance</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9076-25</link>
+  <description/>
+  <pubDate>Tue, 20 May 2025 18:43:17 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9076-25</guid>
+    </item>
+<item>
+  <title>CFTC Warns Public of Imposter Scam Targeting Fraud Victims</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9075-25</link>
+  <description/>
+  <pubDate>Wed, 14 May 2025 14:39:59 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9075-25</guid>
+    </item>
+<item>
+  <title>Acting Chairman Pham Statement on Court Sanctions Against CFTC</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9074-25</link>
+  <description/>
+  <pubDate>Tue, 13 May 2025 20:39:17 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9074-25</guid>
+    </item>
+<item>
+  <title>CFTC’s Energy and Environmental Markets Advisory Committee to Meet May 28</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9073-25</link>
+  <description/>
+  <pubDate>Tue, 13 May 2025 17:21:00 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9073-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff on Leave Pending Investigation  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9071-25</link>
+  <description/>
+  <pubDate>Mon, 05 May 2025 19:24:37 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9071-25</guid>
+    </item>
+<item>
+  <title>CFTC Announces Departure of Amanda Olear After Nearly 2 Decades of Service </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9070-25</link>
+  <description/>
+  <pubDate>Tue, 29 Apr 2025 15:50:35 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9070-25</guid>
+    </item>
+
+  </channel>
+</rss>

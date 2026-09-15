@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-27T10:01:13.237048+00:00",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.8-full-extraction",
+  "config_sha256": "6a1c72a1e322f3a2e80bfd5c610fd900e6bd12010ec89b8bc46cb736fc3f86e8",
+  "input_sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086",
+  "checkpoint_path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_extractor_v3_8_full_checkpoint.ndjson",
+  "records": 1252,
+  "success": 1248,
+  "errors": 4,
+  "evidence_fallbacks": 32,
+  "completed_batches": 313,
+  "expected_records": 39393,
+  "outcomes_consulted": false
+}

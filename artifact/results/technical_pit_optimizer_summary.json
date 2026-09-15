@@ -1,0 +1,810 @@
+{
+  "generated_at": "2026-08-11T10:31:59.417345+00:00",
+  "status": "research only; selection uses first folds, validation is reported after locking",
+  "selection_rule": "max compounded train-fold log return subject to >=4/6 positive folds and <=25% maximum train-fold drawdown",
+  "train_folds": 6,
+  "structure_winner": {
+    "name": "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop2p5",
+    "config": {
+      "event_family": "channel",
+      "event_lookback": 10,
+      "channel_width": 0.1,
+      "rank_mode": "oscillator-ensemble",
+      "rank_days": 20,
+      "top_n": 2,
+      "liquidity_size": 5,
+      "liquidity_lookback": 30,
+      "stop_atr": 2.5
+    }
+  },
+  "coordinate_winner": {
+    "name": "channel10_w0p1_oscillator-ensemble_r20_top1_liq5x30_stop2p5",
+    "config": {
+      "event_family": "channel",
+      "event_lookback": 10,
+      "channel_width": 0.1,
+      "rank_mode": "oscillator-ensemble",
+      "rank_days": 20,
+      "top_n": 1,
+      "liquidity_size": 5,
+      "liquidity_lookback": 30,
+      "stop_atr": 2.5
+    }
+  },
+  "interaction_winner": {
+    "name": "channel10_w0p1_momentum_r20_top1_liq5x30_stop2p5",
+    "config": {
+      "event_family": "channel",
+      "event_lookback": 10,
+      "channel_width": 0.1,
+      "rank_mode": "momentum",
+      "rank_days": 20,
+      "top_n": 1,
+      "liquidity_size": 5,
+      "liquidity_lookback": 30,
+      "stop_atr": 2.5
+    }
+  },
+  "structure_summary": {
+    "channel10_w0p08_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.35181136,
+      "train_compounded_return_pct": 42.164,
+      "train_positive_folds": 5,
+      "train_max_fold_drawdown_pct": 8.4721,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.977,
+          "max_drawdown_pct": 5.3493
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -5.6883,
+          "max_drawdown_pct": 8.7238
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 12874.52,
+        "return_pct": 28.7452,
+        "max_drawdown_pct": 13.025,
+        "fills": 82
+      }
+    },
+    "channel10_w0p08_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.35181136,
+      "train_compounded_return_pct": 42.164,
+      "train_positive_folds": 5,
+      "train_max_fold_drawdown_pct": 8.4721,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.977,
+          "max_drawdown_pct": 5.3493
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -5.6883,
+          "max_drawdown_pct": 8.7238
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 12874.52,
+        "return_pct": 28.7452,
+        "max_drawdown_pct": 13.025,
+        "fills": 82
+      }
+    },
+    "channel10_w0p1_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.74061845,
+      "train_compounded_return_pct": 109.7232,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3365,
+          "max_drawdown_pct": 5.0202
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -4.4976,
+          "max_drawdown_pct": 8.7237
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19360.78,
+        "return_pct": 93.6078,
+        "max_drawdown_pct": 12.0329,
+        "fills": 152
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.74061845,
+      "train_compounded_return_pct": 109.7232,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3365,
+          "max_drawdown_pct": 5.0202
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -4.506,
+          "max_drawdown_pct": 8.7237
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19359.07,
+        "return_pct": 93.5907,
+        "max_drawdown_pct": 12.0406,
+        "fills": 152
+      }
+    },
+    "channel10_w0p15_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.73707856,
+      "train_compounded_return_pct": 108.9821,
+      "train_positive_folds": 5,
+      "train_max_fold_drawdown_pct": 15.3294,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -5.5241,
+          "max_drawdown_pct": 9.3758
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -11.7987,
+          "max_drawdown_pct": 12.0634
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 17414.26,
+        "return_pct": 74.1426,
+        "max_drawdown_pct": 18.8282,
+        "fills": 226
+      }
+    },
+    "channel10_w0p15_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.67186758,
+      "train_compounded_return_pct": 95.789,
+      "train_positive_folds": 5,
+      "train_max_fold_drawdown_pct": 15.3294,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -6.1495,
+          "max_drawdown_pct": 9.1007
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -11.7939,
+          "max_drawdown_pct": 12.0586
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 16207.77,
+        "return_pct": 62.0777,
+        "max_drawdown_pct": 19.3612,
+        "fills": 226
+      }
+    },
+    "channel20_w0p15_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.23862022,
+      "train_compounded_return_pct": 26.9496,
+      "train_positive_folds": 4,
+      "train_max_fold_drawdown_pct": 11.5109,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -1.4121,
+          "max_drawdown_pct": 3.1274
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -0.7196,
+          "max_drawdown_pct": 7.8724
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 12425.64,
+        "return_pct": 24.2564,
+        "max_drawdown_pct": 11.7919,
+        "fills": 98
+      }
+    },
+    "channel20_w0p15_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.23862022,
+      "train_compounded_return_pct": 26.9496,
+      "train_positive_folds": 4,
+      "train_max_fold_drawdown_pct": 11.5109,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -1.4121,
+          "max_drawdown_pct": 3.1274
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -9.2458,
+          "max_drawdown_pct": 9.4517
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 11358.53,
+        "return_pct": 13.5853,
+        "max_drawdown_pct": 14.0072,
+        "fills": 100
+      }
+    },
+    "sr10_w0p1_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": -0.01589594,
+      "train_compounded_return_pct": -1.577,
+      "train_positive_folds": 3,
+      "train_max_fold_drawdown_pct": 30.7872,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -19.7907,
+          "max_drawdown_pct": 24.9143
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -14.7775,
+          "max_drawdown_pct": 15.0333
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 6904.38,
+        "return_pct": -30.9562,
+        "max_drawdown_pct": 43.1056,
+        "fills": 352
+      }
+    },
+    "sr10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.05493991,
+      "train_compounded_return_pct": 5.6477,
+      "train_positive_folds": 4,
+      "train_max_fold_drawdown_pct": 30.0377,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -20.3236,
+          "max_drawdown_pct": 24.6853
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -14.7775,
+          "max_drawdown_pct": 15.0333
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 7361.61,
+        "return_pct": -26.3839,
+        "max_drawdown_pct": 46.0401,
+        "fills": 354
+      }
+    },
+    "sr20_w0p1_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": -0.02429217,
+      "train_compounded_return_pct": -2.3999,
+      "train_positive_folds": 3,
+      "train_max_fold_drawdown_pct": 34.0925,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -20.6751,
+          "max_drawdown_pct": 26.0012
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -14.6849,
+          "max_drawdown_pct": 14.8784
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 6833.84,
+        "return_pct": -31.6616,
+        "max_drawdown_pct": 48.8599,
+        "fills": 302
+      }
+    },
+    "sr20_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.05629673,
+      "train_compounded_return_pct": 5.7912,
+      "train_positive_folds": 4,
+      "train_max_fold_drawdown_pct": 33.0486,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -21.2007,
+          "max_drawdown_pct": 25.7756
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -14.6849,
+          "max_drawdown_pct": 14.8784
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 7358.29,
+        "return_pct": -26.4171,
+        "max_drawdown_pct": 51.0081,
+        "fills": 302
+      }
+    },
+    "sr50_w0p1_momentum_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": -0.22879049,
+      "train_compounded_return_pct": -20.4505,
+      "train_positive_folds": 2,
+      "train_max_fold_drawdown_pct": 39.6224,
+      "validation_folds": [
+        {
+          "start": "2025-09-16",
+          "return_pct": -2.3485,
+          "max_drawdown_pct": 8.1925
+        },
+        {
+          "start": "2026-03-15",
+          "return_pct": -6.7261,
+          "max_drawdown_pct": 9.2598
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 7225.82,
+        "return_pct": -27.7418,
+        "max_drawdown_pct": 48.3121,
+        "fills": 234
+      }
+    },
+    "sr50_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": -0.2365572,
+      "train_compounded_return_pct": -21.0659,
+      "train_positive_folds": 2,
+      "train_max_fold_drawdown_pct": 39.6223,
+      "validation_folds": [
+        {
+          "start": "2025-09-16",
+          "return_pct": -2.3503,
+          "max_drawdown_pct": 8.195
+        },
+        {
+          "start": "2026-03-15",
+          "return_pct": -6.7261,
+          "max_drawdown_pct": 9.2598
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 7169.76,
+        "return_pct": -28.3024,
+        "max_drawdown_pct": 48.312,
+        "fills": 234
+      }
+    }
+  },
+  "coordinate_summary": {
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop2p5": {
+      "train_log_return": 0.74061845,
+      "train_compounded_return_pct": 109.7232,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3365,
+          "max_drawdown_pct": 5.0202
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -4.506,
+          "max_drawdown_pct": 8.7237
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19359.07,
+        "return_pct": 93.5907,
+        "max_drawdown_pct": 12.0406,
+        "fills": 152
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top1_liq5x30_stop2p5": {
+      "train_log_return": 0.92515963,
+      "train_compounded_return_pct": 152.2271,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -1.8311,
+          "max_drawdown_pct": 4.0437
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -11.2627,
+          "max_drawdown_pct": 13.2017
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 21972.12,
+        "return_pct": 119.7212,
+        "max_drawdown_pct": 18.2192,
+        "fills": 106
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top3_liq5x30_stop2p5": {
+      "train_log_return": 0.72890671,
+      "train_compounded_return_pct": 107.2813,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3347,
+          "max_drawdown_pct": 5.0168
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -4.4978,
+          "max_drawdown_pct": 8.7238
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19135.68,
+        "return_pct": 91.3568,
+        "max_drawdown_pct": 12.0313,
+        "fills": 154
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq4x30_stop2p5": {
+      "train_log_return": 0.70806522,
+      "train_compounded_return_pct": 103.006,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 9.2608,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3347,
+          "max_drawdown_pct": 5.0168
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -11.5871,
+          "max_drawdown_pct": 13.5825
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 17349.81,
+        "return_pct": 73.4981,
+        "max_drawdown_pct": 18.5614,
+        "fills": 138
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq7x30_stop2p5": {
+      "train_log_return": 0.76720087,
+      "train_compounded_return_pct": 115.3729,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3347,
+          "max_drawdown_pct": 5.0168
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -4.506,
+          "max_drawdown_pct": 8.724
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19880.97,
+        "return_pct": 98.8097,
+        "max_drawdown_pct": 12.0389,
+        "fills": 162
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x7_stop2p5": {
+      "train_log_return": 0.77345044,
+      "train_compounded_return_pct": 116.7231,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 9.2665,
+      "validation_folds": [
+        {
+          "start": "2025-08-17",
+          "return_pct": -3.3365,
+          "max_drawdown_pct": 5.0202
+        },
+        {
+          "start": "2026-02-13",
+          "return_pct": -4.506,
+          "max_drawdown_pct": 8.7237
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 20005.22,
+        "return_pct": 100.0522,
+        "max_drawdown_pct": 12.0406,
+        "fills": 144
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x90_stop2p5": {
+      "train_log_return": 0.75797393,
+      "train_compounded_return_pct": 113.3948,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-10-26",
+          "return_pct": -2.3523,
+          "max_drawdown_pct": 7.2524
+        },
+        {
+          "start": "2026-04-24",
+          "return_pct": -3.3594,
+          "max_drawdown_pct": 8.7238
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 20016.31,
+        "return_pct": 100.1631,
+        "max_drawdown_pct": 12.0313,
+        "fills": 140
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop0p0": {
+      "train_log_return": 0.72721992,
+      "train_compounded_return_pct": 106.932,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3365,
+          "max_drawdown_pct": 5.0202
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -3.9908,
+          "max_drawdown_pct": 8.2309
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19204.47,
+        "return_pct": 92.0447,
+        "max_drawdown_pct": 12.0254,
+        "fills": 150
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop1p5": {
+      "train_log_return": 0.76304484,
+      "train_compounded_return_pct": 114.4797,
+      "train_positive_folds": 5,
+      "train_max_fold_drawdown_pct": 10.356,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -7.0952,
+          "max_drawdown_pct": 8.7134
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -3.7215,
+          "max_drawdown_pct": 8.1082
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19184.62,
+        "return_pct": 91.8462,
+        "max_drawdown_pct": 15.4619,
+        "fills": 172
+      }
+    },
+    "channel10_w0p1_oscillator-ensemble_r20_top2_liq5x30_stop3p5": {
+      "train_log_return": 0.72721253,
+      "train_compounded_return_pct": 106.9304,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -3.3347,
+          "max_drawdown_pct": 5.0168
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -3.9819,
+          "max_drawdown_pct": 8.2304
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19206.47,
+        "return_pct": 92.0647,
+        "max_drawdown_pct": 12.0242,
+        "fills": 150
+      }
+    }
+  },
+  "interaction_summary": {
+    "channel10_w0p1_oscillator-ensemble_r20_top1_liq5x30_stop2p5": {
+      "train_log_return": 0.92515963,
+      "train_compounded_return_pct": 152.2271,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -1.8311,
+          "max_drawdown_pct": 4.0437
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -11.2627,
+          "max_drawdown_pct": 13.2017
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 21972.12,
+        "return_pct": 119.7212,
+        "max_drawdown_pct": 18.2192,
+        "fills": 106
+      }
+    },
+    "channel10_w0p1_momentum_r20_top1_liq5x30_stop2p5": {
+      "train_log_return": 0.94771413,
+      "train_compounded_return_pct": 157.9806,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -0.5175,
+          "max_drawdown_pct": 3.9964
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": 2.8181,
+          "max_drawdown_pct": 8.7935
+        }
+      ],
+      "validation_positive_folds": 1,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 26387.8,
+        "return_pct": 163.878,
+        "max_drawdown_pct": 11.2787,
+        "fills": 102
+      }
+    }
+  },
+  "winner_cost_stress": {
+    "base": {
+      "train_log_return": 0.94771413,
+      "train_compounded_return_pct": 157.9806,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 10.7161,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -0.5175,
+          "max_drawdown_pct": 3.9964
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": 2.8181,
+          "max_drawdown_pct": 8.7935
+        }
+      ],
+      "validation_positive_folds": 1,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 26387.8,
+        "return_pct": 163.878,
+        "max_drawdown_pct": 11.2787,
+        "fills": 102
+      }
+    },
+    "stress": {
+      "train_log_return": 0.83318212,
+      "train_compounded_return_pct": 130.0628,
+      "train_positive_folds": 6,
+      "train_max_fold_drawdown_pct": 11.3395,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -1.3499,
+          "max_drawdown_pct": 4.265
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": 1.209,
+          "max_drawdown_pct": 9.3367
+        }
+      ],
+      "validation_positive_folds": 1,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 22970.1,
+        "return_pct": 129.701,
+        "max_drawdown_pct": 12.7574,
+        "fills": 102
+      }
+    },
+    "harsh": {
+      "train_log_return": 0.67787234,
+      "train_compounded_return_pct": 96.9682,
+      "train_positive_folds": 5,
+      "train_max_fold_drawdown_pct": 12.1789,
+      "validation_folds": [
+        {
+          "start": "2025-08-27",
+          "return_pct": -2.4685,
+          "max_drawdown_pct": 4.6283
+        },
+        {
+          "start": "2026-02-23",
+          "return_pct": -0.9303,
+          "max_drawdown_pct": 10.1945
+        }
+      ],
+      "validation_positive_folds": 0,
+      "full_result": {
+        "starting_balance": 10000,
+        "final_equity": 19031.89,
+        "return_pct": 90.3189,
+        "max_drawdown_pct": 14.7249,
+        "fills": 102
+      }
+    }
+  }
+}

@@ -1,0 +1,3428 @@
+{
+  "schema_version": "tech-llm-intratrade-shock-shield-v2-development-result",
+  "experiment_id": "HYB-002",
+  "status": "exploratory-development-fail",
+  "evaluated_at": "2026-09-09T17:46:36.119805+00:00",
+  "research_role": "exploratory development only; outcomes previously known",
+  "predeclared": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_intratrade_shock_shield_v2_predeclared.json",
+    "sha256": "8a90b28fe4d4f5f72a90200eb97b8abc0253b5a8a1382de27125c3a332c4df09"
+  },
+  "tech_reconciliation": {
+    "trades": 24,
+    "full_result_final_equity": 31747.81194393,
+    "overlap_initial_equity": 10000,
+    "overlap_final_equity": 33900.222885120005,
+    "lifecycle_exact_match": true,
+    "pnl_decomposition_exact_match": true
+  },
+  "arms": {
+    "primary": {
+      "name": "primary",
+      "interventions": 23,
+      "trade_clusters": 13,
+      "mean_paired_net_difference": -0.0021577140755681076,
+      "mean_paired_gross_difference": -0.00102818969633424,
+      "cluster_bootstrap_ci95": [
+        -0.0037873502114959094,
+        -0.0006255231833584209
+      ],
+      "fold_mean_net_differences": [
+        -0.001570236401803127,
+        -0.004059920378395322,
+        0.0006535559213806737
+      ],
+      "compounded_return_pct": 223.67805908210602,
+      "closed_trade_mdd_pct": 5.591868447863851,
+      "tech_closed_trade_mdd_pct": 5.288294101964858,
+      "total_overlay_cost_fraction": 0.02647890929430367,
+      "windows": [
+        {
+          "trade_id": "1667606400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1667606400000,
+          "exit_time": 1667865600000,
+          "information_date": "2022-11-06",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1667779200000,
+          "confirmation_time_iso": "2022-11-07T00:00:00+00:00",
+          "action_time": 1667779200000,
+          "action_time_iso": "2022-11-07T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "bb0c2df6beb34bcc9055a964f8597818598b4f2f9aa9f102ac5ec33cccbce8cc",
+            "d5055935fc7c2f10c4db35662446dbe3b11a3ca5f3a200049911cf66c37416b3"
+          ],
+          "window_end": 1667793600000,
+          "window_end_iso": "2022-11-07T04:00:00+00:00",
+          "gross_difference": -0.00010635657037123272,
+          "net_difference": -0.0011456875706419413,
+          "funding_saved": 4.772181130548449e-05,
+          "overlay_cost": 0.0010870527796693077
+        },
+        {
+          "trade_id": "1670976000000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1670976000000,
+          "exit_time": 1671062400000,
+          "information_date": "2022-12-13",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1670976000000,
+          "confirmation_time_iso": "2022-12-14T00:00:00+00:00",
+          "action_time": 1670990400000,
+          "action_time_iso": "2022-12-14T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "33d6f1cfbb01bec1656e2de41994dea3b5ee38fb4d7d14ea8ecb895895ae1563",
+            "8be7e3ffda52a2c5095e34e6d96181304b7bf9217aee55ff6f85eea5754d4b4d",
+            "d864160ff720db744c0134ec8bb104cab8cabd1d228c90881680f108285748a0"
+          ],
+          "window_end": 1671004800000,
+          "window_end_iso": "2022-12-14T08:00:00+00:00",
+          "gross_difference": -0.0008885336826102629,
+          "net_difference": -0.00198751210826385,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010989781590935532
+        },
+        {
+          "trade_id": "1673481600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673481600000,
+          "exit_time": 1673668800000,
+          "information_date": "2023-01-12",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1673568000000,
+          "confirmation_time_iso": "2023-01-13T00:00:00+00:00",
+          "action_time": 1673568000000,
+          "action_time_iso": "2023-01-13T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "0586225a5ad7e8e0889e6832ef6c701202645df90881e451839636adaef391fa",
+            "79beefea75984cb33a5207df3fd242c8c19248755060c3eeee40859c51343df4",
+            "b430f14f046abf35875654c0ec56779e2175d1097c4b6357075467b7668c7ffd",
+            "d866139d327432e7d246969b7cbc599cdcd3d265b910f0d2bd260e7cd330c55a"
+          ],
+          "window_end": 1673582400000,
+          "window_end_iso": "2023-01-13T04:00:00+00:00",
+          "gross_difference": -0.0011421422631290837,
+          "net_difference": -0.0024838846724628927,
+          "funding_saved": -0.0001870891672115715,
+          "overlay_cost": 0.001154652899479602
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-17",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674000000000,
+          "confirmation_time_iso": "2023-01-18T00:00:00+00:00",
+          "action_time": 1674000000000,
+          "action_time_iso": "2023-01-18T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "24b33d87f6f312e5845580252aa91ab6779d032b78a178bafc8f0d85fb8d5a6f",
+            "26b92d66f2a680dc72bcd750dad071e35c6e3d7e52d800bb35f03a2ed9dd14f5",
+            "35ec20067f747adac4560aef330dabfeda525cc01282006d2f117c329e2ca7fa",
+            "534c9663c6541547e4477f1dde8b48ad4da1856fbd1e6222ccf4d7baeb51f171",
+            "6a3f9217879dab4186a8bcb01c666e4c5a0fad4277b66798610a19ae420b5f39",
+            "98471934ee5a779a9e5095da032da9a38c2f5893c2e198b6c4c6e43085360cc5"
+          ],
+          "window_end": 1674014400000,
+          "window_end_iso": "2023-01-18T04:00:00+00:00",
+          "gross_difference": -0.0032776249870620014,
+          "net_difference": -0.004438456812641835,
+          "funding_saved": -4.9755303178233766e-05,
+          "overlay_cost": 0.0011110755391141734
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-19",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1674172800000,
+          "confirmation_time_iso": "2023-01-20T00:00:00+00:00",
+          "action_time": 1674172800000,
+          "action_time_iso": "2023-01-20T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "0e049741add8f97d937940457969cef805db7a02409c85006aea607372fbfdbb",
+            "3c4c8fddb31ff140fff4d9f6b1bc6726ceb12299278412246713dbf9e6ff40f0",
+            "41fb8b34ca4cb932b2d441ea161153624713192dc64ab3f106806240dde59d59",
+            "732dc7b629538bdbc110274153ba5c122b16c64112d90f5ea7fc03673120171c",
+            "d1806eedeb6971db85822b818d02177761dcffc2bc7b7f7b9d2664eba9b277ec",
+            "eaebba1ef361a74074f1f8a4878985825e0d645e6e4d19b01e6122d64ab6adc3",
+            "f312ae03291617a0ac08ef94acf1a7ef997c7191c88bb09be4a0ff41052d8d25"
+          ],
+          "window_end": 1674187200000,
+          "window_end_iso": "2023-01-20T04:00:00+00:00",
+          "gross_difference": -0.00045290818003038564,
+          "net_difference": -0.0016500929738788646,
+          "funding_saved": -9.233660633728598e-05,
+          "overlay_cost": 0.0011048480516387556
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-20",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674259200000,
+          "confirmation_time_iso": "2023-01-21T00:00:00+00:00",
+          "action_time": 1674259200000,
+          "action_time_iso": "2023-01-21T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "3edf0d3f70cc58fea8ea0a37949dacca69a3a5158b0348c5e1685f765033a247",
+            "57acbef0bd7e680527e0ab0c6934a0c080029c9943596866977c68720699dd24",
+            "62561dc6387563d8187fb8b95f0bb4b83a4a9cce851522a643cc43cd954f3e75",
+            "7423fc7ce946104230fb5925733166d57373dc7fd7a4f48259e14cad943e2403",
+            "cd87a3656658e00a6cd25ef9ba4888b870d31a60006b695eff199b72d55e9e25",
+            "d13d271bb894b18f421b5f037ffcaf56750c82992664fd5548fc735dffd2d4dc"
+          ],
+          "window_end": 1674273600000,
+          "window_end_iso": "2023-01-21T04:00:00+00:00",
+          "gross_difference": 0.002884309988614561,
+          "net_difference": 0.0017045206323078894,
+          "funding_saved": 5.189205722725376e-06,
+          "overlay_cost": 0.0011849794273224475
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-23",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674518400000,
+          "confirmation_time_iso": "2023-01-24T00:00:00+00:00",
+          "action_time": 1674518400000,
+          "action_time_iso": "2023-01-24T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "242488ddf477866113451c13967c60b1c8121311596ae2248fcd3cac1b7783b3",
+            "26c1226745c0c401ef9468f88251caa5a4fa4c6000bfa5fbb6f516afdd8483c5",
+            "366c22774d0edf5be21eb33fcae1d42b7cbac4d4746005ea37adab5db276da92"
+          ],
+          "window_end": 1674532800000,
+          "window_end_iso": "2023-01-24T04:00:00+00:00",
+          "gross_difference": -0.0039569872571075795,
+          "net_difference": -0.00510770536770682,
+          "funding_saved": 5.500331473742701e-05,
+          "overlay_cost": 0.0012057202382405759
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-25",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674691200000,
+          "confirmation_time_iso": "2023-01-26T00:00:00+00:00",
+          "action_time": 1674691200000,
+          "action_time_iso": "2023-01-26T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "b8a165e06ecd5d77aced1a4285c5314ed9e495cd06171dce007f2cad8e904162",
+            "d7ad71d1421781ac10ecafe5dd50dc52a982984c5789f4e388c7e3ba20b64039",
+            "f41a9055c80f2a6ed1bace012370503ba0d65c1686fb6a675299cf06537d69d6"
+          ],
+          "window_end": 1674705600000,
+          "window_end_iso": "2023-01-26T04:00:00+00:00",
+          "gross_difference": -0.001871225901704488,
+          "net_difference": -0.003027266249554319,
+          "funding_saved": 5.514753023685774e-05,
+          "overlay_cost": 0.0012111873167189953
+        },
+        {
+          "trade_id": "1681171200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1681171200000,
+          "exit_time": 1681344000000,
+          "information_date": "2023-04-10",
+          "event_type": "exchange_security",
+          "confirmation_time": 1681171200000,
+          "confirmation_time_iso": "2023-04-11T00:00:00+00:00",
+          "action_time": 1681185600000,
+          "action_time_iso": "2023-04-11T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "2af929f968db505983967807ee19877742b7230cc65dd6289e64b3e7387a839f",
+            "a01357514f0cd556c2d65f757440d403dbb38f3f9fa1e185538919128a78e8d0",
+            "cfca7fad91bfc2f920c98ed5f75edffcf9269865f991c6b612e20c61d5bbea01"
+          ],
+          "window_end": 1681200000000,
+          "window_end_iso": "2023-04-11T08:00:00+00:00",
+          "gross_difference": 0.0001888020188404964,
+          "net_difference": -0.0009274045628582323,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011162066383394215
+        },
+        {
+          "trade_id": "1681171200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1681171200000,
+          "exit_time": 1681344000000,
+          "information_date": "2023-04-11",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1681257600000,
+          "confirmation_time_iso": "2023-04-12T00:00:00+00:00",
+          "action_time": 1681257600000,
+          "action_time_iso": "2023-04-12T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "1d424e2ebdd9ec40898c6fb9e3c29830b06e49a24dbeb0a597fb3fc45d3e0594",
+            "34c0c941249dcbadd4a0a450c5849ed240d91d49db83a7f0a1547ef9123f75e7"
+          ],
+          "window_end": 1681272000000,
+          "window_end_iso": "2023-04-12T04:00:00+00:00",
+          "gross_difference": 0.004425047316573847,
+          "net_difference": 0.0033611256676695936,
+          "funding_saved": 5.043121068429771e-05,
+          "overlay_cost": 0.0011143541871027807
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-27",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698451200000,
+          "confirmation_time_iso": "2023-10-28T00:00:00+00:00",
+          "action_time": 1698451200000,
+          "action_time_iso": "2023-10-28T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "5075a649d94ae3fcc2d19574000e5f7cdf595083b814a237dc60eb3526aa9f7e",
+            "fc476c9e0673f2027263f589ad8f866e4239fcd18e4bfc686109bfd45dcfe4ff"
+          ],
+          "window_end": 1698465600000,
+          "window_end_iso": "2023-10-28T04:00:00+00:00",
+          "gross_difference": -0.0030620663955734893,
+          "net_difference": -0.004122068182121393,
+          "funding_saved": 5.063662576015098e-05,
+          "overlay_cost": 0.0011106374936881906
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-01",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698883200000,
+          "confirmation_time_iso": "2023-11-02T00:00:00+00:00",
+          "action_time": 1698883200000,
+          "action_time_iso": "2023-11-02T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1055e3b3c386cbd1fa00c770ba8388209926461fa0865b9e4f8251a0cf1d9bba",
+            "a7d478bef7b5e84c95aa48d41439016a942248557a1943e2e947b6ff45bce172"
+          ],
+          "window_end": 1698897600000,
+          "window_end_iso": "2023-11-02T04:00:00+00:00",
+          "gross_difference": -0.0031073046802725943,
+          "net_difference": -0.004155096575744131,
+          "funding_saved": 0.0001053869169033777,
+          "overlay_cost": 0.0011531778801835914
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-08",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1699488000000,
+          "confirmation_time_iso": "2023-11-09T00:00:00+00:00",
+          "action_time": 1699488000000,
+          "action_time_iso": "2023-11-09T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "8cd2a17787ea3d0ba341c44ad74c30fa8a06b028a7116e5aeb894c2f76b359b6",
+            "dbb3cde9157ace56be74a9cade6201de458a1c1b61c1f085b14b795aa433a16f"
+          ],
+          "window_end": 1699502400000,
+          "window_end_iso": "2023-11-09T04:00:00+00:00",
+          "gross_difference": -0.008776227231634317,
+          "net_difference": -0.009906847977585084,
+          "funding_saved": 5.4298664906546855e-05,
+          "overlay_cost": 0.001184916777989233
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-10",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1699660800000,
+          "confirmation_time_iso": "2023-11-11T00:00:00+00:00",
+          "action_time": 1699660800000,
+          "action_time_iso": "2023-11-11T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "2543d22ade7dbe8b30036ab0f54d045d96e355c2ff92dc9fb1762f013138175f",
+            "ade7d9a88061ba8c5dd3bbf8bbda82b71b62c1195e5263df16d4e15a35a56f22"
+          ],
+          "window_end": 1699675200000,
+          "window_end_iso": "2023-11-11T04:00:00+00:00",
+          "gross_difference": 0.008776227231634317,
+          "net_difference": 0.007684410395414339,
+          "funding_saved": 0.00019193108591881574,
+          "overlay_cost": 0.0012837505550071333
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-13",
+          "event_type": "exchange_security",
+          "confirmation_time": 1699920000000,
+          "confirmation_time_iso": "2023-11-14T00:00:00+00:00",
+          "action_time": 1699920000000,
+          "action_time_iso": "2023-11-14T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1705a705ce9340518f5e6276fa38f677b28c3364231e99ccc2995089ba22def6",
+            "7d819d87e076f90ed84e8fb16bb3981685a7ea7a797e2b288e0f3d0825bdd2d3",
+            "9705daf68e785afa9e1a820595af922ff93f5e2729c4e16d2cc209087a12f87f",
+            "e8e7e072ba7d8791a495f16a8226ba324ddbf2cc95eb9ef637cf44661347d130"
+          ],
+          "window_end": 1699934400000,
+          "window_end_iso": "2023-11-14T04:00:00+00:00",
+          "gross_difference": -0.0005852703082952478,
+          "net_difference": -0.0017544777779124057,
+          "funding_saved": 0.00010953905846545147,
+          "overlay_cost": 0.0012787463525015695
+        },
+        {
+          "trade_id": "1700006400000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1700006400000,
+          "exit_time": 1700179200000,
+          "information_date": "2023-11-15",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1700092800000,
+          "confirmation_time_iso": "2023-11-16T00:00:00+00:00",
+          "action_time": 1700092800000,
+          "action_time_iso": "2023-11-16T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "5302f21a9fcdf09b7489801ee8ed792b58cb14834426a14a781e4415f58c1238",
+            "5e3a39bd239b583853a6a2512869511c4485703d2b1aebf84de7f71a318feca5"
+          ],
+          "window_end": 1700107200000,
+          "window_end_iso": "2023-11-16T04:00:00+00:00",
+          "gross_difference": 0.0011955635455066242,
+          "net_difference": 0.00010580924581797942,
+          "funding_saved": 5.183045421227164e-05,
+          "overlay_cost": 0.0011415851125700332
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-08",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1707436800000,
+          "confirmation_time_iso": "2024-02-09T00:00:00+00:00",
+          "action_time": 1707436800000,
+          "action_time_iso": "2024-02-09T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "4609825fa819c8f952350670e22a1383ed4425b852e0e2913147b5eec46ea2b9",
+            "5a3aaaf387417ef9322c293a37fa2b0b6ab59a607ba1f75ee4f1312340333d22"
+          ],
+          "window_end": 1707451200000,
+          "window_end_iso": "2024-02-09T04:00:00+00:00",
+          "gross_difference": -0.008853474372825923,
+          "net_difference": -0.010000319626776522,
+          "funding_saved": -1.4945057828379734e-05,
+          "overlay_cost": 0.00113189754008001
+        },
+        {
+          "trade_id": "1708992000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1708992000000,
+          "exit_time": 1709150400000,
+          "information_date": "2024-02-26",
+          "event_type": "exchange_security",
+          "confirmation_time": 1708992000000,
+          "confirmation_time_iso": "2024-02-27T00:00:00+00:00",
+          "action_time": 1709006400000,
+          "action_time_iso": "2024-02-27T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "3836a3240f2f108aca147ac66494554aa433627d41b7b12e21d3095510ecc9fa",
+            "8847ded208349fc6c4aca1ad9c4b5a9d66270ffcb209399196fea7ff63c0f509",
+            "bf4eab683b93d0c9032d114b2248d0374009393848618bbe8430f6b8df948b24",
+            "fb17567957947a170d38a947ffd68e8105e8060bcbe74eb5d625407cdf31591c"
+          ],
+          "window_end": 1709020800000,
+          "window_end_iso": "2024-02-27T08:00:00+00:00",
+          "gross_difference": -0.003005039881330873,
+          "net_difference": -0.004132473111393614,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011274323285508296
+        },
+        {
+          "trade_id": "1709164800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1709164800000,
+          "exit_time": 1709251200000,
+          "information_date": "2024-02-28",
+          "event_type": "exchange_security",
+          "confirmation_time": 1709164800000,
+          "confirmation_time_iso": "2024-02-29T00:00:00+00:00",
+          "action_time": 1709179200000,
+          "action_time_iso": "2024-02-29T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "5ad781f0ee9a642dab3d9f0c2e55b631fad3f791dbf71400bcbc78c351624030",
+            "a9f6db0a35e5c25181d5a28210d7ea5e54d552872c37c225b42055c52af0c261"
+          ],
+          "window_end": 1709193600000,
+          "window_end_iso": "2024-02-29T08:00:00+00:00",
+          "gross_difference": -0.009164250526005988,
+          "net_difference": -0.010258219795257066,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010939665199759634
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-21",
+          "event_type": "exchange_security",
+          "confirmation_time": 1745280000000,
+          "confirmation_time_iso": "2025-04-22T00:00:00+00:00",
+          "action_time": 1745294400000,
+          "action_time_iso": "2025-04-22T04:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1aee211c766040074ec303019ec8abc06fc21015d2f7981f1c5a242a51eccf6c",
+            "bcda73781b5c9783cb600390ef7d871796bd88af183bfb82821da01747200cb2"
+          ],
+          "window_end": 1745308800000,
+          "window_end_iso": "2025-04-22T08:00:00+00:00",
+          "gross_difference": -0.0018385849315747623,
+          "net_difference": -0.002947517592627748,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011089321094775307
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-19",
+          "event_type": "exchange_security",
+          "confirmation_time": 1747699200000,
+          "confirmation_time_iso": "2025-05-20T00:00:00+00:00",
+          "action_time": 1747713600000,
+          "action_time_iso": "2025-05-20T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "01f7445c77cd6263c2bc0a41ff5cebf054626a3be7a90eebb129f952892c3af7",
+            "df5fed96e93fb3374867edb34c7a0de79e561dcb2b3dff1a386f8d7653be3058"
+          ],
+          "window_end": 1747728000000,
+          "window_end_iso": "2025-05-20T08:00:00+00:00",
+          "gross_difference": 0.0035975879361346925,
+          "net_difference": 0.0025008771579466908,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010967118574644365
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-22",
+          "event_type": "exchange_security",
+          "confirmation_time": 1747958400000,
+          "confirmation_time_iso": "2025-05-23T00:00:00+00:00",
+          "action_time": 1747958400000,
+          "action_time_iso": "2025-05-23T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com",
+            "cryptonews.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "627ce0cef91aa808c9acaf0180eb765f22b974453f8a4375b96c29e41fb03409",
+            "782a3e2bb114f750584b9f393878ccb6c976aaa430c8c56f5e21a8412ffada0a",
+            "e9881484b22daeedbd3bdb79447fff7ff51bf0160326eaac9a485b972e474fab",
+            "fad8a1926d11f80ae0ed27908f34fcca2bd74af988bae96e428b80d6efd40400"
+          ],
+          "window_end": 1747972800000,
+          "window_end_iso": "2025-05-23T04:00:00+00:00",
+          "gross_difference": 0.0028143719358317536,
+          "net_difference": 0.0016666734792262132,
+          "funding_saved": 1.1593502589069894e-05,
+          "overlay_cost": 0.0011592928035062855
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-16",
+          "event_type": "exchange_security",
+          "confirmation_time": 1752710400000,
+          "confirmation_time_iso": "2025-07-17T00:00:00+00:00",
+          "action_time": 1752710400000,
+          "action_time_iso": "2025-07-17T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "6d286cb702fb0d0011a5ef23c41d93a494a4f89faafc5681714acbf97d303b8d",
+            "fcd182deacf4abd98c65d868aa8089fffbc6cdcbc1776919e63b1251b3945df4"
+          ],
+          "window_end": 1752724800000,
+          "window_end_iso": "2025-07-17T04:00:00+00:00",
+          "gross_difference": 0.002557724180704419,
+          "net_difference": 0.0013941906409775389,
+          "funding_saved": 5.527241954502157e-05,
+          "overlay_cost": 0.0012188067265892493
+        }
+      ]
+    },
+    "metadata_only_same_density": {
+      "name": "metadata_only_same_density",
+      "interventions": 23,
+      "trade_clusters": 10,
+      "mean_paired_net_difference": -0.0023420702241840146,
+      "mean_paired_gross_difference": -0.0012484051605615599,
+      "cluster_bootstrap_ci95": [
+        -0.00432366060938193,
+        -0.0012687330144847523
+      ],
+      "fold_mean_net_differences": [
+        null,
+        -0.0026747145315776295,
+        -0.0007620097640643465
+      ],
+      "compounded_return_pct": 222.14679886300087,
+      "closed_trade_mdd_pct": 5.28829410196486,
+      "tech_closed_trade_mdd_pct": 5.288294101964858,
+      "total_overlay_cost_fraction": 0.026084497411335377,
+      "windows": [
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-24",
+          "action_time": 1698192000000,
+          "action_time_iso": "2023-10-25T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1698206400000,
+          "window_end_iso": "2023-10-25T04:00:00+00:00",
+          "gross_difference": -0.001105510582335404,
+          "net_difference": -0.0021661974246690347,
+          "funding_saved": 5.056678915814668e-05,
+          "overlay_cost": 0.0011112532998386578
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-30",
+          "action_time": 1698710400000,
+          "action_time_iso": "2023-10-31T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1698724800000,
+          "window_end_iso": "2023-10-31T04:00:00+00:00",
+          "gross_difference": 0.00411951130041603,
+          "net_difference": 0.003048987546884744,
+          "funding_saved": 5.0761596521632374e-05,
+          "overlay_cost": 0.0011212865859063696
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-31",
+          "action_time": 1698796800000,
+          "action_time_iso": "2023-11-01T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1698811200000,
+          "window_end_iso": "2023-11-01T04:00:00+00:00",
+          "gross_difference": 0.0013119102562751984,
+          "net_difference": 0.0002350808572729376,
+          "funding_saved": 5.1208890061595175e-05,
+          "overlay_cost": 0.0011280386826369965
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-02",
+          "action_time": 1698969600000,
+          "action_time_iso": "2023-11-03T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1698984000000,
+          "window_end_iso": "2023-11-03T04:00:00+00:00",
+          "gross_difference": 0.0005654785587393251,
+          "net_difference": -0.000503019020368708,
+          "funding_saved": 5.085122487319256e-05,
+          "overlay_cost": 0.0011193489736248492
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-03",
+          "action_time": 1699056000000,
+          "action_time_iso": "2023-11-04T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1699070400000,
+          "window_end_iso": "2023-11-04T04:00:00+00:00",
+          "gross_difference": -0.0006559551281375992,
+          "net_difference": -0.0017450724011023459,
+          "funding_saved": 5.189707746758094e-05,
+          "overlay_cost": 0.001141014153645829
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-06",
+          "action_time": 1699315200000,
+          "action_time_iso": "2023-11-07T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1699329600000,
+          "window_end_iso": "2023-11-07T04:00:00+00:00",
+          "gross_difference": 0.003011173325286932,
+          "net_difference": 0.0018850225479525294,
+          "funding_saved": 5.3468542382317516e-05,
+          "overlay_cost": 0.0011796202230688008
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-07",
+          "action_time": 1699401600000,
+          "action_time_iso": "2023-11-08T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1699416000000,
+          "window_end_iso": "2023-11-08T04:00:00+00:00",
+          "gross_difference": 0.0007690508398854899,
+          "net_difference": -0.00035009206882867386,
+          "funding_saved": 5.325224683359973e-05,
+          "overlay_cost": 0.001172395386263068
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-08",
+          "action_time": 1699488000000,
+          "action_time_iso": "2023-11-09T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1699502400000,
+          "window_end_iso": "2023-11-09T04:00:00+00:00",
+          "gross_difference": -0.008776227231634317,
+          "net_difference": -0.009906847977585084,
+          "funding_saved": 5.4298664906546855e-05,
+          "overlay_cost": 0.001184916777989233
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-09",
+          "action_time": 1699574400000,
+          "action_time_iso": "2023-11-10T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1699588800000,
+          "window_end_iso": "2023-11-10T04:00:00+00:00",
+          "gross_difference": -6.220264146126919e-05,
+          "net_difference": -0.0011310005881338516,
+          "funding_saved": 0.00025240483741919314,
+          "overlay_cost": 0.0013212027654309975
+        },
+        {
+          "trade_id": "1700006400000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1700006400000,
+          "exit_time": 1700179200000,
+          "information_date": "2023-11-14",
+          "action_time": 1700020800000,
+          "action_time_iso": "2023-11-15T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1700035200000,
+          "window_end_iso": "2023-11-15T08:00:00+00:00",
+          "gross_difference": -0.003826307802813589,
+          "net_difference": -0.004922966349053095,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.001096657398347188
+        },
+        {
+          "trade_id": "1701475200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1701475200000,
+          "exit_time": 1701734400000,
+          "information_date": "2023-12-01",
+          "action_time": 1701489600000,
+          "action_time_iso": "2023-12-02T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1701504000000,
+          "window_end_iso": "2023-12-02T08:00:00+00:00",
+          "gross_difference": 0.0009773450919598348,
+          "net_difference": -0.00012327055193466093,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011006159370981362
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-07",
+          "action_time": 1707364800000,
+          "action_time_iso": "2024-02-08T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1707379200000,
+          "window_end_iso": "2024-02-08T08:00:00+00:00",
+          "gross_difference": 0.0001904578881118977,
+          "net_difference": -0.0009129756071038657,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011034335523531895
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-08",
+          "action_time": 1707436800000,
+          "action_time_iso": "2024-02-09T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1707451200000,
+          "window_end_iso": "2024-02-09T04:00:00+00:00",
+          "gross_difference": -0.008853474372825923,
+          "net_difference": -0.010000319626776522,
+          "funding_saved": -1.4945057828379734e-05,
+          "overlay_cost": 0.00113189754008001
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-09",
+          "action_time": 1707523200000,
+          "action_time_iso": "2024-02-10T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1707537600000,
+          "window_end_iso": "2024-02-10T04:00:00+00:00",
+          "gross_difference": -0.0027903771063030676,
+          "net_difference": -0.003908384228937293,
+          "funding_saved": 5.338455715895682e-05,
+          "overlay_cost": 0.0011713908426801162
+        },
+        {
+          "trade_id": "1708992000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1708992000000,
+          "exit_time": 1709150400000,
+          "information_date": "2024-02-26",
+          "action_time": 1709006400000,
+          "action_time_iso": "2024-02-27T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1709020800000,
+          "window_end_iso": "2024-02-27T08:00:00+00:00",
+          "gross_difference": -0.003005039881330873,
+          "net_difference": -0.004132473111393614,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011274323285508296
+        },
+        {
+          "trade_id": "1708992000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1708992000000,
+          "exit_time": 1709150400000,
+          "information_date": "2024-02-27",
+          "action_time": 1709078400000,
+          "action_time_iso": "2024-02-28T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1709092800000,
+          "window_end_iso": "2024-02-28T04:00:00+00:00",
+          "gross_difference": 0.0010169494720357526,
+          "net_difference": -1.0398013637724577e-05,
+          "funding_saved": 0.00012198175035212776,
+          "overlay_cost": 0.0011493295411104981
+        },
+        {
+          "trade_id": "1709164800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1709164800000,
+          "exit_time": 1709251200000,
+          "information_date": "2024-02-28",
+          "action_time": 1709179200000,
+          "action_time_iso": "2024-02-29T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1709193600000,
+          "window_end_iso": "2024-02-29T08:00:00+00:00",
+          "gross_difference": -0.009164250526005988,
+          "net_difference": -0.010258219795257066,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010939665199759634
+        },
+        {
+          "trade_id": "1715817600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1715817600000,
+          "exit_time": 1715990400000,
+          "information_date": "2024-05-15",
+          "action_time": 1715832000000,
+          "action_time_iso": "2024-05-16T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1715846400000,
+          "window_end_iso": "2024-05-16T08:00:00+00:00",
+          "gross_difference": -0.0012745587667306346,
+          "net_difference": -0.0023706449003520827,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010960857512538975
+        },
+        {
+          "trade_id": "1715817600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1715817600000,
+          "exit_time": 1715990400000,
+          "information_date": "2024-05-16",
+          "action_time": 1715904000000,
+          "action_time_iso": "2024-05-17T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1715918400000,
+          "window_end_iso": "2024-05-17T04:00:00+00:00",
+          "gross_difference": -0.0025106317447678686,
+          "net_difference": -0.003546785386951545,
+          "funding_saved": 4.947212304349705e-05,
+          "overlay_cost": 0.00108562501203769
+        },
+        {
+          "trade_id": "1730160000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1730160000000,
+          "exit_time": 1730332800000,
+          "information_date": "2024-10-28",
+          "action_time": 1730174400000,
+          "action_time_iso": "2024-10-29T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1730188800000,
+          "window_end_iso": "2024-10-29T08:00:00+00:00",
+          "gross_difference": -0.0006033597067189887,
+          "net_difference": -0.001718317572229958,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011149576845030456
+        },
+        {
+          "trade_id": "1730160000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1730160000000,
+          "exit_time": 1730332800000,
+          "information_date": "2024-10-29",
+          "action_time": 1730246400000,
+          "action_time_iso": "2024-10-30T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1730260800000,
+          "window_end_iso": "2024-10-30T04:00:00+00:00",
+          "gross_difference": 0.003450931908370284,
+          "net_difference": 0.002363404205624934,
+          "funding_saved": 5.160631966313554e-05,
+          "overlay_cost": 0.0011391350576881892
+        },
+        {
+          "trade_id": "1742860800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1742860800000,
+          "exit_time": 1742947200000,
+          "information_date": "2025-03-24",
+          "action_time": 1742875200000,
+          "action_time_iso": "2025-03-25T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1742889600000,
+          "window_end_iso": "2025-03-25T08:00:00+00:00",
+          "gross_difference": 0.0003403530886436604,
+          "net_difference": -0.0007456080970246144,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010859612877742912
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-21",
+          "action_time": 1745294400000,
+          "action_time_iso": "2025-04-22T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1745308800000,
+          "window_end_iso": "2025-04-22T08:00:00+00:00",
+          "gross_difference": -0.0018385849315747623,
+          "net_difference": -0.002947517592627748,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011089321094775307
+        }
+      ]
+    },
+    "shuffled_trade_day": {
+      "name": "shuffled_trade_day",
+      "interventions": 23,
+      "trade_clusters": 12,
+      "mean_paired_net_difference": -0.0027142228932589174,
+      "mean_paired_gross_difference": -0.0015981037789610047,
+      "cluster_bootstrap_ci95": [
+        -0.004962010911878632,
+        -0.0008266049593073032
+      ],
+      "fold_mean_net_differences": [
+        -0.0013759403546419013,
+        -0.0025867243420317444,
+        -0.0044880501070240575
+      ],
+      "compounded_return_pct": 220.77803565873637,
+      "closed_trade_mdd_pct": 5.279157682065196,
+      "tech_closed_trade_mdd_pct": 5.288294101964858,
+      "total_overlay_cost_fraction": 0.02668113316117035,
+      "windows": [
+        {
+          "trade_id": "1666742400000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1666742400000,
+          "exit_time": 1666828800000,
+          "information_date": "2022-10-25",
+          "action_time": 1666756800000,
+          "action_time_iso": "2022-10-26T04:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1666771200000,
+          "window_end_iso": "2022-10-26T08:00:00+00:00",
+          "gross_difference": -0.009876380700533075,
+          "net_difference": -0.011006411071686931,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.001130027408239662
+        },
+        {
+          "trade_id": "1667606400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1667606400000,
+          "exit_time": 1667865600000,
+          "information_date": "2022-11-04",
+          "action_time": 1667620800000,
+          "action_time_iso": "2022-11-05T04:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1667635200000,
+          "window_end_iso": "2022-11-05T08:00:00+00:00",
+          "gross_difference": 0.0012053744642073043,
+          "net_difference": 9.257075698420608e-05,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011128040688355247
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-14",
+          "action_time": 1673755200000,
+          "action_time_iso": "2023-01-15T04:00:00+00:00",
+          "domain_count": 3,
+          "headline_count": 12,
+          "window_end": 1673769600000,
+          "window_end_iso": "2023-01-15T08:00:00+00:00",
+          "gross_difference": -0.0005244199979299202,
+          "net_difference": -0.0016119361259629872,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010875159707071718
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-17",
+          "action_time": 1674000000000,
+          "action_time_iso": "2023-01-18T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1674014400000,
+          "window_end_iso": "2023-01-18T04:00:00+00:00",
+          "gross_difference": -0.0032776249870620014,
+          "net_difference": -0.004438456812641835,
+          "funding_saved": -4.9755303178233766e-05,
+          "overlay_cost": 0.0011110755391141734
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-21",
+          "action_time": 1674345600000,
+          "action_time_iso": "2023-01-22T00:00:00+00:00",
+          "domain_count": 2,
+          "headline_count": 6,
+          "window_end": 1674360000000,
+          "window_end_iso": "2023-01-22T04:00:00+00:00",
+          "gross_difference": 0.00045290818003038564,
+          "net_difference": -0.000687041311551836,
+          "funding_saved": 5.425959183127186e-05,
+          "overlay_cost": 0.0011942092192860142
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-26",
+          "action_time": 1674777600000,
+          "action_time_iso": "2023-01-27T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1674792000000,
+          "window_end_iso": "2023-01-27T04:00:00+00:00",
+          "gross_difference": 0.005804375886178889,
+          "net_difference": 0.0046585664146964805,
+          "funding_saved": 5.42583999676402e-05,
+          "overlay_cost": 0.001200069612762881
+        },
+        {
+          "trade_id": "1681171200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1681171200000,
+          "exit_time": 1681344000000,
+          "information_date": "2023-04-11",
+          "action_time": 1681257600000,
+          "action_time_iso": "2023-04-12T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1681272000000,
+          "window_end_iso": "2023-04-12T04:00:00+00:00",
+          "gross_difference": 0.004425047316573847,
+          "net_difference": 0.0033611256676695936,
+          "funding_saved": 5.043121068429771e-05,
+          "overlay_cost": 0.0011143541871027807
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-25",
+          "action_time": 1698278400000,
+          "action_time_iso": "2023-10-26T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1698292800000,
+          "window_end_iso": "2023-10-26T04:00:00+00:00",
+          "gross_difference": -0.008315362206261799,
+          "net_difference": -0.009384727631816935,
+          "funding_saved": 5.135761092254362e-05,
+          "overlay_cost": 0.0011207205418690715
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-31",
+          "action_time": 1698796800000,
+          "action_time_iso": "2023-11-01T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1698811200000,
+          "window_end_iso": "2023-11-01T04:00:00+00:00",
+          "gross_difference": 0.0013119102562751984,
+          "net_difference": 0.0002350808572729376,
+          "funding_saved": 5.1208890061595175e-05,
+          "overlay_cost": 0.0011280386826369965
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-01",
+          "action_time": 1698883200000,
+          "action_time_iso": "2023-11-02T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1698897600000,
+          "window_end_iso": "2023-11-02T04:00:00+00:00",
+          "gross_difference": -0.0031073046802725943,
+          "net_difference": -0.004155096575744131,
+          "funding_saved": 0.0001053869169033777,
+          "overlay_cost": 0.0011531778801835914
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-10",
+          "action_time": 1699660800000,
+          "action_time_iso": "2023-11-11T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1699675200000,
+          "window_end_iso": "2023-11-11T04:00:00+00:00",
+          "gross_difference": 0.008776227231634317,
+          "net_difference": 0.007684410395414339,
+          "funding_saved": 0.00019193108591881574,
+          "overlay_cost": 0.0012837505550071333
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-13",
+          "action_time": 1699920000000,
+          "action_time_iso": "2023-11-14T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1699934400000,
+          "window_end_iso": "2023-11-14T04:00:00+00:00",
+          "gross_difference": -0.0005852703082952478,
+          "net_difference": -0.0017544777779124057,
+          "funding_saved": 0.00010953905846545147,
+          "overlay_cost": 0.0012787463525015695
+        },
+        {
+          "trade_id": "1704240000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1704240000000,
+          "exit_time": 1704283200000,
+          "information_date": "2024-01-02",
+          "action_time": 1704254400000,
+          "action_time_iso": "2024-01-03T04:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 45,
+          "window_end": 1704268800000,
+          "window_end_iso": "2024-01-03T08:00:00+00:00",
+          "gross_difference": 0.002944147692500173,
+          "net_difference": 0.001840775718206827,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011033728575377468
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-07",
+          "action_time": 1707364800000,
+          "action_time_iso": "2024-02-08T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1707379200000,
+          "window_end_iso": "2024-02-08T08:00:00+00:00",
+          "gross_difference": 0.0001904578881118977,
+          "net_difference": -0.0009129756071038657,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011034335523531895
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-08",
+          "action_time": 1707436800000,
+          "action_time_iso": "2024-02-09T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1707451200000,
+          "window_end_iso": "2024-02-09T04:00:00+00:00",
+          "gross_difference": -0.008853474372825923,
+          "net_difference": -0.010000319626776522,
+          "funding_saved": -1.4945057828379734e-05,
+          "overlay_cost": 0.00113189754008001
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-11",
+          "action_time": 1707696000000,
+          "action_time_iso": "2024-02-12T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 11,
+          "window_end": 1707710400000,
+          "window_end_iso": "2024-02-12T04:00:00+00:00",
+          "gross_difference": 0.0019800858545131004,
+          "net_difference": 0.0008383066233993758,
+          "funding_saved": 5.426674908093342e-05,
+          "overlay_cost": 0.0011960465742204996
+        },
+        {
+          "trade_id": "1709164800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1709164800000,
+          "exit_time": 1709251200000,
+          "information_date": "2024-02-28",
+          "action_time": 1709179200000,
+          "action_time_iso": "2024-02-29T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1709193600000,
+          "window_end_iso": "2024-02-29T08:00:00+00:00",
+          "gross_difference": -0.009164250526005988,
+          "net_difference": -0.010258219795257066,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010939665199759634
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-21",
+          "action_time": 1745294400000,
+          "action_time_iso": "2025-04-22T04:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1745308800000,
+          "window_end_iso": "2025-04-22T08:00:00+00:00",
+          "gross_difference": -0.0018385849315747623,
+          "net_difference": -0.002947517592627748,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011089321094775307
+        },
+        {
+          "trade_id": "1746748800000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1746748800000,
+          "exit_time": 1747094400000,
+          "information_date": "2025-05-09",
+          "action_time": 1746835200000,
+          "action_time_iso": "2025-05-10T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1746849600000,
+          "window_end_iso": "2025-05-10T04:00:00+00:00",
+          "gross_difference": 0.0013129017306467668,
+          "net_difference": 0.0001996931998265756,
+          "funding_saved": 5.2941177751761904e-05,
+          "overlay_cost": 0.001166150102442473
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-20",
+          "action_time": 1747785600000,
+          "action_time_iso": "2025-05-21T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1747800000000,
+          "window_end_iso": "2025-05-21T04:00:00+00:00",
+          "gross_difference": 9.559494384360773e-05,
+          "net_difference": -0.0009903092117300465,
+          "funding_saved": 2.6006133501923995e-05,
+          "overlay_cost": 0.0011119103177540614
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-13",
+          "action_time": 1752451200000,
+          "action_time_iso": "2025-07-14T00:00:00+00:00",
+          "domain_count": 3,
+          "headline_count": 11,
+          "window_end": 1752465600000,
+          "window_end_iso": "2025-07-14T04:00:00+00:00",
+          "gross_difference": -0.016753093383613648,
+          "net_difference": -0.01785763880835792,
+          "funding_saved": 5.3474704835155074e-05,
+          "overlay_cost": 0.0011580151036514365
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-14",
+          "action_time": 1752537600000,
+          "action_time_iso": "2025-07-15T00:00:00+00:00",
+          "domain_count": 5,
+          "headline_count": 48,
+          "window_end": 1752552000000,
+          "window_end_iso": "2025-07-15T04:00:00+00:00",
+          "gross_difference": 0.019694476191423723,
+          "net_difference": 0.018579122527665932,
+          "funding_saved": 5.2080745156671186e-05,
+          "overlay_cost": 0.001167440317257332
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-17",
+          "action_time": 1752796800000,
+          "action_time_iso": "2025-07-18T00:00:00+00:00",
+          "domain_count": 4,
+          "headline_count": 48,
+          "window_end": 1752811200000,
+          "window_end_iso": "2025-07-18T04:00:00+00:00",
+          "gross_difference": -0.022654128457667354,
+          "net_difference": -0.023911650756921136,
+          "funding_saved": 0.00016796264515820354,
+          "overlay_cost": 0.0014254781481735361
+        }
+      ]
+    },
+    "delayed_24h": {
+      "name": "delayed_24h",
+      "interventions": 17,
+      "trade_clusters": 9,
+      "mean_paired_net_difference": -0.004918563095821349,
+      "mean_paired_gross_difference": -0.0038424680032509077,
+      "cluster_bootstrap_ci95": [
+        -0.012700126492802345,
+        -0.0014126748185383019
+      ],
+      "fold_mean_net_differences": [
+        -0.003840569152569961,
+        -0.0034594557872290794,
+        -0.008993713459399684
+      ],
+      "compounded_return_pct": 215.1385877377951,
+      "closed_trade_mdd_pct": 5.28829410196486,
+      "tech_closed_trade_mdd_pct": 5.288294101964858,
+      "total_overlay_cost_fraction": 0.018937506460455732,
+      "windows": [
+        {
+          "trade_id": "1673481600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673481600000,
+          "exit_time": 1673668800000,
+          "information_date": "2023-01-13",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1673568000000,
+          "confirmation_time_iso": "2023-01-13T00:00:00+00:00",
+          "action_time": 1673654400000,
+          "action_time_iso": "2023-01-14T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "0586225a5ad7e8e0889e6832ef6c701202645df90881e451839636adaef391fa",
+            "79beefea75984cb33a5207df3fd242c8c19248755060c3eeee40859c51343df4",
+            "b430f14f046abf35875654c0ec56779e2175d1097c4b6357075467b7668c7ffd",
+            "d866139d327432e7d246969b7cbc599cdcd3d265b910f0d2bd260e7cd330c55a"
+          ],
+          "window_end": 1673668800000,
+          "window_end_iso": "2023-01-14T04:00:00+00:00",
+          "gross_difference": -0.025962843661980012,
+          "net_difference": -0.026199084777439693,
+          "funding_saved": -0.00026479245463478687,
+          "overlay_cost": -1.556991734408939e-05
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-18",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674000000000,
+          "confirmation_time_iso": "2023-01-18T00:00:00+00:00",
+          "action_time": 1674086400000,
+          "action_time_iso": "2023-01-19T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "24b33d87f6f312e5845580252aa91ab6779d032b78a178bafc8f0d85fb8d5a6f",
+            "26b92d66f2a680dc72bcd750dad071e35c6e3d7e52d800bb35f03a2ed9dd14f5",
+            "35ec20067f747adac4560aef330dabfeda525cc01282006d2f117c329e2ca7fa",
+            "534c9663c6541547e4477f1dde8b48ad4da1856fbd1e6222ccf4d7baeb51f171",
+            "6a3f9217879dab4186a8bcb01c666e4c5a0fad4277b66798610a19ae420b5f39",
+            "98471934ee5a779a9e5095da032da9a38c2f5893c2e198b6c4c6e43085360cc5"
+          ],
+          "window_end": 1674100800000,
+          "window_end_iso": "2023-01-19T04:00:00+00:00",
+          "gross_difference": -0.0015494227211565823,
+          "net_difference": -0.0025858773349829584,
+          "funding_saved": 4.9436119713948246e-05,
+          "overlay_cost": 0.001085890268713589
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-20",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1674172800000,
+          "confirmation_time_iso": "2023-01-20T00:00:00+00:00",
+          "action_time": 1674259200000,
+          "action_time_iso": "2023-01-21T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "0e049741add8f97d937940457969cef805db7a02409c85006aea607372fbfdbb",
+            "3c4c8fddb31ff140fff4d9f6b1bc6726ceb12299278412246713dbf9e6ff40f0",
+            "41fb8b34ca4cb932b2d441ea161153624713192dc64ab3f106806240dde59d59",
+            "732dc7b629538bdbc110274153ba5c122b16c64112d90f5ea7fc03673120171c",
+            "d1806eedeb6971db85822b818d02177761dcffc2bc7b7f7b9d2664eba9b277ec",
+            "eaebba1ef361a74074f1f8a4878985825e0d645e6e4d19b01e6122d64ab6adc3",
+            "f312ae03291617a0ac08ef94acf1a7ef997c7191c88bb09be4a0ff41052d8d25"
+          ],
+          "window_end": 1674273600000,
+          "window_end_iso": "2023-01-21T04:00:00+00:00",
+          "gross_difference": 0.002884309988614561,
+          "net_difference": 0.0017045206323078894,
+          "funding_saved": 5.189205722725376e-06,
+          "overlay_cost": 0.0011849794273224475
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-21",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674259200000,
+          "confirmation_time_iso": "2023-01-21T00:00:00+00:00",
+          "action_time": 1674345600000,
+          "action_time_iso": "2023-01-22T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "3edf0d3f70cc58fea8ea0a37949dacca69a3a5158b0348c5e1685f765033a247",
+            "57acbef0bd7e680527e0ab0c6934a0c080029c9943596866977c68720699dd24",
+            "62561dc6387563d8187fb8b95f0bb4b83a4a9cce851522a643cc43cd954f3e75",
+            "7423fc7ce946104230fb5925733166d57373dc7fd7a4f48259e14cad943e2403",
+            "cd87a3656658e00a6cd25ef9ba4888b870d31a60006b695eff199b72d55e9e25",
+            "d13d271bb894b18f421b5f037ffcaf56750c82992664fd5548fc735dffd2d4dc"
+          ],
+          "window_end": 1674360000000,
+          "window_end_iso": "2023-01-22T04:00:00+00:00",
+          "gross_difference": 0.00045290818003038564,
+          "net_difference": -0.000687041311551836,
+          "funding_saved": 5.425959183127186e-05,
+          "overlay_cost": 0.0011942092192860142
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-24",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674518400000,
+          "confirmation_time_iso": "2023-01-24T00:00:00+00:00",
+          "action_time": 1674604800000,
+          "action_time_iso": "2023-01-25T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "242488ddf477866113451c13967c60b1c8121311596ae2248fcd3cac1b7783b3",
+            "26c1226745c0c401ef9468f88251caa5a4fa4c6000bfa5fbb6f516afdd8483c5",
+            "366c22774d0edf5be21eb33fcae1d42b7cbac4d4746005ea37adab5db276da92"
+          ],
+          "window_end": 1674619200000,
+          "window_end_iso": "2023-01-25T04:00:00+00:00",
+          "gross_difference": -0.000381396362130851,
+          "net_difference": -0.001514646638530842,
+          "funding_saved": 5.3984271332358644e-05,
+          "overlay_cost": 0.001187234433313546
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-26",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674691200000,
+          "confirmation_time_iso": "2023-01-26T00:00:00+00:00",
+          "action_time": 1674777600000,
+          "action_time_iso": "2023-01-27T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "b8a165e06ecd5d77aced1a4285c5314ed9e495cd06171dce007f2cad8e904162",
+            "d7ad71d1421781ac10ecafe5dd50dc52a982984c5789f4e388c7e3ba20b64039",
+            "f41a9055c80f2a6ed1bace012370503ba0d65c1686fb6a675299cf06537d69d6"
+          ],
+          "window_end": 1674792000000,
+          "window_end_iso": "2023-01-27T04:00:00+00:00",
+          "gross_difference": 0.005804375886178889,
+          "net_difference": 0.0046585664146964805,
+          "funding_saved": 5.42583999676402e-05,
+          "overlay_cost": 0.001200069612762881
+        },
+        {
+          "trade_id": "1681171200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1681171200000,
+          "exit_time": 1681344000000,
+          "information_date": "2023-04-11",
+          "event_type": "exchange_security",
+          "confirmation_time": 1681171200000,
+          "confirmation_time_iso": "2023-04-11T00:00:00+00:00",
+          "action_time": 1681272000000,
+          "action_time_iso": "2023-04-12T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "2af929f968db505983967807ee19877742b7230cc65dd6289e64b3e7387a839f",
+            "a01357514f0cd556c2d65f757440d403dbb38f3f9fa1e185538919128a78e8d0",
+            "cfca7fad91bfc2f920c98ed5f75edffcf9269865f991c6b612e20c61d5bbea01"
+          ],
+          "window_end": 1681286400000,
+          "window_end_iso": "2023-04-12T08:00:00+00:00",
+          "gross_difference": -0.0011496694361536745,
+          "net_difference": -0.0022604210524887645,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011107512714343183
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-28",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698451200000,
+          "confirmation_time_iso": "2023-10-28T00:00:00+00:00",
+          "action_time": 1698537600000,
+          "action_time_iso": "2023-10-29T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "5075a649d94ae3fcc2d19574000e5f7cdf595083b814a237dc60eb3526aa9f7e",
+            "fc476c9e0673f2027263f589ad8f866e4239fcd18e4bfc686109bfd45dcfe4ff"
+          ],
+          "window_end": 1698552000000,
+          "window_end_iso": "2023-10-29T04:00:00+00:00",
+          "gross_difference": 0.0003251501712751377,
+          "net_difference": -0.0007294208739868262,
+          "funding_saved": 5.020064179136296e-05,
+          "overlay_cost": 0.0011047717845983876
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-02",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698883200000,
+          "confirmation_time_iso": "2023-11-02T00:00:00+00:00",
+          "action_time": 1698969600000,
+          "action_time_iso": "2023-11-03T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1055e3b3c386cbd1fa00c770ba8388209926461fa0865b9e4f8251a0cf1d9bba",
+            "a7d478bef7b5e84c95aa48d41439016a942248557a1943e2e947b6ff45bce172"
+          ],
+          "window_end": 1698984000000,
+          "window_end_iso": "2023-11-03T04:00:00+00:00",
+          "gross_difference": 0.0005654785587393251,
+          "net_difference": -0.000503019020368708,
+          "funding_saved": 5.085122487319256e-05,
+          "overlay_cost": 0.0011193489736248492
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-09",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1699488000000,
+          "confirmation_time_iso": "2023-11-09T00:00:00+00:00",
+          "action_time": 1699574400000,
+          "action_time_iso": "2023-11-10T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "8cd2a17787ea3d0ba341c44ad74c30fa8a06b028a7116e5aeb894c2f76b359b6",
+            "dbb3cde9157ace56be74a9cade6201de458a1c1b61c1f085b14b795aa433a16f"
+          ],
+          "window_end": 1699588800000,
+          "window_end_iso": "2023-11-10T04:00:00+00:00",
+          "gross_difference": -6.220264146126919e-05,
+          "net_difference": -0.0011310005881338516,
+          "funding_saved": 0.00025240483741919314,
+          "overlay_cost": 0.0013212027654309975
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-11",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1699660800000,
+          "confirmation_time_iso": "2023-11-11T00:00:00+00:00",
+          "action_time": 1699747200000,
+          "action_time_iso": "2023-11-12T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "2543d22ade7dbe8b30036ab0f54d045d96e355c2ff92dc9fb1762f013138175f",
+            "ade7d9a88061ba8c5dd3bbf8bbda82b71b62c1195e5263df16d4e15a35a56f22"
+          ],
+          "window_end": 1699761600000,
+          "window_end_iso": "2023-11-12T04:00:00+00:00",
+          "gross_difference": 0.0003505967064183199,
+          "net_difference": -0.0008346354629958283,
+          "funding_saved": 9.249084445623846e-05,
+          "overlay_cost": 0.0012777231190495308
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-09",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1707436800000,
+          "confirmation_time_iso": "2024-02-09T00:00:00+00:00",
+          "action_time": 1707523200000,
+          "action_time_iso": "2024-02-10T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "4609825fa819c8f952350670e22a1383ed4425b852e0e2913147b5eec46ea2b9",
+            "5a3aaaf387417ef9322c293a37fa2b0b6ab59a607ba1f75ee4f1312340333d22"
+          ],
+          "window_end": 1707537600000,
+          "window_end_iso": "2024-02-10T04:00:00+00:00",
+          "gross_difference": -0.0027903771063030676,
+          "net_difference": -0.003908384228937293,
+          "funding_saved": 5.338455715895682e-05,
+          "overlay_cost": 0.0011713908426801162
+        },
+        {
+          "trade_id": "1708992000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1708992000000,
+          "exit_time": 1709150400000,
+          "information_date": "2024-02-27",
+          "event_type": "exchange_security",
+          "confirmation_time": 1708992000000,
+          "confirmation_time_iso": "2024-02-27T00:00:00+00:00",
+          "action_time": 1709092800000,
+          "action_time_iso": "2024-02-28T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "3836a3240f2f108aca147ac66494554aa433627d41b7b12e21d3095510ecc9fa",
+            "8847ded208349fc6c4aca1ad9c4b5a9d66270ffcb209399196fea7ff63c0f509",
+            "bf4eab683b93d0c9032d114b2248d0374009393848618bbe8430f6b8df948b24",
+            "fb17567957947a170d38a947ffd68e8105e8060bcbe74eb5d625407cdf31591c"
+          ],
+          "window_end": 1709107200000,
+          "window_end_iso": "2024-02-28T08:00:00+00:00",
+          "gross_difference": -0.012488322750738136,
+          "net_difference": -0.013650274548951971,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011619480517170708
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-22",
+          "event_type": "exchange_security",
+          "confirmation_time": 1745280000000,
+          "confirmation_time_iso": "2025-04-22T00:00:00+00:00",
+          "action_time": 1745380800000,
+          "action_time_iso": "2025-04-23T04:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1aee211c766040074ec303019ec8abc06fc21015d2f7981f1c5a242a51eccf6c",
+            "bcda73781b5c9783cb600390ef7d871796bd88af183bfb82821da01747200cb2"
+          ],
+          "window_end": 1745395200000,
+          "window_end_iso": "2025-04-23T08:00:00+00:00",
+          "gross_difference": -0.0055505851303845055,
+          "net_difference": -0.006726547830454903,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.001175961034894922
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-20",
+          "event_type": "exchange_security",
+          "confirmation_time": 1747699200000,
+          "confirmation_time_iso": "2025-05-20T00:00:00+00:00",
+          "action_time": 1747800000000,
+          "action_time_iso": "2025-05-21T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "01f7445c77cd6263c2bc0a41ff5cebf054626a3be7a90eebb129f952892c3af7",
+            "df5fed96e93fb3374867edb34c7a0de79e561dcb2b3dff1a386f8d7653be3058"
+          ],
+          "window_end": 1747814400000,
+          "window_end_iso": "2025-05-21T08:00:00+00:00",
+          "gross_difference": 0.001709824416371323,
+          "net_difference": 0.000599900572860865,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.001109924356457825
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-23",
+          "event_type": "exchange_security",
+          "confirmation_time": 1747958400000,
+          "confirmation_time_iso": "2025-05-23T00:00:00+00:00",
+          "action_time": 1748044800000,
+          "action_time_iso": "2025-05-24T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com",
+            "cryptonews.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "627ce0cef91aa808c9acaf0180eb765f22b974453f8a4375b96c29e41fb03409",
+            "782a3e2bb114f750584b9f393878ccb6c976aaa430c8c56f5e21a8412ffada0a",
+            "e9881484b22daeedbd3bdb79447fff7ff51bf0160326eaac9a485b972e474fab",
+            "fad8a1926d11f80ae0ed27908f34fcca2bd74af988bae96e428b80d6efd40400"
+          ],
+          "window_end": 1748059200000,
+          "window_end_iso": "2025-05-24T04:00:00+00:00",
+          "gross_difference": -0.004825651694917919,
+          "net_difference": -0.005936555823083561,
+          "funding_saved": 1.1290387869567517e-05,
+          "overlay_cost": 0.001122193068339791
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-17",
+          "event_type": "exchange_security",
+          "confirmation_time": 1752710400000,
+          "confirmation_time_iso": "2025-07-17T00:00:00+00:00",
+          "action_time": 1752796800000,
+          "action_time_iso": "2025-07-18T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "6d286cb702fb0d0011a5ef23c41d93a494a4f89faafc5681714acbf97d303b8d",
+            "fcd182deacf4abd98c65d868aa8089fffbc6cdcbc1776919e63b1251b3945df4"
+          ],
+          "window_end": 1752811200000,
+          "window_end_iso": "2025-07-18T04:00:00+00:00",
+          "gross_difference": -0.022654128457667354,
+          "net_difference": -0.023911650756921136,
+          "funding_saved": 0.00016796264515820354,
+          "overlay_cost": 0.0014254781481735361
+        }
+      ]
+    },
+    "single_source_ablation": {
+      "name": "single_source_ablation",
+      "interventions": 54,
+      "trade_clusters": 18,
+      "mean_paired_net_difference": -0.00294984757265845,
+      "mean_paired_gross_difference": -0.001844061606152734,
+      "cluster_bootstrap_ci95": [
+        -0.005670010065266275,
+        -0.001449897325525085
+      ],
+      "fold_mean_net_differences": [
+        -0.0023903122614697472,
+        -0.002006408553538728,
+        -0.005364219059829158
+      ],
+      "compounded_return_pct": 193.52698087977114,
+      "closed_trade_mdd_pct": 5.582750426514203,
+      "tech_closed_trade_mdd_pct": 5.288294101964858,
+      "total_overlay_cost_fraction": 0.061268038961453504,
+      "windows": [
+        {
+          "trade_id": "1667606400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1667606400000,
+          "exit_time": 1667865600000,
+          "information_date": "2022-11-04",
+          "event_type": "fraud_legal+liquidation_leverage",
+          "confirmation_time": 1667606400000,
+          "confirmation_time_iso": "2022-11-05T00:00:00+00:00",
+          "action_time": 1667620800000,
+          "action_time_iso": "2022-11-05T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "54b9b95c747e1bf57593c24459895cf4cc16fd0564af3def5f16ea39eda28c3a",
+            "c44967a979e8b335b4887cc3aad648fdab31896a3b6db74f9cd5988c88db05b5",
+            "d0084203274203876a25307a3a81cd5775183dfb8cb4571e7e55cec65a02dbd3"
+          ],
+          "window_end": 1667635200000,
+          "window_end_iso": "2022-11-05T08:00:00+00:00",
+          "gross_difference": 0.0012053744642073043,
+          "net_difference": 9.257075698420608e-05,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011128040688355247
+        },
+        {
+          "trade_id": "1667606400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1667606400000,
+          "exit_time": 1667865600000,
+          "information_date": "2022-11-06",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1667779200000,
+          "confirmation_time_iso": "2022-11-07T00:00:00+00:00",
+          "action_time": 1667779200000,
+          "action_time_iso": "2022-11-07T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "bb0c2df6beb34bcc9055a964f8597818598b4f2f9aa9f102ac5ec33cccbce8cc",
+            "d5055935fc7c2f10c4db35662446dbe3b11a3ca5f3a200049911cf66c37416b3"
+          ],
+          "window_end": 1667793600000,
+          "window_end_iso": "2022-11-07T04:00:00+00:00",
+          "gross_difference": -0.00010635657037123272,
+          "net_difference": -0.0011456875706419413,
+          "funding_saved": 4.772181130548449e-05,
+          "overlay_cost": 0.0010870527796693077
+        },
+        {
+          "trade_id": "1670976000000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1670976000000,
+          "exit_time": 1671062400000,
+          "information_date": "2022-12-13",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1670976000000,
+          "confirmation_time_iso": "2022-12-14T00:00:00+00:00",
+          "action_time": 1670990400000,
+          "action_time_iso": "2022-12-14T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "33d6f1cfbb01bec1656e2de41994dea3b5ee38fb4d7d14ea8ecb895895ae1563",
+            "8be7e3ffda52a2c5095e34e6d96181304b7bf9217aee55ff6f85eea5754d4b4d",
+            "d864160ff720db744c0134ec8bb104cab8cabd1d228c90881680f108285748a0"
+          ],
+          "window_end": 1671004800000,
+          "window_end_iso": "2022-12-14T08:00:00+00:00",
+          "gross_difference": -0.0008885336826102629,
+          "net_difference": -0.00198751210826385,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010989781590935532
+        },
+        {
+          "trade_id": "1673481600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673481600000,
+          "exit_time": 1673668800000,
+          "information_date": "2023-01-11",
+          "event_type": "liquidation_leverage+network_protocol",
+          "confirmation_time": 1673481600000,
+          "confirmation_time_iso": "2023-01-12T00:00:00+00:00",
+          "action_time": 1673496000000,
+          "action_time_iso": "2023-01-12T04:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "cae5872c6eb16dd9e846215079e0675b6da9079d30ba31bb35669061d2d2414c",
+            "e7602ae99da1969508415a617eaf3009844a59525016029925146f28b23a7fa5"
+          ],
+          "window_end": 1673510400000,
+          "window_end_iso": "2023-01-12T08:00:00+00:00",
+          "gross_difference": 0.00218678457696666,
+          "net_difference": 0.001073392919206217,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.001113392313795855
+        },
+        {
+          "trade_id": "1673481600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673481600000,
+          "exit_time": 1673668800000,
+          "information_date": "2023-01-12",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1673568000000,
+          "confirmation_time_iso": "2023-01-13T00:00:00+00:00",
+          "action_time": 1673568000000,
+          "action_time_iso": "2023-01-13T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "0586225a5ad7e8e0889e6832ef6c701202645df90881e451839636adaef391fa",
+            "79beefea75984cb33a5207df3fd242c8c19248755060c3eeee40859c51343df4",
+            "b430f14f046abf35875654c0ec56779e2175d1097c4b6357075467b7668c7ffd",
+            "d866139d327432e7d246969b7cbc599cdcd3d265b910f0d2bd260e7cd330c55a"
+          ],
+          "window_end": 1673582400000,
+          "window_end_iso": "2023-01-13T04:00:00+00:00",
+          "gross_difference": -0.0011421422631290837,
+          "net_difference": -0.0024838846724628927,
+          "funding_saved": -0.0001870891672115715,
+          "overlay_cost": 0.001154652899479602
+        },
+        {
+          "trade_id": "1673481600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673481600000,
+          "exit_time": 1673668800000,
+          "information_date": "2023-01-13",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1673654400000,
+          "confirmation_time_iso": "2023-01-14T00:00:00+00:00",
+          "action_time": 1673654400000,
+          "action_time_iso": "2023-01-14T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "2daeeb9aa271123eebf5128f600f42185fd3363e7dfd658c7fac67c7cffbcea7",
+            "c27370e0dd20941985ed7bb830256fae2acb898df95725f958f0cfb31eeed5cf"
+          ],
+          "window_end": 1673668800000,
+          "window_end_iso": "2023-01-14T04:00:00+00:00",
+          "gross_difference": -0.025962843661980012,
+          "net_difference": -0.026199084777439693,
+          "funding_saved": -0.00026479245463478687,
+          "overlay_cost": -1.556991734408939e-05
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-16",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1673913600000,
+          "confirmation_time_iso": "2023-01-17T00:00:00+00:00",
+          "action_time": 1673913600000,
+          "action_time_iso": "2023-01-17T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "d285acb9f58ecb29a69a30d56b125a982373edd498b8802264727c524d59021b"
+          ],
+          "window_end": 1673928000000,
+          "window_end_iso": "2023-01-17T04:00:00+00:00",
+          "gross_difference": 0.0013706431764077458,
+          "net_difference": 0.0003118300768711659,
+          "funding_saved": 5.0347895392167316e-05,
+          "overlay_cost": 0.0011091614061217293
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-17",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1674000000000,
+          "confirmation_time_iso": "2023-01-18T00:00:00+00:00",
+          "action_time": 1674000000000,
+          "action_time_iso": "2023-01-18T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "24b33d87f6f312e5845580252aa91ab6779d032b78a178bafc8f0d85fb8d5a6f",
+            "26b92d66f2a680dc72bcd750dad071e35c6e3d7e52d800bb35f03a2ed9dd14f5",
+            "35ec20067f747adac4560aef330dabfeda525cc01282006d2f117c329e2ca7fa",
+            "534c9663c6541547e4477f1dde8b48ad4da1856fbd1e6222ccf4d7baeb51f171",
+            "618e9f4c76f53472d528995eb4830e31effc744bb9e585cffdabe814dfee44fd",
+            "6a3f9217879dab4186a8bcb01c666e4c5a0fad4277b66798610a19ae420b5f39",
+            "98471934ee5a779a9e5095da032da9a38c2f5893c2e198b6c4c6e43085360cc5"
+          ],
+          "window_end": 1674014400000,
+          "window_end_iso": "2023-01-18T04:00:00+00:00",
+          "gross_difference": -0.0032776249870620014,
+          "net_difference": -0.004438456812641835,
+          "funding_saved": -4.9755303178233766e-05,
+          "overlay_cost": 0.0011110755391141734
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-19",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1674172800000,
+          "confirmation_time_iso": "2023-01-20T00:00:00+00:00",
+          "action_time": 1674172800000,
+          "action_time_iso": "2023-01-20T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "0e049741add8f97d937940457969cef805db7a02409c85006aea607372fbfdbb",
+            "3c4c8fddb31ff140fff4d9f6b1bc6726ceb12299278412246713dbf9e6ff40f0",
+            "41fb8b34ca4cb932b2d441ea161153624713192dc64ab3f106806240dde59d59",
+            "732dc7b629538bdbc110274153ba5c122b16c64112d90f5ea7fc03673120171c",
+            "d1806eedeb6971db85822b818d02177761dcffc2bc7b7f7b9d2664eba9b277ec",
+            "eaebba1ef361a74074f1f8a4878985825e0d645e6e4d19b01e6122d64ab6adc3",
+            "f312ae03291617a0ac08ef94acf1a7ef997c7191c88bb09be4a0ff41052d8d25"
+          ],
+          "window_end": 1674187200000,
+          "window_end_iso": "2023-01-20T04:00:00+00:00",
+          "gross_difference": -0.00045290818003038564,
+          "net_difference": -0.0016500929738788646,
+          "funding_saved": -9.233660633728598e-05,
+          "overlay_cost": 0.0011048480516387556
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-20",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674259200000,
+          "confirmation_time_iso": "2023-01-21T00:00:00+00:00",
+          "action_time": 1674259200000,
+          "action_time_iso": "2023-01-21T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "3edf0d3f70cc58fea8ea0a37949dacca69a3a5158b0348c5e1685f765033a247",
+            "57acbef0bd7e680527e0ab0c6934a0c080029c9943596866977c68720699dd24",
+            "62561dc6387563d8187fb8b95f0bb4b83a4a9cce851522a643cc43cd954f3e75",
+            "7423fc7ce946104230fb5925733166d57373dc7fd7a4f48259e14cad943e2403",
+            "cd87a3656658e00a6cd25ef9ba4888b870d31a60006b695eff199b72d55e9e25",
+            "d13d271bb894b18f421b5f037ffcaf56750c82992664fd5548fc735dffd2d4dc"
+          ],
+          "window_end": 1674273600000,
+          "window_end_iso": "2023-01-21T04:00:00+00:00",
+          "gross_difference": 0.002884309988614561,
+          "net_difference": 0.0017045206323078894,
+          "funding_saved": 5.189205722725376e-06,
+          "overlay_cost": 0.0011849794273224475
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-21",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674345600000,
+          "confirmation_time_iso": "2023-01-22T00:00:00+00:00",
+          "action_time": 1674345600000,
+          "action_time_iso": "2023-01-22T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "13f8a1156db97ed4d144e287f9102ca4d8735dcba48daaf3d87db6425e350989"
+          ],
+          "window_end": 1674360000000,
+          "window_end_iso": "2023-01-22T04:00:00+00:00",
+          "gross_difference": 0.00045290818003038564,
+          "net_difference": -0.000687041311551836,
+          "funding_saved": 5.425959183127186e-05,
+          "overlay_cost": 0.0011942092192860142
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-23",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674518400000,
+          "confirmation_time_iso": "2023-01-24T00:00:00+00:00",
+          "action_time": 1674518400000,
+          "action_time_iso": "2023-01-24T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "242488ddf477866113451c13967c60b1c8121311596ae2248fcd3cac1b7783b3",
+            "26c1226745c0c401ef9468f88251caa5a4fa4c6000bfa5fbb6f516afdd8483c5",
+            "366c22774d0edf5be21eb33fcae1d42b7cbac4d4746005ea37adab5db276da92"
+          ],
+          "window_end": 1674532800000,
+          "window_end_iso": "2023-01-24T04:00:00+00:00",
+          "gross_difference": -0.0039569872571075795,
+          "net_difference": -0.00510770536770682,
+          "funding_saved": 5.500331473742701e-05,
+          "overlay_cost": 0.0012057202382405759
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-24",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1674604800000,
+          "confirmation_time_iso": "2023-01-25T00:00:00+00:00",
+          "action_time": 1674604800000,
+          "action_time_iso": "2023-01-25T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "ea80cb130eedce726e53bfd6dc69babafb9b71d891b794726b6fba27d52c73e1",
+            "ff8eda77bacd0c542dc196f7747df56f47f02adadc57eb669048cf3922179b1f"
+          ],
+          "window_end": 1674619200000,
+          "window_end_iso": "2023-01-25T04:00:00+00:00",
+          "gross_difference": -0.000381396362130851,
+          "net_difference": -0.001514646638530842,
+          "funding_saved": 5.3984271332358644e-05,
+          "overlay_cost": 0.001187234433313546
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-25",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1674691200000,
+          "confirmation_time_iso": "2023-01-26T00:00:00+00:00",
+          "action_time": 1674691200000,
+          "action_time_iso": "2023-01-26T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "52070739e86feaa1725ac801d659ac8267477f8ee93fa0d40813240e7b9e5210",
+            "b8a165e06ecd5d77aced1a4285c5314ed9e495cd06171dce007f2cad8e904162",
+            "d7ad71d1421781ac10ecafe5dd50dc52a982984c5789f4e388c7e3ba20b64039",
+            "f41a9055c80f2a6ed1bace012370503ba0d65c1686fb6a675299cf06537d69d6"
+          ],
+          "window_end": 1674705600000,
+          "window_end_iso": "2023-01-26T04:00:00+00:00",
+          "gross_difference": -0.001871225901704488,
+          "net_difference": -0.003027266249554319,
+          "funding_saved": 5.514753023685774e-05,
+          "overlay_cost": 0.0012111873167189953
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-26",
+          "event_type": "exchange_security+network_protocol",
+          "confirmation_time": 1674777600000,
+          "confirmation_time_iso": "2023-01-27T00:00:00+00:00",
+          "action_time": 1674777600000,
+          "action_time_iso": "2023-01-27T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "05f12d21952b9f67aa7ca3f90c4b274e78e92105dbf79a8d79edb43485738710",
+            "5a6e391054615e772df7572909cf8fe403d9d61d122a5baffd9f8bf05c852a28"
+          ],
+          "window_end": 1674792000000,
+          "window_end_iso": "2023-01-27T04:00:00+00:00",
+          "gross_difference": 0.005804375886178889,
+          "net_difference": 0.0046585664146964805,
+          "funding_saved": 5.42583999676402e-05,
+          "overlay_cost": 0.001200069612762881
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-27",
+          "event_type": "fraud_legal+liquidation_leverage",
+          "confirmation_time": 1674864000000,
+          "confirmation_time_iso": "2023-01-28T00:00:00+00:00",
+          "action_time": 1674864000000,
+          "action_time_iso": "2023-01-28T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "14f94e80e0b747b6198d5dfa361483f63dab2f1d63f29628794932169a029924",
+            "cccf56e6003eae4bac6106e7f771e533bfbbdea5422295a24392d482ef531bf7"
+          ],
+          "window_end": 1674878400000,
+          "window_end_iso": "2023-01-28T04:00:00+00:00",
+          "gross_difference": -0.0010965145411261968,
+          "net_difference": -0.002252255498791149,
+          "funding_saved": 5.5092704509801436e-05,
+          "overlay_cost": 0.0012108333332203926
+        },
+        {
+          "trade_id": "1673740800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1673740800000,
+          "exit_time": 1675123200000,
+          "information_date": "2023-01-28",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1674950400000,
+          "confirmation_time_iso": "2023-01-29T00:00:00+00:00",
+          "action_time": 1674950400000,
+          "action_time_iso": "2023-01-29T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "f321a5fcbc95e7ddce99ca51e78f6d36d6b6ae5ff593be498abd4356e7758e53"
+          ],
+          "window_end": 1674964800000,
+          "window_end_iso": "2023-01-29T04:00:00+00:00",
+          "gross_difference": -0.004040417711323703,
+          "net_difference": -0.005196900891338477,
+          "funding_saved": 5.52822108272352e-05,
+          "overlay_cost": 0.0012117641787167182
+        },
+        {
+          "trade_id": "1681171200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1681171200000,
+          "exit_time": 1681344000000,
+          "information_date": "2023-04-10",
+          "event_type": "exchange_security",
+          "confirmation_time": 1681171200000,
+          "confirmation_time_iso": "2023-04-11T00:00:00+00:00",
+          "action_time": 1681185600000,
+          "action_time_iso": "2023-04-11T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "2af929f968db505983967807ee19877742b7230cc65dd6289e64b3e7387a839f",
+            "a01357514f0cd556c2d65f757440d403dbb38f3f9fa1e185538919128a78e8d0",
+            "cfca7fad91bfc2f920c98ed5f75edffcf9269865f991c6b612e20c61d5bbea01"
+          ],
+          "window_end": 1681200000000,
+          "window_end_iso": "2023-04-11T08:00:00+00:00",
+          "gross_difference": 0.0001888020188404964,
+          "net_difference": -0.0009274045628582323,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011162066383394215
+        },
+        {
+          "trade_id": "1681171200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1681171200000,
+          "exit_time": 1681344000000,
+          "information_date": "2023-04-11",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1681257600000,
+          "confirmation_time_iso": "2023-04-12T00:00:00+00:00",
+          "action_time": 1681257600000,
+          "action_time_iso": "2023-04-12T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "1d424e2ebdd9ec40898c6fb9e3c29830b06e49a24dbeb0a597fb3fc45d3e0594",
+            "34c0c941249dcbadd4a0a450c5849ed240d91d49db83a7f0a1547ef9123f75e7"
+          ],
+          "window_end": 1681272000000,
+          "window_end_iso": "2023-04-12T04:00:00+00:00",
+          "gross_difference": 0.004425047316573847,
+          "net_difference": 0.0033611256676695936,
+          "funding_saved": 5.043121068429771e-05,
+          "overlay_cost": 0.0011143541871027807
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-25",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698278400000,
+          "confirmation_time_iso": "2023-10-26T00:00:00+00:00",
+          "action_time": 1698278400000,
+          "action_time_iso": "2023-10-26T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "a2d98314045a9cf0d1b8acc27a2b66abc68d41fe338b82e6d8231c3c8aeb9964"
+          ],
+          "window_end": 1698292800000,
+          "window_end_iso": "2023-10-26T04:00:00+00:00",
+          "gross_difference": -0.008315362206261799,
+          "net_difference": -0.009384727631816935,
+          "funding_saved": 5.135761092254362e-05,
+          "overlay_cost": 0.0011207205418690715
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-26",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1698364800000,
+          "confirmation_time_iso": "2023-10-27T00:00:00+00:00",
+          "action_time": 1698364800000,
+          "action_time_iso": "2023-10-27T00:00:00+00:00",
+          "source_domains": [
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "53c754ca1098e6b8931372bf38d0dcda6d1b5c80a985145e71cd6cb41e3f6c5f",
+            "5bba78d7fef3ba8a886a65fd10c7d725bdab1a3724cc71343dcbd85a8f3be563",
+            "ee01c5e8c7a4080f6f50ae4a4eb6620c723807cbbb163197e81c493c93d8ebbb"
+          ],
+          "window_end": 1698379200000,
+          "window_end_iso": "2023-10-27T04:00:00+00:00",
+          "gross_difference": 0.0035794792768199515,
+          "net_difference": 0.0025120015942749897,
+          "funding_saved": 5.0644825199252705e-05,
+          "overlay_cost": 0.0011181235815880613
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-27",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698451200000,
+          "confirmation_time_iso": "2023-10-28T00:00:00+00:00",
+          "action_time": 1698451200000,
+          "action_time_iso": "2023-10-28T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "5075a649d94ae3fcc2d19574000e5f7cdf595083b814a237dc60eb3526aa9f7e",
+            "fc476c9e0673f2027263f589ad8f866e4239fcd18e4bfc686109bfd45dcfe4ff"
+          ],
+          "window_end": 1698465600000,
+          "window_end_iso": "2023-10-28T04:00:00+00:00",
+          "gross_difference": -0.0030620663955734893,
+          "net_difference": -0.004122068182121393,
+          "funding_saved": 5.063662576015098e-05,
+          "overlay_cost": 0.0011106374936881906
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-30",
+          "event_type": "fraud_legal",
+          "confirmation_time": 1698710400000,
+          "confirmation_time_iso": "2023-10-31T00:00:00+00:00",
+          "action_time": 1698710400000,
+          "action_time_iso": "2023-10-31T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "6f70145cdcef8bd3704ffe2eec20b038b4232746f0be5aaf0e68aef306956885"
+          ],
+          "window_end": 1698724800000,
+          "window_end_iso": "2023-10-31T04:00:00+00:00",
+          "gross_difference": 0.00411951130041603,
+          "net_difference": 0.003048987546884744,
+          "funding_saved": 5.0761596521632374e-05,
+          "overlay_cost": 0.0011212865859063696
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-10-31",
+          "event_type": "exchange_security",
+          "confirmation_time": 1698796800000,
+          "confirmation_time_iso": "2023-11-01T00:00:00+00:00",
+          "action_time": 1698796800000,
+          "action_time_iso": "2023-11-01T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "aab319c460e4c638579f754e22a975d0a060cac0cf313daa02c07e2440b26bf5"
+          ],
+          "window_end": 1698811200000,
+          "window_end_iso": "2023-11-01T04:00:00+00:00",
+          "gross_difference": 0.0013119102562751984,
+          "net_difference": 0.0002350808572729376,
+          "funding_saved": 5.1208890061595175e-05,
+          "overlay_cost": 0.0011280386826369965
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-01",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1698883200000,
+          "confirmation_time_iso": "2023-11-02T00:00:00+00:00",
+          "action_time": 1698883200000,
+          "action_time_iso": "2023-11-02T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1055e3b3c386cbd1fa00c770ba8388209926461fa0865b9e4f8251a0cf1d9bba",
+            "a7d478bef7b5e84c95aa48d41439016a942248557a1943e2e947b6ff45bce172"
+          ],
+          "window_end": 1698897600000,
+          "window_end_iso": "2023-11-02T04:00:00+00:00",
+          "gross_difference": -0.0031073046802725943,
+          "net_difference": -0.004155096575744131,
+          "funding_saved": 0.0001053869169033777,
+          "overlay_cost": 0.0011531778801835914
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-02",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1698969600000,
+          "confirmation_time_iso": "2023-11-03T00:00:00+00:00",
+          "action_time": 1698969600000,
+          "action_time_iso": "2023-11-03T00:00:00+00:00",
+          "source_domains": [
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "239cade87ccfa75a4772067d903432dd45a277ca645a27d6aed144a71535c346",
+            "c769e7b0f6c4cb6feded7b62416260f415fc200f4b2bfc80723c71704c14656b",
+            "ebaca9f8871aa9813f5e5a932fd7449134991b40c188307979e50ff1754f00a1"
+          ],
+          "window_end": 1698984000000,
+          "window_end_iso": "2023-11-03T04:00:00+00:00",
+          "gross_difference": 0.0005654785587393251,
+          "net_difference": -0.000503019020368708,
+          "funding_saved": 5.085122487319256e-05,
+          "overlay_cost": 0.0011193489736248492
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-06",
+          "event_type": "exchange_security",
+          "confirmation_time": 1699315200000,
+          "confirmation_time_iso": "2023-11-07T00:00:00+00:00",
+          "action_time": 1699315200000,
+          "action_time_iso": "2023-11-07T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "85d6a13e8efa46f6c91b6fb74138208312110cba2177c532781eb65d2d8752dc"
+          ],
+          "window_end": 1699329600000,
+          "window_end_iso": "2023-11-07T04:00:00+00:00",
+          "gross_difference": 0.003011173325286932,
+          "net_difference": 0.0018850225479525294,
+          "funding_saved": 5.3468542382317516e-05,
+          "overlay_cost": 0.0011796202230688008
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-07",
+          "event_type": "exchange_security",
+          "confirmation_time": 1699401600000,
+          "confirmation_time_iso": "2023-11-08T00:00:00+00:00",
+          "action_time": 1699401600000,
+          "action_time_iso": "2023-11-08T00:00:00+00:00",
+          "source_domains": [
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "aea2ec45b3aa09e65812da361c85bc459357570f6dd4dae3de7657414e1bdae1"
+          ],
+          "window_end": 1699416000000,
+          "window_end_iso": "2023-11-08T04:00:00+00:00",
+          "gross_difference": 0.0007690508398854899,
+          "net_difference": -0.00035009206882867386,
+          "funding_saved": 5.325224683359973e-05,
+          "overlay_cost": 0.001172395386263068
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-08",
+          "event_type": "liquidation_leverage+network_protocol",
+          "confirmation_time": 1699488000000,
+          "confirmation_time_iso": "2023-11-09T00:00:00+00:00",
+          "action_time": 1699488000000,
+          "action_time_iso": "2023-11-09T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "8cd2a17787ea3d0ba341c44ad74c30fa8a06b028a7116e5aeb894c2f76b359b6",
+            "b7b810313041fad39e22fb622b11351bceb0f356801105a14b84535c3e9eaef2",
+            "dbb3cde9157ace56be74a9cade6201de458a1c1b61c1f085b14b795aa433a16f"
+          ],
+          "window_end": 1699502400000,
+          "window_end_iso": "2023-11-09T04:00:00+00:00",
+          "gross_difference": -0.008776227231634317,
+          "net_difference": -0.009906847977585084,
+          "funding_saved": 5.4298664906546855e-05,
+          "overlay_cost": 0.001184916777989233
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-10",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1699660800000,
+          "confirmation_time_iso": "2023-11-11T00:00:00+00:00",
+          "action_time": 1699660800000,
+          "action_time_iso": "2023-11-11T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "2543d22ade7dbe8b30036ab0f54d045d96e355c2ff92dc9fb1762f013138175f",
+            "ade7d9a88061ba8c5dd3bbf8bbda82b71b62c1195e5263df16d4e15a35a56f22"
+          ],
+          "window_end": 1699675200000,
+          "window_end_iso": "2023-11-11T04:00:00+00:00",
+          "gross_difference": 0.008776227231634317,
+          "net_difference": 0.007684410395414339,
+          "funding_saved": 0.00019193108591881574,
+          "overlay_cost": 0.0012837505550071333
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-11",
+          "event_type": "exchange_security",
+          "confirmation_time": 1699747200000,
+          "confirmation_time_iso": "2023-11-12T00:00:00+00:00",
+          "action_time": 1699747200000,
+          "action_time_iso": "2023-11-12T00:00:00+00:00",
+          "source_domains": [
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1e8574ab9ca7288e1e428b6c85cbe1053100cb35ea0c1e0c764a779db2cb6825"
+          ],
+          "window_end": 1699761600000,
+          "window_end_iso": "2023-11-12T04:00:00+00:00",
+          "gross_difference": 0.0003505967064183199,
+          "net_difference": -0.0008346354629958283,
+          "funding_saved": 9.249084445623846e-05,
+          "overlay_cost": 0.0012777231190495308
+        },
+        {
+          "trade_id": "1698105600000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1698105600000,
+          "exit_time": 1699977600000,
+          "information_date": "2023-11-13",
+          "event_type": "exchange_security",
+          "confirmation_time": 1699920000000,
+          "confirmation_time_iso": "2023-11-14T00:00:00+00:00",
+          "action_time": 1699920000000,
+          "action_time_iso": "2023-11-14T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1705a705ce9340518f5e6276fa38f677b28c3364231e99ccc2995089ba22def6",
+            "7d819d87e076f90ed84e8fb16bb3981685a7ea7a797e2b288e0f3d0825bdd2d3",
+            "9705daf68e785afa9e1a820595af922ff93f5e2729c4e16d2cc209087a12f87f",
+            "e8e7e072ba7d8791a495f16a8226ba324ddbf2cc95eb9ef637cf44661347d130"
+          ],
+          "window_end": 1699934400000,
+          "window_end_iso": "2023-11-14T04:00:00+00:00",
+          "gross_difference": -0.0005852703082952478,
+          "net_difference": -0.0017544777779124057,
+          "funding_saved": 0.00010953905846545147,
+          "overlay_cost": 0.0012787463525015695
+        },
+        {
+          "trade_id": "1700006400000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1700006400000,
+          "exit_time": 1700179200000,
+          "information_date": "2023-11-15",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1700092800000,
+          "confirmation_time_iso": "2023-11-16T00:00:00+00:00",
+          "action_time": 1700092800000,
+          "action_time_iso": "2023-11-16T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "5302f21a9fcdf09b7489801ee8ed792b58cb14834426a14a781e4415f58c1238",
+            "5e3a39bd239b583853a6a2512869511c4485703d2b1aebf84de7f71a318feca5",
+            "ba800168a64e130b337a9361b4607daafcabee8268f2f9936fc2228be090362d"
+          ],
+          "window_end": 1700107200000,
+          "window_end_iso": "2023-11-16T04:00:00+00:00",
+          "gross_difference": 0.0011955635455066242,
+          "net_difference": 0.00010580924581797942,
+          "funding_saved": 5.183045421227164e-05,
+          "overlay_cost": 0.0011415851125700332
+        },
+        {
+          "trade_id": "1701475200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1701475200000,
+          "exit_time": 1701734400000,
+          "information_date": "2023-12-01",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1701475200000,
+          "confirmation_time_iso": "2023-12-02T00:00:00+00:00",
+          "action_time": 1701489600000,
+          "action_time_iso": "2023-12-02T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "6679162ea5110bd2d5c65b9b4a04612432d6fa173b60db35cdc6853432fd3872"
+          ],
+          "window_end": 1701504000000,
+          "window_end_iso": "2023-12-02T08:00:00+00:00",
+          "gross_difference": 0.0009773450919598348,
+          "net_difference": -0.00012327055193466093,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011006159370981362
+        },
+        {
+          "trade_id": "1704240000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1704240000000,
+          "exit_time": 1704283200000,
+          "information_date": "2024-01-02",
+          "event_type": "exchange_security",
+          "confirmation_time": 1704240000000,
+          "confirmation_time_iso": "2024-01-03T00:00:00+00:00",
+          "action_time": 1704254400000,
+          "action_time_iso": "2024-01-03T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "aa8b10bef893a8e2511a4dbbfd9dad4a9da6a5c61257984ff103a65f0ceb5c75"
+          ],
+          "window_end": 1704268800000,
+          "window_end_iso": "2024-01-03T08:00:00+00:00",
+          "gross_difference": 0.002944147692500173,
+          "net_difference": 0.001840775718206827,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011033728575377468
+        },
+        {
+          "trade_id": "1707350400000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1707350400000,
+          "exit_time": 1707782400000,
+          "information_date": "2024-02-08",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1707436800000,
+          "confirmation_time_iso": "2024-02-09T00:00:00+00:00",
+          "action_time": 1707436800000,
+          "action_time_iso": "2024-02-09T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "cryptonews.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "2ca422f842a45f0b82633a9d7017fac2bab94aeb482beb88e7e1315802a79a44",
+            "4609825fa819c8f952350670e22a1383ed4425b852e0e2913147b5eec46ea2b9",
+            "5a3aaaf387417ef9322c293a37fa2b0b6ab59a607ba1f75ee4f1312340333d22"
+          ],
+          "window_end": 1707451200000,
+          "window_end_iso": "2024-02-09T04:00:00+00:00",
+          "gross_difference": -0.008853474372825923,
+          "net_difference": -0.010000319626776522,
+          "funding_saved": -1.4945057828379734e-05,
+          "overlay_cost": 0.00113189754008001
+        },
+        {
+          "trade_id": "1708992000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1708992000000,
+          "exit_time": 1709150400000,
+          "information_date": "2024-02-26",
+          "event_type": "exchange_security",
+          "confirmation_time": 1708992000000,
+          "confirmation_time_iso": "2024-02-27T00:00:00+00:00",
+          "action_time": 1709006400000,
+          "action_time_iso": "2024-02-27T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "3836a3240f2f108aca147ac66494554aa433627d41b7b12e21d3095510ecc9fa",
+            "8847ded208349fc6c4aca1ad9c4b5a9d66270ffcb209399196fea7ff63c0f509",
+            "bf4eab683b93d0c9032d114b2248d0374009393848618bbe8430f6b8df948b24",
+            "fb17567957947a170d38a947ffd68e8105e8060bcbe74eb5d625407cdf31591c"
+          ],
+          "window_end": 1709020800000,
+          "window_end_iso": "2024-02-27T08:00:00+00:00",
+          "gross_difference": -0.003005039881330873,
+          "net_difference": -0.004132473111393614,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011274323285508296
+        },
+        {
+          "trade_id": "1708992000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1708992000000,
+          "exit_time": 1709150400000,
+          "information_date": "2024-02-27",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1709078400000,
+          "confirmation_time_iso": "2024-02-28T00:00:00+00:00",
+          "action_time": 1709078400000,
+          "action_time_iso": "2024-02-28T00:00:00+00:00",
+          "source_domains": [
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "b8a5cf607b51901be59371b78685c102ef6759ab62bdcbd6407dac265f1c8471"
+          ],
+          "window_end": 1709092800000,
+          "window_end_iso": "2024-02-28T04:00:00+00:00",
+          "gross_difference": 0.0010169494720357526,
+          "net_difference": -1.0398013637724577e-05,
+          "funding_saved": 0.00012198175035212776,
+          "overlay_cost": 0.0011493295411104981
+        },
+        {
+          "trade_id": "1709164800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1709164800000,
+          "exit_time": 1709251200000,
+          "information_date": "2024-02-28",
+          "event_type": "exchange_security",
+          "confirmation_time": 1709164800000,
+          "confirmation_time_iso": "2024-02-29T00:00:00+00:00",
+          "action_time": 1709179200000,
+          "action_time_iso": "2024-02-29T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "5ad781f0ee9a642dab3d9f0c2e55b631fad3f791dbf71400bcbc78c351624030",
+            "a9f6db0a35e5c25181d5a28210d7ea5e54d552872c37c225b42055c52af0c261"
+          ],
+          "window_end": 1709193600000,
+          "window_end_iso": "2024-02-29T08:00:00+00:00",
+          "gross_difference": -0.009164250526005988,
+          "net_difference": -0.010258219795257066,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010939665199759634
+        },
+        {
+          "trade_id": "1715817600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1715817600000,
+          "exit_time": 1715990400000,
+          "information_date": "2024-05-15",
+          "event_type": "exchange_security",
+          "confirmation_time": 1715817600000,
+          "confirmation_time_iso": "2024-05-16T00:00:00+00:00",
+          "action_time": 1715832000000,
+          "action_time_iso": "2024-05-16T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "76975595f760f63759d6ee403b60e1ca8ad9711892832bf540627fcdf6bebfa6"
+          ],
+          "window_end": 1715846400000,
+          "window_end_iso": "2024-05-16T08:00:00+00:00",
+          "gross_difference": -0.0012745587667306346,
+          "net_difference": -0.0023706449003520827,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010960857512538975
+        },
+        {
+          "trade_id": "1715817600000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1715817600000,
+          "exit_time": 1715990400000,
+          "information_date": "2024-05-16",
+          "event_type": "exchange_security+fraud_legal",
+          "confirmation_time": 1715904000000,
+          "confirmation_time_iso": "2024-05-17T00:00:00+00:00",
+          "action_time": 1715904000000,
+          "action_time_iso": "2024-05-17T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "6d628dcdf7e2b152bc44fc41d7a7a9d984f3b29080efc3370ce76fc5cc72259f",
+            "9c2a5e96c36faee6473703c4f91b3e67d1e28b96f683b7ff72efe5d4565af157"
+          ],
+          "window_end": 1715918400000,
+          "window_end_iso": "2024-05-17T04:00:00+00:00",
+          "gross_difference": -0.0025106317447678686,
+          "net_difference": -0.003546785386951545,
+          "funding_saved": 4.947212304349705e-05,
+          "overlay_cost": 0.00108562501203769
+        },
+        {
+          "trade_id": "1742860800000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1742860800000,
+          "exit_time": 1742947200000,
+          "information_date": "2025-03-24",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1742860800000,
+          "confirmation_time_iso": "2025-03-25T00:00:00+00:00",
+          "action_time": 1742875200000,
+          "action_time_iso": "2025-03-25T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "c37ee266901eb4966b9b7553605fd2071470a854ce6f4d1c774275b464ea572e"
+          ],
+          "window_end": 1742889600000,
+          "window_end_iso": "2025-03-25T08:00:00+00:00",
+          "gross_difference": 0.0003403530886436604,
+          "net_difference": -0.0007456080970246144,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010859612877742912
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-21",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1745280000000,
+          "confirmation_time_iso": "2025-04-22T00:00:00+00:00",
+          "action_time": 1745294400000,
+          "action_time_iso": "2025-04-22T04:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "1aee211c766040074ec303019ec8abc06fc21015d2f7981f1c5a242a51eccf6c",
+            "4ba74530b21308871b897b1814002deaaf3b419b57bb302f22d43905edc18a1b",
+            "bcda73781b5c9783cb600390ef7d871796bd88af183bfb82821da01747200cb2"
+          ],
+          "window_end": 1745308800000,
+          "window_end_iso": "2025-04-22T08:00:00+00:00",
+          "gross_difference": -0.0018385849315747623,
+          "net_difference": -0.002947517592627748,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011089321094775307
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-23",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1745452800000,
+          "confirmation_time_iso": "2025-04-24T00:00:00+00:00",
+          "action_time": 1745452800000,
+          "action_time_iso": "2025-04-24T00:00:00+00:00",
+          "source_domains": [
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "3bb12cbd1753a37db214346205057ec730c8624f6420ec637131c48ec57985d2"
+          ],
+          "window_end": 1745467200000,
+          "window_end_iso": "2025-04-24T04:00:00+00:00",
+          "gross_difference": 0.005786974621587024,
+          "net_difference": 0.004597054140602912,
+          "funding_saved": -2.0064941561001367e-05,
+          "overlay_cost": 0.0011698572755155592
+        },
+        {
+          "trade_id": "1745280000000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1745280000000,
+          "exit_time": 1745712000000,
+          "information_date": "2025-04-24",
+          "event_type": "fraud_legal",
+          "confirmation_time": 1745539200000,
+          "confirmation_time_iso": "2025-04-25T00:00:00+00:00",
+          "action_time": 1745539200000,
+          "action_time_iso": "2025-04-25T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "baa338b889b3013eb8ab0fea560b2b73f498c0e6c14ba6dea43fe09f8ed2bb04"
+          ],
+          "window_end": 1745553600000,
+          "window_end_iso": "2025-04-25T04:00:00+00:00",
+          "gross_difference": 0.003914701332570397,
+          "net_difference": 0.002786323261533456,
+          "funding_saved": 4.7435444938831895e-05,
+          "overlay_cost": 0.0011758146903862378
+        },
+        {
+          "trade_id": "1746748800000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1746748800000,
+          "exit_time": 1747094400000,
+          "information_date": "2025-05-08",
+          "event_type": "exchange_security",
+          "confirmation_time": 1746748800000,
+          "confirmation_time_iso": "2025-05-09T00:00:00+00:00",
+          "action_time": 1746763200000,
+          "action_time_iso": "2025-05-09T04:00:00+00:00",
+          "source_domains": [
+            "blockworks.co"
+          ],
+          "headline_ids": [
+            "e3ad952aec2a403349cf1188e768000bd6e0f4459b4ba3df5b3b81c37c65294e"
+          ],
+          "window_end": 1746777600000,
+          "window_end_iso": "2025-05-09T08:00:00+00:00",
+          "gross_difference": -0.036007461774826076,
+          "net_difference": -0.03714483097091633,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0011373583938517552
+        },
+        {
+          "trade_id": "1746748800000::ETHUSDT",
+          "symbol": "ETHUSDT",
+          "entry_time": 1746748800000,
+          "exit_time": 1747094400000,
+          "information_date": "2025-05-11",
+          "event_type": "exchange_security",
+          "confirmation_time": 1747008000000,
+          "confirmation_time_iso": "2025-05-12T00:00:00+00:00",
+          "action_time": 1747008000000,
+          "action_time_iso": "2025-05-12T00:00:00+00:00",
+          "source_domains": [
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "791d8f56875e11ec50a2e8679f6abebf2c42cb48a6ab1241aa7f22675d58a1eb"
+          ],
+          "window_end": 1747022400000,
+          "window_end_iso": "2025-05-12T04:00:00+00:00",
+          "gross_difference": -0.0013015836122791836,
+          "net_difference": -0.00249768162003507,
+          "funding_saved": 5.7025207583542935e-05,
+          "overlay_cost": 0.0012531228248644373
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-19",
+          "event_type": "exchange_security+liquidation_leverage",
+          "confirmation_time": 1747699200000,
+          "confirmation_time_iso": "2025-05-20T00:00:00+00:00",
+          "action_time": 1747713600000,
+          "action_time_iso": "2025-05-20T04:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com"
+          ],
+          "headline_ids": [
+            "01f7445c77cd6263c2bc0a41ff5cebf054626a3be7a90eebb129f952892c3af7",
+            "7acd0672e4081c7ef1b793b90e3b34a65dd0052b7d8deea69d395be3247dea19",
+            "df5fed96e93fb3374867edb34c7a0de79e561dcb2b3dff1a386f8d7653be3058"
+          ],
+          "window_end": 1747728000000,
+          "window_end_iso": "2025-05-20T08:00:00+00:00",
+          "gross_difference": 0.0035975879361346925,
+          "net_difference": 0.0025008771579466908,
+          "funding_saved": 0.0,
+          "overlay_cost": 0.0010967118574644365
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-21",
+          "event_type": "fraud_legal",
+          "confirmation_time": 1747872000000,
+          "confirmation_time_iso": "2025-05-22T00:00:00+00:00",
+          "action_time": 1747872000000,
+          "action_time_iso": "2025-05-22T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "066e9279705a0869b4ce0f618bcfa5e613324b96ba9af016399e429324f6d59d"
+          ],
+          "window_end": 1747886400000,
+          "window_end_iso": "2025-05-22T04:00:00+00:00",
+          "gross_difference": -0.010099937086685976,
+          "net_difference": -0.011210091786339997,
+          "funding_saved": 4.213066442926898e-05,
+          "overlay_cost": 0.0011522823341022447
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-22",
+          "event_type": "exchange_security+fraud_legal",
+          "confirmation_time": 1747958400000,
+          "confirmation_time_iso": "2025-05-23T00:00:00+00:00",
+          "action_time": 1747958400000,
+          "action_time_iso": "2025-05-23T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cointelegraph.com",
+            "cryptonews.com",
+            "decrypt.co"
+          ],
+          "headline_ids": [
+            "193124d3e4cf3f66c4749d4c4247caed242a878a9005be1446a39be85562a9ec",
+            "627ce0cef91aa808c9acaf0180eb765f22b974453f8a4375b96c29e41fb03409",
+            "782a3e2bb114f750584b9f393878ccb6c976aaa430c8c56f5e21a8412ffada0a",
+            "e9881484b22daeedbd3bdb79447fff7ff51bf0160326eaac9a485b972e474fab",
+            "fad8a1926d11f80ae0ed27908f34fcca2bd74af988bae96e428b80d6efd40400"
+          ],
+          "window_end": 1747972800000,
+          "window_end_iso": "2025-05-23T04:00:00+00:00",
+          "gross_difference": 0.0028143719358317536,
+          "net_difference": 0.0016666734792262132,
+          "funding_saved": 1.1593502589069894e-05,
+          "overlay_cost": 0.0011592928035062855
+        },
+        {
+          "trade_id": "1747699200000::BTCUSDT",
+          "symbol": "BTCUSDT",
+          "entry_time": 1747699200000,
+          "exit_time": 1748131200000,
+          "information_date": "2025-05-23",
+          "event_type": "liquidation_leverage",
+          "confirmation_time": 1748044800000,
+          "confirmation_time_iso": "2025-05-24T00:00:00+00:00",
+          "action_time": 1748044800000,
+          "action_time_iso": "2025-05-24T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com"
+          ],
+          "headline_ids": [
+            "c5051641a87440d406c38ded33d9a74fab4d216a1ced696961d36efe456efb8e"
+          ],
+          "window_end": 1748059200000,
+          "window_end_iso": "2025-05-24T04:00:00+00:00",
+          "gross_difference": -0.004825651694917919,
+          "net_difference": -0.005936555823083561,
+          "funding_saved": 1.1290387869567517e-05,
+          "overlay_cost": 0.001122193068339791
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-15",
+          "event_type": "exchange_security",
+          "confirmation_time": 1752624000000,
+          "confirmation_time_iso": "2025-07-16T00:00:00+00:00",
+          "action_time": 1752624000000,
+          "action_time_iso": "2025-07-16T00:00:00+00:00",
+          "source_domains": [
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "23f0f8f63a7646f2c8542f035d4d8869c6caf3fa50683ca5b8d948887f916e00"
+          ],
+          "window_end": 1752638400000,
+          "window_end_iso": "2025-07-16T04:00:00+00:00",
+          "gross_difference": 0.002831766057208389,
+          "net_difference": 0.001713970188882598,
+          "funding_saved": 5.308008453298926e-05,
+          "overlay_cost": 0.0011708768023886925
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-16",
+          "event_type": "exchange_security",
+          "confirmation_time": 1752710400000,
+          "confirmation_time_iso": "2025-07-17T00:00:00+00:00",
+          "action_time": 1752710400000,
+          "action_time_iso": "2025-07-17T00:00:00+00:00",
+          "source_domains": [
+            "coindesk.com",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "6d286cb702fb0d0011a5ef23c41d93a494a4f89faafc5681714acbf97d303b8d",
+            "fcd182deacf4abd98c65d868aa8089fffbc6cdcbc1776919e63b1251b3945df4"
+          ],
+          "window_end": 1752724800000,
+          "window_end_iso": "2025-07-17T04:00:00+00:00",
+          "gross_difference": 0.002557724180704419,
+          "net_difference": 0.0013941906409775389,
+          "funding_saved": 5.527241954502157e-05,
+          "overlay_cost": 0.0012188067265892493
+        },
+        {
+          "trade_id": "1752278400000::XRPUSDT",
+          "symbol": "XRPUSDT",
+          "entry_time": 1752278400000,
+          "exit_time": 1753056000000,
+          "information_date": "2025-07-17",
+          "event_type": "liquidation_leverage+network_protocol",
+          "confirmation_time": 1752796800000,
+          "confirmation_time_iso": "2025-07-18T00:00:00+00:00",
+          "action_time": 1752796800000,
+          "action_time_iso": "2025-07-18T00:00:00+00:00",
+          "source_domains": [
+            "blockworks.co",
+            "cryptonews.com"
+          ],
+          "headline_ids": [
+            "e1addac0c252616c49a22784e7cef2385c083ea5a3f761eff67f8e55e4f69371",
+            "fda2422e98c95dec5feaba232683f3a5252b177b18f5d3cf0ac1da9a0475b058"
+          ],
+          "window_end": 1752811200000,
+          "window_end_iso": "2025-07-18T04:00:00+00:00",
+          "gross_difference": -0.022654128457667354,
+          "net_difference": -0.023911650756921136,
+          "funding_saved": 0.00016796264515820354,
+          "overlay_cost": 0.0014254781481735361
+        }
+      ]
+    }
+  },
+  "gate_checks": {
+    "sample_minima": true,
+    "ci95_lower_above_zero": false,
+    "paired_gross_mean_above_zero": false,
+    "at_least_two_of_three_folds_positive": false,
+    "beats_all_placebos": true,
+    "intrabar_mdd_not_worse": null,
+    "closed_trade_mdd_proxy_not_worse": false
+  },
+  "verdict": "FAIL",
+  "interpretation_limit": "Primary gates already force FAIL. Intrabar MDD remains unmaterialized; the reported closed-trade MDD is a proxy and cannot support PASS. Not validation, sealed-holdout, standalone LLM alpha, or live-performance evidence."
+}

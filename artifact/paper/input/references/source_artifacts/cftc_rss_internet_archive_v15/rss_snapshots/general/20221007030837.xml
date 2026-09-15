@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>The Market Risk Advisory Committee Announces Agenda  for September 28 Meeting</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8600-22</link>
+  <description/>
+  <pubDate>Tue, 27 Sep 2022 20:20:38 +0000
+</pubDate>
+    <dc:creator>LDozier</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8600-22</guid>
+    </item>
+<item>
+  <title>CFTC Commissioner Christy Goldsmith Romero Calls for Nominations and Topics for the Technology Advisory Committee</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8594-22</link>
+  <description/>
+  <pubDate>Mon, 26 Sep 2022 15:08:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8594-22</guid>
+    </item>
+<item>
+  <title>Registration Opens Today for a CFTC Financial Education Event as Part of World Investor Week – October 3-9 </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8593-22</link>
+  <description/>
+  <pubDate>Fri, 23 Sep 2022 17:54:58 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8593-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter to Taiwan Futures Exchange </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8587-22</link>
+  <description/>
+  <pubDate>Mon, 19 Sep 2022 18:11:32 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8587-22</guid>
+    </item>
+<item>
+  <title>The Market Risk Advisory Committee to Meet on September 28 </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8585-22</link>
+  <description/>
+  <pubDate>Fri, 16 Sep 2022 13:15:42 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8585-22</guid>
+    </item>
+<item>
+  <title>CFTC’s Division of Data Announces Limited Modifications to the Technical Specification for Parts 43 and 45</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8584-22</link>
+  <description/>
+  <pubDate>Thu, 15 Sep 2022 20:07:36 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8584-22</guid>
+    </item>
+<item>
+  <title>CFTC’s Energy and Environmental Markets Advisory Committee to  Meet September 20 in Oklahoma</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8580-22</link>
+  <description/>
+  <pubDate>Tue, 06 Sep 2022 14:37:05 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8580-22</guid>
+    </item>
+<item>
+  <title>CFTC Announces Review and Public Comment Period of KalshiEx Proposed Congressional Control Contracts Under CFTC Regulation 40.11</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8578-22</link>
+  <description/>
+  <pubDate>Fri, 26 Aug 2022 22:52:49 +0000
+</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8578-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Extends Temporary No-Action Letter Regarding Capital and Financial Reporting for Certain Non-U.S. Nonbank Swap Dealers </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8575-22</link>
+  <description/>
+  <pubDate>Wed, 17 Aug 2022 17:29:59 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8575-22</guid>
+    </item>
+<item>
+  <title>CFTC Issues Final Rule Modifying the Swap Clearing Requirement In Support of the Transition from LIBOR and Other Interbank Offered Rates to Alternative Reference Rates</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8573-22</link>
+  <description/>
+  <pubDate>Fri, 12 Aug 2022 16:39:56 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8573-22</guid>
+    </item>
+
+  </channel>
+</rss>

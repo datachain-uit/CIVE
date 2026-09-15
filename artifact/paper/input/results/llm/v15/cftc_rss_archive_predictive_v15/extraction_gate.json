@@ -1,0 +1,92 @@
+{
+  "audited_at": "2026-09-08T19:13:37.309536+00:00",
+  "category_counts": {
+    "btc_relevance": {
+      "direct": 9,
+      "indirect": 9,
+      "none": 1449,
+      "systemic": 425
+    },
+    "event_type": {
+      "adoption_business": 59,
+      "fraud_legal": 82,
+      "liquidation_leverage": 1,
+      "market_commentary": 12,
+      "other": 1,
+      "regulation": 1737
+    }
+  },
+  "checks": {
+    "all_records_schema_and_evidence_valid": true,
+    "backtest_remains_unconsulted": true,
+    "corpus_identity_matches_predeclaration": true,
+    "count_and_order_match_corpus": true,
+    "extraction_declares_complete": true,
+    "minimum_eligible_information_sets_met": false,
+    "outcomes_remain_unconsulted": true,
+    "record_count_matches": true,
+    "zero_extraction_errors": true
+  },
+  "counts": {
+    "corpus_records": 1892,
+    "eligible_information_sets": 64,
+    "eligible_records": 431,
+    "extraction_errors": 0,
+    "extraction_success": 1892,
+    "minimum_eligible_information_sets": 96,
+    "shortfall_information_sets": 32,
+    "total_information_sets": 124
+  },
+  "eligibility_contract": {
+    "btc_relevance": [
+      "direct",
+      "systemic"
+    ],
+    "event_type": [
+      "adoption_business",
+      "etf_institutional_flow",
+      "exchange_security",
+      "fraud_legal",
+      "liquidation_leverage",
+      "macro_liquidity",
+      "network_protocol",
+      "regulation"
+    ],
+    "manual_filtering": false
+  },
+  "eligible_information_time_range": {
+    "first": "2010-04-23T08:11:29+00:00",
+    "last": "2018-01-07T21:11:04+00:00"
+  },
+  "experiment_id": "cftc-rss-archive-llm-only-event-conditioned-v15-development",
+  "extraction_gate_passed": true,
+  "inputs": {
+    "auditor": {
+      "path": "tools\\llm\\audit_cftc_rss_archive_extraction_gate_v15.py",
+      "sha256": "67eaa6fefe0c40ef766fd30c210d568af0518dc4e762490bf93e886b4a62a595"
+    },
+    "corpus": {
+      "path": "paper\\input\\results\\llm\\v15\\cftc_rss_archive_corpus_v15\\corpus.json",
+      "sha256": "cc0bb90a767e4338c3cef07c0945b8d8022518ed1f173067fccf92017ae1c255"
+    },
+    "extraction": {
+      "path": "paper\\input\\results\\llm\\v15\\cftc_rss_archive_predictive_v15\\extraction\\extraction.json",
+      "sha256": "3bd86f9330ab5f3b962742aabb8b7627ef8cab4bff4d2454cf38423de77b7265"
+    },
+    "predeclared": {
+      "path": "paper\\input\\results\\llm\\v15\\cftc_rss_archive_predictive_v15\\predeclared.json",
+      "sha256": "831657e2b2cf1d7961275dbc30bc7e8a5c7c8c29d201fb01c8c1f4b22fdfb4b8"
+    },
+    "progress": {
+      "path": "paper\\input\\results\\llm\\v15\\cftc_rss_archive_predictive_v15\\extraction\\extraction_progress.json",
+      "sha256": "658fdd70ebcc50bf83743c8eb73f3ea6035da6816151afc8143f2bc31e51757b"
+    }
+  },
+  "outcomes_consulted": false,
+  "passed": false,
+  "schema_version": "cftc-rss-archive-extraction-data-gate-v15",
+  "status": "DATA_GATE_FAIL_STOP_BEFORE_TARGET_JOIN",
+  "stop_rule": "Data-gate failure freezes this negative artifact and prohibits target join, predictive evaluation, threshold selection, action mapping, backtest, Tech+LLM, and sealed holdout.",
+  "target_join_authorized": false,
+  "trading_backtest_consulted": false
+}

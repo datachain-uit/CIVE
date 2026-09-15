@@ -1,0 +1,330 @@
+{
+  "status": "PILOT_AUDITED_NOT_ADMITTED",
+  "model_run": false,
+  "outcomes_accessed": false,
+  "technical_features_used": false,
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/ArthurHeitmann/arctic_shift/ec2e6b75b0dbb40788dc297a2ef73e61a0629522/README.md",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 2820,
+      "sha256": "db4786769a39dd00c569c34f4751e8e5ecbbc69c2834b491e65c331227e652b4",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\arctic_raw_pilot_v9_1\\README.md",
+      "fetched_at": "2026-09-05T05:10:02.928535+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ArthurHeitmann/arctic_shift/ec2e6b75b0dbb40788dc297a2ef73e61a0629522/api/README.md",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 27070,
+      "sha256": "358d64b8993830f11950708dc3852abe7532648fa87b948573007388f45c1491",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\arctic_raw_pilot_v9_1\\api_README.md",
+      "fetched_at": "2026-09-05T05:10:03.441637+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ArthurHeitmann/arctic_shift/ec2e6b75b0dbb40788dc297a2ef73e61a0629522/file_content_explanations.md",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 1917,
+      "sha256": "20201e3b4f38dd68e61df81ee6e03337c7286a62a11089ee80a0c9cad467f070",
+      "path": "paper\\input\\references\\source_artifacts\\social_corpus_v9\\arctic_raw_pilot_v9_1\\file_content_explanations.md",
+      "fetched_at": "2026-09-05T05:10:03.944247+00:00"
+    },
+    {
+      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=Bitcoin&after=2023-04-01T00%3A00%3A00Z&before=2023-04-02T00%3A00%3A00Z&sort=asc&limit=100",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 313046,
+      "sha256": "275f59c71a1deef2b25c06dda19a5f18901a64124c5215a9a77aa2e4ffd445fb",
+      "path": "runtime\\external\\social_v9\\arctic_raw_pilot_v9_1\\2023-04-01_posts.json",
+      "fetched_at": "2026-09-05T05:10:05.659313+00:00"
+    },
+    {
+      "url": "https://arctic-shift.photon-reddit.com/api/comments/search?subreddit=Bitcoin&after=2023-04-01T00%3A00%3A00Z&before=2023-04-02T00%3A00%3A00Z&sort=asc&limit=100",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 172068,
+      "sha256": "fcbd15b788dad661547797727539aeb472a59e54006b1bdd2b8bc4fa5b5eba00",
+      "path": "runtime\\external\\social_v9\\arctic_raw_pilot_v9_1\\2023-04-01_comments.json",
+      "fetched_at": "2026-09-05T05:10:08.330639+00:00"
+    },
+    {
+      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=Bitcoin&after=2024-01-01T00%3A00%3A00Z&before=2024-01-02T00%3A00%3A00Z&sort=asc&limit=100",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 356629,
+      "sha256": "a9e4e3f4c598e6ef28e3ccabfbf6c4abb62636db023ab63a120efd92f294c350",
+      "path": "runtime\\external\\social_v9\\arctic_raw_pilot_v9_1\\2024-01-01_posts.json",
+      "fetched_at": "2026-09-05T05:10:11.111498+00:00"
+    },
+    {
+      "url": "https://arctic-shift.photon-reddit.com/api/comments/search?subreddit=Bitcoin&after=2024-01-01T00%3A00%3A00Z&before=2024-01-02T00%3A00%3A00Z&sort=asc&limit=100",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 172219,
+      "sha256": "9a530141b9c155b8dffc7d6eb81fd7af10611f406ab0243f407b8022e486ee8d",
+      "path": "runtime\\external\\social_v9\\arctic_raw_pilot_v9_1\\2024-01-01_comments.json",
+      "fetched_at": "2026-09-05T05:10:13.498103+00:00"
+    },
+    {
+      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=Bitcoin&after=2025-01-01T00%3A00%3A00Z&before=2025-01-02T00%3A00%3A00Z&sort=asc&limit=100",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 327364,
+      "sha256": "b856fd3535a3e669b16095eb7e5f15162143eafaa35221f062b908d8929c7e4e",
+      "path": "runtime\\external\\social_v9\\arctic_raw_pilot_v9_1\\2025-01-01_posts.json",
+      "fetched_at": "2026-09-05T05:10:16.386294+00:00"
+    },
+    {
+      "url": "https://arctic-shift.photon-reddit.com/api/comments/search?subreddit=Bitcoin&after=2025-01-01T00%3A00%3A00Z&before=2025-01-02T00%3A00%3A00Z&sort=asc&limit=100",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 169398,
+      "sha256": "cba5fe73f8c1a466db24c08b67083cc9933143cefba65b926eb64eb72bc91df7",
+      "path": "runtime\\external\\social_v9\\arctic_raw_pilot_v9_1\\2025-01-01_comments.json",
+      "fetched_at": "2026-09-05T05:10:18.892994+00:00"
+    }
+  ],
+  "samples": [
+    {
+      "kind": "posts",
+      "start": "2023-04-01",
+      "end": "2023-04-02",
+      "rows": 100,
+      "unique_ids": 100,
+      "sample_cap_reached": true,
+      "coverage_complete": false,
+      "reason_counts": {
+        "version_metadata_missing": 100,
+        "deleted_or_removed_text": 43,
+        "edited_or_edit_status_unknown": 1
+      },
+      "field_presence_counts": {
+        "created_utc": 100,
+        "edited": 100,
+        "id": 100,
+        "retrieved_on": 100,
+        "selftext": 100,
+        "subreddit": 100,
+        "title": 100
+      },
+      "version_notes": {
+        "metadata_missing": 100
+      },
+      "conditional_temporal_candidates": 0,
+      "candidates_observed_before_next_4h_boundary": 0,
+      "delay_seconds": {
+        "count": 100,
+        "min": 9627505,
+        "median_lower": 9643563,
+        "max": 9660534
+      }
+    },
+    {
+      "kind": "comments",
+      "start": "2023-04-01",
+      "end": "2023-04-02",
+      "rows": 100,
+      "unique_ids": 100,
+      "sample_cap_reached": true,
+      "coverage_complete": false,
+      "reason_counts": {
+        "second_retrieval_edited": 6,
+        "edited_or_edit_status_unknown": 6,
+        "deleted_or_removed_text": 15
+      },
+      "field_presence_counts": {
+        "_meta": 100,
+        "body": 100,
+        "created_utc": 100,
+        "edited": 100,
+        "id": 100,
+        "link_id": 100,
+        "parent_id": 100,
+        "retrieved_on": 100,
+        "subreddit": 100
+      },
+      "version_notes": {
+        "None": 100
+      },
+      "conditional_temporal_candidates": 80,
+      "candidates_observed_before_next_4h_boundary": 0,
+      "delay_seconds": {
+        "count": 100,
+        "min": 7017889,
+        "median_lower": 7019281,
+        "max": 7021097
+      }
+    },
+    {
+      "kind": "posts",
+      "start": "2024-01-01",
+      "end": "2024-01-02",
+      "rows": 100,
+      "unique_ids": 100,
+      "sample_cap_reached": true,
+      "coverage_complete": false,
+      "reason_counts": {
+        "deleted_or_removed_text": 19,
+        "edited_or_edit_status_unknown": 1
+      },
+      "field_presence_counts": {
+        "_meta": 100,
+        "created_utc": 100,
+        "edited": 100,
+        "id": 100,
+        "retrieved_on": 100,
+        "selftext": 100,
+        "subreddit": 100,
+        "title": 100
+      },
+      "version_notes": {
+        "no_2nd_retrieval": 100
+      },
+      "conditional_temporal_candidates": 80,
+      "candidates_observed_before_next_4h_boundary": 80,
+      "delay_seconds": {
+        "count": 100,
+        "min": 12,
+        "median_lower": 15,
+        "max": 29
+      }
+    },
+    {
+      "kind": "comments",
+      "start": "2024-01-01",
+      "end": "2024-01-02",
+      "rows": 100,
+      "unique_ids": 100,
+      "sample_cap_reached": true,
+      "coverage_complete": false,
+      "reason_counts": {
+        "second_retrieval_edited": 7,
+        "deleted_or_removed_text": 8,
+        "deleted_later_excluded_from_pilot": 5,
+        "edited_or_edit_status_unknown": 1
+      },
+      "field_presence_counts": {
+        "_meta": 100,
+        "body": 100,
+        "created_utc": 100,
+        "edited": 100,
+        "id": 100,
+        "link_id": 100,
+        "parent_id": 100,
+        "retrieved_on": 100,
+        "subreddit": 100
+      },
+      "version_notes": {
+        "None": 100
+      },
+      "conditional_temporal_candidates": 80,
+      "candidates_observed_before_next_4h_boundary": 80,
+      "delay_seconds": {
+        "count": 100,
+        "min": 13,
+        "median_lower": 15,
+        "max": 19
+      }
+    },
+    {
+      "kind": "posts",
+      "start": "2025-01-01",
+      "end": "2025-01-02",
+      "rows": 100,
+      "unique_ids": 100,
+      "sample_cap_reached": true,
+      "coverage_complete": false,
+      "reason_counts": {
+        "deleted_later_excluded_from_pilot": 27,
+        "second_retrieval_edited": 8,
+        "deleted_or_removed_text": 27,
+        "restored_content_not_initial_version": 2
+      },
+      "field_presence_counts": {
+        "_meta": 100,
+        "created_utc": 100,
+        "edited": 100,
+        "id": 100,
+        "retrieved_on": 100,
+        "selftext": 100,
+        "subreddit": 100,
+        "title": 100
+      },
+      "version_notes": {
+        "None": 100
+      },
+      "conditional_temporal_candidates": 39,
+      "candidates_observed_before_next_4h_boundary": 39,
+      "delay_seconds": {
+        "count": 100,
+        "min": 13,
+        "median_lower": 16,
+        "max": 31
+      }
+    },
+    {
+      "kind": "comments",
+      "start": "2025-01-01",
+      "end": "2025-01-02",
+      "rows": 100,
+      "unique_ids": 100,
+      "sample_cap_reached": true,
+      "coverage_complete": false,
+      "reason_counts": {
+        "second_retrieval_edited": 7,
+        "deleted_later_excluded_from_pilot": 4,
+        "deleted_or_removed_text": 1,
+        "restored_content_not_initial_version": 1
+      },
+      "field_presence_counts": {
+        "_meta": 100,
+        "body": 100,
+        "created_utc": 100,
+        "edited": 100,
+        "id": 100,
+        "link_id": 100,
+        "parent_id": 100,
+        "retrieved_on": 100,
+        "subreddit": 100
+      },
+      "version_notes": {
+        "None": 100
+      },
+      "conditional_temporal_candidates": 88,
+      "candidates_observed_before_next_4h_boundary": 88,
+      "delay_seconds": {
+        "count": 100,
+        "min": 14,
+        "median_lower": 18,
+        "max": 27
+      }
+    }
+  ],
+  "failures": [],
+  "rows": 600,
+  "conditional_temporal_candidates": 367,
+  "admitted_model_inputs": 0,
+  "limitations": [
+    "Conditional record checks are not complete PIT certification.",
+    "Public API/dump documentation is not a verified content usage license.",
+    "No full-period coverage, deletion bias or model contamination audit.",
+    "API snapshot is retrieved now, not an independently verified historical dump.",
+    "Next 4h boundary is a latency diagnostic, not a selected predictive target."
+  ],
+  "next_required": [
+    "Resolve usage basis with thesis supervisor/source owner.",
+    "Validate pinned monthly dump and API version semantics.",
+    "Audit complete chronological development coverage before model freeze."
+  ]
+}

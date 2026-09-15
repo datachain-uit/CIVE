@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-16T12:07:49.356560+00:00",
+  "experiment_id": "llm-finbert-financial-sentiment-v1-development",
+  "candidate": {
+    "model": "ProsusAI/finbert",
+    "revision": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "digest": "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "architecture": "BERT sequence classification",
+    "task": "three-class financial sentiment",
+    "labels": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "primary_sources": [
+      "https://arxiv.org/abs/1908.10063",
+      "https://huggingface.co/ProsusAI/finbert",
+      "https://github.com/ProsusAI/finBERT"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "information_sets": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run1": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run2": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "headline_count_matches_run1": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "headline_count_matches_run2": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "exact_score_agreement": {
+      "observed": 108,
+      "required_min": 108,
+      "passed": true
+    },
+    "mean_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.0,
+      "passed": true
+    },
+    "max_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.0,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "status": "stage1-pass-full-calibration-authorized",
+  "next_action": "run one full FinBERT inference and the predeclared calibration only",
+  "inputs": {
+    "config": "configs\\llm_finbert_financial_sentiment_v1_development.json",
+    "config_sha256": "6474fd77fa9470982ad1dc06bfeac888db4faf41aac6eee03e5214c221ec4a31",
+    "audit": "results\\llm_daily_reliability_finbert_determinism_v1.json",
+    "audit_sha256": "253c73f923ce015bbc7f5c8c7770f1aaf1b451bae6b045bd703c4c5f42e7080f",
+    "left": "results\\llm_daily_reliability_finbert_run1_v1.json",
+    "left_sha256": "15f914059c979e0b07a3195c1235b625a3cc92e5be89f5af5df0627c7b1a1f88",
+    "right": "results\\llm_daily_reliability_finbert_run2_v1.json",
+    "right_sha256": "48b0951e49ac611d0faec47c0c48ce7029d8430ed8c1174b4d957ec11e682aea"
+  }
+}

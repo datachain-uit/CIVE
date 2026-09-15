@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "experiment_id": "llm-ministral3-8b-multisource-causal-memory-v2.1-development",
+  "status": "predeclared-after-v2-operational-failure-before-v2.1-scoring-or-aggregate-outcome-inspection",
+  "predeclared_at": "2026-08-21T13:13:37.4342577+07:00",
+  "selection_basis": "operational correction after v2 produced an extra-or-missing-key response at sample 15; no aggregate market outcome was consulted",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 6022236616,
+    "license": "Apache-2.0"
+  },
+  "frozen_input_contract": {
+    "artifact": "results/llm_daily_information_sets_multisource_v2_development.json",
+    "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0",
+    "records": 1079,
+    "coverage": ["2022-09-12", "2025-08-27"],
+    "input_contract": "crypto-multisource-causal-memory-v2",
+    "prompt_version": "crypto-multisource-causal-memory-v2.1",
+    "prompt_hash": "ebc9094d4b8377f1a08841b113e89b956863508c52c2526c039cceb9748dd1e9",
+    "response_schema_hash": "5174aecccfea6b1f63ec1f8795720a8128f6f940a43bae881af046d3fa1e7924",
+    "scorer_sha256": "02a3ad6cf3de69d39d0442ff97e90e0fac8f90590bd6d4fb8ab2a5702f50d361",
+    "temperature": 0.0,
+    "seed": 20260821,
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "execution_delay_hours": 4,
+    "forward_horizon_hours": 24,
+    "threshold_optimization_prohibited": true
+  },
+  "operational_change_from_v2": {
+    "input_changed": false,
+    "target_changed": false,
+    "gate_thresholds_changed": false,
+    "response_contract": "JSON Schema with three required keys and additionalProperties=false",
+    "diagnostic_capture": "raw_response retained only on errors"
+  },
+  "causal_input_policy": {
+    "sources": ["completed-day headlines", "completed BTCUSDT 4h bars", "recorded BTC funding", "point-in-time top-5 cross-asset membership"],
+    "memory": "three nearest prior fixed-scale feature states; outcome_at must be no later than current cutoff",
+    "full_sample_normalization": false,
+    "observed_memory_lookahead_violations": 0
+  },
+  "stage1_operational_gate": {
+    "sampling": "twelve deterministic calendar samples per covered year for 2022-2025",
+    "sample_per_year": 12,
+    "expected_information_sets": 48,
+    "independent_component_runs": 2,
+    "workers_per_run": 1,
+    "request_delay_seconds": 10,
+    "required": {
+      "schema_success_each_run": 48,
+      "exact_score_agreement_min": 46,
+      "long_flat_action_agreements_min": 47,
+      "mean_absolute_score_difference_max": 0.01,
+      "max_absolute_score_difference_max": 0.4
+    },
+    "decision": "all requirements must pass; otherwise reject v2.1 before full inference"
+  },
+  "stage2_only_if_stage1_passes": {
+    "expected_full_records": 1079,
+    "minimum_observations": 1000,
+    "minimum_long_rule_observations": 100,
+    "required": {
+      "schema_errors": 0,
+      "pearson_score_forward_return_95_ci_lower_bound_gt": 0.0,
+      "long_minus_flat_mean_bps_95_ci_lower_bound_gt": 0.0
+    },
+    "decision": "all requirements must pass before repeat, threshold selection, or trading backtest"
+  },
+  "prohibited": [
+    "changing features, prompt, retrieval policy, target horizon, response schema, or thresholds within this experiment",
+    "consulting aggregate v2.1 market outcomes before Stage 1 completes",
+    "running multiple LLM workers",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

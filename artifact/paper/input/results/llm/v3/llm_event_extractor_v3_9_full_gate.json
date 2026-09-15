@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-03T12:14:48.190078+00:00",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.9-full-extraction",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records": 39393,
+    "schema_success": 39393,
+    "errors": 0,
+    "headline_count_match": 39393,
+    "headline_id_and_order_match": 39393,
+    "evidence_exact_substring": 39393,
+    "evidence_fallbacks": 997
+  },
+  "checks": {
+    "schema_success": true,
+    "errors": true,
+    "headline_count_match": true,
+    "headline_id_and_order_match": true,
+    "evidence_exact_substring": true,
+    "outcomes_not_consulted": true,
+    "backtest_not_consulted": true
+  },
+  "passed": true,
+  "status": "full-extraction-pass-downstream-design-authorized",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_event_extractor_v3_9_full_predeclared.json",
+      "sha256": "b5145e68d1103b9ef73745904d884a82a1ef74eef1eb141c9bf6885d287f17d9"
+    },
+    "input": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    }
+  }
+}

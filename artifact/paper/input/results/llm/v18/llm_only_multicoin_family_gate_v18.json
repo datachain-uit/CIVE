@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-073--LLM-076-multicoin-transfer-v18",
+  "status": "FAIL_FAMILY_TRANSFER",
+  "passed": false,
+  "outcomes_consulted": true,
+  "trading_backtest_consulted": false,
+  "eligible_assets": [
+    "BTCUSDT"
+  ],
+  "stopped_before_target": [
+    "XRPUSDT",
+    "SOLUSDT",
+    "BNBUSDT"
+  ],
+  "family_success_assets": [],
+  "assets": {
+    "BTCUSDT": {
+      "experiment_id": "LLM-073",
+      "overall": {
+        "prior": {
+          "mse": 0.0006345119563026158,
+          "rmse": 0.025189520763655188,
+          "mae": 0.017996976613140724,
+          "pearson": -0.03515212452397234,
+          "prediction_std": 0.0004742082022058534
+        },
+        "generic": {
+          "mse": 0.0006482578573366041,
+          "rmse": 0.025460908415384634,
+          "mae": 0.01820636963524897,
+          "pearson": -0.0389537850369792,
+          "prediction_std": 0.0028061722891331857
+        },
+        "event": {
+          "mse": 0.0006730833534298862,
+          "rmse": 0.025943850011705783,
+          "mae": 0.01856159162275497,
+          "pearson": -0.03433091276972038,
+          "prediction_std": 0.0052773990973676585
+        }
+      },
+      "event_minus_generic": {
+        "delta_mse": -2.4825496093282072e-05,
+        "delta_mse_95_ci": [
+          -4.84455173310077e-05,
+          -7.254300939100286e-06
+        ],
+        "pearson_95_ci": [
+          -0.09242006205550192,
+          0.006604186883338905
+        ],
+        "fold_wins": 1,
+        "raw_one_sided_p_delta_mse": 0.9992001599680064,
+        "raw_one_sided_p_pearson": 0.9538092381523695,
+        "holm_adjusted_p_delta_mse": 0.9992001599680064,
+        "holm_adjusted_p_pearson": 0.9538092381523695
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "records": 139,
+          "metrics": {
+            "prior": {
+              "mse": 0.0005346886105667252,
+              "rmse": 0.02312333476310727,
+              "mae": 0.015802895780328244,
+              "pearson": 0.0,
+              "prediction_std": 0.0
+            },
+            "generic": {
+              "mse": 0.0005783565735341309,
+              "rmse": 0.024049045168865454,
+              "mae": 0.016519733298058014,
+              "pearson": -0.0257677736735852,
+              "prediction_std": 0.004828633270996905
+            },
+            "event": {
+              "mse": 0.0006240916460566723,
+              "rmse": 0.02498182631547726,
+              "mae": 0.017355688382790408,
+              "pearson": -0.03382736269105369,
+              "prediction_std": 0.007114796811977996
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "records": 139,
+          "metrics": {
+            "prior": {
+              "mse": 0.0007927951441808325,
+              "rmse": 0.028156618124001193,
+              "mae": 0.020201340167331255,
+              "pearson": 0.0,
+              "prediction_std": 0.0
+            },
+            "generic": {
+              "mse": 0.0008144654530147307,
+              "rmse": 0.02853884112949807,
+              "mae": 0.02053197159411743,
+              "pearson": -0.15386435828112502,
+              "prediction_std": 0.0019030130623189834
+            },
+            "event": {
+              "mse": 0.0008301497085384899,
+              "rmse": 0.02881231869424066,
+              "mae": 0.0206287467260494,
+              "pearson": -0.09204158906344946,
+              "prediction_std": 0.0037274121375827866
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "records": 139,
+          "metrics": {
+            "prior": {
+              "mse": 0.0007787844165983586,
+              "rmse": 0.027906709168197503,
+              "mae": 0.020746980361891782,
+              "pearson": 0.0,
+              "prediction_std": 0.0
+            },
+            "generic": {
+              "mse": 0.0007844535162420169,
+              "rmse": 0.028008097333485846,
+              "mae": 0.02083418716034288,
+              "pearson": -0.06393530950658821,
+              "prediction_std": 0.0010660517838939865
+            },
+            "event": {
+              "mse": 0.0008049149637123538,
+              "rmse": 0.02837102331098323,
+              "mae": 0.020997573179190123,
+              "pearson": -0.05222294456952637,
+              "prediction_std": 0.003644636041236711
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "records": 139,
+          "metrics": {
+            "prior": {
+              "mse": 0.0006897218921558796,
+              "rmse": 0.026262556847266024,
+              "mae": 0.019499327882812136,
+              "pearson": -3.051367896588609e-17,
+              "prediction_std": 4.336808689942018e-19
+            },
+            "generic": {
+              "mse": 0.0006829661897985902,
+              "rmse": 0.026133621827037105,
+              "mae": 0.019371320098583028,
+              "pearson": 0.1130572270179337,
+              "prediction_std": 0.0011953277494692156
+            },
+            "event": {
+              "mse": 0.0006787214467665813,
+              "rmse": 0.026052282947307732,
+              "mae": 0.019454027676645873,
+              "pearson": 0.13053898312248513,
+              "prediction_std": 0.002953118044458106
+            }
+          }
+        },
+        {
+          "fold": 5,
+          "records": 143,
+          "metrics": {
+            "prior": {
+              "mse": 0.0003837848855159354,
+              "rmse": 0.01959042841583449,
+              "mae": 0.013853573495432524,
+              "pearson": 1.041198860692721e-16,
+              "prediction_std": 2.168404344971009e-19
+            },
+            "generic": {
+              "mse": 0.0003885219681702806,
+              "rmse": 0.019710960610033208,
+              "mae": 0.013898600601649965,
+              "pearson": -0.005418627251711569,
+              "prediction_std": 0.002000283831229435
+            },
+            "event": {
+              "mse": 0.0004344073755397967,
+              "rmse": 0.020842441688530562,
+              "mae": 0.014489115700809707,
+              "pearson": -0.04133423166009727,
+              "prediction_std": 0.0063271569308133565
+            }
+          }
+        }
+      ],
+      "checks": {
+        "required_oos_records": true,
+        "event_minus_generic_mse_ci_lower_gt_zero": false,
+        "event_pearson_ci_lower_gt_zero": false,
+        "event_mse_wins_at_least_3_of_5_folds": false,
+        "event_prediction_nonconstant": true
+      },
+      "passed_per_coin_gate": false
+    }
+  },
+  "inputs": {
+    "predeclaration": {
+      "path": "paper\\input\\results\\llm\\v18\\llm_only_multicoin_evaluation_v18_predeclared.json",
+      "sha256": "caf327ad7843584889efa8a894347a7e71e49a7ccc57185efe9455b9092ca1c9"
+    },
+    "target_panel": {
+      "path": "paper\\input\\results\\llm\\v18\\llm_only_multicoin_target_panel_v18.json",
+      "sha256": "a788eb4a36f34dbf8ec20cb04e8aefd6070bce2bad53f02acc291edc584ec989"
+    },
+    "prediction_panel": {
+      "path": "paper\\input\\results\\llm\\v18\\llm_only_multicoin_prediction_panel_v18.json",
+      "sha256": "fd1bb860c48a48879503021b88c22d9ec94671b5abd61a46cddbfb345adc5021"
+    }
+  },
+  "interpretation": "Development transfer family only; no direct claim about incremental value over Tech."
+}

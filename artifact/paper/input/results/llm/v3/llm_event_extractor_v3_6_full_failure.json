@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-26T12:49:25.4237739Z",
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.6-full-extraction",
+  "status": "full-extraction-fail-stop-noncanonical-wrapped-btc-asset-alias",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records_attempted": 1248,
+    "schema_success": 1244,
+    "errors": 4,
+    "evidence_fallbacks": 37,
+    "completed_batches": 312,
+    "expected_records": 39393,
+    "failed_batch_index": 311,
+    "failed_information_date": "2022-10-14"
+  },
+  "stop_reason": "v3.6 canonicalized exact BTC/Bitcoin aliases but intentionally preserved wrapped Bitcoin derivatives; batch 312 included btc_relevance=direct with affected_assets containing Wrapped BTC, so the unchanged direct-BTC validator rejected the atomic four-record batch.",
+  "next_authorized_step": "predeclare v3.7 with a closed wrapped-BTC alias allowlist, rerun Stage 1 reliability, and only then start a new full extraction from record 0 if Stage 1 passes",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_6_full_predeclared.json",
+      "sha256": "99060850c074ba54beb91c8527c74719bb76bc491b506b91c2303a8740fce094"
+    },
+    "stage1_gate": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_6_stage1_gate.json",
+      "sha256": "a183245b6fb5390f4a4464b45be32047a2a7dc2654476c58e9b01ff392a131a2"
+    },
+    "checkpoint": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_6_full_failed_checkpoint.ndjson",
+      "sha256": "fa518baa3773a85457d545c828ace7541c7f2f14e9e6272aa1c0a2d21244b656"
+    },
+    "progress": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_6_full_failed_progress.json",
+      "sha256": "b34e176f100467bc13d2781b7387c76e692ab6b788ce8ad431229d750860f2ed"
+    },
+    "scorer_stdout": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_6_full_failed_scorer_stdout.log",
+      "sha256": "4a49ea53b26fbcea1413fdcc2a1ca355dd317eb7347fef0c59add9e6638f6e32"
+    },
+    "supervisor_stdout": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_6_full_failed_supervisor_stdout.log",
+      "sha256": "5c64a7c6cf32667bea525fad00ea8740336178ba5fea6d6c6f6feaef7673933d"
+    }
+  }
+}

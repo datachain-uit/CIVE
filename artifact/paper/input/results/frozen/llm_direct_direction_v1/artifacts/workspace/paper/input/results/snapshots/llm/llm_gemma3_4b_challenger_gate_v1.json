@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-16T10:46:55.063313+00:00",
+  "experiment_id": "llm-gemma3-4b-challenger-v1-development",
+  "candidate": {
+    "model": "gemma3:4b",
+    "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+    "architecture": "gemma3",
+    "parameters": "4.3B",
+    "quantization": "Q4_K_M",
+    "license": "Gemma Terms of Use",
+    "rationale": "different model family from the evaluated Llama and Qwen candidates, instruction-tuned, and small enough to run as one local worker within the 6 GB GPU constraint",
+    "primary_sources": [
+      "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "https://ollama.com/library/gemma3:4b"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "stage1_partial_run": {
+    "expected_information_sets": 108,
+    "observed_information_sets": 10,
+    "schema_success": 8,
+    "schema_errors": 2,
+    "required_schema_success": 108,
+    "maximum_possible_schema_success_if_completed": 106
+  },
+  "passed": false,
+  "status": "stage1-fail-fast-stop-before-completing-run1",
+  "stopping_rule_basis": "schema success must equal the full expected sample; after the first schema error, the required count is mathematically unreachable",
+  "next_action": "stop before run 2, full inference, calibration and trading backtest",
+  "inputs": {
+    "config": "D:\\projects\\auto-trading\\configs\\llm_gemma3_4b_challenger_v1_development.json",
+    "config_sha256": "4de39e1cc6793ac8e2098fc92c67132fb7d8e250c2008b1c7f34c273e558ded6",
+    "partial_run": "D:\\projects\\auto-trading\\results\\llm_daily_reliability_gemma3_4b_run1_v1.json",
+    "partial_run_sha256": "69a1d81607712fbc7f1b5b6e3907a9df54fc86415b4c012ad259b8c373358bbe"
+  }
+}

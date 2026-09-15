@@ -1,0 +1,5644 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LLM-072-ETH-event-conditioned-transfer-v17",
+  "status": "DEVELOPMENT_TIME_OOS_PREDICTION_PANEL",
+  "feature_names": {
+    "generic": [
+      "llm_event_present",
+      "llm_event_count",
+      "llm_direction_fraction::positive",
+      "llm_direction_fraction::negative",
+      "llm_direction_fraction::mixed",
+      "llm_direction_fraction::unclear",
+      "llm_severity_mean",
+      "llm_severity_max",
+      "llm_confidence_mean",
+      "llm_confidence_max",
+      "llm_directional_severity_mean"
+    ],
+    "event": [
+      "llm_event_present",
+      "llm_event_count",
+      "llm_direction_fraction::positive",
+      "llm_direction_fraction::negative",
+      "llm_direction_fraction::mixed",
+      "llm_direction_fraction::unclear",
+      "llm_severity_mean",
+      "llm_severity_max",
+      "llm_confidence_mean",
+      "llm_confidence_max",
+      "llm_directional_severity_mean",
+      "llm_reported_surprise_mean",
+      "llm_reported_surprise_max",
+      "llm_event_type_fraction::macro_liquidity",
+      "llm_event_type_fraction::regulation",
+      "llm_event_type_fraction::etf_institutional_flow",
+      "llm_event_type_fraction::exchange_security",
+      "llm_event_type_fraction::liquidation_leverage",
+      "llm_event_type_fraction::network_protocol",
+      "llm_event_type_fraction::fraud_legal",
+      "llm_event_type_fraction::adoption_business",
+      "llm_event_type_fraction::market_commentary",
+      "llm_event_type_fraction::other",
+      "llm_horizon_fraction::4h",
+      "llm_horizon_fraction::12h",
+      "llm_horizon_fraction::24h",
+      "llm_horizon_fraction::72h",
+      "llm_horizon_fraction::unknown"
+    ]
+  },
+  "records": [
+    {
+      "information_date": "2023-09-15",
+      "fold": 1,
+      "target": -0.0076612706616606685,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.000682961663493008,
+      "event_prediction": 0.0030869707114277575
+    },
+    {
+      "information_date": "2023-09-16",
+      "fold": 1,
+      "target": 0.0007124650677148292,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-09-17",
+      "fold": 1,
+      "target": 0.0026637042674506617,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.004550643527155411,
+      "event_prediction": 0.033498655638994866
+    },
+    {
+      "information_date": "2023-09-18",
+      "fold": 1,
+      "target": 0.0019281975943439278,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0016159112366677753,
+      "event_prediction": -0.010147713943756131
+    },
+    {
+      "information_date": "2023-09-19",
+      "fold": 1,
+      "target": -0.008754887585532667,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0007047506978382715,
+      "event_prediction": -0.002186753221960646
+    },
+    {
+      "information_date": "2023-09-20",
+      "fold": 1,
+      "target": -0.01770756932331574,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0019025196572892567,
+      "event_prediction": 0.00333764546134699
+    },
+    {
+      "information_date": "2023-09-21",
+      "fold": 1,
+      "target": -0.002334132292594826,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.004637110850812951,
+      "event_prediction": 0.002744147582573148
+    },
+    {
+      "information_date": "2023-09-22",
+      "fold": 1,
+      "target": 0.0009874089634092087,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0003931044998572574,
+      "event_prediction": 0.032948224990233976
+    },
+    {
+      "information_date": "2023-09-23",
+      "fold": 1,
+      "target": -0.00936799050006587,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.004190113692737822,
+      "event_prediction": -0.010455245763205716
+    },
+    {
+      "information_date": "2023-09-24",
+      "fold": 1,
+      "target": 0.009025293655021915,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.002482021484902222,
+      "event_prediction": -0.00609491593727945
+    },
+    {
+      "information_date": "2023-09-25",
+      "fold": 1,
+      "target": 0.002514284277551848,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00309532916880182,
+      "event_prediction": 0.0003009835050541016
+    },
+    {
+      "information_date": "2023-09-26",
+      "fold": 1,
+      "target": 0.0067715419678853195,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0011699072430517122,
+      "event_prediction": 0.013957186868677824
+    },
+    {
+      "information_date": "2023-09-27",
+      "fold": 1,
+      "target": 0.028161996873657058,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0009182841924316724,
+      "event_prediction": -0.003699301966852538
+    },
+    {
+      "information_date": "2023-09-28",
+      "fold": 1,
+      "target": 0.011199748020812583,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0027458913781910396,
+      "event_prediction": -0.003328459307599714
+    },
+    {
+      "information_date": "2023-09-29",
+      "fold": 1,
+      "target": 0.0023660912173089077,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0004870474675194894,
+      "event_prediction": -0.0018977749422616462
+    },
+    {
+      "information_date": "2023-09-30",
+      "fold": 1,
+      "target": 0.03275426235680112,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.004207231166337477,
+      "event_prediction": -0.008868452851988225
+    },
+    {
+      "information_date": "2023-10-01",
+      "fold": 1,
+      "target": -0.03662812901433876,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-02",
+      "fold": 1,
+      "target": -0.014421459804910941,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0029666608375332145,
+      "event_prediction": -0.002735931990571319
+    },
+    {
+      "information_date": "2023-10-03",
+      "fold": 1,
+      "target": 0.00034128236849984006,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002592755761853238,
+      "event_prediction": -0.0033862960946604253
+    },
+    {
+      "information_date": "2023-10-04",
+      "fold": 1,
+      "target": -0.010825926174128697,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.003430382115836961,
+      "event_prediction": 0.004507983100771763
+    },
+    {
+      "information_date": "2023-10-05",
+      "fold": 1,
+      "target": 0.010273086729980285,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0038153261203672526,
+      "event_prediction": 0.0034870598508824576
+    },
+    {
+      "information_date": "2023-10-06",
+      "fold": 1,
+      "target": -0.0012009705304998342,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.003975099357777803,
+      "event_prediction": 0.0036950058621604584
+    },
+    {
+      "information_date": "2023-10-07",
+      "fold": 1,
+      "target": -0.003515689374195108,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0010355737491253246,
+      "event_prediction": -0.0058094061228834235
+    },
+    {
+      "information_date": "2023-10-08",
+      "fold": 1,
+      "target": -0.029700908361458,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.004521424497500088,
+      "event_prediction": 0.007796560057701969
+    },
+    {
+      "information_date": "2023-10-09",
+      "fold": 1,
+      "target": -0.018035249854808977,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0015368014478984381,
+      "event_prediction": -0.0032444930171719147
+    },
+    {
+      "information_date": "2023-10-10",
+      "fold": 1,
+      "target": 0.00351644113014693,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0013342557459787322,
+      "event_prediction": -0.0027529473955309035
+    },
+    {
+      "information_date": "2023-10-11",
+      "fold": 1,
+      "target": -0.014407246543926444,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0010203675660230358,
+      "event_prediction": 0.0005224524075248222
+    },
+    {
+      "information_date": "2023-10-12",
+      "fold": 1,
+      "target": 0.009203590440225451,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0016003682873403076,
+      "event_prediction": -0.000255580965105976
+    },
+    {
+      "information_date": "2023-10-13",
+      "fold": 1,
+      "target": 0.0005538774642717126,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0014192183412106226,
+      "event_prediction": 0.008210140670520158
+    },
+    {
+      "information_date": "2023-10-14",
+      "fold": 1,
+      "target": 0.005619387853625479,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-15",
+      "fold": 1,
+      "target": 0.01666794684691597,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-16",
+      "fold": 1,
+      "target": -0.013158557469527432,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002312826210589754,
+      "event_prediction": 0.0054850187156546115
+    },
+    {
+      "information_date": "2023-10-17",
+      "fold": 1,
+      "target": -0.012338747751081458,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0006377332125024347,
+      "event_prediction": 0.00010180581321046536
+    },
+    {
+      "information_date": "2023-10-18",
+      "fold": 1,
+      "target": 0.02458529274972876,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0003180870287423082,
+      "event_prediction": -0.004428818715246084
+    },
+    {
+      "information_date": "2023-10-19",
+      "fold": 1,
+      "target": 0.006771155131325202,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.001564664999789854,
+      "event_prediction": -0.0011723681622072516
+    },
+    {
+      "information_date": "2023-10-20",
+      "fold": 1,
+      "target": 0.020076649466459484,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002366335399209042,
+      "event_prediction": -0.00020116957828962375
+    },
+    {
+      "information_date": "2023-10-21",
+      "fold": 1,
+      "target": 0.039590162928039074,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-22",
+      "fold": 1,
+      "target": 0.06814571609101039,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-23",
+      "fold": 1,
+      "target": -0.011261423129868442,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.006798526219996136,
+      "event_prediction": 0.0024927708504094283
+    },
+    {
+      "information_date": "2023-10-24",
+      "fold": 1,
+      "target": 0.015639153237981374,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0044031901261348694,
+      "event_prediction": -0.003422756530818719
+    },
+    {
+      "information_date": "2023-10-25",
+      "fold": 1,
+      "target": -0.013878872293454747,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0007939787736840118,
+      "event_prediction": 0.006435850563543317
+    },
+    {
+      "information_date": "2023-10-26",
+      "fold": 1,
+      "target": -0.00016190082736899924,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0015452121384254187,
+      "event_prediction": 0.0025086455616333135
+    },
+    {
+      "information_date": "2023-10-27",
+      "fold": 1,
+      "target": -0.008610051760817083,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0026393179183416553,
+      "event_prediction": -0.010075128425295666
+    },
+    {
+      "information_date": "2023-10-28",
+      "fold": 1,
+      "target": 0.004336782107676074,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-29",
+      "fold": 1,
+      "target": 0.006807947465525599,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-10-30",
+      "fold": 1,
+      "target": 0.00881165232405956,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.00046138388174429455,
+      "event_prediction": -0.007622818665089926
+    },
+    {
+      "information_date": "2023-10-31",
+      "fold": 1,
+      "target": 0.02662919549241649,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.004295296005381692,
+      "event_prediction": 0.0016789601623480404
+    },
+    {
+      "information_date": "2023-11-01",
+      "fold": 1,
+      "target": -0.03274174464881152,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002131904168233395,
+      "event_prediction": 0.00368472290099778
+    },
+    {
+      "information_date": "2023-11-02",
+      "fold": 1,
+      "target": 0.020566910570913866,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.001240174301229387,
+      "event_prediction": -0.00027062480780106455
+    },
+    {
+      "information_date": "2023-11-03",
+      "fold": 1,
+      "target": 0.02968657212436865,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.004116978911926619,
+      "event_prediction": -0.009667808651512911
+    },
+    {
+      "information_date": "2023-11-04",
+      "fold": 1,
+      "target": -0.000978835978835968,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.001765924682634021,
+      "event_prediction": -0.006495074064769508
+    },
+    {
+      "information_date": "2023-11-05",
+      "fold": 1,
+      "target": 0.0015570796811692489,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-11-06",
+      "fold": 1,
+      "target": -0.004045286051959418,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0006554078343508231,
+      "event_prediction": 0.0004093932698693638
+    },
+    {
+      "information_date": "2023-11-07",
+      "fold": 1,
+      "target": 0.019650214501125696,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0021757843930308453,
+      "event_prediction": 0.0011548171304747816
+    },
+    {
+      "information_date": "2023-11-08",
+      "fold": 1,
+      "target": 0.10606368299096558,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0009255158733426507,
+      "event_prediction": 0.02595267392204629
+    },
+    {
+      "information_date": "2023-11-09",
+      "fold": 1,
+      "target": -0.03570386132740766,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.009781288817917441,
+      "event_prediction": -0.012101053544628666
+    },
+    {
+      "information_date": "2023-11-10",
+      "fold": 1,
+      "target": 0.0025435727188400925,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.001424718383995285,
+      "event_prediction": -0.0055649268152172925
+    },
+    {
+      "information_date": "2023-11-11",
+      "fold": 1,
+      "target": -0.005902089592940918,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0007727128419465941,
+      "event_prediction": -0.003687710541293516
+    },
+    {
+      "information_date": "2023-11-12",
+      "fold": 1,
+      "target": 0.007553676661490316,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-11-13",
+      "fold": 1,
+      "target": -0.04282845766016308,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0005827982044067705,
+      "event_prediction": -0.005559621550893146
+    },
+    {
+      "information_date": "2023-11-14",
+      "fold": 1,
+      "target": 0.043774635296029984,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00014850066357928837,
+      "event_prediction": -0.003930622527476934
+    },
+    {
+      "information_date": "2023-11-15",
+      "fold": 1,
+      "target": -0.03422064334030861,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0008226087734355632,
+      "event_prediction": -0.008688627961395535
+    },
+    {
+      "information_date": "2023-11-16",
+      "fold": 1,
+      "target": -0.021349605458081733,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.003306915840127365,
+      "event_prediction": -0.009331917281498205
+    },
+    {
+      "information_date": "2023-11-17",
+      "fold": 1,
+      "target": 0.007470870812116059,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0026793718434461396,
+      "event_prediction": -0.007851744742496303
+    },
+    {
+      "information_date": "2023-11-18",
+      "fold": 1,
+      "target": 0.022798356433214817,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-11-19",
+      "fold": 1,
+      "target": 0.009073965812734563,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-11-20",
+      "fold": 1,
+      "target": -0.020544791011592012,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0005612103610889606,
+      "event_prediction": 0.0018050095388873126
+    },
+    {
+      "information_date": "2023-11-21",
+      "fold": 1,
+      "target": 0.04173407482305369,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0023276318785340096,
+      "event_prediction": -0.00376771281823299
+    },
+    {
+      "information_date": "2023-11-22",
+      "fold": 1,
+      "target": 0.001815049380019751,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.001892352960797359,
+      "event_prediction": 0.011150599864244302
+    },
+    {
+      "information_date": "2023-11-23",
+      "fold": 1,
+      "target": 0.011287173798255168,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0006496854772890563,
+      "event_prediction": 0.004775885837387291
+    },
+    {
+      "information_date": "2023-11-24",
+      "fold": 1,
+      "target": -0.005211751349642468,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.003400061453661537,
+      "event_prediction": -0.009439681539431878
+    },
+    {
+      "information_date": "2023-11-25",
+      "fold": 1,
+      "target": -0.01325172989969714,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.011503547141418097,
+      "event_prediction": -0.019802155260091475
+    },
+    {
+      "information_date": "2023-11-26",
+      "fold": 1,
+      "target": -0.009979552896510313,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.006947516700673411,
+      "event_prediction": 0.018817154177715064
+    },
+    {
+      "information_date": "2023-11-27",
+      "fold": 1,
+      "target": 0.01243136133757905,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0010077373604775977,
+      "event_prediction": 0.005818372480289463
+    },
+    {
+      "information_date": "2023-11-28",
+      "fold": 1,
+      "target": -0.006192915149272671,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0006915506861259352,
+      "event_prediction": -0.011335978847182222
+    },
+    {
+      "information_date": "2023-11-29",
+      "fold": 1,
+      "target": 0.025406125688307135,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0011459525040451576,
+      "event_prediction": -0.00030337432959674706
+    },
+    {
+      "information_date": "2023-11-30",
+      "fold": 1,
+      "target": 0.00023888012995088026,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00012806243282503866,
+      "event_prediction": 0.010878162870692034
+    },
+    {
+      "information_date": "2023-12-01",
+      "fold": 1,
+      "target": 0.033511654566297455,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0003611336716532181,
+      "event_prediction": -0.0016328560915343287
+    },
+    {
+      "information_date": "2023-12-02",
+      "fold": 1,
+      "target": 0.02235460494694408,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-12-03",
+      "fold": 1,
+      "target": 0.009149552693557661,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-12-04",
+      "fold": 1,
+      "target": 0.022760563885019014,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0002355113956429364,
+      "event_prediction": -0.004007978425296656
+    },
+    {
+      "information_date": "2023-12-05",
+      "fold": 1,
+      "target": -0.014554262038034671,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0004488348449814202,
+      "event_prediction": 0.006714578841504348
+    },
+    {
+      "information_date": "2023-12-06",
+      "fold": 1,
+      "target": 0.056690148669970464,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0004296793621326201,
+      "event_prediction": -0.007584488022414408
+    },
+    {
+      "information_date": "2023-12-07",
+      "fold": 1,
+      "target": -0.006494216614090442,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.001711827884061218,
+      "event_prediction": -0.0020596069029394756
+    },
+    {
+      "information_date": "2023-12-08",
+      "fold": 1,
+      "target": -0.003911839665376782,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0104637844099274,
+      "event_prediction": -0.015681109605754705
+    },
+    {
+      "information_date": "2023-12-09",
+      "fold": 1,
+      "target": -0.042876208124718485,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.009597450420345544,
+      "event_prediction": -0.008611972875122203
+    },
+    {
+      "information_date": "2023-12-10",
+      "fold": 1,
+      "target": -0.008308391875449628,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -1.8842592909129298e-05,
+      "event_prediction": -0.004659075136467236
+    },
+    {
+      "information_date": "2023-12-11",
+      "fold": 1,
+      "target": -0.029602862221983495,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00012695006535202847,
+      "event_prediction": -0.0036932574777610015
+    },
+    {
+      "information_date": "2023-12-12",
+      "fold": 1,
+      "target": 0.03951788548857493,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0030463016369394373,
+      "event_prediction": 0.006676491430043053
+    },
+    {
+      "information_date": "2023-12-13",
+      "fold": 1,
+      "target": 0.013188266837124152,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.00029221832454558205,
+      "event_prediction": 0.006452456983737467
+    },
+    {
+      "information_date": "2023-12-14",
+      "fold": 1,
+      "target": -0.011767953138485776,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00063883845615243,
+      "event_prediction": -0.001826365813760837
+    },
+    {
+      "information_date": "2023-12-15",
+      "fold": 1,
+      "target": -0.01664294802736288,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0038462795982197235,
+      "event_prediction": 0.0011643678033463763
+    },
+    {
+      "information_date": "2023-12-16",
+      "fold": 1,
+      "target": -0.018966939726879795,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-12-17",
+      "fold": 1,
+      "target": 0.028478860294117503,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-12-18",
+      "fold": 1,
+      "target": -0.02250700411533657,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0003912524053502525,
+      "event_prediction": 0.008677513784976125
+    },
+    {
+      "information_date": "2023-12-19",
+      "fold": 1,
+      "target": 0.00667398061802893,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002050308603320772,
+      "event_prediction": -0.0007756559255536684
+    },
+    {
+      "information_date": "2023-12-20",
+      "fold": 1,
+      "target": 0.022477522477522438,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0002764051579107641,
+      "event_prediction": 0.00138939715608789
+    },
+    {
+      "information_date": "2023-12-21",
+      "fold": 1,
+      "target": 0.009948039259226382,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0007643798334038809,
+      "event_prediction": -0.0031382955149848305
+    },
+    {
+      "information_date": "2023-12-22",
+      "fold": 1,
+      "target": 0.019722087858933257,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0031331825524449327,
+      "event_prediction": 0.0008962961784604401
+    },
+    {
+      "information_date": "2023-12-23",
+      "fold": 1,
+      "target": -0.017576920589059575,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00757837070258075,
+      "event_prediction": 0.017961847165957362
+    },
+    {
+      "information_date": "2023-12-24",
+      "fold": 1,
+      "target": -0.003287697689832836,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.007350832714294261,
+      "event_prediction": -0.027369131231484017
+    },
+    {
+      "information_date": "2023-12-25",
+      "fold": 1,
+      "target": -0.022508477561985152,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0037902100717291448,
+      "event_prediction": 0.0016492379034196943
+    },
+    {
+      "information_date": "2023-12-26",
+      "fold": 1,
+      "target": 0.08865150771088359,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.005478421934131099,
+      "event_prediction": 0.0038997074055310732
+    },
+    {
+      "information_date": "2023-12-27",
+      "fold": 1,
+      "target": -0.02576602824082508,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.00027627461878859335,
+      "event_prediction": 0.0005657176525130126
+    },
+    {
+      "information_date": "2023-12-28",
+      "fold": 1,
+      "target": -0.022981181767979253,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0008385518215628262,
+      "event_prediction": 0.0035601155823928488
+    },
+    {
+      "information_date": "2023-12-29",
+      "fold": 1,
+      "target": -0.0062956521739130356,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.006349445280495979,
+      "event_prediction": 0.0033638058831015985
+    },
+    {
+      "information_date": "2023-12-30",
+      "fold": 1,
+      "target": -0.004239735377507103,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2023-12-31",
+      "fold": 1,
+      "target": 0.0493797867151764,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0022475756929286705,
+      "event_prediction": 0.00033347480633174524
+    },
+    {
+      "information_date": "2024-01-01",
+      "fold": 1,
+      "target": -0.007348599997487715,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0007855784144959085,
+      "event_prediction": 0.0017269724547208018
+    },
+    {
+      "information_date": "2024-01-02",
+      "fold": 1,
+      "target": -0.05856596897066624,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.001013851834006524,
+      "event_prediction": -0.00753078779100503
+    },
+    {
+      "information_date": "2024-01-03",
+      "fold": 1,
+      "target": 0.004995922610246284,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002252196872980577,
+      "event_prediction": -0.005551548993266733
+    },
+    {
+      "information_date": "2024-01-04",
+      "fold": 1,
+      "target": 0.004721418476395289,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.005194215829167754,
+      "event_prediction": 0.0064096188625328504
+    },
+    {
+      "information_date": "2024-01-05",
+      "fold": 1,
+      "target": -0.005058662738067765,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.004432018856470117,
+      "event_prediction": -0.00368280577521131
+    },
+    {
+      "information_date": "2024-01-06",
+      "fold": 1,
+      "target": -0.02307150247975165,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2024-01-07",
+      "fold": 1,
+      "target": 0.054167446574416855,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2024-01-08",
+      "fold": 1,
+      "target": 0.02320404663329123,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.005925290577097666,
+      "event_prediction": 0.013607182145157347
+    },
+    {
+      "information_date": "2024-01-09",
+      "fold": 1,
+      "target": 0.10646474736102518,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.00017672700366610136,
+      "event_prediction": -0.0036725360031475145
+    },
+    {
+      "information_date": "2024-01-10",
+      "fold": 1,
+      "target": -0.009107948894499285,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 1.2156091549799517e-06,
+      "event_prediction": -0.005421464441746913
+    },
+    {
+      "information_date": "2024-01-11",
+      "fold": 1,
+      "target": -0.01562313010782157,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.007604106169121081,
+      "event_prediction": -0.016096424792982497
+    },
+    {
+      "information_date": "2024-01-12",
+      "fold": 1,
+      "target": 0.000945127690280323,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.005151401043348432,
+      "event_prediction": -0.0030716727698222868
+    },
+    {
+      "information_date": "2024-01-13",
+      "fold": 1,
+      "target": -0.01854384033412604,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.007111349611381318,
+      "event_prediction": 0.00577283719500885
+    },
+    {
+      "information_date": "2024-01-14",
+      "fold": 1,
+      "target": 0.01347704590818366,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0037614367944320704,
+      "event_prediction": 0.003540167401437975
+    },
+    {
+      "information_date": "2024-01-15",
+      "fold": 1,
+      "target": 0.013006349556476282,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.005625737091115113,
+      "event_prediction": 0.009252688859858388
+    },
+    {
+      "information_date": "2024-01-16",
+      "fold": 1,
+      "target": -0.016023921175217226,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0024469816581445957,
+      "event_prediction": -0.006332109847298447
+    },
+    {
+      "information_date": "2024-01-17",
+      "fold": 1,
+      "target": -0.02765384873763621,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0025401400850339974,
+      "event_prediction": 0.002496768579205726
+    },
+    {
+      "information_date": "2024-01-18",
+      "fold": 1,
+      "target": 0.008684908903962008,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.00020820898170131725,
+      "event_prediction": -0.0024029273817490096
+    },
+    {
+      "information_date": "2024-01-19",
+      "fold": 1,
+      "target": -0.002772002772002846,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0002592870415625753,
+      "event_prediction": -0.0019415016192145553
+    },
+    {
+      "information_date": "2024-01-20",
+      "fold": 1,
+      "target": -0.015308596085783055,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0068822880137286765,
+      "event_prediction": 0.004102897334647196
+    },
+    {
+      "information_date": "2024-01-21",
+      "fold": 1,
+      "target": -0.04025127298241005,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2024-01-22",
+      "fold": 1,
+      "target": -0.05370892099064173,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0012762495139536693,
+      "event_prediction": 0.00896641033972374
+    },
+    {
+      "information_date": "2024-01-23",
+      "fold": 1,
+      "target": 0.0010978287387166663,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0011112811569824646,
+      "event_prediction": 0.006371929419794406
+    },
+    {
+      "information_date": "2024-01-24",
+      "fold": 1,
+      "target": 0.0029604357617030175,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.002904379987539926,
+      "event_prediction": 0.0003408133268083881
+    },
+    {
+      "information_date": "2024-01-25",
+      "fold": 1,
+      "target": 0.023028639564444786,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0027004132196956927,
+      "event_prediction": -0.003661294876183513
+    },
+    {
+      "information_date": "2024-01-26",
+      "fold": 1,
+      "target": 0.005282301869697248,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0030570436341940455,
+      "event_prediction": -0.002644544129988828
+    },
+    {
+      "information_date": "2024-01-27",
+      "fold": 1,
+      "target": -0.006518961866260664,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": 0.0041823508663914625,
+      "event_prediction": 0.005801978079855753
+    },
+    {
+      "information_date": "2024-01-28",
+      "fold": 1,
+      "target": 0.017342364163224433,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0018042872125479937,
+      "event_prediction": -0.0017863294225070852
+    },
+    {
+      "information_date": "2024-01-29",
+      "fold": 1,
+      "target": 0.013895382058074945,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0025619696664946497,
+      "event_prediction": 3.3038550131016335e-05
+    },
+    {
+      "information_date": "2024-01-30",
+      "fold": 1,
+      "target": -0.03679415255612195,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.0007975504388778991,
+      "event_prediction": 0.002563577794267203
+    },
+    {
+      "information_date": "2024-01-31",
+      "fold": 1,
+      "target": 0.019578553571745205,
+      "prior_prediction": 0.00022283616896258784,
+      "generic_prediction": -0.001345904457689808,
+      "event_prediction": 0.005107097168890587
+    },
+    {
+      "information_date": "2024-02-04",
+      "fold": 2,
+      "target": 0.009010225822052353,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.007488624615036059,
+      "event_prediction": 0.007377647561995507
+    },
+    {
+      "information_date": "2024-02-05",
+      "fold": 2,
+      "target": 0.020398557764967684,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00012107885201131051,
+      "event_prediction": 0.013823011996563484
+    },
+    {
+      "information_date": "2024-02-06",
+      "fold": 2,
+      "target": 0.029313314346893327,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00043518417177111504,
+      "event_prediction": -0.0004637117849790645
+    },
+    {
+      "information_date": "2024-02-07",
+      "fold": 2,
+      "target": 0.006286076074265345,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0026415115656376253,
+      "event_prediction": -0.007429510571104172
+    },
+    {
+      "information_date": "2024-02-08",
+      "fold": 2,
+      "target": 0.02597593610197535,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.003934257488001398,
+      "event_prediction": -0.0026947603972573
+    },
+    {
+      "information_date": "2024-02-09",
+      "fold": 2,
+      "target": 0.00720364124353412,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0018012048679150008,
+      "event_prediction": -0.003173643525266727
+    },
+    {
+      "information_date": "2024-02-10",
+      "fold": 2,
+      "target": -0.012370913921528337,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-02-11",
+      "fold": 2,
+      "target": 0.057969680107925026,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-02-12",
+      "fold": 2,
+      "target": -0.0012789272146630504,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0036835697566300054,
+      "event_prediction": -0.007786729095071237
+    },
+    {
+      "information_date": "2024-02-13",
+      "fold": 2,
+      "target": 0.062133921332393705,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.004512367608635209,
+      "event_prediction": -0.003907368988231474
+    },
+    {
+      "information_date": "2024-02-14",
+      "fold": 2,
+      "target": 0.016144335927746445,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0018256957700624546,
+      "event_prediction": -0.009584485973724492
+    },
+    {
+      "information_date": "2024-02-15",
+      "fold": 2,
+      "target": -0.01893481984891443,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0008012167070829935,
+      "event_prediction": -0.0034313167530232386
+    },
+    {
+      "information_date": "2024-02-16",
+      "fold": 2,
+      "target": -0.003749847930785255,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0010468224174843687,
+      "event_prediction": 0.0024268665709516963
+    },
+    {
+      "information_date": "2024-02-17",
+      "fold": 2,
+      "target": 0.03781201738318418,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0007135745408640576,
+      "event_prediction": -0.005760235710879489
+    },
+    {
+      "information_date": "2024-02-18",
+      "fold": 2,
+      "target": 0.006706857051890003,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.007444542845762034,
+      "event_prediction": 0.0026550338109976217
+    },
+    {
+      "information_date": "2024-02-19",
+      "fold": 2,
+      "target": 0.03401903085638858,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0009541127232186454,
+      "event_prediction": -0.0023743618434722185
+    },
+    {
+      "information_date": "2024-02-20",
+      "fold": 2,
+      "target": -0.023833745578339838,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 8.38130428883016e-05,
+      "event_prediction": -0.0007229426925634008
+    },
+    {
+      "information_date": "2024-02-21",
+      "fold": 2,
+      "target": 0.006845512783399066,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.003734718562743795,
+      "event_prediction": -0.005288032121296833
+    },
+    {
+      "information_date": "2024-02-22",
+      "fold": 2,
+      "target": -0.00807081753390182,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0035336482300308445,
+      "event_prediction": -0.006975264085822477
+    },
+    {
+      "information_date": "2024-02-23",
+      "fold": 2,
+      "target": 0.0321503715298026,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.003245242221079971,
+      "event_prediction": 0.001229124551448269
+    },
+    {
+      "information_date": "2024-02-24",
+      "fold": 2,
+      "target": 0.027435367968943636,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00461075471598163,
+      "event_prediction": 0.0061908549242720035
+    },
+    {
+      "information_date": "2024-02-25",
+      "fold": 2,
+      "target": 0.03555223986185552,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-02-26",
+      "fold": 2,
+      "target": 0.009520704271275049,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0002975420941552046,
+      "event_prediction": -0.008226278957467009
+    },
+    {
+      "information_date": "2024-02-27",
+      "fold": 2,
+      "target": 0.04929237375461781,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0028151116278812803,
+      "event_prediction": -0.005278200829028423
+    },
+    {
+      "information_date": "2024-02-28",
+      "fold": 2,
+      "target": -0.011755187232870057,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.002544168234303771,
+      "event_prediction": -0.006780274642294253
+    },
+    {
+      "information_date": "2024-02-29",
+      "fold": 2,
+      "target": 0.021936069483501353,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002156014499994998,
+      "event_prediction": 0.00046765517452002883
+    },
+    {
+      "information_date": "2024-03-01",
+      "fold": 2,
+      "target": -0.0029374969159186026,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0013364267092191096,
+      "event_prediction": -0.002176746422530189
+    },
+    {
+      "information_date": "2024-03-02",
+      "fold": 2,
+      "target": 0.0116652450225474,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.001808991696439799,
+      "event_prediction": -0.0006103746353955705
+    },
+    {
+      "information_date": "2024-03-03",
+      "fold": 2,
+      "target": 0.06351832774110377,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0019398860261540226,
+      "event_prediction": 0.00549426574036973
+    },
+    {
+      "information_date": "2024-03-04",
+      "fold": 2,
+      "target": -0.04192608346253435,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.002636279118430852,
+      "event_prediction": -0.00511261836634131
+    },
+    {
+      "information_date": "2024-03-05",
+      "fold": 2,
+      "target": 0.06753764643417948,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0012792588602116145,
+      "event_prediction": -0.007682816440062094
+    },
+    {
+      "information_date": "2024-03-06",
+      "fold": 2,
+      "target": 0.03300546563738416,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0034571385492060914,
+      "event_prediction": 0.010561746097789029
+    },
+    {
+      "information_date": "2024-03-07",
+      "fold": 2,
+      "target": 0.005728934576950229,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0011337832482409334,
+      "event_prediction": 0.0005148849203447075
+    },
+    {
+      "information_date": "2024-03-08",
+      "fold": 2,
+      "target": 0.0030760533827673964,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00040225300357186653,
+      "event_prediction": -0.003068797099242436
+    },
+    {
+      "information_date": "2024-03-09",
+      "fold": 2,
+      "target": -0.01748582830480383,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.006049689665508844,
+      "event_prediction": 0.0029426496910227237
+    },
+    {
+      "information_date": "2024-03-10",
+      "fold": 2,
+      "target": 0.04184160958682903,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-03-11",
+      "fold": 2,
+      "target": 0.0038043276086552336,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.005900937674575999,
+      "event_prediction": -0.005290208863906476
+    },
+    {
+      "information_date": "2024-03-12",
+      "fold": 2,
+      "target": -0.012449383460281349,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.004780169099778456,
+      "event_prediction": 0.004819439672887848
+    },
+    {
+      "information_date": "2024-03-13",
+      "fold": 2,
+      "target": -0.06803762633843691,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0015669603173913773,
+      "event_prediction": 0.0030599862036877375
+    },
+    {
+      "information_date": "2024-03-14",
+      "fold": 2,
+      "target": 0.00342528266635167,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0014647034493338754,
+      "event_prediction": -0.0032846643581960766
+    },
+    {
+      "information_date": "2024-03-15",
+      "fold": 2,
+      "target": -0.04381487426431252,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.001764329308772385,
+      "event_prediction": 0.002550852805545575
+    },
+    {
+      "information_date": "2024-03-16",
+      "fold": 2,
+      "target": 0.008052106473580345,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-03-17",
+      "fold": 2,
+      "target": -0.0503968914793228,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0009909449921640119,
+      "event_prediction": -0.0037156236700860035
+    },
+    {
+      "information_date": "2024-03-18",
+      "fold": 2,
+      "target": -0.07626950213653982,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0032132773212616116,
+      "event_prediction": 0.0021321007721599697
+    },
+    {
+      "information_date": "2024-03-19",
+      "fold": 2,
+      "target": 0.11136001923764516,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0028691176961277032,
+      "event_prediction": -0.007438279786293523
+    },
+    {
+      "information_date": "2024-03-20",
+      "fold": 2,
+      "target": 0.003578729195255592,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0012032128630056044,
+      "event_prediction": 0.004831495256549667
+    },
+    {
+      "information_date": "2024-03-21",
+      "fold": 2,
+      "target": -0.06227819086011588,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0015690288760691709,
+      "event_prediction": 0.0007003891094982331
+    },
+    {
+      "information_date": "2024-03-22",
+      "fold": 2,
+      "target": 0.0014249151404039928,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0022642292935095756,
+      "event_prediction": -0.0034177893134827997
+    },
+    {
+      "information_date": "2024-03-23",
+      "fold": 2,
+      "target": 0.044411616321820224,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0054186517032423585,
+      "event_prediction": 0.003779924714835782
+    },
+    {
+      "information_date": "2024-03-24",
+      "fold": 2,
+      "target": 0.049086249486575806,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0037094183873585375,
+      "event_prediction": 0.004264808673370625
+    },
+    {
+      "information_date": "2024-03-25",
+      "fold": 2,
+      "target": -0.005759771484030396,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0011069404336279858,
+      "event_prediction": 0.0007336944734545433
+    },
+    {
+      "information_date": "2024-03-26",
+      "fold": 2,
+      "target": -0.02955915019176414,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0005660961130570849,
+      "event_prediction": -0.0017124678588879996
+    },
+    {
+      "information_date": "2024-03-27",
+      "fold": 2,
+      "target": 0.0190575527233241,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.001396334653687782,
+      "event_prediction": 0.00021031704396316515
+    },
+    {
+      "information_date": "2024-03-28",
+      "fold": 2,
+      "target": -0.020664088679758552,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.003667307177493466,
+      "event_prediction": -0.0049246296991629305
+    },
+    {
+      "information_date": "2024-03-29",
+      "fold": 2,
+      "target": 0.013784217157255751,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0010437667414652442,
+      "event_prediction": -0.0038884521261409837
+    },
+    {
+      "information_date": "2024-03-30",
+      "fold": 2,
+      "target": 0.020821682568195943,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0008135239472112077,
+      "event_prediction": -0.0009266878478578031
+    },
+    {
+      "information_date": "2024-03-31",
+      "fold": 2,
+      "target": -0.06806372535456773,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002370723781255205,
+      "event_prediction": 0.0006479337538178617
+    },
+    {
+      "information_date": "2024-04-01",
+      "fold": 2,
+      "target": -0.015064157755042773,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.000399711012328686,
+      "event_prediction": -0.001928518322559424
+    },
+    {
+      "information_date": "2024-04-02",
+      "fold": 2,
+      "target": -0.012699245219320532,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0010666375718886914,
+      "event_prediction": -0.004220423318359176
+    },
+    {
+      "information_date": "2024-04-03",
+      "fold": 2,
+      "target": 0.010200312023911806,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0006169036395600499,
+      "event_prediction": -0.004597964529407883
+    },
+    {
+      "information_date": "2024-04-04",
+      "fold": 2,
+      "target": 0.007238273694390562,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0014108816121191005,
+      "event_prediction": -0.0033429169662364836
+    },
+    {
+      "information_date": "2024-04-05",
+      "fold": 2,
+      "target": 0.017096991973595488,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0004350219207031735,
+      "event_prediction": -0.002347926176197601
+    },
+    {
+      "information_date": "2024-04-06",
+      "fold": 2,
+      "target": 0.01010994976001034,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-04-07",
+      "fold": 2,
+      "target": 0.07900116822429903,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0033633287926446093,
+      "event_prediction": 0.0005500026665363402
+    },
+    {
+      "information_date": "2024-04-08",
+      "fold": 2,
+      "target": -0.04852348084991198,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00032006940407407116,
+      "event_prediction": -0.008192106734692908
+    },
+    {
+      "information_date": "2024-04-09",
+      "fold": 2,
+      "target": 0.01786796312047856,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -4.845261753006532e-05,
+      "event_prediction": -0.0019931986806984766
+    },
+    {
+      "information_date": "2024-04-10",
+      "fold": 2,
+      "target": -0.011727090809493523,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.003581476677666351,
+      "event_prediction": -0.006815479101465188
+    },
+    {
+      "information_date": "2024-04-11",
+      "fold": 2,
+      "target": -0.0865534716409131,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.002772031627407006,
+      "event_prediction": -0.004319860789829495
+    },
+    {
+      "information_date": "2024-04-12",
+      "fold": 2,
+      "target": -0.0807177664534584,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00310809960775796,
+      "event_prediction": -0.004155003132524973
+    },
+    {
+      "information_date": "2024-04-13",
+      "fold": 2,
+      "target": 0.05916882766982101,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.007841278769228261,
+      "event_prediction": 0.012403192666333667
+    },
+    {
+      "information_date": "2024-04-14",
+      "fold": 2,
+      "target": -0.023523127259545973,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00014095311496248818,
+      "event_prediction": -0.0020425196703565797
+    },
+    {
+      "information_date": "2024-04-15",
+      "fold": 2,
+      "target": 0.007447061390226661,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0037541065061618356,
+      "event_prediction": -0.004896873286261806
+    },
+    {
+      "information_date": "2024-04-16",
+      "fold": 2,
+      "target": -0.022476631284988446,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00011920591921841107,
+      "event_prediction": -0.004486619544781289
+    },
+    {
+      "information_date": "2024-04-17",
+      "fold": 2,
+      "target": -0.015269447218236087,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.003705829092399861,
+      "event_prediction": 0.016159537007002164
+    },
+    {
+      "information_date": "2024-04-18",
+      "fold": 2,
+      "target": 0.025529185806001164,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0012117891565918873,
+      "event_prediction": -0.002554030491915102
+    },
+    {
+      "information_date": "2024-04-19",
+      "fold": 2,
+      "target": 0.03631077306912811,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0007039208331837902,
+      "event_prediction": -0.0025968389375293976
+    },
+    {
+      "information_date": "2024-04-20",
+      "fold": 2,
+      "target": 0.007510055006334726,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-04-21",
+      "fold": 2,
+      "target": -0.0021982777544327092,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00201013221679738,
+      "event_prediction": -0.00645983709172283
+    },
+    {
+      "information_date": "2024-04-22",
+      "fold": 2,
+      "target": 0.017263541650297975,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00045328519678964794,
+      "event_prediction": -0.00020890561056170873
+    },
+    {
+      "information_date": "2024-04-23",
+      "fold": 2,
+      "target": -0.028108181587874426,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00446510289778699,
+      "event_prediction": 0.0025017065193152816
+    },
+    {
+      "information_date": "2024-04-24",
+      "fold": 2,
+      "target": -0.00197088181066829,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0010441561189168686,
+      "event_prediction": 0.006319811409462201
+    },
+    {
+      "information_date": "2024-04-25",
+      "fold": 2,
+      "target": -0.005819212638552673,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.005276267203850409,
+      "event_prediction": -0.0014955562433336068
+    },
+    {
+      "information_date": "2024-04-26",
+      "fold": 2,
+      "target": 0.05948746207546152,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0013620051598608569,
+      "event_prediction": 0.0005966444366843251
+    },
+    {
+      "information_date": "2024-04-27",
+      "fold": 2,
+      "target": -0.03961282245895836,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.008694999542402571,
+      "event_prediction": -0.014999807490756247
+    },
+    {
+      "information_date": "2024-04-28",
+      "fold": 2,
+      "target": 0.0011334976904984195,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002945869143320905,
+      "event_prediction": 0.0029873693858969517
+    },
+    {
+      "information_date": "2024-04-29",
+      "fold": 2,
+      "target": -0.05562002887146533,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.004055905708145406,
+      "event_prediction": 0.0038765260491081576
+    },
+    {
+      "information_date": "2024-04-30",
+      "fold": 2,
+      "target": -0.025026975182831812,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.003154347133680625,
+      "event_prediction": -0.0058678300658986495
+    },
+    {
+      "information_date": "2024-05-01",
+      "fold": 2,
+      "target": 0.027476337353677494,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0013599856762146136,
+      "event_prediction": 0.002052297917165712
+    },
+    {
+      "information_date": "2024-05-02",
+      "fold": 2,
+      "target": 0.03412509765462657,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0010826308339452865,
+      "event_prediction": -0.003561837593507495
+    },
+    {
+      "information_date": "2024-05-03",
+      "fold": 2,
+      "target": -0.008197511814061142,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002527436977437189,
+      "event_prediction": 0.0024184074875878
+    },
+    {
+      "information_date": "2024-05-04",
+      "fold": 2,
+      "target": 0.015551666018410515,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002473823433207057,
+      "event_prediction": 0.0024591759428510516
+    },
+    {
+      "information_date": "2024-05-05",
+      "fold": 2,
+      "target": -0.02712579551765293,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.002360325369439594,
+      "event_prediction": -0.0007543158258086324
+    },
+    {
+      "information_date": "2024-05-06",
+      "fold": 2,
+      "target": -0.005534431908772008,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0026594507172626536,
+      "event_prediction": -0.004549838531520142
+    },
+    {
+      "information_date": "2024-05-07",
+      "fold": 2,
+      "target": -0.01168797751474615,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -7.159062832990401e-05,
+      "event_prediction": -0.0022068950633706624
+    },
+    {
+      "information_date": "2024-05-08",
+      "fold": 2,
+      "target": 0.01049437729689684,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.000669344280672208,
+      "event_prediction": -0.0031250030314559727
+    },
+    {
+      "information_date": "2024-05-09",
+      "fold": 2,
+      "target": -0.03877674386340435,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0013610216876949585,
+      "event_prediction": -0.0086313687065748
+    },
+    {
+      "information_date": "2024-05-10",
+      "fold": 2,
+      "target": 0.003453679457308345,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0013975658745174568,
+      "event_prediction": 0.00484802373743569
+    },
+    {
+      "information_date": "2024-05-11",
+      "fold": 2,
+      "target": -0.010681543429943097,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00461075471598163,
+      "event_prediction": 0.0024807451672959925
+    },
+    {
+      "information_date": "2024-05-12",
+      "fold": 2,
+      "target": 0.017425920797562888,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.004570611339643143,
+      "event_prediction": 0.0064206959551885495
+    },
+    {
+      "information_date": "2024-05-13",
+      "fold": 2,
+      "target": -0.012632947052539034,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.005418385729293289,
+      "event_prediction": 0.0077439393597874195
+    },
+    {
+      "information_date": "2024-05-14",
+      "fold": 2,
+      "target": 0.03799090974876029,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0034676071260870455,
+      "event_prediction": 0.003860189369454119
+    },
+    {
+      "information_date": "2024-05-15",
+      "fold": 2,
+      "target": -0.020947726955840573,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.001769409194872,
+      "event_prediction": 0.0004212316434206204
+    },
+    {
+      "information_date": "2024-05-16",
+      "fold": 2,
+      "target": 0.05590066323970211,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0033197887025160893,
+      "event_prediction": 0.0006890746995728383
+    },
+    {
+      "information_date": "2024-05-17",
+      "fold": 2,
+      "target": 0.004765544216158046,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0031453087605076858,
+      "event_prediction": -0.0013608672208580694
+    },
+    {
+      "information_date": "2024-05-18",
+      "fold": 2,
+      "target": -0.013695083832450106,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.006958771866890486,
+      "event_prediction": -0.0053733654278076805
+    },
+    {
+      "information_date": "2024-05-19",
+      "fold": 2,
+      "target": 0.1985638413355757,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.008972369993702527,
+      "event_prediction": -0.008440387470786823
+    },
+    {
+      "information_date": "2024-05-20",
+      "fold": 2,
+      "target": 0.026184309420944185,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.001024923869222643,
+      "event_prediction": -0.0011240920084775042
+    },
+    {
+      "information_date": "2024-05-21",
+      "fold": 2,
+      "target": -0.0028032237072634913,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0016861532211353161,
+      "event_prediction": -0.004755595482084851
+    },
+    {
+      "information_date": "2024-05-22",
+      "fold": 2,
+      "target": 0.00527610376777754,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.002808543851868482,
+      "event_prediction": -0.007240545966577764
+    },
+    {
+      "information_date": "2024-05-23",
+      "fold": 2,
+      "target": -0.015353643665110828,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0052878192853158725,
+      "event_prediction": -0.010248735463770763
+    },
+    {
+      "information_date": "2024-05-24",
+      "fold": 2,
+      "target": 0.007150597618069021,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0015743763604888418,
+      "event_prediction": -0.00571974056429726
+    },
+    {
+      "information_date": "2024-05-25",
+      "fold": 2,
+      "target": 0.03937370969408982,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0015402430575907292,
+      "event_prediction": 0.0009046493343555478
+    },
+    {
+      "information_date": "2024-05-26",
+      "fold": 2,
+      "target": -0.0179530329687142,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0017544942362016454,
+      "event_prediction": -0.0049930629575596795
+    },
+    {
+      "information_date": "2024-05-27",
+      "fold": 2,
+      "target": 0.0005582255179163997,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0034380255905179227,
+      "event_prediction": -0.0036895109424594204
+    },
+    {
+      "information_date": "2024-05-28",
+      "fold": 2,
+      "target": -0.015613809281614266,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00021262053236685758,
+      "event_prediction": -0.0015483100313917859
+    },
+    {
+      "information_date": "2024-05-29",
+      "fold": 2,
+      "target": -0.008511995613514789,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0012764721535117338,
+      "event_prediction": -0.0037415778133883457
+    },
+    {
+      "information_date": "2024-05-30",
+      "fold": 2,
+      "target": 0.005149979527701465,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.001142175065515591,
+      "event_prediction": -0.005827534120490707
+    },
+    {
+      "information_date": "2024-05-31",
+      "fold": 2,
+      "target": 0.007647035484254827,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -4.2811984045136196e-05,
+      "event_prediction": -0.0060295636152110565
+    },
+    {
+      "information_date": "2024-06-01",
+      "fold": 2,
+      "target": -0.0017902799871898356,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0027073358080084977,
+      "event_prediction": 0.0027755041295912377
+    },
+    {
+      "information_date": "2024-06-02",
+      "fold": 2,
+      "target": -0.0070161782340689705,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.011922162799134198,
+      "event_prediction": -0.015055647559428518
+    },
+    {
+      "information_date": "2024-06-03",
+      "fold": 2,
+      "target": 0.009798832614752229,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0016339263734742862,
+      "event_prediction": -0.0010416445555642472
+    },
+    {
+      "information_date": "2024-06-04",
+      "fold": 2,
+      "target": 0.013417397507448303,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.000980529847121692,
+      "event_prediction": -0.002588899468529397
+    },
+    {
+      "information_date": "2024-06-05",
+      "fold": 2,
+      "target": -0.014381023363663537,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.001965546201632881,
+      "event_prediction": 0.0004935879789238996
+    },
+    {
+      "information_date": "2024-06-06",
+      "fold": 2,
+      "target": -0.030764989300389955,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.006262366286424462,
+      "event_prediction": 0.0023155918734694553
+    },
+    {
+      "information_date": "2024-06-07",
+      "fold": 2,
+      "target": -0.004366930524627666,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0020667794938621915,
+      "event_prediction": -0.005478915469710892
+    },
+    {
+      "information_date": "2024-06-08",
+      "fold": 2,
+      "target": 0.0026392690585155254,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0006296591556267806,
+      "event_prediction": 0.003434164648058997
+    },
+    {
+      "information_date": "2024-06-09",
+      "fold": 2,
+      "target": -0.024328622291693858,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0010296412406655825,
+      "event_prediction": -0.0009621309820338013
+    },
+    {
+      "information_date": "2024-06-10",
+      "fold": 2,
+      "target": -0.023856079169807365,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 4.626185201296552e-06,
+      "event_prediction": -0.0017884348631331739
+    },
+    {
+      "information_date": "2024-06-11",
+      "fold": 2,
+      "target": -0.0020116596477031123,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.001408697299263132,
+      "event_prediction": 0.008532584710042857
+    },
+    {
+      "information_date": "2024-06-12",
+      "fold": 2,
+      "target": -0.003620291907448392,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 1.2205448975176423e-06,
+      "event_prediction": -0.0022673648278887246
+    },
+    {
+      "information_date": "2024-06-13",
+      "fold": 2,
+      "target": 0.0038712820218922417,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0006136274706821639,
+      "event_prediction": 0.0012023639049930498
+    },
+    {
+      "information_date": "2024-06-14",
+      "fold": 2,
+      "target": 0.01424652685603034,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00043671261778858886,
+      "event_prediction": -0.002105246207302156
+    },
+    {
+      "information_date": "2024-06-15",
+      "fold": 2,
+      "target": 0.007604370120622983,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00973591923774016,
+      "event_prediction": -0.011259510513397632
+    },
+    {
+      "information_date": "2024-06-16",
+      "fold": 2,
+      "target": -0.039103523786114924,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.00045783775705611636,
+      "event_prediction": 0.004653154339483955
+    },
+    {
+      "information_date": "2024-06-17",
+      "fold": 2,
+      "target": 0.036151547566448894,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.00023508799422065105,
+      "event_prediction": -0.0009961940205718298
+    },
+    {
+      "information_date": "2024-06-18",
+      "fold": 2,
+      "target": -0.003604882441557433,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0017742665734876404,
+      "event_prediction": -0.0006810454080209576
+    },
+    {
+      "information_date": "2024-06-19",
+      "fold": 2,
+      "target": -0.01466878392684201,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0037861882402413687,
+      "event_prediction": -0.008562112602142635
+    },
+    {
+      "information_date": "2024-06-20",
+      "fold": 2,
+      "target": 0.0014858586262667117,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": 0.0003790641322248174,
+      "event_prediction": -0.004711688717296973
+    },
+    {
+      "information_date": "2024-06-21",
+      "fold": 2,
+      "target": 0.003634952608663422,
+      "prior_prediction": 0.0009820352106238255,
+      "generic_prediction": -0.0015641099525017424,
+      "event_prediction": -0.004610866114312649
+    },
+    {
+      "information_date": "2024-06-25",
+      "fold": 3,
+      "target": -0.003371488523971733,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00041472353266240993,
+      "event_prediction": 0.0007189482650276184
+    },
+    {
+      "information_date": "2024-06-26",
+      "fold": 3,
+      "target": 0.022822705605431537,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0011911099495608823,
+      "event_prediction": -0.0019066210589767526
+    },
+    {
+      "information_date": "2024-06-27",
+      "fold": 3,
+      "target": -0.021665847523779203,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0025972495516463144,
+      "event_prediction": 0.0016581007993593626
+    },
+    {
+      "information_date": "2024-06-28",
+      "fold": 3,
+      "target": -0.004228773389756357,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0030469243968185666,
+      "event_prediction": -0.0011841058550038299
+    },
+    {
+      "information_date": "2024-06-29",
+      "fold": 3,
+      "target": 0.0376567299274404,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.003663448151526409,
+      "event_prediction": 0.000762537727680999
+    },
+    {
+      "information_date": "2024-06-30",
+      "fold": 3,
+      "target": -0.011728737551979895,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.004401909721394702,
+      "event_prediction": 0.006811546592255953
+    },
+    {
+      "information_date": "2024-07-01",
+      "fold": 3,
+      "target": -0.02794361501708864,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0024819025062831814,
+      "event_prediction": -0.0071602258685996125
+    },
+    {
+      "information_date": "2024-07-02",
+      "fold": 3,
+      "target": -0.0349095109512737,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -4.9163234974213335e-06,
+      "event_prediction": 0.003170512832335386
+    },
+    {
+      "information_date": "2024-07-03",
+      "fold": 3,
+      "target": -0.09920690006200428,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -6.560371736006199e-05,
+      "event_prediction": -0.007025717893491822
+    },
+    {
+      "information_date": "2024-07-04",
+      "fold": 3,
+      "target": 0.020170473030125535,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0028845727366166073,
+      "event_prediction": 0.008127027591570826
+    },
+    {
+      "information_date": "2024-07-05",
+      "fold": 3,
+      "target": 0.023605157418068234,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0008316543462131205,
+      "event_prediction": 0.0025886525721694363
+    },
+    {
+      "information_date": "2024-07-06",
+      "fold": 3,
+      "target": -0.05616315715255471,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00491572188254366,
+      "event_prediction": 0.004828417766512908
+    },
+    {
+      "information_date": "2024-07-07",
+      "fold": 3,
+      "target": 0.06442164367093217,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.004916823548802697,
+      "event_prediction": 0.0008283789091707641
+    },
+    {
+      "information_date": "2024-07-08",
+      "fold": 3,
+      "target": 0.005043284108269042,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0035326052634082625,
+      "event_prediction": 0.0007950556663170176
+    },
+    {
+      "information_date": "2024-07-09",
+      "fold": 3,
+      "target": -0.0012764174567138076,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00026803926966889905,
+      "event_prediction": -0.0043994052870259745
+    },
+    {
+      "information_date": "2024-07-10",
+      "fold": 3,
+      "target": 0.0029365853658536167,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0021835589111618664,
+      "event_prediction": 0.004980618033512495
+    },
+    {
+      "information_date": "2024-07-11",
+      "fold": 3,
+      "target": 0.01142012237235046,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00011697488497394541,
+      "event_prediction": -0.0002713010032693733
+    },
+    {
+      "information_date": "2024-07-12",
+      "fold": 3,
+      "target": 0.016628997355133457,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.002162108525198261,
+      "event_prediction": 0.015487017330743407
+    },
+    {
+      "information_date": "2024-07-13",
+      "fold": 3,
+      "target": 0.04929173288932609,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0017892310520424334,
+      "event_prediction": -0.015182654067314973
+    },
+    {
+      "information_date": "2024-07-14",
+      "fold": 3,
+      "target": 0.042293902501329805,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0017615387839427865,
+      "event_prediction": -0.006799918831857032
+    },
+    {
+      "information_date": "2024-07-15",
+      "fold": 3,
+      "target": 0.0031947776342498013,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00035440749192833894,
+      "event_prediction": -0.00572848788801723
+    },
+    {
+      "information_date": "2024-07-16",
+      "fold": 3,
+      "target": -0.013954196893574355,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0016611890083592638,
+      "event_prediction": -0.00042129934218043414
+    },
+    {
+      "information_date": "2024-07-17",
+      "fold": 3,
+      "target": -0.0005713136424451148,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0033511850542126687,
+      "event_prediction": -0.004879894864685011
+    },
+    {
+      "information_date": "2024-07-18",
+      "fold": 3,
+      "target": 0.019024536781840462,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0012336409813853686,
+      "event_prediction": -0.002265011274086541
+    },
+    {
+      "information_date": "2024-07-19",
+      "fold": 3,
+      "target": 0.004250191759493482,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0007244914457222862,
+      "event_prediction": -0.0031028980251295727
+    },
+    {
+      "information_date": "2024-07-20",
+      "fold": 3,
+      "target": 0.001932279034772444,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0011289254204411136,
+      "event_prediction": 0.0010874177519761006
+    },
+    {
+      "information_date": "2024-07-21",
+      "fold": 3,
+      "target": -0.01183016222028166,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00491572188254366,
+      "event_prediction": 0.004828417766512908
+    },
+    {
+      "information_date": "2024-07-22",
+      "fold": 3,
+      "target": -0.007938975244674684,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0020419036125823506,
+      "event_prediction": -0.0015387481823613642
+    },
+    {
+      "information_date": "2024-07-23",
+      "fold": 3,
+      "target": -0.08136559096105522,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00012764368173155444,
+      "event_prediction": 0.0008421877407036172
+    },
+    {
+      "information_date": "2024-07-24",
+      "fold": 3,
+      "target": 0.02195830701200263,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00014570018970078147,
+      "event_prediction": 0.0013330546122476937
+    },
+    {
+      "information_date": "2024-07-25",
+      "fold": 3,
+      "target": 0.0024385570171099324,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00145489344820984,
+      "event_prediction": 0.0036468178721364925
+    },
+    {
+      "information_date": "2024-07-26",
+      "fold": 3,
+      "target": -0.0021613055395400815,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0018014504088612869,
+      "event_prediction": -5.15060098647093e-05
+    },
+    {
+      "information_date": "2024-07-27",
+      "fold": 3,
+      "target": 0.034680509207761556,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0040772914135972374,
+      "event_prediction": 0.01050644628105063
+    },
+    {
+      "information_date": "2024-07-28",
+      "fold": 3,
+      "target": -0.008705026518228354,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005223297468202919,
+      "event_prediction": -0.018981424711032643
+    },
+    {
+      "information_date": "2024-07-29",
+      "fold": 3,
+      "target": -0.008115704520875067,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0002254288761576852,
+      "event_prediction": -0.002922939283466764
+    },
+    {
+      "information_date": "2024-07-30",
+      "fold": 3,
+      "target": -0.03519460600446467,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005820722324672238,
+      "event_prediction": 0.0025913715882575584
+    },
+    {
+      "information_date": "2024-07-31",
+      "fold": 3,
+      "target": -0.0031416546257558853,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0008688641537940266,
+      "event_prediction": 0.007176583916655981
+    },
+    {
+      "information_date": "2024-08-01",
+      "fold": 3,
+      "target": -0.05885009268352759,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0007459328695927202,
+      "event_prediction": -0.00023545705074327905
+    },
+    {
+      "information_date": "2024-08-02",
+      "fold": 3,
+      "target": -0.02217539668425983,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0005003853174917893,
+      "event_prediction": 0.0018047371663048003
+    },
+    {
+      "information_date": "2024-08-03",
+      "fold": 3,
+      "target": -0.2067743219501481,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.011945281332675278,
+      "event_prediction": 0.015884297886253663
+    },
+    {
+      "information_date": "2024-08-04",
+      "fold": 3,
+      "target": 0.07736032703912787,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.004369926598205074,
+      "event_prediction": 0.009992561961157852
+    },
+    {
+      "information_date": "2024-08-05",
+      "fold": 3,
+      "target": 0.006179531656548054,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0005457824075350112,
+      "event_prediction": 0.0022359407071737866
+    },
+    {
+      "information_date": "2024-08-06",
+      "fold": 3,
+      "target": -0.0309952232158891,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0008662582332994613,
+      "event_prediction": 0.00110731111140566
+    },
+    {
+      "information_date": "2024-08-07",
+      "fold": 3,
+      "target": 0.10924553166954953,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.002681780159335052,
+      "event_prediction": -0.006215402153842793
+    },
+    {
+      "information_date": "2024-08-08",
+      "fold": 3,
+      "target": -0.03423464898439543,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0006359853966001867,
+      "event_prediction": -0.004469880451661706
+    },
+    {
+      "information_date": "2024-08-09",
+      "fold": 3,
+      "target": 0.01695332262057625,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0010253392451362899,
+      "event_prediction": -0.0030460700789094733
+    },
+    {
+      "information_date": "2024-08-10",
+      "fold": 3,
+      "target": -0.039881150391629094,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005794729102626205,
+      "event_prediction": 0.00744308000557601
+    },
+    {
+      "information_date": "2024-08-11",
+      "fold": 3,
+      "target": 0.04545132408872932,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0005176272581415408,
+      "event_prediction": -0.0031100590599740996
+    },
+    {
+      "information_date": "2024-08-12",
+      "fold": 3,
+      "target": 0.019749180883515738,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0001524953710956452,
+      "event_prediction": 0.0019002043977639404
+    },
+    {
+      "information_date": "2024-08-13",
+      "fold": 3,
+      "target": -0.02095474454711299,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0004837723918133781,
+      "event_prediction": -0.000554441289662705
+    },
+    {
+      "information_date": "2024-08-14",
+      "fold": 3,
+      "target": -0.027329309694454906,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0005412226247876852,
+      "event_prediction": -0.006984158086948268
+    },
+    {
+      "information_date": "2024-08-15",
+      "fold": 3,
+      "target": 0.00611971844641368,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.002314910430390284,
+      "event_prediction": 0.05084171759717429
+    },
+    {
+      "information_date": "2024-08-16",
+      "fold": 3,
+      "target": 0.004182197330331983,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00043850457403834305,
+      "event_prediction": -0.001131402777557509
+    },
+    {
+      "information_date": "2024-08-17",
+      "fold": 3,
+      "target": 0.014705317866711587,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005223297468202919,
+      "event_prediction": 0.015518584264772046
+    },
+    {
+      "information_date": "2024-08-18",
+      "fold": 3,
+      "target": 0.006620036391285833,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0037334819456550663,
+      "event_prediction": 0.0024948724743768845
+    },
+    {
+      "information_date": "2024-08-19",
+      "fold": 3,
+      "target": -0.026681798879364504,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0031409546062267824,
+      "event_prediction": 0.0033345558148386942
+    },
+    {
+      "information_date": "2024-08-20",
+      "fold": 3,
+      "target": 0.00964096386472546,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0017482913920853448,
+      "event_prediction": 0.00651732238310426
+    },
+    {
+      "information_date": "2024-08-21",
+      "fold": 3,
+      "target": 0.007491510386392175,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0007192262988419667,
+      "event_prediction": -0.0012024320665375452
+    },
+    {
+      "information_date": "2024-08-22",
+      "fold": 3,
+      "target": 0.04213243248372578,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0007086021751692424,
+      "event_prediction": -0.00014930240701596827
+    },
+    {
+      "information_date": "2024-08-23",
+      "fold": 3,
+      "target": 0.0064941450711151205,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0005966274395118516,
+      "event_prediction": 0.005935043880470525
+    },
+    {
+      "information_date": "2024-08-24",
+      "fold": 3,
+      "target": -0.007505301478624049,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0004039542516332444,
+      "event_prediction": -0.0035529563450127947
+    },
+    {
+      "information_date": "2024-08-25",
+      "fold": 3,
+      "target": -0.021384505440014023,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00011349744822377987,
+      "event_prediction": 0.02307706032354585
+    },
+    {
+      "information_date": "2024-08-26",
+      "fold": 3,
+      "target": -0.07710908013815243,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0034276261522594668,
+      "event_prediction": -0.0012684062561015156
+    },
+    {
+      "information_date": "2024-08-27",
+      "fold": 3,
+      "target": 0.01822343693859163,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0001897726969213101,
+      "event_prediction": 0.012143594854790371
+    },
+    {
+      "information_date": "2024-08-28",
+      "fold": 3,
+      "target": -0.0026524778266334703,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0022493373198458583,
+      "event_prediction": 0.0018363454464041312
+    },
+    {
+      "information_date": "2024-08-29",
+      "fold": 3,
+      "target": 0.002739039865155002,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.004796612033203995,
+      "event_prediction": 0.0026162402719089035
+    },
+    {
+      "information_date": "2024-08-30",
+      "fold": 3,
+      "target": -0.013796548484163562,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0025143412642207093,
+      "event_prediction": 0.003892277153739204
+    },
+    {
+      "information_date": "2024-08-31",
+      "fold": 3,
+      "target": -0.015464891440240991,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.004450332329731733,
+      "event_prediction": -0.006653633383264384
+    },
+    {
+      "information_date": "2024-09-01",
+      "fold": 3,
+      "target": 0.02677718345514668,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0023396695766159333,
+      "event_prediction": 0.005680207963646679
+    },
+    {
+      "information_date": "2024-09-02",
+      "fold": 3,
+      "target": -0.056909825504636635,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00491572188254366,
+      "event_prediction": 0.004828417766512908
+    },
+    {
+      "information_date": "2024-09-03",
+      "fold": 3,
+      "target": 0.013822067238158597,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0026085443164111477,
+      "event_prediction": 0.007865078632959717
+    },
+    {
+      "information_date": "2024-09-04",
+      "fold": 3,
+      "target": -0.005390230207748425,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0011047533489707993,
+      "event_prediction": -0.002584541506243437
+    },
+    {
+      "information_date": "2024-09-05",
+      "fold": 3,
+      "target": -0.06456914179619377,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0016367057034377896,
+      "event_prediction": -0.0034714433394053036
+    },
+    {
+      "information_date": "2024-09-06",
+      "fold": 3,
+      "target": 0.021207163228996295,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00044319640043222327,
+      "event_prediction": -0.0014171331713624937
+    },
+    {
+      "information_date": "2024-09-07",
+      "fold": 3,
+      "target": 0.008400381716146876,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.000995272803721462,
+      "event_prediction": -0.004055398113885992
+    },
+    {
+      "information_date": "2024-09-08",
+      "fold": 3,
+      "target": 0.01561462226678989,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -7.980911982633778e-05,
+      "event_prediction": -0.004847861494145223
+    },
+    {
+      "information_date": "2024-09-09",
+      "fold": 3,
+      "target": 0.0031244924302651356,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.002006925746982748,
+      "event_prediction": 0.0008084595771859309
+    },
+    {
+      "information_date": "2024-09-10",
+      "fold": 3,
+      "target": 0.00859861348422819,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.011143431022846078,
+      "event_prediction": 0.05881145439880255
+    },
+    {
+      "information_date": "2024-09-11",
+      "fold": 3,
+      "target": -0.004989290557524728,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.002621431736634749,
+      "event_prediction": -0.012394077571054034
+    },
+    {
+      "information_date": "2024-09-12",
+      "fold": 3,
+      "target": 0.032518702818372436,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.003894503265306827,
+      "event_prediction": 0.001556008789067975
+    },
+    {
+      "information_date": "2024-09-13",
+      "fold": 3,
+      "target": -0.00506198984312356,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.001283912617623468,
+      "event_prediction": 0.0021650443174258574
+    },
+    {
+      "information_date": "2024-09-14",
+      "fold": 3,
+      "target": -0.058858295378460324,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00020027574618512452,
+      "event_prediction": -0.0023478676980727034
+    },
+    {
+      "information_date": "2024-09-15",
+      "fold": 3,
+      "target": 0.0025382828384852285,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.001449930722221199,
+      "event_prediction": 0.001570348865092911
+    },
+    {
+      "information_date": "2024-09-16",
+      "fold": 3,
+      "target": 0.02215155218558773,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0023841560811918745,
+      "event_prediction": 0.005919003443839514
+    },
+    {
+      "information_date": "2024-09-17",
+      "fold": 3,
+      "target": 0.02960813891698244,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00044194529012989993,
+      "event_prediction": -0.006032023142832207
+    },
+    {
+      "information_date": "2024-09-18",
+      "fold": 3,
+      "target": 0.048768610279825264,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.000605219498775011,
+      "event_prediction": 8.269682138074201e-05
+    },
+    {
+      "information_date": "2024-09-19",
+      "fold": 3,
+      "target": 0.009191424512053015,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0009508862424905205,
+      "event_prediction": -0.005294169095761322
+    },
+    {
+      "information_date": "2024-09-20",
+      "fold": 3,
+      "target": 0.01981595815800863,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00412027916441904,
+      "event_prediction": 0.003916572369470806
+    },
+    {
+      "information_date": "2024-09-21",
+      "fold": 3,
+      "target": 0.03188613691488418,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00491572188254366,
+      "event_prediction": 0.004828417766512908
+    },
+    {
+      "information_date": "2024-09-22",
+      "fold": 3,
+      "target": -0.018449315764691776,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.004127929146704278,
+      "event_prediction": 0.00465815930466937
+    },
+    {
+      "information_date": "2024-09-23",
+      "fold": 3,
+      "target": 0.007347874256170339,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0016411085309505748,
+      "event_prediction": 0.00725823607378388
+    },
+    {
+      "information_date": "2024-09-24",
+      "fold": 3,
+      "target": -0.016720145432006284,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.014634074878464225,
+      "event_prediction": 0.016030583334846308
+    },
+    {
+      "information_date": "2024-09-25",
+      "fold": 3,
+      "target": 0.01382189132364986,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0008145736112586933,
+      "event_prediction": 0.0025155513439971593
+    },
+    {
+      "information_date": "2024-09-26",
+      "fold": 3,
+      "target": 0.019684337833585586,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0019090738460128378,
+      "event_prediction": -0.0037218557073382718
+    },
+    {
+      "information_date": "2024-09-27",
+      "fold": 3,
+      "target": -0.005885742968154695,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.002215115284865233,
+      "event_prediction": 0.001962929943296325
+    },
+    {
+      "information_date": "2024-09-28",
+      "fold": 3,
+      "target": -0.016995048097781185,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0038789006953084465,
+      "event_prediction": 0.0006655716517356459
+    },
+    {
+      "information_date": "2024-09-29",
+      "fold": 3,
+      "target": 0.00027394341546549406,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0024168574177842886,
+      "event_prediction": 0.00014071657223736333
+    },
+    {
+      "information_date": "2024-09-30",
+      "fold": 3,
+      "target": -0.05343476607074937,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.003315885189845651,
+      "event_prediction": 0.0034455670993548395
+    },
+    {
+      "information_date": "2024-10-01",
+      "fold": 3,
+      "target": -0.03623438831112469,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.002781080302697553,
+      "event_prediction": 0.0038038935590816937
+    },
+    {
+      "information_date": "2024-10-02",
+      "fold": 3,
+      "target": -0.013484270435924595,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0021072718925283012,
+      "event_prediction": -0.005004243528876351
+    },
+    {
+      "information_date": "2024-10-03",
+      "fold": 3,
+      "target": 0.013584050785922175,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -9.029198569253209e-05,
+      "event_prediction": 0.001648746699650182
+    },
+    {
+      "information_date": "2024-10-04",
+      "fold": 3,
+      "target": 0.006058837020203045,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0009984904247478674,
+      "event_prediction": -0.0030406751783209193
+    },
+    {
+      "information_date": "2024-10-05",
+      "fold": 3,
+      "target": 0.033887627037153756,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0077303039597993155,
+      "event_prediction": 0.0027539969954321437
+    },
+    {
+      "information_date": "2024-10-06",
+      "fold": 3,
+      "target": -0.02292298070909693,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.011945281332675278,
+      "event_prediction": 0.015884297886253663
+    },
+    {
+      "information_date": "2024-10-07",
+      "fold": 3,
+      "target": 0.0033685367995206494,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0010789142796992423,
+      "event_prediction": 0.0016003170650501736
+    },
+    {
+      "information_date": "2024-10-08",
+      "fold": 3,
+      "target": -0.020965295014864216,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0012267295709517227,
+      "event_prediction": 0.005910147545201211
+    },
+    {
+      "information_date": "2024-10-09",
+      "fold": 3,
+      "target": 0.006574221034165939,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.006127295143934007,
+      "event_prediction": 0.005659482624059047
+    },
+    {
+      "information_date": "2024-10-10",
+      "fold": 3,
+      "target": 0.011601948596230649,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0017242478149942031,
+      "event_prediction": -0.002279270885684982
+    },
+    {
+      "information_date": "2024-10-11",
+      "fold": 3,
+      "target": 0.007830509865047741,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0009148218196269834,
+      "event_prediction": 0.0031780349032870534
+    },
+    {
+      "information_date": "2024-10-12",
+      "fold": 3,
+      "target": 0.025771370660849335,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0040693779067828735,
+      "event_prediction": -0.007225993300769929
+    },
+    {
+      "information_date": "2024-10-13",
+      "fold": 3,
+      "target": 0.03649154270704802,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005223297468202919,
+      "event_prediction": 0.006543888481553958
+    },
+    {
+      "information_date": "2024-10-14",
+      "fold": 3,
+      "target": 0.00151591712986332,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0020834455465448235,
+      "event_prediction": -0.0033186890895216268
+    },
+    {
+      "information_date": "2024-10-15",
+      "fold": 3,
+      "target": 0.009119958413601248,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.00013072696227599788,
+      "event_prediction": -0.003743832827062743
+    },
+    {
+      "information_date": "2024-10-16",
+      "fold": 3,
+      "target": -0.01181394644142264,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0016606253379941789,
+      "event_prediction": -0.0018318265191842853
+    },
+    {
+      "information_date": "2024-10-17",
+      "fold": 3,
+      "target": 0.01419750010540799,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.001609362344221057,
+      "event_prediction": 0.0018084149893354958
+    },
+    {
+      "information_date": "2024-10-18",
+      "fold": 3,
+      "target": -0.0022298229369411837,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.003312114094498372,
+      "event_prediction": -0.008269134302862548
+    },
+    {
+      "information_date": "2024-10-19",
+      "fold": 3,
+      "target": 0.03578720099998112,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00491572188254366,
+      "event_prediction": 0.004828417766512908
+    },
+    {
+      "information_date": "2024-10-20",
+      "fold": 3,
+      "target": -0.032985558761469136,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.002931078046664028,
+      "event_prediction": 0.004540506485806483
+    },
+    {
+      "information_date": "2024-10-21",
+      "fold": 3,
+      "target": -0.010857192559173834,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.00030890799248402484,
+      "event_prediction": 0.0075658143049820705
+    },
+    {
+      "information_date": "2024-10-22",
+      "fold": 3,
+      "target": -0.02738165329826192,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005604251891151778,
+      "event_prediction": 0.010134914758641356
+    },
+    {
+      "information_date": "2024-10-23",
+      "fold": 3,
+      "target": -0.009021226415094286,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0012975563602786529,
+      "event_prediction": -0.006437154352381457
+    },
+    {
+      "information_date": "2024-10-24",
+      "fold": 3,
+      "target": -0.0276789432974357,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0002561115705681069,
+      "event_prediction": -0.00037101358933923096
+    },
+    {
+      "information_date": "2024-10-25",
+      "fold": 3,
+      "target": 0.013254353865547408,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0026217365682038862,
+      "event_prediction": 0.005795194308094536
+    },
+    {
+      "information_date": "2024-10-26",
+      "fold": 3,
+      "target": -0.00296727542113584,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -7.980911982633778e-05,
+      "event_prediction": 0.00547328122534025
+    },
+    {
+      "information_date": "2024-10-27",
+      "fold": 3,
+      "target": 0.053057070978319354,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0020240600134389716,
+      "event_prediction": 0.003983325933303862
+    },
+    {
+      "information_date": "2024-10-28",
+      "fold": 3,
+      "target": 0.01333701462546677,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0010450801273752812,
+      "event_prediction": 0.0006917974006805153
+    },
+    {
+      "information_date": "2024-10-29",
+      "fold": 3,
+      "target": 0.005782271736497924,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0005462219644137918,
+      "event_prediction": -0.004857781410476098
+    },
+    {
+      "information_date": "2024-10-30",
+      "fold": 3,
+      "target": -0.05818258435421253,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0006792649819427265,
+      "event_prediction": -0.001124318533456836
+    },
+    {
+      "information_date": "2024-10-31",
+      "fold": 3,
+      "target": 0.0013862256311922838,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0003183280218238358,
+      "event_prediction": -0.0038855586809089923
+    },
+    {
+      "information_date": "2024-11-01",
+      "fold": 3,
+      "target": -0.02322603294410519,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.007898552138007761,
+      "event_prediction": 0.004121531457290616
+    },
+    {
+      "information_date": "2024-11-02",
+      "fold": 3,
+      "target": 0.010022667401825558,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.005823657294142051,
+      "event_prediction": -2.962245569441361e-05
+    },
+    {
+      "information_date": "2024-11-03",
+      "fold": 3,
+      "target": -0.021314279475452613,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.007191687467071548,
+      "event_prediction": 0.0018338952611992197
+    },
+    {
+      "information_date": "2024-11-04",
+      "fold": 3,
+      "target": 0.06587667542598363,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.0029670736786649656,
+      "event_prediction": 0.0024540257580336596
+    },
+    {
+      "information_date": "2024-11-05",
+      "fold": 3,
+      "target": 0.10674026638549927,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0023848188860907385,
+      "event_prediction": -0.006018665251770572
+    },
+    {
+      "information_date": "2024-11-06",
+      "fold": 3,
+      "target": 0.017256959524776905,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": 0.000897572653771168,
+      "event_prediction": 0.0017866193651027628
+    },
+    {
+      "information_date": "2024-11-07",
+      "fold": 3,
+      "target": 0.021485013858522528,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0022842083505644354,
+      "event_prediction": -0.0009357710466211962
+    },
+    {
+      "information_date": "2024-11-08",
+      "fold": 3,
+      "target": 0.05740625263335297,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0027203320438924953,
+      "event_prediction": 0.006721735629391483
+    },
+    {
+      "information_date": "2024-11-09",
+      "fold": 3,
+      "target": 0.019291948512301316,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0019130346336110136,
+      "event_prediction": -0.0014002284956236974
+    },
+    {
+      "information_date": "2024-11-10",
+      "fold": 3,
+      "target": 0.044480513388249765,
+      "prior_prediction": 0.0015537507352768156,
+      "generic_prediction": -0.0030270399224057625,
+      "event_prediction": -0.0026895962167427087
+    },
+    {
+      "information_date": "2024-11-14",
+      "fold": 4,
+      "target": 0.023939455841869295,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 6.618935668125455e-05,
+      "event_prediction": 0.010017112962781861
+    },
+    {
+      "information_date": "2024-11-15",
+      "fold": 4,
+      "target": -0.024073264805912875,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0016187657900065546,
+      "event_prediction": 0.0011416726475229554
+    },
+    {
+      "information_date": "2024-11-16",
+      "fold": 4,
+      "target": 0.01085715027386236,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003486635261777205,
+      "event_prediction": 0.003469227320914145
+    },
+    {
+      "information_date": "2024-11-17",
+      "fold": 4,
+      "target": 0.01148525021667246,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0061445380525202925,
+      "event_prediction": 0.01458314620913372
+    },
+    {
+      "information_date": "2024-11-18",
+      "fold": 4,
+      "target": -0.016670474884801334,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0019032696211951237,
+      "event_prediction": 0.006319555376872281
+    },
+    {
+      "information_date": "2024-11-19",
+      "fold": 4,
+      "target": -0.004905520324022583,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0011960316517606406,
+      "event_prediction": 0.0035769091151681203
+    },
+    {
+      "information_date": "2024-11-20",
+      "fold": 4,
+      "target": 0.09266220182593599,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002272424491159446,
+      "event_prediction": 0.002446407162628632
+    },
+    {
+      "information_date": "2024-11-21",
+      "fold": 4,
+      "target": -0.005802805530325861,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0018478675371144551,
+      "event_prediction": -0.006080924147764874
+    },
+    {
+      "information_date": "2024-11-22",
+      "fold": 4,
+      "target": 0.02408710527808533,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003351956877331712,
+      "event_prediction": 0.0026039515873122537
+    },
+    {
+      "information_date": "2024-11-23",
+      "fold": 4,
+      "target": -0.018958133514470066,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003930721436242638,
+      "event_prediction": 0.0033699605326746518
+    },
+    {
+      "information_date": "2024-11-24",
+      "fold": 4,
+      "target": 0.02137491233700639,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0007187411721611711,
+      "event_prediction": 0.00557599058392916
+    },
+    {
+      "information_date": "2024-11-25",
+      "fold": 4,
+      "target": -0.021381459315874873,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0017924215438995927,
+      "event_prediction": 0.00333778811098703
+    },
+    {
+      "information_date": "2024-11-26",
+      "fold": 4,
+      "target": 0.07081698180520868,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0015519846236867146,
+      "event_prediction": 0.002632559086033817
+    },
+    {
+      "information_date": "2024-11-27",
+      "fold": 4,
+      "target": -0.004270087178632975,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0009207616178297979,
+      "event_prediction": -0.005165841045163692
+    },
+    {
+      "information_date": "2024-11-28",
+      "fold": 4,
+      "target": 0.020814628515344102,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0006949158364651165,
+      "event_prediction": 0.0005246486569874069
+    },
+    {
+      "information_date": "2024-11-29",
+      "fold": 4,
+      "target": 0.01325295610299726,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00096804259608137,
+      "event_prediction": 0.0011861375259056574
+    },
+    {
+      "information_date": "2024-11-30",
+      "fold": 4,
+      "target": -0.005650220105186787,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0006496992359665071,
+      "event_prediction": 0.002367699986662703
+    },
+    {
+      "information_date": "2024-12-01",
+      "fold": 4,
+      "target": -0.01220507342834598,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00537669786776757,
+      "event_prediction": 0.00586496302263599
+    },
+    {
+      "information_date": "2024-12-02",
+      "fold": 4,
+      "target": 0.006260274837317947,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0022495507469806296,
+      "event_prediction": 0.0037028301185588544
+    },
+    {
+      "information_date": "2024-12-03",
+      "fold": 4,
+      "target": 0.04690133699903454,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -8.40754305121076e-06,
+      "event_prediction": -0.0031788300088758355
+    },
+    {
+      "information_date": "2024-12-04",
+      "fold": 4,
+      "target": 0.01894549262970302,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -3.7172804257934585e-05,
+      "event_prediction": -0.0024520009707772947
+    },
+    {
+      "information_date": "2024-12-05",
+      "fold": 4,
+      "target": 0.020132443558078306,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0018478675371144551,
+      "event_prediction": 0.00423777607635388
+    },
+    {
+      "information_date": "2024-12-06",
+      "fold": 4,
+      "target": 0.0007794798788922641,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0005150172768598699,
+      "event_prediction": 0.007797741814837388
+    },
+    {
+      "information_date": "2024-12-07",
+      "fold": 4,
+      "target": -0.015129165153583202,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0008357804793159963,
+      "event_prediction": 0.0007805932021539739
+    },
+    {
+      "information_date": "2024-12-08",
+      "fold": 4,
+      "target": -0.06352891515407344,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003486635261777205,
+      "event_prediction": 0.003469227320914145
+    },
+    {
+      "information_date": "2024-12-09",
+      "fold": 4,
+      "target": -0.004841543320000752,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0021204195541556226,
+      "event_prediction": 0.0025866477065947923
+    },
+    {
+      "information_date": "2024-12-10",
+      "fold": 4,
+      "target": 0.07414431031848245,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0008311634452594717,
+      "event_prediction": 0.0008476341216273134
+    },
+    {
+      "information_date": "2024-12-11",
+      "fold": 4,
+      "target": -0.0008662275409553333,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0008233649579868479,
+      "event_prediction": 0.0016636749157005425
+    },
+    {
+      "information_date": "2024-12-12",
+      "fold": 4,
+      "target": -0.005598494864232695,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0027287056142590266,
+      "event_prediction": 0.0015988191329423809
+    },
+    {
+      "information_date": "2024-12-13",
+      "fold": 4,
+      "target": -0.009460060646659052,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0018441150640114586,
+      "event_prediction": -0.00442777834924279
+    },
+    {
+      "information_date": "2024-12-14",
+      "fold": 4,
+      "target": 0.017867006695610588,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0032760359996904997,
+      "event_prediction": 0.00479798735260775
+    },
+    {
+      "information_date": "2024-12-15",
+      "fold": 4,
+      "target": 0.023540599482679836,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001977940393818006,
+      "event_prediction": 0.005010865861581836
+    },
+    {
+      "information_date": "2024-12-16",
+      "fold": 4,
+      "target": -0.04663262499907084,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0007841389331811296,
+      "event_prediction": 0.0025125431826082205
+    },
+    {
+      "information_date": "2024-12-17",
+      "fold": 4,
+      "target": -0.046915158744390006,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0004956583026407807,
+      "event_prediction": 4.598962309407587e-05
+    },
+    {
+      "information_date": "2024-12-18",
+      "fold": 4,
+      "target": -0.06952730485237824,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0006276089191863171,
+      "event_prediction": -0.004472927813781413
+    },
+    {
+      "information_date": "2024-12-19",
+      "fold": 4,
+      "target": 0.015680632031156216,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00282187025030616,
+      "event_prediction": 0.004871915061885178
+    },
+    {
+      "information_date": "2024-12-20",
+      "fold": 4,
+      "target": -0.032210040392383066,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0005567051166776072,
+      "event_prediction": -0.0033670580129477193
+    },
+    {
+      "information_date": "2024-12-21",
+      "fold": 4,
+      "target": -0.0014071238626742755,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0036308170584358965,
+      "event_prediction": 0.004781604777607609
+    },
+    {
+      "information_date": "2024-12-22",
+      "fold": 4,
+      "target": 0.013792526958120943,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0006963938303152517,
+      "event_prediction": 0.0025986847029651977
+    },
+    {
+      "information_date": "2024-12-23",
+      "fold": 4,
+      "target": 0.023896885601206064,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0029333233376864177,
+      "event_prediction": 0.006023517317670267
+    },
+    {
+      "information_date": "2024-12-24",
+      "fold": 4,
+      "target": -0.00670119845038375,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003409514715653125,
+      "event_prediction": 0.0005521000619916922
+    },
+    {
+      "information_date": "2024-12-25",
+      "fold": 4,
+      "target": -0.022074940136491805,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0013915732501291274,
+      "event_prediction": 0.004741588960786395
+    },
+    {
+      "information_date": "2024-12-26",
+      "fold": 4,
+      "target": -0.00996609868391829,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0006601606280803411,
+      "event_prediction": 0.12232195360887557
+    },
+    {
+      "information_date": "2024-12-27",
+      "fold": 4,
+      "target": 0.011295565810053754,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0007574323730761012,
+      "event_prediction": 0.00046332081281341415
+    },
+    {
+      "information_date": "2024-12-28",
+      "fold": 4,
+      "target": 0.006080034067116991,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0005291468950830308,
+      "event_prediction": 0.0029839543877386776
+    },
+    {
+      "information_date": "2024-12-29",
+      "fold": 4,
+      "target": -0.01844144239474199,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0014857599570862053,
+      "event_prediction": 0.004712525590220894
+    },
+    {
+      "information_date": "2024-12-30",
+      "fold": 4,
+      "target": 0.004081595984883446,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0028760829229117343,
+      "event_prediction": 0.0025277851661473175
+    },
+    {
+      "information_date": "2024-12-31",
+      "fold": 4,
+      "target": 0.010366804751551495,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002177590373594855,
+      "event_prediction": 0.0053689933939043534
+    },
+    {
+      "information_date": "2025-01-01",
+      "fold": 4,
+      "target": 0.024080737476275038,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0014215322225738815,
+      "event_prediction": 0.000786914431977295
+    },
+    {
+      "information_date": "2025-01-02",
+      "fold": 4,
+      "target": 0.036871460071771445,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0003540101673769069,
+      "event_prediction": -0.000324607880713725
+    },
+    {
+      "information_date": "2025-01-03",
+      "fold": 4,
+      "target": 0.011052826170957486,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0028359505997194124,
+      "event_prediction": 0.003910663339612104
+    },
+    {
+      "information_date": "2025-01-04",
+      "fold": 4,
+      "target": 0.0073026617872273825,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001795757209368733,
+      "event_prediction": 0.0018884406189070104
+    },
+    {
+      "information_date": "2025-01-05",
+      "fold": 4,
+      "target": 0.004874999658804446,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002423604390514056,
+      "event_prediction": 0.005057321763048221
+    },
+    {
+      "information_date": "2025-01-06",
+      "fold": 4,
+      "target": -0.08772630349454702,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0017550900212592198,
+      "event_prediction": -0.0024153756975513925
+    },
+    {
+      "information_date": "2025-01-07",
+      "fold": 4,
+      "target": -0.010558316386232947,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0021245622928912963,
+      "event_prediction": 0.003158895979219068
+    },
+    {
+      "information_date": "2025-01-08",
+      "fold": 4,
+      "target": -0.021218586651339355,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0014013978802050301,
+      "event_prediction": 0.0017318841751855108
+    },
+    {
+      "information_date": "2025-01-09",
+      "fold": 4,
+      "target": -0.005097585871877808,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0010674914999398597,
+      "event_prediction": 0.009067135468527084
+    },
+    {
+      "information_date": "2025-01-10",
+      "fold": 4,
+      "target": 0.015160973318417481,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 2.1354447810945998e-05,
+      "event_prediction": -0.004840272772654221
+    },
+    {
+      "information_date": "2025-01-11",
+      "fold": 4,
+      "target": -0.01355251141552516,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003486635261777205,
+      "event_prediction": 0.003469227320914145
+    },
+    {
+      "information_date": "2025-01-12",
+      "fold": 4,
+      "target": -0.025681380536216825,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003486635261777205,
+      "event_prediction": 0.003469227320914145
+    },
+    {
+      "information_date": "2025-01-13",
+      "fold": 4,
+      "target": 0.026301286558598314,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.004035785532213424,
+      "event_prediction": 0.005841071701991383
+    },
+    {
+      "information_date": "2025-01-14",
+      "fold": 4,
+      "target": 0.03760762892324765,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0018271270420089738,
+      "event_prediction": 0.00204409285187761
+    },
+    {
+      "information_date": "2025-01-15",
+      "fold": 4,
+      "target": -0.0006573155352511684,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002705288480706473,
+      "event_prediction": 0.0017448874276089466
+    },
+    {
+      "information_date": "2025-01-16",
+      "fold": 4,
+      "target": 0.006794743969404493,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003552730755467343,
+      "event_prediction": 0.0037191072554729407
+    },
+    {
+      "information_date": "2025-01-17",
+      "fold": 4,
+      "target": -0.014171775876645865,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001899949850949836,
+      "event_prediction": -7.990439158813366e-05
+    },
+    {
+      "information_date": "2025-01-18",
+      "fold": 4,
+      "target": -0.01883748545657371,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003393075306845326,
+      "event_prediction": 0.03258232903372355
+    },
+    {
+      "information_date": "2025-01-19",
+      "fold": 4,
+      "target": -0.0028667306434557727,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002423604390514056,
+      "event_prediction": 0.003926569058108683
+    },
+    {
+      "information_date": "2025-01-20",
+      "fold": 4,
+      "target": 0.020952357599980376,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0006459413369152972,
+      "event_prediction": 0.0020782793305533314
+    },
+    {
+      "information_date": "2025-01-21",
+      "fold": 4,
+      "target": -0.0316931852296608,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.00019812881132440425,
+      "event_prediction": -0.0011717287242636154
+    },
+    {
+      "information_date": "2025-01-22",
+      "fold": 4,
+      "target": 0.02337052734054068,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0001505524014220269,
+      "event_prediction": -0.0036404833136056258
+    },
+    {
+      "information_date": "2025-01-23",
+      "fold": 4,
+      "target": 0.005365349717190604,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001612586532405731,
+      "event_prediction": 0.0014127699339771974
+    },
+    {
+      "information_date": "2025-01-24",
+      "fold": 4,
+      "target": 0.005806805443390406,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0003600074476765489,
+      "event_prediction": 0.0035425147582703875
+    },
+    {
+      "information_date": "2025-01-25",
+      "fold": 4,
+      "target": -0.04669856401990535,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00434685988843657,
+      "event_prediction": 0.0011606727592224303
+    },
+    {
+      "information_date": "2025-01-26",
+      "fold": 4,
+      "target": 0.006288655905868135,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003486635261777205,
+      "event_prediction": 0.003469227320914145
+    },
+    {
+      "information_date": "2025-01-27",
+      "fold": 4,
+      "target": -0.022714425362203472,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0005540581868532755,
+      "event_prediction": 0.00039653496927471413
+    },
+    {
+      "information_date": "2025-01-28",
+      "fold": 4,
+      "target": 0.022759810814265702,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0020393648273915425,
+      "event_prediction": 0.0029066335977012284
+    },
+    {
+      "information_date": "2025-01-29",
+      "fold": 4,
+      "target": 0.009117553321126515,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0008402434614001666,
+      "event_prediction": -0.0025544936300274266
+    },
+    {
+      "information_date": "2025-01-30",
+      "fold": 4,
+      "target": 0.018918751548179236,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00011449797177308482,
+      "event_prediction": 0.00487608506500318
+    },
+    {
+      "information_date": "2025-01-31",
+      "fold": 4,
+      "target": -0.0653295651381165,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0001252933796407976,
+      "event_prediction": -0.0005126123144154786
+    },
+    {
+      "information_date": "2025-02-01",
+      "fold": 4,
+      "target": -0.17887519019936782,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003552730755467343,
+      "event_prediction": 0.0037191072554729407
+    },
+    {
+      "information_date": "2025-02-02",
+      "fold": 4,
+      "target": 0.1125655797747025,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0017316524263940238,
+      "event_prediction": 0.004896010533222641
+    },
+    {
+      "information_date": "2025-02-03",
+      "fold": 4,
+      "target": -0.03238262676878412,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0014560747859377356,
+      "event_prediction": 0.0024318244235462987
+    },
+    {
+      "information_date": "2025-02-04",
+      "fold": 4,
+      "target": 0.03174136123728788,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0006494755510933422,
+      "event_prediction": -0.00225861841320085
+    },
+    {
+      "information_date": "2025-02-05",
+      "fold": 4,
+      "target": -0.03230843270413353,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00042245986157345486,
+      "event_prediction": 0.0008208656485947494
+    },
+    {
+      "information_date": "2025-02-06",
+      "fold": 4,
+      "target": -0.027345534385453063,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 4.212712407483687e-05,
+      "event_prediction": -0.0003913705382087237
+    },
+    {
+      "information_date": "2025-02-07",
+      "fold": 4,
+      "target": 0.013998462290127245,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0004987610168011973,
+      "event_prediction": 0.0032351501079409027
+    },
+    {
+      "information_date": "2025-02-08",
+      "fold": 4,
+      "target": -0.019632085162013202,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0006667116781928389,
+      "event_prediction": 0.007819980273809332
+    },
+    {
+      "information_date": "2025-02-09",
+      "fold": 4,
+      "target": 0.02023096060868146,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0013915732501291278,
+      "event_prediction": 0.000994387127191663
+    },
+    {
+      "information_date": "2025-02-10",
+      "fold": 4,
+      "target": -0.034446315805197525,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0005761198046502802,
+      "event_prediction": -0.0004438526087557355
+    },
+    {
+      "information_date": "2025-02-11",
+      "fold": 4,
+      "target": 0.06110498733344927,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0003716408978721793,
+      "event_prediction": -0.0002757299443777049
+    },
+    {
+      "information_date": "2025-02-12",
+      "fold": 4,
+      "target": -0.010599444513292977,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0009376926457820687,
+      "event_prediction": -0.0036294597520211197
+    },
+    {
+      "information_date": "2025-02-13",
+      "fold": 4,
+      "target": 0.0032197932553803543,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0016689355262816462,
+      "event_prediction": -0.00010367773183636076
+    },
+    {
+      "information_date": "2025-02-14",
+      "fold": 4,
+      "target": -0.00925749118683905,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0024543473262916247,
+      "event_prediction": 0.0061512349998804035
+    },
+    {
+      "information_date": "2025-02-15",
+      "fold": 4,
+      "target": -0.010189066675562075,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0011418796726983054,
+      "event_prediction": -0.005536826467110289
+    },
+    {
+      "information_date": "2025-02-16",
+      "fold": 4,
+      "target": 0.0148848530237784,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0005484523736013823,
+      "event_prediction": 0.0018307174458508477
+    },
+    {
+      "information_date": "2025-02-17",
+      "fold": 4,
+      "target": -0.0064606586108293396,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0025153583102774804,
+      "event_prediction": 0.005607256887738121
+    },
+    {
+      "information_date": "2025-02-18",
+      "fold": 4,
+      "target": 0.017732866893944488,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0005290288362998386,
+      "event_prediction": 0.0005098170960007056
+    },
+    {
+      "information_date": "2025-02-19",
+      "fold": 4,
+      "target": 0.0009268415502339256,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0029108148948520053,
+      "event_prediction": 0.0023796380559936332
+    },
+    {
+      "information_date": "2025-02-20",
+      "fold": 4,
+      "target": -0.02443648082594807,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001651954147809916,
+      "event_prediction": -0.0024267111064925776
+    },
+    {
+      "information_date": "2025-02-21",
+      "fold": 4,
+      "target": 0.029076980568012,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0008512062139032618,
+      "event_prediction": 0.0015597959940003333
+    },
+    {
+      "information_date": "2025-02-22",
+      "fold": 4,
+      "target": -0.013439561916036236,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00435988607200361,
+      "event_prediction": 0.0027572014398939337
+    },
+    {
+      "information_date": "2025-02-23",
+      "fold": 4,
+      "target": -0.08203401060070681,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0019403423874718195,
+      "event_prediction": -0.001995638001420827
+    },
+    {
+      "information_date": "2025-02-24",
+      "fold": 4,
+      "target": -0.0012630667260106199,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0003805334692564722,
+      "event_prediction": -0.001613977134081474
+    },
+    {
+      "information_date": "2025-02-25",
+      "fold": 4,
+      "target": -0.0642609945478928,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0019682292416942863,
+      "event_prediction": 0.004653867362319889
+    },
+    {
+      "information_date": "2025-02-26",
+      "fold": 4,
+      "target": -0.07942610008924278,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0038078975430716677,
+      "event_prediction": 0.0028663938032090575
+    },
+    {
+      "information_date": "2025-02-27",
+      "fold": 4,
+      "target": 0.054026845637583865,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0016168567033111793,
+      "event_prediction": 0.0022437390103285416
+    },
+    {
+      "information_date": "2025-02-28",
+      "fold": 4,
+      "target": -0.018867841098022642,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00826675186028039,
+      "event_prediction": 0.012413682070484666
+    },
+    {
+      "information_date": "2025-03-01",
+      "fold": 4,
+      "target": 0.10011943123690203,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0003668933578497861,
+      "event_prediction": -0.000341761880394268
+    },
+    {
+      "information_date": "2025-03-02",
+      "fold": 4,
+      "target": -0.15031954117165092,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0017920095171763382,
+      "event_prediction": -0.004369180075881676
+    },
+    {
+      "information_date": "2025-03-03",
+      "fold": 4,
+      "target": 0.04142579565781279,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001769801764836529,
+      "event_prediction": 0.002809096604803634
+    },
+    {
+      "information_date": "2025-03-04",
+      "fold": 4,
+      "target": 0.059870647549294276,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0006442835025695294,
+      "event_prediction": 0.0049594954049649405
+    },
+    {
+      "information_date": "2025-03-05",
+      "fold": 4,
+      "target": -0.06235066461073413,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0011934304102456186,
+      "event_prediction": 0.0036100204316421216
+    },
+    {
+      "information_date": "2025-03-06",
+      "fold": 4,
+      "target": -0.004467592484754812,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0005673919393010482,
+      "event_prediction": 0.01378540095149817
+    },
+    {
+      "information_date": "2025-03-07",
+      "fold": 4,
+      "target": 0.0221293601250363,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0022583550541820634,
+      "event_prediction": 0.006230061871517876
+    },
+    {
+      "information_date": "2025-03-08",
+      "fold": 4,
+      "target": -0.058495515664272246,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003486635261777205,
+      "event_prediction": 0.003469227320914145
+    },
+    {
+      "information_date": "2025-03-09",
+      "fold": 4,
+      "target": -0.10088499878434232,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002602257009822336,
+      "event_prediction": 0.005427005848352436
+    },
+    {
+      "information_date": "2025-03-10",
+      "fold": 4,
+      "target": 0.009983613029534322,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.00012956808041691688,
+      "event_prediction": 0.0005917137857047144
+    },
+    {
+      "information_date": "2025-03-11",
+      "fold": 4,
+      "target": 0.010066988310513114,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": -0.0016307870616578373,
+      "event_prediction": -0.0005398144659785381
+    },
+    {
+      "information_date": "2025-03-12",
+      "fold": 4,
+      "target": 0.0013465585885521492,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0024311710529681006,
+      "event_prediction": 0.0018877544376450573
+    },
+    {
+      "information_date": "2025-03-13",
+      "fold": 4,
+      "target": 0.016364627838397316,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0017910385221791985,
+      "event_prediction": 0.000541121037848186
+    },
+    {
+      "information_date": "2025-03-14",
+      "fold": 4,
+      "target": 0.0034848469063519794,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001554203376334238,
+      "event_prediction": 0.002572147130115918
+    },
+    {
+      "information_date": "2025-03-15",
+      "fold": 4,
+      "target": -0.00945790918953715,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.004155045055345635,
+      "event_prediction": 0.010776027436009408
+    },
+    {
+      "information_date": "2025-03-16",
+      "fold": 4,
+      "target": -0.004297220955764902,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00138916999086968,
+      "event_prediction": 0.0023145760539196817
+    },
+    {
+      "information_date": "2025-03-17",
+      "fold": 4,
+      "target": 0.019847263961768613,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0024237534337236744,
+      "event_prediction": 0.004870046996129903
+    },
+    {
+      "information_date": "2025-03-18",
+      "fold": 4,
+      "target": 0.04327766653592868,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0032899173182531216,
+      "event_prediction": 0.0030440687035734127
+    },
+    {
+      "information_date": "2025-03-19",
+      "fold": 4,
+      "target": -0.022032271787413737,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00027398463076170406,
+      "event_prediction": -0.0029190201497521703
+    },
+    {
+      "information_date": "2025-03-20",
+      "fold": 4,
+      "target": 0.004177963015417063,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 9.762083924523394e-05,
+      "event_prediction": 0.0020822195285257745
+    },
+    {
+      "information_date": "2025-03-21",
+      "fold": 4,
+      "target": 0.011066337581221886,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002020113614918503,
+      "event_prediction": 0.0020034367198658977
+    },
+    {
+      "information_date": "2025-03-22",
+      "fold": 4,
+      "target": 0.003248192819102602,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.001272130683714853,
+      "event_prediction": -0.0008388890088455584
+    },
+    {
+      "information_date": "2025-03-23",
+      "fold": 4,
+      "target": 0.013988548954955604,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0009579279264481059,
+      "event_prediction": -3.404386707277023e-05
+    },
+    {
+      "information_date": "2025-03-24",
+      "fold": 4,
+      "target": 0.0030118121804540987,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0008001620266146653,
+      "event_prediction": 0.0019339966746573368
+    },
+    {
+      "information_date": "2025-03-25",
+      "fold": 4,
+      "target": -0.008617701197689676,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.003101982356157073,
+      "event_prediction": 0.01948776127879575
+    },
+    {
+      "information_date": "2025-03-26",
+      "fold": 4,
+      "target": -0.015508800961358538,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0010065490385688732,
+      "event_prediction": 0.001373582988456096
+    },
+    {
+      "information_date": "2025-03-27",
+      "fold": 4,
+      "target": -0.049915706588893216,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0013147368775301873,
+      "event_prediction": 0.007267385696852807
+    },
+    {
+      "information_date": "2025-03-28",
+      "fold": 4,
+      "target": -0.034777984298569375,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0061445380525202925,
+      "event_prediction": 0.013709235675348125
+    },
+    {
+      "information_date": "2025-03-29",
+      "fold": 4,
+      "target": -0.019452960494015792,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.00026226704070272965,
+      "event_prediction": 0.003279898316511284
+    },
+    {
+      "information_date": "2025-03-30",
+      "fold": 4,
+      "target": 0.020423036695818686,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0034866352617772068,
+      "event_prediction": 0.0034692273209141478
+    },
+    {
+      "information_date": "2025-03-31",
+      "fold": 4,
+      "target": 0.022364095322731092,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.002326179594408304,
+      "event_prediction": 0.0068379612955739985
+    },
+    {
+      "information_date": "2025-04-01",
+      "fold": 4,
+      "target": -0.027500919896971454,
+      "prior_prediction": 0.0013306968036682972,
+      "generic_prediction": 0.0008090817599070527,
+      "event_prediction": 0.001069198775149908
+    },
+    {
+      "information_date": "2025-04-05",
+      "fold": 5,
+      "target": -0.14723326166142492,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.002321983511351801,
+      "event_prediction": 0.00016668643053073117
+    },
+    {
+      "information_date": "2025-04-06",
+      "fold": 5,
+      "target": 0.02679543686803232,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0012757881627326157,
+      "event_prediction": -0.004087572397158945
+    },
+    {
+      "information_date": "2025-04-07",
+      "fold": 5,
+      "target": -0.10499703309050978,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00428141359659765,
+      "event_prediction": 0.017358164142706554
+    },
+    {
+      "information_date": "2025-04-08",
+      "fold": 5,
+      "target": 0.1400892926414683,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0031674963214063916,
+      "event_prediction": -0.003188514308640854
+    },
+    {
+      "information_date": "2025-04-09",
+      "fold": 5,
+      "target": -0.04488285914020396,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.001769994337032198,
+      "event_prediction": 0.0008616919973069441
+    },
+    {
+      "information_date": "2025-04-10",
+      "fold": 5,
+      "target": 0.006159805166204624,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0021660985717273182,
+      "event_prediction": -0.0036384689538121705
+    },
+    {
+      "information_date": "2025-04-11",
+      "fold": 5,
+      "target": 0.04519792196422001,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0016264022239059913,
+      "event_prediction": 0.004887344941379008
+    },
+    {
+      "information_date": "2025-04-12",
+      "fold": 5,
+      "target": 0.0032951465878297004,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014993452705132444,
+      "event_prediction": 0.0014723815459397377
+    },
+    {
+      "information_date": "2025-04-13",
+      "fold": 5,
+      "target": 0.0050891678688724795,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0002149844712427821,
+      "event_prediction": 0.00026328976596221346
+    },
+    {
+      "information_date": "2025-04-14",
+      "fold": 5,
+      "target": -0.02873738731035158,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0022822807759363883,
+      "event_prediction": -0.001045044700847097
+    },
+    {
+      "information_date": "2025-04-15",
+      "fold": 5,
+      "target": -0.0038863280488495855,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0007599069961634355,
+      "event_prediction": -0.004100246610749545
+    },
+    {
+      "information_date": "2025-04-16",
+      "fold": 5,
+      "target": -0.0004292902191274095,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.002014029778144028,
+      "event_prediction": -0.008480873883762443
+    },
+    {
+      "information_date": "2025-04-17",
+      "fold": 5,
+      "target": 0.008608439175661564,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.002322288644613842,
+      "event_prediction": -0.0035834474192881945
+    },
+    {
+      "information_date": "2025-04-18",
+      "fold": 5,
+      "target": 0.008829275623684962,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00218515313862186,
+      "event_prediction": 0.003669362089165123
+    },
+    {
+      "information_date": "2025-04-19",
+      "fold": 5,
+      "target": 0.01413355182302345,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014993452705132444,
+      "event_prediction": 0.0014723815459397377
+    },
+    {
+      "information_date": "2025-04-20",
+      "fold": 5,
+      "target": -0.03392029770539151,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014993452705132444,
+      "event_prediction": 0.0014723815459397377
+    },
+    {
+      "information_date": "2025-04-21",
+      "fold": 5,
+      "target": 0.13694794128268306,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0011034532124374033,
+      "event_prediction": -0.0018735913922641571
+    },
+    {
+      "information_date": "2025-04-22",
+      "fold": 5,
+      "target": -0.015335149924494473,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0005985824391417703,
+      "event_prediction": 0.0026539505833568173
+    },
+    {
+      "information_date": "2025-04-23",
+      "fold": 5,
+      "target": -0.004040632692906221,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0015154976511702336,
+      "event_prediction": -0.004324704309120754
+    },
+    {
+      "information_date": "2025-04-24",
+      "fold": 5,
+      "target": 0.020819246438738226,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0022596778025874564,
+      "event_prediction": -0.006580242054816302
+    },
+    {
+      "information_date": "2025-04-25",
+      "fold": 5,
+      "target": 0.006874286827530662,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0011896561448454007,
+      "event_prediction": 0.0027280380187171974
+    },
+    {
+      "information_date": "2025-04-26",
+      "fold": 5,
+      "target": -0.014047211012217398,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0008886553837963551,
+      "event_prediction": 0.000510095635442297
+    },
+    {
+      "information_date": "2025-04-27",
+      "fold": 5,
+      "target": 0.00999164559375143,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.005617234363300716,
+      "event_prediction": 0.004463656581930305
+    },
+    {
+      "information_date": "2025-04-28",
+      "fold": 5,
+      "target": 0.0037139637263992054,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0045677534785567575,
+      "event_prediction": 0.03113681337089473
+    },
+    {
+      "information_date": "2025-04-29",
+      "fold": 5,
+      "target": -0.00044800884955753517,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0028386727748441415,
+      "event_prediction": 0.006672673703934834
+    },
+    {
+      "information_date": "2025-04-30",
+      "fold": 5,
+      "target": 0.02194013911099546,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0005124716566018105,
+      "event_prediction": -0.0031361476769259915
+    },
+    {
+      "information_date": "2025-05-01",
+      "fold": 5,
+      "target": -0.006957830672933207,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0006622310348789542,
+      "event_prediction": 0.002972305982760255
+    },
+    {
+      "information_date": "2025-05-02",
+      "fold": 5,
+      "target": -0.0014612947725997083,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00035814517759985825,
+      "event_prediction": -0.008475005350093896
+    },
+    {
+      "information_date": "2025-05-03",
+      "fold": 5,
+      "target": -0.02066826479405448,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0005985824391417686,
+      "event_prediction": 0.0016314760790688782
+    },
+    {
+      "information_date": "2025-05-04",
+      "fold": 5,
+      "target": 0.006763462803742515,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.002690107796816929,
+      "event_prediction": -0.0023387055014176764
+    },
+    {
+      "information_date": "2025-05-05",
+      "fold": 5,
+      "target": 0.011148710393832584,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0005613425295247988,
+      "event_prediction": 0.0054946880068006635
+    },
+    {
+      "information_date": "2025-05-06",
+      "fold": 5,
+      "target": 0.04079486449181702,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00017890067425171984,
+      "event_prediction": -0.0019507542395263103
+    },
+    {
+      "information_date": "2025-05-07",
+      "fold": 5,
+      "target": 0.16005157351857702,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0021447290731153217,
+      "event_prediction": -0.004037366873856146
+    },
+    {
+      "information_date": "2025-05-08",
+      "fold": 5,
+      "target": 0.060993589888991284,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0003832925837320637,
+      "event_prediction": 0.004721903639374491
+    },
+    {
+      "information_date": "2025-05-09",
+      "fold": 5,
+      "target": 0.08446283960013345,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0029464373062115705,
+      "event_prediction": -0.0005070067085909586
+    },
+    {
+      "information_date": "2025-05-10",
+      "fold": 5,
+      "target": -0.006749936916477517,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.007482241387655082,
+      "event_prediction": -0.0011027649487272378
+    },
+    {
+      "information_date": "2025-05-11",
+      "fold": 5,
+      "target": -0.037940616068593225,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0003967804563047605,
+      "event_prediction": 0.0005149374861698954
+    },
+    {
+      "information_date": "2025-05-12",
+      "fold": 5,
+      "target": 0.09163152639440164,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0005152448621338652,
+      "event_prediction": 0.00422842670803522
+    },
+    {
+      "information_date": "2025-05-13",
+      "fold": 5,
+      "target": -0.02739161658540268,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0011814505960948637,
+      "event_prediction": -0.00031439870220924715
+    },
+    {
+      "information_date": "2025-05-14",
+      "fold": 5,
+      "target": 0.002716430322979191,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0027624940405343327,
+      "event_prediction": 0.0009625419086325177
+    },
+    {
+      "information_date": "2025-05-15",
+      "fold": 5,
+      "target": -0.032776274891288204,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0002494001398772232,
+      "event_prediction": 0.0031980337606427557
+    },
+    {
+      "information_date": "2025-05-16",
+      "fold": 5,
+      "target": -0.00763328191052437,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.005073934437726439,
+      "event_prediction": -0.0010551454343373594
+    },
+    {
+      "information_date": "2025-05-17",
+      "fold": 5,
+      "target": -0.037394007914075766,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014087910327002036,
+      "event_prediction": -0.0029616770022655716
+    },
+    {
+      "information_date": "2025-05-18",
+      "fold": 5,
+      "target": 0.07053720862923107,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00059622934392773,
+      "event_prediction": 0.0013830969398539942
+    },
+    {
+      "information_date": "2025-05-19",
+      "fold": 5,
+      "target": -0.003259996473561566,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.002128181834830176,
+      "event_prediction": -0.0014943318884471297
+    },
+    {
+      "information_date": "2025-05-20",
+      "fold": 5,
+      "target": 0.033256939339499914,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00019919787530444494,
+      "event_prediction": -0.005017658375644782
+    },
+    {
+      "information_date": "2025-05-21",
+      "fold": 5,
+      "target": 0.03526820193043001,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00025942392208933344,
+      "event_prediction": -0.00718068266679471
+    },
+    {
+      "information_date": "2025-05-22",
+      "fold": 5,
+      "target": -0.06311348594150235,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.003284383392518673,
+      "event_prediction": -0.0034657330920887944
+    },
+    {
+      "information_date": "2025-05-23",
+      "fold": 5,
+      "target": -0.014375987981438687,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014328430858431516,
+      "event_prediction": 0.0031936508271755773
+    },
+    {
+      "information_date": "2025-05-24",
+      "fold": 5,
+      "target": 0.018529573294491453,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0006650792238337389,
+      "event_prediction": 0.00492923672881325
+    },
+    {
+      "information_date": "2025-05-25",
+      "fold": 5,
+      "target": -0.004298050248114693,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.017438173784385336,
+      "event_prediction": 0.017522439558661056
+    },
+    {
+      "information_date": "2025-05-26",
+      "fold": 5,
+      "target": 0.037397480673390104,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00041383793927269946,
+      "event_prediction": -0.029139190657028143
+    },
+    {
+      "information_date": "2025-05-27",
+      "fold": 5,
+      "target": 0.044719322136480555,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0008432121881521228,
+      "event_prediction": 0.0027436955888796846
+    },
+    {
+      "information_date": "2025-05-28",
+      "fold": 5,
+      "target": -0.0477330166339589,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.006227201290323786,
+      "event_prediction": 0.005475855071745273
+    },
+    {
+      "information_date": "2025-05-29",
+      "fold": 5,
+      "target": -0.04449066346259867,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.000489349965641194,
+      "event_prediction": 0.005592831590403007
+    },
+    {
+      "information_date": "2025-05-30",
+      "fold": 5,
+      "target": -0.0003422231772637341,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014854760833528419,
+      "event_prediction": 8.246994507591027e-06
+    },
+    {
+      "information_date": "2025-05-31",
+      "fold": 5,
+      "target": -0.006838845278091754,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.003862983359138543,
+      "event_prediction": 0.002800886338138229
+    },
+    {
+      "information_date": "2025-06-01",
+      "fold": 5,
+      "target": 0.043043119273409314,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0034083331644900712,
+      "event_prediction": 0.00012579213335097675
+    },
+    {
+      "information_date": "2025-06-02",
+      "fold": 5,
+      "target": 0.009464595189695446,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.000916263975571745,
+      "event_prediction": -0.0012251958752248365
+    },
+    {
+      "information_date": "2025-06-03",
+      "fold": 5,
+      "target": -0.0011648445351279957,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00048767340422505544,
+      "event_prediction": 0.005825270798120661
+    },
+    {
+      "information_date": "2025-06-04",
+      "fold": 5,
+      "target": -0.0644994092762683,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0019431562698656781,
+      "event_prediction": 0.003536511563375278
+    },
+    {
+      "information_date": "2025-06-05",
+      "fold": 5,
+      "target": 0.013623067960532254,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0043058560223770866,
+      "event_prediction": 0.007144113176111716
+    },
+    {
+      "information_date": "2025-06-06",
+      "fold": 5,
+      "target": 0.008926490092841854,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.005101895352956446,
+      "event_prediction": 0.0052057601242623385
+    },
+    {
+      "information_date": "2025-06-07",
+      "fold": 5,
+      "target": -0.005927554764152632,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00218515313862186,
+      "event_prediction": 0.004840294320800959
+    },
+    {
+      "information_date": "2025-06-08",
+      "fold": 5,
+      "target": 0.07728928481263764,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014993452705132444,
+      "event_prediction": 0.0014723815459397377
+    },
+    {
+      "information_date": "2025-06-09",
+      "fold": 5,
+      "target": 0.037867797492839195,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.003013712913359728,
+      "event_prediction": 0.008565109818976265
+    },
+    {
+      "information_date": "2025-06-10",
+      "fold": 5,
+      "target": -0.009426185441381962,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0011661668259233431,
+      "event_prediction": 0.004556525715398081
+    },
+    {
+      "information_date": "2025-06-11",
+      "fold": 5,
+      "target": -0.09079890006512781,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0007009924731846296,
+      "event_prediction": 0.00013953223229443937
+    },
+    {
+      "information_date": "2025-06-12",
+      "fold": 5,
+      "target": 0.013956264798933526,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0011514915039137956,
+      "event_prediction": 0.0003352726756117041
+    },
+    {
+      "information_date": "2025-06-13",
+      "fold": 5,
+      "target": -0.007307921755785096,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0004602997757576982,
+      "event_prediction": 0.0032000580732700866
+    },
+    {
+      "information_date": "2025-06-14",
+      "fold": 5,
+      "target": 0.014960661052465074,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0001757058137848982,
+      "event_prediction": 0.00211519585462581
+    },
+    {
+      "information_date": "2025-06-15",
+      "fold": 5,
+      "target": 0.015156945082855033,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0002783361515052518,
+      "event_prediction": 0.0009653943127133329
+    },
+    {
+      "information_date": "2025-06-16",
+      "fold": 5,
+      "target": -0.030410007482588597,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -7.718869069943553e-05,
+      "event_prediction": 0.0016610579315621957
+    },
+    {
+      "information_date": "2025-06-17",
+      "fold": 5,
+      "target": -0.0008667088807978729,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0013577941460920652,
+      "event_prediction": 0.0012988721416293618
+    },
+    {
+      "information_date": "2025-06-18",
+      "fold": 5,
+      "target": -0.0033193245689433493,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0034717050212826183,
+      "event_prediction": -0.0035792607928396584
+    },
+    {
+      "information_date": "2025-06-19",
+      "fold": 5,
+      "target": -0.03653879017418915,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 1.6496523295880003e-05,
+      "event_prediction": 0.0010425153214054371
+    },
+    {
+      "information_date": "2025-06-20",
+      "fold": 5,
+      "target": -0.06629157402785968,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 3.5739967894644984e-05,
+      "event_prediction": 0.0035316131921773663
+    },
+    {
+      "information_date": "2025-06-21",
+      "fold": 5,
+      "target": -0.013089884165790489,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0008568711832135382,
+      "event_prediction": -0.0011060734988378722
+    },
+    {
+      "information_date": "2025-06-22",
+      "fold": 5,
+      "target": 0.07326036840573891,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00021864342592763238,
+      "event_prediction": 0.005508309948798586
+    },
+    {
+      "information_date": "2025-06-23",
+      "fold": 5,
+      "target": 0.018931352471836416,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00040342949574677356,
+      "event_prediction": 0.0017390731857281877
+    },
+    {
+      "information_date": "2025-06-24",
+      "fold": 5,
+      "target": 0.018317642243143695,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.000521190738417469,
+      "event_prediction": 0.002425786073209809
+    },
+    {
+      "information_date": "2025-06-25",
+      "fold": 5,
+      "target": -0.016906843533313176,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.000489349965641194,
+      "event_prediction": -0.0014874835889454902
+    },
+    {
+      "information_date": "2025-06-26",
+      "fold": 5,
+      "target": -0.010630946685802334,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.000538804388660338,
+      "event_prediction": -0.0008301695523465784
+    },
+    {
+      "information_date": "2025-06-27",
+      "fold": 5,
+      "target": 0.0029383929346322724,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.014008018742023341,
+      "event_prediction": 0.01555496365285649
+    },
+    {
+      "information_date": "2025-06-28",
+      "fold": 5,
+      "target": 0.029602769078622027,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014993452705132444,
+      "event_prediction": 0.0014723815459397377
+    },
+    {
+      "information_date": "2025-06-29",
+      "fold": 5,
+      "target": -0.005743124259597221,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0008932396848733988,
+      "event_prediction": -0.0005487577616858175
+    },
+    {
+      "information_date": "2025-06-30",
+      "fold": 5,
+      "target": -0.02215119812904276,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00040398686678590786,
+      "event_prediction": 0.001908151505628464
+    },
+    {
+      "information_date": "2025-07-01",
+      "fold": 5,
+      "target": 0.053909420975934985,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0008263670665029656,
+      "event_prediction": 0.006461635455780858
+    },
+    {
+      "information_date": "2025-07-02",
+      "fold": 5,
+      "target": 0.0064369468248821615,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0011823053433395268,
+      "event_prediction": 0.0002120802940870296
+    },
+    {
+      "information_date": "2025-07-03",
+      "fold": 5,
+      "target": -0.023126479605697137,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00030316199207647287,
+      "event_prediction": -0.00885432744529883
+    },
+    {
+      "information_date": "2025-07-04",
+      "fold": 5,
+      "target": -0.0012633536079076357,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.002969980855352497,
+      "event_prediction": -0.010602295976938287
+    },
+    {
+      "information_date": "2025-07-05",
+      "fold": 5,
+      "target": 0.024746114649174755,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00043571244225060917,
+      "event_prediction": -0.0014196284366303129
+    },
+    {
+      "information_date": "2025-07-06",
+      "fold": 5,
+      "target": -0.01526314563649478,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.006188081481171821,
+      "event_prediction": 0.0107563288369034
+    },
+    {
+      "information_date": "2025-07-07",
+      "fold": 5,
+      "target": 0.02121553756277539,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0017069182726222297,
+      "event_prediction": 2.1357163691408036e-05
+    },
+    {
+      "information_date": "2025-07-08",
+      "fold": 5,
+      "target": 0.07120248278417685,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0004878041321467237,
+      "event_prediction": 0.001193232348408188
+    },
+    {
+      "information_date": "2025-07-09",
+      "fold": 5,
+      "target": 0.06965514756225,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0014387204297536735,
+      "event_prediction": -0.003503115357836808
+    },
+    {
+      "information_date": "2025-07-10",
+      "fold": 5,
+      "target": -0.0010409648295378604,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 4.911578561974197e-05,
+      "event_prediction": -0.0004204706159189489
+    },
+    {
+      "information_date": "2025-07-11",
+      "fold": 5,
+      "target": -0.003827593067841084,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0001664844766802254,
+      "event_prediction": 0.0003990155149692909
+    },
+    {
+      "information_date": "2025-07-12",
+      "fold": 5,
+      "target": 0.028033554956736095,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.001848877293498706,
+      "event_prediction": -0.0005728265634030651
+    },
+    {
+      "information_date": "2025-07-13",
+      "fold": 5,
+      "target": -0.028102227037279826,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0002625552677639356,
+      "event_prediction": -0.0012179698658885028
+    },
+    {
+      "information_date": "2025-07-14",
+      "fold": 5,
+      "target": 0.05598980833019929,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00103939665198698,
+      "event_prediction": 0.0021144529475150727
+    },
+    {
+      "information_date": "2025-07-15",
+      "fold": 5,
+      "target": 0.06856334304452183,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0030064026141673125,
+      "event_prediction": -0.0015957178067379605
+    },
+    {
+      "information_date": "2025-07-16",
+      "fold": 5,
+      "target": 0.08023132564850166,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00044607645205594194,
+      "event_prediction": -0.0030736832849279014
+    },
+    {
+      "information_date": "2025-07-17",
+      "fold": 5,
+      "target": -0.0010757261151278508,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0025047810048911172,
+      "event_prediction": -0.0031829029089006956
+    },
+    {
+      "information_date": "2025-07-18",
+      "fold": 5,
+      "target": 0.017900770793332965,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.003077113507075812,
+      "event_prediction": -0.001383586613671583
+    },
+    {
+      "information_date": "2025-07-19",
+      "fold": 5,
+      "target": 0.027503875036563263,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.001302572767711026,
+      "event_prediction": 0.004860632697543181
+    },
+    {
+      "information_date": "2025-07-20",
+      "fold": 5,
+      "target": -0.007034459272502791,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00355558634805447,
+      "event_prediction": 0.0028417521454116657
+    },
+    {
+      "information_date": "2025-07-21",
+      "fold": 5,
+      "target": -0.0008011360591607675,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0012120750015267177,
+      "event_prediction": 0.0014680823529582823
+    },
+    {
+      "information_date": "2025-07-22",
+      "fold": 5,
+      "target": -0.023468777569512045,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.004021545515238124,
+      "event_prediction": -0.003397074717049124
+    },
+    {
+      "information_date": "2025-07-23",
+      "fold": 5,
+      "target": -0.012818224505655285,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0019831303966134587,
+      "event_prediction": -0.002169248427126187
+    },
+    {
+      "information_date": "2025-07-24",
+      "fold": 5,
+      "target": 0.04043938681672632,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00017637032861868448,
+      "event_prediction": 0.0012442063590766543
+    },
+    {
+      "information_date": "2025-07-25",
+      "fold": 5,
+      "target": 0.009242351733375509,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.004288909358040932,
+      "event_prediction": -0.0028076673614113876
+    },
+    {
+      "information_date": "2025-07-26",
+      "fold": 5,
+      "target": 0.027814864263462358,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.004489011779998254,
+      "event_prediction": 0.0060875811351085805
+    },
+    {
+      "information_date": "2025-07-27",
+      "fold": 5,
+      "target": -0.022850751038670514,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0005652697039273582,
+      "event_prediction": -0.00010475034643938719
+    },
+    {
+      "information_date": "2025-07-28",
+      "fold": 5,
+      "target": 0.006517553345818161,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.002489898419347438,
+      "event_prediction": 0.0010467043472250778
+    },
+    {
+      "information_date": "2025-07-29",
+      "fold": 5,
+      "target": 0.01234797602731641,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.006498140395624084,
+      "event_prediction": -0.005837928671712253
+    },
+    {
+      "information_date": "2025-07-30",
+      "fold": 5,
+      "target": -0.041551798671025875,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.003936909894635062,
+      "event_prediction": -0.00510368249407305
+    },
+    {
+      "information_date": "2025-07-31",
+      "fold": 5,
+      "target": -0.04715862594224074,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0019922237573772187,
+      "event_prediction": 0.000686412005032887
+    },
+    {
+      "information_date": "2025-08-01",
+      "fold": 5,
+      "target": -0.0241780045351474,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.002320724155218514,
+      "event_prediction": 0.003983787825595047
+    },
+    {
+      "information_date": "2025-08-02",
+      "fold": 5,
+      "target": 0.03266331658291466,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0010441351057689503,
+      "event_prediction": 0.004611078552666547
+    },
+    {
+      "information_date": "2025-08-03",
+      "fold": 5,
+      "target": 0.026794931296850955,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0006687557285352806,
+      "event_prediction": 0.005882745274782433
+    },
+    {
+      "information_date": "2025-08-04",
+      "fold": 5,
+      "target": -0.018696529978824317,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00011490061135557795,
+      "event_prediction": -0.00021564280376983502
+    },
+    {
+      "information_date": "2025-08-05",
+      "fold": 5,
+      "target": 0.020389932331330796,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0001348407137277569,
+      "event_prediction": 8.292315832948043e-05
+    },
+    {
+      "information_date": "2025-08-06",
+      "fold": 5,
+      "target": 0.07737469905887506,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.002219834811728603,
+      "event_prediction": -0.0007856340279256502
+    },
+    {
+      "information_date": "2025-08-07",
+      "fold": 5,
+      "target": 0.02813342745846903,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.002999126427834859,
+      "event_prediction": -0.0023085435092236673
+    },
+    {
+      "information_date": "2025-08-08",
+      "fold": 5,
+      "target": 0.047490497207821614,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0029284376445911347,
+      "event_prediction": -0.0027677260423820847
+    },
+    {
+      "information_date": "2025-08-09",
+      "fold": 5,
+      "target": 0.015776604599289312,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0004154152411978832,
+      "event_prediction": 0.0022597629063471824
+    },
+    {
+      "information_date": "2025-08-10",
+      "fold": 5,
+      "target": -0.005441039925719537,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 5.743499765046298e-06,
+      "event_prediction": 0.0019462079685547415
+    },
+    {
+      "information_date": "2025-08-11",
+      "fold": 5,
+      "target": 0.08442173758799032,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00553762402448917,
+      "event_prediction": -0.00760671695175066
+    },
+    {
+      "information_date": "2025-08-12",
+      "fold": 5,
+      "target": 0.027947149003394012,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.003924940749486668,
+      "event_prediction": -0.0024322848891129697
+    },
+    {
+      "information_date": "2025-08-13",
+      "fold": 5,
+      "target": -0.029884090014488662,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.00391117451127063,
+      "event_prediction": -0.0020729490828653076
+    },
+    {
+      "information_date": "2025-08-14",
+      "fold": 5,
+      "target": -0.04371313444367941,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0032808592179869676,
+      "event_prediction": -0.007106055818941275
+    },
+    {
+      "information_date": "2025-08-15",
+      "fold": 5,
+      "target": 0.004534118735682657,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": -0.0011600543426528082,
+      "event_prediction": 0.0019411688119298535
+    },
+    {
+      "information_date": "2025-08-16",
+      "fold": 5,
+      "target": -0.029953223364053372,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00030989392353027276,
+      "event_prediction": 0.0006813788382592832
+    },
+    {
+      "information_date": "2025-08-17",
+      "fold": 5,
+      "target": -0.023248919543637503,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00039962864525954693,
+      "event_prediction": 0.003830784741889079
+    },
+    {
+      "information_date": "2025-08-18",
+      "fold": 5,
+      "target": -0.018353235765571685,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014840269538197843,
+      "event_prediction": 0.00308022035169759
+    },
+    {
+      "information_date": "2025-08-19",
+      "fold": 5,
+      "target": 0.03699659890237306,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0005360083876910785,
+      "event_prediction": 0.0053749928480028245
+    },
+    {
+      "information_date": "2025-08-20",
+      "fold": 5,
+      "target": -0.0037106918238994924,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00022647147077287338,
+      "event_prediction": 0.005042440231546494
+    },
+    {
+      "information_date": "2025-08-21",
+      "fold": 5,
+      "target": 0.09775851225254661,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0007915624461760134,
+      "event_prediction": -0.008816756168407177
+    },
+    {
+      "information_date": "2025-08-22",
+      "fold": 5,
+      "target": 0.019711662360841764,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00017890067425171984,
+      "event_prediction": 0.003561180599695777
+    },
+    {
+      "information_date": "2025-08-25",
+      "fold": 5,
+      "target": 0.04567901515134287,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0006508014011905878,
+      "event_prediction": -0.010064207777272412
+    },
+    {
+      "information_date": "2025-08-26",
+      "fold": 5,
+      "target": -0.013415861273083363,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.0014993452705132442,
+      "event_prediction": 0.0014723815459397377
+    },
+    {
+      "information_date": "2025-08-27",
+      "fold": 5,
+      "target": -0.011532005445485716,
+      "prior_prediction": 0.000598784047951814,
+      "generic_prediction": 0.00013132987773056544,
+      "event_prediction": 0.0006666069074458345
+    }
+  ]
+}

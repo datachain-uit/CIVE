@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3-stage1-reliability",
+  "recorded_at": "2026-08-23T16:35:00+00:00",
+  "status": "protocol-deviation-recorded-no-outcome-consulted",
+  "deviation": "Run 2 was started after run 1 had already recorded four schema errors. PowerShell captured informational function output together with the boolean return, producing a truthy array and bypassing the intended fail-fast branch.",
+  "research_impact": "No market outcome, predictive metric, threshold, trading backtest, or Tech overlay was consulted. Both runs attempted only the same first four-item batch. V3 remains failed and no full extraction is authorized.",
+  "observed": {
+    "run1_records": 4,
+    "run1_success": 0,
+    "run1_errors": 4,
+    "run2_records": 4,
+    "run2_success": 0,
+    "run2_errors": 4,
+    "failure": "severity outside [0,1]",
+    "maximum_observed_gpu_temperature_c": 58
+  },
+  "artifacts": {
+    "run1_sha256": "2c4004d433a8227911f58df4febb21fee33f25f28e18a3ace166f2f37b62f829",
+    "run2_sha256": "0849770051baccf3e951eb23e4ae1f7e0127cfd99d6c35781e7e3f5ece17efde",
+    "gate_sha256": "42988328f0b575b86d47c579a77b750c94cdda43abe750ab7c7d2e5e59b506f4"
+  },
+  "correction": {
+    "runner_sha256": "6733e2c90a944433d94a638754d09879ba333d616b122a96369b3096ff25b9b3",
+    "mechanism": "Run completion state is now stored in a script-scoped boolean and is not inferred from function pipeline output.",
+    "next_protocol": "llm-event-extractor-ministral3-8b-v3.1-stage1-reliability",
+    "next_config_sha256": "498fdcc3569c49c2326657898c6e070c15973f6800adf8ce0789c8c2bd85fdde"
+  }
+}

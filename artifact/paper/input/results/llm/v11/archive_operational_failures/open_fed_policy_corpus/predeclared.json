@@ -1,0 +1,28 @@
+{
+  "version": "v11.0",
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "categories": [
+    "Monetary Policy",
+    "Banking and Consumer Regulatory Policy"
+  ],
+  "expected_archive_links": {
+    "2022": 62,
+    "2023": 56,
+    "2024": 56
+  },
+  "schema_rules": [
+    "official archive membership",
+    "exact category",
+    "explicit EST/EDT release timestamp",
+    "body >= 200 chars",
+    "no article-body rights marker"
+  ],
+  "selection_uses_outcomes": false,
+  "market_data_accessed": false,
+  "model_run": false,
+  "script_sha256": "dcbfe104afa2ea5c282b0ae582a5194a9b4dfb39976d7b1c532a8d20ad64c97b"
+}

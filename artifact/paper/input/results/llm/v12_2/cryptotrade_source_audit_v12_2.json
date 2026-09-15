@@ -1,0 +1,27 @@
+{
+  "status": "REJECTED_FOR_LLM_ADMISSION_UPSTREAM_TERMS_AND_OUTCOME_MIXED_REPOSITORY",
+  "candidate": {
+    "repository": "Xtra-Computing/CryptoTrade",
+    "revision": "210da73af5f17992be425e61305524a5c24dae40",
+    "declared_repository_license": "CC BY-NC-SA"
+  },
+  "scope": "Git tree and published source-provenance review only; no data files were checked out or parsed.",
+  "findings": [
+    {
+      "verdict": "BLOCK",
+      "basis": "The accompanying CryptoTrade paper states that off-chain news was gathered via GNews under terms it describes as non-commercial transitory viewing, with no copying, modification, public display or transfer. The repository license cannot by itself grant rights in upstream news text."
+    },
+    {
+      "verdict": "BLOCK",
+      "basis": "The pinned repository tree mixes daily GNews files with price CSVs, technical features, transaction statistics and code for reflection/trading. Selecting only a subdirectory after inspecting a repository designed around outcomes would not satisfy the new outcome-blind intake requirement."
+    }
+  ],
+  "decision": {
+    "eligible_for_model_input": false,
+    "eligible_for_outcome_blind_corpus": false,
+    "market_data_accessed": false,
+    "model_run": false,
+    "next_step": "Audit a versioned dataset whose original text rights are explicit and whose corpus is distributed separately from outcomes."
+  },
+  "tree_artifact": "paper/input/references/source_artifacts/cryptotrade_v12_2/tree.txt"
+}

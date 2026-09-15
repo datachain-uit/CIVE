@@ -1,0 +1,40 @@
+{
+  "schema_version": "open-fed-policy-panel-audit-v11",
+  "source_events": 110,
+  "labeled_buckets": 85,
+  "missing_target_buckets": 24,
+  "same_4h_events_collapsed": 1,
+  "buckets_per_year": {
+    "2022": 12,
+    "2023": 32,
+    "2024": 41
+  },
+  "generic_feature_names": [
+    "llm_generic_direction",
+    "llm_generic_intensity",
+    "llm_generic_signed_intensity"
+  ],
+  "event_feature_names": [
+    "llm_generic_direction",
+    "llm_generic_intensity",
+    "llm_generic_signed_intensity",
+    "llm_policy_direction",
+    "llm_policy_intensity",
+    "llm_policy_signed_intensity",
+    "llm_surprise_language",
+    "llm_systemic_scope",
+    "llm_confidence",
+    "llm_event_type::rate_or_balance_sheet",
+    "llm_event_type::liquidity_or_emergency",
+    "llm_event_type::bank_capital_or_stress",
+    "llm_event_type::supervision_or_enforcement",
+    "llm_event_type::payments_or_access",
+    "llm_event_type::administrative_or_information",
+    "llm_event_type::other"
+  ],
+  "target_distribution_consulted": false,
+  "panel": {
+    "path": "paper\\input\\results\\llm\\v11\\open_fed_policy_panel_v11.json",
+    "sha256": "3749518cbdb4e183f3b9cf1b334fad2c4e9ecae562369b7788b0fa11448ebf72"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-077--LLM-080-multicoin-risk-v19",
+  "stage": "PREDECLARED_BEFORE_TARGET_BUILD",
+  "frozen_at": "2026-09-11T09:42:35.311283+00:00",
+  "risk_target_values_consulted": false,
+  "eligible_assets": [
+    "ETHUSDT"
+  ],
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-077"
+    }
+  },
+  "targets": {
+    "primary": "h24_realized_volatility",
+    "secondary_diagnostic": "h24_adverse_excursion_magnitude"
+  },
+  "target_contract": {
+    "entry_delay_hours": 4,
+    "horizon_hours": 24,
+    "realized_volatility": "sqrt(sum squared 4h close-to-close log returns), exact v3.2 convention",
+    "adverse_excursion_magnitude": "max(0, 1-min(low_path)/entry_open)"
+  },
+  "feature_contract": {
+    "metadata": [
+      "meta_selected_event_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_mean",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co"
+    ],
+    "generic": [
+      "meta_selected_event_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_mean",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co",
+      "llm_direction_fraction::positive",
+      "llm_direction_fraction::negative",
+      "llm_direction_fraction::mixed",
+      "llm_direction_fraction::unclear",
+      "llm_severity_mean",
+      "llm_severity_max",
+      "llm_confidence_mean",
+      "llm_confidence_max",
+      "llm_directional_severity_mean"
+    ],
+    "event": [
+      "meta_selected_event_count",
+      "meta_recency_mean_hours",
+      "meta_recency_max_hours",
+      "meta_headline_token_mean",
+      "meta_source_fraction::cointelegraph.com",
+      "meta_source_fraction::coindesk.com",
+      "meta_source_fraction::decrypt.co",
+      "meta_source_fraction::cryptonews.com",
+      "meta_source_fraction::blockworks.co",
+      "llm_direction_fraction::positive",
+      "llm_direction_fraction::negative",
+      "llm_direction_fraction::mixed",
+      "llm_direction_fraction::unclear",
+      "llm_severity_mean",
+      "llm_severity_max",
+      "llm_confidence_mean",
+      "llm_confidence_max",
+      "llm_directional_severity_mean",
+      "llm_reported_surprise_mean",
+      "llm_reported_surprise_max",
+      "llm_event_type_fraction::macro_liquidity",
+      "llm_event_type_fraction::regulation",
+      "llm_event_type_fraction::etf_institutional_flow",
+      "llm_event_type_fraction::exchange_security",
+      "llm_event_type_fraction::liquidation_leverage",
+      "llm_event_type_fraction::network_protocol",
+      "llm_event_type_fraction::fraud_legal",
+      "llm_event_type_fraction::adoption_business",
+      "llm_event_type_fraction::market_commentary",
+      "llm_event_type_fraction::other",
+      "llm_horizon_fraction::4h",
+      "llm_horizon_fraction::12h",
+      "llm_horizon_fraction::24h",
+      "llm_horizon_fraction::72h",
+      "llm_horizon_fraction::unknown"
+    ],
+    "comparator_note": "metadata is conditional on LLM affected_assets selection"
+  },
+  "model": {
+    "family": "Ridge",
+    "alpha": 10.0,
+    "standardization": "training fold only",
+    "tuning": false
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-09-11",
+      "valid_start": "2023-09-15",
+      "valid_end": "2024-01-31"
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-01-31",
+      "valid_start": "2024-02-04",
+      "valid_end": "2024-06-21"
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-21",
+      "valid_start": "2024-06-25",
+      "valid_end": "2024-11-10"
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-11-10",
+      "valid_start": "2024-11-14",
+      "valid_end": "2025-04-01"
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-01",
+      "valid_start": "2025-04-05",
+      "valid_end": "2025-08-27"
+    }
+  ],
+  "bootstrap": {
+    "iterations": 5000,
+    "block_length": 7,
+    "seed_base": 20260919
+  },
+  "gate": {
+    "required_oos_records": 699,
+    "minimum_fold_wins": 3,
+    "primary_only": true,
+    "holm_alpha": 0.05
+  },
+  "sources": {
+    "screen": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v19\\llm_only_multicoin_risk_screen_v19.json",
+      "sha256": "f3703f414329d48087725ef790a1fdd5de6d3794942de7af5e21d06e4935fd32"
+    },
+    "inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "information_sets": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    "bars": {
+      "ETHUSDT": {
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETHUSDT_1660348800000_1786492800000.json",
+        "sha256": "73e24db6a1e7e711f17f231dec43f9647509bc71c883bec8b88a48d063407172"
+      }
+    },
+    "protocol": {
+      "path": "D:\\UIT\\KLTN\\paper\\working\\protocols\\LLM_Only_Multicoin_Risk_Transfer_Protocol_v19.md",
+      "sha256": "ffd2c1b19ce1c94a43d5f5fb972f7cf67c7300fd2ae4d05dbaa787dd5a821b42"
+    },
+    "code": [
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\multicoin_event_transfer_v19_v20_common.py",
+        "sha256": "512ab0fc3fec5909a42aefb70a6820db5bc08d708ed4e4fe24fb7d472bfdc9c4"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\build_multicoin_risk_panel_v19.py",
+        "sha256": "3d9204367753db3a6303d8e880850c78216bda7c5383734b55ee4807a1ed46ae"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_multicoin_risk_transfer_v19.py",
+        "sha256": "2c2cd3e705a3e1e67a8404cbf56a7f0d712770a7d610def5102f0e76b53c72bb"
+      }
+    ]
+  }
+}

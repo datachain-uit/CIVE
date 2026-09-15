@@ -1,0 +1,46 @@
+{
+  "schema_version": "tech-llm-conditional-state-fusion-v3-data-power-audit",
+  "status": "STAGE_A_TECH_PANEL_MATERIALIZED_STAGE_B_POWER_DIAGNOSTIC_ONLY",
+  "generated_at": "2026-09-09T18:54:10.815300+00:00",
+  "research_role": "post-outcome development feasibility; no HYB-003 model or policy was fit",
+  "counts": {
+    "frozen_trades": 24,
+    "eligible_trade_clusters": 23,
+    "eligible_post_entry_4h_rows": 525,
+    "outcome_blind_text_context_rows": 2534,
+    "decision_rows_with_new_text": 71
+  },
+  "integrity": {
+    "shadow_max_abs_component_error": 4.954927135258913e-09,
+    "unique_panel_row_ids": true,
+    "unique_text_context_ids": true,
+    "text_selection_used_outcomes": false,
+    "model_fit_performed": false,
+    "performance_evaluation_performed": false
+  },
+  "planning_diagnostic": {
+    "cluster_robust_standard_error_of_always_downsize_net_action_value": 0.0003686274119042331,
+    "normal_approximation_mde_80pct_power_two_sided_5pct": 0.0010321567533318526,
+    "warning": "This observed-variance MDE is a planning diagnostic, not a HYB-003 result. Policy sparsity and model estimation error can make actual power worse.",
+    "power_gate_decision": "PENDING_ECONOMIC_MDE_AND_TEXT_PREVALENCE_FREEZE"
+  },
+  "files": {
+    "panel": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_state_fusion_v3_panel.json",
+      "sha256": "cbcf95feeec96e8120bac2e3da45922981500763f3e55488e2a82ae8f39e2c64"
+    },
+    "text_inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_state_fusion_v3_text_inputs.json",
+      "sha256": "2871c55fee6ceafe2e6263069e4906cb1613110261dc56462a9d66523559a39f"
+    },
+    "builder": {
+      "path": "D:\\UIT\\KLTN\\tools\\llm\\build_tech_llm_conditional_state_panel_v3.py",
+      "sha256": "ecef14122a046dcf68dafb7953d39efe246308ead9fad047c7bc54a47a49c4bf"
+    },
+    "hyb2_predeclared": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_intratrade_shock_shield_v2_predeclared.json",
+      "sha256": "8a90b28fe4d4f5f72a90200eb97b8abc0253b5a8a1382de27125c3a332c4df09"
+    }
+  },
+  "next_gate": "Freeze and test a text-state extraction schema on an outcome-blind reliability sample before any HYB-003 model fit."
+}

@@ -1,0 +1,180 @@
+{
+  "retrieved_at": "2026-08-11T04:33:27.533560+00:00",
+  "tiers": [
+    {
+      "risk_limit_value": 900000.0,
+      "maintenance_margin_rate": 0.005,
+      "maintenance_margin_deduction": 0.0
+    },
+    {
+      "risk_limit_value": 1200000.0,
+      "maintenance_margin_rate": 0.0056,
+      "maintenance_margin_deduction": 540.0
+    },
+    {
+      "risk_limit_value": 1500000.0,
+      "maintenance_margin_rate": 0.0063,
+      "maintenance_margin_deduction": 1380.0
+    },
+    {
+      "risk_limit_value": 1800000.0,
+      "maintenance_margin_rate": 0.0067,
+      "maintenance_margin_deduction": 1980.0
+    },
+    {
+      "risk_limit_value": 2400000.0,
+      "maintenance_margin_rate": 0.0071,
+      "maintenance_margin_deduction": 2700.0
+    },
+    {
+      "risk_limit_value": 3200000.0,
+      "maintenance_margin_rate": 0.0077,
+      "maintenance_margin_deduction": 4140.0
+    },
+    {
+      "risk_limit_value": 4000000.0,
+      "maintenance_margin_rate": 0.0091,
+      "maintenance_margin_deduction": 8620.0
+    },
+    {
+      "risk_limit_value": 5000000.0,
+      "maintenance_margin_rate": 0.01,
+      "maintenance_margin_deduction": 12220.0
+    },
+    {
+      "risk_limit_value": 8000000.0,
+      "maintenance_margin_rate": 0.012,
+      "maintenance_margin_deduction": 22220.0
+    },
+    {
+      "risk_limit_value": 12000000.0,
+      "maintenance_margin_rate": 0.013,
+      "maintenance_margin_deduction": 30220.0
+    },
+    {
+      "risk_limit_value": 16000000.0,
+      "maintenance_margin_rate": 0.014,
+      "maintenance_margin_deduction": 42220.0
+    },
+    {
+      "risk_limit_value": 22000000.0,
+      "maintenance_margin_rate": 0.015,
+      "maintenance_margin_deduction": 58220.0
+    },
+    {
+      "risk_limit_value": 28000000.0,
+      "maintenance_margin_rate": 0.02,
+      "maintenance_margin_deduction": 168220.0
+    },
+    {
+      "risk_limit_value": 32000000.0,
+      "maintenance_margin_rate": 0.025,
+      "maintenance_margin_deduction": 308220.0
+    },
+    {
+      "risk_limit_value": 34000000.0,
+      "maintenance_margin_rate": 0.03,
+      "maintenance_margin_deduction": 468220.0
+    },
+    {
+      "risk_limit_value": 36000000.0,
+      "maintenance_margin_rate": 0.033,
+      "maintenance_margin_deduction": 570220.0
+    },
+    {
+      "risk_limit_value": 38000000.0,
+      "maintenance_margin_rate": 0.035,
+      "maintenance_margin_deduction": 642220.0
+    },
+    {
+      "risk_limit_value": 40000000.0,
+      "maintenance_margin_rate": 0.038,
+      "maintenance_margin_deduction": 756220.0
+    },
+    {
+      "risk_limit_value": 42000000.0,
+      "maintenance_margin_rate": 0.039,
+      "maintenance_margin_deduction": 796220.0
+    },
+    {
+      "risk_limit_value": 44000000.0,
+      "maintenance_margin_rate": 0.042,
+      "maintenance_margin_deduction": 922220.0
+    },
+    {
+      "risk_limit_value": 46000000.0,
+      "maintenance_margin_rate": 0.045,
+      "maintenance_margin_deduction": 1054220.0
+    },
+    {
+      "risk_limit_value": 48000000.0,
+      "maintenance_margin_rate": 0.05,
+      "maintenance_margin_deduction": 1284220.0
+    },
+    {
+      "risk_limit_value": 50000000.0,
+      "maintenance_margin_rate": 0.055,
+      "maintenance_margin_deduction": 1524220.0
+    },
+    {
+      "risk_limit_value": 52000000.0,
+      "maintenance_margin_rate": 0.06,
+      "maintenance_margin_deduction": 1774220.0
+    },
+    {
+      "risk_limit_value": 54000000.0,
+      "maintenance_margin_rate": 0.068,
+      "maintenance_margin_deduction": 2190220.0
+    },
+    {
+      "risk_limit_value": 58000000.0,
+      "maintenance_margin_rate": 0.075,
+      "maintenance_margin_deduction": 2568220.0
+    },
+    {
+      "risk_limit_value": 62000000.0,
+      "maintenance_margin_rate": 0.09,
+      "maintenance_margin_deduction": 3438220.0
+    },
+    {
+      "risk_limit_value": 66000000.0,
+      "maintenance_margin_rate": 0.1,
+      "maintenance_margin_deduction": 4058220.0
+    },
+    {
+      "risk_limit_value": 72000000.0,
+      "maintenance_margin_rate": 0.12,
+      "maintenance_margin_deduction": 5378220.0
+    },
+    {
+      "risk_limit_value": 80000000.0,
+      "maintenance_margin_rate": 0.14,
+      "maintenance_margin_deduction": 6818220.0
+    },
+    {
+      "risk_limit_value": 100000000.0,
+      "maintenance_margin_rate": 0.18,
+      "maintenance_margin_deduction": 10018220.0
+    },
+    {
+      "risk_limit_value": 200000000.0,
+      "maintenance_margin_rate": 0.3,
+      "maintenance_margin_deduction": 22018220.0
+    },
+    {
+      "risk_limit_value": 400000000.0,
+      "maintenance_margin_rate": 0.42,
+      "maintenance_margin_deduction": 46018220.0
+    },
+    {
+      "risk_limit_value": 600000000.0,
+      "maintenance_margin_rate": 0.5,
+      "maintenance_margin_deduction": 78018220.0
+    },
+    {
+      "risk_limit_value": 1000000000.0,
+      "maintenance_margin_rate": 0.6,
+      "maintenance_margin_deduction": 138018220.0
+    }
+  ]
+}

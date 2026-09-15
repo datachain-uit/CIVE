@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-08-11T10:15:28.105962+00:00",
+  "protocol": {
+    "candidate_pool": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT",
+      "DOGE/USDT",
+      "ADA/USDT",
+      "AVAX/USDT",
+      "LINK/USDT",
+      "LTC/USDT"
+    ],
+    "candidate_pool_survivorship_free": false,
+    "universe_mode": "point-in-time-liquidity",
+    "liquidity_universe_size": 5,
+    "liquidity_lookback_days": 30,
+    "liquidity_measure": "trailing closed daily base volume * close",
+    "selection_mode": "breakout",
+    "rebalance_days": null,
+    "market_regime": "on",
+    "event_family": "channel",
+    "event_lookback": 10,
+    "channel_width": 0.1,
+    "breakout_threshold": 0.0,
+    "rank_mode": "oscillator-ensemble",
+    "daily_selection": "market regime=on + breakout + top-N 20d oscillator-ensemble",
+    "volume_veto": "off",
+    "oi_gate": "off",
+    "funding_crowding_veto": "off",
+    "basis_gate": "off",
+    "flow_mode": "off",
+    "gross_leverage": 1.0,
+    "margin_model": null,
+    "maintenance_margin_rate": null,
+    "risk_limit_snapshot_at": null,
+    "risk_limit_history_available": null,
+    "liquidation_fee_bps": null,
+    "fill": "next daily 4H open",
+    "stops": "4H ATR fixed plus trailing, adverse OHLC stop",
+    "pyramiding": "off",
+    "max_pyramid_layers": 1,
+    "pyramid_step_atr": null,
+    "fee_bps": 6.0,
+    "slippage_bps": 3.0,
+    "spread_bps": 2.0,
+    "impact_bps": 1.0,
+    "effective_adverse_execution_bps": 5.0,
+    "funding_source": "bybit-history",
+    "funding_bps_8h": null,
+    "execution_semantics": "no_same_bar_reentry_v1"
+  },
+  "result": {
+    "starting_balance": 10000,
+    "final_equity": 19206.47,
+    "return_pct": 92.0647,
+    "max_drawdown_pct": 12.0242,
+    "fills": 150
+  },
+  "walk_forward_folds": [
+    {
+      "start": "2022-09-12",
+      "return_pct": 16.7995,
+      "max_drawdown_pct": 9.7815
+    },
+    {
+      "start": "2023-03-11",
+      "return_pct": 0.5515,
+      "max_drawdown_pct": 1.3596
+    },
+    {
+      "start": "2023-09-07",
+      "return_pct": 18.3273,
+      "max_drawdown_pct": 10.7161
+    },
+    {
+      "start": "2024-03-05",
+      "return_pct": 0.9249,
+      "max_drawdown_pct": 1.9874
+    },
+    {
+      "start": "2024-09-01",
+      "return_pct": 13.4823,
+      "max_drawdown_pct": 6.0368
+    },
+    {
+      "start": "2025-02-28",
+      "return_pct": 30.012,
+      "max_drawdown_pct": 8.9531
+    },
+    {
+      "start": "2025-08-27",
+      "return_pct": -3.3347,
+      "max_drawdown_pct": 5.0168
+    },
+    {
+      "start": "2026-02-23",
+      "return_pct": -3.9819,
+      "max_drawdown_pct": 8.2304
+    }
+  ],
+  "positive_folds": 6,
+  "folds_tested": 8,
+  "applied_funding_events": 556,
+  "missing_funding_events": 0,
+  "liquidation_events": 0,
+  "universe_membership_days": {
+    "BTC/USDT": 1429,
+    "ETH/USDT": 1429,
+    "XRP/USDT": 1421,
+    "SOL/USDT": 1429,
+    "BNB/USDT": 6,
+    "DOGE/USDT": 1121,
+    "ADA/USDT": 78,
+    "AVAX/USDT": 62,
+    "LINK/USDT": 98,
+    "LTC/USDT": 72
+  }
+}

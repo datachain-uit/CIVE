@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-20T09:05:47.478456+00:00",
+  "experiment_id": "llm-llama31-8b-challenger-v1-development",
+  "candidate": {
+    "model": "llama3.1:8b",
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "architecture": "llama",
+    "parameters": "8B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 4920753328,
+    "license": "Meta Llama 3.1",
+    "rationale": "Llama 3.1 is the successor to the existing Llama 3 baseline with 128K context and improved instruction following; same Meta family but different checkpoint, providing an updated reference point",
+    "primary_sources": [
+      "https://ai.meta.com/blog/meta-llama-3-1/",
+      "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "stage1_partial_run": {
+    "expected_information_sets": 108,
+    "observed_information_sets": 49,
+    "schema_success": 48,
+    "schema_errors": 1,
+    "required_schema_success": 108,
+    "maximum_possible_schema_success_if_completed": 107
+  },
+  "passed": false,
+  "status": "stage1-fail-fast-stop-before-completing-run1",
+  "stopping_rule_basis": "schema success must equal the full expected sample; after the first schema error, the required count is mathematically unreachable",
+  "next_action": "stop before run 2, full inference, calibration and trading backtest",
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\llama31_8b_challenger\\configs\\llm_llama31_8b_challenger_v1_development.json",
+    "config_sha256": "0e27dbf062d7aa30343c4d4dd19f2cd5abe12d730dfda9f952b820cfc691506f",
+    "partial_run": "D:\\UIT\\KLTN\\runtime\\llama31_8b_challenger\\results\\llm_daily_reliability_llama31_8b_run1_v1.json",
+    "partial_run_sha256": "5f98730817dd3869b087a466a7c7962d938c88ea47f841daa3f9e28af905f28f"
+  }
+}

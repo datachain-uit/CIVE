@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "prompt_version": "crypto-daily-information-set-v1",
+  "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+  "policy": {
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "market_outcomes_consulted": false
+  },
+  "information_sets": 108,
+  "identical_information_set_hashes": true,
+  "both_success": 108,
+  "status_failures": 0,
+  "exact_score_agreement": 108,
+  "mean_absolute_score_difference": 0.0,
+  "max_absolute_score_difference": 0.0,
+  "exact_confidence_agreement": 108,
+  "mean_absolute_confidence_difference": 0.0,
+  "max_absolute_confidence_difference": 0.0,
+  "long_flat_action_agreements": 108,
+  "long_flat_action_disagreements": 0,
+  "long_flat_action_agreement_rate": 1.0,
+  "score_deterministic": true,
+  "action_deterministic": true,
+  "inputs": {
+    "left": "results\\llm_daily_reliability_qwen3_8b_run1_v1.json",
+    "left_sha256": "e610ebb249441eb23317602565f4fce757a50e8b512f5860dc91635f3b570642",
+    "right": "results\\llm_daily_reliability_qwen3_8b_run2_v1.json",
+    "right_sha256": "f0be8ed50d31fce4be5d278e244f0700bdb85a1d154d646bbaf01c7e997585bf"
+  }
+}

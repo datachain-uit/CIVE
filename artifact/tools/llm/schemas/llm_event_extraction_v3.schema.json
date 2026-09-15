@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm-event-extraction-v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "btc_relevance", "event_type", "affected_assets", "direction", "severity",
+    "reported_surprise", "expected_horizon", "confidence", "evidence_span"
+  ],
+  "properties": {
+    "btc_relevance": {"enum": ["direct", "systemic", "indirect", "none"]},
+    "event_type": {"enum": [
+      "macro_liquidity", "regulation", "etf_institutional_flow", "exchange_security",
+      "liquidation_leverage", "network_protocol", "fraud_legal", "adoption_business",
+      "market_commentary", "other"
+    ]},
+    "affected_assets": {
+      "type": "array", "maxItems": 12, "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 32}
+    },
+    "direction": {"enum": ["positive", "negative", "mixed", "unclear"]},
+    "severity": {"type": "number", "minimum": 0, "maximum": 1},
+    "reported_surprise": {"type": "number", "minimum": 0, "maximum": 1},
+    "expected_horizon": {"enum": ["4h", "12h", "24h", "72h", "unknown"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence_span": {"type": "string", "minLength": 1, "maxLength": 240}
+  }
+}

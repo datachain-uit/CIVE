@@ -1,0 +1,24 @@
+{
+  "schema_version": "open-fed-policy-llm-output-v11",
+  "generated_at": "2026-09-05T06:42:04.679077+00:00",
+  "config_sha256": "8957993c6fca2a0a89c16437b7e3681b0f6f8f20a24b9de7f6fd1350193c477b",
+  "model": {
+    "name": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71"
+  },
+  "outcomes_consulted": false,
+  "workers": 1,
+  "records": [
+    {
+      "event_id": "7b947b2f272f8ed29871",
+      "status": "error",
+      "error": "RecursionError: maximum recursion depth exceeded",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"event_id\": \"7b947b2f272f8ed29871\",\n      \"generic_direction\": 0,\n      \"generic_intensity\": 0.1,\n      \"event_type\": \"rate_or_balance_sheet\",\n      \"policy_direction\": 0,\n      \"policy_intensity\": 0.0,\n      \"surprise_language\": 0,\n      \"systemic_scope\": 0.0,\n      \"confidence\": 0.9,\n      \"evidence_span\": \"The minutes for each regularly scheduled meeting of the Committee ordinarily are made available three weeks after the day of the policy decision\"\n    }\n  ]\n}"
+    }
+  ],
+  "summary": {
+    "attempted": 1,
+    "success": 0,
+    "errors": 1
+  }
+}

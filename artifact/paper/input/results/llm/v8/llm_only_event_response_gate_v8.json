@@ -1,0 +1,221 @@
+{
+  "schema_version": "llm-only-event-response-gate-v8",
+  "evaluated_at": "2026-09-04T16:24:12.789156+00:00",
+  "experiment_id": "llm-only-short-horizon-event-response-v8-development",
+  "status": "predictive-gate-fail-stop-before-backtest",
+  "passed": false,
+  "development_only": true,
+  "prior_outcomes_consulted_before_design": true,
+  "technical_or_market_features_used": false,
+  "trading_backtest_consulted": false,
+  "target": {
+    "field": "target_h4_return",
+    "asset": "BTCUSDT",
+    "horizon_hours": 4,
+    "role": "single primary target"
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-fold mean/std only",
+    "hyperparameter_tuning": false
+  },
+  "oos_records": 2633,
+  "overall": {
+    "prior": {
+      "mse": 0.00012799149730340884,
+      "rmse": 0.011313332723093086,
+      "mae": 0.007590806115759538,
+      "pearson": -0.0019316140881221976,
+      "prediction_std": 2.3368110165748984e-05
+    },
+    "sentiment": {
+      "mse": 0.00012789936987515557,
+      "rmse": 0.011309260359331885,
+      "mae": 0.007631246467332863,
+      "pearson": 0.05022716022786227,
+      "prediction_std": 0.0010493363973721724
+    },
+    "event": {
+      "mse": 0.0001286187708019952,
+      "rmse": 0.011341021594283083,
+      "mae": 0.007666982496156472,
+      "pearson": 0.044374328334532066,
+      "prediction_std": 0.0014430812716092704
+    }
+  },
+  "event_minus_sentiment": {
+    "paired_delta_mse": -7.194009268396244e-07,
+    "relative_mse_reduction": -0.005624741760196646,
+    "mse_fold_wins": 1
+  },
+  "uncertainty": {
+    "paired_delta_mse_95_ci": [
+      -1.3551452763341023e-06,
+      8.858030257361594e-08
+    ],
+    "event_pearson_95_ci": [
+      0.004360084198942715,
+      0.09641924484435574
+    ]
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "validation_records": 518,
+      "metrics": {
+        "prior": {
+          "mse": 0.00015483075416817627,
+          "rmse": 0.012443100665355733,
+          "mae": 0.008391194176191889,
+          "pearson": -7.320587811728298e-17,
+          "prediction_std": 1.0842021724855044e-19
+        },
+        "sentiment": {
+          "mse": 0.0001565659859704385,
+          "rmse": 0.01251263305505434,
+          "mae": 0.008480712377614892,
+          "pearson": -0.032791412631009806,
+          "prediction_std": 0.0009647379652613474
+        },
+        "event": {
+          "mse": 0.00015778772130972706,
+          "rmse": 0.012561358258951421,
+          "mae": 0.00852934894614015,
+          "pearson": -0.025376559853394688,
+          "prediction_std": 0.0014203329248181162
+        },
+        "event_minus_sentiment_delta_mse": -1.2217353392885723e-06
+      }
+    },
+    {
+      "fold": 2,
+      "validation_records": 532,
+      "metrics": {
+        "prior": {
+          "mse": 0.00014126429162398187,
+          "rmse": 0.011885465561936641,
+          "mae": 0.008194093156998901,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "sentiment": {
+          "mse": 0.0001391875610837614,
+          "rmse": 0.011797777802779701,
+          "mae": 0.0081980334506977,
+          "pearson": 0.13159510740357183,
+          "prediction_std": 0.0009547358903541404
+        },
+        "event": {
+          "mse": 0.0001402541386299176,
+          "rmse": 0.01184289401413006,
+          "mae": 0.008239940020052317,
+          "pearson": 0.08780686137301456,
+          "prediction_std": 0.0013273206274263035
+        },
+        "event_minus_sentiment_delta_mse": -1.0665775461561969e-06
+      }
+    },
+    {
+      "fold": 3,
+      "validation_records": 552,
+      "metrics": {
+        "prior": {
+          "mse": 0.00012586900686604048,
+          "rmse": 0.011219135745058105,
+          "mae": 0.007718625783592249,
+          "pearson": -2.2418548274756777e-17,
+          "prediction_std": 5.421010862427522e-20
+        },
+        "sentiment": {
+          "mse": 0.00012590611146705825,
+          "rmse": 0.011220789253303809,
+          "mae": 0.0077540302809078745,
+          "pearson": 0.048042064209889074,
+          "prediction_std": 0.0010935056570935068
+        },
+        "event": {
+          "mse": 0.0001263061821278702,
+          "rmse": 0.011238602320923639,
+          "mae": 0.007774578525961564,
+          "pearson": 0.04480568641117362,
+          "prediction_std": 0.00134293151699385
+        },
+        "event_minus_sentiment_delta_mse": -4.0007066081195527e-07
+      }
+    },
+    {
+      "fold": 4,
+      "validation_records": 559,
+      "metrics": {
+        "prior": {
+          "mse": 0.00015870580263345913,
+          "rmse": 0.012597849127270066,
+          "mae": 0.008223823752219193,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "sentiment": {
+          "mse": 0.00015769424216453972,
+          "rmse": 0.012557636806522943,
+          "mae": 0.008226446911132949,
+          "pearson": 0.08106558621182408,
+          "prediction_std": 0.0011648973258878087
+        },
+        "event": {
+          "mse": 0.00015756514731727202,
+          "rmse": 0.012552495660914287,
+          "mae": 0.008247439291552744,
+          "pearson": 0.08757520032902952,
+          "prediction_std": 0.0013901626427868317
+        },
+        "event_minus_sentiment_delta_mse": 1.2909484726770625e-07
+      }
+    },
+    {
+      "fold": 5,
+      "validation_records": 472,
+      "metrics": {
+        "prior": {
+          "mse": 4.968314223441474e-05,
+          "rmse": 0.007048626975121803,
+          "mae": 0.005133257309259744,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "sentiment": {
+          "mse": 5.076021769542909e-05,
+          "rmse": 0.007124620529925021,
+          "mae": 0.0052116538193374435,
+          "pearson": -0.0010055549796582207,
+          "prediction_std": 0.0010319326865786305
+        },
+        "event": {
+          "mse": 5.191536493042187e-05,
+          "rmse": 0.00720523177492729,
+          "mae": 0.0052615003332686285,
+          "pearson": 0.030673819776990355,
+          "prediction_std": 0.001726679579181341
+        },
+        "event_minus_sentiment_delta_mse": -1.1551472349927846e-06
+      }
+    }
+  ],
+  "checks": {
+    "oos_records": true,
+    "paired_delta_mse_ci_lower_gt_zero": false,
+    "event_pearson_ci_lower_gt_zero": true,
+    "event_mse_fold_wins": false,
+    "event_predictions_nonconstant": true
+  },
+  "inputs": {
+    "panel": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v8\\llm_only_event_response_panel_v8.json",
+      "sha256": "c9d852fe74924696e81d285c46d7c126aca1b956dd9d9a5645c0b2c04ffe1528"
+    }
+  },
+  "prediction_panel": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v8\\llm_only_event_response_predictions_v8.json",
+    "sha256": "0f83156e12d3a12f045d3c3131dd01d644905a70baa3689f8647017254b762bb"
+  }
+}

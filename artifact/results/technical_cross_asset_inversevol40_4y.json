@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-07T14:54:18.371084+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT"
+    ],
+    "market_state": "BTC/USDT 7d>=0 for two consecutive weeks",
+    "entry": "CHANNEL|j=10|x=0|d=1|c=0.1|exit=reverse|regime=none|side=long; only top-N by trailing momentum among fresh events",
+    "exit": "opposite event or market state off",
+    "top_n": 2,
+    "rank_days": 20,
+    "weighting": "inverse-vol",
+    "vol_days": 40,
+    "fee_bps_per_weight_turnover": 10.0,
+    "execution": "daily close-to-close; no leverage, stops or pyramiding"
+  },
+  "full_period": {
+    "return_pct": 133.1752,
+    "profit_factor": 1.84,
+    "max_dd_pct": 18.9734
+  },
+  "folds": [
+    {
+      "return_pct": 2.9766,
+      "profit_factor": 1.1378,
+      "max_dd_pct": 18.9734
+    },
+    {
+      "return_pct": 0.0223,
+      "profit_factor": 1.0271,
+      "max_dd_pct": 2.5101
+    },
+    {
+      "return_pct": 48.5832,
+      "profit_factor": 2.5315,
+      "max_dd_pct": 5.3374
+    },
+    {
+      "return_pct": 2.7271,
+      "profit_factor": 2.5744,
+      "max_dd_pct": 1.5496
+    },
+    {
+      "return_pct": 18.5723,
+      "profit_factor": 3.9893,
+      "max_dd_pct": 4.7443
+    },
+    {
+      "return_pct": 37.9029,
+      "profit_factor": 3.6308,
+      "max_dd_pct": 3.9147
+    },
+    {
+      "return_pct": 0.9861,
+      "profit_factor": 1.1914,
+      "max_dd_pct": 3.8563
+    }
+  ],
+  "passing_folds": 7,
+  "folds_tested": 7,
+  "eligible_for_execution_test": true
+}

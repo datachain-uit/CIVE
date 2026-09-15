@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "model": "nemotron-3-nano:4b",
+  "model_digest": "6cc467f054393a55e98a74098abde0c762ffb6d1d8cd64becf30458f38886197",
+  "prompt_version": "crypto-daily-information-set-v1",
+  "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+  "policy": {
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "market_outcomes_consulted": false
+  },
+  "information_sets": 108,
+  "identical_information_set_hashes": true,
+  "both_success": 108,
+  "status_failures": 0,
+  "exact_score_agreement": 102,
+  "mean_absolute_score_difference": 0.012037037037037037,
+  "max_absolute_score_difference": 0.4,
+  "exact_confidence_agreement": 97,
+  "mean_absolute_confidence_difference": 0.01064814814814815,
+  "max_absolute_confidence_difference": 0.25,
+  "long_flat_action_agreements": 108,
+  "long_flat_action_disagreements": 0,
+  "long_flat_action_agreement_rate": 1.0,
+  "score_deterministic": false,
+  "action_deterministic": true,
+  "inputs": {
+    "left": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_run1_v1.json",
+    "left_sha256": "b53916dc7288f6125256a4536fbb27beff834c3b793271b3cc79ce0cdc782626",
+    "right": "D:\\UIT\\KLTN\\runtime\\nemotron3_nano4b_challenger\\results\\llm_daily_reliability_nemotron3_nano4b_run2_v1.json",
+    "right_sha256": "cccf8e432d8b9039770f07d970ab71df89336e00f375612059d5b8d2accebd7b"
+  }
+}

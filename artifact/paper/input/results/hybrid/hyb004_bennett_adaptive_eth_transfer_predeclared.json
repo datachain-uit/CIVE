@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-09-11T03:55:10.668688+00:00",
+  "stage": "PREDECLARED_BEFORE_TARGET_BUILD",
+  "outcomes_consulted_for_this_design": false,
+  "research_status": "development-transfer; historical project period has been viewed elsewhere and is not sealed",
+  "target_contract": {
+    "asset": "ETHUSDT",
+    "information_cutoff": "daily available_at",
+    "entry_delay_hours": 4,
+    "horizon_hours": 24,
+    "price": "4H bar open-to-open"
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-09-11",
+      "valid_start": "2023-09-15",
+      "valid_end": "2024-01-31"
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-01-31",
+      "valid_start": "2024-02-04",
+      "valid_end": "2024-06-21"
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-21",
+      "valid_start": "2024-06-25",
+      "valid_end": "2024-11-10"
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-11-10",
+      "valid_start": "2024-11-14",
+      "valid_end": "2025-04-01"
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-01",
+      "valid_start": "2025-04-05",
+      "valid_end": "2025-08-27"
+    }
+  ],
+  "model": {
+    "family": "ridge",
+    "alpha": 10.0,
+    "standardization": "train fold only",
+    "tuning": false
+  },
+  "bootstrap": {
+    "iterations": 5000,
+    "block_length_days": 7,
+    "seed": 20260911
+  },
+  "sources": {
+    "information_sets": {
+      "path": "paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    "extraction": {
+      "path": "paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "eth_bars": {
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETHUSDT_1660348800000_1786492800000.json",
+      "sha256": "73e24db6a1e7e711f17f231dec43f9647509bc71c883bec8b88a48d063407172"
+    },
+    "eth_funding": {
+      "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_funding\\ETHUSDT_1660348800000_1786492800000.json",
+      "sha256": "4072967d06c3792a30e079e1f94b345e0395464bb4face78ca402e319d58745f"
+    },
+    "target_builder": {
+      "path": "tools\\llm\\build_llm_only_eth_transfer_target_v17.py",
+      "sha256": "ad753f4f561c378d659ee91b8c5c6f106c1c2f6aa0c50796603609a5565d610d"
+    },
+    "llm_evaluator": {
+      "path": "tools\\llm\\evaluate_llm_only_eth_transfer_v17.py",
+      "sha256": "b9917e377945738ce4a0fb4debffb4243df5237b2b4939ed0d9d2d330fec8987"
+    },
+    "hybrid_evaluator": {
+      "path": "tools\\llm\\evaluate_bennett_adaptive_eth_fusion_hyb004.py",
+      "sha256": "4d83852109a1486dcfdc6fc26a7f5e2f5c7068e264436d80b21fb8f262acb4a8"
+    },
+    "common_helper": {
+      "path": "tools\\llm\\eth_transfer_v17_common.py",
+      "sha256": "184d49b48d85dd5839d38328856dd31ae319b1f9c74812065f0eab86099c02bb"
+    },
+    "feasibility_audit": {
+      "path": "paper\\input\\results\\llm\\v17\\llm_only_eth_transfer_feasibility_v17.json",
+      "sha256": "b1acb53679244872316476d49f7df85ca965475e9cb1331a18be65bfd85a025f"
+    }
+  },
+  "experiment_id": "HYB-004-Bennett-adaptive-MSFE-ETH-transfer",
+  "external_method": {
+    "source": "Bennett et al. (2024)",
+    "doi": "10.1016/j.gfj.2024.100945",
+    "transferred_component": "adaptive combination weighted by recent MSFE",
+    "replication": false
+  },
+  "adaptive_fusion": {
+    "components": [
+      "ETH causal Tech ridge",
+      "event-conditioned LLM-only ridge"
+    ],
+    "recent_msfe_window": 30,
+    "weight_rule": "normalized inverse recent MSFE; only matured targets update validation history"
+  },
+  "execution": {
+    "position": "daily sign(prediction), long or short",
+    "one_way_cost_rate": 0.0011,
+    "cost_components": "6 bps fee + 5 bps adverse execution",
+    "funding": "signed sum in (entry, exit]",
+    "fold_boundaries": "flatten and reopen"
+  },
+  "primary_contrast": "adaptive fusion minus Tech-only under identical prediction and execution calendar",
+  "gate": "delta-MSE CI lower >0; mean daily net delta CI lower >0; >=3/5 MSE fold wins",
+  "holdout_authorization": false
+}

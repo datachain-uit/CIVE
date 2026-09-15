@@ -1,0 +1,31 @@
+{
+  "status": "CONDITIONAL_DEVELOPMENT_CORPUS_NOT_STRICT_PIT_NOT_MODEL_RUN",
+  "source": "paper\\input\\results\\llm\\v11\\open_fed_policy_corpus_v11_0_1\\corpus.json",
+  "source_sha256": "ade8903aeb52d82b88bea71b00512de0a122b6576d008fd052c247eedef6ae42",
+  "documents_before_gate": 162,
+  "same_day_documents": 113,
+  "quarantined_documents": 49,
+  "events": 110,
+  "same_time_documents_collapsed": 3,
+  "events_per_year": {
+    "2022": 36,
+    "2023": 32,
+    "2024": 42
+  },
+  "approximate_two_sided_correlation_mde": 0.26440578697705874,
+  "gate_uses_market_outcomes": false,
+  "market_data_accessed": false,
+  "model_run": false,
+  "strict_point_in_time": false,
+  "interpretation": [
+    "Same-day Last Update is weaker than first-version proof and permits unknown intraday edits.",
+    "Quarantine is a provenance gate fixed before outcomes, not a favorable-result filter.",
+    "Current snapshots define reproducible input bytes; they do not certify historical availability.",
+    "The MDE assumes independent correlations and is optimistic for temporal model evaluation."
+  ],
+  "next_gate": [
+    "Freeze one development target and no-sweep horizon.",
+    "Freeze model/checkpoint, prompt/schema, decoding and temporal split.",
+    "Keep a no-information prior and generic LLM sentiment as mandatory comparators."
+  ]
+}

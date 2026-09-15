@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/RSS/RSSGP/rssgp.xml/all</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title><a href="/PressRoom/PressReleases/7713-18" hreflang="en">Federal Court in Michigan Enters Judgment against Jerry Stauffer for Commodity Pool Fraud</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/7713-18</link>
+  <description/>
+  <pubDate><time datetime="2018-04-13T10:43:00Z">04/13/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/66" hreflang="en">dholden</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/7713-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/7712-18" hreflang="en">CFTC Charges The Kane Capital Investment Group, LLC and Amrit Chahal of Virginia with Operating a Commodity Pool Ponzi Scheme</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/7712-18</link>
+  <description/>
+  <pubDate><time datetime="2018-04-12T16:15:00Z">04/12/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/66" hreflang="en">dholden</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/7712-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/7711-18" hreflang="en">CFTC Obtains Default Judgment and Permanent Injunction against Arizona Resident Cory Williams and His Company, Williams Advisory Group, LLC, for Commodity Pool Fraud</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/7711-18</link>
+  <description/>
+  <pubDate><time datetime="2018-04-12T14:03:00Z">04/12/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/66" hreflang="en">dholden</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/7711-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/7710-18" hreflang="en">CFTC Charges New York Residents Kevin Whylie and Matthew Zecchini and Their Company, Algointeractive Inc, with Commodity Pool Fraud, Misappropriation, and Registration Violations</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/7710-18</link>
+  <description/>
+  <pubDate><time datetime="2018-04-12T10:34:00Z">04/12/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/66" hreflang="en">dholden</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/7710-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/7709-18" hreflang="en">CFTC Orders Floor Broker Anuj C. Singhal to Pay $150,000 Penalty for Spoofing in Wheat Futures Market</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/7709-18</link>
+  <description/>
+  <pubDate><time datetime="2018-04-09T20:06:54Z">04/09/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/66" hreflang="en">dholden</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/7709-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/7707-18" hreflang="en">Federal Court Orders Former Church Pastor Wesley Allen Brown, Maverick International, Inc., and Edward Rubin to Pay More than $8.6 Million for Commodity Fraud Scheme that Preyed on Church Congregation</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/7707-18</link>
+  <description/>
+  <pubDate><time datetime="2018-03-20T18:34:11Z">03/20/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/106" hreflang="en">mwoodland</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/7707-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/pr7702-18" hreflang="en">Federal Court in New York Enters Preliminary Injunction Order against Patrick K. McDonnell and His Company CabbageTech, Corp. d/b/a Coin Drop Markets in Connection with Fraudulent Virtual Currency Scheme</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/pr7702-18</link>
+  <description>Washington - The Commodity Futures Trading Commission (CFTC) today announced that the Honorable Jack B. Weinstein of the U.S. District Court for the Eastern District of New York entered a Preliminary Injunction Order against Defendants Patrick K. McDonnell and CabbageTech, Corp. d/b/a Coin Drop Markets (CDM).  The Court’s decision stems from the CFTC’s January 18, 2018 Complaint charging Defendants with fraud and misappropriation in connection with purchases and trading of the virtual currencies Bitcoin and Litecoin (see CFTC Press Release &amp; Complaint 7675-18).</description>
+  <pubDate><time datetime="2018-03-06T23:59:29Z">03/06/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/1" hreflang="en">cftc_gov_admin</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/pr7702-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/pr7701-18" hreflang="en">CFTC Charges Iowa Resident Lon Olen Friedrichsen with Solicitation Fraud in Violation of the Commodity Exchange Act</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/pr7701-18</link>
+  <description>Washington DC — The Commodity Futures Trading Commission (CFTC) filed a civil enforcement action in the U.S. District Court for the Southern District of New York, charging Lon Olen Friedrichsen of Alton, Iowa, with fraud and failing to register with the CFTC as a Commodity Trading Advisor, as required. Friedrichsen, as alleged, also solicited clients under the names of Lon Kummer and Lon Richardson, but omitted that these were false names.</description>
+  <pubDate><time datetime="2018-03-05T17:57:44Z">03/05/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/1" hreflang="en">cftc_gov_admin</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/pr7701-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/pr7693-18" hreflang="en">CFTC Orders AMP Global Clearing LLC to Pay $100,000 for Supervision Failures Related to Cybersecurity of its Customers’ Records and Information</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/pr7693-18</link>
+  <description>Washington, DC – The Commodity Futures Trading Commission (CFTC) today issued an Order filing and simultaneously settling charges against AMP Global Clearing LLC (AMP), a registered Futures Commission Merchant since 2010, for its failure between June 21, 2016 and April 17, 2017 to supervise diligently the implementation of critical provisions in AMP’s information systems security program (ISSP). As a result of this failure, a significant amount of AMP’s customers’ records and information were left unprotected for nearly ten months. In April 2017, as a result of this failure, a third party unaffiliated with AMP (Third Party) accessed AMP’s information technology network and copied approximately 97,000 files, which included customers’ records and information, including personally identifiable information. The Third Party thereafter contacted federal authorities about securing the copied information, and subsequently informed AMP that the copied information had been secured and was no longer in the Third Party’s possession. After becoming aware of the vulnerability and unauthorized access, AMP cooperated with the CFTC and worked diligently to remediate the issue.</description>
+  <pubDate><time datetime="2018-02-12T17:56:29Z">02/12/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/1" hreflang="en">cftc_gov_admin</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/pr7693-18</guid>
+    </item>
+<item>
+  <title><a href="/PressRoom/PressReleases/pr7692-18" hreflang="en">CFTC Orders Deutsche Bank Securities Inc. to Pay $70 Million Penalty for Attempted Manipulation of U.S. Dollar ISDAFIX Benchmark Swap Rates</a> , </title>
+  <link>https://www.cftc.gov/PressReleases/pr7692-18</link>
+  <description>Washington, DC – The Commodity Futures Trading Commission (CFTC) today issued an Order filing and settling charges against Deutsche Bank Securities Inc. (DBSI) for attempted manipulation of the ISDAFIX benchmark and requiring DBSI to pay a $70 million civil monetary penalty.</description>
+  <pubDate><time datetime="2018-02-01T17:55:30Z">02/01/2018</time>
+</pubDate>
+    <dc:creator><a href="/user/1" hreflang="en">cftc_gov_admin</a></dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressReleases/pr7692-18</guid>
+    </item>
+
+  </channel>
+</rss>

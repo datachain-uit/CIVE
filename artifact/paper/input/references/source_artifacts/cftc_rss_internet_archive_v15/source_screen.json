@@ -1,0 +1,1175 @@
+{
+  "schema_version": "cftc-rss-internet-archive-source-screen-v15",
+  "screened_at": "2026-09-08T11:10:53.8375362Z",
+  "candidate_id": "cftc-rss-internet-archive-v15",
+  "scope": "Outcome-blind source-level screen only; no market data, target, model, prediction, metric, or backtest accessed.",
+  "market_data_accessed": false,
+  "model_run": false,
+  "official_sources": {
+    "rss_landing": "https://www.cftc.gov/RSS/index.htm",
+    "general_feed": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+    "enforcement_feed": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml",
+    "web_policy": "https://www.cftc.gov/WebPolicy/index.htm",
+    "rights_statement": "Government information at the CFTC website is in the public domain.",
+    "rights_scope": "Conditional: admit only CFTC-authored plain-text RSS title/description; exclude contributed/licensed third-party content, media, and seal."
+  },
+  "cdx": {
+    "documentation": "https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md",
+    "queries": [
+      "https://web.archive.org/cdx/search/cdx?url=www.cftc.gov%2FRSS%2FRSSGP%2Frssgp.xml&output=json&filter=statuscode%3A200&fl=timestamp%2Cdigest%2Clength&collapse=timestamp%3A8",
+      "https://web.archive.org/cdx/search/cdx?url=www.cftc.gov%2FRSS%2FRSSENF%2Frssenf.xml&output=json&filter=statuscode%3A200&fl=timestamp%2Cdigest%2Clength&collapse=timestamp%3A8&from=2010&to=2019",
+      "https://web.archive.org/cdx/search/cdx?url=www.cftc.gov%2FRSS%2FRSSENF%2Frssenf.xml&output=json&filter=statuscode%3A200&fl=timestamp%2Cdigest%2Clength&collapse=timestamp%3A8&from=2020&to=2026"
+    ],
+    "general": [
+      {
+        "timestamp": "20100423081129",
+        "digest": "RE4ZF7QHBJ3IUHP56XJ2CP3NAQWWCNOJ",
+        "length": 3137
+      },
+      {
+        "timestamp": "20100527101117",
+        "digest": "VKJXSYODVTZ45IXBVNPRTF5O2L2JUD7N",
+        "length": 4315
+      },
+      {
+        "timestamp": "20100925114939",
+        "digest": "ZWO4EPBGB2R34CDM2LWKEAOZMGSD5LLN",
+        "length": 7091
+      },
+      {
+        "timestamp": "20101009103020",
+        "digest": "WYCGAKZCY5KSLDDQ4JY72E6DKBMEWBDP",
+        "length": 7102
+      },
+      {
+        "timestamp": "20101027165948",
+        "digest": "HUSVG4JWA4B6IGAPPDTYKMN5WZXSS5O3",
+        "length": 6822
+      },
+      {
+        "timestamp": "20101121055424",
+        "digest": "4QHMDB2LADSKR7GBPYM5ZAMCGIC52URE",
+        "length": 6572
+      },
+      {
+        "timestamp": "20101215005003",
+        "digest": "DENYBGJWOIH6NXIP7XNIYL7IQAUCCQLR",
+        "length": 6174
+      },
+      {
+        "timestamp": "20110501170618",
+        "digest": "PIY22Q72TDKCWPHPXQOBK7UFKLYB54X3",
+        "length": 6012
+      },
+      {
+        "timestamp": "20110913052445",
+        "digest": "5MUZM4YZ2Z6W2EGL6JW2ZH6YY4AENGD5",
+        "length": 6797
+      },
+      {
+        "timestamp": "20111013022347",
+        "digest": "AGLDZ2RPZEMHCI76PQCIQYABKUV2GBKX",
+        "length": 6709
+      },
+      {
+        "timestamp": "20111015095851",
+        "digest": "AGLDZ2RPZEMHCI76PQCIQYABKUV2GBKX",
+        "length": 6716
+      },
+      {
+        "timestamp": "20111031011128",
+        "digest": "5WPLR7JWYF2XFKP22YHEPSUWDTCIFK2T",
+        "length": 6507
+      },
+      {
+        "timestamp": "20111130171340",
+        "digest": "LITUIFOLA4GKLQSCYLGGHQGLU5HUH4OE",
+        "length": 20327
+      },
+      {
+        "timestamp": "20111219064750",
+        "digest": "GF7V47LCM5UKCB2KKMBH3I6SHKKGH5X4",
+        "length": 20962
+      },
+      {
+        "timestamp": "20111231110302",
+        "digest": "J6YEB5MVE4TZL7LEZI3ODY6X6VGUSJAS",
+        "length": 20860
+      },
+      {
+        "timestamp": "20120208231905",
+        "digest": "VTGC4VBIGQ4MVGVVOICSFLGMFIPRAEWO",
+        "length": 10277
+      },
+      {
+        "timestamp": "20120326090753",
+        "digest": "RP7CIR7OEHBZJCPFT3HPLEQULDI3ZJLR",
+        "length": 11651
+      },
+      {
+        "timestamp": "20120426115541",
+        "digest": "V6P6TNNDCMAUGTPEMQCTTGW6EXBZYZ4I",
+        "length": 13400
+      },
+      {
+        "timestamp": "20120602001400",
+        "digest": "NZGHSEOY76N6I7TRAMQKIRUGY2IF4X5X",
+        "length": 14301
+      },
+      {
+        "timestamp": "20120606071734",
+        "digest": "XUPAVSA4YMLQ2YJU5WX3GTF4ELM4NYLY",
+        "length": 14514
+      },
+      {
+        "timestamp": "20120608155441",
+        "digest": "PE43MQIIONSCGCE5PVPHXZSULPYKOMIG",
+        "length": 14663
+      },
+      {
+        "timestamp": "20120610135641",
+        "digest": "PE43MQIIONSCGCE5PVPHXZSULPYKOMIG",
+        "length": 14665
+      },
+      {
+        "timestamp": "20120616125645",
+        "digest": "FIAVKDKLAGUQYGT2CKDYCL3MY5R4BJFS",
+        "length": 15046
+      },
+      {
+        "timestamp": "20120617195740",
+        "digest": "FIAVKDKLAGUQYGT2CKDYCL3MY5R4BJFS",
+        "length": 15046
+      },
+      {
+        "timestamp": "20120622085704",
+        "digest": "SWSNXS6HP2OPHEYRCNX6HJMR7IOWN63K",
+        "length": 15248
+      },
+      {
+        "timestamp": "20120623160522",
+        "digest": "SWSNXS6HP2OPHEYRCNX6HJMR7IOWN63K",
+        "length": 15254
+      },
+      {
+        "timestamp": "20120624153553",
+        "digest": "SWSNXS6HP2OPHEYRCNX6HJMR7IOWN63K",
+        "length": 15258
+      },
+      {
+        "timestamp": "20120626160308",
+        "digest": "E562V77KNMAHDJKYKRODX4Z5YENGP4BN",
+        "length": 15391
+      },
+      {
+        "timestamp": "20120628124610",
+        "digest": "E562V77KNMAHDJKYKRODX4Z5YENGP4BN",
+        "length": 15383
+      },
+      {
+        "timestamp": "20120629173745",
+        "digest": "XDNIPRWCYSGP4F26D2U27DOMZX374AUV",
+        "length": 15567
+      },
+      {
+        "timestamp": "20120706183936",
+        "digest": "24H4URIFCF3RQ2WOHEJ2TEEGI6E2PTRY",
+        "length": 15928
+      },
+      {
+        "timestamp": "20120707072111",
+        "digest": "WR5DM3YOAAPQX5FX6VJXVN72X7VSC74N",
+        "length": 16184
+      },
+      {
+        "timestamp": "20120708095148",
+        "digest": "WR5DM3YOAAPQX5FX6VJXVN72X7VSC74N",
+        "length": 16186
+      },
+      {
+        "timestamp": "20120710052744",
+        "digest": "WR5DM3YOAAPQX5FX6VJXVN72X7VSC74N",
+        "length": 16182
+      },
+      {
+        "timestamp": "20120916002220",
+        "digest": "RQ62N5GTX3Y3DQH2LJTSALAFHX2TZBX3",
+        "length": 18762
+      },
+      {
+        "timestamp": "20121001204645",
+        "digest": "I7ZUDRJEYV6BWWMY27N4FQK4YEVWTGA2",
+        "length": 19198
+      },
+      {
+        "timestamp": "20121007112114",
+        "digest": "2HWFXJ6ZUGPQMGBAZM5DFUSIAQYHINJ3",
+        "length": 19464
+      },
+      {
+        "timestamp": "20121111115409",
+        "digest": "NZOWYACC4Q7PN6UHGHZUIOPJBHSLSW7J",
+        "length": 21890
+      },
+      {
+        "timestamp": "20121214143320",
+        "digest": "MWZDZPDGBUUEWV4W2NFICEQ23WPSRTIE",
+        "length": 25595
+      },
+      {
+        "timestamp": "20130115115555",
+        "digest": "NLVZGH35WNAOU3S5IKI7AMTCUTYU3C3S",
+        "length": 28937
+      },
+      {
+        "timestamp": "20130201150929",
+        "digest": "HUOBBVM5O42TIUUCZARE6WZRHHVTBOY6",
+        "length": 29722
+      },
+      {
+        "timestamp": "20130215191851",
+        "digest": "7QM5CS2HDTBKWI4HKNQGHYOTI7K55KSK",
+        "length": 29741
+      },
+      {
+        "timestamp": "20130310071625",
+        "digest": "3B4AYFGCI245HTJQ54B3BLIGTCUE3NVZ",
+        "length": 30718
+      },
+      {
+        "timestamp": "20130321033818",
+        "digest": "QU7BYHX66ADS7XLL7OZ5MJB64M7VC7MM",
+        "length": 31249
+      },
+      {
+        "timestamp": "20130421085145",
+        "digest": "XNO5OFYHAMHHPLNKK3TYRHF5BRG4IPLT",
+        "length": 33936
+      },
+      {
+        "timestamp": "20130601033812",
+        "digest": "ZS5XZQB7JC72ZYQTQOPOQY3GMBD7AUU6",
+        "length": 35247
+      },
+      {
+        "timestamp": "20130801061157",
+        "digest": "KZC753HP7UMDB3K73WHQQCUL6Z47RMVT",
+        "length": 39726
+      },
+      {
+        "timestamp": "20130802155207",
+        "digest": "D3GNZOBDMPOWHAYEZB4RA4TNSCDWPJR5",
+        "length": 39832
+      },
+      {
+        "timestamp": "20130903052437",
+        "digest": "3TG6XNCUQH2SAJEANCAZBUTHGV36HNLM",
+        "length": 41056
+      },
+      {
+        "timestamp": "20130927082541",
+        "digest": "HJWBVWZB535ERKVZXIJ7FGSRPMZI2RQQ",
+        "length": 43200
+      },
+      {
+        "timestamp": "20131004083730",
+        "digest": "HEN3HEUZNWI5BVGHFSJCY7HHT3TXRMYX",
+        "length": 44633
+      },
+      {
+        "timestamp": "20131030041559",
+        "digest": "PQR6665Z4LPV6TKKHEZLTCU5LGSBTV4B",
+        "length": 46458
+      },
+      {
+        "timestamp": "20131104171023",
+        "digest": "LHC2MPSCUP5TKATPGQPN23L6YGEKKJNE",
+        "length": 46938
+      },
+      {
+        "timestamp": "20131206160642",
+        "digest": "HYHXRWJ42DKBKEX7UWVVBKS42AFLQSCB",
+        "length": 48526
+      },
+      {
+        "timestamp": "20140405001032",
+        "digest": "4GF6W7L7LR42M5MDSSY34Q4EXOCVPKE3",
+        "length": 57321
+      },
+      {
+        "timestamp": "20140711043904",
+        "digest": "LUM6S7KGV6SFSTQP5XQ6Y6RPZX4VHQL3",
+        "length": 61099
+      },
+      {
+        "timestamp": "20140717155543",
+        "digest": "42Z3GCLM6KNUAJLXWJRAI4KYB3BLJXFN",
+        "length": 61276
+      },
+      {
+        "timestamp": "20150104034154",
+        "digest": "6XGS4XNQT63FCDXLDYI4UH6XTLLKYZLP",
+        "length": 68870
+      },
+      {
+        "timestamp": "20150312004215",
+        "digest": "TONMYNUWEKLJUS2IQKDIIR7AIZWNSNT3",
+        "length": 70939
+      },
+      {
+        "timestamp": "20150314203047",
+        "digest": "CKMGZDQ76POS6YZV3I5EKGUQVKDDE7DB",
+        "length": 70987
+      },
+      {
+        "timestamp": "20150331202833",
+        "digest": "DPSPMRYPPY3WOOVSI24C3RY3YT2LHHSS",
+        "length": 72045
+      },
+      {
+        "timestamp": "20150416060134",
+        "digest": "H42DUZM6ZOAY3YJ47MA7UOJAMY7HZ3SJ",
+        "length": 72192
+      },
+      {
+        "timestamp": "20150517070958",
+        "digest": "3XZMQVJGFMNA6PR2XXWAB53JZK5YSYDE",
+        "length": 73248
+      },
+      {
+        "timestamp": "20150618155550",
+        "digest": "TFV5PXVIBA7KXB2KTUK7NRKV56EZKUPZ",
+        "length": 74275
+      },
+      {
+        "timestamp": "20150721104537",
+        "digest": "POQF7WU7MJHNUQT7T7BRMRHBWKFVVW53",
+        "length": 75103
+      },
+      {
+        "timestamp": "20150906000041",
+        "digest": "KGZ36ZBLDYV2IOYF6KZVDSWXN76IAYH7",
+        "length": 76736
+      },
+      {
+        "timestamp": "20150912234001",
+        "digest": "G3NL474L4RJL2EGLGG3WJCSJJAME3SKX",
+        "length": 77043
+      },
+      {
+        "timestamp": "20151019050722",
+        "digest": "YORNAOR2GRXGVSVLKBGUIEZL6TQA7PT2",
+        "length": 78612
+      },
+      {
+        "timestamp": "20151204201106",
+        "digest": "UV2JMJQHJ7J25UKZC6PRWP3VGQAXQEZC",
+        "length": 79901
+      },
+      {
+        "timestamp": "20160409084610",
+        "digest": "KBWW3BZKA6QW3QC356P6JBWHOKLTVETI",
+        "length": 80751
+      },
+      {
+        "timestamp": "20160425204759",
+        "digest": "KBWW3BZKA6QW3QC356P6JBWHOKLTVETI",
+        "length": 80899
+      },
+      {
+        "timestamp": "20160506094441",
+        "digest": "7IKJSUAGLUORW4UKF62XJM56CC6K2DVT",
+        "length": 81144
+      },
+      {
+        "timestamp": "20160520171235",
+        "digest": "KBWW3BZKA6QW3QC356P6JBWHOKLTVETI",
+        "length": 80750
+      },
+      {
+        "timestamp": "20160822083325",
+        "digest": "JTL6PJDY5QX7IOFL2EHW2BAHXOWQOJHF",
+        "length": 88551
+      },
+      {
+        "timestamp": "20160829154642",
+        "digest": "6MXMOPQGQKPA2JTX7UAJGDGAZXJPDVYG",
+        "length": 88523
+      },
+      {
+        "timestamp": "20160922124233",
+        "digest": "TOYMLPJCKPZBWZVNYAFQYZU43IYJYOGE",
+        "length": 89316
+      },
+      {
+        "timestamp": "20160923230730",
+        "digest": "2FYLT7MACB6JLO5NII46F47GCZBNR5BA",
+        "length": 89550
+      },
+      {
+        "timestamp": "20161025112946",
+        "digest": "KABP3S2PQKP3RKBILR2TX233IP7PUCID",
+        "length": 90012
+      },
+      {
+        "timestamp": "20170113082652",
+        "digest": "VDZ3K3E6JL2AFPQXS2PXFMSDNJZPTFNT",
+        "length": 92332
+      },
+      {
+        "timestamp": "20170316170140",
+        "digest": "727GJXJ2VHVZXEM5SIOJTKQOYB3PEEUN",
+        "length": 92565
+      },
+      {
+        "timestamp": "20170610174231",
+        "digest": "VDZ3K3E6JL2AFPQXS2PXFMSDNJZPTFNT",
+        "length": 92179
+      },
+      {
+        "timestamp": "20170629065216",
+        "digest": "VDZ3K3E6JL2AFPQXS2PXFMSDNJZPTFNT",
+        "length": 92329
+      },
+      {
+        "timestamp": "20170714044624",
+        "digest": "727GJXJ2VHVZXEM5SIOJTKQOYB3PEEUN",
+        "length": 92417
+      },
+      {
+        "timestamp": "20170913040326",
+        "digest": "JHXA564DN5S4C5FLI6V52FHKOWOAWBDV",
+        "length": 56107
+      },
+      {
+        "timestamp": "20171018171327",
+        "digest": "J5YVGHYOOQ7DDYBYLUNRXOFGIGJ4IAYE",
+        "length": 56106
+      },
+      {
+        "timestamp": "20180107211104",
+        "digest": "UP3IKIIW7ILXE4YH7QQC227KSUIMFRBS",
+        "length": 56965
+      },
+      {
+        "timestamp": "20180413213947",
+        "digest": "465OONWCYDJ7B373JSCHZNEQMSAPQGW3",
+        "length": 2134
+      },
+      {
+        "timestamp": "20181026194731",
+        "digest": "5X3PQQD6S4EPMCTGXX5ZTI7HDJA7YM6L",
+        "length": 3364
+      },
+      {
+        "timestamp": "20190416182919",
+        "digest": "7ESYDY5DXL43SAGFO3VQNE2CM4IRPCQO",
+        "length": 2420
+      },
+      {
+        "timestamp": "20190913004418",
+        "digest": "IC2LVZCJS22VIKJ5YQTM6VB3DIM3PQCI",
+        "length": 2044
+      },
+      {
+        "timestamp": "20201018031959",
+        "digest": "6Z3UAQWSXT67OYSCZSWX4GE6LNJGS5QI",
+        "length": 2044
+      },
+      {
+        "timestamp": "20210320052652",
+        "digest": "QGBMV2VLE4Y25H7MK3ZBO3TIXJ62D3SU",
+        "length": 1698
+      },
+      {
+        "timestamp": "20220308001417",
+        "digest": "TRBR7MQJ5ZA66Q6QMEGRH4LGELAONLZ3",
+        "length": 1549
+      },
+      {
+        "timestamp": "20220316010249",
+        "digest": "4VYITKIOD763ABAV6GIHBLEE5NGHJWZI",
+        "length": 2008
+      },
+      {
+        "timestamp": "20220516121552",
+        "digest": "V2SKCGUPJN55VKVGN5R4J4HX2VUWTLCQ",
+        "length": 2045
+      },
+      {
+        "timestamp": "20220618115753",
+        "digest": "BOPHFAONMTIOUZZPXAJT3VU6NWUCUVXR",
+        "length": 2088
+      },
+      {
+        "timestamp": "20221007030837",
+        "digest": "5TG4N5ED7OJ23QJ72BRUU5TCVDJZDAFK",
+        "length": 2202
+      },
+      {
+        "timestamp": "20230127045450",
+        "digest": "ACR5UOIXQD7YQRM66TEH23Y26XMZMXSY",
+        "length": 2067
+      },
+      {
+        "timestamp": "20230610111631",
+        "digest": "3LXIE6GYFPRPIDDCWFWATR52E4UHDCAZ",
+        "length": 2083
+      },
+      {
+        "timestamp": "20231211124217",
+        "digest": "L4B4Y6SF5IM45AUMKEOOBP3YX6S3WXDW",
+        "length": 2162
+      },
+      {
+        "timestamp": "20240623213518",
+        "digest": "44RCVDL3LEF6F347WKAM5S33GQFRYXBA",
+        "length": 2161
+      },
+      {
+        "timestamp": "20240712215103",
+        "digest": "O3MJMEGG7AIJS2PD5D2FIXSK6JBH3WWC",
+        "length": 1899
+      },
+      {
+        "timestamp": "20240926184900",
+        "digest": "W6ESOG7TGZ4XYZSA5IBPQUIV5MID7TWW",
+        "length": 1936
+      },
+      {
+        "timestamp": "20250113185410",
+        "digest": "V5OKNS7R27RUEJHB6RIB4P3PTBOEEYAY",
+        "length": 1926
+      },
+      {
+        "timestamp": "20250116184754",
+        "digest": "GMMYRNTF6ZVYVH7CLCIQ2HPWBT7X66TO",
+        "length": 2034
+      },
+      {
+        "timestamp": "20250207073758",
+        "digest": "KVDRJWJDEQ3V22TTYPT2ZI3BTYHJ7ELA",
+        "length": 1982
+      },
+      {
+        "timestamp": "20250221203050",
+        "digest": "OBIV3FRPJLHLA7RNP7KBUCA5YWLVYS75",
+        "length": 2243
+      },
+      {
+        "timestamp": "20250301030646",
+        "digest": "OBIV3FRPJLHLA7RNP7KBUCA5YWLVYS75",
+        "length": 2161
+      },
+      {
+        "timestamp": "20250321105841",
+        "digest": "FBUOIOKC7JFNW2ESLTQ4ICVLFTR23RX4",
+        "length": 2533
+      },
+      {
+        "timestamp": "20250424195244",
+        "digest": "PA2XY6B2O5R2AMMCD3LDC4FMPPVAU2JA",
+        "length": 1755
+      },
+      {
+        "timestamp": "20250604111502",
+        "digest": "LHULSCJAATLIYAKCVNU42OEAIVNPBB5H",
+        "length": 1846
+      },
+      {
+        "timestamp": "20250713050739",
+        "digest": "OXEXCCIUPDCSZUUOGLJ7GLEET5TSWAUP",
+        "length": 2232
+      },
+      {
+        "timestamp": "20260417203745",
+        "digest": "YRCZSP6PED7RPNBBFJUEQSEGG3WQL3NK",
+        "length": 1995
+      }
+    ],
+    "enforcement": [
+      {
+        "timestamp": "20100527101122",
+        "digest": "F252R4RMEVWBJBGIL4LL3RHZOVZ7PPSZ",
+        "length": 5362
+      },
+      {
+        "timestamp": "20100911015559",
+        "digest": "HTDUANE4Z7X3666MAWQN7OGV7RUG6PKN",
+        "length": 7279
+      },
+      {
+        "timestamp": "20100925115120",
+        "digest": "54TFCBUTKUDXRVIF2HXN34FCEEYIBVFM",
+        "length": 7691
+      },
+      {
+        "timestamp": "20101009105013",
+        "digest": "QFY2QVQ3UGROKNBCF7KVIIQ36QV5SG5Y",
+        "length": 7754
+      },
+      {
+        "timestamp": "20101027165801",
+        "digest": "QFY2QVQ3UGROKNBCF7KVIIQ36QV5SG5Y",
+        "length": 7752
+      },
+      {
+        "timestamp": "20101121055520",
+        "digest": "J2LTIJI3PVRISXET4M2MKT6XQG74J5A6",
+        "length": 7863
+      },
+      {
+        "timestamp": "20101215005044",
+        "digest": "HGEZ7W3JLJKPAA62JEY7SIB6XSRGYKCD",
+        "length": 8023
+      },
+      {
+        "timestamp": "20110501170523",
+        "digest": "U2CZIV3VKEBL7JAQGAXNCWGNCVKW2H7S",
+        "length": 8312
+      },
+      {
+        "timestamp": "20110913174615",
+        "digest": "F24SERZZ6B6CJYAZS2P6QUSX2IRLL5J5",
+        "length": 8188
+      },
+      {
+        "timestamp": "20110925064129",
+        "digest": "2DOOOAAB5KKWLWL4GJSLH2NEGUZPGF6X",
+        "length": 8171
+      },
+      {
+        "timestamp": "20111013030454",
+        "digest": "YG3ICYYPT3OJXUDQCMY3QZUVQ3JTLDUD",
+        "length": 8411
+      },
+      {
+        "timestamp": "20111015095838",
+        "digest": "YG3ICYYPT3OJXUDQCMY3QZUVQ3JTLDUD",
+        "length": 8415
+      },
+      {
+        "timestamp": "20111026033531",
+        "digest": "ZVXCWVWRKIZHXS7SR4Q3N4KGDRKZJVFU",
+        "length": 8247
+      },
+      {
+        "timestamp": "20111126090329",
+        "digest": "R6K2X4LZJUTCZ3XFAGJ4HYZRWIK36CXO",
+        "length": 26406
+      },
+      {
+        "timestamp": "20111219072957",
+        "digest": "TKXODYASXSFMSVMIIIGNOBFOGLYRZVJA",
+        "length": 27540
+      },
+      {
+        "timestamp": "20111227061915",
+        "digest": "HH5WMZYGXSWLJJLD767KL7BZL5PDRTQD",
+        "length": 27507
+      },
+      {
+        "timestamp": "20120129090234",
+        "digest": "6TNVCH72D623TEEUKM2BOPIEJX4P2BW4",
+        "length": 18528
+      },
+      {
+        "timestamp": "20120504140925",
+        "digest": "V5XRBL5TDTCJDRPNMI6MMJBE3HZGSECD",
+        "length": 24915
+      },
+      {
+        "timestamp": "20120602002808",
+        "digest": "UL62SA26OGDPNMNY5Y2RPWWMBIBNEXLG",
+        "length": 26597
+      },
+      {
+        "timestamp": "20120603202539",
+        "digest": "UL62SA26OGDPNMNY5Y2RPWWMBIBNEXLG",
+        "length": 26599
+      },
+      {
+        "timestamp": "20120606073141",
+        "digest": "3FEG6IM6PRPG7W37HTP7MAKN7C7AQIFN",
+        "length": 26790
+      },
+      {
+        "timestamp": "20120608160841",
+        "digest": "6NZGZFDPF7WEPSXV53CTXU63W2Q5FSE3",
+        "length": 27209
+      },
+      {
+        "timestamp": "20120610141117",
+        "digest": "6NZGZFDPF7WEPSXV53CTXU63W2Q5FSE3",
+        "length": 27221
+      },
+      {
+        "timestamp": "20120616131342",
+        "digest": "TSHCJ2BZAB4LW75MVBKXFDBXTGVQ6AYW",
+        "length": 27379
+      },
+      {
+        "timestamp": "20120617201200",
+        "digest": "TSHCJ2BZAB4LW75MVBKXFDBXTGVQ6AYW",
+        "length": 27379
+      },
+      {
+        "timestamp": "20120622091334",
+        "digest": "IL4RHODPSRKWY25TMERXSNAACQGEOPZP",
+        "length": 27560
+      },
+      {
+        "timestamp": "20120623161909",
+        "digest": "IL4RHODPSRKWY25TMERXSNAACQGEOPZP",
+        "length": 27561
+      },
+      {
+        "timestamp": "20120624155554",
+        "digest": "IL4RHODPSRKWY25TMERXSNAACQGEOPZP",
+        "length": 27562
+      },
+      {
+        "timestamp": "20120626161702",
+        "digest": "IL4RHODPSRKWY25TMERXSNAACQGEOPZP",
+        "length": 27566
+      },
+      {
+        "timestamp": "20120628125937",
+        "digest": "SDNFPEIJSE3QYCWTVR3QBXTSPHJXEIVD",
+        "length": 27823
+      },
+      {
+        "timestamp": "20120629175139",
+        "digest": "TG3MLYXTR25BDNNCWCTLFUCUMIQVV3OP",
+        "length": 27946
+      },
+      {
+        "timestamp": "20120706185322",
+        "digest": "TG3MLYXTR25BDNNCWCTLFUCUMIQVV3OP",
+        "length": 27948
+      },
+      {
+        "timestamp": "20120707073444",
+        "digest": "TG3MLYXTR25BDNNCWCTLFUCUMIQVV3OP",
+        "length": 27950
+      },
+      {
+        "timestamp": "20120708100553",
+        "digest": "TG3MLYXTR25BDNNCWCTLFUCUMIQVV3OP",
+        "length": 27950
+      },
+      {
+        "timestamp": "20120710054153",
+        "digest": "QO2WOWMUNC6ZQNM44FTKHJQDEEJXZE5H",
+        "length": 28022
+      },
+      {
+        "timestamp": "20120916002237",
+        "digest": "YMB2PDQ5F5S4FPY25XS3US5UPOXKWIY4",
+        "length": 31346
+      },
+      {
+        "timestamp": "20121007112056",
+        "digest": "UPUINEVGJQFBQXFVHI5ML5CQ73YHMJIB",
+        "length": 33798
+      },
+      {
+        "timestamp": "20121111051355",
+        "digest": "UUQ6HDWSNF5PPKEMJVWCMFSWBO3H6FL2",
+        "length": 34952
+      },
+      {
+        "timestamp": "20121213124734",
+        "digest": "SS4XKYQNOKXAGQZG3UND6UKHY2UVPZC5",
+        "length": 37327
+      },
+      {
+        "timestamp": "20130201152432",
+        "digest": "WMTESV5GTZEW4HFMM4XH5ZLHR36BEOOA",
+        "length": 38811
+      },
+      {
+        "timestamp": "20130210164435",
+        "digest": "F2T6IHFB554FBCWGJGRE3ZL2HYJCNRD7",
+        "length": 39480
+      },
+      {
+        "timestamp": "20130217184153",
+        "digest": "XXRLKMZOCREMEGQ72H4RU27QHCGASOPF",
+        "length": 39959
+      },
+      {
+        "timestamp": "20130310071650",
+        "digest": "SQA4ERMP665S7BJCYEA22FO5H7LOMBME",
+        "length": 40854
+      },
+      {
+        "timestamp": "20130313152232",
+        "digest": "7O7EODW4HTFJOMVWZAGSXTLWIMHR6TSV",
+        "length": 40801
+      },
+      {
+        "timestamp": "20130927073729",
+        "digest": "KPBVUHOMW6CEGHF4ZLL2RUI6KQFEV3VZ",
+        "length": 51569
+      },
+      {
+        "timestamp": "20140405001744",
+        "digest": "N25OBHUWZG35ZGUSDVVEHPRQJNWLDUDZ",
+        "length": 60651
+      },
+      {
+        "timestamp": "20140711045829",
+        "digest": "3ZOPVTQFH2FSDPWNMX56GBFYD6DG43KH",
+        "length": 63193
+      },
+      {
+        "timestamp": "20150322110315",
+        "digest": "Y4Q4BLNKGMGOBVBKXJJSDZO3EIC7YB5F",
+        "length": 68634
+      },
+      {
+        "timestamp": "20150331205508",
+        "digest": "PVAJ4K5TJDIMHJIMNSKPTHXNYCIPGLJI",
+        "length": 68469
+      },
+      {
+        "timestamp": "20150423064958",
+        "digest": "5B4TT5BCHMFTFDW7TPJHGBN2ZG5ZG7LV",
+        "length": 68328
+      },
+      {
+        "timestamp": "20150524032806",
+        "digest": "QU77SXOHBWUCFM3HERFIIOPZ3JOENIKR",
+        "length": 68385
+      },
+      {
+        "timestamp": "20150623181359",
+        "digest": "IGCOTGLSGRDIJQFHTH25UGX2VJC6HVZX",
+        "length": 68399
+      },
+      {
+        "timestamp": "20150729171220",
+        "digest": "VEBJOEMU2BXJUGHFZHFJHPSWNYLTPIAI",
+        "length": 68313
+      },
+      {
+        "timestamp": "20150905235330",
+        "digest": "67BGRKLPXO2YGGKDSG3AQKM4C2IGNWUI",
+        "length": 68458
+      },
+      {
+        "timestamp": "20150921055153",
+        "digest": "T2U2SS3WTSW5R63UB75YQTQF5PERSSEZ",
+        "length": 68383
+      },
+      {
+        "timestamp": "20151204203508",
+        "digest": "657GMOYGPNOTYJSLDNQMYGURDPIMRKFR",
+        "length": 68952
+      },
+      {
+        "timestamp": "20160413144754",
+        "digest": "OVZDYH7USMIRMBVB45XFXFT7U7WNVHTZ",
+        "length": 68803
+      },
+      {
+        "timestamp": "20160425213636",
+        "digest": "OVZDYH7USMIRMBVB45XFXFT7U7WNVHTZ",
+        "length": 68966
+      },
+      {
+        "timestamp": "20160506094501",
+        "digest": "OVZDYH7USMIRMBVB45XFXFT7U7WNVHTZ",
+        "length": 68983
+      },
+      {
+        "timestamp": "20160515211603",
+        "digest": "OVZDYH7USMIRMBVB45XFXFT7U7WNVHTZ",
+        "length": 68808
+      },
+      {
+        "timestamp": "20160520205744",
+        "digest": "OVZDYH7USMIRMBVB45XFXFT7U7WNVHTZ",
+        "length": 68965
+      },
+      {
+        "timestamp": "20160821141223",
+        "digest": "3HFD3USJTFMUJ4N3WDSHO5MLUKG24HIL",
+        "length": 69389
+      },
+      {
+        "timestamp": "20160829170923",
+        "digest": "YLXT5YFUV5DZEADSK4ARLUXLBWPUT76G",
+        "length": 69548
+      },
+      {
+        "timestamp": "20160921222718",
+        "digest": "TW5ECJKHV3JE6EWK2KZYXF6YOIQFZFEH",
+        "length": 69665
+      },
+      {
+        "timestamp": "20161023194952",
+        "digest": "IKSZWFUR4TWZY3KDE65L6XOWUJHGT7TW",
+        "length": 69731
+      },
+      {
+        "timestamp": "20170316171420",
+        "digest": "LLLR4PEPYKPPICPWHZP566E2HWMTPUNG",
+        "length": 69861
+      },
+      {
+        "timestamp": "20170630022234",
+        "digest": "LLLR4PEPYKPPICPWHZP566E2HWMTPUNG",
+        "length": 69864
+      },
+      {
+        "timestamp": "20170714044826",
+        "digest": "LLLR4PEPYKPPICPWHZP566E2HWMTPUNG",
+        "length": 69717
+      },
+      {
+        "timestamp": "20171018172052",
+        "digest": "KPVCCVU62DTNA5EY6BR7EWIOMFARKJX3",
+        "length": 70798
+      },
+      {
+        "timestamp": "20180413214035",
+        "digest": "XNIQ5HW5DX3KZWDJDJ7NGBJOE7RWFJTM",
+        "length": 3241
+      },
+      {
+        "timestamp": "20181026194810",
+        "digest": "EENZETYL7QDCVXWIZIQX2PJLZ6K356BP",
+        "length": 3676
+      },
+      {
+        "timestamp": "20190416182945",
+        "digest": "XAWGA4UI7SOISOWHQCE3NLQKSYOVDKYS",
+        "length": 3700
+      },
+      {
+        "timestamp": "20190719212404",
+        "digest": "6PDD6BJYKOZNJRC3ZELLTFMRAFUW4AJP",
+        "length": 2392
+      },
+      {
+        "timestamp": "20190913004441",
+        "digest": "D7CJGJ24SGSECCSZSTZFVQBSRTT6MPN4",
+        "length": 2132
+      },
+      {
+        "timestamp": "20190922124040",
+        "digest": "YJWLT2XJJZ5P7U4RLP3ILJQ4A5PIETZK",
+        "length": 2186
+      },
+      {
+        "timestamp": "20191120175840",
+        "digest": "VTX77QAVSPSYGUEYQMPCWLXYKMIR2E6K",
+        "length": 2206
+      },
+      {
+        "timestamp": "20200804002834",
+        "digest": "4GAXJV4DTXUN4CTKLRKPDLIMSI4FQ3XV",
+        "length": 2241
+      },
+      {
+        "timestamp": "20201017152120",
+        "digest": "UP24URDRVSWZ7246GNUA73FWNPTT6HLX",
+        "length": 1900
+      },
+      {
+        "timestamp": "20201031195207",
+        "digest": "BWRWPGWDSEQD5EJMM7KQNCRL7CGOBHUD",
+        "length": 2179
+      },
+      {
+        "timestamp": "20210122035723",
+        "digest": "LI4CNRGCHLN4H34KCI72A626U3PLFHUB",
+        "length": 2173
+      },
+      {
+        "timestamp": "20210320115137",
+        "digest": "I6CIOAPJTCRPHHV2VALQEQ2KJBZHY7O4",
+        "length": 1921
+      },
+      {
+        "timestamp": "20210410225448",
+        "digest": "S7FXVKI66JX2ZGQ3EPZ5BZCG2SEKPQ2T",
+        "length": 2086
+      },
+      {
+        "timestamp": "20210614221116",
+        "digest": "GSSFP6364YERZ423NH5NM4MDRVHUQPP6",
+        "length": 2156
+      },
+      {
+        "timestamp": "20210927044820",
+        "digest": "DYGXDEAWUAJAS2HPOPYRICR7QTHHIY4B",
+        "length": 2120
+      },
+      {
+        "timestamp": "20220128171722",
+        "digest": "VHWIMVUXQKB65EM7M22KOEPKG7DILDE4",
+        "length": 2236
+      },
+      {
+        "timestamp": "20220308001410",
+        "digest": "IC2BHMRQQHTV3KM5CYBEHLR6YO4UHKMT",
+        "length": 1594
+      },
+      {
+        "timestamp": "20220316010250",
+        "digest": "OY5QGILFW44ISEQ2DHIRAOO5BJCSPWFE",
+        "length": 2067
+      },
+      {
+        "timestamp": "20220625174753",
+        "digest": "PMLZPG7MXACRBDRKP6RB37L6MPM4FIS2",
+        "length": 2120
+      },
+      {
+        "timestamp": "20220927023139",
+        "digest": "RK2PSZ5D7VDAH4KCX7L6THIISL4OU5KN",
+        "length": 2143
+      },
+      {
+        "timestamp": "20230201065559",
+        "digest": "W5RZT5H36ODKDXTKTIEQRD3HFHEYU7YJ",
+        "length": 2247
+      },
+      {
+        "timestamp": "20231208165927",
+        "digest": "CVMM5K5OWC7MHNFZGBKHNPX3OXWHAVXG",
+        "length": 2382
+      },
+      {
+        "timestamp": "20240524080322",
+        "digest": "24PJDHO342ML67OU432XEDBJF6TAGQZB",
+        "length": 2299
+      },
+      {
+        "timestamp": "20240712215105",
+        "digest": "65CHAFSTCPNCQ3ZAL4JPIFJP65KCCOTY",
+        "length": 1881
+      },
+      {
+        "timestamp": "20240926184901",
+        "digest": "HOXYHZYRUKHXAZT52TFT42JUV7KMUBXT",
+        "length": 1923
+      },
+      {
+        "timestamp": "20241210000629",
+        "digest": "NHP76HVKFRNTPRMVXXARCAUSL2YUYPM4",
+        "length": 2238
+      },
+      {
+        "timestamp": "20250113185407",
+        "digest": "4XGBSFDT3VJTXBKBKT2GMRKO44ZL7OYB",
+        "length": 1967
+      },
+      {
+        "timestamp": "20250116184755",
+        "digest": "E4Q4RN3VIIZAUTPOZK45U2QMOHW4YCHK",
+        "length": 2024
+      },
+      {
+        "timestamp": "20250207073758",
+        "digest": "TKV5YJOL3E4JVBAODAWIR5BMWHGBNNJZ",
+        "length": 2045
+      },
+      {
+        "timestamp": "20250221203050",
+        "digest": "J6CTKMFBQGTYKAFX5HLWJZGLMY6BNSQH",
+        "length": 1920
+      },
+      {
+        "timestamp": "20250313172042",
+        "digest": "DQY66KBVTJAJIGGBHURF4BE7CROS6ILI",
+        "length": 1870
+      },
+      {
+        "timestamp": "20250419020044",
+        "digest": "JLLVEO4MVUYPYPBWJXVOOB7NKJBNZ7OG",
+        "length": 1732
+      },
+      {
+        "timestamp": "20250516113938",
+        "digest": "XQJTB4VGRZ6YG73AYN42HDH5S7SPVPIQ",
+        "length": 2277
+      },
+      {
+        "timestamp": "20250604111506",
+        "digest": "JVFHTLYC4TCQBXB36CGT72JBQ4TK775F",
+        "length": 1858
+      },
+      {
+        "timestamp": "20250905222859",
+        "digest": "QOTYDUEPK25E4UNMDPCBJJ45H5PBTMQP",
+        "length": 2340
+      },
+      {
+        "timestamp": "20260417203740",
+        "digest": "Z44P3D4EFN77I56C2PYYCZJXWRPONCEZ",
+        "length": 2070
+      },
+      {
+        "timestamp": "20260714190948",
+        "digest": "5WKT4KI5WN7C77CBQYDIPZTB33GYZY25",
+        "length": 2499
+      }
+    ]
+  },
+  "counts": {
+    "general_capture_days": 113,
+    "enforcement_capture_days": 106,
+    "union_capture_days": 160,
+    "first_capture": "20100423081129",
+    "last_capture": "20260714190948"
+  },
+  "sample_audits": [
+    {
+      "name": "general",
+      "timestamp": "20240712215103",
+      "url": "https://web.archive.org/web/20240712215103id_/https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+      "file": "sample_general_20240712215103.xml",
+      "sha256": "a22482af49cccbf766b100b5f55da3a8a1b885123cacd04e6be03f56a83a7395",
+      "items": 10,
+      "pubdate_with_explicit_offset": 10,
+      "pubdate_without_explicit_offset": 0,
+      "item_fields": [
+        "title",
+        "link",
+        "description",
+        "pubDate",
+        "dc:creator",
+        "guid"
+      ]
+    },
+    {
+      "name": "enforcement",
+      "timestamp": "20240712215105",
+      "url": "https://web.archive.org/web/20240712215105id_/https://www.cftc.gov/RSS/RSSENF/rssenf.xml",
+      "file": "sample_enforcement_20240712215105.xml",
+      "sha256": "26e15f8d0cef79a9242bbb091af8627880fe77d6e2ef8f2d989cb8a8ca470452",
+      "items": 10,
+      "pubdate_with_explicit_offset": 10,
+      "pubdate_without_explicit_offset": 0,
+      "item_fields": [
+        "title",
+        "link",
+        "description",
+        "pubDate",
+        "dc:creator",
+        "guid"
+      ]
+    }
+  ],
+  "hard_gate_screen": {
+    "independent_archive": "PASS at source level: CDX capture timestamp, digest, and length are pinned.",
+    "text_usage_rights": "CONDITIONAL PASS in CFTC-authored government-text scope.",
+    "explicit_offset_per_record": "CONDITIONAL: 20/20 sampled items pass; full corpus must fail-fast on any item without explicit offset.",
+    "no_market_outcome_fields": "PASS for sampled RSS item schema; full corpus audit still required."
+  },
+  "decision": "SOURCE_SCREEN_PASS_FULL_OUTCOME_BLIND_CORPUS_AUDIT_REQUIRED"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Staff Seek Public Comment Regarding Perpetual Contracts in Derivatives Markets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9069-25</link>
+  <description/>
+  <pubDate>Mon, 21 Apr 2025 21:03:11 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9069-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Seek Public Comment on 24/7 Trading</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9068-25</link>
+  <description/>
+  <pubDate>Mon, 21 Apr 2025 21:02:30 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9068-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Advisory on Referrals to the Division of Enforcement  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9067-25</link>
+  <description/>
+  <pubDate>Thu, 17 Apr 2025 20:11:42 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9067-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Regarding the Merger of UBS Group and Credit Suisse Group</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9066-25</link>
+  <description/>
+  <pubDate>Tue, 15 Apr 2025 20:03:58 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9066-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues Interpretation Regarding U.S. Treasury Exchange-Traded Funds as Eligible Margin Collateral for Uncleared Swaps </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9065-25</link>
+  <description/>
+  <pubDate>Mon, 14 Apr 2025 20:34:01 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9065-25</guid>
+    </item>
+<item>
+  <title>CFTC Releases Staff Letter Relating to Certain Foreign Exchange Transactions </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9064-25</link>
+  <description/>
+  <pubDate>Wed, 09 Apr 2025 21:17:23 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9064-25</guid>
+    </item>
+<item>
+  <title>Acting Chairman Pham Lauds DOJ Policy Ending Regulation by Prosecution of Digital Assets Industry and Directs CFTC Staff to Comply with Executive Orders</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9063-25</link>
+  <description/>
+  <pubDate>Tue, 08 Apr 2025 21:11:57 +0000</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9063-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Regarding Pre-Trade Mid-Market Mark</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9062-25</link>
+  <description/>
+  <pubDate>Fri, 04 Apr 2025 18:40:56 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9062-25</guid>
+    </item>
+<item>
+  <title>Rahul Varma Named Acting Director of CFTC Division of Market Oversight</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9061-25</link>
+  <description/>
+  <pubDate>Wed, 02 Apr 2025 21:33:03 +0000</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9061-25</guid>
+    </item>
+<item>
+  <title>CFTC Staff Withdraws Advisory on Review of Risks Related to Clearing Digital Assets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9060-25</link>
+  <description/>
+  <pubDate>Fri, 28 Mar 2025 18:07:36 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9060-25</guid>
+    </item>
+
+  </channel>
+</rss>

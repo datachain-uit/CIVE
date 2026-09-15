@@ -1,0 +1,186 @@
+{
+  "schema_version": "llm-only-event-conditioned-predeclaration-v7",
+  "experiment_id": "llm-only-event-conditioned-v7.0.1-development",
+  "predeclared_at": "2026-09-04T15:39:44.258833+00:00",
+  "scope": "Post-v3-v6 development follow-up; LLM-only inputs; not sealed confirmation.",
+  "prior_outcomes_consulted_before_design": true,
+  "supersedes": "llm-only-event-conditioned-v7-development",
+  "operational_correction": "Feature-name guard changed from substring matching to exact token matching after v7.0 aborted before model fit, prediction, metrics, or output artifacts.",
+  "known_prior_results": [
+    "v3.1.1 return FAIL",
+    "v3.2 risk FAIL",
+    "v4 transfer FAIL",
+    "v5 full-text FAIL",
+    "v6 contrastive FAIL"
+  ],
+  "technical_or_market_features_allowed": false,
+  "protocol": {
+    "path": "paper/working/protocols/LLM_Only_Event_Conditioned_Protocol_v7.md",
+    "sha256": "e99c782f289b78771bb5ec07c4eb312ff16de001bbccd33f6fac0d5a9c271777"
+  },
+  "code": {
+    "evaluator": {
+      "path": "tools/llm/evaluate_llm_only_event_conditioned_v7.py",
+      "sha256": "b8ddb86f6965b4376b6bff1e6090eeb7819389b6fdc75b2fe7c1ee8fcd98c389"
+    },
+    "tests": {
+      "path": "tools/llm/test_evaluate_llm_only_event_conditioned_v7.py",
+      "sha256": "a06f6b78345542bafc67b375de1e4bc2acf5a6759b755fa87677b6fa87df9d07"
+    }
+  },
+  "tests": {
+    "status": "5 tests passed before outcome evaluation"
+  },
+  "sources": {
+    "extraction_gate": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_full_gate.json",
+      "sha256": "0905906c04aa26469f3cce2ab3f16851c91c17ccc0b2a98cde6af0e653204049"
+    },
+    "extraction_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "target_panel": {
+      "path": "paper/input/results/llm/v3/llm_event_risk_target_panel_v3_development.json",
+      "sha256": "fb56005b63964da995d2af974f9568d4c559429d1594723e9d9a9e0e5a7fb0a7"
+    }
+  },
+  "data_gate": {
+    "required_dates": 1079,
+    "required_extraction_records": 39393,
+    "required_oos_records": 699
+  },
+  "target": {
+    "field": "h24_return",
+    "asset": "BTCUSDT",
+    "execution_delay_hours": 4,
+    "role": "single primary target"
+  },
+  "arms": {
+    "prior": "training-fold target mean; diagnostic only",
+    "sentiment": "generic LLM sentiment; direct comparator",
+    "event": "LLM event-conditioned representation; single treatment"
+  },
+  "feature_contract": {
+    "btc_relevance": [
+      "direct",
+      "systemic",
+      "indirect",
+      "none"
+    ],
+    "event_types": [
+      "macro_liquidity",
+      "regulation",
+      "etf_institutional_flow",
+      "exchange_security",
+      "liquidation_leverage",
+      "network_protocol",
+      "fraud_legal",
+      "adoption_business",
+      "market_commentary",
+      "other"
+    ],
+    "directions": [
+      "positive",
+      "negative",
+      "mixed",
+      "unclear"
+    ],
+    "expected_horizons": [
+      "4h",
+      "12h",
+      "24h",
+      "72h",
+      "unknown"
+    ],
+    "relevance_weights": {
+      "direct": 1.0,
+      "systemic": 0.75,
+      "indirect": 0.25,
+      "none": 0.0
+    },
+    "prohibited": [
+      "OHLCV",
+      "lagged returns",
+      "volatility",
+      "volume",
+      "funding",
+      "breadth",
+      "dispersion",
+      "regime",
+      "technical indicators",
+      "deterministic text metadata"
+    ]
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-fold mean/std only",
+    "hyperparameter_tuning": false
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-09-11",
+      "valid_start": "2023-09-15",
+      "valid_end": "2024-01-31",
+      "train_records": 365,
+      "valid_records": 139
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-01-31",
+      "valid_start": "2024-02-04",
+      "valid_end": "2024-06-21",
+      "train_records": 507,
+      "valid_records": 139
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-21",
+      "valid_start": "2024-06-25",
+      "valid_end": "2024-11-10",
+      "train_records": 649,
+      "valid_records": 139
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-11-10",
+      "valid_start": "2024-11-14",
+      "valid_end": "2025-04-01",
+      "train_records": 791,
+      "valid_records": 139
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-01",
+      "valid_start": "2025-04-05",
+      "valid_end": "2025-08-27",
+      "train_records": 933,
+      "valid_records": 143
+    }
+  ],
+  "bootstrap": {
+    "method": "paired moving-block within fold",
+    "iterations": 5000,
+    "block_length_days": 7,
+    "seed": 20260907,
+    "confidence_level": 0.95
+  },
+  "gate": {
+    "required_oos_records": 699,
+    "minimum_fold_wins": 3,
+    "all_required_checks": [
+      "paired MSE(sentiment)-MSE(event) 95% CI lower bound > 0",
+      "event prediction Pearson 95% CI lower bound > 0",
+      "event MSE wins at least 3 of 5 folds",
+      "699 OOS predictions and nonconstant event predictions"
+    ]
+  },
+  "on_fail": "Freeze negative development result and stop before threshold, action mapping, backtest, or sealed holdout.",
+  "on_pass": "Authorize only a separate LLM-only development backtest predeclaration."
+}

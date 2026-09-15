@@ -1,0 +1,10 @@
+{
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/2022-press.htm",
+  "http_status": 200,
+  "content_range": null,
+  "partial_sample": false,
+  "bytes": 191510,
+  "sha256": "f5586858309bb26c2a999aab592694e597657bdb1df9bf9ae711f0fd4d079f0c",
+  "path": "paper\\input\\references\\source_artifacts\\open_fed_policy_v11\\2022-press.html",
+  "fetched_at": "2026-09-05T06:15:45.143101+00:00"
+}

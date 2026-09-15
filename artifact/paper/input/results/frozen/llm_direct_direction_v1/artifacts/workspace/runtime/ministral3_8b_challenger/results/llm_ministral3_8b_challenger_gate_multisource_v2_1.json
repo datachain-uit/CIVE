@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-21T06:48:56.712043+00:00",
+  "experiment_id": "llm-ministral3-8b-multisource-causal-memory-v2.1-development",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 6022236616,
+    "license": "Apache-2.0"
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "information_sets": {
+      "observed": 48,
+      "required": 48,
+      "passed": true
+    },
+    "schema_success_run1": {
+      "observed": 48,
+      "required": 48,
+      "passed": true
+    },
+    "schema_success_run2": {
+      "observed": 48,
+      "required": 48,
+      "passed": true
+    },
+    "exact_score_agreement": {
+      "observed": 48,
+      "required_min": 46,
+      "passed": true
+    },
+    "long_flat_action_agreements": {
+      "observed": 48,
+      "required_min": 47,
+      "passed": true
+    },
+    "mean_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.01,
+      "passed": true
+    },
+    "max_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.4,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "status": "stage1-pass-full-calibration-authorized",
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_multisource_v2_1_development.json",
+    "config_sha256": "d9d7243a74dd77148a8c63be53d4a60513841d498fb6752b137089e739f19878",
+    "audit": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_determinism_multisource_v2_1.json",
+    "audit_sha256": "a3007faaf50385871ace582b9f9d72f50519eabb61c96ddb75f1f641217ad284",
+    "left": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_multisource_v2_1.json",
+    "left_sha256": "9e16100a370eb3021ebdbcd70bdf312aea33657c2554b85df2594a880f098021",
+    "right": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run2_multisource_v2_1.json",
+    "right_sha256": "d9a2d3cb5854cee286545171ad2cdef251e861a508b4b0ce50962c40cb3666dc"
+  }
+}

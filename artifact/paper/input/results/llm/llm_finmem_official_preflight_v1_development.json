@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-18T03:07:52.189449+00:00",
+  "experiment_id": "llm-finmem-official-preflight-v1-development",
+  "stage": "stage0-feasibility",
+  "paper": {
+    "id": "H02",
+    "title": "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+    "doi": "10.1109/TBDATA.2025.3593370",
+    "role": "memory-agent transfer/reproduction preflight; not a crypto execution replication"
+  },
+  "source": {
+    "repo_url": "https://github.com/pipiku915/finmem-llm-stocktrading",
+    "local_path": "D:\\UIT\\KLTN\\runtime\\finmem-llm-stocktrading",
+    "git_head": "be814aa47970de9bf2fdd6a1d5a60ae5cf361b46",
+    "git_head_check": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "be814aa47970de9bf2fdd6a1d5a60ae5cf361b46\n",
+      "stderr": ""
+    }
+  },
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\finmem-llm-stocktrading\\config\\tsla_gpt_config.toml",
+    "config_exists": true,
+    "model_input_count": 0,
+    "model_inputs": [],
+    "fake_sample_zip": "D:\\UIT\\KLTN\\runtime\\finmem-llm-stocktrading\\data-pipeline\\Fake-Sample-Data.zip",
+    "fake_sample_sha256": "8f54a04d31b1aeb169babacbdadd952fcccbb4257c0020524144c1b28fd94f6d"
+  },
+  "credentials": {
+    "OPENAI_API_KEY": "missing",
+    "HF_TOKEN": "missing",
+    "repo_env_file": {
+      "exists": true,
+      "sha256": "56f6e2b9567d2c5f089f6576fbc2381d7c29ff858790144fbb57efd98cc5cba2",
+      "contains_openai_placeholder": true,
+      "contains_hf_placeholder": true
+    }
+  },
+  "dependency_probe": {
+    "python": "D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Scripts\\python.exe",
+    "run_py_help_attempt": {
+      "command": [
+        "D:\\projects\\auto-trading\\.venv-fingpt-chatglm2\\Scripts\\python.exe",
+        "D:\\UIT\\KLTN\\runtime\\finmem-llm-stocktrading\\run.py",
+        "--help"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\UIT\\KLTN\\runtime\\finmem-llm-stocktrading\\run.py\", line 2, in <module>\n    import toml\nModuleNotFoundError: No module named 'toml'\n"
+    }
+  },
+  "blockers": [
+    "no FinMem model input .pkl found under data/03_model_input",
+    "OPENAI_API_KEY is not present in the process environment",
+    "repo .env contains the placeholder OpenAI key, not a usable credential"
+  ],
+  "warnings": [
+    "selected Python environment cannot import/run FinMem dependencies yet",
+    "toy Fake-Sample-Data.zip exists, but it is not a thesis-valid reproduction dataset"
+  ],
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "passed": false,
+  "status": "stage0-infeasible-stop-before-finmem-run"
+}

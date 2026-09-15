@@ -1,0 +1,12 @@
+{
+  "schema_version": "llm-only-event-conditioned-protocol-deviation-v7",
+  "experiment_id": "llm-only-event-conditioned-v7-development",
+  "status": "aborted-before-model-fit-or-prediction",
+  "failed_predeclaration_sha256": "f14bb2f78ea66543d28a3af5f4e560e504309cb848028b439b331ed7dda76193",
+  "failure": "Feature-name substring guard matched the prohibited token 'low' inside the valid LLM event label 'etf_institutional_flow'.",
+  "outcome_metrics_generated": false,
+  "prediction_panel_generated": false,
+  "gate_artifact_generated": false,
+  "authorized_correction": "Use exact feature-name token matching and add an ETF institutional flow regression test. Preserve every scientific design field.",
+  "scientific_design_changed": false
+}

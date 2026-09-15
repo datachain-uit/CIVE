@@ -1,0 +1,56 @@
+{
+  "schema_version": "tech-llm-text-state-stage1-gate-v3",
+  "evaluated_at": "2026-09-09T19:51:51.125641+00:00",
+  "experiment_id": "hyb-003-text-state-ministral3-8b-v3-stage1-reliability",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "observed": {
+    "records_left": 96,
+    "records_right": 96,
+    "success_left": 96,
+    "success_right": 96,
+    "paired_success": 96,
+    "categorical_exact_agreement": {
+      "affected_asset_scope": 96,
+      "held_long_pressure": 96,
+      "mechanism": 96,
+      "event_stage": 96
+    },
+    "confidence_mean_absolute_difference": 0.0,
+    "confidence_max_absolute_difference": 0.0,
+    "horizon_mean_l1_difference": 0.0,
+    "horizon_max_l1_difference": 0.0,
+    "evidence_fallbacks_left": 0,
+    "evidence_fallbacks_right": 0
+  },
+  "checks": {
+    "record_count": true,
+    "schema_success": true,
+    "context_order": true,
+    "asset_scope_agreement": true,
+    "pressure_agreement": true,
+    "mechanism_agreement": true,
+    "stage_agreement": true,
+    "confidence_mean_difference": true,
+    "confidence_max_difference": true,
+    "horizon_mean_l1": true,
+    "horizon_max_l1": true,
+    "evidence_fallback_limit": true
+  },
+  "passed": true,
+  "status": "stage1-pass-full-text-state-extraction-authorized",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\tech_llm_text_state_extractor_v3_stage1_predeclared.json",
+      "sha256": "673c3d0b4f03dec6128691e6bac2ee020310c75b7daba220ec5feba3126881f8"
+    },
+    "left": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\tech_llm_text_state_v3_stage1_run1.json",
+      "sha256": "381c1e46bf4ff31d5025b829bf8b5634316a9a7b23eedcb2745214ff119e6b20"
+    },
+    "right": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\tech_llm_text_state_v3_stage1_run2.json",
+      "sha256": "44d64e292077dcbc3c8b5cfec79a2a0ceff3c98eb7c5521bf84c2398d71f2548"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "open-fed-policy-evaluation-predeclaration-v11",
+  "predeclared_at": "2026-09-05T07:54:43.717356+00:00",
+  "status": "FROZEN_AFTER_COVERAGE_ONLY_BEFORE_METRICS",
+  "development_only": true,
+  "strict_point_in_time": false,
+  "sources": {
+    "panel": {
+      "path": "paper\\input\\results\\llm\\v11\\open_fed_policy_panel_v11.json",
+      "sha256": "3749518cbdb4e183f3b9cf1b334fad2c4e9ecae562369b7788b0fa11448ebf72"
+    },
+    "panel_audit": {
+      "path": "paper/input/results/llm/v11/open_fed_policy_panel_v11_audit.json",
+      "sha256": "31198f29f75af682bf025a22d524b725264817c9791bb0c2b285ec02475266da"
+    }
+  },
+  "code": {
+    "evaluator": {
+      "path": "tools/llm/evaluate_open_fed_policy_v11.py",
+      "sha256": "ae2d0c973edc745ad0e5068ef03196d5c02dbcbc8881ee2b64f52023a99a3327"
+    },
+    "tests": {
+      "path": "tools/llm/test_evaluate_open_fed_policy_v11.py",
+      "sha256": "4f3f9cb77e4e0cbfffff06eb7aa513f448c3453a31fb9eb04f7c1ed97cb69a05"
+    }
+  },
+  "coverage_only_audit": {
+    "labeled_buckets": 85,
+    "target_distribution_consulted": false
+  },
+  "arms": [
+    "training-fold target mean prior",
+    "generic LLM sentiment",
+    "event-conditioned LLM policy representation"
+  ],
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "train fold only",
+    "hyperparameter_tuning": false
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-06-30T23:59:59+00:00",
+      "valid_start": "2023-07-01T00:00:00+00:00",
+      "valid_end": "2023-12-31T23:59:59+00:00",
+      "train_records": 29,
+      "valid_records": 15
+    },
+    {
+      "fold": 2,
+      "train_end": "2023-12-31T23:59:59+00:00",
+      "valid_start": "2024-01-01T00:00:00+00:00",
+      "valid_end": "2024-06-30T23:59:59+00:00",
+      "train_records": 44,
+      "valid_records": 22
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-30T23:59:59+00:00",
+      "valid_start": "2024-07-01T00:00:00+00:00",
+      "valid_end": "2024-12-31T23:59:59+00:00",
+      "train_records": 66,
+      "valid_records": 19
+    }
+  ],
+  "bootstrap": {
+    "iterations": 5000,
+    "block_length_records": 5,
+    "seed": 20260905
+  },
+  "gate": {
+    "minimum_fold_wins": 2,
+    "requires": [
+      "event MSE improvement CI lower > 0 versus prior",
+      "event MSE improvement CI lower > 0 versus generic",
+      "event Pearson CI lower > 0",
+      "event wins at least 2/3 folds versus both comparators"
+    ]
+  },
+  "on_fail": "freeze negative result and stop before threshold/action/backtest/sealed holdout"
+}

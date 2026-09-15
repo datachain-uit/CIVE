@@ -1,0 +1,29 @@
+{
+  "status": "TEXT_REPRODUCIBLE_PILOT_MODEL_NOT_AUTHORIZED_BY_POWER_GATE",
+  "records": 24,
+  "near_release_text_matches": 19,
+  "near_release_text_mismatches": 0,
+  "archive_check_errors": 5,
+  "historical_availability_certified": false,
+  "model_run": false,
+  "market_outcomes_accessed": false,
+  "approximate_two_sided_correlation_mde": 0.5450809287304434,
+  "planning_assumptions": {
+    "alpha": 0.05,
+    "power": 0.8,
+    "formula": "tanh((z_(1-alpha/2)+z_power)/sqrt(n-3))",
+    "scope": "approximate independent-correlation planning only"
+  },
+  "decision": "Do not run the predictive gate on 24 events. Expand a pre-specified, redistributable official-release corpus first.",
+  "limitations": [
+    "MDE is optimistic for temporal dependence, model fitting and multiple comparisons.",
+    "Archive text equality is not proof of trader availability at the capture timestamp.",
+    "Five archive checks remain unresolved due to network errors; none is a mismatch.",
+    "The reviewer package reproduces text bytes, not a full prediction experiment."
+  ],
+  "inputs": {
+    "paper\\input\\results\\llm\\v10\\fomc_archived_version_audit_v10_2.json": "3964e73548ea27dba3b24a0ee3e212a591cf349f2a9effb76fb9a482d1fba0c0",
+    "paper\\input\\results\\llm\\v10\\open_fomc_pilot\\corpus.json": "4be7ad5a42e008ee0096af28d12f67175bf4264874e1b3567ac624818510ac1e",
+    "paper\\input\\results\\llm\\v10\\open_fomc_pilot\\reviewer_text_pilot.zip": "fb5bc77b06099725adbee71b5535863c62a16561b2c9d1b3cdb0985783b13dca"
+  }
+}

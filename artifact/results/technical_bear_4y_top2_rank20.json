@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-07T13:28:48.634424+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT"
+    ],
+    "entry": "BTC DOWN-DOWN + 10d compressed channel breakdown + lowest 20d momentum",
+    "exit": "opposite channel breakout or regime off",
+    "top_n": 2,
+    "fee_bps": 10.0
+  },
+  "full_period": {
+    "return_pct": -29.3763,
+    "profit_factor": 0.7144,
+    "max_dd_pct": 36.089
+  },
+  "folds": [
+    {
+      "return_pct": -12.2,
+      "profit_factor": 0.0,
+      "max_dd_pct": 12.2
+    },
+    {
+      "return_pct": -17.6497,
+      "profit_factor": 0.3004,
+      "max_dd_pct": 22.8021
+    },
+    {
+      "return_pct": -2.1595,
+      "profit_factor": 0.0,
+      "max_dd_pct": 2.1595
+    },
+    {
+      "return_pct": 0.8763,
+      "profit_factor": 1.0965,
+      "max_dd_pct": 5.7124
+    },
+    {
+      "return_pct": 0.0,
+      "profit_factor": 0.0,
+      "max_dd_pct": 0.0
+    },
+    {
+      "return_pct": -4.0606,
+      "profit_factor": 0.7985,
+      "max_dd_pct": 13.5145
+    },
+    {
+      "return_pct": 5.8271,
+      "profit_factor": 1.5498,
+      "max_dd_pct": 6.6508
+    }
+  ],
+  "passing_folds": 2,
+  "folds_tested": 7,
+  "eligible_for_execution_test": false
+}

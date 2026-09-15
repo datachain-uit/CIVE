@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-008",
+  "status": "FROZEN_BEFORE_SAMPLE_AUDIT",
+  "frozen_at": "2026-09-11T16:36:49.037580+00:00",
+  "research_role": "historical post-outcome development information gate; not validation, holdout, live evidence or economic value",
+  "researcher_prior_outcome_awareness": "HYB-001--007 and LLM-only v20 results were seen; HYB-008-specific predictions and metrics were not computed before this freeze.",
+  "population": "ETH/SOL v20 event buckets where historical HYB-006 Tech rank-pair selected the same asset",
+  "target": "next 4h return <= asset-specific training-fold q10",
+  "models": {
+    "type": "LogisticRegression L2",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "scaler": "StandardScaler fit in training fold",
+    "arms": [
+      "tech",
+      "tech_metadata",
+      "tech_generic",
+      "tech_event",
+      "event_permuted_shift17"
+    ]
+  },
+  "sample_gate": {
+    "rows_min": 900,
+    "eth_min": 500,
+    "sol_min": 300,
+    "each_third_min": 250,
+    "utc_dates_min": 400,
+    "history_coverage_min": 0.95
+  },
+  "evaluation": {
+    "initial_train_date_fraction": 0.3,
+    "test_folds": 5,
+    "primary_contrast": "paired Brier(tech_generic)-Brier(tech_event)",
+    "bootstrap_unit": "UTC date",
+    "bootstrap_draws": 10000,
+    "seed": 20260914,
+    "permutation_shift": 17
+  },
+  "pass_rule": [
+    "primary Brier improvement CI95 lower > 0",
+    "tech_event Brier < tech, tech_metadata, tech_generic, event_permuted",
+    "tech_event beats tech_generic in >=3/5 folds",
+    "tech_event AUC > tech_generic AUC",
+    "nonconstant predictions and both classes in every fold"
+  ],
+  "inputs": {
+    "protocol": {
+      "path": "D:\\UIT\\KLTN\\paper\\working\\protocols\\Tech_LLM_Conditional_Downside_Protocol_HYB008.md",
+      "sha256": "51dc12524fd831b25b102b72627bccd8d1bf90d27986cdec64e704f6bca1b18d"
+    },
+    "v20_panel": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v20\\llm_only_multicoin_short_panel_v20.json",
+      "sha256": "c7313bee670262e17d94308ac5d51d45fb1fae28cf6a4f2b707d34ee71825ea4"
+    },
+    "tech_assignments": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb006_rank_pair_reallocation_daily_panel.json",
+      "sha256": "783bdeb729bfce61a0d6ced19c435cefc9533aed6d6261cf9c86c8426a035ef6"
+    },
+    "bars": [
+      {
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\ETHUSDT_1660348800000_1786492800000.json",
+        "sha256": "73e24db6a1e7e711f17f231dec43f9647509bc71c883bec8b88a48d063407172"
+      },
+      {
+        "path": "D:\\projects\\auto-trading\\results\\bybit_lifecycle_4h\\SOLUSDT_1660348800000_1786492800000.json",
+        "sha256": "bb20d8cfc63acb693c83d1e7cea3eba9c57e0106cb09a152dd549a055cfd4532"
+      }
+    ],
+    "scripts": [
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\hyb008_conditional_downside_common.py",
+        "sha256": "bd5f8f1757daa3a9125408bb9634163dc43b41c6c1248e5dfb763b505ed9c50b"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\audit_hyb008_conditional_downside.py",
+        "sha256": "8a5495e5231bbdf1729a4586150b5f4ccf9f7e50f5fe1b426831cdb32f05ab98"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\evaluate_hyb008_conditional_downside.py",
+        "sha256": "ae52924fcc27183cd8cf300819ca942d97c18210452f4751110bfaa1b852f6da"
+      }
+    ]
+  },
+  "next_authorized_action": "Run outcome-free sample audit only."
+}

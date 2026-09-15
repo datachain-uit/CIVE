@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-08-08T06:29:02.085796+00:00",
+  "protocol": {
+    "paper": "Chi et al. (2023), Journal of Futures Markets, DOI 10.1002/fut.22425",
+    "transfer_not_replication": "fixed current-liquid perpetual universe, 2022-2026; paper used a dynamic quarterly-futures universe, 2017-2021",
+    "venue_signal": "consensus",
+    "portfolio": "high-low",
+    "high_basis_definition": "highest tercile of spot-minus-futures basis, equivalent to lowest perpetual premium",
+    "execution": "signal at daily close; enter next daily open; hold one day; actual Bybit funding",
+    "cost_bps_per_weight_turnover": 5.0
+  },
+  "full_period": {
+    "return_pct": -52.2723,
+    "profit_factor": 0.8939,
+    "max_dd_pct": 61.9504
+  },
+  "folds": [
+    {
+      "return_pct": 3.763,
+      "profit_factor": 1.082,
+      "max_dd_pct": 17.7839
+    },
+    {
+      "return_pct": 10.7484,
+      "profit_factor": 1.1887,
+      "max_dd_pct": 13.9005
+    },
+    {
+      "return_pct": -1.3161,
+      "profit_factor": 1.0009,
+      "max_dd_pct": 13.8393
+    },
+    {
+      "return_pct": -33.2173,
+      "profit_factor": 0.609,
+      "max_dd_pct": 37.7104
+    },
+    {
+      "return_pct": -24.625,
+      "profit_factor": 0.7265,
+      "max_dd_pct": 30.7018
+    },
+    {
+      "return_pct": 1.1911,
+      "profit_factor": 1.0322,
+      "max_dd_pct": 12.0292
+    },
+    {
+      "return_pct": -5.6543,
+      "profit_factor": 0.9065,
+      "max_dd_pct": 10.1892
+    },
+    {
+      "return_pct": -12.0623,
+      "profit_factor": 0.7138,
+      "max_dd_pct": 17.1502
+    }
+  ],
+  "passing_folds": 3,
+  "folds_tested": 8,
+  "eligible_for_tech_integration": false
+}

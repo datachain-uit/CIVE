@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-081--LLM-084-multicoin-short-v20",
+  "evaluated_at": "2026-09-11T09:44:19.439383+00:00",
+  "status": "FAIL_SHORT_HORIZON_TRANSFER",
+  "passed": false,
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-081",
+      "oos_records": 1054,
+      "overall": {
+        "metadata": {
+          "mse": 0.00023785428294180116,
+          "mae": 0.010586547362428245,
+          "pearson": -0.01463449632939712,
+          "prediction_std": 0.0008927644790044405
+        },
+        "generic": {
+          "mse": 0.00023909877511827063,
+          "mae": 0.010648387431955194,
+          "pearson": -0.005142716043909381,
+          "prediction_std": 0.0014041058126148917
+        },
+        "event": {
+          "mse": 0.000240563698377584,
+          "mae": 0.01069667641098876,
+          "pearson": 0.009950283306849354,
+          "prediction_std": 0.0020793377365153514
+        }
+      },
+      "event_minus_metadata": {
+        "delta_mse": -2.7094154357828245e-06,
+        "fold_wins": 2
+      },
+      "event_minus_generic": {
+        "delta_mse": -1.4649232593133598e-06,
+        "fold_wins": 2
+      },
+      "uncertainty": {
+        "event_minus_metadata_delta_mse_95_ci": [
+          -6.8756897864159526e-06,
+          -7.610014709562647e-07
+        ],
+        "event_minus_generic_delta_mse_95_ci": [
+          -3.6595010597248235e-06,
+          -1.3047637545345564e-07
+        ],
+        "event_pearson_95_ci": [
+          -0.06410649294218222,
+          0.028118934227869517
+        ],
+        "one_sided_p_event_vs_metadata": 0.9924015196960608,
+        "one_sided_p_event_vs_generic": 0.9842031593681264,
+        "one_sided_p_pearson": 0.8040391921615677
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "records": 249,
+          "metrics": {
+            "metadata": {
+              "mse": 0.00021487708294016354,
+              "mae": 0.010220957955546282,
+              "pearson": -0.024026303784140286,
+              "prediction_std": 0.0012500056183718919
+            },
+            "generic": {
+              "mse": 0.00021404126442411866,
+              "mae": 0.010251745358700971,
+              "pearson": 0.01733061737828167,
+              "prediction_std": 0.0015152539999589588
+            },
+            "event": {
+              "mse": 0.0002134940403944618,
+              "mae": 0.01035790854478294,
+              "pearson": 0.05339104809133903,
+              "prediction_std": 0.0020154055317079126
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "records": 246,
+          "metrics": {
+            "metadata": {
+              "mse": 0.00018097079165914112,
+              "mae": 0.009576942508994194,
+              "pearson": 0.0741367870731994,
+              "prediction_std": 0.0006647978371790553
+            },
+            "generic": {
+              "mse": 0.00018186615785786175,
+              "mae": 0.009656553207422978,
+              "pearson": 0.044477798466531306,
+              "prediction_std": 0.0013863022474473285
+            },
+            "event": {
+              "mse": 0.00018568851270532661,
+              "mae": 0.009656146076657409,
+              "pearson": 0.011400848999543469,
+              "prediction_std": 0.0021961001885600984
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "records": 181,
+          "metrics": {
+            "metadata": {
+              "mse": 0.0002532697308680174,
+              "mae": 0.010735068642978915,
+              "pearson": -0.04774346439554374,
+              "prediction_std": 0.000796955940121314
+            },
+            "generic": {
+              "mse": 0.00025080876924796306,
+              "mae": 0.010682987530772944,
+              "pearson": 0.06178726665246904,
+              "prediction_std": 0.0015020731913018212
+            },
+            "event": {
+              "mse": 0.0002485489863153521,
+              "mae": 0.010685131720023215,
+              "pearson": 0.1076605939042578,
+              "prediction_std": 0.0019803922612255235
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "records": 210,
+          "metrics": {
+            "metadata": {
+              "mse": 0.0003562456019661469,
+              "mae": 0.012540974617463735,
+              "pearson": -0.05264433926601673,
+              "prediction_std": 0.0006442178190072693
+            },
+            "generic": {
+              "mse": 0.00036137448474389013,
+              "mae": 0.012653508065515755,
+              "pearson": -0.09237165009904619,
+              "prediction_std": 0.0013530734336953127
+            },
+            "event": {
+              "mse": 0.0003617683951765303,
+              "mae": 0.012596096331449485,
+              "pearson": -0.016184583635822824,
+              "prediction_std": 0.0023800288341421206
+            }
+          }
+        },
+        {
+          "fold": 5,
+          "records": 168,
+          "metrics": {
+            "metadata": {
+              "mse": 0.0001906060007167084,
+              "mae": 0.010003704986959567,
+              "pearson": -0.06817656842906278,
+              "prediction_std": 0.0007032449018359285
+            },
+            "generic": {
+              "mse": 0.0001945817277971399,
+              "mae": 0.010144918054225993,
+              "pearson": -0.12601584275796376,
+              "prediction_std": 0.0011076979339696975
+            },
+            "event": {
+              "mse": 0.00020092868092911925,
+              "mae": 0.01036057561752908,
+              "pearson": -0.22697814799211086,
+              "prediction_std": 0.00153506444417675
+            }
+          }
+        }
+      ],
+      "holm_adjusted_p": {
+        "metadata": 1.0,
+        "generic": 1.0,
+        "pearson": 1.0
+      },
+      "checks": {
+        "event_vs_metadata_ci_lower_gt_zero": false,
+        "event_vs_generic_ci_lower_gt_zero": false,
+        "event_pearson_ci_lower_gt_zero": false,
+        "wins_metadata_at_least_3": false,
+        "wins_generic_at_least_3": false,
+        "prediction_nonconstant": true,
+        "holm_all_below_alpha": false
+      },
+      "passed": false
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-082",
+      "oos_records": 622,
+      "overall": {
+        "metadata": {
+          "mse": 0.00041494569867379916,
+          "mae": 0.014423874966024907,
+          "pearson": -0.04706475244942671,
+          "prediction_std": 0.0031330903985046475
+        },
+        "generic": {
+          "mse": 0.0004302657500901935,
+          "mae": 0.014722238239344789,
+          "pearson": -0.060663106461576535,
+          "prediction_std": 0.004489837855392753
+        },
+        "event": {
+          "mse": 0.0004464010325951823,
+          "mae": 0.015181830206627491,
+          "pearson": -0.006764245623248873,
+          "prediction_std": 0.006742277176801333
+        }
+      },
+      "event_minus_metadata": {
+        "delta_mse": -3.1455333921383115e-05,
+        "fold_wins": 1
+      },
+      "event_minus_generic": {
+        "delta_mse": -1.613528250498877e-05,
+        "fold_wins": 1
+      },
+      "uncertainty": {
+        "event_minus_metadata_delta_mse_95_ci": [
+          -5.77621622092224e-05,
+          -1.713565550482879e-05
+        ],
+        "event_minus_generic_delta_mse_95_ci": [
+          -4.081645969920418e-05,
+          -1.5996191807096148e-06
+        ],
+        "event_pearson_95_ci": [
+          -0.07126227897561252,
+          0.04548034200265553
+        ],
+        "one_sided_p_event_vs_metadata": 1.0,
+        "one_sided_p_event_vs_generic": 0.9844031193761248,
+        "one_sided_p_pearson": 0.6884623075384922
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "records": 112,
+          "metrics": {
+            "metadata": {
+              "mse": 0.0006211483684417582,
+              "mae": 0.018226309316885073,
+              "pearson": -0.11003119792753156,
+              "prediction_std": 0.004166112160458371
+            },
+            "generic": {
+              "mse": 0.0006353871882870669,
+              "mae": 0.018587035713134407,
+              "pearson": -0.10020888675972683,
+              "prediction_std": 0.004883469843866605
+            },
+            "event": {
+              "mse": 0.000604968521121076,
+              "mae": 0.01869880645975706,
+              "pearson": 0.06893843546023413,
+              "prediction_std": 0.006537383572802123
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "records": 129,
+          "metrics": {
+            "metadata": {
+              "mse": 0.0005012544595071346,
+              "mae": 0.014992180862366577,
+              "pearson": 0.16151896810784358,
+              "prediction_std": 0.0026944115010796308
+            },
+            "generic": {
+              "mse": 0.0005099566571827002,
+              "mae": 0.015292060413041748,
+              "pearson": 0.09809177268741395,
+              "prediction_std": 0.0032592766687579403
+            },
+            "event": {
+              "mse": 0.0005297092723497072,
+              "mae": 0.015911614120636006,
+              "pearson": 0.08510932337761352,
+              "prediction_std": 0.006248282658294534
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "records": 124,
+          "metrics": {
+            "metadata": {
+              "mse": 0.00028826450437812666,
+              "mae": 0.012924811697247483,
+              "pearson": -0.13851346195581135,
+              "prediction_std": 0.003275957730881122
+            },
+            "generic": {
+              "mse": 0.0002802846543223178,
+              "mae": 0.012738025221210775,
+              "pearson": -0.03672019157954331,
+              "prediction_std": 0.0035734377253329687
+            },
+            "event": {
+              "mse": 0.00035352406853196306,
+              "mae": 0.01404373011547379,
+              "pearson": -0.11245908615433967,
+              "prediction_std": 0.007727643129655651
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "records": 152,
+          "metrics": {
+            "metadata": {
+              "mse": 0.00041949745302246607,
+              "mae": 0.014231787771266038,
+              "pearson": -0.0019897842265225335,
+              "prediction_std": 0.002744351949021203
+            },
+            "generic": {
+              "mse": 0.0004683216885423473,
+              "mae": 0.015038409736841007,
+              "pearson": -0.0820358384474912,
+              "prediction_std": 0.005945244867492931
+            },
+            "event": {
+              "mse": 0.0004748180745027222,
+              "mae": 0.01504090028296152,
+              "pearson": -0.04211091521006904,
+              "prediction_std": 0.006998203200173909
+            }
+          }
+        },
+        {
+          "fold": 5,
+          "records": 105,
+          "metrics": {
+            "metadata": {
+              "mse": 0.00023197495838955405,
+              "mae": 0.011718132023237623,
+              "pearson": -0.17599928783733726,
+              "prediction_std": 0.002096679818532361
+            },
+            "generic": {
+              "mse": 0.0002355936085426317,
+              "mae": 0.011785285564657634,
+              "pearson": -0.14025772238055736,
+              "prediction_std": 0.0027037400571312247
+            },
+            "event": {
+              "mse": 0.00024345847574431832,
+              "mae": 0.012081852058462498,
+              "pearson": -0.008634227955623823,
+              "prediction_std": 0.004912549790264295
+            }
+          }
+        }
+      ],
+      "holm_adjusted_p": {
+        "metadata": 1.0,
+        "generic": 1.0,
+        "pearson": 1.0
+      },
+      "checks": {
+        "event_vs_metadata_ci_lower_gt_zero": false,
+        "event_vs_generic_ci_lower_gt_zero": false,
+        "event_pearson_ci_lower_gt_zero": false,
+        "wins_metadata_at_least_3": false,
+        "wins_generic_at_least_3": false,
+        "prediction_nonconstant": true,
+        "holm_all_below_alpha": false
+      },
+      "passed": false
+    }
+  },
+  "stopped_assets": [
+    "XRPUSDT",
+    "BNBUSDT"
+  ],
+  "inputs": {
+    "predeclaration": {
+      "path": "paper\\input\\results\\llm\\v20\\llm_only_multicoin_short_evaluation_v20_predeclared.json",
+      "sha256": "cea61f1170e1d3aa95c7fe00f2c2b7eac7eb6a796e34311589698c1aa9b82ee5"
+    },
+    "panel": {
+      "path": "paper\\input\\results\\llm\\v20\\llm_only_multicoin_short_panel_v20.json",
+      "sha256": "c7313bee670262e17d94308ac5d51d45fb1fae28cf6a4f2b707d34ee71825ea4"
+    },
+    "predictions": {
+      "path": "paper\\input\\results\\llm\\v20\\llm_only_multicoin_short_predictions_v20.json",
+      "sha256": "5a72344e3e39679eaf8998cd0f1b34b5f35aec0e05e7542990399ea85e28ef54"
+    }
+  },
+  "next_action": "Stop before threshold/action/backtest"
+}

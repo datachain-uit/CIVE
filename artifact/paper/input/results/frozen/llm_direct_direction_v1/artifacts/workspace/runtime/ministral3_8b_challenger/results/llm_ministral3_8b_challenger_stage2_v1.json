@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-21T04:13:03.995414+00:00",
+  "experiment_id": "llm-ministral3-8b-challenger-v1-development",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 6022236616,
+    "license": "Apache-2.0",
+    "rationale": "current official Ollama Ministral 3 edge model from a family distinct from prior Qwen, Gemma, Llama, DeepSeek, and Nemotron candidates; selected for native JSON output and instruction following",
+    "thinking_mode": "not supported",
+    "primary_sources": [
+      "https://ollama.com/library/ministral-3:8b",
+      "https://ollama.com/library/ministral-3"
+    ]
+  },
+  "stage1_gate_passed": true,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "full_records": {
+      "observed": 2927,
+      "required": 2927,
+      "passed": true
+    },
+    "schema_errors": {
+      "observed": 0,
+      "required": 0,
+      "passed": true
+    },
+    "calibration_observations": {
+      "observed": 1110,
+      "required_min": 1000,
+      "passed": true
+    },
+    "long_rule_observations": {
+      "observed": 489,
+      "required_min": 100,
+      "passed": true
+    },
+    "pearson_ci_lower_bound": {
+      "observed": -0.06548320238121777,
+      "required_gt": 0.0,
+      "passed": false
+    },
+    "long_minus_flat_ci_lower_bound": {
+      "observed": -21.49809637395727,
+      "required_gt": 0.0,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "status": "stage2-fail-stop-before-repeat-or-backtest",
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_challenger_v1_development.json",
+    "config_sha256": "099d1471023c90a4b831baa52d6da8a7bde6f2468c0253418a52556fae5062a4",
+    "stage1": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_gate_v1.json",
+    "stage1_sha256": "839df6382821cf0d12f8ff601875eef7c99b27a1e6f2a4e8dfe14820d15b7f4f",
+    "full_run": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_full_ministral3_8b_v1_development.json",
+    "full_run_sha256": "737f5632f89ea2a48a8bdeea53a0fbc57afbb6313906ae84a5664ea713a6594c",
+    "calibration": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_outcome_calibration_ministral3_8b_v1_development.json",
+    "calibration_sha256": "2f7dadc9748b280e1164c76f652a57cb967b21023814d4791f3752eebab5f3ba"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["records"],
+  "properties": {
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item_id", "affected_asset_scope", "held_long_pressure", "mechanism", "event_stage", "horizon_mass", "confidence", "evidence_span"],
+        "properties": {
+          "item_id": {"type": "integer", "minimum": 0, "maximum": 3},
+          "affected_asset_scope": {"enum": ["direct_held", "crypto_systemic", "other", "unknown"]},
+          "held_long_pressure": {"enum": ["adverse", "supportive", "two_sided", "unknown"]},
+          "mechanism": {"enum": ["forced_long_selling", "forced_short_buying", "solvency", "security_loss", "protocol_outage", "legal_restriction", "flow_demand", "other"]},
+          "event_stage": {"enum": ["rumor", "initial_announcement", "escalation", "ongoing", "resolution", "retrospective", "unknown"]},
+          "horizon_mass": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["h4", "h12", "h24", "h72"],
+            "properties": {
+              "h4": {"type": "number", "minimum": 0, "maximum": 1},
+              "h12": {"type": "number", "minimum": 0, "maximum": 1},
+              "h24": {"type": "number", "minimum": 0, "maximum": 1},
+              "h72": {"type": "number", "minimum": 0, "maximum": 1}
+            }
+          },
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "evidence_span": {"type": "string", "minLength": 1, "maxLength": 240}
+        }
+      }
+    }
+  }
+}

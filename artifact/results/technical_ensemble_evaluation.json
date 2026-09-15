@@ -1,0 +1,883 @@
+{
+  "generated_at": "2026-08-07T15:58:28.170321+00:00",
+  "status": "research diagnostic; not live approval",
+  "construction": "static initial capital split; independent sleeve accounting; no inter-sleeve rebalancing or leverage",
+  "defensive_sleeve": {
+    "top_n": 2,
+    "rank_days": 20,
+    "stop_atr": 2.5
+  },
+  "growth_sleeve": {
+    "top_n": 1,
+    "rank_days": 20,
+    "stop_atr": 0.0
+  },
+  "predeclared_growth_weights": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "scenarios": {
+    "base_decomposed": {
+      "cost": {
+        "name": "base_decomposed",
+        "fee_bps": 6.0,
+        "slippage_bps": 3.0,
+        "spread_bps": 2.0,
+        "impact_bps": 1.0
+      },
+      "candidates": {
+        "defensive": {
+          "result": {
+            "starting_balance": 10000,
+            "final_equity": 22398.56,
+            "return_pct": 123.9856,
+            "max_drawdown_pct": 17.6957,
+            "fills": 132
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 6.803,
+              "max_drawdown_pct": 15.7639
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -1.9215,
+              "max_drawdown_pct": 3.7824
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 32.8413,
+              "max_drawdown_pct": 9.1242
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.9672,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 20.0245,
+              "max_drawdown_pct": 8.1364
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 43.4241,
+              "max_drawdown_pct": 6.5176
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 1.0285,
+              "max_drawdown_pct": 5.6123
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -14.174,
+              "max_drawdown_pct": 15.5918
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "growth": {
+          "result": {
+            "starting_balance": 10000,
+            "final_equity": 30253.37,
+            "return_pct": 202.5337,
+            "max_drawdown_pct": 15.6035,
+            "fills": 72
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 7.1524,
+              "max_drawdown_pct": 15.6035
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -1.9209,
+              "max_drawdown_pct": 3.7818
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 37.8319,
+              "max_drawdown_pct": 6.4297
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.9635,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 20.0245,
+              "max_drawdown_pct": 8.1364
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 74.698,
+              "max_drawdown_pct": 6.8319
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 3.6669,
+              "max_drawdown_pct": 5.6833
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -10.8979,
+              "max_drawdown_pct": 12.8449
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_25": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 24362.26,
+            "return_pct": 143.6226,
+            "max_drawdown_pct": 16.7502
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 6.8903,
+              "max_drawdown_pct": 15.695
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -1.9214,
+              "max_drawdown_pct": 3.7823
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 34.092,
+              "max_drawdown_pct": 8.077
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.9662,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 20.0245,
+              "max_drawdown_pct": 8.1364
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 51.4802,
+              "max_drawdown_pct": 6.1415
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 1.8123,
+              "max_drawdown_pct": 5.5787
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -13.183,
+              "max_drawdown_pct": 14.6913
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_50": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 26325.97,
+            "return_pct": 163.2597,
+            "max_drawdown_pct": 16.0433
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 6.9777,
+              "max_drawdown_pct": 15.6261
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -1.9212,
+              "max_drawdown_pct": 3.7821
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 35.3407,
+              "max_drawdown_pct": 7.0254
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.9653,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 20.0245,
+              "max_drawdown_pct": 8.1364
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 59.3747,
+              "max_drawdown_pct": 6.3806
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 2.5036,
+              "max_drawdown_pct": 5.6182
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -12.3217,
+              "max_drawdown_pct": 13.9647
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_75": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 28289.67,
+            "return_pct": 182.8967,
+            "max_drawdown_pct": 15.5573
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 7.065,
+              "max_drawdown_pct": 15.5573
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -1.921,
+              "max_drawdown_pct": 3.782
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 36.5873,
+              "max_drawdown_pct": 6.5368
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.9644,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 20.0245,
+              "max_drawdown_pct": 8.1364
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 67.1124,
+              "max_drawdown_pct": 6.6106
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 3.1177,
+              "max_drawdown_pct": 5.6528
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -11.5661,
+              "max_drawdown_pct": 13.3682
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        }
+      },
+      "cscv_pbo": {
+        "method": "CSCV on common non-overlapping 180-day fold-return matrix; performance statistic is compounded log return",
+        "configurations": 5,
+        "folds": 8,
+        "partitions": 70,
+        "pbo": 0.0,
+        "median_oos_rank_logit": 1.609438,
+        "mean_selected_oos_regret_log_return": 0.0,
+        "is_winner_frequency": {
+          "growth": 70
+        },
+        "interpretation": "low measured overfit risk; not proof of live alpha",
+        "limitation": "Eight coarse folds provide a diagnostic, not a definitive bar-level PBO estimate."
+      }
+    },
+    "stress": {
+      "cost": {
+        "name": "stress",
+        "fee_bps": 10.0,
+        "slippage_bps": 8.0,
+        "spread_bps": 4.0,
+        "impact_bps": 5.0
+      },
+      "candidates": {
+        "defensive": {
+          "result": {
+            "starting_balance": 10000,
+            "final_equity": 19849.68,
+            "return_pct": 98.4968,
+            "max_drawdown_pct": 19.4332,
+            "fills": 132
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 4.7936,
+              "max_drawdown_pct": 17.1042
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -3.4793,
+              "max_drawdown_pct": 4.9985
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 29.8767,
+              "max_drawdown_pct": 9.2841
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.2203,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 18.3552,
+              "max_drawdown_pct": 8.3933
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 41.1515,
+              "max_drawdown_pct": 6.9451
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": -0.099,
+              "max_drawdown_pct": 6.1398
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -15.4541,
+              "max_drawdown_pct": 16.676
+            }
+          ],
+          "positive_folds": 5,
+          "folds_tested": 8
+        },
+        "growth": {
+          "result": {
+            "starting_balance": 10000,
+            "final_equity": 27350.89,
+            "return_pct": 173.5089,
+            "max_drawdown_pct": 16.6487,
+            "fills": 72
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 5.6621,
+              "max_drawdown_pct": 16.4171
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -2.4687,
+              "max_drawdown_pct": 4.0509
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 34.9651,
+              "max_drawdown_pct": 6.4297
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.2158,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 18.3552,
+              "max_drawdown_pct": 8.3933
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 72.2679,
+              "max_drawdown_pct": 7.0925
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 2.5119,
+              "max_drawdown_pct": 6.2103
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -12.1368,
+              "max_drawdown_pct": 13.9364
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_25": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 21724.99,
+            "return_pct": 117.2499,
+            "max_drawdown_pct": 18.5278
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 5.0107,
+              "max_drawdown_pct": 16.9324
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -3.2251,
+              "max_drawdown_pct": 4.7483
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 31.1667,
+              "max_drawdown_pct": 8.1838
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.2191,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 18.3552,
+              "max_drawdown_pct": 8.3933
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 49.2682,
+              "max_drawdown_pct": 6.4915
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 0.687,
+              "max_drawdown_pct": 6.1068
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -14.4373,
+              "max_drawdown_pct": 15.808
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_50": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 23600.29,
+            "return_pct": 136.0029,
+            "max_drawdown_pct": 17.812
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 5.2279,
+              "max_drawdown_pct": 16.7606
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -2.9719,
+              "max_drawdown_pct": 4.4991
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 32.4446,
+              "max_drawdown_pct": 7.0879
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.218,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 18.3552,
+              "max_drawdown_pct": 8.3933
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 57.1534,
+              "max_drawdown_pct": 6.6636
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 1.3728,
+              "max_drawdown_pct": 6.1462
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -13.563,
+              "max_drawdown_pct": 15.0663
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_75": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 25475.59,
+            "return_pct": 154.7559,
+            "max_drawdown_pct": 17.1916
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 5.445,
+              "max_drawdown_pct": 16.5889
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -2.7198,
+              "max_drawdown_pct": 4.2509
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 33.7107,
+              "max_drawdown_pct": 6.5356
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 6.2169,
+              "max_drawdown_pct": 5.7041
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 18.3552,
+              "max_drawdown_pct": 8.3933
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 64.8169,
+              "max_drawdown_pct": 6.8831
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 1.9765,
+              "max_drawdown_pct": 6.1804
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -12.8032,
+              "max_drawdown_pct": 14.4625
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        }
+      },
+      "cscv_pbo": {
+        "method": "CSCV on common non-overlapping 180-day fold-return matrix; performance statistic is compounded log return",
+        "configurations": 5,
+        "folds": 8,
+        "partitions": 70,
+        "pbo": 0.0,
+        "median_oos_rank_logit": 1.609438,
+        "mean_selected_oos_regret_log_return": 0.0,
+        "is_winner_frequency": {
+          "growth": 70
+        },
+        "interpretation": "low measured overfit risk; not proof of live alpha",
+        "limitation": "Eight coarse folds provide a diagnostic, not a definitive bar-level PBO estimate."
+      }
+    },
+    "harsh": {
+      "cost": {
+        "name": "harsh",
+        "fee_bps": 15.0,
+        "slippage_bps": 15.0,
+        "spread_bps": 8.0,
+        "impact_bps": 10.0
+      },
+      "candidates": {
+        "defensive": {
+          "result": {
+            "starting_balance": 10000,
+            "final_equity": 17129.98,
+            "return_pct": 71.2998,
+            "max_drawdown_pct": 21.7803,
+            "fills": 132
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 2.1219,
+              "max_drawdown_pct": 18.9096
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -4.0716,
+              "max_drawdown_pct": 5.4022
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 25.9548,
+              "max_drawdown_pct": 9.4967
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 5.2148,
+              "max_drawdown_pct": 5.8385
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 16.1269,
+              "max_drawdown_pct": 8.7409
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 38.2221,
+              "max_drawdown_pct": 7.5172
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": -1.5991,
+              "max_drawdown_pct": 6.8502
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -17.136,
+              "max_drawdown_pct": 18.1748
+            }
+          ],
+          "positive_folds": 5,
+          "folds_tested": 8
+        },
+        "growth": {
+          "result": {
+            "starting_balance": 10000,
+            "final_equity": 23852.02,
+            "return_pct": 138.5202,
+            "max_drawdown_pct": 18.9915,
+            "fills": 72
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 3.6728,
+              "max_drawdown_pct": 17.6782
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -3.2073,
+              "max_drawdown_pct": 4.5499
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 31.1698,
+              "max_drawdown_pct": 6.4297
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 5.2092,
+              "max_drawdown_pct": 5.8385
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 16.1269,
+              "max_drawdown_pct": 8.7409
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 69.0238,
+              "max_drawdown_pct": 7.4451
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 0.965,
+              "max_drawdown_pct": 6.9207
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -13.7906,
+              "max_drawdown_pct": 15.3961
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        },
+        "blend_growth_25": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 18810.49,
+            "return_pct": 88.1049,
+            "max_drawdown_pct": 20.8718
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 2.5096,
+              "max_drawdown_pct": 18.6018
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -3.853,
+              "max_drawdown_pct": 5.1867
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 27.2822,
+              "max_drawdown_pct": 8.3373
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 5.2133,
+              "max_drawdown_pct": 5.8385
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 16.1269,
+              "max_drawdown_pct": 8.7409
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 46.3014,
+              "max_drawdown_pct": 7.0038
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": -0.8221,
+              "max_drawdown_pct": 6.8185
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -16.104,
+              "max_drawdown_pct": 17.2914
+            }
+          ],
+          "positive_folds": 5,
+          "folds_tested": 8
+        },
+        "blend_growth_50": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 20491.0,
+            "return_pct": 104.91,
+            "max_drawdown_pct": 20.1527
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 2.8973,
+              "max_drawdown_pct": 18.2939
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -3.6362,
+              "max_drawdown_pct": 4.9728
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 28.5936,
+              "max_drawdown_pct": 7.1862
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 5.2119,
+              "max_drawdown_pct": 5.8385
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 16.1269,
+              "max_drawdown_pct": 8.7409
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 54.1199,
+              "max_drawdown_pct": 7.0403
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": -0.1477,
+              "max_drawdown_pct": 6.8576
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -15.2212,
+              "max_drawdown_pct": 16.5381
+            }
+          ],
+          "positive_folds": 5,
+          "folds_tested": 8
+        },
+        "blend_growth_75": {
+          "result": {
+            "starting_balance": 10000.0,
+            "final_equity": 22171.51,
+            "return_pct": 121.7151,
+            "max_drawdown_pct": 19.5323
+          },
+          "walk_forward_folds": [
+            {
+              "start": "2022-08-29",
+              "return_pct": 3.2851,
+              "max_drawdown_pct": 17.9861
+            },
+            {
+              "start": "2023-02-25",
+              "return_pct": -3.4209,
+              "max_drawdown_pct": 4.7606
+            },
+            {
+              "start": "2023-08-24",
+              "return_pct": 29.8894,
+              "max_drawdown_pct": 6.5906
+            },
+            {
+              "start": "2024-02-20",
+              "return_pct": 5.2105,
+              "max_drawdown_pct": 5.8385
+            },
+            {
+              "start": "2024-08-18",
+              "return_pct": 16.1269,
+              "max_drawdown_pct": 8.7409
+            },
+            {
+              "start": "2025-02-14",
+              "return_pct": 61.6902,
+              "max_drawdown_pct": 7.2477
+            },
+            {
+              "start": "2025-08-13",
+              "return_pct": 0.4431,
+              "max_drawdown_pct": 6.8913
+            },
+            {
+              "start": "2026-02-09",
+              "return_pct": -14.4576,
+              "max_drawdown_pct": 15.9268
+            }
+          ],
+          "positive_folds": 6,
+          "folds_tested": 8
+        }
+      },
+      "cscv_pbo": {
+        "method": "CSCV on common non-overlapping 180-day fold-return matrix; performance statistic is compounded log return",
+        "configurations": 5,
+        "folds": 8,
+        "partitions": 70,
+        "pbo": 0.0,
+        "median_oos_rank_logit": 1.609438,
+        "mean_selected_oos_regret_log_return": 0.0,
+        "is_winner_frequency": {
+          "growth": 70
+        },
+        "interpretation": "low measured overfit risk; not proof of live alpha",
+        "limitation": "Eight coarse folds provide a diagnostic, not a definitive bar-level PBO estimate."
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "status": "REPRODUCIBLE_TEXT_PILOT_NOT_PREDICTIVE_ADMISSION",
+  "statements": 24,
+  "per_year": {
+    "2022": 8,
+    "2023": 8,
+    "2024": 8
+  },
+  "files": {
+    "audit_social_intake_v9.py": "374fe66296cef7c0731e1bd1e4c595604f4b25fba5799832f71e3467252712f9",
+    "build_open_fomc_pilot_v10.py": "f483eb858a128e825748f3b126bd2e64c994cd1d5ac7e42464f5e676ae3c9b0f",
+    "corpus.json": "4be7ad5a42e008ee0096af28d12f67175bf4264874e1b3567ac624818510ac1e",
+    "NOTICE.md": "60eb22bc87056f0d5398369e717fa96f240a29932b0c637cefa016f999b586d2",
+    "predeclared.json": "0f4eca259c3abc30291a223a0d87aa9b9d55c791c1572b25aec720b877e1906d",
+    "verify.py": "255fdef2a4a365835872f3f4005cd686d6407df7fbaee0657f49c737d15fda0d"
+  },
+  "sources": [
+    {
+      "url": "https://www.federalreserve.gov/disclaimer.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 85130,
+      "sha256": "92ebaef126fc739f0a61fd35a67b393813a29094d5c39878ebc1745e7acbda22",
+      "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\policy.html",
+      "fetched_at": "2026-09-05T05:39:21.134304+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 164831,
+      "sha256": "cb1dcca51893a43fb70b6427acfa084e573a7144251ba8dc5d7914781f1f2c39",
+      "path": "paper\\input\\references\\source_artifacts\\open_fomc_v10\\calendar.html",
+      "fetched_at": "2026-09-05T05:39:21.644302+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220126a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82747,
+      "sha256": "a5fc85feef2c5c179c0d07d548627678bfcb5224b7079521ae99468aaa915a79",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20220126a.htm",
+      "fetched_at": "2026-09-05T05:39:22.333917+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82240,
+      "sha256": "7827c936be6be5ab98bc28555073362fc9c20b42fabeeadecaec05d23d8db0a8",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20220316a.htm",
+      "fetched_at": "2026-09-05T05:39:23.603129+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220504a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82755,
+      "sha256": "5179dbf45ca6091e34025e2fa038eef02053a1e485aab12bd855f4c7be7bbb23",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20220504a.htm",
+      "fetched_at": "2026-09-05T05:39:24.728454+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220615a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82385,
+      "sha256": "881704038aaf7ec668018bd92454a99f5ad0eee0d7bc236db48c83666b5f0f98",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20220615a.htm",
+      "fetched_at": "2026-09-05T05:39:25.808090+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220727a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82046,
+      "sha256": "7d1850881fae7a6c759dcdd13a61cdc84acca41fe89c57be84d7ae35dfaa69d2",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20220727a.htm",
+      "fetched_at": "2026-09-05T05:39:26.955894+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220921a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82053,
+      "sha256": "dfd283b617e9c6c50bbd72727b0c8e8243686da3e38a96d2c179687c403777e4",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20220921a.htm",
+      "fetched_at": "2026-09-05T05:39:28.087924+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221102a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82687,
+      "sha256": "e57f0f688aa194d61b90a2197721712ef5bb470f4d84c547f3e15d0e9cdd66a9",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20221102a.htm",
+      "fetched_at": "2026-09-05T05:39:29.170336+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20221214a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82688,
+      "sha256": "5b383cd3177eab4a6f9622375e73c0b67ac82ac3f23dfb27d50305c1431d6750",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20221214a.htm",
+      "fetched_at": "2026-09-05T05:39:30.344776+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230201a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82434,
+      "sha256": "00884d3fcd9cc024f8f755618d4c612155335eb87922ebf7df2a3fa58a85fb07",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20230201a.htm",
+      "fetched_at": "2026-09-05T05:39:31.483410+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230322a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82630,
+      "sha256": "357b2f6879455f95c9fbd5855a68978a0bb2e31a20dd56dbd2873d0ea504d106",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20230322a.htm",
+      "fetched_at": "2026-09-05T05:39:32.540780+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82413,
+      "sha256": "624014ce32a8c606243d461988affc7b3e1a34089eda3125724c56fb732e0629",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20230503a.htm",
+      "fetched_at": "2026-09-05T05:39:33.836398+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230614a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82483,
+      "sha256": "9e60077b0d2ed76f2bd5844644536542455145fab65fa22a7bb66442f399cd8b",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20230614a.htm",
+      "fetched_at": "2026-09-05T05:39:35.055129+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230726a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82440,
+      "sha256": "6c77963cf33c2a01a6a4ee06bc78ad2fdaa07fa936932299ca6a88b69b4a5521",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20230726a.htm",
+      "fetched_at": "2026-09-05T05:39:36.282149+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230920a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82487,
+      "sha256": "fd39a91408561e8a8b4b0160f25e037f254075f5be8d742cc5057f6bed70c53d",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20230920a.htm",
+      "fetched_at": "2026-09-05T05:39:37.523235+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231101a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82521,
+      "sha256": "72c4d1c07a185147bcd2f32ca012dd7fa3e154d22019bc623094ded71045dd37",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20231101a.htm",
+      "fetched_at": "2026-09-05T05:39:38.745845+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20231213a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82575,
+      "sha256": "c39b3fb781ea9af0f45e0922f0164de84ef91dff3522a4cbf90f7abc043b8e57",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20231213a.htm",
+      "fetched_at": "2026-09-05T05:39:39.979328+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240131a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82387,
+      "sha256": "7f0f32c90dd4225b74a8877ea631bef87a4b8a294ac29c26f2c2f81ca89ec263",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20240131a.htm",
+      "fetched_at": "2026-09-05T05:39:41.059270+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240320a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82347,
+      "sha256": "ee5ebde6b1ee51fc4e43a72efe5cc4aa1370ba2b7dcf1f96bdcb5412f0df24d0",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20240320a.htm",
+      "fetched_at": "2026-09-05T05:39:42.313530+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240501a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82833,
+      "sha256": "1f46bd5dc07259e4c0cc0114a1ed714cd0496e8ac339450c65ee15b694e6229a",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20240501a.htm",
+      "fetched_at": "2026-09-05T05:39:43.503174+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82435,
+      "sha256": "d6f998e9e08a93d0e53a2fbbeb5e784fee302ab269d0f9ba1b2e1df43f5771a0",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20240612a.htm",
+      "fetched_at": "2026-09-05T05:39:44.635083+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82515,
+      "sha256": "8558a2d86277c540ccc1aa9a4c1be6fa5eb2cfb4c220c4bfa00b925e69cb7109",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20240731a.htm",
+      "fetched_at": "2026-09-05T05:39:45.770239+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82514,
+      "sha256": "e3cd0c22be679b2de290c9f6d4190280fc73887a9ef9778f9ce2424464090db0",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20240918a.htm",
+      "fetched_at": "2026-09-05T05:39:46.886184+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82289,
+      "sha256": "25d6ffa3dee427dda2dec41cabda229114c862b7222356705b3ff800284da184",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20241107a.htm",
+      "fetched_at": "2026-09-05T05:39:48.170787+00:00"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+      "http_status": 200,
+      "content_range": null,
+      "partial_sample": false,
+      "bytes": 82442,
+      "sha256": "45b12ba74fc2ae9b59783229a20a3bdbcce2f1cf0292244d03295cbce29af307",
+      "path": "runtime\\external\\open_fomc_v10\\monetary20241218a.htm",
+      "fetched_at": "2026-09-05T05:39:49.327686+00:00"
+    }
+  ],
+  "historical_first_version_verified": false,
+  "model_run": false,
+  "technical_features_used": false,
+  "market_data_accessed": false,
+  "remaining": [
+    "Independent original-version checks",
+    "Power/coverage assessment",
+    "Frozen model protocol and model/prompt/environment artifacts",
+    "Separate market-label redistribution rights before any full experiment release"
+  ]
+}

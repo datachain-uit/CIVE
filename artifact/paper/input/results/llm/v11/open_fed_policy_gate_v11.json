@@ -1,0 +1,152 @@
+{
+  "schema_version": "open-fed-policy-gate-v11",
+  "evaluated_at": "2026-09-05T07:55:22.603652+00:00",
+  "status": "development-gate-fail-stop-before-backtest",
+  "passed": false,
+  "development_only": true,
+  "strict_point_in_time": false,
+  "technical_or_market_features_used": false,
+  "oos_records": 56,
+  "overall": {
+    "prior": {
+      "mse": 0.00011165329338376117,
+      "rmse": 0.010566612199932445,
+      "mae": 0.0068861664601750595,
+      "pearson": -0.18842477315079748,
+      "prediction_std": 0.0005685080273944606
+    },
+    "generic": {
+      "mse": 0.00011195619504296818,
+      "rmse": 0.010580935452169066,
+      "mae": 0.006862966017169845,
+      "pearson": -0.19686933544966392,
+      "prediction_std": 0.0006300043182736934
+    },
+    "event": {
+      "mse": 0.00011722477500850801,
+      "rmse": 0.010827039069316598,
+      "mae": 0.007310520241593308,
+      "pearson": -0.1633008913694115,
+      "prediction_std": 0.0016392025592845108
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "validation_records": 15,
+      "metrics": {
+        "prior": {
+          "mse": 0.00010422577763254131,
+          "rmse": 0.010209102684983696,
+          "mae": 0.0057982893210099945,
+          "pearson": 7.087007677476313e-17,
+          "prediction_std": 1.0842021724855044e-19
+        },
+        "generic": {
+          "mse": 0.00010650037942011123,
+          "rmse": 0.01031990210322323,
+          "mae": 0.005839889855530161,
+          "pearson": 0.0013280640304228974,
+          "prediction_std": 0.00018112984948506653
+        },
+        "event": {
+          "mse": 0.00012571989217873795,
+          "rmse": 0.01121248822424077,
+          "mae": 0.00685127919405316,
+          "pearson": -0.25873730249342375,
+          "prediction_std": 0.002537431706198183
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "validation_records": 22,
+      "metrics": {
+        "prior": {
+          "mse": 7.937302012745707e-05,
+          "rmse": 0.008909153726783317,
+          "mae": 0.006716205082844231,
+          "pearson": -6.11557491970201e-17,
+          "prediction_std": 1.0842021724855044e-19
+        },
+        "generic": {
+          "mse": 7.847804000735651e-05,
+          "rmse": 0.008858783212572508,
+          "mae": 0.006682041700418581,
+          "pearson": -0.07277688768712046,
+          "prediction_std": 8.66171549432114e-05
+        },
+        "event": {
+          "mse": 7.888289022877735e-05,
+          "rmse": 0.008881604034676246,
+          "mae": 0.006814051638598307,
+          "pearson": -0.14197211137434332,
+          "prediction_std": 0.001131971067765442
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "validation_records": 19,
+      "metrics": {
+        "prior": {
+          "mse": 0.00015489428011570793,
+          "rmse": 0.012445653061037332,
+          "mae": 0.007941814217477913,
+          "pearson": 0.0,
+          "prediction_std": 0.0
+        },
+        "generic": {
+          "mse": 0.0001550275974180372,
+          "rmse": 0.012451007887638543,
+          "mae": 0.007880149037860535,
+          "pearson": 0.059011156004815435,
+          "prediction_std": 0.00014061975300857496
+        },
+        "event": {
+          "mse": 0.00015491397014538304,
+          "rmse": 0.012446444076336945,
+          "mae": 0.008247937345750796,
+          "pearson": 0.027267102212558163,
+          "prediction_std": 0.0010492386519159117
+        }
+      }
+    }
+  ],
+  "event_vs_generic": {
+    "paired_delta_mse": -5.268579965539831e-06,
+    "uncertainty": {
+      "paired_delta_mse_95_ci": [
+        -8.824056080753282e-06,
+        6.562502840577712e-08
+      ],
+      "event_pearson_95_ci": [
+        -0.2938894543856919,
+        -0.03382550790167068
+      ]
+    },
+    "fold_wins": 1
+  },
+  "event_vs_prior": {
+    "paired_delta_mse": -5.5714816247468435e-06,
+    "uncertainty": {
+      "paired_delta_mse_95_ci": [
+        -8.98303197939189e-06,
+        -2.6288882417837266e-07
+      ],
+      "event_pearson_95_ci": [
+        -0.29488189497469136,
+        -0.03715543472094282
+      ]
+    },
+    "fold_wins": 1
+  },
+  "checks": {
+    "event_vs_generic_mse_ci_lower_gt_zero": false,
+    "event_vs_prior_mse_ci_lower_gt_zero": false,
+    "event_pearson_ci_lower_gt_zero": false,
+    "event_wins_majority_vs_generic": false,
+    "event_wins_majority_vs_prior": false,
+    "event_nonconstant": true
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "experiment_id": "hyb-003-text-state-ministral3-8b-v3.1-full-extraction",
+  "status": "predeclared-after-stage1-pass-before-full-extraction",
+  "predeclared_at": "2026-09-10T00:00:00+07:00",
+  "research_role": "One outcome-blind extraction over all frozen HYB-003 context-headline rows; no target, learner, action mapping or performance evaluation.",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0"
+  },
+  "authorization": {
+    "stage1_gate": {
+      "path": "D:/UIT/KLTN/runtime/ministral3_8b_challenger/results/tech_llm_text_state_v3_1_stage1_gate.json",
+      "sha256": "ad479c50567efe6b74d0c4d1a9ec88a35c55883a6a7a74c5a0c57937687f5b9a"
+    },
+    "passed": true
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_text_inputs.json",
+      "sha256": "2871c55fee6ceafe2e6263069e4906cb1613110261dc56462a9d66523559a39f",
+      "records": 2534
+    },
+    "stage1_sample": {
+      "path": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_text_inputs.json",
+      "sha256": "2871c55fee6ceafe2e6263069e4906cb1613110261dc56462a9d66523559a39f",
+      "records": 2534,
+      "role": "operational full-input binding for frozen scorer"
+    },
+    "sampler": {
+      "path": "tools/llm/build_tech_llm_text_state_reliability_sample_v3.py",
+      "sha256": "a61921ddb1db7f5f59ec011500a1297d563ac7ff5c72355fa88d5b2f315a66c1"
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/tech_llm_text_state_extractor_v3.txt",
+      "sha256": "59c8bf4768ceceb13d6c35d679a027c71673b43bf82d091ef359aad92b79a14b"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/tech_llm_text_state_batch_v3.schema.json",
+      "sha256": "04289d7aacc2e48fb2f3f185d7f194e9d48ccdfd2ba2022feec96311a77d5104"
+    },
+    "postprocessor": {
+      "path": "tools/llm/score_tech_llm_text_state_v3_1.py",
+      "sha256": "57aa3f74e34597d37e8ca248ffa171c5f692af72c0bf3715d5dfedce8d3a9fdd"
+    },
+    "audit": {
+      "path": "D:/UIT/KLTN/tools/llm/evaluate_tech_llm_text_state_full_v3.py",
+      "sha256": "355a469d41824419c3ec9eaed5fb9dea414c6296e66b21870d5ae2206cf466ad"
+    },
+    "regression_test": {
+      "path": "tools/llm/test_tech_llm_text_state_v3_1.py",
+      "sha256": "dd2ebcb5b9514a0f293cdf6a385531475c36278902b2e256bf0abe0c61b21f81",
+      "status": "passed-before-v3.1-predeclaration"
+    },
+    "hyb_003_design": {
+      "path": "paper/input/results/hybrid/tech_llm_conditional_state_fusion_v3_design.json",
+      "sha256": "dc8db87aa21d8d475c1061afa8efe9d381680cd845adda9556e78bd1e27d5183"
+    },
+    "batch_size": 4,
+    "expected_batches_per_run": 634,
+    "temperature": 0.0,
+    "seed": 20260910,
+    "workers": 1,
+    "request_delay_seconds": 10,
+    "base_postprocessor": {
+      "path": "tools/llm/score_tech_llm_text_state_v3.py",
+      "sha256": "5e7a107070accb199af3b8220c2437a5bad0d8db36aa23dcba9739c3c5180996"
+    }
+  },
+  "completion_gate": {
+    "required": {
+      "records": 2534,
+      "schema_success": 2534,
+      "context_id_match": 2534,
+      "headline_id_match": 2534,
+      "evidence_exact_substring": 2534,
+      "evidence_fallback_max": 260
+    },
+    "decision": "Every requirement must pass before power/economic-MDE freeze or T1/T3 fitting."
+  },
+  "prohibited": [
+    "Using price, counterfactual target, trade PnL or HYB-003 performance as extractor input",
+    "Mapping generic negative tone or event_type directly to an action",
+    "Changing prompt, schema, model digest, sample, batch size or reliability thresholds after Stage 1 starts",
+    "Fitting T1 or T3 before text extraction, data audit and power gate are frozen",
+    "Running more than one LLM worker",
+    "Continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

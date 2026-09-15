@@ -1,0 +1,76 @@
+{
+  "schema_version": "cftc-rss-archive-llm-only-predictive-v15",
+  "experiment_id": "cftc-rss-archive-llm-only-event-conditioned-v15-development",
+  "predeclared_at": "2026-09-08T12:55:51.6082798Z",
+  "status": "FROZEN_PENDING_OUTCOME_BLIND_EXTRACTION",
+  "scope": "Independent outcome-unseen LLM-only candidate using the closed CFTC RSS Internet Archive corpus v15. No prior candidate outcome, panel, prediction, threshold, backtest, or gate result is an input.",
+  "outcomes_consulted_for_design": false,
+  "market_data_accessed": false,
+  "model_run": false,
+  "corpus": {
+    "id": "cftc-rss-internet-archive-v15",
+    "manifest_sha256": "2a607c31aebd3a0671b1bdda13251e957dba6e29450f93bb45f2fe5d8ded8183",
+    "corpus_sha256": "cc0bb90a767e4338c3cef07c0945b8d8022518ed1f173067fccf92017ae1c255",
+    "corpus_gate_sha256": "e5ad5507ece5f618a8def3a482f8a8eb7665d2302cebffa4ad62786e0825cc46",
+    "records": 1892,
+    "information_sets": 124,
+    "information_time": "archive_capture_at",
+    "aggregation_unit": "one information set per archive_capture_at"
+  },
+  "extractor": {
+    "model": "ministral-3:8b",
+    "model_digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "workers": 1,
+    "batch_size": 4,
+    "temperature": 0,
+    "seed": 20260908,
+    "prompt_sha256": "a43cc5523c720b551ccf2389b4022416a390a81803c69b8484da34cba5095c77"
+  },
+  "candle_candidate": {
+    "publisher": "Binance Vision",
+    "asset": "BTCUSDT spot",
+    "interval": "4h",
+    "download_authorized_only_after": "extraction data gate pass",
+    "interpretation": "post-hoc versioned evaluation artifact; not a claim of historical candle availability at archive_capture_at"
+  },
+  "target": {
+    "name": "btc_usdt_spot_h24_simple_return",
+    "execution_rule": "first 4h candle open strictly after archive_capture_at",
+    "formula": "open[t+24h] / open[t] - 1",
+    "role": "target and evaluation only"
+  },
+  "data_gate": {
+    "minimum_eligible_information_sets": 96,
+    "required_oos_records": 72,
+    "purge_hours": 24
+  },
+  "model": {
+    "family": "linear-ridge",
+    "alpha": 10.0,
+    "standardization": "training-fold only",
+    "hyperparameter_tuning": false
+  },
+  "folds": {
+    "type": "expanding",
+    "count": 3,
+    "oos_information_sets_per_fold": 24,
+    "ordering": "archive_capture_at ascending"
+  },
+  "bootstrap": {
+    "method": "paired moving-block within fold",
+    "iterations": 5000,
+    "block_information_sets": 4,
+    "seed": 20260908,
+    "confidence_level": 0.95
+  },
+  "gate": {
+    "minimum_fold_wins": 2,
+    "requirements": [
+      "MSE(sentiment)-MSE(event) 95% CI lower bound > 0",
+      "event Pearson 95% CI lower bound > 0",
+      "event MSE wins at least 2 of 3 folds",
+      "exactly 72 OOS predictions and nonconstant event predictions"
+    ]
+  },
+  "stop_rule": "On any data, extraction, or predictive-gate failure: freeze the artifact and stop before threshold, action mapping, backtest, Tech+LLM, or sealed holdout."
+}

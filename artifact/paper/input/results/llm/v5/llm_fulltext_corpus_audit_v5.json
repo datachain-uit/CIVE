@@ -1,0 +1,153 @@
+{
+  "schema_version": "llm-fulltext-corpus-audit-v5",
+  "input": {
+    "path": "D:\\UIT\\KLTN\\runtime\\external\\crypto_news_fulltext_v5\\coindesk-crypto-news-2020-2025.csv",
+    "sha256": "d17b24d672c6e343ce43e267c2ab5c37438edbb88004d8548e626ba28bd2339c",
+    "bytes": 240403139
+  },
+  "counts": {
+    "rows": 229172,
+    "valid_timestamps": 229172,
+    "unique_article_identities": 228995,
+    "unique_canonical_urls": 228987,
+    "unique_normalized_titles": 226913,
+    "unique_normalized_bodies": 227118,
+    "sources": 79,
+    "four_hour_buckets": 11278,
+    "multi_source_four_hour_buckets": 10694
+  },
+  "coverage": {
+    "earliest_utc": "2019-10-29T00:05:57+00:00",
+    "latest_utc": "2025-02-01T23:46:54+00:00",
+    "rows_by_year": {
+      "2019": 1637,
+      "2020": 10677,
+      "2021": 14001,
+      "2022": 26050,
+      "2023": 47770,
+      "2024": 124469,
+      "2025": 4568
+    }
+  },
+  "body_word_counts": {
+    "p10": 18.0,
+    "p25": 28.0,
+    "median": 55.0,
+    "p75": 75.0,
+    "p90": 104.0,
+    "at_least": {
+      "20": 199826,
+      "50": 125111,
+      "100": 23973,
+      "200": 20887,
+      "500": 9966
+    }
+  },
+  "four_hour_bucket_size": {
+    "median": 10.0,
+    "p90": 56.0,
+    "max": 188
+  },
+  "top_sources": [
+    [
+      "coinotag",
+      19495
+    ],
+    [
+      "coinpedia",
+      14140
+    ],
+    [
+      "newsbtc",
+      11074
+    ],
+    [
+      "cointurken",
+      10292
+    ],
+    [
+      "coingape",
+      9739
+    ],
+    [
+      "ambcrypto",
+      9534
+    ],
+    [
+      "cryptopolitan",
+      9102
+    ],
+    [
+      "cointelegraph",
+      8589
+    ],
+    [
+      "dailyhodl",
+      8046
+    ],
+    [
+      "cryptonews",
+      7950
+    ],
+    [
+      "utoday",
+      7309
+    ],
+    [
+      "decrypt",
+      6954
+    ],
+    [
+      "cryptopotato",
+      6762
+    ],
+    [
+      "bitcoin.com",
+      6494
+    ],
+    [
+      "bitcoinsistemi",
+      6016
+    ],
+    [
+      "coindesk",
+      5906
+    ],
+    [
+      "thenewscrypto",
+      5277
+    ],
+    [
+      "coinquora",
+      4484
+    ],
+    [
+      "crypto_news",
+      4392
+    ],
+    [
+      "timestabloid",
+      4273
+    ],
+    [
+      "bitcoinist",
+      3907
+    ],
+    [
+      "cryptodaily",
+      3700
+    ],
+    [
+      "theblock",
+      3699
+    ],
+    [
+      "livebitcoinnews",
+      3216
+    ],
+    [
+      "cryptoglobe",
+      3188
+    ]
+  ]
+}

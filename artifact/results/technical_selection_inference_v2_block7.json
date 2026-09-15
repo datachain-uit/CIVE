@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-08-13T15:15:40.811802+00:00",
+  "status": "exploratory development-sample inference; not sealed-holdout evidence",
+  "matrix": {
+    "observations": 1459,
+    "configurations": 54,
+    "frequency": "daily close-to-close marked-to-market return",
+    "start_timestamp": 1660435200000,
+    "end_timestamp": 1786406400000
+  },
+  "candidate": "top1_rank20_stop3p0_trail4p0",
+  "candidate_full_sample": {
+    "annualized_sharpe": 1.6660301142221312,
+    "total_return_pct": 217.4781194389551,
+    "max_drawdown_pct": 8.780449788769962
+  },
+  "cscv_pbo": {
+    "method": "CSCV using annualized Sharpe selection and eight contiguous partitions",
+    "combinations": 70,
+    "pbo": 0.0,
+    "median_oos_rank_logit": 3.555348061489413,
+    "distinct_selected_strategies": 6
+  },
+  "deflated_sharpe": {
+    "observed_annualized_sharpe": 1.6660301142221312,
+    "expected_max_annualized_sharpe_under_trials": 0.4375666816100747,
+    "deflated_sharpe_probability": 0.9996018017642108,
+    "test_statistic": 3.354044176197755,
+    "trials": 54,
+    "sample_skewness": 7.158878239357484,
+    "sample_kurtosis": 85.23555294490458
+  },
+  "moving_block_bootstrap": {
+    "mean_daily_return_ci_95": [
+      0.0003030881003384494,
+      0.0014710335097835453
+    ],
+    "annualized_sharpe_ci_95": [
+      0.7854653822866535,
+      2.443004456885156
+    ],
+    "total_return_ci_95": [
+      0.4952660001746844,
+      6.738570084141453
+    ],
+    "max_drawdown_ci_95": [
+      0.05785818496554593,
+      0.20100502543247112
+    ],
+    "probability_mean_return_positive": 0.9996,
+    "block_days": 7,
+    "draws": 10000,
+    "seed": 20260813
+  },
+  "warnings": [
+    "The same inspected development period supplies selection trials and inference.",
+    "The 54 strategies are highly correlated; the DSR trial adjustment is descriptive, not an independence claim.",
+    "CSCV measures selection instability inside this historical sample and does not replace a future sealed holdout."
+  ]
+}

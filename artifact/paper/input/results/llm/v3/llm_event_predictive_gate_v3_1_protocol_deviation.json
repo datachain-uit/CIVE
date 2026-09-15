@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-predictive-gate-v3.1-development",
+  "status": "aborted-before-data-load",
+  "recorded_at": "2026-09-03T12:39:24.1769540Z",
+  "predeclaration_sha256": "0770609402108B536CA489F2F3B75E8CDDC0A67313C21CC1FCDC091663580A89",
+  "failure": "The evaluator compared lowercase hashlib output to uppercase hexadecimal strings with case-sensitive equality and stopped at extraction_gate.",
+  "outcomes_consulted": false,
+  "reason_outcomes_not_consulted": "evaluate() aborted in the first source-hash loop before any JSON source, including the target panel, was loaded.",
+  "authorized_correction": "Create v3.1.1 with identical design, paths and hashes represented in lowercase; do not change evaluator, target, features, folds, model, bootstrap or gate thresholds."
+}

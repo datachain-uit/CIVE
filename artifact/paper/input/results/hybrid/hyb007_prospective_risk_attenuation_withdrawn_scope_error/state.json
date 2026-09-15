@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-007",
+  "status": "PROSPECTIVE_BASELINE_ESTABLISHED_NO_BACKFILL",
+  "initialized_at": "2026-09-11T14:34:13.282723+00:00",
+  "source_registry": {
+    "cointelegraph": "https://cointelegraph.com/rss"
+  },
+  "aliases": [
+    "bitcoin",
+    "btc",
+    "ethereum",
+    "ether",
+    "eth",
+    "solana",
+    "sol",
+    "xrp",
+    "ripple",
+    "bnb",
+    "binance coin",
+    "crypto market",
+    "crypto asset",
+    "cryptocurrency",
+    "digital asset",
+    "stablecoin",
+    "crypto exchange"
+  ],
+  "collector_sha256": "b98f61582f7a8275db120f4f8a962a7fea5679d800bf63ca5ccf4f5d3e7ae2a0",
+  "baseline_urls": [
+    "https://cointelegraph.com/magazine/metaplanet-equity-backlash-se-asia-crypto-funding-doubles-asia-express",
+    "https://cointelegraph.com/magazine/trading-stocks-against-boner-is-the-latest-trend-for-defi-degens",
+    "https://cointelegraph.com/markets/bitcoin-buyers-wary-of-july-sub-58k-floor-amid-onchain-data-anomaly",
+    "https://cointelegraph.com/markets/bitcoin-etfs-282m-biggest-outflow-july",
+    "https://cointelegraph.com/markets/bitcoin-etfs-shed-167m-after-strongest-three-week-inflow-run-of-2026",
+    "https://cointelegraph.com/markets/bitcoin-falls-on-us-ppi-overshoot-as-30-year-bond-yield-hits-new-19-year-high",
+    "https://cointelegraph.com/markets/bitcoin-sell-side-risk-returns-rare-lows-fade",
+    "https://cointelegraph.com/news/bitwise-put-down-dogecoin-etf-year-launch",
+    "https://cointelegraph.com/news/blockstream-rejects-ransom-liquid-hackers-return-bitcoin",
+    "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing",
+    "https://cointelegraph.com/news/claude-ai-cyberattacks-surveillance-weapons-anthropic",
+    "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks",
+    "https://cointelegraph.com/news/esma-warns-growing-crypto-ties-could-amplify-risks-to-traditional-finance",
+    "https://cointelegraph.com/news/european-finance-groups-urge-eu-to-scrap-tokenized-securities-cap-propose-15t-fallback",
+    "https://cointelegraph.com/news/ex-boe-cunliffe-central-bankers-fnality",
+    "https://cointelegraph.com/news/hunter-biden-denies-profiting-memecoin-laptop-crash",
+    "https://cointelegraph.com/news/india-launches-tokenized-bond-pilot-with-107m-issued",
+    "https://cointelegraph.com/news/liquid-network-resumes-block-production-after-320m-exploit",
+    "https://cointelegraph.com/news/metaplanet-executive-stock-pool-hong-kong-subsidiary",
+    "https://cointelegraph.com/news/moneygram-launches-visa-stablecoin-card-as-remittance-rivals-expand",
+    "https://cointelegraph.com/news/nasdaq-invests-100m-kraken-parent-21b-valuation",
+    "https://cointelegraph.com/news/revised-clarity-act-targets-non-decentralized-defi-operators",
+    "https://cointelegraph.com/news/robinhoods-crypto-volume-rebounds-august",
+    "https://cointelegraph.com/news/sbf-appeals-supreme-court-conviction-forfeiture",
+    "https://cointelegraph.com/news/sky-value-token-holders-standard-chartered",
+    "https://cointelegraph.com/news/solana-record-263k-tokens-issued",
+    "https://cointelegraph.com/news/treasury-secretary-bessent-urges-clarity-act-passage-senate-returns",
+    "https://cointelegraph.com/news/uk-house-of-lords-backs-mandatory-digital-asset-strategy-in-194138-vote",
+    "https://cointelegraph.com/news/unicredit-infrastructure-partners-crypto-trading-custody",
+    "https://cointelegraph.com/news/what-happened-in-crypto-today"
+  ],
+  "seen_urls": {
+    "https://cointelegraph.com/magazine/metaplanet-equity-backlash-se-asia-crypto-funding-doubles-asia-express": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/magazine/trading-stocks-against-boner-is-the-latest-trend-for-defi-degens": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/markets/bitcoin-buyers-wary-of-july-sub-58k-floor-amid-onchain-data-anomaly": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/markets/bitcoin-etfs-282m-biggest-outflow-july": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/markets/bitcoin-etfs-shed-167m-after-strongest-three-week-inflow-run-of-2026": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/markets/bitcoin-falls-on-us-ppi-overshoot-as-30-year-bond-yield-hits-new-19-year-high": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/markets/bitcoin-sell-side-risk-returns-rare-lows-fade": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/bitwise-put-down-dogecoin-etf-year-launch": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/blockstream-rejects-ransom-liquid-hackers-return-bitcoin": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/claude-ai-cyberattacks-surveillance-weapons-anthropic": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/esma-warns-growing-crypto-ties-could-amplify-risks-to-traditional-finance": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/european-finance-groups-urge-eu-to-scrap-tokenized-securities-cap-propose-15t-fallback": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/ex-boe-cunliffe-central-bankers-fnality": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/hunter-biden-denies-profiting-memecoin-laptop-crash": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/india-launches-tokenized-bond-pilot-with-107m-issued": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/liquid-network-resumes-block-production-after-320m-exploit": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/metaplanet-executive-stock-pool-hong-kong-subsidiary": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/moneygram-launches-visa-stablecoin-card-as-remittance-rivals-expand": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/nasdaq-invests-100m-kraken-parent-21b-valuation": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/revised-clarity-act-targets-non-decentralized-defi-operators": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/robinhoods-crypto-volume-rebounds-august": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/sbf-appeals-supreme-court-conviction-forfeiture": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/sky-value-token-holders-standard-chartered": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/solana-record-263k-tokens-issued": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/treasury-secretary-bessent-urges-clarity-act-passage-senate-returns": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/uk-house-of-lords-backs-mandatory-digital-asset-strategy-in-194138-vote": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/unicredit-infrastructure-partners-crypto-trading-custody": {
+      "status": "baseline_pre_freeze_excluded"
+    },
+    "https://cointelegraph.com/news/what-happened-in-crypto-today": {
+      "status": "baseline_pre_freeze_excluded"
+    }
+  },
+  "polls": [
+    {
+      "poll_id": "20260911T143413282723Z",
+      "kind": "initialize",
+      "feed": {
+        "url": "https://cointelegraph.com/rss",
+        "http_status": 200,
+        "headers": {
+          "Date": "Fri, 11 Sep 2026 14:34:13 GMT",
+          "Content-Type": "application/xml; charset=utf-8",
+          "Cache-Control": "public, s-maxage=300",
+          "last-modified": "Fri, 11 Sep 2026 14:32:54 GMT"
+        },
+        "started_at": "2026-09-11T14:34:13.282723+00:00",
+        "completed_at": "2026-09-11T14:34:13.661736+00:00",
+        "bytes": 52678,
+        "sha256": "06263125af765aeecccbac5a6a1541c41d1c17c7ad3e5e3125a78c12d078348d",
+        "path": "paper\\input\\results\\hybrid\\hyb007_prospective_risk_attenuation\\raw\\20260911T143413282723Z\\feed.xml"
+      },
+      "items": 30
+    }
+  ]
+}

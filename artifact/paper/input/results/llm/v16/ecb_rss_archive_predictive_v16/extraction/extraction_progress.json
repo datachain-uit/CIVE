@@ -1,0 +1,10 @@
+{
+  "status": "EXTRACTION_IN_PROGRESS",
+  "updated_at": "2026-09-09T08:33:30.502052+00:00",
+  "expected_records": 2249,
+  "records": 2249,
+  "success": 2249,
+  "errors": 0,
+  "checkpoint": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v16\\ecb_rss_archive_predictive_v16\\extraction\\extraction_checkpoint.ndjson",
+  "outcomes_consulted": false
+}

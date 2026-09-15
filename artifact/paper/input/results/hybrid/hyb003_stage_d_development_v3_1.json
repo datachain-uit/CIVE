@@ -1,0 +1,117 @@
+{
+  "schema_version": "hyb003-stage-d-development-v3.1",
+  "experiment_id": "HYB-003",
+  "stage": "D_development",
+  "status": "exploratory-development-only",
+  "evaluated_at": "2026-09-10T18:12:37.567296+00:00",
+  "research_role": "Exploratory development on historically seen data. NOT validation, sealed holdout, or live evidence.",
+  "stage_c_sha256_verified": true,
+  "arm_results": {
+    "T1": {
+      "arm": "T1",
+      "n_eligible_decisions": 170,
+      "n_eligible_clusters": 8,
+      "policy_action_rate_by_fold": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "overall_action_rate": 0.0,
+      "pearson_oos_by_fold": [
+        -0.3375578264577553,
+        -0.3390132679072242,
+        -6.04917656316101e-05
+      ],
+      "pearson_oos_overall": -0.021198512071459005,
+      "fold_mean_policy_delta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_positive_folds": 0,
+      "mean_policy_delta": 0.0,
+      "ci_95_lower": 0.0,
+      "ci_95_upper": 0.0
+    },
+    "T2": {
+      "arm": "T2",
+      "n_eligible_decisions": 170,
+      "n_eligible_clusters": 8,
+      "policy_action_rate_by_fold": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "overall_action_rate": 0.0,
+      "pearson_oos_by_fold": [
+        -0.341983790197262,
+        -0.6334557481781222,
+        0.05610565596267483
+      ],
+      "pearson_oos_overall": 0.014953113012881821,
+      "fold_mean_policy_delta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_positive_folds": 0,
+      "mean_policy_delta": 0.0,
+      "ci_95_lower": 0.0,
+      "ci_95_upper": 0.0
+    },
+    "T3": {
+      "arm": "T3",
+      "n_eligible_decisions": 170,
+      "n_eligible_clusters": 8,
+      "policy_action_rate_by_fold": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "overall_action_rate": 0.0,
+      "pearson_oos_by_fold": [
+        -0.22449024433280093,
+        -0.7282665775235249,
+        -0.04411793376399584
+      ],
+      "pearson_oos_overall": -0.06582448067002857,
+      "fold_mean_policy_delta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_positive_folds": 0,
+      "mean_policy_delta": 0.0,
+      "ci_95_lower": 0.0,
+      "ci_95_upper": 0.0
+    }
+  },
+  "t3_t1_approx_mean_delta": 0.0,
+  "pass_gate_checks": {
+    "T3_T1_ci_lower_positive": false,
+    "T3_T0_ci_lower_positive": "PENDING_portfolio_simulation",
+    "T3_positive_folds_2_of_3": false,
+    "T3_beats_placebos": "PENDING_placebo_evaluation",
+    "T3_intrabar_mdd_no_worse": "PENDING_intrabar_mdd",
+    "clusters_meet_minimum_12": false
+  },
+  "pending_calculations": [
+    "T3-T0 portfolio-level paired CI",
+    "Placebo evaluation (timestamp_shuffled, metadata_only, delayed_24h)",
+    "Intrabar MDD comparison T3 vs T0"
+  ],
+  "inputs": {
+    "predeclaration": {
+      "path": "paper\\input\\results\\hybrid\\hyb003_stage_c_predeclared_v3_1.json",
+      "sha256": "ccfd5ffbab9793cf3dce83370a5fc01d3bbea61ff448cdb1d5531529740853cd"
+    },
+    "panel": {
+      "path": "paper\\input\\results\\hybrid\\tech_llm_conditional_state_fusion_v3_panel.json",
+      "sha256": "cbcf95feeec96e8120bac2e3da45922981500763f3e55488e2a82ae8f39e2c64"
+    },
+    "state": {
+      "path": "paper\\input\\results\\hybrid\\tech_llm_conditional_state_v3_1.json",
+      "sha256": "0fb895ce5961b602a0f00751ea08ccf04c22c0acb141ea29ca8b7b54db0a9ce5"
+    }
+  }
+}

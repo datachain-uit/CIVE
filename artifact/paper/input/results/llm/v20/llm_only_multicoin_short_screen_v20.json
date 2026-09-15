@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-081--LLM-084-multicoin-short-v20",
+  "generated_at": "2026-09-11T09:40:52.239291+00:00",
+  "status": "SCREEN_COMPLETE",
+  "outcomes_consulted": false,
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v20\\llm_only_multicoin_short_screen_v20_predeclared.json",
+    "sha256": "87753d05f5efc23500b52f93cfb6cd41203d9df1fbef6577ede379cf82570226"
+  },
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-081",
+      "priority": "primary",
+      "passed": true,
+      "status": "PASS_TARGET_PREDECLARATION_AUTHORIZED",
+      "summary": {
+        "eligible_events": 2693,
+        "unique_buckets": 1914,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "buckets": 249
+          },
+          {
+            "fold": 2,
+            "buckets": 246
+          },
+          {
+            "fold": 3,
+            "buckets": 181
+          },
+          {
+            "fold": 4,
+            "buckets": 210
+          },
+          {
+            "fold": 5,
+            "buckets": 168
+          }
+        ],
+        "bar_file_present": true
+      },
+      "checks": {
+        "eligible_events": true,
+        "unique_buckets": true,
+        "each_oos_fold": true,
+        "bar_file_present": true
+      }
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-082",
+      "priority": "primary",
+      "passed": true,
+      "status": "PASS_TARGET_PREDECLARATION_AUTHORIZED",
+      "summary": {
+        "eligible_events": 1014,
+        "unique_buckets": 876,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "buckets": 112
+          },
+          {
+            "fold": 2,
+            "buckets": 129
+          },
+          {
+            "fold": 3,
+            "buckets": 124
+          },
+          {
+            "fold": 4,
+            "buckets": 152
+          },
+          {
+            "fold": 5,
+            "buckets": 105
+          }
+        ],
+        "bar_file_present": true
+      },
+      "checks": {
+        "eligible_events": true,
+        "unique_buckets": true,
+        "each_oos_fold": true,
+        "bar_file_present": true
+      }
+    },
+    "XRPUSDT": {
+      "experiment_id": "LLM-083",
+      "priority": "conditional",
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "eligible_events": 634,
+        "unique_buckets": 552,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "buckets": 45
+          },
+          {
+            "fold": 2,
+            "buckets": 50
+          },
+          {
+            "fold": 3,
+            "buckets": 78
+          },
+          {
+            "fold": 4,
+            "buckets": 88
+          },
+          {
+            "fold": 5,
+            "buckets": 76
+          }
+        ],
+        "bar_file_present": true
+      },
+      "checks": {
+        "eligible_events": false,
+        "unique_buckets": true,
+        "each_oos_fold": false,
+        "bar_file_present": true
+      }
+    },
+    "BNBUSDT": {
+      "experiment_id": "LLM-084",
+      "priority": "conditional",
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "eligible_events": 84,
+        "unique_buckets": 76,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "buckets": 4
+          },
+          {
+            "fold": 2,
+            "buckets": 2
+          },
+          {
+            "fold": 3,
+            "buckets": 2
+          },
+          {
+            "fold": 4,
+            "buckets": 11
+          },
+          {
+            "fold": 5,
+            "buckets": 11
+          }
+        ],
+        "bar_file_present": false
+      },
+      "checks": {
+        "eligible_events": false,
+        "unique_buckets": false,
+        "each_oos_fold": false,
+        "bar_file_present": false
+      }
+    }
+  },
+  "eligible_assets": [
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "stopped_assets": [
+    "XRPUSDT",
+    "BNBUSDT"
+  ]
+}

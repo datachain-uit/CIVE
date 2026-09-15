@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-08-07T15:42:09.502649+00:00",
+  "protocol": {
+    "allowed_universe": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "XRP/USDT",
+      "SOL/USDT",
+      "BNB/USDT"
+    ],
+    "daily_selection": "market UP-UP + channel event + top-N 10d momentum",
+    "fill": "next daily 4H open",
+    "stops": "4H ATR fixed plus trailing, adverse OHLC stop",
+    "pyramiding": "off",
+    "max_pyramid_layers": 1,
+    "pyramid_step_atr": null,
+    "fee_bps": 6.0,
+    "slippage_bps": 3.0,
+    "spread_bps": 2.0,
+    "impact_bps": 1.0,
+    "effective_adverse_execution_bps": 5.0,
+    "funding_source": "bybit-history",
+    "funding_bps_8h": null
+  },
+  "result": {
+    "starting_balance": 10000,
+    "final_equity": 25319.43,
+    "return_pct": 153.1943,
+    "max_drawdown_pct": 24.1675,
+    "fills": 72
+  },
+  "walk_forward_folds": [
+    {
+      "start": "2022-08-29",
+      "return_pct": -2.2154,
+      "max_drawdown_pct": 24.1675
+    },
+    {
+      "start": "2023-02-25",
+      "return_pct": -1.9209,
+      "max_drawdown_pct": 3.7818
+    },
+    {
+      "start": "2023-08-24",
+      "return_pct": 40.0378,
+      "max_drawdown_pct": 8.3708
+    },
+    {
+      "start": "2024-02-20",
+      "return_pct": 6.9635,
+      "max_drawdown_pct": 5.7041
+    },
+    {
+      "start": "2024-08-18",
+      "return_pct": 20.0245,
+      "max_drawdown_pct": 8.1364
+    },
+    {
+      "start": "2025-02-14",
+      "return_pct": 74.698,
+      "max_drawdown_pct": 6.8319
+    },
+    {
+      "start": "2025-08-13",
+      "return_pct": -6.4258,
+      "max_drawdown_pct": 10.0591
+    },
+    {
+      "start": "2026-02-09",
+      "return_pct": -10.8979,
+      "max_drawdown_pct": 12.8449
+    }
+  ],
+  "positive_folds": 4,
+  "folds_tested": 8,
+  "applied_funding_events": 468,
+  "missing_funding_events": 0
+}

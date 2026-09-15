@@ -1,0 +1,3124 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-17T00:57:49.251163+00:00",
+  "experiment_id": "llm-fingpt-chatglm2-6b-bnb-nf4-v2-development",
+  "stage": "stage1-operational-reliability",
+  "model": {
+    "base": "zai-org/chatglm2-6b",
+    "base_revision": "d2e2d91789248536a747d9ce60642a336444186c",
+    "adapter": "FinGPT/fingpt-mt_chatglm2-6b_lora",
+    "adapter_revision": "c28afd1e770d313f57cf11ebc647a9b9c3fea6e4"
+  },
+  "input": {
+    "artifact": "D:\\projects\\auto-trading\\results\\llm_daily_information_sets_v1.json",
+    "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338",
+    "selected_information_sets": 108,
+    "sample_per_year": 12
+  },
+  "contract_version": "fingpt-benchmark-headline-label-mean-v1",
+  "contract_hash": "391a70c9f75099f46dbc978b669b115efc03df9e87b2269a3472f2af3e6be168",
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "runtime": {
+    "device": "cuda:0",
+    "workers": 1,
+    "generation": "greedy",
+    "quantization": "bnb-nf4",
+    "max_input_tokens": 512,
+    "max_new_tokens": 8,
+    "power_plan_observed": "Silent",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "peak_allocated_mib": 3900.79
+  },
+  "runs": [
+    {
+      "run": 1,
+      "records": [
+        {
+          "content_hash": "076e8798396e478ffde054aacd7657dcd6c9a36a8e64e2d001c762b178cb930e",
+          "information_date": "2017-08-17",
+          "available_at": "2017-08-18T00:00:00+00:00",
+          "source_snapshot_hash": "66e3e263123682a52962d65cbc4c61024e06655fd0b2b35ddd7dcb04f6944e1b",
+          "selected_article_count": 6,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 6,
+          "score": 0.6666666666666666,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 2,
+            "positive": 4
+          },
+          "records": [
+            {
+              "headline": "Anonymous Email Service ProtonMail Adds Bitcoin Payment Option",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Blockchain & Bitcoin Conference Stockholm to Feature Discussions on ICOs and Blockchain Development",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Prices Reach New All-Time High of Over $4,500",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Lightning Bank Ledgers? Bitfury and Ripple Demo New Twist on Bitcoin Tech",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "$7 Million: Bitcoin Wallet Startup Breadwallet Raises New Funding",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin's Biggest Software Wallet Blockchain Adds Ethereum",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "f415b4994934fd1040a96cb3c8d65755e3efd686f8f0ea8f6679d1623a1e4ce9",
+          "information_date": "2017-08-30",
+          "available_at": "2017-08-31T00:00:00+00:00",
+          "source_snapshot_hash": "24b8a4769c5ccf46901afded7202754da6532c89498a4f3c373dd42f8b285980",
+          "selected_article_count": 3,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 3,
+          "score": 0.3333333333333333,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 2,
+            "positive": 1
+          },
+          "records": [
+            {
+              "headline": "Why Miners Are Mining Bitcoin Cash – and Losing Money Doing It",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Hard Forks Galore: Bitcoin Cash Debates Ambitious Tech Roadmap",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum Founder Strikes Deal with Russian Development Bank",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "4376f84e9c54ad012a6647a51cf0838bfb76f7c45bb7666aa1f002e917485856",
+          "information_date": "2017-09-11",
+          "available_at": "2017-09-12T00:00:00+00:00",
+          "source_snapshot_hash": "5a701e16c967c2b9d817fa3c410356e5ffcdaf22469eb07baaf0561a127f97b6",
+          "selected_article_count": 3,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 3,
+          "score": -0.6666666666666666,
+          "label_counts": {
+            "negative": 2,
+            "neutral": 1,
+            "positive": 0
+          },
+          "records": [
+            {
+              "headline": "MASTer Plan: Better Bitcoin Smart Contracts Could Go Live This Year",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "WSJ, Bloomberg Latest to Claim Bitcoin Exchange Crackdown in China",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin Finds Bottom at $4,000 as Price Awaits Post-China Breakout",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "4d40fec91aa38af8804bf7c3a334875e366c5eb84c009c8a7be9ea0e8358347f",
+          "information_date": "2017-09-23",
+          "available_at": "2017-09-24T00:00:00+00:00",
+          "source_snapshot_hash": "4dfab8052e611597ea36f2fad7d4d491ada2f220be8529add16b93b9e7d13b3f",
+          "selected_article_count": 4,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 4,
+          "score": 0.5,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 2,
+            "positive": 2
+          },
+          "records": [
+            {
+              "headline": "Money Manager Josh Brown: 'ICOs Are Where The Frauds Will Take Place'",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitindia: A Cryptocurrency Exchange and Wallet for the Streets of India Backed by John McAfee",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Better in Byzantium? Ethereum Takes Baby Steps Toward a Privacy Boost",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Welcome to Bitcoin Country: Silk Road and the Lost Threads of Agorism",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "d6cff9e8d389f8e776b9da35235e5b0d082b4f2f97a0c6382c68bbcca26f6fbd",
+          "information_date": "2017-10-06",
+          "available_at": "2017-10-07T00:00:00+00:00",
+          "source_snapshot_hash": "28187f16b4807d61e9a5dc6f9403c9e1a5b6a8de15eed28b353f0ea6b1c8b73f",
+          "selected_article_count": 6,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 6,
+          "score": 0.16666666666666666,
+          "label_counts": {
+            "negative": 2,
+            "neutral": 1,
+            "positive": 3
+          },
+          "records": [
+            {
+              "headline": "BlackRock Exec: No Point in Bitcoin ETF",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Providence Crypto Casino: “The Gaming Revolution Starts Now”",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Solar Bankers to Develop Decentralized Electricity Network with SkyLedger",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Two Hurdles? Bitcoin Faces Resistance Ahead of $4,500",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Litecoin Creator Charlie Lee: Coinbase Will Likely Choose Bitcoin Over SegWit2x",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Derivatives ETFs Withdraw Filings at SEC Request",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "919a061729aa2dbcc126e0f1565a97f21835220fcd71aef9914e020ca9b47d35",
+          "information_date": "2017-10-19",
+          "available_at": "2017-10-20T00:00:00+00:00",
+          "source_snapshot_hash": "919a061729aa2dbcc126e0f1565a97f21835220fcd71aef9914e020ca9b47d35",
+          "selected_article_count": 4,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 4,
+          "score": 0.25,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 3,
+            "positive": 1
+          },
+          "records": [
+            {
+              "headline": "Everus Maintains Focus on Cryptocurrency Commerce and Merchant Onboarding",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Cautiously Bullish? $6,000 in Play as Bitcoin Price Stages Sharp Recovery",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin, Ethereum, Litecoin: Price Analysis, October 19",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "World’s First Blockchain-Based Bandwidth Marketplace Privatix Starts Token Sale",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "56e485383b6d183c766e93f9271e4218d5c5fbf36deedaacaa00b5cb9bd89a59",
+          "information_date": "2017-11-01",
+          "available_at": "2017-11-02T00:00:00+00:00",
+          "source_snapshot_hash": "f5d90c74be9b95b5574d65a2baf37e1665b4854bca75e12fb61ccb8caa756273",
+          "selected_article_count": 12,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 12,
+          "score": 0.5,
+          "label_counts": {
+            "negative": 2,
+            "neutral": 2,
+            "positive": 8
+          },
+          "records": [
+            {
+              "headline": "Survey: Younger Americans More Interested in Cryptocurrencies, ICOs",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Brickblock’s Plan to Revolutionize Investing with Real-world Assets on the Blockchain",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "SEC Alleges Day Trader Used Bitcoin to Hide Fraud Profits",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Privacy and Scalability? ZoKrates Devcon Announcement Brings Both to Ethereum",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Understanding Segwit2x: Why Bitcoin's Next Fork Might Not Mean Free Money",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Hits New High Above $6,500",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin 'Battle'? Core Developers Apathetic as Segwit2x Fork Approaches",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "ZoKrates Seeks to Bring Best of Zcash to Ethereum with Devcon Debut",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Cash Outlook Improves as Traders Greet New Code Release",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "A More User-Friendly Bitcoin Market? OpenBazaar Version 2.0 Is Here",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bright Futures: Bitcoin Climbs on CME News, But Is $7,000 in Sight?",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Gold Team Touts Safety Update Ahead of Coin Release",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "822a1e399566c02788d663423bc72fd598fa68f8cb896c3c2f5a1c2e3b4897a3",
+          "information_date": "2017-11-13",
+          "available_at": "2017-11-14T00:00:00+00:00",
+          "source_snapshot_hash": "338c614d6af45a6640277d1a7d4eee18c7a28cfe968ed87dc7a7a306c8b80542",
+          "selected_article_count": 9,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 9,
+          "score": 0.6666666666666666,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 1,
+            "positive": 7
+          },
+          "records": [
+            {
+              "headline": "No Need for War Between Bitcoin, Ethereum: The Future Collaborative “Web” of Cryptocurrencies",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ethereum Classic Rises in Price Preceding ETC Summit",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Gold Goes Live After Bumpy Blockchain Launch",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "QUOINE Raises 350 Million QASH In Significantly Oversubscribed ICO",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Attention GPU Miners: Bitcoin Gold Goes Live",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Recovery In Doubt? Bitcoin Price May Not Sustain Above $6,500",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin Exuberance: Indicative Of A Bubble?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ex-CFTC Commissioner Bart Chilton: Bitcoin Isn't a Scam",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Amazon Bitcoin Exchange? Retail Giant Buys Up Ethereum, Cryptocurrency Domains",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "6dc462d0c08c1c13ea6c98c47d0d2f5d41636d3f62d8cd14a2603f2851cda732",
+          "information_date": "2017-11-25",
+          "available_at": "2017-11-26T00:00:00+00:00",
+          "source_snapshot_hash": "946345ba93d4bc083bc40799884ae9195e8f2d945ec3846a90fd1942cbac9b5f",
+          "selected_article_count": 8,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 8,
+          "score": 0.625,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 3,
+            "positive": 5
+          },
+          "records": [
+            {
+              "headline": "Can Bitcoin Reshape The Retirement Narrative?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Number of Ethereum Developers is Rapidly Rising, as Shown by Truffle",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Old Mutual Gold & Silver Fund Starts to Invest in Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Mainstream Adoption of Bitcoin Throughout South Korea is Growing",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "200,000 LALA Tokens Airdrop is Activated",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Taklimakan Network to Become Popular Resource for Cryptocurrency Trading and Investments",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Copycat BTC Fork Bitcoin Diamond Goes Live",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Attracts Opportunity Seeking High-Speed Traders",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "6a5cba5d36394bee97c4c3df012581d33aa11970bc9d69be5fd6ae83bd9d0877",
+          "information_date": "2017-12-07",
+          "available_at": "2017-12-08T00:00:00+00:00",
+          "source_snapshot_hash": "f972b0b34baa339ca42689c70388177a8288ffeb4157f9d0d6fb7e44222886b4",
+          "selected_article_count": 15,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 15,
+          "score": 0.0,
+          "label_counts": {
+            "negative": 3,
+            "neutral": 9,
+            "positive": 3
+          },
+          "records": [
+            {
+              "headline": "Investing in Crypto? Here’s A Book Ya Might Want to Grab",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Revealed: The Real Advantages of the CME and CBOE Bitcoin Futures Contracts",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "$10k in Bitcoin for 10 Years? Ron Paul Fans Pick Crypto Over Gold",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin's Price Passes $13k in New All-Time High",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "BETEX: Derivatives Trading based on Blockchain Technology",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "5 People Who Predicted $10,000 Bitcoin Before 2017",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin’s History Predicts its Future",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Up $2k on Day as Market Nears $400 Billion",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Greenspan Likens 'Irrational' Bitcoin to Revolutionary War Currency",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Micro Raiden: Free Transactions on Ethereum Network Now Live",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "$15,000: Is There a Limit to Bitcoin's Meteoric Rally?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Cat Fight? Ethereum Users Clash Over CryptoKitties",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Futures Industry Association Blasts New Bitcoin Derivatives",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "As Bitcoin Soars, Prices Diverge Wildly Across Exchanges",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin “In No Way a Currency,” According to Bank of France",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "ad3e03ac0216a1395262360079ae7e6d98cadcf6196bf6e293dc6d882c7cc394",
+          "information_date": "2017-12-19",
+          "available_at": "2017-12-20T00:00:00+00:00",
+          "source_snapshot_hash": "3af928c0d9fdac222011dc4ad3406f4cf32cda578173231d5c8aeb081d3b7c32",
+          "selected_article_count": 20,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 20,
+          "score": 0.25,
+          "label_counts": {
+            "negative": 5,
+            "neutral": 5,
+            "positive": 10
+          },
+          "records": [
+            {
+              "headline": "German Exchange Executives Consider Bitcoin Futures Contracts",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "CFTC Launches Online Resources for Bitcoin Investors",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Hedge Fund Pro Miller Is '50 Percent' Invested in Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "ZeroLink Bitcoin Anonymizer Service Going Live Soon, Test Participants Get $10",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Another Week, Another All-Time High as Bitcoin Moves Toward $20,000: Week in Review Dec 18",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Saxo Bank: Bitcoin Surge to $60K in 2018, Drop to $1K in 2019",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Cigars to Bitcoin: Company Makes Massive Shift into Bitcoin Mining",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Coinseed - Invest Your Spare Change in Cryptocurrencies - ICO Pre-sale",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "More Freedom From Freewallet",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Likely to Become 'Niche' Product, Says ING's Top Economist",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "'Stay Away' from Bitcoin, Warns Danish Central Bank Chief",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Kuwait's Ministry of Finance Says It Does Not Recognize Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Risks Bearish Price Reversal as Altcoins Surge",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Reaches New Cool as Ice Rink is Named After It",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "$2,300 and Rising: Bitcoin Cash Gains Against Bitcoin",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Kik CEO Drops Ethereum for Stellar, Claims Poor Scalability",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Payment Processor BitPay To Add Support for Bitcoin Cash",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Exchange Youbit to Declare Bankruptcy After Hack",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Nobel Winner Robert Shiller: Bitcoin Is Too 'Ambiguous' to Value",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin Makes Inroads into Real Estate Sector: Two UK Luxury Homes Sold",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "430d595c2b9eca6e981003b2161c3077f64cb7a69176adeb09e066682ddd0551",
+          "information_date": "2017-12-31",
+          "available_at": "2018-01-01T00:00:00+00:00",
+          "source_snapshot_hash": "93c01e822b13553e006258effb6f3da2f60beeae2e2c9b7aa1b6c7ca734aa3ed",
+          "selected_article_count": 13,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 13,
+          "score": 0.15384615384615385,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 9,
+            "positive": 3
+          },
+          "records": [
+            {
+              "headline": "Singapore Trial Will Determine Fate of Contested $44 Million in Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Vitalik Buterin Threatens to leave Ethereum if Immature Community Persists",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin’s (Worrying) Potential Influence Over the Stock Market",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Tilman Fertitta: Bitcoin Here to Stay, Similar to the Dot-Com Bubble",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #10: Jihan Wu",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #9: Amber Baldet",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #7: Pieter Wuille",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Steams Ahead of Gold as 2018 Approaches",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #6: Yao Qian",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #5: Joe Lubin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #3: Charlie Lee",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #2: Jamie Dimon",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most Influential in Blockchain 2017 #1: Bitcoin Sign Guy",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "ca37d1d74461ee67e3671ccfa3846a8938b19381812dbd7cf574c80846fd0999",
+          "information_date": "2018-01-01",
+          "available_at": "2018-01-02T00:00:00+00:00",
+          "source_snapshot_hash": "198ac7b5848540a01b7584693d8639606e59c64409f0f6d3eb8b6438fc78693b",
+          "selected_article_count": 4,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 4,
+          "score": 0.25,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 3,
+            "positive": 1
+          },
+          "records": [
+            {
+              "headline": "Ark Chief Catherine Wood: Bitcoin is a “Bigger Idea than Apple”",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Video: Bitcoin Sign Guy Tells All About Infamous Janet Yellen Photobomb",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Video: Bitcoin or Litecoin? Charlie Lee on Which Crypto Had a Better 2017",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Get Your Hardfork Away from My Subreddit: Bitcoin and Censorship",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "a925d35022c34cc7bcf0ec633f9c1d364206c2a00800aa64a439c62e4e4357bb",
+          "information_date": "2018-02-03",
+          "available_at": "2018-02-04T00:00:00+00:00",
+          "source_snapshot_hash": "a925d35022c34cc7bcf0ec633f9c1d364206c2a00800aa64a439c62e4e4357bb",
+          "selected_article_count": 1,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 1,
+          "score": -1.0,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 0,
+            "positive": 0
+          },
+          "records": [
+            {
+              "headline": "Why have Bitcoin Transaction Fees Fallen so Sharply?",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "202e4db5ffb849a6603181667349afb188a86802d8492ad0d263d1e984400ae7",
+          "information_date": "2018-03-08",
+          "available_at": "2018-03-09T00:00:00+00:00",
+          "source_snapshot_hash": "0e25ea0f86805542f5e67171265e294275366799de49d16cfd250ed2f0be1955",
+          "selected_article_count": 13,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 13,
+          "score": 0.23076923076923078,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 8,
+            "positive": 4
+          },
+          "records": [
+            {
+              "headline": "Bitmain Wants to Invest in Blockchain-Powered 'Central Banks'",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The Emerging Trend of Bitcoin for Retirement Funds",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The Psychology of a Successful Cryptocurrency Investor",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "3 Reasons Stellar Might Find the Momentum to Soar Despite the Lukewarm Crypto Market",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ethereum Foundation Awards Millions In New Grant Funding",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin’s Roger Ver and Mate Tokay Join XinFin.io Advisory Board",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price Revisits $10K, But Will It Stay?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Astana to Hold its Second Major Central Asia Blockchain Conference",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin mining cost around the world",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Thanatos Ransomware: The First to Demand Bitcoin Cash as Ransom",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Coinbase Eyes M&A Potential After Poloniex Sells to Circle",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Founder of Bitfunder, Jon Montroll, Is No Stranger to the Legal System",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "$800 in 1 Hour: Bitcoin Price Drops Big to Near $9K",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "314ff168c92dc053f82477882203b04167338e58b88e93e29d596d94b5f1db97",
+          "information_date": "2018-04-10",
+          "available_at": "2018-04-11T00:00:00+00:00",
+          "source_snapshot_hash": "d0181da83816fa716c6b42ed37722ee1584aec55240b89e432251f9f7732f824",
+          "selected_article_count": 16,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 16,
+          "score": 0.4375,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 7,
+            "positive": 8
+          },
+          "records": [
+            {
+              "headline": "Vitalik Buterin Rebuffs Proposal for Hard Fork to Act Against Ethereum ASICs",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Investment Banker leaves Credit Suisse to Advise ICO Startups",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Has A Future, Says Banker Who Predicted $100,000 BTC",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "World Class Business Schools Join the Bitcoin Bandwagon with Blockchain Courses",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "'Bitcoin Day' Proves Crypto Is Thriving in Argentina",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin-Birzha Brothers Winklvossov will launch the “wholesale” trading of cryptocurrency blocks",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Noorcoin Partners With Zilliqa",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "“Rescue hard fork” Nano cryptocurrencies can give rise to a new legal precedent",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Reality Shares to Launch Blockchain ETFs Focused on the Chinese Market",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Rangebound: Bitcoin Bulls Need Break Above $7.5K",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Sustained Break of $7000 Elusive for Bitcoin, Entrance of the Big Names in Finance: Week in Review Apr. 10",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Despite Bitcoin Price Slump, Cryptocurrency Payments Steadily on the Increase in Asia",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Golem Arrives: One of Ethereum's Most Ambitious Apps Is Finally Live",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Barclays analysts compared the price movements of bitcoin with the spread of viral infections",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The National Assembly of Venezuela recognized El Petro",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "“India Making Huge Mistake,” Says Draper After Banks Banned from Crypto",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "a08300b396cb6d1947b25721b6403d7d536f6eb794e1d3b0b44c4c4e164e05e6",
+          "information_date": "2018-05-13",
+          "available_at": "2018-05-14T00:00:00+00:00",
+          "source_snapshot_hash": "d33afcec2ab13f961a4b23ddc060867831464bdfd4e771b3335bbcc0f9bcdf7c",
+          "selected_article_count": 9,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 9,
+          "score": 0.3333333333333333,
+          "label_counts": {
+            "negative": 0,
+            "neutral": 6,
+            "positive": 3
+          },
+          "records": [
+            {
+              "headline": "Legal Bitcoin Advisory Opens in New York to Guide New Investors",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Crypto Fight Club Round 2 – Dr. Doom: “Revolution is here but powered by IoT, AI, and Big Data, not Blockchain”",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The Central Bank of Zimbabwe prohibited financial institutions with cryptocurrency operations",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Analysis May.13",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Coinmarketcap deleted a link to the Bitcoin.com forum",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ripple obtains up to 70% savings in sending of the United States to Mexico with Xrapid",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Texas Securities Board Cracks Down on Two Alleged Crypto Scams",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitbond’s Loan Transfers Using Bitcoin Are Becoming More Popular",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The main events of the week in Bitcoin and blockchain industry in 7 minutes (05.05.18- 05/13/18)",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "f746ef0c2d3c63e0f28e1bef63c3c602c86d42070962723411d58a8ce96dab6d",
+          "information_date": "2018-06-15",
+          "available_at": "2018-06-16T00:00:00+00:00",
+          "source_snapshot_hash": "cbb63c4a19fd47ea7d7b779ef89db9e5539aff3a951ca9dac7e4a6fe3230485d",
+          "selected_article_count": 20,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 20,
+          "score": 0.35,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 11,
+            "positive": 8
+          },
+          "records": [
+            {
+              "headline": "University Study Concludes Tether Manipulated Cryptocurrency Prices",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "SEC declares that Ether is not a financial value",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "690 Ethereum -related scams remain active according to Etherscamdb",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "A Real-Time Battle Over Trashy Art Is Becoming a Big Deal for Bitcoin",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "EOS vs Ethereum: consensus, smart contracts, control",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ripple to Invest $2 Million in Texas University's Blockchain Research",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "SEC: Ethereum is not a security",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Analysis June.15",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "SEC Official Says Ethereum Not Considered a Security",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Cash Developer says Network will “Scale to VISA Levels” of Handling Transactions",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bittrex launched auction paired with a fiat US dollar for individual traders",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Recovery In Play If Key Support Holds",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Texas business school will receive $ 2 million from Ripple for blockchain research",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Montana County Delays Decision on Bitcoin Mining Suspension",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "What Crypto Thinks About the SEC Saying Ether Isn't a Security",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Coinshares Research Paper Investigates Cost of Bitcoin Mining",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "GINcoin Hits Three Milestones in One Week: Cryptopia Listing, PIVX Addition and Investor Dashboard Debut",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "CBOE: There are no more barriers on the path of Ethereum",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Car Companies Collaborate for the Sake of Blockchain Technology",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "What is Bitcoin mining?",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "9297e3f765015d5633f97c1e57da50fd36eb1938022cd83c60f83779a3e0c043",
+          "information_date": "2018-07-19",
+          "available_at": "2018-07-20T00:00:00+00:00",
+          "source_snapshot_hash": "02460c8dc94d17b2537f958f3d0e418ba6fc902e7c5d63cba515260c68c6c3ba",
+          "selected_article_count": 29,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "6be494c4d5cb84e54aeb4a1c5d6f0e0410216a1614f0bed771217a48e0e83ccb",
+          "information_date": "2018-08-21",
+          "available_at": "2018-08-22T00:00:00+00:00",
+          "source_snapshot_hash": "3dda5d247dc5e12c211515db87a32939c6876cf20a3de0a0547ee9bc4a638757",
+          "selected_article_count": 18,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "b4605253d531b39a4452380a12d5f0a3e093d956692f0d6c67460ba723ff76e7",
+          "information_date": "2018-09-23",
+          "available_at": "2018-09-24T00:00:00+00:00",
+          "source_snapshot_hash": "8954c1eb6bf644a239bf86b8f24143d21455923395510a4a9e75bcf84687b8ee",
+          "selected_article_count": 11,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "2118747cba1ff60a42e71e2af17e911ecb6fbc575d71a1d603100670b3968a7b",
+          "information_date": "2018-10-26",
+          "available_at": "2018-10-27T00:00:00+00:00",
+          "source_snapshot_hash": "36f07e52cc535cc9d2b08208cff97cbe3854ed5c262c3b1e98efda4ebe4528d6",
+          "selected_article_count": 22,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 22,
+          "score": 0.2727272727272727,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 14,
+            "positive": 7
+          },
+          "records": [
+            {
+              "headline": "Bitcoin Price Analysis Oct.26: Same dull story, but Friday is coming up",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Europol develops tool to decrypt ransomware gandcrab",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Chinese Court Rules Bitcoin Should Be Protected as Property",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ripple doubled the sales of XRP tokens in the third quarter",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The court in China admitted that the law does not prohibit the possession of bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum Founder Vitalik Buterin Praises Apple for Privacy Steps, Twitter Reacts",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Distributor of the Xsolla video game added support for the Gamer token Mobilego",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "$100 Doldrums: Bitcoin's Price Is Stuck In Its Tightest Range Since 2017",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "On the basis of the Ethfinex platform, exclusive tokens will be held",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum Foundation Details How It Grants Community Resources to Programs",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Australian Woman Steals $450,000 Worth of Ripple [XRP]",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Binance Bitcoin-Birzha used a blockchain to help victims of floods and landslides",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin (BTC) is a Property and Protected By Law, Chinese Court Confirms",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Traders Stay on the Sidelines As Bitcoins Price Stagnates",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Where Does Ripple [XRP] Go From Here As Its Price Stagnates With Rest of the Market?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Cryptocurrency Markets Remain Unimpacted From Global Stock Market Sell Off",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "A New Token Is Coming To Ethereum – And It's Fully Bitcoin-Backed",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin, Scams, and Everything in between: In Conversation with Peter Todd",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Simp",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The court rejected the lawsuit against insider trade against Coinbase",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Franco Amati: \"What should be done is stop using the word‘ blockchain '\"",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitgo and Kyber Network will launch a token bitcoin on the Ethereum blockchain",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "b1723ec6e5341111d10f131b6b290dd0549f15c69a7cc8b5c0e589d4b5fc01ff",
+          "information_date": "2018-11-28",
+          "available_at": "2018-11-29T00:00:00+00:00",
+          "source_snapshot_hash": "551a67facadfa82cc89fe465983ebf1a6528d58ec642ba1685e9cad42727dd65",
+          "selected_article_count": 23,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 23,
+          "score": 0.13043478260869565,
+          "label_counts": {
+            "negative": 4,
+            "neutral": 12,
+            "positive": 7
+          },
+          "records": [
+            {
+              "headline": "Crypto Market Update Nov.27: Crypto Clearance. What To Expect Next",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Binance to add Paxos Standard as a base currency for trading pairs",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Binance will add pairs with Paxos token to the combined stabelcoin market",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Analyst Claims Bitcoin to Test $2,970 is Likely in the Short-Term",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "They discover a failure that allowed stealing private keys from Copay",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "More active DAPPs of EOS and Tron exceed those of Ethereum in users and transactions",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Po.ET launches protocol for the registration of Bitcoin network content",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "CoinPayments Is 1st to Offer Stable Coin Payment Processing",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Hacker Infects a Popular Open Source Javascript Library to Steal Bitcoin",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bittorrent and µTorrent are now accepting payment in bitcoins, Binance Coin and Tron",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "BCH SV Enters Top-10, Monero Kicked Out, Market Enjoying Green Wave",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Back Over $4K: Bitcoin’s Price Bounce is Gathering Pace",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "In the new Chinese rating of cryptocurrencies, Bitcoin rose to six lines",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Exchanges’ Mass-Delisting of Tokens: A Precursor To The Next Bull Market?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Withdrawal of miners benefits those who remain active",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin price: recovery is gaining momentum",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Poloniex Has Problems with Bitcoin Cash SV Withdrawals",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Analysis of cryptocurrency prices: Will an ascending correction delay?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Kucoin added the possibility of buying cryptocurrencies using bank cards",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "One Billion XRP Moved: Evidence Now Claims Ripple Has No Value",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Galaxy Digital Holdings Cryptobank losses since the beginning of the year amounted to $ 136 million",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "The US Department of Finance first included in the Bitcoin-address sanctions list",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "U.S. Treasury connects two Bitcoin addresses to Iranian ransomware scheme",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "b224ffce3e7f12a2ed5c4e5168e3eae0186805402c3257166a9563d68a826495",
+          "information_date": "2018-12-31",
+          "available_at": "2019-01-01T00:00:00+00:00",
+          "source_snapshot_hash": "fcc03fbbcb17e9a80448a2c6460e0db712598047650224f18c33f13982f0f3af",
+          "selected_article_count": 18,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 18,
+          "score": 0.3888888888888889,
+          "label_counts": {
+            "negative": 1,
+            "neutral": 9,
+            "positive": 8
+          },
+          "records": [
+            {
+              "headline": "Russian grandmothers Minan Bitcoin taking advantage of Siberia's cold",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "In Which Ideas Is the Crypto Community Storing its “Hopium” for 2019?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "2018 Was the Reality Check. 2019 Starts the Crypto Comeback",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Emurgo Announces Trezor Wallet Integration for Cardano",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "2018 Marks The Lowest Average Daily Value Change for Bitcoin In 9 Years",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Economic Rationality and the Bitcoin Network",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "PAL Network (PAL) Has Launched Mainnet, Shares Plans for 2019",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Cardano (ADA) Price Could Resume Uptrend Above $0.045",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitdeer cloud mining service launched a tariff plan for new miners",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "CCXCanada Hints at Listing XRP as Base Currency",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ethereum Price Analysis Dec.31: ETH is Ending a Terrible Year With Hopes For a Better 2019",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "End Of The Year Bitcoin & Crypto Summary For 2018",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Here comes the New Year! Please stop irresponsibly predicting cryptocurrency prices!",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin’s Next Halving Rally: Coming Soon in 2019",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Exchange Paxful Sees 20% 2018 Growth, Driven by Africa",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ethereum’s New Radical: Glen Weyl Isn’t Vitalik But He’s Its Next Best Hope",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin’s Warrior Queen: Lightning’s Elizabeth Stark Is Building an Army",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The FUD Stompers: Like It or Not, XRP Army Is Winning Crypto’s Hashtag War",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "fe3bce4737f01f4455c50fa3d9da5ba0cced9fbf7cf4f0d809559a76daf008ef",
+          "information_date": "2019-01-01",
+          "available_at": "2019-01-02T00:00:00+00:00",
+          "source_snapshot_hash": "248be3e6ae10b443afd416607c424fa8f7b4ac65e25d0eed78b3149e92c3a638",
+          "selected_article_count": 12,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 12,
+          "score": -0.25,
+          "label_counts": {
+            "negative": 4,
+            "neutral": 7,
+            "positive": 1
+          },
+          "records": [
+            {
+              "headline": "Bakkt has made 3 new hires — here’s who’s working on the $182.5M crypto project",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The falling price of bitcoin forces startups to downsize",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin Struggles to Maintain $4,000 Mark and Closes Year’s Last Trading Week in the Red: BTCManager’s Week in Review",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Day One, 2019",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "A Year in Cryptocurrency and Blockchain: Q3 2018",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Analysis Jan.1: New Year, New Hopes for BTC",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Hot January for Ethereum: The Three Hard Forks you Should Know About",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Opennode bitcoin processing rejected $ 1.25 million investments by Roger Vera",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "The Billionaire Investor Tim DRAPER Is participating at the Blockchain Economy Istanbul Summit!",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Weekly Price Analysis Overview Jan.1: Bitcoin, Ethereum, Bitcoin Cash and Zcash",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Jed McCaleb: 90% of existing cryptocurrency projects - complete shit",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Stellar founder Jed McCaleb says most banks won’t use bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "65a599cf19b6adc9e9d6d2b7c3c2c7a0ec2af2d048e5349b8fdaa1939633df7c",
+          "information_date": "2019-02-03",
+          "available_at": "2019-02-04T00:00:00+00:00",
+          "source_snapshot_hash": "08034ddf3e73fcc75a6535344c18a7b0ec243096ffd4f39b2ec61dcfc4e635bb",
+          "selected_article_count": 17,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 17,
+          "score": -0.35294117647058826,
+          "label_counts": {
+            "negative": 8,
+            "neutral": 7,
+            "positive": 2
+          },
+          "records": [
+            {
+              "headline": "The head of Twitter once again called Bitcoin the future native currency of the Internet",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ripple Targets China’s $67 Billion Remittance Market, Plans to Open New Office in Shanghai",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "New Crypto Malware Targets Mac Users",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Change in The Plot? QuadrigaCX $190 M Loss Could Turn Into Theft Following Its Litecoin Sudden Move",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "The BlockStack team introduced a new consensus algorithm based on bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Mike Novograts predicted the growth of bitcoin \"A few months later\"",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Analysis Feb.3: BTC Faces Down Following Rejection Of The $3480 Mid-Term Trend-Line",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "DOGE, XRP, XLM, TRX: What’s in Store for Price in the Coming Weeks?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum Price Prediction: Did We Reach the Bottom or Is There Another Drop in Store?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin [BTC] – Bearish End to Week as Price Fails to Overcome Resistance",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Litecoin [LTC] Price Outperforms Other Top Cryptocurrencies This Week",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Some Bitcoin Investors Aren’t Planning to Share Their Losses With the IRS",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum [ETH] Price Action – Ethereum Underperforms Top Cryptocurrencies",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Emurgo Releases the Yoroi Light Wallet for Cardano Presentation",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin looked into the abyss, excitement around the Bittorrent tokens and other key events of the week",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Ethereum Price Analysis Feb.3: ETH Follows BTC By Failing to Break The Descending Trend-line. $100 Soon?",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "The 4 Biggest Darknet Scandals Where Millions in Crypto Were Seized",
+              "answer": "negative",
+              "label": "negative"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "043e40b1d50a48118f06163b4c9b2dd34daa90194f180f3f8ca7572db2555bfe",
+          "information_date": "2019-03-08",
+          "available_at": "2019-03-09T00:00:00+00:00",
+          "source_snapshot_hash": "76e6df54cc50538d8f4bef8876503515ed76a847c75e9debb7a3ef6dbe39dc4c",
+          "selected_article_count": 24,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 24,
+          "score": 0.041666666666666664,
+          "label_counts": {
+            "negative": 4,
+            "neutral": 15,
+            "positive": 5
+          },
+          "records": [
+            {
+              "headline": "20+ Best Bitcoin Casinos in 2019: Top Crypto Gambling Sites",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Fidelity Crypto Chief Says Hard Fork May Delay Firm’s Support for Ethereum",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Mapping out the Lightning Network ecosystem",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ripple CEO criticises JPM Coin, says it lacks interoperability",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Ethereum Block Count Spikes as Difficulty Bomb Diffuses on Schedule",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ripple CEO: I don't know what problem the JPM Coin should solve",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin and Ether Market Update: March 8, 2019",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The head of CFTC called the positive consequences of a reduction in bitcoin prices",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Twitter CEO recommends this hardware wallet to its 4 million followers",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Fidelity cryptocurrency platform may delay Ethereum placement due",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "UK Cash System May Be Heading towards a Collapse, a Recent Report Finds",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "France is discussing the possibility of banning anonymous cryptocurrencies",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The Ethereum Golden Cross: A Break Above $142 Could Send ETH Toward $170 – Price Analysis March 8",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Uncertainty with Bitcoin and Altcoin courses",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Cardano Price Prediction — How Much Will the Cost of ADA Be in 2019-20-25?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Struggles to Pass Price Hurdle But Bull Outlook Intact",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ripple Teams Up with Tipping Point Community Against Poverty, Gives Away $1 Mln for Charity",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Money 2.0 Stuff: Some highly abstract platitude-oriented discourse",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Former Bitmain employees launch a crypto startup",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum Price Prediction for March 2019 – Can ETH Get Back to the $150 Level? Is Recovery Close?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Most of the Bitcoin hashrate is still controlled by Bitmain",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The Day Is Coming When Businesses Will Laugh at You If You Don’t Use Bitcoin: Tim Draper",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The famous economist admitted that he was mistaken in relation to bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin and cryptocurrency movies, documentaries and series",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "aee62306937d90466e0b3136dfc40c27669b7372984f0364d7e135f1149878da",
+          "information_date": "2019-04-10",
+          "available_at": "2019-04-11T00:00:00+00:00",
+          "source_snapshot_hash": "cc4faacf7ec5cf34dd22647c4adb56cb205efa11094955fe6d4f575afbf17726",
+          "selected_article_count": 28,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 28,
+          "score": 0.10714285714285714,
+          "label_counts": {
+            "negative": 5,
+            "neutral": 15,
+            "positive": 8
+          },
+          "records": [
+            {
+              "headline": "Bitcoin derivatives trade grows for the fourth consecutive month",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Hard bifurcation of Ethereum Classic is expected for the beginning of September",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "ABBC Coin - Official Announcement",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "\"Making Ethereum Grande again\": a new governance proposal",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "XRP Price Prediction: huge profit warning detected. Ripple bulls in anticipation of rapid growth",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "UNCHAIN, One of the World's Leading Blockchain Events to be Held in Berlin",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Opera’s new browser has a crypto wallet",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "10th April BTC/USD Bitcoin Price Prediction: Slowly but Surely Testing a Resistance at $5,300 Again",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Risk Takers: 47% Of Crypto Traders Hold Their Portfolio’s Majority In Altcoins Over Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Is Getting To Its Critical Decision Point: Will $5300 Finally Break? BTC Price Analysis April 10",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Russian courts make decisions on blocking bitcoin exchanges according to the template. Even without a domain indication",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin and Ether Market Update: April 10, 2019",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin is back to over $ 5,200",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ripple Gets Honorable Mention at Major Global Award Ceremony, XRP Army Is Overjoyed",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "This Bitcoin Price Pattern Suggests $5,800 Potential Ahead",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Buyer Momentum Indicates Key Levels Can Be Overcome for Ethereum & EOS [Price Analysis]",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin price: bull divergence is recorded on an hourly graph",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Forbes: Bitcoin Sets Crucial Adoption and Usage Record, However Technical Data Is Negative",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bank Frick and Bitcoin Suisse Launch Crypto Certificate as a Classic Security and ERC20 Token",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Skype IP-telephony giant will consider the possibility of integrating XRP from Ripple",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Polkadot, the parallel chain protocol",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Founder Cardano: The Bitcoin Bitcoin idea has failed",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Cryptocurrency prices: Local correction before jerking",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Ethereum-based dapps dominate the market, note more inactive dapps than other blockchains",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum Trades Flat over DApp Users Deserting ETH for Tron: Report",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bain Capital and Ripple’s Xpring Invest in DeFi Founder’s ‘Scout Fund’",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The new omisego network for tests with cryptousuaries is now available",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Cash Advocate Roger Ver Criticizes Bitcoin Maximalists Who Silence Opinions",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "97066da3c76902c3a63f2641ddaed80d9742503fec5768ea257e3d5f9d4450ee",
+          "information_date": "2019-05-13",
+          "available_at": "2019-05-14T00:00:00+00:00",
+          "source_snapshot_hash": "ca18e2836b29751ddd5988644eb9aeb8757b2b8e7d706a5fef169058b6eaad75",
+          "selected_article_count": 48,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 48,
+          "score": 0.5,
+          "label_counts": {
+            "negative": 4,
+            "neutral": 16,
+            "positive": 28
+          },
+          "records": [
+            {
+              "headline": "Ethereum Price Analysis May 12: ETH Finally Reached $200 And Dropped. What’s Next?",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Dash (DASH) Investment Foundation Set to Go Live",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Cardano (ADA) Price Is Reversing Back To $0.058. Will Bullish Hammer Push It to New Heights?",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "From Crypto Winter to DeFi: A Year of Loss and Opportunity",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Slowly But Surely: May Was a Quietly Big Month for Blockchain",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Crypto Investor Awarded Over $75 Million in SIM-Swapping Hack Case",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitpanda Digitises Physical Gold and Silver",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Blockstream and Gotenna create alternative channel for satellite transactions with bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Fans Can Now Bet Crypto on Twitch's Top 'Fortnite' Streams",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "BitOasis Clears Hurdle in Bid to Launch Regulated Crypto Asset Exchange",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Crypto roller coaster: Bitcoin at around USD 7,000",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Has Recovered Nearly 25% of Its Bear Market Price Losses",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitfinex's Private Token Sale Raised $1 Billion in 10 Days, Exec Says",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Binance hack drama - now excuses are due",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "CoinGecko Unveils Exchange 'Trust Score' to Fight Fake Volume Data",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Santander Testing Nivaura's Blockchain-Based Floating Rate Bond",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "eBay Is Rumored to Start Accepting Crypto Payments",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Exchange-Traded Notes for XRP, Litecoin Launch on Boerse Stuttgart",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Microsoft Launches Decentralized Identity Tool on Bitcoin Blockchain",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "PAX Streamlines Redemptions in Battle for Stablecoin Market Share",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Uphold Integrates Ledger Tools to Boost Crypto Storage Solution",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ex-Tron CTO Denies Justin Sun’s Accusations of Embezzlement, Bribery",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Securitize Open-Sources Its Protocol, Partners With tZERO Token Exchange",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Whales revived against the backdrop of a rapid increase in bitcoin prices",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "You Can Now 'Spedn' Bitcoin at GameStop, Barnes & Noble and More",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "PayPal May Be Opening Up to Digital Currency",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bakkt Sets July Test Date for Bitcoin Futures",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Enterprise Ethereum Alliance Publishes Latest Client Specs in Blockchain Standards Push",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Polymath, Charles Hoskinson Team Up on Security Token Blockchain",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Consensus 2019: Ebay can add cryptocurrency support",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin, Ether, and XRP Weekly Market Update May 13, 2019",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ripple's Xpring, Outlier Ventures Back $4 Million Raise for Agoric",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "$7,900: Bitcoin's Price Extends Gains to Hit 9-Month High",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price Pulls Back, Dragging All Altcoins Down But Binance Coin (BNB)",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "The Bitcoin rally could continue this week",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Tor Makes Launching Bitcoin Lightning Nodes Easier for Users, Casa Finds",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price Halts Its Rally — Is $10,000 Next or Is This a Bull Trap Back Below $6,000?",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin SV Proponent Calvin Ayre Skeptical About BTC Price Appreciation, Dubs It an Exit Pump",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Breaking! Satoshi's Identity Will Be Revealed on May 14",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Kadena to Go Live in October With $3 Billion Asset Manager Onboard",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ron Paul: Anti-Crypto Congressman Is 'Just Another Thug in Washington'",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The German Exchange Börse Stutttgart added to the listing exchange notes based on Litecoin and XRP",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The daily trading volume on Bitmex has reached record values",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Hackers Exploit Confluence Vulnerability to Plant Crypto Mining Malware",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "France of France receives donations in cryptocurrencies to rebuild Notre-Dame",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price Pushed to $7,800 by BTC Whales. Forbes: BTC to Hit $20,000 in 2020",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bakkt is launching bitcoin futures contracts, to be listed on a federally regulated futures exchange",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "BREAKING: Bakkt to Introduce User Acceptance Testing for Bitcoin Futures in July",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "3dfb57054af3ab7930347443ff29cd830e79413014451cc893162d81f1ceb85a",
+          "information_date": "2019-06-15",
+          "available_at": "2019-06-16T00:00:00+00:00",
+          "source_snapshot_hash": "2fe270ea4b8c41d0e76682c4fb7b9039314f51391609e51a93e4064335ff8800",
+          "selected_article_count": 18,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 18,
+          "score": 0.2222222222222222,
+          "label_counts": {
+            "negative": 4,
+            "neutral": 6,
+            "positive": 8
+          },
+          "records": [
+            {
+              "headline": "Google Expands Cloud Services by Integrating Smart Contract Platform Chainlink",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Self-proclaimed Bitcoin creator Craig Wright committed fraud according to Florida court documents",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Card falsifiers bleached more than 600,000 euros in Spain using bitcoin",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Bitcoin price on top of the USD 8,600 and Binance token losing impulse",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Google Cloud will use Ethereum Blockchain and Chainlink smart contracts",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin, shitkoin and a little pain: the best memes of the week",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "What is Decentraland?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The price of bitcoin rose above $ 8700. Capitalization of the coin exceeded $ 150 billion",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "I Was Reddit's First (And Only) Cryptocurrency Engineer",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "It's FATF's Way or the Highway for Crypto Exchanges. That's a Big Mistake",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Loves Weekends: Following an $800 Price Move, The 2019 High Is Closer Than Ever",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Binance Research: Asian countries push up the price of bitcoin",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "XRP Price on the Way to $1 Long-Term Target: When to Expect a Fantastic Breakout?",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Surpasses 1 Million Daily Active Addresses",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The hashrate of the Bitcoin network updated the historical maximum",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "I Was Reddit’s First (And Only) Cryptocurrency Engineer",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin price goes up as developments attract investors",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "US Federal judge threatens to hold Craig Wright in criminal contempt in ongoing court case",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "7d7d5ca78966bd98a6272f8f9dcce505613b413b8080533d8e014f911fe7cb20",
+          "information_date": "2019-07-19",
+          "available_at": "2019-07-20T00:00:00+00:00",
+          "source_snapshot_hash": "9bebda84f9a07a72f278ca2a389322fa2e1d92255ce6f7dc42d53dd52dfa08f0",
+          "selected_article_count": 40,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "f7048b06696c2b215bbc0e89103b561e72264be6d6f062206a20cc5606138d7c",
+          "information_date": "2019-08-21",
+          "available_at": "2019-08-22T00:00:00+00:00",
+          "source_snapshot_hash": "91fa305407e683dbd3ee02e893d48a05b094219ad9f609f92518866aa9ca1544",
+          "selected_article_count": 48,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "30f079c569f7e7e706a6090544e12c7c5871c77307c6d73ed6a4c8683a160463",
+          "information_date": "2019-09-23",
+          "available_at": "2019-09-24T00:00:00+00:00",
+          "source_snapshot_hash": "e8b95962242a4c924cf51c673874b47b28304879c996107ab4e6d0afd5da8ad1",
+          "selected_article_count": 48,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "e2639f5ff9062957671702bb14b4f89aca4666af1236586a02ad8ac8215007bb",
+          "information_date": "2019-10-26",
+          "available_at": "2019-10-27T00:00:00+00:00",
+          "source_snapshot_hash": "ccaf8fdabc43fae9509cc90492545c63d351b24725df701a05b7c996764552ec",
+          "selected_article_count": 23,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 23,
+          "score": 0.43478260869565216,
+          "label_counts": {
+            "negative": 2,
+            "neutral": 9,
+            "positive": 12
+          },
+          "records": [
+            {
+              "headline": "Trading Legend Peter Brandt Says Ripple's XRP Price Is About to Complete \"Diamond Bottom,\" Reveals His Next Target",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Twitter CEO: Bitcoin is becoming the \"national currency\" of the Internet",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The 5 most appreciated cryptocurrencies: payments, entertainment and intelligent contracts",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bollinger Bands Creator Accurately Predicted Bitcoin's 16 Percent Price Jump",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "World Wide Fund for Nature uses Ethereum-based Kaleido to conjure up Impactio",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin's price increases more than 15% in a matter of hours",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin roaring back, bulls drive price above $8,600",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Vitalik Buterin: Google’s quantum supremacy no problem for crypto",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bakkt sets new all-time high in trading volume as Bitcoin price soars",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "AT&T Dragged to Court by Bitcoin ‘Hodler’ Losing Over $1.8M in Sim-Swapping Attack",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Another AT&amp;T SIM Swapping Hack Targets Trio of Crypto Execs",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "China Passes First-Ever ‘Crypto Law’ Going Into Effect January 2020",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The price of Bitcoin for the first time since September overcame $ 10,000",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Hits Five-Week High Above $10,000",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Poll: 60% Tell Vitalik Buterin ‘No’ to Ethereum Reversing Transactions",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin’s Price Touches $10,350, Records Largest Daily Percentage Increase Since 2011",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "China's Congress Passes Cryptography Law, Effective Jan. 1, 2020",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "The developers called the date of the Hardfform Istanbul in Ethereum",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Unknown Miner Controls 50% of BCH Hash Rate for 24 Hours",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "3 Reasons That Could Explain Why Bitcoin’s Price Surged 42% in One Day",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price at $20,000 Before Halving Is Realistic as BTC Gets Above Crucial Indicators: Crypto Trader",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "How long will this Bitcoin bull roar?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Reasons for Bitcoin Price 30% Surge from VanEck?s Director Include Xi Jinping?s DLT Statement",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "670ae8adfdc09908be79b00e52973095d57cea6092f546423a593f8df8a79205",
+          "information_date": "2019-11-28",
+          "available_at": "2019-11-29T00:00:00+00:00",
+          "source_snapshot_hash": "d410fcbe6b8003371d95d927032c0549a8987dca402633b2a76591e1115a7c48",
+          "selected_article_count": 48,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 48,
+          "score": 0.22916666666666666,
+          "label_counts": {
+            "negative": 6,
+            "neutral": 25,
+            "positive": 17
+          },
+          "records": [
+            {
+              "headline": "Environmental impact of Bitcoin mining is less than what was thought",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "XRP Price Predicted to Hit Zero Next February by Popular Crypto Analyst",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Lebanese Bitcoiners Show How to Talk About Crypto At Thanksgiving",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin price shoots up 8% as Bakkt breaks new record",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "What the Crypto Markets Are Saying About the Future of Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "ECB Official Says Digital Currency Could Be an Alternative to Cash",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price Retains $7.5K After Bullish Breakout Upends Bear Market",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "A Third of Crypto Exchanges Have Little or No KYC, Says CipherTrace",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "How to make money on a smartphone? Mining and smart station in the ENECUUUM mobile blockchain",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Eyes $7,800 After Biggest Daily Price Gain in a Month",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Cash Price Has the Ability to Go Up 1,000 Times. Roger Ver Explains How",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Coinbase Patents Automated KYC Enforcement Tool",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "EToro: Facebook Should Drop Libra and Support Third-Party Stablecoins",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Nuriel Rubini: the fundamental cost of Ethereum is zero",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "What the Fed Reserve's Balance Sheet Expansion Means for Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Twitter will retain the Cipher Punk account, which received 10 BTC from Satoshi Nakamoto",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "What the Crypto Markets Are Saying About the Future of BitcoinFiat Recalls U.S. 500 Over Detaching Shifter Cable Bushing - autoevolution",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Report: since the beginning of the year in cryptocurrencies decorated $4.4 billion",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "GlobalBitcoinsPro — Here to Save the Day!",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Binance to Launch Crypto Travel Rewards Card with Startup TravelByBit",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "WATCH: Chainalysis Chief Economist Wants Crypto to Move Past ‘Buying Drugs on the Silk Road’",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price May Surge to $9,400: Crypto Traders",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Kraken, One of Oldest Bitcoin Exchanges, Joins Silvergate Exchange Network",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Opinion: Rally Bitcoin 2019 is associated with the Plustoken scam",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Canadian Fund Manager 3iQ Files Prospectus for Bitcoin Fund IPO",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bloxrute Labs presented a solution that accelerates the transfer of Ethereum blocks",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "New service facilitates the sale of real estate with Bitcoin in Spain",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ripple?s ODL and XRP are Tools for Making Better Remittance System: Weiss Ratings",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The funds stolen from Upbit got to Huobi bitcoin-foreign",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Miners mined \"unplanned bitcoins\" for $ 130 million",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Stolen UPbit Ethereum funds on the move to Binance, Huobi",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Andreas Antonopulos: In an attempt to crush bitcoin, the state risks merging fiat in a black hole",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The unknown demanded 120 bitcoins from the Wex Exchange, threatening to blow up the courts of Moscow and St. Petersburg",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "The Bitcoin and old coins rolling wave of relaxation",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Satoshi in Venezuela will celebrate its sixth meetup in Valencia",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "What the Fed Reserve’s Balance Sheet Expansion Means for Bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Investor Praises CyberTruck While Big Brands Are Trolling It",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Report: German Banks Could Be Able To Store Bitcoin From 2020",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum (ETH) Price Prediction: Can Buyers Fix the $150 Level?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Texanalism: To continue the growth of bitcoin, you need to go through $ 7800",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Staking And Validation Details in Ethereum 2.0 Disclosed",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Finablr and Alipay Partner to Strengthen Financial Solutions on Ant Blockchain",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "CEO Twitter: Africa will determine the future of bitcoin",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Tezos Price Analysis: XTZ Up 52% In November, How Much Higher Can It Get?",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bakkt's growing volume hides an uncomfortable truth",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Suisse will offer customers to earn at the Ethereum 2.0 stake",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin average investor would lose less than USD 200 to fall from its price",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin Price Might Have Its Best Thanksgiving Ever if Bulls Persist",
+              "answer": "positive",
+              "label": "positive"
+            }
+          ],
+          "error": null
+        },
+        {
+          "content_hash": "aa542c18cbe71dbd5c601276ffea9f03fa23bd2d0c10b017607cf7b24f12e752",
+          "information_date": "2019-12-31",
+          "available_at": "2020-01-01T00:00:00+00:00",
+          "source_snapshot_hash": "e55f41636f930837831b79a7c67032c60db6e21194943fcc92d980ef7bee8055",
+          "selected_article_count": 20,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "5b8db959e1034a1376d467fb057023f886a6872f80b45b1940ba8a72002c2339",
+          "information_date": "2020-01-01",
+          "available_at": "2020-01-02T00:00:00+00:00",
+          "source_snapshot_hash": "7cbd65d37ade102a4216567f8557bbeecdef3d61e6bae8997cd394a8cefeeefd",
+          "selected_article_count": 12,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "1fb61e774ecf30522e0d5218eec44fd69c724073571549b08685ad60edc07d65",
+          "information_date": "2020-02-03",
+          "available_at": "2020-02-04T00:00:00+00:00",
+          "source_snapshot_hash": "9bbb6d68b6908d97bc8aa1e95886eca002bfdb791e8afee717ec203174856a5f",
+          "selected_article_count": 39,
+          "status": "error",
+          "parsed_headlines": null,
+          "headline_count_matches": false,
+          "score": null,
+          "label_counts": null,
+          "records": [],
+          "error": "ValueError: expected exactly one sentiment label, got []"
+        },
+        {
+          "content_hash": "8ab54b59a1f0fc2cbe2c44f32e3a1b64b392b2f23910d67a6aa834dcc34e0534",
+          "information_date": "2020-03-07",
+          "available_at": "2020-03-08T00:00:00+00:00",
+          "source_snapshot_hash": "db0e833b57221e25d0b874dd70748ea784c609f402578fc95e3468490e0ee535",
+          "selected_article_count": 23,
+          "status": "success",
+          "headline_count_matches": true,
+          "parsed_headlines": 23,
+          "score": 0.30434782608695654,
+          "label_counts": {
+            "negative": 2,
+            "neutral": 12,
+            "positive": 9
+          },
+          "records": [
+            {
+              "headline": "Las 5 criptomonedas de la semana: cadenas laterales, pagos P2P y privacidad",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin es uno de los activos más atractivos para invertir, de acuerdo a este indicador",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "BitPanda CEO Eric Demuth Says Bitcoin Is Gold 2.0 for Millenials",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Bitcoin (BTC) Price to Surge after Breaking $9,500: Trader",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ведущая конференция Bitcoin 2020 отменена из-за вспышки коронавируса",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Not Affected as US Fed Prints Equivalent of 9.8M BTC in 1 Day",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Analysis: BTC Trading In A Tight Range, Huge Move Coming Up Soon?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum (ETH) Is Main Project Pushing Crypto Industry Forward: Weiss Ratings",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ripple Price Analysis: Will The Sideways Action End In a Violent XRP Weekend Move?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Аналитики Weiss Ratings назвали Ethereum главным двигателем криптовалютной индустрии",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Ethereum driving industry forward says ratings agency",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Crucial Ethereum Milestone: A Major DEX to Hit $1B in Volume",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Despite Rising Competition, BitMEX Steadily Leading The Bitcoin Derivatives Exchanges In 2020",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "XRP Liquidity Surges to Hit New Record as XRP Adoption Spreads Wider",
+              "answer": "positive",
+              "label": "positive"
+            },
+            {
+              "headline": "Report: Transaction of One Bitcoin Consumes More Electricity Than A British Household In 2 Months",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Ethereum (ETH) ProgPoW Delayed or Abandoned? Summary of Core Developer Call",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Leader to Watch: Elena Giralt Talks Zcash and Feminism",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin (BTC) Price Prediction ? Enough Effort to Break $9,500 Resistance?",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Bitcoin Price Has All 3 Factors For a Bearish Correction Lighting Up",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Vitalik Buterin and Joe Lubin explore the future of Ethereum",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "La vida después de bitcoin, o cómo el dinero virtual logró seducirme",
+              "answer": "neutral",
+              "label": "neutral"
+            },
+            {
+              "headline": "Hotel Tamanaco Intercontinental en Venezuela comienza a aceptar pagos en criptomonedas",
+              "answer": "negative",
+              "label": "negative"
+            },
+            {
+              "headline": "Un bitcoiner en una conferencia de Ethereum",
+              "answer": "neutral",
+              "label": "neutral"
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  ],
+  "passed": false,
+  "status": "stage1-fail-stop-before-full-inference",
+  "error": null,
+  "checks": {
+    "information_sets": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_each_run": {
+      "observed": [
+        30,
+        0
+      ],
+      "required": 108
+    },
+    "headline_count_matches_each_run": {
+      "observed": [
+        30,
+        0
+      ],
+      "required": 108
+    },
+    "exact_score_agreement": {
+      "observed": 0,
+      "required_min": 108
+    },
+    "mean_absolute_score_difference": {
+      "observed": null,
+      "required_max": 0.0
+    },
+    "max_absolute_score_difference": {
+      "observed": null,
+      "required_max": 0.0
+    }
+  }
+}

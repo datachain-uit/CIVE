@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-17T11:21:22.160141+00:00",
+  "experiment_id": "llm-cryptobert-v1-development",
+  "stage": "stage0-feasibility",
+  "paper": {
+    "id": "S13",
+    "title": "Sentiment Classification of Cryptocurrency-Related Social Media Posts",
+    "doi": "10.1109/MIS.2023.3283170",
+    "role": "crypto social-sentiment transfer test; not a news-headline or trading replication"
+  },
+  "model": {
+    "model_id": "ElKulako/cryptobert",
+    "revision": "9e37c910fe87727cb842a9ac55c6388256fe0f15"
+  },
+  "input": {
+    "artifact": "D:\\projects\\auto-trading\\results\\llm_daily_information_sets_v1.json",
+    "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338"
+  },
+  "contract_version": "cryptobert-social-sentiment-transfer-v1",
+  "contract_hash": "c5aadbb2587e6c69fbe0b32f9c3fa774546be306ebf9b4814c5c48320d53ac48",
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "runtime": {
+    "max_length": 128,
+    "cache_dir": "D:\\UIT\\KLTN\\models\\huggingface_cryptobert",
+    "local_files_only": true,
+    "device": "cpu",
+    "workers": 1,
+    "torch": "2.8.0+cu128",
+    "cuda_available": true,
+    "label_schema": {
+      "0": "bearish",
+      "1": "neutral",
+      "2": "bullish"
+    },
+    "model_eval_mode": true
+  },
+  "stage_config": {
+    "headline_count": 12,
+    "runs": 2
+  },
+  "runs": [
+    {
+      "run": 1,
+      "parsed_headlines": 12,
+      "score": 0.5,
+      "confidence": 0.6035191615422567,
+      "label_counts": {
+        "bearish": 0,
+        "neutral": 6,
+        "bullish": 6
+      },
+      "records": [
+        {
+          "headline": "Anonymous Email Service ProtonMail Adds Bitcoin Payment Option",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.00761270709335804,
+            "neutral": 0.7980530261993408,
+            "bullish": 0.19433432817459106
+          }
+        },
+        {
+          "headline": "Blockchain & Bitcoin Conference Stockholm to Feature Discussions on ICOs and Blockchain Development",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.00302258413285017,
+            "neutral": 0.6425034999847412,
+            "bullish": 0.3544739782810211
+          }
+        },
+        {
+          "headline": "Bitcoin Prices Reach New All-Time High of Over $4,500",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.017009582370519638,
+            "neutral": 0.36885353922843933,
+            "bullish": 0.6141369342803955
+          }
+        },
+        {
+          "headline": "Lightning Bank Ledgers? Bitfury and Ripple Demo New Twist on Bitcoin Tech",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.0008003578404895961,
+            "neutral": 0.40064722299575806,
+            "bullish": 0.5985523462295532
+          }
+        },
+        {
+          "headline": "$7 Million: Bitcoin Wallet Startup Breadwallet Raises New Funding",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.000947712454944849,
+            "neutral": 0.47040045261383057,
+            "bullish": 0.5286518335342407
+          }
+        },
+        {
+          "headline": "Bitcoin's Biggest Software Wallet Blockchain Adds Ethereum",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.009437580592930317,
+            "neutral": 0.3529324531555176,
+            "bullish": 0.6376299262046814
+          }
+        },
+        {
+          "headline": "Bitcoin Bear Peter Schiff Doubles Down: Even at $4,000 It's Still a 'Bubble'",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.005177828948944807,
+            "neutral": 0.5110107064247131,
+            "bullish": 0.48381146788597107
+          }
+        },
+        {
+          "headline": "Bitcoin Cash Breaks Price Doldrums to Push Past $400",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.05727275088429451,
+            "neutral": 0.37760406732559204,
+            "bullish": 0.5651231408119202
+          }
+        },
+        {
+          "headline": "ATLANT Ending ICO Pre-Sale on August 19 — Funding Goals Achieved, Focus Turns to ICO Launch on September 7",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.0005954944645054638,
+            "neutral": 0.6214878559112549,
+            "bullish": 0.3779166638851166
+          }
+        },
+        {
+          "headline": "What's Next for Bitcoin Cash? Making Profitless Mining Profitable",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.001190259587019682,
+            "neutral": 0.7192890644073486,
+            "bullish": 0.2795206904411316
+          }
+        },
+        {
+          "headline": "Gimli Token Sale Starts September 16",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.00020423714886419475,
+            "neutral": 0.4835948944091797,
+            "bullish": 0.5162009000778198
+          }
+        },
+        {
+          "headline": "Couldn't Claim Your Bitcoin Cash? BTC.Com Now Has a Tool for That",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.04032047465443611,
+            "neutral": 0.48959070444107056,
+            "bullish": 0.4700888693332672
+          }
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "parsed_headlines": 12,
+      "score": 0.5,
+      "confidence": 0.6035191615422567,
+      "label_counts": {
+        "bearish": 0,
+        "neutral": 6,
+        "bullish": 6
+      },
+      "records": [
+        {
+          "headline": "Anonymous Email Service ProtonMail Adds Bitcoin Payment Option",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.00761270709335804,
+            "neutral": 0.7980530261993408,
+            "bullish": 0.19433432817459106
+          }
+        },
+        {
+          "headline": "Blockchain & Bitcoin Conference Stockholm to Feature Discussions on ICOs and Blockchain Development",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.00302258413285017,
+            "neutral": 0.6425034999847412,
+            "bullish": 0.3544739782810211
+          }
+        },
+        {
+          "headline": "Bitcoin Prices Reach New All-Time High of Over $4,500",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.017009582370519638,
+            "neutral": 0.36885353922843933,
+            "bullish": 0.6141369342803955
+          }
+        },
+        {
+          "headline": "Lightning Bank Ledgers? Bitfury and Ripple Demo New Twist on Bitcoin Tech",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.0008003578404895961,
+            "neutral": 0.40064722299575806,
+            "bullish": 0.5985523462295532
+          }
+        },
+        {
+          "headline": "$7 Million: Bitcoin Wallet Startup Breadwallet Raises New Funding",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.000947712454944849,
+            "neutral": 0.47040045261383057,
+            "bullish": 0.5286518335342407
+          }
+        },
+        {
+          "headline": "Bitcoin's Biggest Software Wallet Blockchain Adds Ethereum",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.009437580592930317,
+            "neutral": 0.3529324531555176,
+            "bullish": 0.6376299262046814
+          }
+        },
+        {
+          "headline": "Bitcoin Bear Peter Schiff Doubles Down: Even at $4,000 It's Still a 'Bubble'",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.005177828948944807,
+            "neutral": 0.5110107064247131,
+            "bullish": 0.48381146788597107
+          }
+        },
+        {
+          "headline": "Bitcoin Cash Breaks Price Doldrums to Push Past $400",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.05727275088429451,
+            "neutral": 0.37760406732559204,
+            "bullish": 0.5651231408119202
+          }
+        },
+        {
+          "headline": "ATLANT Ending ICO Pre-Sale on August 19 — Funding Goals Achieved, Focus Turns to ICO Launch on September 7",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.0005954944645054638,
+            "neutral": 0.6214878559112549,
+            "bullish": 0.3779166638851166
+          }
+        },
+        {
+          "headline": "What's Next for Bitcoin Cash? Making Profitless Mining Profitable",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.001190259587019682,
+            "neutral": 0.7192890644073486,
+            "bullish": 0.2795206904411316
+          }
+        },
+        {
+          "headline": "Gimli Token Sale Starts September 16",
+          "label": "bullish",
+          "value": 1,
+          "probabilities": {
+            "bearish": 0.00020423714886419475,
+            "neutral": 0.4835948944091797,
+            "bullish": 0.5162009000778198
+          }
+        },
+        {
+          "headline": "Couldn't Claim Your Bitcoin Cash? BTC.Com Now Has a Tool for That",
+          "label": "neutral",
+          "value": 0,
+          "probabilities": {
+            "bearish": 0.04032047465443611,
+            "neutral": 0.48959070444107056,
+            "bullish": 0.4700888693332672
+          }
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "status": "stage0-pass-stage1-authorized",
+  "error": null,
+  "checks": {
+    "parsed_labels_each_run": [
+      12,
+      12
+    ],
+    "required_parsed_labels_each_run": 12,
+    "exact_label_agreement": 12,
+    "required_exact_label_agreement": 12,
+    "score_agreement": true
+  }
+}

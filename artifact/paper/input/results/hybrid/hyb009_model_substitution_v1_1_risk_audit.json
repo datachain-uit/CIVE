@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-009-v1.1-post-evaluation-risk-audit",
+  "evaluated_at": "2026-09-12T04:17:39.969036+00:00",
+  "status": "COMPLETE",
+  "scope": "post-outcome descriptive audit; not a predeclared risk gate, validation, holdout, or live evidence",
+  "interpretation_rule": "Risk improvement relative to Tech is insufficient by itself because every arm reduces exposure. Model-selective evidence additionally requires improvement over both shuffled weights and constant-0.75 sizing on the same metric; this is descriptive and not confirmatory.",
+  "source": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\hyb009_model_substitution_v1_1_evaluation.json",
+    "sha256": "6af8b8347ecf105a947a9f639c37f91b67c403c2943fdf86a4f4355b17d09fb7"
+  },
+  "models": {
+    "finbert": {
+      "tech": {
+        "n": 24,
+        "compounded_return": 2.3900222885119993,
+        "closed_trade_max_drawdown": 0.05288294101964863,
+        "es10_trade_return": -0.04150921752625653,
+        "worst_trade_return": -0.04788593564326692,
+        "tail_trade_count": 3
+      },
+      "arms": {
+        "primary": {
+          "n": 24,
+          "compounded_return": 2.0485765986279794,
+          "closed_trade_max_drawdown": 0.039559902967016614,
+          "es10_trade_return": -0.03324956860189731,
+          "worst_trade_return": -0.03926909832284389,
+          "tail_trade_count": 3
+        },
+        "shuffled": {
+          "n": 24,
+          "compounded_return": 1.9042082922273407,
+          "closed_trade_max_drawdown": 0.05107345632931448,
+          "es10_trade_return": -0.03643318066115067,
+          "worst_trade_return": -0.04150552938310636,
+          "tail_trade_count": 3
+        },
+        "constant_075": {
+          "n": 24,
+          "compounded_return": 1.5403334836513682,
+          "closed_trade_max_drawdown": 0.039760877165752495,
+          "es10_trade_return": -0.031131913144692398,
+          "worst_trade_return": -0.03591445173245019,
+          "tail_trade_count": 3
+        }
+      },
+      "primary_minus_tech": {
+        "compounded_return": -0.3414456898840199,
+        "closed_trade_max_drawdown": -0.013323038052632019,
+        "es10_trade_return": 0.008259648924359222,
+        "worst_trade_return": 0.00861683732042303
+      },
+      "descriptive_model_selective_flags": {
+        "closed_trade_max_drawdown": true,
+        "es10_trade_return": false,
+        "worst_trade_return": false
+      }
+    },
+    "cryptobert": {
+      "tech": {
+        "n": 24,
+        "compounded_return": 2.3900222885119993,
+        "closed_trade_max_drawdown": 0.05288294101964863,
+        "es10_trade_return": -0.04150921752625653,
+        "worst_trade_return": -0.04788593564326692,
+        "tail_trade_count": 3
+      },
+      "arms": {
+        "primary": {
+          "n": 24,
+          "compounded_return": 1.8134699098233158,
+          "closed_trade_max_drawdown": 0.03973384619751741,
+          "es10_trade_return": -0.027184156626686506,
+          "worst_trade_return": -0.03209936345317893,
+          "tail_trade_count": 3
+        },
+        "shuffled": {
+          "n": 24,
+          "compounded_return": 1.6454368636908323,
+          "closed_trade_max_drawdown": 0.04683349749726107,
+          "es10_trade_return": -0.031146368695236546,
+          "worst_trade_return": -0.046833497497261053,
+          "tail_trade_count": 3
+        },
+        "constant_075": {
+          "n": 24,
+          "compounded_return": 1.5403334836513682,
+          "closed_trade_max_drawdown": 0.039760877165752495,
+          "es10_trade_return": -0.031131913144692398,
+          "worst_trade_return": -0.03591445173245019,
+          "tail_trade_count": 3
+        }
+      },
+      "primary_minus_tech": {
+        "compounded_return": -0.5765523786886835,
+        "closed_trade_max_drawdown": -0.013149094822131224,
+        "es10_trade_return": 0.014325060899570027,
+        "worst_trade_return": 0.015786572190087993
+      },
+      "descriptive_model_selective_flags": {
+        "closed_trade_max_drawdown": true,
+        "es10_trade_return": true,
+        "worst_trade_return": true
+      }
+    },
+    "ministral_direct": {
+      "tech": {
+        "n": 24,
+        "compounded_return": 2.3900222885119993,
+        "closed_trade_max_drawdown": 0.05288294101964863,
+        "es10_trade_return": -0.04150921752625653,
+        "worst_trade_return": -0.04788593564326692,
+        "tail_trade_count": 3
+      },
+      "arms": {
+        "primary": {
+          "n": 24,
+          "compounded_return": 2.101557225478789,
+          "closed_trade_max_drawdown": 0.0477551959939535,
+          "es10_trade_return": -0.038650098933798956,
+          "worst_trade_return": -0.046405944500446175,
+          "tail_trade_count": 3
+        },
+        "shuffled": {
+          "n": 24,
+          "compounded_return": 1.9794307025425302,
+          "closed_trade_max_drawdown": 0.05158578749734477,
+          "es10_trade_return": -0.03933873088585973,
+          "worst_trade_return": -0.046405944500446175,
+          "tail_trade_count": 3
+        },
+        "constant_075": {
+          "n": 24,
+          "compounded_return": 1.5403334836513682,
+          "closed_trade_max_drawdown": 0.039760877165752495,
+          "es10_trade_return": -0.031131913144692398,
+          "worst_trade_return": -0.03591445173245019,
+          "tail_trade_count": 3
+        }
+      },
+      "primary_minus_tech": {
+        "compounded_return": -0.2884650630332102,
+        "closed_trade_max_drawdown": -0.00512774502569513,
+        "es10_trade_return": 0.002859118592457577,
+        "worst_trade_return": 0.0014799911428207482
+      },
+      "descriptive_model_selective_flags": {
+        "closed_trade_max_drawdown": false,
+        "es10_trade_return": false,
+        "worst_trade_return": false
+      }
+    }
+  }
+}

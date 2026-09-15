@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC’s Enforcement Division Issues Staff Guidance on Recognition of Self-Reporting, Cooperation, and Remediation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8296-20</link>
+  <description/>
+  <pubDate>Thu, 29 Oct 2020 12:59:08 +0000
+</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8296-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Affiliate Marketer to Pay More Than $13.8 Million for Binary Options Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8285-20</link>
+  <description/>
+  <pubDate>Tue, 13 Oct 2020 13:19:53 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8285-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Pennsylvania Man and His Companies to Pay More Than $1.2 Million in Forex Trading Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8283-20</link>
+  <description/>
+  <pubDate>Fri, 09 Oct 2020 17:56:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8283-20</guid>
+    </item>
+<item>
+  <title>CFTC Revokes Registrations of Florida Company and its CEO for Fraud and Related Criminal Conviction</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8282-20</link>
+  <description/>
+  <pubDate>Fri, 09 Oct 2020 14:03:40 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8282-20</guid>
+    </item>
+<item>
+  <title>CFTC Charges Wisconsin Firm and its Manager with Registration, Disclosure, and Recordkeeping Violations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8279-20</link>
+  <description/>
+  <pubDate>Wed, 07 Oct 2020 17:13:03 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8279-20</guid>
+    </item>
+<item>
+  <title>CFTC Posts Record-Breaking Enforcement Year</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8274-20</link>
+  <description/>
+  <pubDate>Tue, 06 Oct 2020 12:02:36 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8274-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Pennsylvania Man Pay $7.4 Million in Restitution for Multi-Million Dollar Bitcoin Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8272-20</link>
+  <description/>
+  <pubDate>Fri, 02 Oct 2020 17:38:20 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8272-20</guid>
+    </item>
+<item>
+  <title>CFTC Charges BitMEX Owners with Illegally Operating a Cryptocurrency Derivatives Trading Platform and Anti-Money Laundering Violations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8270-20</link>
+  <description/>
+  <pubDate>Thu, 01 Oct 2020 15:18:15 +0000
+</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8270-20</guid>
+    </item>
+<item>
+  <title>CFTC Orders Morgan Stanley Capital Services LLC to Pay $5 Million for Swap Data Reporting Failures</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8269-20</link>
+  <description/>
+  <pubDate>Wed, 30 Sep 2020 20:02:50 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8269-20</guid>
+    </item>
+<item>
+  <title>CFTC Orders Chicago Broker to Pay Over $495,000 for Supervision Failures and Failure to Report Suspicious Activity</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8268-20</link>
+  <description/>
+  <pubDate>Wed, 30 Sep 2020 19:56:12 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8268-20</guid>
+    </item>
+
+  </channel>
+</rss>

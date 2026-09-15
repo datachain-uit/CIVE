@@ -1,0 +1,80 @@
+{
+  "schema_version": "tech-llm-intratrade-shock-shield-v2-design",
+  "experiment_id": "HYB-002",
+  "status": "design-locked-assignment-not-materialized-not-evaluated",
+  "designed_at": "2026-09-09",
+  "research_role": "post-HYB-001 exploratory design; not validation, sealed holdout, or live evidence",
+  "researcher_outcomes_previously_seen": true,
+  "design_audit_used_trade_pnl": false,
+  "architecture": {
+    "decision_unit": "trade_id x information_date while frozen shadow Tech trade is open",
+    "entry_authority": "Tech-Control only; LLM cannot veto, delay, downsize, create, or reverse entry",
+    "llm_action": "reduce exposure from 1.0 to 0.5 for one 4h bar after a confirmed semantic shock",
+    "restore_rule": "restore exposure to 1.0 at the next 4h decision if shadow Tech trade remains open",
+    "multiple_clusters_same_trade_day": "merge to one action",
+    "missing_or_error_fallback_weight": 1.0
+  },
+  "confirmed_semantic_shock": {
+    "direction": "negative",
+    "event_type_allowlist": [
+      "exchange_security",
+      "network_protocol",
+      "fraud_legal",
+      "liquidation_leverage"
+    ],
+    "minimum_severity": 0.7,
+    "minimum_confidence": 0.7,
+    "asset_rule": "exact frozen alias match or btc_relevance=systemic",
+    "minimum_independent_source_domains": 2,
+    "availability_rule": "available_at <= decision timestamp",
+    "expected_horizon_used": false
+  },
+  "frozen_aliases": {
+    "BTCUSDT": ["BTC", "Bitcoin"],
+    "ETHUSDT": ["ETH", "Ethereum"],
+    "SOLUSDT": ["SOL", "Solana"],
+    "XRPUSDT": ["XRP"]
+  },
+  "feature_only_feasibility_audit": {
+    "window_start": "2022-09-13T00:00:00Z",
+    "window_end": "2025-08-28T00:00:00Z",
+    "eligible_trade_day_actions": 23,
+    "shadow_trades_touched": 13,
+    "provisional_minimum_interventions": 20,
+    "provisional_minimum_trade_clusters": 10,
+    "warning": "Exact timestamp audit removed two provisional trade-day slots that were not available strictly inside the shadow lifecycle. Exact assignments and all replay inputs must be materialized and hashed before evaluation."
+  },
+  "planned_evaluation": {
+    "primary_estimand": "mean paired net PnL difference over 4h intervention windows",
+    "resampling_unit": "shadow trade_id cluster",
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260909,
+    "confidence_level": 0.95,
+    "required_placebos": [
+      "metadata_only_same_density",
+      "shuffled_trade_day",
+      "delayed_24h",
+      "single_source_ablation",
+      "tech_only"
+    ]
+  },
+  "inputs": {
+    "tech_result": {
+      "path": "D:\\projects\\auto-trading\\results\\technical_bybit_lifecycle_1x_candidate_hardened.json",
+      "sha256": "7e8e8653c207e759e6cd3093e78705486fd732ba588362620ffe0ff372c60cf7"
+    },
+    "events": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "extraction_inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    }
+  },
+  "prohibited": [
+    "evaluating before exact assignments and replay inputs are materialized and hashed",
+    "using trade PnL or forward return to change aliases, event types, thresholds, action duration, placebos, or gate",
+    "calling an evaluation on the already-seen 2022-2025 window validation, sealed holdout, or live evidence"
+  ]
+}

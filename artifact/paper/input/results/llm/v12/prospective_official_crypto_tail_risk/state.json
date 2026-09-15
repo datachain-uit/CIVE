@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "status": "PROSPECTIVE_BASELINE_ESTABLISHED_NO_BACKFILL",
+  "initialized_at": "2026-09-06T00:36:59.128472+07:00",
+  "sources": {
+    "sec_press_releases": "https://www.sec.gov/news/pressreleases.rss",
+    "cftc_general_press_releases": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+    "cftc_enforcement_press_releases": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml"
+  },
+  "crypto_allowlist": [
+    "crypto asset",
+    "crypto-asset",
+    "cryptocurrency",
+    "digital asset",
+    "digital-asset",
+    "virtual currency",
+    "bitcoin",
+    "ether",
+    "stablecoin",
+    "blockchain",
+    "token",
+    "decentralized finance",
+    "defi",
+    "exchange token",
+    "custody of crypto"
+  ],
+  "collector_script_sha256": "a614d3729bf72ccea257d89492834376dd28e5ca1ef0f79efc72d5d1f7451aac",
+  "baseline_urls": {
+    "sec_press_releases": [
+      "https://www.sec.gov/newsroom/press-releases/2026-61-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised",
+      "https://www.sec.gov/newsroom/press-releases/2026-62-sec-names-paul-knight-chief-operating-officer",
+      "https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group",
+      "https://www.sec.gov/newsroom/press-releases/2026-64-sec-small-business-advisory-committee-explore-modernizing-market-access",
+      "https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets",
+      "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors",
+      "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors",
+      "https://www.sec.gov/newsroom/press-releases/2026-68-sec-announces-departure-principal-deputy-director-enforcement-sam-waldon",
+      "https://www.sec.gov/newsroom/press-releases/2026-69-sec-announces-roundtable-preparations-24-hour-trading",
+      "https://www.sec.gov/newsroom/press-releases/2026-70-small-business-forums-report-congress-highlights-recommendations-improve-capital-raising-policy",
+      "https://www.sec.gov/newsroom/press-releases/2026-71-sec-announces-continuation-small-business-advisory-committee-meeting",
+      "https://www.sec.gov/newsroom/press-releases/2026-72-sec-establishes-financial-reporting-accounting-unit-enforcement-division",
+      "https://www.sec.gov/newsroom/press-releases/2026-73-sec-charges-private-fund-adviser-adit-ventures-management-its-ceo-affiliated-general-partners",
+      "https://www.sec.gov/newsroom/press-releases/2026-74-sec-charges-toms-river-trio-connection-alleged-47-million-fraud-targeting-orthodox-jewish",
+      "https://www.sec.gov/newsroom/press-releases/2026-75-sec-charges-boiler-room-operator-three-entities-defrauding-retail-investors-74-million-pre-ipo",
+      "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets",
+      "https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor",
+      "https://www.sec.gov/newsroom/press-releases/2026-78-sec-38-entities-feigned-legitimacy-us-advisers-through-false-filings-lure-retail-investors",
+      "https://www.sec.gov/newsroom/press-releases/2026-79-sec-proposes-amendments-exchange-act-rule-3a12-8-add-european-union-debt-obligations",
+      "https://www.sec.gov/newsroom/press-releases/2026-80-sec-fda-announce-mou-bolster-cooperation-ensure-market-integrity",
+      "https://www.sec.gov/newsroom/press-releases/2026-81-sec-proposes-modernize-rules-registered-transfer-agents",
+      "https://www.sec.gov/newsroom/press-releases/2026-82-sec-charges-san-francisco-bay-area-private-fund-executives-multimillion-dollar-ponzi-scheme",
+      "https://www.sec.gov/newsroom/press-releases/2026-83-sec-announces-agenda-panelists-roundtable-preparations-24-hour-trading",
+      "https://www.sec.gov/newsroom/press-releases/2026-84-sec-investor-advisory-committee-host-sept-10-meeting",
+      "https://www.sec.gov/newsroom/press-releases/2026-85-sec-proposes-rescission-political-contribution-rule-investment-advisers"
+    ],
+    "cftc_general_press_releases": [
+      "https://www.cftc.gov/PressRoom/PressReleases/9281-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9282-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9283-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9284-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9286-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9287-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9288-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9290-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9292-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9293-26"
+    ],
+    "cftc_enforcement_press_releases": [
+      "https://www.cftc.gov/PressRoom/PressReleases/9247-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9256-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9263-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9264-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9276-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9277-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9280-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9285-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9289-26",
+      "https://www.cftc.gov/PressRoom/PressReleases/9291-26"
+    ]
+  },
+  "seen_urls": {
+    "https://www.sec.gov/newsroom/press-releases/2026-61-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-62-sec-names-paul-knight-chief-operating-officer": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-63-sec-forms-new-retail-fraud-working-group": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-64-sec-small-business-advisory-committee-explore-modernizing-market-access": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-65-sec-host-virtual-roundtable-modernizing-ipos-expanding-access-public-markets": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-67-sec-proposes-new-e-delivery-approach-make-information-more-readily-accessible-useful-investors": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-68-sec-announces-departure-principal-deputy-director-enforcement-sam-waldon": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-69-sec-announces-roundtable-preparations-24-hour-trading": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-70-small-business-forums-report-congress-highlights-recommendations-improve-capital-raising-policy": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-71-sec-announces-continuation-small-business-advisory-committee-meeting": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-72-sec-establishes-financial-reporting-accounting-unit-enforcement-division": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-73-sec-charges-private-fund-adviser-adit-ventures-management-its-ceo-affiliated-general-partners": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-74-sec-charges-toms-river-trio-connection-alleged-47-million-fraud-targeting-orthodox-jewish": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-75-sec-charges-boiler-room-operator-three-entities-defrauding-retail-investors-74-million-pre-ipo": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-78-sec-38-entities-feigned-legitimacy-us-advisers-through-false-filings-lure-retail-investors": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-79-sec-proposes-amendments-exchange-act-rule-3a12-8-add-european-union-debt-obligations": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-80-sec-fda-announce-mou-bolster-cooperation-ensure-market-integrity": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-81-sec-proposes-modernize-rules-registered-transfer-agents": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-82-sec-charges-san-francisco-bay-area-private-fund-executives-multimillion-dollar-ponzi-scheme": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-83-sec-announces-agenda-panelists-roundtable-preparations-24-hour-trading": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-84-sec-investor-advisory-committee-host-sept-10-meeting": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.sec.gov/newsroom/press-releases/2026-85-sec-proposes-rescission-political-contribution-rule-investment-advisers": {
+      "source": "sec_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9281-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9282-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9283-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9284-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9286-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9287-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9288-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9290-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9292-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9293-26": {
+      "source": "cftc_general_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9247-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9256-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9263-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9264-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9276-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9277-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9280-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9285-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9289-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    },
+    "https://www.cftc.gov/PressRoom/PressReleases/9291-26": {
+      "source": "cftc_enforcement_press_releases",
+      "status": "baseline_pre_start_excluded"
+    }
+  },
+  "polls": [
+    {
+      "poll_id": "20260905T173659128472Z",
+      "kind": "initialize",
+      "feed_artifacts": [
+        {
+          "source": "sec_press_releases",
+          "items": 25,
+          "artifact": {
+            "url": "https://www.sec.gov/news/pressreleases.rss",
+            "http_status": 200,
+            "headers": {
+              "Server": "nginx",
+              "Content-Type": "application/rss+xml; charset=utf-8",
+              "Content-Length": "18198",
+              "X-Drupal-Dynamic-Cache": "HIT",
+              "Content-Language": "en",
+              "Content-Security-Policy": "frame-ancestors 'self' *.sec.gov",
+              "Referrer-Policy": "strict-origin-when-cross-origin",
+              "X-Content-Type-Options": "nosniff",
+              "X-Frame-Options": "SAMEORIGIN",
+              "X-Xss-Protection": "1; mode=block",
+              "X-Drupal-Cache": "MISS",
+              "Last-Modified": "Sat, 05 Sep 2026 15:20:10 GMT",
+              "ETag": "\"1788621610\"",
+              "X-Request-ID": "v-48d441c2-a93d-11f1-8e45-cf4fb6f6f7f7",
+              "X-AH-Environment": "prod",
+              "X-Age": "0",
+              "Accept-Ranges": "bytes",
+              "Cache-Control": "public, max-age=44",
+              "Expires": "Sat, 05 Sep 2026 17:37:44 GMT",
+              "Date": "Sat, 05 Sep 2026 17:37:00 GMT",
+              "Connection": "close",
+              "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload"
+            },
+            "started_at": "2026-09-06T00:36:59.128472+07:00",
+            "completed_at": "2026-09-06T00:37:00.192319+07:00",
+            "bytes": 18198,
+            "sha256": "0b3cef44fc4a035f2b73ab27ec467843876aa641d18d7580718dafb0f33f0caf",
+            "path": "paper\\input\\results\\llm\\v12\\prospective_official_crypto_tail_risk\\raw\\polls\\20260905T173659128472Z\\sec_press_releases\\feed.xml"
+          }
+        },
+        {
+          "source": "cftc_general_press_releases",
+          "items": 10,
+          "artifact": {
+            "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+            "http_status": 200,
+            "headers": {
+              "Date": "Sat, 05 Sep 2026 17:37:00 GMT",
+              "Content-Type": "application/rss+xml; charset=utf-8",
+              "Content-Length": "4657",
+              "Connection": "close",
+              "Server": "cloudflare",
+              "strict-transport-security": "max-age=15552000; includeSubDomains",
+              "Cache-Control": "max-age=1800, public",
+              "x-drupal-dynamic-cache": "HIT",
+              "content-language": "en",
+              "x-content-type-options": "nosniff",
+              "x-frame-options": "SAMEORIGIN",
+              "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+              "vary": "Cookie",
+              "x-generator": "Drupal 11 (https://www.drupal.org)",
+              "Accept-Ranges": "bytes",
+              "x-drupal-cache": "MISS",
+              "last-modified": "Sat, 05 Sep 2026 11:29:49 GMT",
+              "etag": "\"1788607789\"",
+              "x-request-id": "v-1aa98b60-a91d-11f1-b311-b3fcb9f9cc88",
+              "x-ah-environment": "prod",
+              "Age": "22028",
+              "via": "varnish",
+              "x-cache": "HIT",
+              "x-cache-hits": "2",
+              "cf-cache-status": "HIT",
+              "Server-Timing": "cfEdge;dur=8,cfOrigin;dur=0",
+              "set-cookie": "<redacted>",
+              "CF-RAY": "a366ffdaffc9acf8-HKG"
+            },
+            "started_at": "2026-09-06T00:37:00.225024+07:00",
+            "completed_at": "2026-09-06T00:37:00.582422+07:00",
+            "bytes": 4657,
+            "sha256": "3f167c8a8dc7684bb648e791970f917a732942f8402796b40d06a60d453d2885",
+            "path": "paper\\input\\results\\llm\\v12\\prospective_official_crypto_tail_risk\\raw\\polls\\20260905T173659128472Z\\cftc_general_press_releases\\feed.xml"
+          }
+        },
+        {
+          "source": "cftc_enforcement_press_releases",
+          "items": 10,
+          "artifact": {
+            "url": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml",
+            "http_status": 200,
+            "headers": {
+              "Date": "Sat, 05 Sep 2026 17:37:00 GMT",
+              "Content-Type": "application/rss+xml; charset=utf-8",
+              "Content-Length": "4571",
+              "Connection": "close",
+              "Server": "cloudflare",
+              "strict-transport-security": "max-age=15552000; includeSubDomains",
+              "Cache-Control": "max-age=1800, public",
+              "x-drupal-dynamic-cache": "MISS",
+              "content-language": "en",
+              "x-content-type-options": "nosniff",
+              "x-frame-options": "SAMEORIGIN",
+              "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+              "vary": "Cookie",
+              "x-generator": "Drupal 11 (https://www.drupal.org)",
+              "Accept-Ranges": "bytes",
+              "x-drupal-cache": "MISS",
+              "last-modified": "Sat, 05 Sep 2026 11:29:50 GMT",
+              "etag": "\"1788607790\"",
+              "x-request-id": "v-1b4cee40-a91d-11f1-8052-6f5fe048f772",
+              "x-ah-environment": "prod",
+              "Age": "21996",
+              "via": "varnish",
+              "x-cache": "HIT",
+              "x-cache-hits": "4",
+              "cf-cache-status": "HIT",
+              "Server-Timing": "cfEdge;dur=10,cfOrigin;dur=0",
+              "set-cookie": "<redacted>",
+              "CF-RAY": "a366ffdcbebd04c6-HKG"
+            },
+            "started_at": "2026-09-06T00:37:00.583427+07:00",
+            "completed_at": "2026-09-06T00:37:00.888663+07:00",
+            "bytes": 4571,
+            "sha256": "4f7cfdfab3fb95bf36ac16c47e6798590b5d4e4c4071335ddf7c755f8f65daa4",
+            "path": "paper\\input\\results\\llm\\v12\\prospective_official_crypto_tail_risk\\raw\\polls\\20260905T173659128472Z\\cftc_enforcement_press_releases\\feed.xml"
+          }
+        }
+      ]
+    },
+    {
+      "poll_id": "20260905T173902271803Z",
+      "kind": "poll",
+      "started_at": "2026-09-05T17:39:02.271803+00:00",
+      "feed_artifacts": [
+        {
+          "source": "sec_press_releases",
+          "artifact": {
+            "url": "https://www.sec.gov/news/pressreleases.rss",
+            "http_status": 200,
+            "headers": {
+              "Content-Type": "application/rss+xml; charset=utf-8",
+              "Content-Length": "18198",
+              "Last-Modified": "Sat, 05 Sep 2026 15:20:10 GMT",
+              "ETag": "\"1788621610\"",
+              "Cache-Control": "public, max-age=32",
+              "Date": "Sat, 05 Sep 2026 17:39:02 GMT"
+            },
+            "started_at": "2026-09-05T17:39:02.271803+00:00",
+            "completed_at": "2026-09-05T17:39:02.755230+00:00",
+            "bytes": 18198,
+            "sha256": "0b3cef44fc4a035f2b73ab27ec467843876aa641d18d7580718dafb0f33f0caf",
+            "path": "paper\\input\\results\\llm\\v12\\prospective_official_crypto_tail_risk\\raw\\polls\\20260905T173902271803Z\\sec_press_releases\\feed.xml"
+          }
+        },
+        {
+          "source": "cftc_general_press_releases",
+          "artifact": {
+            "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml",
+            "http_status": 200,
+            "headers": {
+              "Date": "Sat, 05 Sep 2026 17:39:03 GMT",
+              "Content-Type": "application/rss+xml; charset=utf-8",
+              "Content-Length": "4657",
+              "Cache-Control": "max-age=1800, public",
+              "last-modified": "Sat, 05 Sep 2026 11:29:49 GMT",
+              "etag": "\"1788607789\"",
+              "set-cookie": "<redacted>"
+            },
+            "started_at": "2026-09-05T17:39:02.759075+00:00",
+            "completed_at": "2026-09-05T17:39:03.157847+00:00",
+            "bytes": 4657,
+            "sha256": "3f167c8a8dc7684bb648e791970f917a732942f8402796b40d06a60d453d2885",
+            "path": "paper\\input\\results\\llm\\v12\\prospective_official_crypto_tail_risk\\raw\\polls\\20260905T173902271803Z\\cftc_general_press_releases\\feed.xml"
+          }
+        },
+        {
+          "source": "cftc_enforcement_press_releases",
+          "artifact": {
+            "url": "https://www.cftc.gov/RSS/RSSENF/rssenf.xml",
+            "http_status": 200,
+            "headers": {
+              "Date": "Sat, 05 Sep 2026 17:39:03 GMT",
+              "Content-Type": "application/rss+xml; charset=utf-8",
+              "Content-Length": "4571",
+              "Cache-Control": "max-age=1800, public",
+              "last-modified": "Sat, 05 Sep 2026 11:29:50 GMT",
+              "etag": "\"1788607790\"",
+              "set-cookie": "<redacted>"
+            },
+            "started_at": "2026-09-05T17:39:03.164802+00:00",
+            "completed_at": "2026-09-05T17:39:03.506968+00:00",
+            "bytes": 4571,
+            "sha256": "4f7cfdfab3fb95bf36ac16c47e6798590b5d4e4c4071335ddf7c755f8f65daa4",
+            "path": "paper\\input\\results\\llm\\v12\\prospective_official_crypto_tail_risk\\raw\\polls\\20260905T173902271803Z\\cftc_enforcement_press_releases\\feed.xml"
+          }
+        }
+      ],
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 0
+    }
+  ]
+}

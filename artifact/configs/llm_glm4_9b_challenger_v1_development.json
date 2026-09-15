@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-glm4-9b-q3km-daily-challenger-v1-development",
+  "status": "predeclared-before-daily-challenger-scoring",
+  "predeclared_at": "2026-09-12T11:14:42.4626845+07:00",
+  "selection_basis": "Model-family substitution requested for the Tech+LLM robustness analysis; no GLM daily score or GLM hybrid PnL exists or may be consulted.",
+  "prior_model_specific_evidence": {
+    "experiment": "LLM-085 GLM event-extractor v21",
+    "result": "failed fast after 4 schema errors in the first 8 attempted records because severity was emitted outside [0,1]",
+    "implication": "v21 remains failed; this new experiment tests a simpler daily directional JSON contract and is not a remediation or continuation of v21"
+  },
+  "candidate": {
+    "model": "glm4:9b-chat-q3_K_M",
+    "digest": "f61310a4c5448541c2e684787bad318158ac5209a5abab3cd0719238535c10c6",
+    "architecture": "chatglm",
+    "parameters": "9.4B",
+    "quantization": "Q3_K_M",
+    "license": "GLM-4-9B License; academic research use permitted",
+    "rationale": "local 5.1 GB quantized artifact fits the available 6 GB GPU and represents a model family not yet tested on the frozen daily information-set contract"
+  },
+  "frozen_input_contract": {
+    "artifact": "results/llm_daily_information_sets_v1.json",
+    "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338",
+    "prompt_version": "crypto-daily-information-set-v1",
+    "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+    "temperature": 0.0,
+    "seed": 20260814,
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "threshold_optimization_prohibited": true
+  },
+  "stage1_operational_gate": {
+    "sampling": "twelve deterministic calendar samples per year for 2017-2025",
+    "sample_per_year": 12,
+    "expected_information_sets": 108,
+    "independent_component_runs": 2,
+    "workers_per_run": 1,
+    "request_delay_seconds": 10,
+    "required": {
+      "schema_success_each_run": 108,
+      "exact_score_agreement_min": 103,
+      "long_flat_action_agreements_min": 107,
+      "mean_absolute_score_difference_max": 0.01,
+      "max_absolute_score_difference_max": 0.4
+    },
+    "decision": "all requirements must pass; otherwise reject the challenger and stop before full inference, calibration or Tech+LLM evaluation"
+  },
+  "stage2_only_if_stage1_passes": {
+    "work": "one full 2927-record daily inference followed by outcome calibration only",
+    "minimum_observations": 1000,
+    "minimum_long_rule_observations": 100,
+    "required": {
+      "schema_errors": 0,
+      "pearson_score_forward_return_95_ci_lower_bound_gt": 0.0,
+      "long_minus_flat_mean_bps_95_ci_lower_bound_gt": 0.0
+    },
+    "decision": "all requirements must pass before GLM may enter HYB-009 model substitution"
+  },
+  "prohibited": [
+    "consulting GLM hybrid PnL during model admission",
+    "changing prompt or thresholds within this experiment",
+    "treating this daily contract as a repair of failed event-extractor v21",
+    "running multiple heavy jobs or LLM workers",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-08-06T15:51:54.196868+00:00",
+  "symbol": "XRP/USDT:USDT",
+  "exchange": "bybit",
+  "assumptions": {
+    "days": 365,
+    "train_days": 240,
+    "holdout_days": 125,
+    "balance": 50.0,
+    "fee_rate_per_fill": 0.0004,
+    "adverse_slippage_bps_per_fill": 5.0,
+    "fill_mode": "signal_close",
+    "pyramiding_layers": "999",
+    "min_train_trades": 8,
+    "min_holdout_trades": 5
+  },
+  "trials_considered": 0,
+  "holdout_passed": [],
+  "top_train_candidates": []
+}

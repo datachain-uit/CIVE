@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-077--LLM-080-multicoin-risk-v19",
+  "generated_at": "2026-09-11T09:40:51.176968+00:00",
+  "status": "SCREEN_COMPLETE",
+  "outcomes_consulted": false,
+  "predeclaration": {
+    "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v19\\llm_only_multicoin_risk_screen_v19_predeclared.json",
+    "sha256": "52edaa4aa838e50d32b0c14f7aa2b97fb1b6a644861ee2e54751037045bc6485"
+  },
+  "assets": {
+    "ETHUSDT": {
+      "experiment_id": "LLM-077",
+      "priority": "primary",
+      "passed": true,
+      "status": "PASS_TARGET_PREDECLARATION_AUTHORIZED",
+      "summary": {
+        "event_records": 5341,
+        "event_dates": 1000,
+        "fallback_records": 119,
+        "fallback_fraction": 0.022280471821756225,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "event_dates": 118,
+            "event_records": 620
+          },
+          {
+            "fold": 2,
+            "event_dates": 131,
+            "event_records": 820
+          },
+          {
+            "fold": 3,
+            "event_dates": 134,
+            "event_records": 619
+          },
+          {
+            "fold": 4,
+            "event_dates": 132,
+            "event_records": 594
+          },
+          {
+            "fold": 5,
+            "event_dates": 137,
+            "event_records": 701
+          }
+        ],
+        "direction_counts": {
+          "negative": 2221,
+          "positive": 3049,
+          "mixed": 29,
+          "unclear": 42
+        },
+        "bar_file_present": true
+      },
+      "checks": {
+        "direct_records": true,
+        "direct_dates": true,
+        "each_oos_fold": true,
+        "fallback_fraction": true,
+        "bar_file_present": true
+      }
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-078",
+      "priority": "primary",
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "event_records": 2510,
+        "event_dates": 846,
+        "fallback_records": 31,
+        "fallback_fraction": 0.012350597609561753,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "event_dates": 98,
+            "event_records": 264
+          },
+          {
+            "fold": 2,
+            "event_dates": 113,
+            "event_records": 365
+          },
+          {
+            "fold": 3,
+            "event_dates": 123,
+            "event_records": 409
+          },
+          {
+            "fold": 4,
+            "event_dates": 128,
+            "event_records": 497
+          },
+          {
+            "fold": 5,
+            "event_dates": 130,
+            "event_records": 434
+          }
+        ],
+        "direction_counts": {
+          "positive": 1475,
+          "negative": 998,
+          "mixed": 20,
+          "unclear": 17
+        },
+        "bar_file_present": true
+      },
+      "checks": {
+        "direct_records": true,
+        "direct_dates": true,
+        "each_oos_fold": false,
+        "fallback_fraction": true,
+        "bar_file_present": true
+      }
+    },
+    "XRPUSDT": {
+      "experiment_id": "LLM-079",
+      "priority": "conditional",
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "event_records": 1383,
+        "event_dates": 623,
+        "fallback_records": 23,
+        "fallback_fraction": 0.016630513376717282,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "event_dates": 54,
+            "event_records": 96
+          },
+          {
+            "fold": 2,
+            "event_dates": 46,
+            "event_records": 85
+          },
+          {
+            "fold": 3,
+            "event_dates": 84,
+            "event_records": 178
+          },
+          {
+            "fold": 4,
+            "event_dates": 114,
+            "event_records": 276
+          },
+          {
+            "fold": 5,
+            "event_dates": 126,
+            "event_records": 389
+          }
+        ],
+        "direction_counts": {
+          "negative": 611,
+          "positive": 744,
+          "mixed": 15,
+          "unclear": 13
+        },
+        "bar_file_present": true
+      },
+      "checks": {
+        "direct_records": true,
+        "direct_dates": false,
+        "each_oos_fold": false,
+        "fallback_fraction": true,
+        "bar_file_present": true
+      }
+    },
+    "BNBUSDT": {
+      "experiment_id": "LLM-080",
+      "priority": "conditional",
+      "passed": false,
+      "status": "FAIL_STOP_BEFORE_TARGET",
+      "summary": {
+        "event_records": 236,
+        "event_dates": 189,
+        "fallback_records": 3,
+        "fallback_fraction": 0.012711864406779662,
+        "fold_counts": [
+          {
+            "fold": 1,
+            "event_dates": 12,
+            "event_records": 16
+          },
+          {
+            "fold": 2,
+            "event_dates": 17,
+            "event_records": 18
+          },
+          {
+            "fold": 3,
+            "event_dates": 13,
+            "event_records": 13
+          },
+          {
+            "fold": 4,
+            "event_dates": 22,
+            "event_records": 23
+          },
+          {
+            "fold": 5,
+            "event_dates": 26,
+            "event_records": 35
+          }
+        ],
+        "direction_counts": {
+          "negative": 135,
+          "positive": 99,
+          "unclear": 1,
+          "mixed": 1
+        },
+        "bar_file_present": false
+      },
+      "checks": {
+        "direct_records": false,
+        "direct_dates": false,
+        "each_oos_fold": false,
+        "fallback_fraction": true,
+        "bar_file_present": false
+      }
+    }
+  },
+  "eligible_assets": [
+    "ETHUSDT"
+  ],
+  "stopped_assets": [
+    "SOLUSDT",
+    "XRPUSDT",
+    "BNBUSDT"
+  ]
+}

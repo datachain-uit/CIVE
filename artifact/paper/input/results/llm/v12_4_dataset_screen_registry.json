@@ -1,0 +1,48 @@
+{
+  "status": "NO_DATASET_ADMITTED_AFTER_VERSION_RIGHTS_PIT_LEAKAGE_SCREEN",
+  "screen_version": "v12_4",
+  "hard_gates": [
+    "Version published during/before covered period, or independently archived historically",
+    "Explicit research/LLM text right by source owner or dataset authors",
+    "Explicit UTC offset on every record admitted",
+    "No price, market label, feature, reflection or outcome in the corpus"
+  ],
+  "candidates": [
+    {
+      "name": "mouadja02/bitcoin-news-data",
+      "status": "REJECTED",
+      "failed_gates": ["rights"],
+      "evidence": "Guardian ML/TDM prohibition and Finnhub redistribution restriction"
+    },
+    {
+      "name": "Xtra-Computing/CryptoTrade",
+      "status": "REJECTED",
+      "failed_gates": ["rights", "outcome-free corpus"],
+      "evidence": "GNews upstream restriction described by authors; repository mixes news with price/features/reflection"
+    },
+    {
+      "name": "ExponentialScience/DLT-Tweets",
+      "status": "REJECTED",
+      "failed_gates": ["historical version/archive", "UTC timestamp"],
+      "evidence": "2026 release for 2013-mid-2023 posts; sampled pinned shard has date-only and timezone-ambiguous timestamps"
+    },
+    {
+      "name": "Daniel Partida Bitcoin Tweets, Mendeley DOI 10.17632/x7yvshrnxy.1",
+      "status": "NOT_AUDITED_NOT_ADMITTED",
+      "failed_gates": ["historical version/archive unverified", "schema/UTC unverified"],
+      "evidence": "CC-BY-4.0 version published 2023-10-06; coverage/provenance must be established before download"
+    },
+    {
+      "name": "Zilius et al. coordinated cryptocurrency campaigns, Zenodo DOI 10.5281/zenodo.7539178",
+      "status": "NOT_AUDITED_NOT_ADMITTED",
+      "failed_gates": ["historical version/archive unverified", "outcome-free text contract unverified"],
+      "evidence": "2023 dataset covers 2014-2022 forum data and intentionally distributes URLs/IDs rather than social-media text"
+    }
+  ],
+  "decision": {
+    "admitted_dataset": null,
+    "model_run": false,
+    "market_data_accessed": false,
+    "next_permitted_action": "Do not open an LLM-only treatment. Seek a source with independently verifiable historical snapshots, or formally scope LLM work to non-predictive corpus analysis."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-20T14:31:58.276673+00:00",
+  "experiment_id": "llm-ministral3-8b-challenger-v1-development",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 6022236616,
+    "license": "Apache-2.0",
+    "rationale": "current official Ollama Ministral 3 edge model from a family distinct from prior Qwen, Gemma, Llama, DeepSeek, and Nemotron candidates; selected for native JSON output and instruction following",
+    "thinking_mode": "not supported",
+    "primary_sources": [
+      "https://ollama.com/library/ministral-3:8b",
+      "https://ollama.com/library/ministral-3"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "information_sets": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run1": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "schema_success_run2": {
+      "observed": 108,
+      "required": 108,
+      "passed": true
+    },
+    "exact_score_agreement": {
+      "observed": 108,
+      "required_min": 103,
+      "passed": true
+    },
+    "long_flat_action_agreements": {
+      "observed": 108,
+      "required_min": 107,
+      "passed": true
+    },
+    "mean_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.01,
+      "passed": true
+    },
+    "max_absolute_score_difference": {
+      "observed": 0.0,
+      "required_max": 0.4,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "status": "stage1-pass-full-calibration-authorized",
+  "inputs": {
+    "config": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_challenger_v1_development.json",
+    "config_sha256": "099d1471023c90a4b831baa52d6da8a7bde6f2468c0253418a52556fae5062a4",
+    "audit": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_determinism_v1.json",
+    "audit_sha256": "f26888f6b96147bb870184f983770a28286eb10973b96d515938eb8be162a5f4",
+    "left": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run1_v1.json",
+    "left_sha256": "a4be99bd118d8f55295558ded13ed9bf9f9e6e0405565ad4f1d56331024dbe1b",
+    "right": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_reliability_ministral3_8b_run2_v1.json",
+    "right_sha256": "4d293f3ad2659b5e78386b1076fc9d1c6aeb2f5e3f8a972e8c47db0982fcf0e3"
+  }
+}

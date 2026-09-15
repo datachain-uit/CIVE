@@ -1,0 +1,208 @@
+{
+  "schema_version": 3,
+  "status": "development-evaluated-not-ready-to-freeze",
+  "superseded_legacy_artifacts": {
+    "historical_ai_data.json": "only 1113 unique articles across 14 dates",
+    "llm_sentiment_llama3.json": "synthetic replacement timestamps; invalid publication timing",
+    "llm_sentiment_qwen2_5_7b.json": "synthetic replacement timestamps; invalid publication timing",
+    "historical_microstructure": "not an LLM corpus and contains proxy/estimated fields"
+  },
+  "causal_corpus": {
+    "dataset": "CryptoVision v2",
+    "doi": "10.17632/3c3xtxtfb6.2",
+    "snapshot_sha256": "0c0ce86fc0a3b90378d36fbb27cd08137fd1fd9f72030cfc50a4aa967380a142",
+    "input_rows": 188431,
+    "accepted_unique_articles": 117444,
+    "publication_dates": 2927,
+    "coverage_start": "2017-08-17",
+    "coverage_end": "2025-08-27",
+    "outcome_columns_excluded": true,
+    "adequate_temporal_coverage": true
+  },
+  "daily_information_sets": {
+    "days": 2927,
+    "input_articles": 117444,
+    "selected_articles": 92483,
+    "maximum_headlines": 48,
+    "days_capped": 1145,
+    "availability": "next calendar day at 00:00 UTC"
+  },
+  "daily_reliability_pilot": {
+    "model": "llama3:latest",
+    "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "daily_sets": 18,
+    "coverage": "two deterministic calendar samples per year, 2017-2025",
+    "runs": 2,
+    "schema_success": "36/36",
+    "exact_score_agreement": "18/18",
+    "mean_absolute_score_difference": 0.0,
+    "interpretation": "operational candidate; reliability sample remains too small to freeze"
+  },
+  "full_inference": {
+    "artifact": "results/llm_daily_full_llama3_development.json",
+    "records": 2927,
+    "success": 2927,
+    "errors": 0,
+    "workers": 1,
+    "sha256": "468dba96d2842833aaa3a58d46f1f452cc9d268af68c43b56b8740bc0713ebc8"
+  },
+  "full_repeat_inference": {
+    "artifact": "results/llm_daily_full_llama3_repeat2.json",
+    "records": 2927,
+    "success": 2927,
+    "errors": 0,
+    "workers": 1,
+    "request_delay_seconds": 10,
+    "sha256": "b67ddc758f8883eff928eff337f4230a641b10f127e8a82fa76d94c69c97410c"
+  },
+  "expanded_reliability_audit": {
+    "repeat_records": 108,
+    "schema_success": "108/108",
+    "exact_score_agreement": "98/108",
+    "mean_absolute_score_difference": 0.011111111111111112,
+    "maximum_absolute_score_difference": 0.4,
+    "long_flat_action_agreement": "104/108",
+    "long_flat_action_agreement_rate": 0.9629629629629629,
+    "interpretation": "single-worker backend is highly but not fully repeatable; previous 18/18 determinism conclusion was too strong"
+  },
+  "full_repeat_determinism_audit": {
+    "artifact": "results/llm_daily_full_llama3_repeat2_determinism.json",
+    "paired_information_sets": 2927,
+    "both_success": 2927,
+    "exact_score_agreement": "2611/2927",
+    "mean_absolute_score_difference": 0.015965152032798087,
+    "maximum_absolute_score_difference": 0.8999999999999999,
+    "long_flat_action_agreement": "2862/2927",
+    "long_flat_action_disagreements": 65,
+    "long_flat_action_agreement_rate": 0.9777929620772121,
+    "interpretation": "the pinned single-worker model is highly but not fully repeatable at either score or action level"
+  },
+  "dual_run_consensus": {
+    "artifact": "results/llm_daily_dual_run_consensus_v1.json",
+    "policy_config": "configs/llm_dual_run_consensus_v1_development.json",
+    "selection_basis": "predeclared from reliability only before the consensus return was known",
+    "records": 2927,
+    "component_action_agreements": 2862,
+    "component_action_disagreements": 65,
+    "consensus_long_records": 793,
+    "rule": "minimum score and confidence; both successful component runs must independently pass the original long thresholds; otherwise flat"
+  },
+  "action_adapter": {
+    "strategy": "LLM-only BTCUSDT long/flat",
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "decision_delay_hours": 4,
+    "missing_or_error": "flat",
+    "return_optimized": false,
+    "status": "implemented and evaluated through the common lifecycle engine for both the original single run and the predeclared dual-run consensus"
+  },
+  "execution_smoke_test": {
+    "artifact": "results/llm_daily_pilot_lifecycle_smoke.json",
+    "scored_days": 18,
+    "lifecycle_decisions": 1460,
+    "long_decisions": 1,
+    "fills": 2,
+    "interpretation": "wiring/provenance check only; return and drawdown are not LLM efficacy evidence"
+  },
+  "full_development_backtest": {
+    "artifact": "results/llm_bybit_lifecycle_full_v1_development.json",
+    "return_pct": 36.35,
+    "max_drawdown_pct": 23.2235,
+    "fills": 326,
+    "news_covered_complete_folds_positive": 4,
+    "news_covered_complete_folds_tested": 6,
+    "interpretation": "development result only; materially weaker return/drawdown profile than Tech-Control"
+  },
+  "outcome_calibration": {
+    "artifact": "results/llm_outcome_calibration_v1_development.json",
+    "observations": 1110,
+    "pearson_score_forward_return": 0.02431303144393668,
+    "spearman_score_forward_return": 0.019616615623927542,
+    "signed_direction_accuracy": 0.5218181818181818,
+    "long_minus_flat_mean_bps": 14.673527894528032,
+    "year_2025_long_minus_flat_mean_bps": -19.607839147320117,
+    "long_minus_flat_mean_bps_95_ci": [-21.460541591653048, 48.593639313391066],
+    "pearson_score_forward_return_95_ci": [-0.03875420787056424, 0.08567579363910018],
+    "interpretation": "small, unstable development edge with confidence intervals spanning zero; not sufficient predictive evidence"
+  },
+  "dual_run_consensus_backtest": {
+    "artifact": "results/llm_bybit_lifecycle_dual_run_consensus_v1_development.json",
+    "return_pct": 32.7503,
+    "max_drawdown_pct": 23.2235,
+    "fills": 322,
+    "folds_positive_all": 4,
+    "folds_tested_all": 8,
+    "news_covered_complete_folds_positive": 4,
+    "news_covered_complete_folds_tested": 6,
+    "interpretation": "development result only; consensus resolves disagreement semantics but does not improve the original single-run return/drawdown profile"
+  },
+  "dual_run_outcome_calibration": {
+    "artifact": "results/llm_outcome_calibration_dual_run_consensus_v1_development.json",
+    "observations": 1110,
+    "pearson_score_forward_return": 0.02988534048021754,
+    "spearman_score_forward_return": 0.022622126184684867,
+    "signed_direction_accuracy": 0.5223336371923427,
+    "long_minus_flat_mean_bps": 15.158699027457459,
+    "long_minus_flat_mean_bps_95_ci": [-21.73830197526643, 49.53517848101748],
+    "pearson_score_forward_return_95_ci": [-0.03303362706484559, 0.0908847105362357],
+    "interpretation": "the consensus calibration remains statistically inconclusive because both predeclared bootstrap intervals span zero"
+  },
+  "qwen25_7b_challenger_stage1": {
+    "experiment": "configs/llm_qwen25_7b_challenger_v1_development.json",
+    "gate_artifact": "results/llm_qwen25_7b_challenger_gate_v1.json",
+    "model": "qwen2.5:7b",
+    "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+    "schema_success": "216/216",
+    "exact_score_agreement": "108/108",
+    "long_flat_action_agreement": "108/108",
+    "mean_absolute_score_difference": 0.0,
+    "maximum_absolute_score_difference": 0.0,
+    "market_outcomes_consulted": false,
+    "trading_backtest_consulted": false,
+    "status": "stage1-pass-full-calibration-authorized",
+    "next_gate": "completed as Stage 2; see qwen25_7b_challenger_stage2"
+  },
+  "qwen25_7b_challenger_stage2": {
+    "gate_artifact": "results/llm_qwen25_7b_challenger_stage2_v1.json",
+    "full_run_artifact": "results/llm_daily_full_qwen2_5_7b_v1_development.json",
+    "calibration_artifact": "results/llm_outcome_calibration_qwen2_5_7b_v1_development.json",
+    "full_records": 2927,
+    "schema_errors": 0,
+    "calibration_observations": 1110,
+    "long_rule_observations": 415,
+    "pearson_score_forward_return": 0.00813007002802547,
+    "spearman_score_forward_return": -0.0154931075387709,
+    "signed_direction_accuracy": 0.481346678798908,
+    "long_minus_flat_mean_bps": -10.6292709697588,
+    "long_minus_flat_mean_bps_95_ci": [-42.0445987987955, 21.0310599852657],
+    "pearson_score_forward_return_95_ci": [-0.066885260748866, 0.0804663468725884],
+    "trading_backtest_consulted": false,
+    "passed": false,
+    "status": "stage2-fail-stop-before-repeat-or-backtest",
+    "interpretation": "operational reliability passed, but both predeclared predictive confidence-interval lower bounds failed; Qwen 2.5 7B is rejected from this trading pipeline before repeat, consensus or backtest"
+  },
+  "gemma3_4b_challenger_stage1": {
+    "experiment": "configs/llm_gemma3_4b_challenger_v1_development.json",
+    "gate_artifact": "results/llm_gemma3_4b_challenger_gate_v1.json",
+    "partial_run_artifact": "results/llm_daily_reliability_gemma3_4b_run1_v1.json",
+    "model": "gemma3:4b",
+    "model_digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+    "observed_information_sets": 10,
+    "schema_success": 8,
+    "schema_errors": 2,
+    "maximum_possible_schema_success_if_completed": 106,
+    "required_schema_success": 108,
+    "market_outcomes_consulted": false,
+    "trading_backtest_consulted": false,
+    "passed": false,
+    "status": "stage1-fail-fast-stop-before-completing-run1",
+    "interpretation": "the perfect-schema reliability gate became mathematically unreachable after two schema errors; Gemma 3 4B is rejected operationally before completing run 1, run 2, calibration or backtest"
+  },
+  "blocking_requirements": [
+    "do not run Qwen 2.5 7B repeat, consensus or trading backtest after its predeclared Stage 2 failure",
+    "do not continue Gemma 3 4B run 1 or run run 2, calibration or trading backtest after its irreversible Stage 1 failure",
+    "do not promote the consensus policy from development on the current statistically inconclusive calibration evidence",
+    "obtain untouched evidence under a fully frozen model, prompt, source and dual-run action contract before considering a live LLM arm",
+    "if the model or prompt changes, predeclare a new development cycle and do not select it on trading return"
+  ]
+}

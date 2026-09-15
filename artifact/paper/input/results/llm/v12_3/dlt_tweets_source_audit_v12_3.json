@@ -1,0 +1,59 @@
+{
+  "status": "CONDITIONAL_CANDIDATE_NEEDS_PIT_PROVENANCE_AND_SCHEMA_GATE",
+  "candidate": {
+    "repository": "ExponentialScience/DLT-Tweets",
+    "revision": "c7d979394488bbd94bd6f493af1775d6b6159176",
+    "declared_license": "CC-BY-NC-4.0",
+    "parquet_shards": 14,
+    "shard_paths": [
+      "data/train-00000-of-00014.parquet",
+      "data/train-00001-of-00014.parquet",
+      "data/train-00002-of-00014.parquet",
+      "data/train-00003-of-00014.parquet",
+      "data/train-00004-of-00014.parquet",
+      "data/train-00005-of-00014.parquet",
+      "data/train-00006-of-00014.parquet",
+      "data/train-00007-of-00014.parquet",
+      "data/train-00008-of-00014.parquet",
+      "data/train-00009-of-00014.parquet",
+      "data/train-00010-of-00014.parquet",
+      "data/train-00011-of-00014.parquet",
+      "data/train-00012-of-00014.parquet",
+      "data/train-00013-of-00014.parquet"
+    ]
+  },
+  "declared_schema": [
+    "timestamp",
+    "tweet",
+    "language",
+    "total_tokens",
+    "sentiment_class",
+    "sentiment_label",
+    "sentiment_score",
+    "confidence_level",
+    "year"
+  ],
+  "source_audit": {
+    "outcome_fields_declared": false,
+    "market_data_accessed": false,
+    "model_run": false,
+    "raw_artifacts": {
+      "tree.txt": "cb0daa89b804ae36722f072cdf5fdbcb7059fc9ef836ff351b1e105b28a45759",
+      "README.md": "8807b80c200f6c65c97dec767e8c9bda259ac2bde36ee70b66fa6e1d47cc6cc6",
+      ".gitattributes": "e7a120ab07b1bc5b486be249e9fc6c83d59448d0093e1dfebe95d1566d9cafc0"
+    }
+  },
+  "admission": {
+    "eligible_for_model_input": false,
+    "blocking_reasons": [
+      "Timestamp is a string and timezone/precision have not been verified.",
+      "Dataset card's historical-TOS statement needs independent provenance evidence.",
+      "Precomputed sentiment fields must be excluded unless separately predeclared and audited."
+    ]
+  },
+  "next_gate": [
+    "Download only one pinned shard for schema/timestamp audit.",
+    "Audit provenance evidence and determine an explicitly permitted research-use policy.",
+    "Freeze text-only field contract before any outcome join."
+  ]
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC and Kansas State University Announce Return of AgCon Conference</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9215-26</link>
+  <description/>
+  <pubDate>Fri, 17 Apr 2026 14:00:02 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9215-26</guid>
+    </item>
+<item>
+  <title>CFTC Approves Order to Further Strengthen U.S. Treasury Market Liquidity  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9214-26</link>
+  <description/>
+  <pubDate>Wed, 15 Apr 2026 18:42:19 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9214-26</guid>
+    </item>
+<item>
+  <title>Temporary Restraining Order Blocks Arizona Criminal Enforcement Proceedings on Prediction Markets </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9211-26</link>
+  <description/>
+  <pubDate>Fri, 10 Apr 2026 22:47:47 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9211-26</guid>
+    </item>
+<item>
+  <title>CFTC Announces Innovation Task Force Staff </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9210-26</link>
+  <description/>
+  <pubDate>Fri, 10 Apr 2026 15:25:20 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9210-26</guid>
+    </item>
+<item>
+  <title>CFTC Announces Agricultural Advisory Committee Members </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9209-26</link>
+  <description/>
+  <pubDate>Fri, 10 Apr 2026 12:53:19 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9209-26</guid>
+    </item>
+<item>
+  <title>CFTC Seeks to Enjoin Arizona Criminal and Civil Enforcement Against Prediction Markets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9208-26</link>
+  <description/>
+  <pubDate>Thu, 09 Apr 2026 13:26:00 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9208-26</guid>
+    </item>
+<item>
+  <title>CFTC Chairman Selig Announces Deputy General Counsel Appointments</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9207-26</link>
+  <description/>
+  <pubDate>Fri, 03 Apr 2026 13:00:00 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9207-26</guid>
+    </item>
+<item>
+  <title>CFTC Sues Trio of States to Reaffirm its Exclusive Jurisdiction Over Prediction Markets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9206-26</link>
+  <description/>
+  <pubDate>Thu, 02 Apr 2026 16:35:55 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9206-26</guid>
+    </item>
+<item>
+  <title>CFTC Staff Amends Brexit-Related No-Action Positions for Additional UK Trading Facilities</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9202-26</link>
+  <description/>
+  <pubDate>Tue, 24 Mar 2026 19:56:49 +0000</pubDate>
+    <dc:creator>CCollins</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9202-26</guid>
+    </item>
+<item>
+  <title>Chairman Selig Announces Formation of New Innovation Task Force </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/9201-26</link>
+  <description/>
+  <pubDate>Tue, 24 Mar 2026 12:24:33 +0000</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/9201-26</guid>
+    </item>
+
+  </channel>
+</rss>

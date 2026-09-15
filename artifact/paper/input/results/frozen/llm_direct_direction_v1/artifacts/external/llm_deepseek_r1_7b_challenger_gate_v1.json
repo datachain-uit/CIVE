@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-19T15:39:31.868705+00:00",
+  "experiment_id": "llm-deepseek-r1-7b-challenger-v1-development",
+  "candidate": {
+    "model": "deepseek-r1:7b",
+    "digest": "755ced02ce7befdb13b7ca74e1e4d08cddba4986afdb63a480f2c93d3140383f",
+    "architecture": "deepseek-r1-distill-qwen",
+    "parameters": "7B",
+    "quantization": "Q4_K_M",
+    "license": "MIT",
+    "rationale": "DeepSeek-R1-Distill-Qwen-7B is a local open-weight reasoning model distilled from R1; selected for reasoning capability distinct from Llama/Qwen/Gemma families; thinking tokens must be stripped from output before JSON parse to avoid parse failure",
+    "thinking_mode": "disabled",
+    "note": "CoT thinking output must be stripped before JSON parse; runner must handle <think>...</think> blocks",
+    "primary_sources": [
+      "https://github.com/deepseek-ai/DeepSeek-R1",
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    ]
+  },
+  "market_outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "stage1_partial_run": {
+    "expected_information_sets": 108,
+    "observed_information_sets": 1,
+    "schema_success": 0,
+    "schema_errors": 1,
+    "required_schema_success": 108,
+    "maximum_possible_schema_success_if_completed": 107
+  },
+  "passed": false,
+  "status": "stage1-fail-fast-stop-before-completing-run1",
+  "stopping_rule_basis": "schema success must equal the full expected sample; after the first schema error, the required count is mathematically unreachable",
+  "next_action": "stop before run 2, full inference, calibration and trading backtest",
+  "inputs": {
+    "config": "configs\\llm_deepseek_r1_7b_challenger_v1_development.json",
+    "config_sha256": "85a7a9a6d70698ef9b443c78b512130b154fdf7a340f3eb09d28ad48bdb68608",
+    "partial_run": "results\\llm_daily_reliability_deepseek_r1_7b_run1_v1.json",
+    "partial_run_sha256": "419656f11e87815453f1f32e9160814d2f1570e9ee388bd17c5ba522e1f47594"
+  }
+}

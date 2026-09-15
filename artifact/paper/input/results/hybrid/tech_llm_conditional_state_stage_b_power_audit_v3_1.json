@@ -1,0 +1,55 @@
+{
+  "schema_version": "tech-llm-conditional-state-stage-b-power-audit-v3.1",
+  "status": "stage-b-power-pass-freeze-authorized",
+  "generated_at": "2026-09-10T17:49:41.161797+00:00",
+  "research_role": "Post-outcome exploratory feasibility only; no T1/T2/T3 fit, policy mapping or performance evaluation was performed.",
+  "counts": {
+    "panel_decisions": 525,
+    "panel_trade_clusters": 23,
+    "extraction_records": 2534,
+    "deduplicated_headline_ids": 2534,
+    "new_text_decisions": 71,
+    "new_text_trade_clusters": 16,
+    "active_applicable_decisions": 436,
+    "active_applicable_trade_clusters": 17,
+    "adverse_active_decisions": 406,
+    "adverse_active_trade_clusters": 15
+  },
+  "planning_diagnostic": {
+    "all_decision_cluster_robust_se": 0.0003686274119042331,
+    "all_decision_mde_80pct_two_sided_5pct": 0.0010321567533318526,
+    "applicable_text_cluster_robust_se": 0.00034491535480574484,
+    "applicable_text_mde_80pct_two_sided_5pct": 0.0009657629934560855,
+    "median_one_bar_overlay_cost": 0.0011463993819951948,
+    "warning": "MDE is an observed-variance planning diagnostic. It does not account for model estimation error, selection uncertainty or policy sparsity and is not a HYB-003 performance result."
+  },
+  "thresholds": {
+    "minimum_panel_trade_clusters": 20,
+    "minimum_text_trade_clusters": 12,
+    "minimum_new_text_decisions": 50,
+    "minimum_applicable_trade_clusters": 12,
+    "minimum_adverse_mass": 0.25,
+    "economic_mde_rule": "all-decision normal 80%-power, two-sided 5% MDE must not exceed the median one-bar registered overlay cost"
+  },
+  "checks": {
+    "panel_clusters": true,
+    "text_trade_clusters": true,
+    "new_text_decisions": true,
+    "applicable_trade_clusters": true,
+    "economic_mde": true
+  },
+  "passed": true,
+  "outcomes_consulted": true,
+  "model_fit_performed": false,
+  "performance_evaluation_performed": false,
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_state_stage_b_v3_1_predeclared.json",
+      "sha256": "437574adef5cdde4a0cee10f0bd350c14a62cb9f64c291b5215c433feaf71ee0"
+    },
+    "state": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\hybrid\\tech_llm_conditional_state_v3_1.json",
+      "sha256": "0fb895ce5961b602a0f00751ea08ccf04c22c0acb141ea29ca8b7b54db0a9ce5"
+    }
+  }
+}

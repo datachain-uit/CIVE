@@ -1,0 +1,57 @@
+{
+  "audited_at": "2026-09-09T08:55:04.539028+00:00",
+  "candle_download_authorized": false,
+  "checks": {
+    "eligible_count_matches_extraction_gate": true,
+    "maximum_potential_target_sets_meet_minimum": false,
+    "maximum_potential_target_sets_meet_required_oos": false,
+    "no_market_values_downloaded": true,
+    "no_predictive_metric_or_backtest_run": true,
+    "source_start_frozen_without_market_values": true,
+    "target_join_authorized": true
+  },
+  "counts": {
+    "before_first_available_month": 94,
+    "eligible_information_sets": 135,
+    "maximum_potentially_targetable_information_sets": 41,
+    "minimum_information_sets": 96,
+    "required_oos_predictions": 72,
+    "shortfall_to_minimum": 55,
+    "shortfall_to_required_oos": 31
+  },
+  "inputs": {
+    "auditor": {
+      "path": "tools/llm/audit_ecb_rss_target_coverage_feasibility_v16.py",
+      "sha256": "64e05f9844b7b2916aa1e1bac68091f2fec711bcd77076feabf4a312e38928c3"
+    },
+    "extraction": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_predictive_v16/extraction/extraction.json",
+      "sha256": "f602740b7a1752332da7a8b0cd371ad1d94277fb4a7efe10bb1665f462f80986"
+    },
+    "extraction_gate": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_predictive_v16/extraction_gate.json",
+      "sha256": "50865d8b507a729146eefd27cba4783e5a92e36a681e0c50fd00f6e266894535"
+    },
+    "predeclared": {
+      "path": "paper/input/results/llm/v16/ecb_rss_archive_predictive_v16/predeclared.json",
+      "sha256": "e795b94535babe2de04f5b21175e867b4b87288aa8d5c0490ee3395eadbc95ce"
+    },
+    "source_screen": {
+      "path": "paper/input/references/source_artifacts/binance_vision_btcusdt_4h_v16/source_screen.json",
+      "sha256": "c1a3f6ab37f7a9614d319facd862bf7b80e1243a7c10c961b50a65d2a323c1ea"
+    }
+  },
+  "interpretation": "This is an optimistic upper-bound feasibility test: every eligible information set on or after the first available month is treated as targetable. Failure therefore cannot be repaired by downloading candle values and requires stopping before target construction and predictive evaluation.",
+  "market_values_downloaded": false,
+  "outcomes_consulted": false,
+  "passed": false,
+  "predictive_gate_authorized": false,
+  "schema_version": "ecb-rss-binance-target-coverage-feasibility-v16",
+  "source_start": {
+    "first_available_month": "2017-08",
+    "lower_bound_utc": "2017-08-01T00:00:00+00:00"
+  },
+  "status": "TARGET_COVERAGE_FEASIBILITY_FAIL_STOP_BEFORE_CANDLE_DOWNLOAD",
+  "target_panel_authorized": false,
+  "trading_backtest_consulted": false
+}

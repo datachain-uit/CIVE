@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "evaluated_at": "2026-08-21T13:35:31.385577+00:00",
+  "experiment_id": "llm-ministral3-8b-multisource-causal-memory-v2.1-development",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "artifact_size_bytes": 6022236616,
+    "license": "Apache-2.0"
+  },
+  "stage1_gate_passed": true,
+  "trading_backtest_consulted": false,
+  "checks": {
+    "full_records": {
+      "observed": 1079,
+      "required": 1079,
+      "passed": true
+    },
+    "schema_errors": {
+      "observed": 0,
+      "required": 0,
+      "passed": true
+    },
+    "calibration_observations": {
+      "observed": 1079,
+      "required_min": 1000,
+      "passed": true
+    },
+    "long_rule_observations": {
+      "observed": 22,
+      "required_min": 100,
+      "passed": false
+    },
+    "pearson_ci_lower_bound": {
+      "observed": -0.07074242611985149,
+      "required_gt": 0.0,
+      "passed": false
+    },
+    "long_minus_flat_ci_lower_bound": {
+      "observed": -181.1693787122765,
+      "required_gt": 0.0,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "status": "stage2-fail-stop-before-repeat-or-backtest",
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\configs\\llm_ministral3_8b_multisource_v2_1_development.json",
+      "sha256": "d9d7243a74dd77148a8c63be53d4a60513841d498fb6752b137089e739f19878"
+    },
+    "stage1": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_ministral3_8b_challenger_gate_multisource_v2_1.json",
+      "sha256": "1f4480888de24b4d57500c140bab8bbdbd75f46f24ae9ed9c4a119bec1f23c68"
+    },
+    "full_run": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_daily_full_ministral3_8b_multisource_v2_1_development.json",
+      "sha256": "7b37ee3a6c6090573167f59b91474a8cb563fd7ad8265db5ba192f24cec56204"
+    },
+    "calibration": {
+      "path": "D:\\UIT\\KLTN\\runtime\\ministral3_8b_challenger\\results\\llm_outcome_calibration_ministral3_8b_multisource_v2_1_development.json",
+      "sha256": "2bdf67be6ba7a036ce22ae5367e0c3f656993b9c86e5f158422be57b36678a05"
+    }
+  }
+}

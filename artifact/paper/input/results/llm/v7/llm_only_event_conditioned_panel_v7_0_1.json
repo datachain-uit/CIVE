@@ -1,0 +1,4963 @@
+{
+  "schema_version": "llm-only-event-conditioned-panel-v7",
+  "experiment_id": "llm-only-event-conditioned-v7.0.1-development",
+  "status": "development-paired-oos-prediction-panel",
+  "feature_names": {
+    "prior": [],
+    "sentiment": [
+      "llm_sentiment_positive_fraction",
+      "llm_sentiment_negative_fraction",
+      "llm_sentiment_mixed_fraction",
+      "llm_sentiment_unclear_fraction",
+      "llm_sentiment_signed_mean",
+      "llm_sentiment_directional_severity_mean",
+      "llm_sentiment_directional_confidence_mean",
+      "llm_sentiment_severity_mean",
+      "llm_sentiment_severity_max",
+      "llm_sentiment_surprise_mean",
+      "llm_sentiment_surprise_max",
+      "llm_sentiment_confidence_mean"
+    ],
+    "event": [
+      "llm_sentiment_positive_fraction",
+      "llm_sentiment_negative_fraction",
+      "llm_sentiment_mixed_fraction",
+      "llm_sentiment_unclear_fraction",
+      "llm_sentiment_signed_mean",
+      "llm_sentiment_directional_severity_mean",
+      "llm_sentiment_directional_confidence_mean",
+      "llm_sentiment_severity_mean",
+      "llm_sentiment_severity_max",
+      "llm_sentiment_surprise_mean",
+      "llm_sentiment_surprise_max",
+      "llm_sentiment_confidence_mean",
+      "llm_event_relevance_fraction::direct",
+      "llm_event_relevance_fraction::systemic",
+      "llm_event_relevance_fraction::indirect",
+      "llm_event_relevance_fraction::none",
+      "llm_event_type_fraction::macro_liquidity",
+      "llm_event_impact::macro_liquidity",
+      "llm_event_type_fraction::regulation",
+      "llm_event_impact::regulation",
+      "llm_event_type_fraction::etf_institutional_flow",
+      "llm_event_impact::etf_institutional_flow",
+      "llm_event_type_fraction::exchange_security",
+      "llm_event_impact::exchange_security",
+      "llm_event_type_fraction::liquidation_leverage",
+      "llm_event_impact::liquidation_leverage",
+      "llm_event_type_fraction::network_protocol",
+      "llm_event_impact::network_protocol",
+      "llm_event_type_fraction::fraud_legal",
+      "llm_event_impact::fraud_legal",
+      "llm_event_type_fraction::adoption_business",
+      "llm_event_impact::adoption_business",
+      "llm_event_type_fraction::market_commentary",
+      "llm_event_impact::market_commentary",
+      "llm_event_type_fraction::other",
+      "llm_event_impact::other",
+      "llm_event_horizon_fraction::4h",
+      "llm_event_horizon_fraction::12h",
+      "llm_event_horizon_fraction::24h",
+      "llm_event_horizon_fraction::72h",
+      "llm_event_horizon_fraction::unknown",
+      "llm_event_directional_impact::direct",
+      "llm_event_directional_impact::systemic"
+    ]
+  },
+  "deduplicated_repeated_headlines": 1,
+  "records": [
+    {
+      "information_date": "2023-09-15",
+      "target": -0.00332664245923453,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.003435540680866168,
+      "event_prediction": -0.002465099708155312
+    },
+    {
+      "information_date": "2023-09-16",
+      "target": 0.004985875866022393,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.001154415435223071,
+      "event_prediction": -0.0012083415062283096
+    },
+    {
+      "information_date": "2023-09-17",
+      "target": 0.006038180514952973,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.001126596412900878,
+      "event_prediction": -0.005989700492959399
+    },
+    {
+      "information_date": "2023-09-18",
+      "target": 0.011287675320799773,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.003111021046628694,
+      "event_prediction": 0.0024704914784847384
+    },
+    {
+      "information_date": "2023-09-19",
+      "target": -0.0031685023570116044,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0047259478026142,
+      "event_prediction": 0.010764892629657921
+    },
+    {
+      "information_date": "2023-09-20",
+      "target": -0.015197208479650115,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0007429145878684638,
+      "event_prediction": 0.0055827771401736805
+    },
+    {
+      "information_date": "2023-09-21",
+      "target": -0.0036296685954759766,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 9.930248552226086e-05,
+      "event_prediction": 0.005018148373306814
+    },
+    {
+      "information_date": "2023-09-22",
+      "target": 0.0014594190984031918,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0023838140069190016,
+      "event_prediction": 0.007494681415048465
+    },
+    {
+      "information_date": "2023-09-23",
+      "target": -0.01556704485974969,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.00284850764571685,
+      "event_prediction": -0.0006356843580254242
+    },
+    {
+      "information_date": "2023-09-24",
+      "target": 0.0075126134637966135,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.00032241209659381986,
+      "event_prediction": -0.007013619205270185
+    },
+    {
+      "information_date": "2023-09-25",
+      "target": -0.0027297819591405315,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.004197826724341019,
+      "event_prediction": 0.005296715757456282
+    },
+    {
+      "information_date": "2023-09-26",
+      "target": 0.0037803800938052134,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.001246970278341494,
+      "event_prediction": 0.00032678190034832915
+    },
+    {
+      "information_date": "2023-09-27",
+      "target": 0.021834524870574468,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0005959268728836807,
+      "event_prediction": -0.0011565733041613182
+    },
+    {
+      "information_date": "2023-09-28",
+      "target": -0.0015700276889043518,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00020843922777444561,
+      "event_prediction": 0.001196803889779757
+    },
+    {
+      "information_date": "2023-09-29",
+      "target": 0.0051338480812195275,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0021383244233052,
+      "event_prediction": -0.0040221166389236415
+    },
+    {
+      "information_date": "2023-09-30",
+      "target": 0.03971817442118497,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.006090273303152346,
+      "event_prediction": 0.0004929975610875498
+    },
+    {
+      "information_date": "2023-10-01",
+      "target": -0.01845126085394444,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0025012157883132257,
+      "event_prediction": -0.007346370383425634
+    },
+    {
+      "information_date": "2023-10-02",
+      "target": -0.006331270023049229,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.000745873009783497,
+      "event_prediction": 0.0033387899301500017
+    },
+    {
+      "information_date": "2023-10-03",
+      "target": 0.008078487152834768,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0017723264234954647,
+      "event_prediction": 0.002491365380687089
+    },
+    {
+      "information_date": "2023-10-04",
+      "target": -0.0033646888567293587,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.004353007631693167,
+      "event_prediction": -0.004523351126739632
+    },
+    {
+      "information_date": "2023-10-05",
+      "target": 0.012367952953134642,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0016937024561623198,
+      "event_prediction": -0.00207640702237282
+    },
+    {
+      "information_date": "2023-10-06",
+      "target": 0.005669165976398105,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0016960899853147656,
+      "event_prediction": 0.00019745977646235576
+    },
+    {
+      "information_date": "2023-10-07",
+      "target": -0.004934785244136264,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00907409872348527,
+      "event_prediction": -0.01953031962538476
+    },
+    {
+      "information_date": "2023-10-08",
+      "target": -0.010284010692504508,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 9.023037966118927e-05,
+      "event_prediction": -0.006813985645199661
+    },
+    {
+      "information_date": "2023-10-09",
+      "target": -0.022624581830820722,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0032867777236802315,
+      "event_prediction": 0.004226973995674473
+    },
+    {
+      "information_date": "2023-10-10",
+      "target": -0.005926913744883411,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.003283952889140293,
+      "event_prediction": 0.0035589003257886767
+    },
+    {
+      "information_date": "2023-10-11",
+      "target": -0.002440796705856063,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0028602653627737514,
+      "event_prediction": 0.005667857626518355
+    },
+    {
+      "information_date": "2023-10-12",
+      "target": 0.0055024280911468715,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.002583040422478991,
+      "event_prediction": 0.0016080956853696243
+    },
+    {
+      "information_date": "2023-10-13",
+      "target": -0.0018538263495966323,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0021612635811853885,
+      "event_prediction": 0.0029832210580832998
+    },
+    {
+      "information_date": "2023-10-14",
+      "target": 0.013168375056760162,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0025138603841164736,
+      "event_prediction": 0.005673260309652705
+    },
+    {
+      "information_date": "2023-10-15",
+      "target": 0.03810265528338208,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0007944010276335665,
+      "event_prediction": 0.011485192276489906
+    },
+    {
+      "information_date": "2023-10-16",
+      "target": 0.008510743708065593,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0011142444127462182,
+      "event_prediction": -0.001240382005693044
+    },
+    {
+      "information_date": "2023-10-17",
+      "target": -0.008926660327240765,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.000989046183377687,
+      "event_prediction": 0.0007550393663418663
+    },
+    {
+      "information_date": "2023-10-18",
+      "target": 0.03464037246189533,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.004147401641781841,
+      "event_prediction": -0.004347366460519704
+    },
+    {
+      "information_date": "2023-10-19",
+      "target": 0.012562066050939347,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.004732658243237586,
+      "event_prediction": -0.0028295746549842253
+    },
+    {
+      "information_date": "2023-10-20",
+      "target": 0.010266982088543486,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.001366355065451616,
+      "event_prediction": -0.008317522575323427
+    },
+    {
+      "information_date": "2023-10-21",
+      "target": 0.027795061183255365,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.003707979216307493,
+      "event_prediction": 0.007535359203126364
+    },
+    {
+      "information_date": "2023-10-22",
+      "target": 0.10894492053624605,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0017110285338552906,
+      "event_prediction": 0.008477724632498648
+    },
+    {
+      "information_date": "2023-10-23",
+      "target": -0.0014087814040855129,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.002280000552833372,
+      "event_prediction": -0.002103747524984382
+    },
+    {
+      "information_date": "2023-10-24",
+      "target": 0.022942628732659287,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0012130279670307213,
+      "event_prediction": 0.004524048022972745
+    },
+    {
+      "information_date": "2023-10-25",
+      "target": -0.019330778115536296,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0012837338162578898,
+      "event_prediction": -0.005584455068825268
+    },
+    {
+      "information_date": "2023-10-26",
+      "target": -0.0013945938977729666,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0013815470024593334,
+      "event_prediction": 0.004980213451351818
+    },
+    {
+      "information_date": "2023-10-27",
+      "target": -0.0027637439048003865,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0013984498255342225,
+      "event_prediction": -0.009181216174275725
+    },
+    {
+      "information_date": "2023-10-28",
+      "target": 0.008779052662547748,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00017100552421932833,
+      "event_prediction": -0.010941225665775354
+    },
+    {
+      "information_date": "2023-10-29",
+      "target": -0.0018898519615964116,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.009063877806868986,
+      "event_prediction": 0.007973855763780577
+    },
+    {
+      "information_date": "2023-10-30",
+      "target": 0.006463376149791422,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0025124589678939555,
+      "event_prediction": -0.00929235486535433
+    },
+    {
+      "information_date": "2023-10-31",
+      "target": 0.03358997584541057,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0029705668557924144,
+      "event_prediction": -0.000743381921073537
+    },
+    {
+      "information_date": "2023-11-01",
+      "target": -0.025588593835143114,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0004916072856868562,
+      "event_prediction": -0.010997620949899407
+    },
+    {
+      "information_date": "2023-11-02",
+      "target": 0.0007725391169992601,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0010841986040432522,
+      "event_prediction": -0.004188418702596863
+    },
+    {
+      "information_date": "2023-11-03",
+      "target": 0.01669182201534669,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0026532498936856688,
+      "event_prediction": 0.000918600791791055
+    },
+    {
+      "information_date": "2023-11-04",
+      "target": -0.008473783965254889,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0014395043502041125,
+      "event_prediction": -0.02001594506651457
+    },
+    {
+      "information_date": "2023-11-05",
+      "target": -0.001685810617749639,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.005872949409565464,
+      "event_prediction": -0.004667497728172856
+    },
+    {
+      "information_date": "2023-11-06",
+      "target": 0.01029794785197069,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.002521667121756702,
+      "event_prediction": -0.011924618959021352
+    },
+    {
+      "information_date": "2023-11-07",
+      "target": 0.03293879678629286,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.001487331556488774,
+      "event_prediction": -0.006010871767726907
+    },
+    {
+      "information_date": "2023-11-08",
+      "target": 0.008532287481315848,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.001634423152429356,
+      "event_prediction": 0.00541225694922225
+    },
+    {
+      "information_date": "2023-11-09",
+      "target": 0.00793525614180135,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0005449865041219593,
+      "event_prediction": -0.006887472600309115
+    },
+    {
+      "information_date": "2023-11-10",
+      "target": -0.00136249338988359,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0009165043797207004,
+      "event_prediction": -0.003708637953511695
+    },
+    {
+      "information_date": "2023-11-11",
+      "target": -0.001799324037726313,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.00027723725341203306,
+      "event_prediction": -0.015584902543776093
+    },
+    {
+      "information_date": "2023-11-12",
+      "target": -0.012728940951030276,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.010434151363086758,
+      "event_prediction": -0.01100598936883701
+    },
+    {
+      "information_date": "2023-11-13",
+      "target": -0.02941853770869307,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.000794487447055228,
+      "event_prediction": 0.003369562891633893
+    },
+    {
+      "information_date": "2023-11-14",
+      "target": 0.058846624241962076,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.005416060880604029,
+      "event_prediction": 0.006224088821966707
+    },
+    {
+      "information_date": "2023-11-15",
+      "target": -0.026086167848844877,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0016832252825266982,
+      "event_prediction": -0.0037002207937549695
+    },
+    {
+      "information_date": "2023-11-16",
+      "target": -0.0030512689882605804,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00042032480553404466,
+      "event_prediction": -0.0008552773815182659
+    },
+    {
+      "information_date": "2023-11-17",
+      "target": 0.0039287872960052095,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.002300555515026088,
+      "event_prediction": -0.007256065082621448
+    },
+    {
+      "information_date": "2023-11-18",
+      "target": 0.01651295804712527,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.006218120237405648,
+      "event_prediction": -0.011771684694671389
+    },
+    {
+      "information_date": "2023-11-19",
+      "target": 0.009102314211563378,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.010926814702642975,
+      "event_prediction": -0.006924427028616997
+    },
+    {
+      "information_date": "2023-11-20",
+      "target": -0.02908557326752481,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0010678548987477989,
+      "event_prediction": -0.0011974696202458677
+    },
+    {
+      "information_date": "2023-11-21",
+      "target": 0.025329533994828513,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0023562683958624807,
+      "event_prediction": -0.0020018965811289427
+    },
+    {
+      "information_date": "2023-11-22",
+      "target": 2.9479472906990267e-05,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -2.947511416050944e-05,
+      "event_prediction": -0.006926815360116016
+    },
+    {
+      "information_date": "2023-11-23",
+      "target": 0.013278771117399835,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0009160308993281895,
+      "event_prediction": -0.006967934200462932
+    },
+    {
+      "information_date": "2023-11-24",
+      "target": -0.001914801894701612,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00033564855426930897,
+      "event_prediction": -0.004333248191671434
+    },
+    {
+      "information_date": "2023-11-25",
+      "target": -0.011248519408664448,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.003442212332031785,
+      "event_prediction": -0.010532471946423533
+    },
+    {
+      "information_date": "2023-11-26",
+      "target": -0.004526475459481483,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.003540148535559294,
+      "event_prediction": 0.020651058657505193
+    },
+    {
+      "information_date": "2023-11-27",
+      "target": 0.02170149872526239,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0014802984729386202,
+      "event_prediction": 0.00036228694630399455
+    },
+    {
+      "information_date": "2023-11-28",
+      "target": 0.0027034860741481648,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0012901666349952692,
+      "event_prediction": 0.00959955210230403
+    },
+    {
+      "information_date": "2023-11-29",
+      "target": -0.0001445329745412005,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.001263350570493235,
+      "event_prediction": -0.0058098665596153344
+    },
+    {
+      "information_date": "2023-11-30",
+      "target": 0.01941752676217745,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0034913065770088366,
+      "event_prediction": 0.01141738064875209
+    },
+    {
+      "information_date": "2023-12-01",
+      "target": 0.015600628047098386,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0004881167289109682,
+      "event_prediction": -0.008688930572483837
+    },
+    {
+      "information_date": "2023-12-02",
+      "target": 0.03441815597075548,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.003962919465675959,
+      "event_prediction": -0.00950022916638959
+    },
+    {
+      "information_date": "2023-12-03",
+      "target": 0.027046858971527366,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.003336406986005169,
+      "event_prediction": -0.015142243017110457
+    },
+    {
+      "information_date": "2023-12-04",
+      "target": 0.045780276655380314,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0022403639741196517,
+      "event_prediction": -0.004588964872038185
+    },
+    {
+      "information_date": "2023-12-05",
+      "target": 0.004412120879773607,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0001246628846487877,
+      "event_prediction": 0.00015919402420485642
+    },
+    {
+      "information_date": "2023-12-06",
+      "target": -0.012313774912475095,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00011465578911233458,
+      "event_prediction": 0.00040700133520504356
+    },
+    {
+      "information_date": "2023-12-07",
+      "target": 0.017799233490566113,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0006545221125739911,
+      "event_prediction": 0.002727552335445439
+    },
+    {
+      "information_date": "2023-12-08",
+      "target": -0.0068747963358558595,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -8.561476552523481e-05,
+      "event_prediction": 0.0029162488689379916
+    },
+    {
+      "information_date": "2023-12-09",
+      "target": -0.03501296523312347,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0043809460821395965,
+      "event_prediction": -0.011481166638832035
+    },
+    {
+      "information_date": "2023-12-10",
+      "target": -0.013742621015348289,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0006678941713746937,
+      "event_prediction": -0.004698443077283278
+    },
+    {
+      "information_date": "2023-12-11",
+      "target": -0.021739130434782594,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.007707589199535855,
+      "event_prediction": 0.008379756235978812
+    },
+    {
+      "information_date": "2023-12-12",
+      "target": 0.04616984826235937,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0026205814412673108,
+      "event_prediction": 0.007290957165216388
+    },
+    {
+      "information_date": "2023-12-13",
+      "target": 0.0018948919794603558,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0013462508586004557,
+      "event_prediction": 0.002060519529815107
+    },
+    {
+      "information_date": "2023-12-14",
+      "target": -0.01091588348607786,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.002668851575896229,
+      "event_prediction": 0.004603389766164433
+    },
+    {
+      "information_date": "2023-12-15",
+      "target": -0.00965297450424929,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.001333381387390873,
+      "event_prediction": 0.00450114465719176
+    },
+    {
+      "information_date": "2023-12-16",
+      "target": -0.020109127055071174,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0005857618117065506,
+      "event_prediction": -0.0026663425558273303
+    },
+    {
+      "information_date": "2023-12-17",
+      "target": 0.04861886517058922,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.006134591536266716,
+      "event_prediction": -0.008555160015828301
+    },
+    {
+      "information_date": "2023-12-18",
+      "target": -0.015308738206425532,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0010720370707940916,
+      "event_prediction": -0.000810233731168206
+    },
+    {
+      "information_date": "2023-12-19",
+      "target": 0.02902733342442909,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0016360968235687614,
+      "event_prediction": 6.054382262258532e-05
+    },
+    {
+      "information_date": "2023-12-20",
+      "target": 0.008345105006376086,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.001034375459902561,
+      "event_prediction": -0.0055424354885912405
+    },
+    {
+      "information_date": "2023-12-21",
+      "target": -0.01127539575140557,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0022763373453906785,
+      "event_prediction": 0.00013658745549005623
+    },
+    {
+      "information_date": "2023-12-22",
+      "target": 0.007419705967455448,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0009156861573806381,
+      "event_prediction": -0.008443357087459514
+    },
+    {
+      "information_date": "2023-12-23",
+      "target": -0.015723980095419865,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0045620168117142075,
+      "event_prediction": 0.006388394556868037
+    },
+    {
+      "information_date": "2023-12-24",
+      "target": 0.007100591715976323,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0051972427414752964,
+      "event_prediction": -0.008689032566584648
+    },
+    {
+      "information_date": "2023-12-25",
+      "target": -0.027887071960925325,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0012124908621617796,
+      "event_prediction": -6.887233773685442e-05
+    },
+    {
+      "information_date": "2023-12-26",
+      "target": 0.02783547100540762,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.006651179471868966,
+      "event_prediction": 0.012021773753012133
+    },
+    {
+      "information_date": "2023-12-27",
+      "target": -0.016446452367198217,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0024938463884581403,
+      "event_prediction": 0.011182423360703101
+    },
+    {
+      "information_date": "2023-12-28",
+      "target": -0.01697417837629145,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.002300151952485443,
+      "event_prediction": 0.007660269229025585
+    },
+    {
+      "information_date": "2023-12-29",
+      "target": 0.0050083194279471055,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0036470778775219773,
+      "event_prediction": -0.0010068766997159248
+    },
+    {
+      "information_date": "2023-12-30",
+      "target": 0.0038748948970286357,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.004219075048597673,
+      "event_prediction": -0.011609999604605304
+    },
+    {
+      "information_date": "2023-12-31",
+      "target": 0.07196094761950822,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0012096230731105766,
+      "event_prediction": -0.016922615429895545
+    },
+    {
+      "information_date": "2024-01-01",
+      "target": -0.0027490365166251696,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00523828785217575,
+      "event_prediction": -0.0012285094665088299
+    },
+    {
+      "information_date": "2024-01-02",
+      "target": -0.04784458785412227,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0017294749040818193,
+      "event_prediction": -0.004283480113267541
+    },
+    {
+      "information_date": "2024-01-03",
+      "target": 0.007663172729674983,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0002737565336378389,
+      "event_prediction": 0.005892647610893064
+    },
+    {
+      "information_date": "2024-01-04",
+      "target": 0.010627530364372362,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0015743798382105425,
+      "event_prediction": -0.000566358897913376
+    },
+    {
+      "information_date": "2024-01-05",
+      "target": 0.00024354713889018775,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0035879134584844395,
+      "event_prediction": 0.001490261360103124
+    },
+    {
+      "information_date": "2024-01-06",
+      "target": -0.009489198925012543,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.00692484336671969,
+      "event_prediction": -0.012683396232584144
+    },
+    {
+      "information_date": "2024-01-07",
+      "target": 0.07860511812018545,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0020510839070593577,
+      "event_prediction": -0.0175147412943676
+    },
+    {
+      "information_date": "2024-01-08",
+      "target": -0.017467816278019632,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.006832294360240015,
+      "event_prediction": 0.0009369423103473875
+    },
+    {
+      "information_date": "2024-01-09",
+      "target": 0.008231246653414015,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0018972397545476112,
+      "event_prediction": 0.0032421635906425003
+    },
+    {
+      "information_date": "2024-01-10",
+      "target": -0.01104307141874239,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0011141723665099071,
+      "event_prediction": -0.005838542741007966
+    },
+    {
+      "information_date": "2024-01-11",
+      "target": -0.07317285281942465,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.006080675893470582,
+      "event_prediction": 0.0032941616743179056
+    },
+    {
+      "information_date": "2024-01-12",
+      "target": 0.0017546493516242823,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.005934162252409396,
+      "event_prediction": -0.004029228253895603
+    },
+    {
+      "information_date": "2024-01-13",
+      "target": -0.0029973492192841844,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0006294486022412055,
+      "event_prediction": -0.01576938995032155
+    },
+    {
+      "information_date": "2024-01-14",
+      "target": 0.008030270290583452,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.005180540183856565,
+      "event_prediction": 0.00012569930294441375
+    },
+    {
+      "information_date": "2024-01-15",
+      "target": -0.0018057565187810098,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0009602486951947022,
+      "event_prediction": -0.0048640250212018685
+    },
+    {
+      "information_date": "2024-01-16",
+      "target": -0.005753860805587152,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0013739732730337177,
+      "event_prediction": 0.009365176663957855
+    },
+    {
+      "information_date": "2024-01-17",
+      "target": -0.03612220414468614,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0015657645243350097,
+      "event_prediction": 0.0024691486735193852
+    },
+    {
+      "information_date": "2024-01-18",
+      "target": 0.014229449260395155,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0027089379373054392,
+      "event_prediction": 0.006000328118631043
+    },
+    {
+      "information_date": "2024-01-19",
+      "target": 0.0009654201859272682,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0021842081489711488,
+      "event_prediction": 0.005041624491818432
+    },
+    {
+      "information_date": "2024-01-20",
+      "target": -0.01135553897423458,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.010952219705908395,
+      "event_prediction": 0.01258733268642385
+    },
+    {
+      "information_date": "2024-01-21",
+      "target": -0.029351951619635552,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0023268694805062854,
+      "event_prediction": -0.006465410899977447
+    },
+    {
+      "information_date": "2024-01-22",
+      "target": -0.009583146862413239,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0031574886715743577,
+      "event_prediction": 0.008751074053777312
+    },
+    {
+      "information_date": "2024-01-23",
+      "target": 0.009945978694400948,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.004246851816689423,
+      "event_prediction": 0.009718907899760697
+    },
+    {
+      "information_date": "2024-01-24",
+      "target": 0.0011497700459908167,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.005302409400733162,
+      "event_prediction": 0.006134496207211027
+    },
+    {
+      "information_date": "2024-01-25",
+      "target": 0.04381584860438403,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0007030737312531038,
+      "event_prediction": 0.004610471250520108
+    },
+    {
+      "information_date": "2024-01-26",
+      "target": 0.009450118395560647,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.004358874276400652,
+      "event_prediction": 0.01096322018525418
+    },
+    {
+      "information_date": "2024-01-27",
+      "target": 0.002345743659976085,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.007468452109545815,
+      "event_prediction": -0.007908002028376958
+    },
+    {
+      "information_date": "2024-01-28",
+      "target": 0.02838562658528576,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": -0.0045762572824579115,
+      "event_prediction": -0.012039570746479421
+    },
+    {
+      "information_date": "2024-01-29",
+      "target": -0.01359648215447351,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.004270932628666528,
+      "event_prediction": 0.010149615065686839
+    },
+    {
+      "information_date": "2024-01-30",
+      "target": -0.02119200976873825,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.00297025133252085,
+      "event_prediction": -0.0010703058056260287
+    },
+    {
+      "information_date": "2024-01-31",
+      "target": 0.02414827512320561,
+      "prior_prediction": 0.0007286420561629568,
+      "sentiment_prediction": 0.0054025914463654715,
+      "event_prediction": 0.005493309487294552
+    },
+    {
+      "information_date": "2024-02-04",
+      "target": 0.0031850042505754406,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0004942885359195302,
+      "event_prediction": -3.7256730702732097e-05
+    },
+    {
+      "information_date": "2024-02-05",
+      "target": -0.0010621882010733996,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0021816698150987283,
+      "event_prediction": 0.005982854492117427
+    },
+    {
+      "information_date": "2024-02-06",
+      "target": 0.04026818974260693,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00032188657803065065,
+      "event_prediction": -0.0013087031375567063
+    },
+    {
+      "information_date": "2024-02-07",
+      "target": 0.03442535668794111,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0032471827116254733,
+      "event_prediction": -0.005830404749016182
+    },
+    {
+      "information_date": "2024-02-08",
+      "target": 0.02875162065842707,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0007440173177199721,
+      "event_prediction": 0.00803525128181135
+    },
+    {
+      "information_date": "2024-02-09",
+      "target": 0.02438463162339022,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0005185054170517517,
+      "event_prediction": -0.0005076950164372848
+    },
+    {
+      "information_date": "2024-02-10",
+      "target": -0.00767231803746915,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0022636440370944312,
+      "event_prediction": -1.857816751226599e-05
+    },
+    {
+      "information_date": "2024-02-11",
+      "target": 0.03460234918841687,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00018373907976031102,
+      "event_prediction": -0.003825684173482344
+    },
+    {
+      "information_date": "2024-02-12",
+      "target": -0.005616331118649565,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.004253140703414144,
+      "event_prediction": 0.00300216563810726
+    },
+    {
+      "information_date": "2024-02-13",
+      "target": 0.057645258704218216,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00244137620836432,
+      "event_prediction": -0.0011677818278446478
+    },
+    {
+      "information_date": "2024-02-14",
+      "target": -0.0016833699463116858,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0024946625029188697,
+      "event_prediction": 0.0017490204991457627
+    },
+    {
+      "information_date": "2024-02-15",
+      "target": -0.005787021547908666,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002241145602239983,
+      "event_prediction": 0.00643981929888503
+    },
+    {
+      "information_date": "2024-02-16",
+      "target": -0.009393508191677613,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0025749246122805996,
+      "event_prediction": 0.0037065973968104567
+    },
+    {
+      "information_date": "2024-02-17",
+      "target": 0.011406275781075559,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0006089957204457751,
+      "event_prediction": 0.006336244247522402
+    },
+    {
+      "information_date": "2024-02-18",
+      "target": -0.009462008978352587,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003110859430560207,
+      "event_prediction": -0.005072625925716006
+    },
+    {
+      "information_date": "2024-02-19",
+      "target": 0.007868614864144696,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0015706214017806484,
+      "event_prediction": 0.0032270752837361564
+    },
+    {
+      "information_date": "2024-02-20",
+      "target": -0.008145539274302949,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0034619736389318355,
+      "event_prediction": 0.0032583582601354594
+    },
+    {
+      "information_date": "2024-02-21",
+      "target": -0.009078838978533676,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002503646909383897,
+      "event_prediction": 0.007000981765550061
+    },
+    {
+      "information_date": "2024-02-22",
+      "target": -0.004972214669793695,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0033214166874203643,
+      "event_prediction": 0.008899849893162668
+    },
+    {
+      "information_date": "2024-02-23",
+      "target": 0.015478701550425633,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003134348955861433,
+      "event_prediction": 0.002385903087157296
+    },
+    {
+      "information_date": "2024-02-24",
+      "target": -0.0016435237614045306,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0011536373163070466,
+      "event_prediction": 0.004093222755823245
+    },
+    {
+      "information_date": "2024-02-25",
+      "target": 0.08143115309739324,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005210167378393059,
+      "event_prediction": 0.021835765906875314
+    },
+    {
+      "information_date": "2024-02-26",
+      "target": 0.021424729254823305,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0030905255678941434,
+      "event_prediction": -0.004859495148712759
+    },
+    {
+      "information_date": "2024-02-27",
+      "target": 0.08197040737691541,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.004179293745193868,
+      "event_prediction": 0.0022498698567385966
+    },
+    {
+      "information_date": "2024-02-28",
+      "target": -0.007695115718770573,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0004926045093775072,
+      "event_prediction": 0.002947678507092694
+    },
+    {
+      "information_date": "2024-02-29",
+      "target": 0.019713156165082513,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0008764980385648556,
+      "event_prediction": 0.0005131082280933786
+    },
+    {
+      "information_date": "2024-03-01",
+      "target": -0.005953383070457785,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0015966299737438675,
+      "event_prediction": 0.006224805583436479
+    },
+    {
+      "information_date": "2024-03-02",
+      "target": 0.024743292374098003,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -4.422425629988674e-05,
+      "event_prediction": -0.007414298933811063
+    },
+    {
+      "information_date": "2024-03-03",
+      "target": 0.07386361847676559,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0017984713995447676,
+      "event_prediction": -0.006900828468793826
+    },
+    {
+      "information_date": "2024-03-04",
+      "target": -0.07181574596325002,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0017314652007882055,
+      "event_prediction": -0.0008704575005203474
+    },
+    {
+      "information_date": "2024-03-05",
+      "target": 0.04087095352924752,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005594672101433601,
+      "event_prediction": 0.0012469688051897408
+    },
+    {
+      "information_date": "2024-03-06",
+      "target": 0.019635330851228483,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0009268749974558055,
+      "event_prediction": 0.0014274805224522781
+    },
+    {
+      "information_date": "2024-03-07",
+      "target": 0.016131000208314816,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0003354670574049364,
+      "event_prediction": -0.0005068259970388135
+    },
+    {
+      "information_date": "2024-03-08",
+      "target": 0.013256679958002504,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0027130834399350648,
+      "event_prediction": 0.001607054168873303
+    },
+    {
+      "information_date": "2024-03-09",
+      "target": -0.007981744451220574,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0008199243717952282,
+      "event_prediction": -0.006178938504325298
+    },
+    {
+      "information_date": "2024-03-10",
+      "target": 0.044238969393864735,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003542010544292269,
+      "event_prediction": 0.001659647226092566
+    },
+    {
+      "information_date": "2024-03-11",
+      "target": 0.006455096135870919,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003688142406683229,
+      "event_prediction": 0.0032950122342017924
+    },
+    {
+      "information_date": "2024-03-12",
+      "target": 0.01672107287659852,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0013681412716380847,
+      "event_prediction": -0.002574690364682151
+    },
+    {
+      "information_date": "2024-03-13",
+      "target": -0.06945853238226118,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002080859148109635,
+      "event_prediction": 0.003457079190005408
+    },
+    {
+      "information_date": "2024-03-14",
+      "target": 0.014446018627452428,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0022525364237383477,
+      "event_prediction": -0.009935898097840283
+    },
+    {
+      "information_date": "2024-03-15",
+      "target": -0.03875933165896661,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.004032789556212566,
+      "event_prediction": 0.004928321073215877
+    },
+    {
+      "information_date": "2024-03-16",
+      "target": 0.02223227217818291,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0007637787646168233,
+      "event_prediction": -0.004160088252973318
+    },
+    {
+      "information_date": "2024-03-17",
+      "target": -0.03142155414551984,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0009149566876498966,
+      "event_prediction": -0.004240399192588483
+    },
+    {
+      "information_date": "2024-03-18",
+      "target": -0.06130962407224472,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.001894044284550107,
+      "event_prediction": 0.0032275119313113403
+    },
+    {
+      "information_date": "2024-03-19",
+      "target": 0.07733021221149716,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0041537767571741034,
+      "event_prediction": 0.004509340215444479
+    },
+    {
+      "information_date": "2024-03-20",
+      "target": -0.009462557921778636,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005129430901087263,
+      "event_prediction": 0.00524880025884644
+    },
+    {
+      "information_date": "2024-03-21",
+      "target": -0.03670903334292763,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.001166608628513608,
+      "event_prediction": -0.003576392424852434
+    },
+    {
+      "information_date": "2024-03-22",
+      "target": 0.006230754956139339,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0020179696805697218,
+      "event_prediction": 0.0002872957254088345
+    },
+    {
+      "information_date": "2024-03-23",
+      "target": 0.05310858964741194,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.006860225745843393,
+      "event_prediction": 0.0032426964630533593
+    },
+    {
+      "information_date": "2024-03-24",
+      "target": 0.045975118020957995,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.004721242319561007,
+      "event_prediction": 0.009400274082916852
+    },
+    {
+      "information_date": "2024-03-25",
+      "target": -0.0005065266742337871,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0034197970044337047,
+      "event_prediction": 0.002811241732498344
+    },
+    {
+      "information_date": "2024-03-26",
+      "target": -0.015444826621884289,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002098226110861472,
+      "event_prediction": 0.00020453612217112734
+    },
+    {
+      "information_date": "2024-03-27",
+      "target": 0.01633449304533241,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0002737249621000122,
+      "event_prediction": 0.00853064413019507
+    },
+    {
+      "information_date": "2024-03-28",
+      "target": -0.009096428956492542,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.004460187427379089,
+      "event_prediction": 0.004334229770599278
+    },
+    {
+      "information_date": "2024-03-29",
+      "target": 0.0019742870232504206,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002470781442930785,
+      "event_prediction": -0.0028921339607349897
+    },
+    {
+      "information_date": "2024-03-30",
+      "target": 0.009631940147944107,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.005161590365100227,
+      "event_prediction": 0.0012408851056845212
+    },
+    {
+      "information_date": "2024-03-31",
+      "target": -0.055600056609114046,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0021298945498041,
+      "event_prediction": -0.004260662544650381
+    },
+    {
+      "information_date": "2024-04-01",
+      "target": -0.007133084474601925,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0006848888253367577,
+      "event_prediction": 0.00035834541644104976
+    },
+    {
+      "information_date": "2024-04-02",
+      "target": -0.00921133856461298,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0023199051937679567,
+      "event_prediction": 0.0026785676876210137
+    },
+    {
+      "information_date": "2024-04-03",
+      "target": 0.03397973950795952,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005297492954989616,
+      "event_prediction": 0.008897821798301718
+    },
+    {
+      "information_date": "2024-04-04",
+      "target": -0.0012360848375558842,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0033298709957226644,
+      "event_prediction": 0.0029468932193161476
+    },
+    {
+      "information_date": "2024-04-05",
+      "target": 0.023578107644446344,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.001367221815982613,
+      "event_prediction": 0.0009454120006286092
+    },
+    {
+      "information_date": "2024-04-06",
+      "target": 0.0008228839560684431,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0013373173278322908,
+      "event_prediction": 0.006503803029836279
+    },
+    {
+      "information_date": "2024-04-07",
+      "target": 0.027387713255538015,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00013448834909478443,
+      "event_prediction": -0.005192813210344589
+    },
+    {
+      "information_date": "2024-04-08",
+      "target": -0.030291860315182273,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.000556167880929068,
+      "event_prediction": -0.0021142766895129944
+    },
+    {
+      "information_date": "2024-04-09",
+      "target": 0.02439299357257574,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.000989633622250583,
+      "event_prediction": -0.0015878879125637675
+    },
+    {
+      "information_date": "2024-04-10",
+      "target": 0.0017467224263354453,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.000919019738940623,
+      "event_prediction": 0.003715092555956429
+    },
+    {
+      "information_date": "2024-04-11",
+      "target": -0.05442299512390247,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00598791679897228,
+      "event_prediction": 0.006063398163416391
+    },
+    {
+      "information_date": "2024-04-12",
+      "target": -0.05554595638068727,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.004690297607459822,
+      "event_prediction": 0.005814601375117967
+    },
+    {
+      "information_date": "2024-04-13",
+      "target": 0.02678598183461256,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.006386978515081084,
+      "event_prediction": 0.012029182601624347
+    },
+    {
+      "information_date": "2024-04-14",
+      "target": -0.03331095911662285,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.006053104470235837,
+      "event_prediction": 0.0030425094331113173
+    },
+    {
+      "information_date": "2024-04-15",
+      "target": 0.01396815812889285,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0027276417930243197,
+      "event_prediction": 0.006427124966169272
+    },
+    {
+      "information_date": "2024-04-16",
+      "target": -0.02897119960636274,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0005208877819402084,
+      "event_prediction": 0.0007570933617915706
+    },
+    {
+      "information_date": "2024-04-17",
+      "target": -0.003196898959595851,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0012717315264272665,
+      "event_prediction": 0.0028199905801515827
+    },
+    {
+      "information_date": "2024-04-18",
+      "target": 0.034956498651409706,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0011986748816117745,
+      "event_prediction": -0.004083031502754808
+    },
+    {
+      "information_date": "2024-04-19",
+      "target": 0.019081020032098772,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002113722269949816,
+      "event_prediction": 0.0008673470266828218
+    },
+    {
+      "information_date": "2024-04-20",
+      "target": 0.008351855490335902,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00533472088926058,
+      "event_prediction": 0.0061069092757437
+    },
+    {
+      "information_date": "2024-04-21",
+      "target": 0.010763982445163744,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0033422315605493103,
+      "event_prediction": 0.01965828160640046
+    },
+    {
+      "information_date": "2024-04-22",
+      "target": 0.002992541988963815,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002395013230007576,
+      "event_prediction": 0.005688528914271818
+    },
+    {
+      "information_date": "2024-04-23",
+      "target": -0.035147176078237696,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002064660201648218,
+      "event_prediction": -0.0021737074415107485
+    },
+    {
+      "information_date": "2024-04-24",
+      "target": 0.0016465285948168429,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0010121116663144942,
+      "event_prediction": 0.0013450846905069531
+    },
+    {
+      "information_date": "2024-04-25",
+      "target": -0.020092538788294978,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003119051695107835,
+      "event_prediction": 0.0034161644091155767
+    },
+    {
+      "information_date": "2024-04-26",
+      "target": 0.014625251708446418,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0027274564637181677,
+      "event_prediction": 0.0036067227603784587
+    },
+    {
+      "information_date": "2024-04-27",
+      "target": -0.027213031751141536,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0019069907185284762,
+      "event_prediction": -0.0019023276065566013
+    },
+    {
+      "information_date": "2024-04-28",
+      "target": 0.022141365461847418,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0024919248453717496,
+      "event_prediction": -0.010394098529100003
+    },
+    {
+      "information_date": "2024-04-29",
+      "target": -0.053520210346653996,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0029756022269657465,
+      "event_prediction": 0.0010551948464193567
+    },
+    {
+      "information_date": "2024-04-30",
+      "target": -0.04665999146504074,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.001961273866457758,
+      "event_prediction": 0.0024946184927124608
+    },
+    {
+      "information_date": "2024-05-01",
+      "target": 0.039536410806630506,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0016310854091758156,
+      "event_prediction": 0.0012004016985280638
+    },
+    {
+      "information_date": "2024-05-02",
+      "target": 0.05032940813768794,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0035703897950983597,
+      "event_prediction": 0.004831180357254661
+    },
+    {
+      "information_date": "2024-05-03",
+      "target": 0.008252162344105418,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0003335034154908201,
+      "event_prediction": 0.003360860423955847
+    },
+    {
+      "information_date": "2024-05-04",
+      "target": 0.010097478161948725,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003238287853685404,
+      "event_prediction": -0.0017081095023003922
+    },
+    {
+      "information_date": "2024-05-05",
+      "target": -0.00976001729266418,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003913730268412052,
+      "event_prediction": -0.006665396488091049
+    },
+    {
+      "information_date": "2024-05-06",
+      "target": -0.005188313639886699,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005371356279872544,
+      "event_prediction": 0.0073088576776334175
+    },
+    {
+      "information_date": "2024-05-07",
+      "target": -0.019827956305353722,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.001211696341084165,
+      "event_prediction": 0.0008727135131999807
+    },
+    {
+      "information_date": "2024-05-08",
+      "target": 0.019998702225682896,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0010951025471599568,
+      "event_prediction": -0.0034256977279692362
+    },
+    {
+      "information_date": "2024-05-09",
+      "target": -0.03430200010178641,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0003123197366084716,
+      "event_prediction": 0.00029491018870452814
+    },
+    {
+      "information_date": "2024-05-10",
+      "target": 0.0030648880105401677,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0018962283019125863,
+      "event_prediction": -0.0014026732161985915
+    },
+    {
+      "information_date": "2024-05-11",
+      "target": 0.0036630156913675105,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00025129256286000206,
+      "event_prediction": -0.0056834276341742405
+    },
+    {
+      "information_date": "2024-05-12",
+      "target": 0.021744109198222894,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0042945711882365996,
+      "event_prediction": -0.002277515501886527
+    },
+    {
+      "information_date": "2024-05-13",
+      "target": -0.008500057638364145,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002797444080912213,
+      "event_prediction": 0.0026088247951702483
+    },
+    {
+      "information_date": "2024-05-14",
+      "target": 0.06476121270840896,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0022200815565454647,
+      "event_prediction": 0.004229397388165103
+    },
+    {
+      "information_date": "2024-05-15",
+      "target": -0.005752373441717973,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003543968589669301,
+      "event_prediction": 0.0014565152247151766
+    },
+    {
+      "information_date": "2024-05-16",
+      "target": 0.02067307618973535,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0037342232463053035,
+      "event_prediction": 0.0008423320363558388
+    },
+    {
+      "information_date": "2024-05-17",
+      "target": 0.003287802253638894,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00021000084951083224,
+      "event_prediction": 0.000986536852356719
+    },
+    {
+      "information_date": "2024-05-18",
+      "target": -0.007334584562218804,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00551793810840677,
+      "event_prediction": -0.0017005242144444946
+    },
+    {
+      "information_date": "2024-05-19",
+      "target": 0.06915200115243314,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005494358285880923,
+      "event_prediction": -0.0006428744227550355
+    },
+    {
+      "information_date": "2024-05-20",
+      "target": -0.017633684210526246,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0037245453199870717,
+      "event_prediction": 0.002006680336697578
+    },
+    {
+      "information_date": "2024-05-21",
+      "target": -0.007107792712476524,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002024792318869883,
+      "event_prediction": -0.0008557847472476846
+    },
+    {
+      "information_date": "2024-05-22",
+      "target": -0.02296675640791357,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0055556861436406165,
+      "event_prediction": -0.00018977001231369728
+    },
+    {
+      "information_date": "2024-05-23",
+      "target": 0.012949926362297637,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.001558064548278403,
+      "event_prediction": -0.001623267645729732
+    },
+    {
+      "information_date": "2024-05-24",
+      "target": 0.0044664601122721415,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.003366779774435405,
+      "event_prediction": -0.0015097256629218656
+    },
+    {
+      "information_date": "2024-05-25",
+      "target": -0.002712541524031331,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0050239060222413475,
+      "event_prediction": -0.0017434699106383701
+    },
+    {
+      "information_date": "2024-05-26",
+      "target": -0.012428319092702256,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00199075109605679,
+      "event_prediction": -0.0012975117300787875
+    },
+    {
+      "information_date": "2024-05-27",
+      "target": 0.012187917016936334,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0029373220677956155,
+      "event_prediction": -0.004662564743955325
+    },
+    {
+      "information_date": "2024-05-28",
+      "target": -0.010484651985346871,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0033588485339660643,
+      "event_prediction": 0.00629125247897148
+    },
+    {
+      "information_date": "2024-05-29",
+      "target": 0.005644900953778453,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0008004965381748512,
+      "event_prediction": 0.0019905320781794756
+    },
+    {
+      "information_date": "2024-05-30",
+      "target": -0.011556189784153181,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0002181906076418104,
+      "event_prediction": 0.003856518016059467
+    },
+    {
+      "information_date": "2024-05-31",
+      "target": 0.0010835115813219165,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.003838270154066079,
+      "event_prediction": -0.0031197306583627057
+    },
+    {
+      "information_date": "2024-06-01",
+      "target": 0.008605626097637487,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00043765972237940084,
+      "event_prediction": -0.002085653845642216
+    },
+    {
+      "information_date": "2024-06-02",
+      "target": 0.011714963662121436,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00027818667500448496,
+      "event_prediction": 0.002128241643207511
+    },
+    {
+      "information_date": "2024-06-03",
+      "target": 0.025795870001878773,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.00018428437500331968,
+      "event_prediction": -0.0036436700810392915
+    },
+    {
+      "information_date": "2024-06-04",
+      "target": 0.0013044807363693511,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.00011830097940112769,
+      "event_prediction": -0.00229850655271823
+    },
+    {
+      "information_date": "2024-06-05",
+      "target": -0.0008075555686865021,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.002360499590874478,
+      "event_prediction": 0.0073712598319272534
+    },
+    {
+      "information_date": "2024-06-06",
+      "target": -0.021690675895822853,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0017024077897172492,
+      "event_prediction": -0.001115884483102233
+    },
+    {
+      "information_date": "2024-06-07",
+      "target": -0.0027460823709571924,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.005658179112975775,
+      "event_prediction": -0.009270723744517763
+    },
+    {
+      "information_date": "2024-06-08",
+      "target": 0.004791456198585564,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0011921913252386405,
+      "event_prediction": -0.009120868187075944
+    },
+    {
+      "information_date": "2024-06-09",
+      "target": -0.016919939099709902,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.005984571435621651,
+      "event_prediction": 0.00994201324938024
+    },
+    {
+      "information_date": "2024-06-10",
+      "target": -0.015450587341476196,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0009239117340366333,
+      "event_prediction": 0.0046987145968431215
+    },
+    {
+      "information_date": "2024-06-11",
+      "target": 0.0008236071023128844,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0016418761896140374,
+      "event_prediction": 0.0017458344656231103
+    },
+    {
+      "information_date": "2024-06-12",
+      "target": -0.010647667625515389,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0015294116253459094,
+      "event_prediction": -0.0019956050737134383
+    },
+    {
+      "information_date": "2024-06-13",
+      "target": -0.00732720959056643,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0008732105797792161,
+      "event_prediction": 0.007197972128599468
+    },
+    {
+      "information_date": "2024-06-14",
+      "target": -0.001953649882992292,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0005308031812157876,
+      "event_prediction": 0.004147166087675716
+    },
+    {
+      "information_date": "2024-06-15",
+      "target": 0.0012601050440506079,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.000379305895504079,
+      "event_prediction": -0.0078329799354019
+    },
+    {
+      "information_date": "2024-06-16",
+      "target": -0.010797883028725308,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0020559218267648515,
+      "event_prediction": 0.000924641318398948
+    },
+    {
+      "information_date": "2024-06-17",
+      "target": -0.0014249887742041611,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.001343772629886858,
+      "event_prediction": 4.5029470812860085e-05
+    },
+    {
+      "information_date": "2024-06-18",
+      "target": -0.003224183209469489,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0027556143532869266,
+      "event_prediction": 0.002282454819077625
+    },
+    {
+      "information_date": "2024-06-19",
+      "target": -0.01087308443596069,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": 0.0005504957574439132,
+      "event_prediction": -0.006708907562566995
+    },
+    {
+      "information_date": "2024-06-20",
+      "target": -0.002713247442271749,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -7.515148303443415e-05,
+      "event_prediction": -0.0034855759143268567
+    },
+    {
+      "information_date": "2024-06-21",
+      "target": 0.0013906475066343127,
+      "prior_prediction": 0.0016007758960518944,
+      "sentiment_prediction": -0.0005603954780279759,
+      "event_prediction": -0.0005159909971347032
+    },
+    {
+      "information_date": "2024-06-25",
+      "target": -0.01425397671731976,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0035823691221649953,
+      "event_prediction": 0.0004663216143588175
+    },
+    {
+      "information_date": "2024-06-26",
+      "target": 0.012770184217815839,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0006679854222148914,
+      "event_prediction": -0.0038003709653245217
+    },
+    {
+      "information_date": "2024-06-27",
+      "target": -0.017391613959901853,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0024472774351805586,
+      "event_prediction": -0.0013341500321101415
+    },
+    {
+      "information_date": "2024-06-28",
+      "target": 0.002370136608151663,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0019475111278388674,
+      "event_prediction": 0.0016634102442866353
+    },
+    {
+      "information_date": "2024-06-29",
+      "target": 0.04174492299248911,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.002073927388656212,
+      "event_prediction": -0.004223032694366738
+    },
+    {
+      "information_date": "2024-06-30",
+      "target": -0.004802975478799043,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.001155373533898193,
+      "event_prediction": 0.0025631346498192153
+    },
+    {
+      "information_date": "2024-07-01",
+      "target": -0.03369591575704067,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0013197707891454851,
+      "event_prediction": -0.001059199389707553
+    },
+    {
+      "information_date": "2024-07-02",
+      "target": -0.031078751535649096,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0016811244620042517,
+      "event_prediction": -0.0020753342759865703
+    },
+    {
+      "information_date": "2024-07-03",
+      "target": -0.06532267757296495,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.00207746429462479,
+      "event_prediction": -0.00650833796988669
+    },
+    {
+      "information_date": "2024-07-04",
+      "target": 0.021224650949666968,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0015583120896338239,
+      "event_prediction": -0.0034261995844011147
+    },
+    {
+      "information_date": "2024-07-05",
+      "target": 0.027478452098038453,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002328187884598782,
+      "event_prediction": 0.00618485399711421
+    },
+    {
+      "information_date": "2024-07-06",
+      "target": -0.048409090124517995,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003026527514651978,
+      "event_prediction": 0.011122244693957097
+    },
+    {
+      "information_date": "2024-07-07",
+      "target": 0.036505909582302376,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0017920065425433762,
+      "event_prediction": 0.0063602694456356855
+    },
+    {
+      "information_date": "2024-07-08",
+      "target": 0.017923329728367632,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0020019509771234192,
+      "event_prediction": -0.003088810597426301
+    },
+    {
+      "information_date": "2024-07-09",
+      "target": -0.010842805960706636,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0036131669502735804,
+      "event_prediction": -0.002309886526344818
+    },
+    {
+      "information_date": "2024-07-10",
+      "target": -0.01133707238311421,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0009199795901706845,
+      "event_prediction": 0.0026827097142481703
+    },
+    {
+      "information_date": "2024-07-11",
+      "target": 0.015842600633563464,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.004324944652729748,
+      "event_prediction": 0.006892315998510977
+    },
+    {
+      "information_date": "2024-07-12",
+      "target": 0.02872678062776668,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0010371084129821115,
+      "event_prediction": 0.0036129246753892853
+    },
+    {
+      "information_date": "2024-07-13",
+      "target": 0.05327710283989773,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.004233980942242198,
+      "event_prediction": 0.0005105436360789001
+    },
+    {
+      "information_date": "2024-07-14",
+      "target": 0.03377738453258039,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0031814399101343007,
+      "event_prediction": 0.004314796578354407
+    },
+    {
+      "information_date": "2024-07-15",
+      "target": 0.014548617441037637,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0023436283300107873,
+      "event_prediction": -0.0013541195752442728
+    },
+    {
+      "information_date": "2024-07-16",
+      "target": -0.012736506292875704,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0024556931907976512,
+      "event_prediction": 0.005560020048302864
+    },
+    {
+      "information_date": "2024-07-17",
+      "target": -0.008165582086927858,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 4.761296719178309e-05,
+      "event_prediction": -0.0007664203336810922
+    },
+    {
+      "information_date": "2024-07-18",
+      "target": 0.03518926593648586,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0030892948170381305,
+      "event_prediction": 0.0007726060689295521
+    },
+    {
+      "information_date": "2024-07-19",
+      "target": 0.008734123019837225,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 7.972424806241391e-05,
+      "event_prediction": -0.0008227567845887048
+    },
+    {
+      "information_date": "2024-07-20",
+      "target": 0.010454533946705702,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.005799357760042759,
+      "event_prediction": 0.0030946674360217167
+    },
+    {
+      "information_date": "2024-07-21",
+      "target": -0.006084017809900755,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0025300071983823257,
+      "event_prediction": 0.006178882022507957
+    },
+    {
+      "information_date": "2024-07-22",
+      "target": -0.020840160683066267,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0022105348080699583,
+      "event_prediction": 0.006437768981387714
+    },
+    {
+      "information_date": "2024-07-23",
+      "target": -0.029740261117008893,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0016629988331640076,
+      "event_prediction": 0.0008648268376739152
+    },
+    {
+      "information_date": "2024-07-24",
+      "target": 0.04592939678060315,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002934877113238356,
+      "event_prediction": 0.0050317000555782304
+    },
+    {
+      "information_date": "2024-07-25",
+      "target": 0.011334044664642162,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0031236047946537216,
+      "event_prediction": 0.003559467361493028
+    },
+    {
+      "information_date": "2024-07-26",
+      "target": 0.0027563818798879147,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0021110874858425743,
+      "event_prediction": 0.004464223649049595
+    },
+    {
+      "information_date": "2024-07-27",
+      "target": 0.020657241070797916,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.004343588406213651,
+      "event_prediction": 0.004633713993327363
+    },
+    {
+      "information_date": "2024-07-28",
+      "target": -0.04012364368243637,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0029632896649444923,
+      "event_prediction": -0.00043091140984249585
+    },
+    {
+      "information_date": "2024-07-29",
+      "target": -0.008385703299608305,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002727180623658683,
+      "event_prediction": -3.6851379616869694e-05
+    },
+    {
+      "information_date": "2024-07-30",
+      "target": -0.0319467186110729,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.00014731442720728426,
+      "event_prediction": -0.0032636158989700235
+    },
+    {
+      "information_date": "2024-07-31",
+      "target": 0.010470942040550657,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.004200195442984868,
+      "event_prediction": 0.0092007399937408
+    },
+    {
+      "information_date": "2024-08-01",
+      "target": -0.042254960560178634,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0036640532697907414,
+      "event_prediction": -0.0027796470685509033
+    },
+    {
+      "information_date": "2024-08-02",
+      "target": -0.018505883532253464,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0013068645510756443,
+      "event_prediction": -0.0011514935034896857
+    },
+    {
+      "information_date": "2024-08-03",
+      "target": -0.11285375415939114,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0071750284342686115,
+      "event_prediction": 0.008092565870706853
+    },
+    {
+      "information_date": "2024-08-04",
+      "target": 0.033138922776116075,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.002609294994264581,
+      "event_prediction": -0.005306444312211904
+    },
+    {
+      "information_date": "2024-08-05",
+      "target": 0.02153314713568344,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0052758447114388774,
+      "event_prediction": -0.0005931027057004094
+    },
+    {
+      "information_date": "2024-08-06",
+      "target": 0.003400899751750064,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.005763931517151204,
+      "event_prediction": 0.006115280267321676
+    },
+    {
+      "information_date": "2024-08-07",
+      "target": 0.07536050442564779,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0015901545555603628,
+      "event_prediction": -0.0036616237604924764
+    },
+    {
+      "information_date": "2024-08-08",
+      "target": -0.01474667001472385,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0011297890293798076,
+      "event_prediction": -0.003542817432654717
+    },
+    {
+      "information_date": "2024-08-09",
+      "target": 0.010551976261363505,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0019457926518954352,
+      "event_prediction": -0.00031410751990881185
+    },
+    {
+      "information_date": "2024-08-10",
+      "target": -0.04214056791178855,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0009100573627502961,
+      "event_prediction": -0.004412019313503382
+    },
+    {
+      "information_date": "2024-08-11",
+      "target": 0.009181197864217339,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003974172713787361,
+      "event_prediction": 0.004492044637377127
+    },
+    {
+      "information_date": "2024-08-12",
+      "target": 0.032097665270109266,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0027148858254933705,
+      "event_prediction": 0.0030009378599602544
+    },
+    {
+      "information_date": "2024-08-13",
+      "target": -0.04116663137488563,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0005471964315976506,
+      "event_prediction": 0.0005885472962334497
+    },
+    {
+      "information_date": "2024-08-14",
+      "target": -0.009273652350169859,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0018864909889124465,
+      "event_prediction": 0.003699495641254148
+    },
+    {
+      "information_date": "2024-08-15",
+      "target": 0.02170686231987995,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0015354109599084323,
+      "event_prediction": 0.0022294046576800536
+    },
+    {
+      "information_date": "2024-08-16",
+      "target": 0.003034131441821186,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.005858605983687775,
+      "event_prediction": 0.0029170690849850047
+    },
+    {
+      "information_date": "2024-08-17",
+      "target": -0.010175916043212663,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0032517327779507926,
+      "event_prediction": 0.0018956727978195686
+    },
+    {
+      "information_date": "2024-08-18",
+      "target": 0.03223333651317151,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0025932649450112503,
+      "event_prediction": 0.00492638914795028
+    },
+    {
+      "information_date": "2024-08-19",
+      "target": -0.021542889394244424,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0007512157398604986,
+      "event_prediction": -0.0020961502864397926
+    },
+    {
+      "information_date": "2024-08-20",
+      "target": 0.020806206780232817,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0022616044746248567,
+      "event_prediction": -0.0006244164214982005
+    },
+    {
+      "information_date": "2024-08-21",
+      "target": 0.0007385548777667506,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0020248894782817994,
+      "event_prediction": -0.0023002677934448254
+    },
+    {
+      "information_date": "2024-08-22",
+      "target": 0.05335959569609838,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0003055283681589688,
+      "event_prediction": -0.02538981441840523
+    },
+    {
+      "information_date": "2024-08-23",
+      "target": 0.004310331315575899,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0002503315219813153,
+      "event_prediction": 0.004201210149867444
+    },
+    {
+      "information_date": "2024-08-24",
+      "target": 0.00015294528928522233,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0010651061868210835,
+      "event_prediction": 0.001973119059174833
+    },
+    {
+      "information_date": "2024-08-25",
+      "target": -0.01785129125380358,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0005979140411177435,
+      "event_prediction": 0.0056385168768501555
+    },
+    {
+      "information_date": "2024-08-26",
+      "target": -0.05305603660571012,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0031742582241173164,
+      "event_prediction": 0.0037766481428467393
+    },
+    {
+      "information_date": "2024-08-27",
+      "target": -0.008093742449867158,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0059640534255232655,
+      "event_prediction": 0.00517038887361271
+    },
+    {
+      "information_date": "2024-08-28",
+      "target": -0.001960446014154349,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00045022453901719605,
+      "event_prediction": -0.0015493791878268218
+    },
+    {
+      "information_date": "2024-08-29",
+      "target": 0.0034252321480323644,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0005790405047250394,
+      "event_prediction": 0.0013457111406259769
+    },
+    {
+      "information_date": "2024-08-30",
+      "target": -0.011841825238913972,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.001221006638978987,
+      "event_prediction": 0.0016282384438935905
+    },
+    {
+      "information_date": "2024-08-31",
+      "target": -0.013383631630495496,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003655142113386199,
+      "event_prediction": 0.003150424766896302
+    },
+    {
+      "information_date": "2024-09-01",
+      "target": 0.023701822377527826,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0037346450085914244,
+      "event_prediction": 0.008222064144511619
+    },
+    {
+      "information_date": "2024-09-02",
+      "target": -0.041509983178032006,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003215037532254761,
+      "event_prediction": 0.0031548743691325065
+    },
+    {
+      "information_date": "2024-09-03",
+      "target": 0.008077815405585831,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.00027905334275114303,
+      "event_prediction": -0.002331580613966427
+    },
+    {
+      "information_date": "2024-09-04",
+      "target": -0.009389761814267983,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0017688545590617082,
+      "event_prediction": -0.003430751964511137
+    },
+    {
+      "information_date": "2024-09-05",
+      "target": -0.04881714346334731,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.001803446398359444,
+      "event_prediction": -0.007211605670839936
+    },
+    {
+      "information_date": "2024-09-06",
+      "target": 0.01057865680242398,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003515990802699688,
+      "event_prediction": 0.0020579216006213668
+    },
+    {
+      "information_date": "2024-09-07",
+      "target": 0.013383339985763243,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002714601271399886,
+      "event_prediction": -0.003289682225179142
+    },
+    {
+      "information_date": "2024-09-08",
+      "target": 0.02544392553050545,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0012823477334279318,
+      "event_prediction": 0.0011167633975568622
+    },
+    {
+      "information_date": "2024-09-09",
+      "target": 0.00509775114832145,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0027555166108886647,
+      "event_prediction": 0.0030072696330363546
+    },
+    {
+      "information_date": "2024-09-10",
+      "target": 0.02512173430662079,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.00034633659922259823,
+      "event_prediction": 0.007108540417827762
+    },
+    {
+      "information_date": "2024-09-11",
+      "target": -0.006667239305961137,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0016618502859270753,
+      "event_prediction": 0.0024866360356995527
+    },
+    {
+      "information_date": "2024-09-12",
+      "target": 0.0427156492609202,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0026625459786000032,
+      "event_prediction": 0.003881264598222763
+    },
+    {
+      "information_date": "2024-09-13",
+      "target": -0.0026537605445516865,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0006081742365689194,
+      "event_prediction": -0.005144067021290234
+    },
+    {
+      "information_date": "2024-09-14",
+      "target": -0.026355439218516685,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.000184662042872665,
+      "event_prediction": -0.002502141234808208
+    },
+    {
+      "information_date": "2024-09-15",
+      "target": -0.008697285941209554,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0002855625237998035,
+      "event_prediction": -0.0045614595448265445
+    },
+    {
+      "information_date": "2024-09-16",
+      "target": 0.04225349685894364,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.001196242907960763,
+      "event_prediction": 0.0049821345512333515
+    },
+    {
+      "information_date": "2024-09-17",
+      "target": 0.02637952326083126,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0005827264955953369,
+      "event_prediction": 0.0027218239103725915
+    },
+    {
+      "information_date": "2024-09-18",
+      "target": 0.026482706190465333,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.001771028455775296,
+      "event_prediction": 0.0007815422141682561
+    },
+    {
+      "information_date": "2024-09-19",
+      "target": -0.013637219519849308,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 2.7888215712120693e-05,
+      "event_prediction": 0.001263311659036999
+    },
+    {
+      "information_date": "2024-09-20",
+      "target": 0.0035109265059838357,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.000866695423188108,
+      "event_prediction": -0.0038830012104660357
+    },
+    {
+      "information_date": "2024-09-21",
+      "target": 0.019804507178004416,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.004541665359923592,
+      "event_prediction": -0.005944526488635977
+    },
+    {
+      "information_date": "2024-09-22",
+      "target": -0.019133884338630502,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00026466108683642024,
+      "event_prediction": 0.0001798338277870298
+    },
+    {
+      "information_date": "2024-09-23",
+      "target": 0.021329635499207633,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0027176522245020165,
+      "event_prediction": 0.002071332007737513
+    },
+    {
+      "information_date": "2024-09-24",
+      "target": -0.014893111896955524,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.00016901203449511343,
+      "event_prediction": -0.00041440213246319137
+    },
+    {
+      "information_date": "2024-09-25",
+      "target": 0.029004774273423628,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0020587379264371914,
+      "event_prediction": 0.004037114533952748
+    },
+    {
+      "information_date": "2024-09-26",
+      "target": 0.011056599441276793,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.001335835918227505,
+      "event_prediction": -0.003387303375635314
+    },
+    {
+      "information_date": "2024-09-27",
+      "target": -0.003933395710509435,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.005395856621944169,
+      "event_prediction": -0.0008306155735683558
+    },
+    {
+      "information_date": "2024-09-28",
+      "target": -0.019063687490500025,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0014225336130775,
+      "event_prediction": 0.001948491086146202
+    },
+    {
+      "information_date": "2024-09-29",
+      "target": -0.013163236529182276,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.00036011028518084104,
+      "event_prediction": -0.0032036569357459938
+    },
+    {
+      "information_date": "2024-09-30",
+      "target": -0.030769568965381966,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0021697013882982195,
+      "event_prediction": -0.0021004108693048074
+    },
+    {
+      "information_date": "2024-10-01",
+      "target": -0.004618746830788001,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003522127826022589,
+      "event_prediction": 0.0003411884299000653
+    },
+    {
+      "information_date": "2024-10-02",
+      "target": -0.008474714200151001,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003954537976829703,
+      "event_prediction": 0.00022268012498882338
+    },
+    {
+      "information_date": "2024-10-03",
+      "target": 0.015183623354218412,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00022707297309486666,
+      "event_prediction": -0.0039972369728164285
+    },
+    {
+      "information_date": "2024-10-04",
+      "target": 0.00016330912800999187,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00011886380158346397,
+      "event_prediction": -0.003164472659146546
+    },
+    {
+      "information_date": "2024-10-05",
+      "target": 0.026568158303155842,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.004680731139654463,
+      "event_prediction": -0.00685477695223992
+    },
+    {
+      "information_date": "2024-10-06",
+      "target": -0.014107219910739377,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002633965811396537,
+      "event_prediction": 0.006236668058890103
+    },
+    {
+      "information_date": "2024-10-07",
+      "target": -0.0038080877138055858,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002299703018883459,
+      "event_prediction": 0.0026432634811087213
+    },
+    {
+      "information_date": "2024-10-08",
+      "target": -0.02431163533509073,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0015265168910418509,
+      "event_prediction": 0.00024666031222782443
+    },
+    {
+      "information_date": "2024-10-09",
+      "target": -0.004407632007099482,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.001529480178065543,
+      "event_prediction": -0.0018192042645227657
+    },
+    {
+      "information_date": "2024-10-10",
+      "target": 0.032358436996540174,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0054340244395291865,
+      "event_prediction": -0.0020178505302055408
+    },
+    {
+      "information_date": "2024-10-11",
+      "target": 0.0021777678998291528,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0011719138858266834,
+      "event_prediction": 0.0018169845863745685
+    },
+    {
+      "information_date": "2024-10-12",
+      "target": 0.025698299065211705,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0009514095146540011,
+      "event_prediction": 0.0016220593156127216
+    },
+    {
+      "information_date": "2024-10-13",
+      "target": 0.017320495271279324,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00012491272207230432,
+      "event_prediction": -0.01421065127173922
+    },
+    {
+      "information_date": "2024-10-14",
+      "target": 0.02580063148398737,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0026744309054096546,
+      "event_prediction": 0.0017909971809623323
+    },
+    {
+      "information_date": "2024-10-15",
+      "target": 0.007217289298229845,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002929141129999333,
+      "event_prediction": 0.0042883957722004915
+    },
+    {
+      "information_date": "2024-10-16",
+      "target": -0.0007192211101756385,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0033666795446532193,
+      "event_prediction": -0.007768317744925655
+    },
+    {
+      "information_date": "2024-10-17",
+      "target": 0.013454375819147213,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0015242941313147078,
+      "event_prediction": -0.00015481530179698583
+    },
+    {
+      "information_date": "2024-10-18",
+      "target": -0.0038913974252188233,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0021040777966009356,
+      "event_prediction": -0.004577337665290918
+    },
+    {
+      "information_date": "2024-10-19",
+      "target": 0.011466009063076266,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.006287974926971826,
+      "event_prediction": 0.003647512897323345
+    },
+    {
+      "information_date": "2024-10-20",
+      "target": -0.022499466991934614,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00033952519403727,
+      "event_prediction": 0.0003372626497321041
+    },
+    {
+      "information_date": "2024-10-21",
+      "target": -0.004917132810065672,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002017240653661206,
+      "event_prediction": -0.0003181359926407055
+    },
+    {
+      "information_date": "2024-10-22",
+      "target": 0.0021262763622482694,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0007454196226049856,
+      "event_prediction": 0.003163534103520431
+    },
+    {
+      "information_date": "2024-10-23",
+      "target": 0.011334926392910338,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.003272059050913941,
+      "event_prediction": 0.003715208834912988
+    },
+    {
+      "information_date": "2024-10-24",
+      "target": -0.015979108430189903,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002572505785867575,
+      "event_prediction": 0.004603628364599966
+    },
+    {
+      "information_date": "2024-10-25",
+      "target": 0.005735311487518047,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0028884994867926263,
+      "event_prediction": 0.002295351912255956
+    },
+    {
+      "information_date": "2024-10-26",
+      "target": 0.0063418441297804495,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.00279017392848414,
+      "event_prediction": -0.00410729150396383
+    },
+    {
+      "information_date": "2024-10-27",
+      "target": 0.04786827803309279,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.000771356564405923,
+      "event_prediction": -0.003916393824710881
+    },
+    {
+      "information_date": "2024-10-28",
+      "target": 0.018886437488105257,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0013146104872601215,
+      "event_prediction": 0.0007357532399498083
+    },
+    {
+      "information_date": "2024-10-29",
+      "target": 0.0014334299099818537,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0007983360893092902,
+      "event_prediction": 0.0045902071007681775
+    },
+    {
+      "information_date": "2024-10-30",
+      "target": -0.04118528056945647,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0002621924471251733,
+      "event_prediction": -0.0018947052366169812
+    },
+    {
+      "information_date": "2024-10-31",
+      "target": 0.0028891780468580652,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0034340146577109295,
+      "event_prediction": 0.002973208811314479
+    },
+    {
+      "information_date": "2024-11-01",
+      "target": -0.017766468287608417,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0029150615119712996,
+      "event_prediction": -0.0003873596444513715
+    },
+    {
+      "information_date": "2024-11-02",
+      "target": 0.009890156507594394,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0033702029288542566,
+      "event_prediction": -0.0017092332223938738
+    },
+    {
+      "information_date": "2024-11-03",
+      "target": -0.011598128539768493,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0062774946642237,
+      "event_prediction": 0.0034778484423009922
+    },
+    {
+      "information_date": "2024-11-04",
+      "target": 0.0902540143589261,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": -0.0009984973318343518,
+      "event_prediction": -0.0066177893024713655
+    },
+    {
+      "information_date": "2024-11-05",
+      "target": 0.009102774518145784,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0003993407132243821,
+      "event_prediction": 0.001970293927792723
+    },
+    {
+      "information_date": "2024-11-06",
+      "target": 0.011494283495466329,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.005904363777940419,
+      "event_prediction": 0.002676985318768179
+    },
+    {
+      "information_date": "2024-11-07",
+      "target": 0.005466517416211403,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.0027708236775602683,
+      "event_prediction": 0.0013737798304903452
+    },
+    {
+      "information_date": "2024-11-08",
+      "target": 0.011681713579942743,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.002929420122867889,
+      "event_prediction": 0.006304212061467844
+    },
+    {
+      "information_date": "2024-11-09",
+      "target": 0.05745578830170106,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.004443757848777198,
+      "event_prediction": 0.00157016107700805
+    },
+    {
+      "information_date": "2024-11-10",
+      "target": 0.07929725759059747,
+      "prior_prediction": 0.0019567763416506604,
+      "sentiment_prediction": 0.004830252657507722,
+      "event_prediction": 0.003846972312463832
+    },
+    {
+      "information_date": "2024-11-14",
+      "target": 0.0348925628638419,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004918147798375596,
+      "event_prediction": 0.008722798812179735
+    },
+    {
+      "information_date": "2024-11-15",
+      "target": -0.011029190342231154,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0033293254580104062,
+      "event_prediction": -0.0005730636145183624
+    },
+    {
+      "information_date": "2024-11-16",
+      "target": 0.004887387462201298,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.002658268710828612,
+      "event_prediction": -0.006091799461385102
+    },
+    {
+      "information_date": "2024-11-17",
+      "target": 0.008367536953683086,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0071103805969877495,
+      "event_prediction": -0.00705226355489872
+    },
+    {
+      "information_date": "2024-11-18",
+      "target": 0.006308262370390061,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0038717727959723144,
+      "event_prediction": 0.011067432517659013
+    },
+    {
+      "information_date": "2024-11-19",
+      "target": 0.04091008793361439,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002108781409358014,
+      "event_prediction": -0.0013625984092009882
+    },
+    {
+      "information_date": "2024-11-20",
+      "target": 0.031885140470917284,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0019662187373032285,
+      "event_prediction": 0.0024728376387704617
+    },
+    {
+      "information_date": "2024-11-21",
+      "target": -0.0018884672075959452,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0043134148794648705,
+      "event_prediction": 0.0015190383166410347
+    },
+    {
+      "information_date": "2024-11-22",
+      "target": -0.00460247909943734,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0011209062885615463,
+      "event_prediction": -0.000608334218689493
+    },
+    {
+      "information_date": "2024-11-23",
+      "target": -0.0031584838463494247,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0037849443982931118,
+      "event_prediction": 0.012063429604065746
+    },
+    {
+      "information_date": "2024-11-24",
+      "target": -0.0349758994575593,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002597393778881194,
+      "event_prediction": -0.0040124495835896015
+    },
+    {
+      "information_date": "2024-11-25",
+      "target": -0.01988719903700298,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004676175355591708,
+      "event_prediction": 0.006247974197115874
+    },
+    {
+      "information_date": "2024-11-26",
+      "target": 0.031155398178896343,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0013744961342560835,
+      "event_prediction": 0.0013847476489284257
+    },
+    {
+      "information_date": "2024-11-27",
+      "target": 0.011652113299611022,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003910806204696547,
+      "event_prediction": 0.0021666748057015887
+    },
+    {
+      "information_date": "2024-11-28",
+      "target": 0.000698337026760365,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0075232579502201805,
+      "event_prediction": 0.004129317558939914
+    },
+    {
+      "information_date": "2024-11-29",
+      "target": -0.0033414077127381647,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0008768399015151901,
+      "event_prediction": -0.001678962406660301
+    },
+    {
+      "information_date": "2024-11-30",
+      "target": 0.0013972666683954582,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0006646945920424675,
+      "event_prediction": 4.2088622953908965e-05
+    },
+    {
+      "information_date": "2024-12-01",
+      "target": -0.004072005403098378,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0007787684932598171,
+      "event_prediction": 0.005179914206463251
+    },
+    {
+      "information_date": "2024-12-02",
+      "target": -0.0028488487593103518,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0033550131446103662,
+      "event_prediction": 0.004402389776006953
+    },
+    {
+      "information_date": "2024-12-03",
+      "target": 0.07583795590287701,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0017139490208592017,
+      "event_prediction": 0.0003643435734435518
+    },
+    {
+      "information_date": "2024-12-04",
+      "target": -0.05176322076229789,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.002855897209436166,
+      "event_prediction": -0.006388147933525781
+    },
+    {
+      "information_date": "2024-12-05",
+      "target": 0.015930160865995413,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005193383761101863,
+      "event_prediction": 0.012030845799477179
+    },
+    {
+      "information_date": "2024-12-06",
+      "target": 0.006444249641958111,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0026406823246653173,
+      "event_prediction": 0.005903230127867733
+    },
+    {
+      "information_date": "2024-12-07",
+      "target": -0.008451983096033788,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.008337089008266595,
+      "event_prediction": 0.00784405808185519
+    },
+    {
+      "information_date": "2024-12-08",
+      "target": -0.022274217134789054,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0005744803719061995,
+      "event_prediction": -0.002154035729655025
+    },
+    {
+      "information_date": "2024-12-09",
+      "target": 0.004299282902717305,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002021979525067005,
+      "event_prediction": 0.001349746872115717
+    },
+    {
+      "information_date": "2024-12-10",
+      "target": 0.0381057730230725,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00021338958561870026,
+      "event_prediction": 0.0019430435017849005
+    },
+    {
+      "information_date": "2024-12-11",
+      "target": -0.013388303340249097,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0026916276593437587,
+      "event_prediction": 0.003278889040708645
+    },
+    {
+      "information_date": "2024-12-12",
+      "target": 0.023775547758175142,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0021824180260902005,
+      "event_prediction": 0.0008561276988421976
+    },
+    {
+      "information_date": "2024-12-13",
+      "target": -0.003453781430292624,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0008209348570336632,
+      "event_prediction": -0.000663335098443971
+    },
+    {
+      "information_date": "2024-12-14",
+      "target": 0.027929474023574263,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00642521759530216,
+      "event_prediction": 0.0002996341713061557
+    },
+    {
+      "information_date": "2024-12-15",
+      "target": 0.02197745455866773,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002081462340699366,
+      "event_prediction": 0.003699594836460256
+    },
+    {
+      "information_date": "2024-12-16",
+      "target": -0.02016124882225856,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003344390247953126,
+      "event_prediction": 0.002052972699548619
+    },
+    {
+      "information_date": "2024-12-17",
+      "target": -0.03420531208372535,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003670341894588561,
+      "event_prediction": 0.000503354961007363
+    },
+    {
+      "information_date": "2024-12-18",
+      "target": -0.04039295481375571,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0037672504422537672,
+      "event_prediction": 0.003630001023995782
+    },
+    {
+      "information_date": "2024-12-19",
+      "target": 0.003957509066930598,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002847381395266512,
+      "event_prediction": -0.0032922194456496273
+    },
+    {
+      "information_date": "2024-12-20",
+      "target": -0.005139567796010103,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0003735831451050337,
+      "event_prediction": -0.0017249106471639748
+    },
+    {
+      "information_date": "2024-12-21",
+      "target": -0.010001103783501608,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00190592954102502,
+      "event_prediction": 0.0013188610788990459
+    },
+    {
+      "information_date": "2024-12-22",
+      "target": -0.017303360015338165,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.001993030687654499,
+      "event_prediction": 0.0019701589227506494
+    },
+    {
+      "information_date": "2024-12-23",
+      "target": 0.03913616062907965,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0060298495889831195,
+      "event_prediction": 0.011965940601654419
+    },
+    {
+      "information_date": "2024-12-24",
+      "target": 0.009702030916294957,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0022266120851006195,
+      "event_prediction": 0.012046448133658811
+    },
+    {
+      "information_date": "2024-12-25",
+      "target": -0.02598157267897505,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.006327879417518561,
+      "event_prediction": 0.0047003653238257646
+    },
+    {
+      "information_date": "2024-12-26",
+      "target": -0.019122224527910348,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0003915171566754713,
+      "event_prediction": -0.004558473756895827
+    },
+    {
+      "information_date": "2024-12-27",
+      "target": 0.006215555814125695,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0036639774915577066,
+      "event_prediction": -0.001279774772022577
+    },
+    {
+      "information_date": "2024-12-28",
+      "target": -0.01531990673285355,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0007372642706916094,
+      "event_prediction": 0.011814245242012716
+    },
+    {
+      "information_date": "2024-12-29",
+      "target": -0.012813436492778107,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0021880953212034555,
+      "event_prediction": -0.0007980715275582345
+    },
+    {
+      "information_date": "2024-12-30",
+      "target": 0.014436486058284403,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0016259952993551282,
+      "event_prediction": 0.002804291018350205
+    },
+    {
+      "information_date": "2024-12-31",
+      "target": 0.012620199995735826,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002585684247859803,
+      "event_prediction": 0.0022240263699305563
+    },
+    {
+      "information_date": "2025-01-01",
+      "target": 0.02146004981797267,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0031893879531360706,
+      "event_prediction": -0.015369683132292807
+    },
+    {
+      "information_date": "2025-01-02",
+      "target": 0.011542481154186435,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0008050771012056723,
+      "event_prediction": -0.0015403541630252845
+    },
+    {
+      "information_date": "2025-01-03",
+      "target": 0.0001793281511572875,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0016379791552478084,
+      "event_prediction": -0.0016256275811835246
+    },
+    {
+      "information_date": "2025-01-04",
+      "target": 0.0085573090115596,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0034867686320738185,
+      "event_prediction": 0.0018722374661618623
+    },
+    {
+      "information_date": "2025-01-05",
+      "target": 0.02675913645927297,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0013476659586437723,
+      "event_prediction": 0.0015553193022343173
+    },
+    {
+      "information_date": "2025-01-06",
+      "target": -0.050795418437023176,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0068026547304674,
+      "event_prediction": 0.01090307040899897
+    },
+    {
+      "information_date": "2025-01-07",
+      "target": -0.026131882368182313,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00416413453561767,
+      "event_prediction": 0.004674943447481482
+    },
+    {
+      "information_date": "2025-01-08",
+      "target": -0.003301190535735854,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002672030187968381,
+      "event_prediction": -0.015142404397689484
+    },
+    {
+      "information_date": "2025-01-09",
+      "target": 0.005415569120578834,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0003270275203378693,
+      "event_prediction": -0.003947756342858943
+    },
+    {
+      "information_date": "2025-01-10",
+      "target": 0.004504949391003432,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003884436877399638,
+      "event_prediction": 0.003234481644915707
+    },
+    {
+      "information_date": "2025-01-11",
+      "target": -0.00391384467047895,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0003620569541715095,
+      "event_prediction": 0.003530283983302576
+    },
+    {
+      "information_date": "2025-01-12",
+      "target": 0.00671003459032371,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0005908496863078483,
+      "event_prediction": 1.963910484082754e-05
+    },
+    {
+      "information_date": "2025-01-13",
+      "target": 0.025640674206346192,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0033688556594757674,
+      "event_prediction": -0.00042729779055923275
+    },
+    {
+      "information_date": "2025-01-14",
+      "target": 0.022164588672231922,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.008017092494581806,
+      "event_prediction": 0.008926979193665155
+    },
+    {
+      "information_date": "2025-01-15",
+      "target": 0.015875298554368422,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005042578803058577,
+      "event_prediction": 0.005203725045787203
+    },
+    {
+      "information_date": "2025-01-16",
+      "target": 0.02488613201261969,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0005491271639548748,
+      "event_prediction": -0.0032853444365279942
+    },
+    {
+      "information_date": "2025-01-17",
+      "target": 0.013765092243794186,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0011890150216028092,
+      "event_prediction": 0.0011300803419047817
+    },
+    {
+      "information_date": "2025-01-18",
+      "target": -0.029299195560768432,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005962682918296876,
+      "event_prediction": 0.01511529880916727
+    },
+    {
+      "information_date": "2025-01-19",
+      "target": 0.010166862976050295,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0019565082419732522,
+      "event_prediction": 0.001647296800414684
+    },
+    {
+      "information_date": "2025-01-20",
+      "target": 0.02597366002110446,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004909719708255301,
+      "event_prediction": 0.0052301300873057455
+    },
+    {
+      "information_date": "2025-01-21",
+      "target": -0.030091231180550126,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00012366494922674137,
+      "event_prediction": -0.0010810881178447323
+    },
+    {
+      "information_date": "2025-01-22",
+      "target": 0.013864640333712153,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004575795834141383,
+      "event_prediction": 0.0031620752417521013
+    },
+    {
+      "information_date": "2025-01-23",
+      "target": 0.012664750099921518,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003095752718522797,
+      "event_prediction": -0.005837886197801661
+    },
+    {
+      "information_date": "2025-01-24",
+      "target": -0.0011602858868340338,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00226579685478591,
+      "event_prediction": 0.006343022336242769
+    },
+    {
+      "information_date": "2025-01-25",
+      "target": -0.035034682383634275,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002350579859433569,
+      "event_prediction": -0.003725648714497939
+    },
+    {
+      "information_date": "2025-01-26",
+      "target": 0.012333119542157878,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004339314589946776,
+      "event_prediction": 0.003069111281599077
+    },
+    {
+      "information_date": "2025-01-27",
+      "target": -0.006087047211898455,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002238952971486423,
+      "event_prediction": 0.0017839651341199345
+    },
+    {
+      "information_date": "2025-01-28",
+      "target": 0.03134144810650952,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.006167321212904513,
+      "event_prediction": 0.00174660904213097
+    },
+    {
+      "information_date": "2025-01-29",
+      "target": -0.008492264156863993,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.006341130200061186,
+      "event_prediction": 0.0025101976022838634
+    },
+    {
+      "information_date": "2025-01-30",
+      "target": -0.02014036204892522,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003558607741516803,
+      "event_prediction": 0.007600443950649869
+    },
+    {
+      "information_date": "2025-01-31",
+      "target": -0.029518532764494787,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0031182485300061402,
+      "event_prediction": -0.0007310869012299142
+    },
+    {
+      "information_date": "2025-02-01",
+      "target": -0.052027540135804795,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0012012704846402688,
+      "event_prediction": -0.0024635601526650855
+    },
+    {
+      "information_date": "2025-02-02",
+      "target": 0.07002580900485333,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0028543955146840072,
+      "event_prediction": 0.001092673597036344
+    },
+    {
+      "information_date": "2025-02-03",
+      "target": -0.025653083848260816,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004812491102167232,
+      "event_prediction": 0.001315164943961979
+    },
+    {
+      "information_date": "2025-02-04",
+      "target": -0.007055080443631345,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0021984699047375763,
+      "event_prediction": 0.0013208445756912332
+    },
+    {
+      "information_date": "2025-02-05",
+      "target": 0.001014295711903035,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.001242992838665187,
+      "event_prediction": 0.001502584950363598
+    },
+    {
+      "information_date": "2025-02-06",
+      "target": -0.0078104788538061465,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004916714526598136,
+      "event_prediction": 0.005309191842995108
+    },
+    {
+      "information_date": "2025-02-07",
+      "target": 0.006415111519470829,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004900587476585638,
+      "event_prediction": 0.009146271931450487
+    },
+    {
+      "information_date": "2025-02-08",
+      "target": -0.005166202650853102,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0001863196882056612,
+      "event_prediction": 0.006820278781168919
+    },
+    {
+      "information_date": "2025-02-09",
+      "target": 0.008345019805858112,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005468654567580052,
+      "event_prediction": 0.007316139405272277
+    },
+    {
+      "information_date": "2025-02-10",
+      "target": -0.02373431667756465,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0001668023616511658,
+      "event_prediction": -0.0008841210484296352
+    },
+    {
+      "information_date": "2025-02-11",
+      "target": 0.023165994792978983,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0006211646021602648,
+      "event_prediction": 0.0008944749326871952
+    },
+    {
+      "information_date": "2025-02-12",
+      "target": -0.003629080663679507,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005386746508158364,
+      "event_prediction": 0.00714270941012117
+    },
+    {
+      "information_date": "2025-02-13",
+      "target": 0.005319795281590878,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002974995779539109,
+      "event_prediction": 0.010805020886889144
+    },
+    {
+      "information_date": "2025-02-14",
+      "target": -0.001381809689261937,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003550350193198816,
+      "event_prediction": -0.0014548951785172551
+    },
+    {
+      "information_date": "2025-02-15",
+      "target": -0.013594117182459509,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003446101622450179,
+      "event_prediction": -0.0003679553532677316
+    },
+    {
+      "information_date": "2025-02-16",
+      "target": -0.0001528616321462284,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004646403947514959,
+      "event_prediction": 0.0064763773881420785
+    },
+    {
+      "information_date": "2025-02-17",
+      "target": -0.0049162408594009,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0024747261784302567,
+      "event_prediction": -0.001408234463280858
+    },
+    {
+      "information_date": "2025-02-18",
+      "target": 0.014102510503982035,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.00024925471400742433,
+      "event_prediction": -0.0007911666148158461
+    },
+    {
+      "information_date": "2025-02-19",
+      "target": 0.011194787446419774,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002947890987906001,
+      "event_prediction": 0.0014741712317367101
+    },
+    {
+      "information_date": "2025-02-20",
+      "target": -0.018381772131256136,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004585806994965326,
+      "event_prediction": 0.0019478916390706993
+    },
+    {
+      "information_date": "2025-02-21",
+      "target": 0.001149413352715234,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005171007936585195,
+      "event_prediction": 0.002627696955327252
+    },
+    {
+      "information_date": "2025-02-22",
+      "target": -0.010102602449473919,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0025277488064764835,
+      "event_prediction": 0.008427779707746158
+    },
+    {
+      "information_date": "2025-02-23",
+      "target": -0.03476917983458816,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0006705335719303057,
+      "event_prediction": -0.0016397451557534177
+    },
+    {
+      "information_date": "2025-02-24",
+      "target": -0.03522924626606472,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.001764043240833014,
+      "event_prediction": 0.0008727144746386163
+    },
+    {
+      "information_date": "2025-02-25",
+      "target": -0.04164378999666973,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0014218075316741246,
+      "event_prediction": -0.003566921588149194
+    },
+    {
+      "information_date": "2025-02-26",
+      "target": -0.0561287141498692,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0029018347447081413,
+      "event_prediction": 0.00252718955131609
+    },
+    {
+      "information_date": "2025-02-27",
+      "target": 0.06116798652734645,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003207205182957069,
+      "event_prediction": -0.001263684073541065
+    },
+    {
+      "information_date": "2025-02-28",
+      "target": 0.006013985358272134,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002320763079683745,
+      "event_prediction": 0.004513983790425923
+    },
+    {
+      "information_date": "2025-03-01",
+      "target": 0.08003061834374336,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0027897682613225254,
+      "event_prediction": 0.0022293767523296473
+    },
+    {
+      "information_date": "2025-03-02",
+      "target": -0.09449946062567427,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.011871632211045568,
+      "event_prediction": 0.0017755835406678285
+    },
+    {
+      "information_date": "2025-03-03",
+      "target": 0.034418673360344876,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0025399083863334782,
+      "event_prediction": 0.0003573166653877463
+    },
+    {
+      "information_date": "2025-03-04",
+      "target": 0.05464533738727839,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004533194210821748,
+      "event_prediction": 0.00783975237009299
+    },
+    {
+      "information_date": "2025-03-05",
+      "target": -0.05046749179350429,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0035303770811517077,
+      "event_prediction": 0.00033792340909038175
+    },
+    {
+      "information_date": "2025-03-06",
+      "target": -0.01244820436032179,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004320405404704672,
+      "event_prediction": 0.01180463469919297
+    },
+    {
+      "information_date": "2025-03-07",
+      "target": 0.0024467246380863727,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0033015653442790673,
+      "event_prediction": -0.0016000291434234122
+    },
+    {
+      "information_date": "2025-03-08",
+      "target": -0.04746398698884757,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.00035053026135251856,
+      "event_prediction": 0.003613736262736437
+    },
+    {
+      "information_date": "2025-03-09",
+      "target": -0.03058383326645875,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0016274601145624392,
+      "event_prediction": 0.0031391256720208417
+    },
+    {
+      "information_date": "2025-03-10",
+      "target": 0.0328558524329885,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005899956494901907,
+      "event_prediction": 0.004900917804088685
+    },
+    {
+      "information_date": "2025-03-11",
+      "target": 0.017683700738871266,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0036945778921179387,
+      "event_prediction": -0.00048358655551427416
+    },
+    {
+      "information_date": "2025-03-12",
+      "target": -0.020299222022740926,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004600910008639972,
+      "event_prediction": 0.00708850950605849
+    },
+    {
+      "information_date": "2025-03-13",
+      "target": 0.03183473012925453,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0033365893071843973,
+      "event_prediction": 0.0030536710418564914
+    },
+    {
+      "information_date": "2025-03-14",
+      "target": -0.0019642480801518314,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0006169205799773756,
+      "event_prediction": -0.001954325045372245
+    },
+    {
+      "information_date": "2025-03-15",
+      "target": -0.007873642102216194,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0041661292624930926,
+      "event_prediction": 0.003634978909416067
+    },
+    {
+      "information_date": "2025-03-16",
+      "target": -0.006333836341417265,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": -0.0031510729050143755,
+      "event_prediction": -0.002455024561778511
+    },
+    {
+      "information_date": "2025-03-17",
+      "target": -0.0012358529732070522,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002868411273415868,
+      "event_prediction": 0.0018859248592041516
+    },
+    {
+      "information_date": "2025-03-18",
+      "target": 0.03442018945080472,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0022976802699251446,
+      "event_prediction": -0.0029271071165116267
+    },
+    {
+      "information_date": "2025-03-19",
+      "target": -0.016908820261232527,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005036720485415981,
+      "event_prediction": 0.0011065203265366538
+    },
+    {
+      "information_date": "2025-03-20",
+      "target": -0.002236889964681188,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.005827556534244334,
+      "event_prediction": 0.013823486709354857
+    },
+    {
+      "information_date": "2025-03-21",
+      "target": -0.00018405468917914725,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0026564732652124444,
+      "event_prediction": 0.0005415753753156673
+    },
+    {
+      "information_date": "2025-03-22",
+      "target": 0.02734606038580223,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004234123871041049,
+      "event_prediction": 0.015568495155375867
+    },
+    {
+      "information_date": "2025-03-23",
+      "target": -0.00037687382010176407,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.006322619084891272,
+      "event_prediction": 0.010236903317872467
+    },
+    {
+      "information_date": "2025-03-24",
+      "target": 0.007559978489276364,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0023330089973265422,
+      "event_prediction": 0.0028197980563303355
+    },
+    {
+      "information_date": "2025-03-25",
+      "target": 0.00579071694700084,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.003379763293220976,
+      "event_prediction": 0.0017402331210522517
+    },
+    {
+      "information_date": "2025-03-26",
+      "target": -0.010067707673574344,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.006594307248046159,
+      "event_prediction": 0.005328904012315408
+    },
+    {
+      "information_date": "2025-03-27",
+      "target": -0.030255520522915025,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.002516768136779041,
+      "event_prediction": 0.0064929990714968485
+    },
+    {
+      "information_date": "2025-03-28",
+      "target": -0.012813837375178272,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0012160714340482862,
+      "event_prediction": -0.0013003479225909258
+    },
+    {
+      "information_date": "2025-03-29",
+      "target": -0.01873025850743193,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.001817591138844124,
+      "event_prediction": 0.004235245651687372
+    },
+    {
+      "information_date": "2025-03-30",
+      "target": 0.017691230593458895,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.0021659459230430576,
+      "event_prediction": 0.006728574094862418
+    },
+    {
+      "information_date": "2025-03-31",
+      "target": 0.01900075125138212,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.001280664822241126,
+      "event_prediction": -0.006702452906634767
+    },
+    {
+      "information_date": "2025-04-01",
+      "target": -0.012562718924547966,
+      "prior_prediction": 0.0020728557259160514,
+      "sentiment_prediction": 0.004356713673411545,
+      "event_prediction": 0.0024360950994510044
+    },
+    {
+      "information_date": "2025-04-05",
+      "target": -0.06798153487177394,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003911304186190148,
+      "event_prediction": 0.003528354969527126
+    },
+    {
+      "information_date": "2025-04-06",
+      "target": 0.028551191242755847,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0008987968423739192,
+      "event_prediction": 0.01030332983112051
+    },
+    {
+      "information_date": "2025-04-07",
+      "target": -0.06078730890104789,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0035989847272089757,
+      "event_prediction": 0.006421715177966905
+    },
+    {
+      "information_date": "2025-04-08",
+      "target": 0.08990149589199614,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0014017396352378761,
+      "event_prediction": -0.0032055341903471117
+    },
+    {
+      "information_date": "2025-04-09",
+      "target": -0.011615078073971552,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.00043169876280411577,
+      "event_prediction": -0.0020235381967091807
+    },
+    {
+      "information_date": "2025-04-10",
+      "target": 0.026319762592474483,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0019072863495174725,
+      "event_prediction": 0.0033802101610112987
+    },
+    {
+      "information_date": "2025-04-11",
+      "target": 0.02961788431625534,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002249338353708891,
+      "event_prediction": -0.003635080785791723
+    },
+    {
+      "information_date": "2025-04-12",
+      "target": -0.010062150644167378,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 6.01594885460922e-05,
+      "event_prediction": 0.010698109238935967
+    },
+    {
+      "information_date": "2025-04-13",
+      "target": 0.009904164315433173,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.007716699683885855,
+      "event_prediction": 0.005365643049748512
+    },
+    {
+      "information_date": "2025-04-14",
+      "target": -0.020296998967988866,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0017043952034960968,
+      "event_prediction": 0.0016104967004100122
+    },
+    {
+      "information_date": "2025-04-15",
+      "target": 0.0037616010598482408,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003354439474795492,
+      "event_prediction": -0.0012965687721096329
+    },
+    {
+      "information_date": "2025-04-16",
+      "target": 0.010095391022189704,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001601718467127141,
+      "event_prediction": -0.0018488437695460685
+    },
+    {
+      "information_date": "2025-04-17",
+      "target": 0.0004917644200777005,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0024054054267426545,
+      "event_prediction": -0.0008630202385920623
+    },
+    {
+      "information_date": "2025-04-18",
+      "target": 0.0033086432558842027,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0018972289364642086,
+      "event_prediction": 0.0009689311438359361
+    },
+    {
+      "information_date": "2025-04-19",
+      "target": 0.02415086625680951,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.000838996050012808,
+      "event_prediction": 0.006336648588840573
+    },
+    {
+      "information_date": "2025-04-20",
+      "target": 0.010812757815331864,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0010266760762343372,
+      "event_prediction": -0.005788607515874808
+    },
+    {
+      "information_date": "2025-04-21",
+      "target": 0.056866180799705957,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002725665919218659,
+      "event_prediction": 0.0013536938963251677
+    },
+    {
+      "information_date": "2025-04-22",
+      "target": -0.005439807233676652,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0028294480496455655,
+      "event_prediction": 0.006980780943043093
+    },
+    {
+      "information_date": "2025-04-23",
+      "target": 0.006890393935762296,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002428943382398991,
+      "event_prediction": 0.004685878299719911
+    },
+    {
+      "information_date": "2025-04-24",
+      "target": 0.015331348200030348,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.005689073933655459,
+      "event_prediction": -0.0002957065279749747
+    },
+    {
+      "information_date": "2025-04-25",
+      "target": -0.006016493874201667,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0012496982245337354,
+      "event_prediction": 0.0037526342481255678
+    },
+    {
+      "information_date": "2025-04-26",
+      "target": -0.003269230769230691,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0031947793826228735,
+      "event_prediction": 0.00350453837671234
+    },
+    {
+      "information_date": "2025-04-27",
+      "target": 0.008532996206254362,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002376843245739971,
+      "event_prediction": 0.006145412117494765
+    },
+    {
+      "information_date": "2025-04-28",
+      "target": 0.00409246951786657,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.005218482586546542,
+      "event_prediction": 0.004509351166299809
+    },
+    {
+      "information_date": "2025-04-29",
+      "target": -0.00275263157894734,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004138411300593733,
+      "event_prediction": -0.002990013611004389
+    },
+    {
+      "information_date": "2025-04-30",
+      "target": 0.02452540413876081,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0035834527074300833,
+      "event_prediction": 0.0033367791181364843
+    },
+    {
+      "information_date": "2025-05-01",
+      "target": -0.00792380128165504,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0016429283848904217,
+      "event_prediction": -0.00026259376346680734
+    },
+    {
+      "information_date": "2025-05-02",
+      "target": -0.006427265146236039,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003035533032351885,
+      "event_prediction": 0.006412372574442889
+    },
+    {
+      "information_date": "2025-05-03",
+      "target": -0.017367309822940435,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004643873255661261,
+      "event_prediction": 0.00559292952190377
+    },
+    {
+      "information_date": "2025-05-04",
+      "target": 0.004303687598657291,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.005619714998917388,
+      "event_prediction": 0.002385961861442661
+    },
+    {
+      "information_date": "2025-05-05",
+      "target": 0.021755616043720893,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0018892773801129602,
+      "event_prediction": 0.002357181402755262
+    },
+    {
+      "information_date": "2025-05-06",
+      "target": 0.027310769753843278,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0004942198599741585,
+      "event_prediction": -0.001148133125413941
+    },
+    {
+      "information_date": "2025-05-07",
+      "target": 0.03334315448742653,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0035834415943779407,
+      "event_prediction": 0.0028586348635119044
+    },
+    {
+      "information_date": "2025-05-08",
+      "target": 0.007543186574006766,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0033314645674510836,
+      "event_prediction": 0.003984017416026386
+    },
+    {
+      "information_date": "2025-05-09",
+      "target": 0.007550677050826238,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0032727524002078875,
+      "event_prediction": 0.01283697550380152
+    },
+    {
+      "information_date": "2025-05-10",
+      "target": 0.0010657750579778913,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004286730451518091,
+      "event_prediction": 0.002532872285174567
+    },
+    {
+      "information_date": "2025-05-11",
+      "target": -0.0231184546956118,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0013418812435829145,
+      "event_prediction": -0.004590770045594042
+    },
+    {
+      "information_date": "2025-05-12",
+      "target": 0.018370813648913575,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0026560164243974874,
+      "event_prediction": 0.00943520445167266
+    },
+    {
+      "information_date": "2025-05-13",
+      "target": -0.008154777542536462,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0011126601423271478,
+      "event_prediction": -0.0018076155842957835
+    },
+    {
+      "information_date": "2025-05-14",
+      "target": 0.012479294498690674,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001888674573519588,
+      "event_prediction": 0.002892470129129361
+    },
+    {
+      "information_date": "2025-05-15",
+      "target": -0.00492153626567271,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002549621099787399,
+      "event_prediction": 0.006224590349858761
+    },
+    {
+      "information_date": "2025-05-16",
+      "target": -0.0021863543266521512,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -4.882981993081141e-06,
+      "event_prediction": 0.006277197080668857
+    },
+    {
+      "information_date": "2025-05-17",
+      "target": 0.0032266595113805696,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0020374045381669143,
+      "event_prediction": 0.0038619684710586967
+    },
+    {
+      "information_date": "2025-05-18",
+      "target": 0.020774997392986938,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0013651169948956754,
+      "event_prediction": -0.004119789341738855
+    },
+    {
+      "information_date": "2025-05-19",
+      "target": 0.0101174440778522,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00450679949376208,
+      "event_prediction": 0.006659598492090274
+    },
+    {
+      "information_date": "2025-05-20",
+      "target": 0.04639940817320287,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0036756905325742942,
+      "event_prediction": 0.008292304760042715
+    },
+    {
+      "information_date": "2025-05-21",
+      "target": -0.006184732989746977,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00279635778213397,
+      "event_prediction": -0.0007721019812774255
+    },
+    {
+      "information_date": "2025-05-22",
+      "target": -0.024819048408040167,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0006653226174868814,
+      "event_prediction": 0.0003800904147461439
+    },
+    {
+      "information_date": "2025-05-23",
+      "target": -0.0021801439763019514,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003406185808954606,
+      "event_prediction": 0.005665063188894607
+    },
+    {
+      "information_date": "2025-05-24",
+      "target": 0.0142551094535881,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0005218853089603652,
+      "event_prediction": 0.008023568423341353
+    },
+    {
+      "information_date": "2025-05-25",
+      "target": -0.007114969995410503,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0007155270447070099,
+      "event_prediction": -0.003211781911580707
+    },
+    {
+      "information_date": "2025-05-26",
+      "target": -0.00024168329196538885,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004307894976737689,
+      "event_prediction": -0.006318425691339112
+    },
+    {
+      "information_date": "2025-05-27",
+      "target": -0.007274311587608939,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002986375923551686,
+      "event_prediction": 0.0007594848550938867
+    },
+    {
+      "information_date": "2025-05-28",
+      "target": -0.018706991696480713,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002837408449418402,
+      "event_prediction": 0.0073618282359403505
+    },
+    {
+      "information_date": "2025-05-29",
+      "target": -0.022069785435262612,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002056511348028884,
+      "event_prediction": 0.00148188241420513
+    },
+    {
+      "information_date": "2025-05-30",
+      "target": 0.006658433275763986,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002279448519844913,
+      "event_prediction": 0.011069605723372148
+    },
+    {
+      "information_date": "2025-05-31",
+      "target": 0.004348572025560493,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.001025031934871631,
+      "event_prediction": 0.00019677824405099024
+    },
+    {
+      "information_date": "2025-06-01",
+      "target": 0.006107639511846896,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0005000909176855555,
+      "event_prediction": 0.0031328628097372843
+    },
+    {
+      "information_date": "2025-06-02",
+      "target": 0.0003443147283233028,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0032065622807012795,
+      "event_prediction": -0.0012042792832223054
+    },
+    {
+      "information_date": "2025-06-03",
+      "target": -0.004573163504581257,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0006054548587799222,
+      "event_prediction": 0.00039964094582127605
+    },
+    {
+      "information_date": "2025-06-04",
+      "target": -0.02410821788365114,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0019526296129215013,
+      "event_prediction": 0.0020208847437751636
+    },
+    {
+      "information_date": "2025-06-05",
+      "target": 0.023355806106204025,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004734088835800114,
+      "event_prediction": 0.005316520690282756
+    },
+    {
+      "information_date": "2025-06-06",
+      "target": 0.00546628425250395,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00018653685962285614,
+      "event_prediction": 0.008800384883141794
+    },
+    {
+      "information_date": "2025-06-07",
+      "target": 0.0018488689551281468,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0013369557548461271,
+      "event_prediction": 0.0008610467868206736
+    },
+    {
+      "information_date": "2025-06-08",
+      "target": 0.036994357579298365,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003185434327807095,
+      "event_prediction": -0.0001458235805360589
+    },
+    {
+      "information_date": "2025-06-09",
+      "target": 0.0013961213575524045,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0022473869722647224,
+      "event_prediction": 0.011223203575079539
+    },
+    {
+      "information_date": "2025-06-10",
+      "target": -0.016772954647827243,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0014116231893681465,
+      "event_prediction": 0.006942024852791146
+    },
+    {
+      "information_date": "2025-06-11",
+      "target": -0.033200996743982025,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004243177365537244,
+      "event_prediction": 0.014363430730219015
+    },
+    {
+      "information_date": "2025-06-12",
+      "target": 0.008962024345090303,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -4.2691697349981446e-05,
+      "event_prediction": 0.002348010181511869
+    },
+    {
+      "information_date": "2025-06-13",
+      "target": 0.0023311242160264367,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0034656917534064986,
+      "event_prediction": 0.0025995799767374456
+    },
+    {
+      "information_date": "2025-06-14",
+      "target": 0.004219841506964306,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0031679085912482987,
+      "event_prediction": 0.0010789817567292185
+    },
+    {
+      "information_date": "2025-06-15",
+      "target": 0.01589982186608041,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0028000563903178965,
+      "event_prediction": 0.01234951516667621
+    },
+    {
+      "information_date": "2025-06-16",
+      "target": -0.02263134211240736,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002047176969399777,
+      "event_prediction": -0.0022335700237157592
+    },
+    {
+      "information_date": "2025-06-17",
+      "target": -0.0007933442790746259,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0001508604726184555,
+      "event_prediction": -0.003177692384625932
+    },
+    {
+      "information_date": "2025-06-18",
+      "target": -0.004627707985057183,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0038885707565986974,
+      "event_prediction": 0.004801792722982447
+    },
+    {
+      "information_date": "2025-06-19",
+      "target": -0.010703447273256006,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002812695519270269,
+      "event_prediction": 0.004868741816391199
+    },
+    {
+      "information_date": "2025-06-20",
+      "target": -0.010593023705479654,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0018053748368665906,
+      "event_prediction": 0.002227485632531328
+    },
+    {
+      "information_date": "2025-06-21",
+      "target": -0.0119688920200548,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003870282107423771,
+      "event_prediction": 0.005859724411741822
+    },
+    {
+      "information_date": "2025-06-22",
+      "target": 0.03718820278612367,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001963025070025502,
+      "event_prediction": -0.004652389972121229
+    },
+    {
+      "information_date": "2025-06-23",
+      "target": 0.012408975577755443,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0006980216140892058,
+      "event_prediction": 0.0008624959755015047
+    },
+    {
+      "information_date": "2025-06-24",
+      "target": 0.01534794225873548,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0017178139219253402,
+      "event_prediction": -0.0041385535930399085
+    },
+    {
+      "information_date": "2025-06-25",
+      "target": -0.0035879031637180425,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0038714583395457807,
+      "event_prediction": -0.0020564360909357936
+    },
+    {
+      "information_date": "2025-06-26",
+      "target": -0.0016635651308556376,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00429937532772717,
+      "event_prediction": 0.004246575887999576
+    },
+    {
+      "information_date": "2025-06-27",
+      "target": -0.0007842135298746777,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0012129018964875454,
+      "event_prediction": 0.002295111545182086
+    },
+    {
+      "information_date": "2025-06-28",
+      "target": 0.012220375504749637,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0010291842542001052,
+      "event_prediction": 0.013354271863890623
+    },
+    {
+      "information_date": "2025-06-29",
+      "target": -0.012133689080325194,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0022020754194994148,
+      "event_prediction": 0.014057154418325574
+    },
+    {
+      "information_date": "2025-06-30",
+      "target": -0.009350399671490095,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002630654883860192,
+      "event_prediction": 0.0031983062101003856
+    },
+    {
+      "information_date": "2025-07-01",
+      "target": 0.02302432627467521,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0006266890424036827,
+      "event_prediction": 0.0028231465736178627
+    },
+    {
+      "information_date": "2025-07-02",
+      "target": 0.005472748603496003,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0019215096095962793,
+      "event_prediction": 0.00288740908926414
+    },
+    {
+      "information_date": "2025-07-03",
+      "target": -0.009889464761798195,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0015368677850319014,
+      "event_prediction": -0.010229702564603704
+    },
+    {
+      "information_date": "2025-07-04",
+      "target": -0.0009934592640077344,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001318760299832643,
+      "event_prediction": 0.001952560915765122
+    },
+    {
+      "information_date": "2025-07-05",
+      "target": 0.012550034861207982,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0012156006872388056,
+      "event_prediction": 0.0018049605750704708
+    },
+    {
+      "information_date": "2025-07-06",
+      "target": -0.013762503989297237,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0009453029786598791,
+      "event_prediction": 0.004266995151793263
+    },
+    {
+      "information_date": "2025-07-07",
+      "target": 0.004288359491553484,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00250827687767805,
+      "event_prediction": 0.00026733948020405806
+    },
+    {
+      "information_date": "2025-07-08",
+      "target": 0.025049717207416222,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0009840140226038945,
+      "event_prediction": 0.004977835663255386
+    },
+    {
+      "information_date": "2025-07-09",
+      "target": 0.052486899441390955,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0013535195149135234,
+      "event_prediction": -0.001428697198051023
+    },
+    {
+      "information_date": "2025-07-10",
+      "target": 0.007695980940188196,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004010312542985351,
+      "event_prediction": 0.006158836288600423
+    },
+    {
+      "information_date": "2025-07-11",
+      "target": -0.00038980064117533075,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0044613401502547195,
+      "event_prediction": 0.009803601254302081
+    },
+    {
+      "information_date": "2025-07-12",
+      "target": 0.02564342186419455,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003171318990776901,
+      "event_prediction": 0.00840260708736827
+    },
+    {
+      "information_date": "2025-07-13",
+      "target": -0.029114102298612554,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0017057807681393252,
+      "event_prediction": 0.000799404387952821
+    },
+    {
+      "information_date": "2025-07-14",
+      "target": 0.0024724810639347172,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003108243203475329,
+      "event_prediction": 0.004623270956861659
+    },
+    {
+      "information_date": "2025-07-15",
+      "target": 0.0050178723404255,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002613314800377535,
+      "event_prediction": 0.0035149297622565794
+    },
+    {
+      "information_date": "2025-07-16",
+      "target": 0.018361481451372397,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0030568970302604186,
+      "event_prediction": 0.0018209665015096119
+    },
+    {
+      "information_date": "2025-07-17",
+      "target": -0.01586839617189384,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002953553325071053,
+      "event_prediction": 0.001981474577296233
+    },
+    {
+      "information_date": "2025-07-18",
+      "target": -0.0031618188823622217,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0014786337690482843,
+      "event_prediction": 0.003763484133163837
+    },
+    {
+      "information_date": "2025-07-19",
+      "target": 0.003846564622794313,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0057425885144523426,
+      "event_prediction": 0.00890682123469614
+    },
+    {
+      "information_date": "2025-07-20",
+      "target": -0.010082817413272993,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0020886822852292336,
+      "event_prediction": -0.002350954404939185
+    },
+    {
+      "information_date": "2025-07-21",
+      "target": 0.012283010804784666,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0015491393102882553,
+      "event_prediction": 0.010005805222598557
+    },
+    {
+      "information_date": "2025-07-22",
+      "target": -0.0013650715272200964,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0031657008484263665,
+      "event_prediction": -0.0026879263286445874
+    },
+    {
+      "information_date": "2025-07-23",
+      "target": -0.026267138400733803,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.000703322714458983,
+      "event_prediction": 0.0015730894387764203
+    },
+    {
+      "information_date": "2025-07-24",
+      "target": 0.01792979382166915,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 9.396806482406478e-05,
+      "event_prediction": -0.0026594854536761796
+    },
+    {
+      "information_date": "2025-07-25",
+      "target": 0.006005829613209279,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.000626195808600373,
+      "event_prediction": -0.0025540370732612195
+    },
+    {
+      "information_date": "2025-07-26",
+      "target": 0.009417413371897831,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0026423838536736434,
+      "event_prediction": 0.009797082165929404
+    },
+    {
+      "information_date": "2025-07-27",
+      "target": -0.004406996200778668,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001669183903220981,
+      "event_prediction": -0.0020279927096445265
+    },
+    {
+      "information_date": "2025-07-28",
+      "target": -0.0053207299647445305,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00454466577700284,
+      "event_prediction": 0.01893177817693778
+    },
+    {
+      "information_date": "2025-07-29",
+      "target": 0.0026614746465758454,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0013028333475962528,
+      "event_prediction": -0.0032311786068295436
+    },
+    {
+      "information_date": "2025-07-30",
+      "target": -0.024098226678509027,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.000997212935028691,
+      "event_prediction": 0.002472586899108254
+    },
+    {
+      "information_date": "2025-07-31",
+      "target": -0.014940725892615414,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.004825129159915509,
+      "event_prediction": 0.008103935856396174
+    },
+    {
+      "information_date": "2025-08-01",
+      "target": -0.0026417689312867587,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00419957435766735,
+      "event_prediction": 0.007694541986082892
+    },
+    {
+      "information_date": "2025-08-02",
+      "target": 0.008450867937687123,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.002281170568166394,
+      "event_prediction": -0.009269850143992089
+    },
+    {
+      "information_date": "2025-08-03",
+      "target": -0.002704283893051107,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00014592002568214382,
+      "event_prediction": -0.00782833195482722
+    },
+    {
+      "information_date": "2025-08-04",
+      "target": -0.006505428924905687,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0017707331677125123,
+      "event_prediction": -0.003513398905025579
+    },
+    {
+      "information_date": "2025-08-05",
+      "target": 0.009069413488934863,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001012294795984585,
+      "event_prediction": 0.0015969043162155825
+    },
+    {
+      "information_date": "2025-08-06",
+      "target": 0.019112930835714748,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0007336402655707993,
+      "event_prediction": 0.0019069791274987547
+    },
+    {
+      "information_date": "2025-08-07",
+      "target": -0.0031237466448647,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002335561149388095,
+      "event_prediction": -0.0023543059383655633
+    },
+    {
+      "information_date": "2025-08-08",
+      "target": 0.01862583528695705,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0010135064843158725,
+      "event_prediction": -0.005270448445642335
+    },
+    {
+      "information_date": "2025-08-09",
+      "target": 0.0271797611421829,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.005358149232951625,
+      "event_prediction": 0.008105302640069985
+    },
+    {
+      "information_date": "2025-08-10",
+      "target": -0.023537212409230457,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.001275196404614782,
+      "event_prediction": -0.0024798821192402523
+    },
+    {
+      "information_date": "2025-08-11",
+      "target": 0.005183234927598868,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.001463000813061375,
+      "event_prediction": -0.0029949402294155115
+    },
+    {
+      "information_date": "2025-08-12",
+      "target": 0.03297737247479726,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0006588680323155783,
+      "event_prediction": 0.0002998493240677306
+    },
+    {
+      "information_date": "2025-08-13",
+      "target": -0.03619929303194003,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.002491526772689238,
+      "event_prediction": 0.0018747868845725188
+    },
+    {
+      "information_date": "2025-08-14",
+      "target": -0.012973669252992481,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0017610611422770042,
+      "event_prediction": 0.005505009647212224
+    },
+    {
+      "information_date": "2025-08-15",
+      "target": 0.002028278340099998,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 2.7920342607309565e-05,
+      "event_prediction": 0.0027893797268602485
+    },
+    {
+      "information_date": "2025-08-16",
+      "target": -0.020060648670430448,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.008447151018634016,
+      "event_prediction": 0.006029701249069523
+    },
+    {
+      "information_date": "2025-08-17",
+      "target": -0.004493851751474431,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.003549634865109216,
+      "event_prediction": -0.0004228050969567274
+    },
+    {
+      "information_date": "2025-08-18",
+      "target": -0.011044822423586509,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0033043426634608037,
+      "event_prediction": -0.0007160073038232281
+    },
+    {
+      "information_date": "2025-08-19",
+      "target": 0.0038278793689285884,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0023155430630010182,
+      "event_prediction": 0.004811122471256991
+    },
+    {
+      "information_date": "2025-08-20",
+      "target": -0.008900292843248225,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0041587407152815364,
+      "event_prediction": -0.006040117845037387
+    },
+    {
+      "information_date": "2025-08-21",
+      "target": 0.023262302298330484,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0033378843572204643,
+      "event_prediction": -0.004767060756230811
+    },
+    {
+      "information_date": "2025-08-22",
+      "target": -0.004220545122007202,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.00821360802255611,
+      "event_prediction": 0.013764006871593548
+    },
+    {
+      "information_date": "2025-08-25",
+      "target": 0.014033282959780013,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.006155479809633576,
+      "event_prediction": 0.0011657881286108
+    },
+    {
+      "information_date": "2025-08-26",
+      "target": 0.0050131298395241775,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": 0.0006632056320592097,
+      "event_prediction": 0.0008125557269927442
+    },
+    {
+      "information_date": "2025-08-27",
+      "target": -0.0027147041562040064,
+      "prior_prediction": 0.0017503782539443086,
+      "sentiment_prediction": -0.0030852456989045925,
+      "event_prediction": -0.007496548281422504
+    }
+  ]
+}

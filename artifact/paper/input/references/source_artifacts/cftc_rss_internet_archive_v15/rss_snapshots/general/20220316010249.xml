@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>CFTC Seeks Public Comment on FTX Request for Amended DCO Registration Order</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8499-22</link>
+  <description/>
+  <pubDate>Thu, 10 Mar 2022 14:26:24 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8499-22</guid>
+    </item>
+<item>
+  <title>Joint Readout of Principals’ Meeting of UK and U.S. Authorities Regarding Central Counterparty Resolution</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8494-22</link>
+  <description/>
+  <pubDate>Tue, 08 Feb 2022 16:32:05 +0000
+</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8494-22</guid>
+    </item>
+<item>
+  <title>CFTC Customer Advisory Warns Online Daters and Social Media Users about Trading Scams</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8492-22</link>
+  <description/>
+  <pubDate>Mon, 07 Feb 2022 16:32:07 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8492-22</guid>
+    </item>
+<item>
+  <title>Federal Agencies Launch Joint Effort to Alert Online Daters and Social Media Users of Romance Scams That Have Cost Americans Millions</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8491-22</link>
+  <description/>
+  <pubDate>Mon, 07 Feb 2022 14:31:49 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8491-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Regarding Compliance Date for 2020 Amendments to Swap Data Reporting Rules  </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8488-22</link>
+  <description/>
+  <pubDate>Mon, 31 Jan 2022 19:43:00 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8488-22</guid>
+    </item>
+<item>
+  <title>CFTC Grants Inet's Request to Vacate DCM Designation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8484-22</link>
+  <description/>
+  <pubDate>Thu, 27 Jan 2022 14:55:34 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8484-22</guid>
+    </item>
+<item>
+  <title>CFTC Chairman Rostin Behnam Appoints Initial CFTC Leadership </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8483-22</link>
+  <description/>
+  <pubDate>Tue, 25 Jan 2022 13:43:51 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8483-22</guid>
+    </item>
+<item>
+  <title>CFTC Chairman Rostin Behnam Announces Executive Staff Appointments</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8482-22</link>
+  <description/>
+  <pubDate>Thu, 20 Jan 2022 18:21:43 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8482-22</guid>
+    </item>
+<item>
+  <title>CFTC Chairman Behnam Welcomes CFTC’s First Chief Diversity Officer </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8479-22</link>
+  <description/>
+  <pubDate>Wed, 12 Jan 2022 15:54:39 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8479-22</guid>
+    </item>
+<item>
+  <title>CFTC Staff Issues No-Action Letter Regarding Certain Reporting Requirements for Swaps Transitioning from Certain LIBORs to Risk-Free Rates </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8475-21</link>
+  <description/>
+  <pubDate>Wed, 22 Dec 2021 20:04:10 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8475-21</guid>
+    </item>
+
+  </channel>
+</rss>

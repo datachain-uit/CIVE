@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.cftc.gov/">
+  <channel>
+    <title>Press Releases</title>
+    <link>https://www.cftc.gov/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Federal Court Orders North Carolina Man to Pay Over $255,000 in Futures and Forex Fraud Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8344-20</link>
+  <description/>
+  <pubDate>Tue, 22 Dec 2020 20:00:00 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8344-20</guid>
+    </item>
+<item>
+  <title>Wisconsin Court Enters $740,968 Judgement Against Company and its Principal for Registration, Disclosure, and Recordkeeping Violations</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8343-20</link>
+  <description/>
+  <pubDate>Tue, 22 Dec 2020 16:20:53 +0000
+</pubDate>
+    <dc:creator>aturner</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8343-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Interdealer Broker to Pay $7 Million for Deceptive Trading Practices in the FX Options Markets</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8335-20</link>
+  <description/>
+  <pubDate>Mon, 14 Dec 2020 20:59:39 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8335-20</guid>
+    </item>
+<item>
+  <title>CFTC Participates in Operation Income Illusion to Raise Retail Fraud Awareness </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8334-20</link>
+  <description/>
+  <pubDate>Mon, 14 Dec 2020 15:31:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8334-20</guid>
+    </item>
+<item>
+  <title>CFTC Orders Vitol Inc. to Pay $95.7 Million for Corruption-Based Fraud and Attempted Manipulation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8326-20</link>
+  <description/>
+  <pubDate>Thu, 03 Dec 2020 17:03:29 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8326-20</guid>
+    </item>
+<item>
+  <title>CFTC Division of Enforcement Issues Annual Report</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8323-20</link>
+  <description/>
+  <pubDate>Tue, 01 Dec 2020 15:49:44 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8323-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Colorado Company and its Principal to Pay Over $900,000 for Digital Asset and Forex Ponzi Scheme </title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8304-20</link>
+  <description/>
+  <pubDate>Wed, 04 Nov 2020 19:29:30 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8304-20</guid>
+    </item>
+<item>
+  <title>CFTC’s Enforcement Division Issues Staff Guidance on Recognition of Self-Reporting, Cooperation, and Remediation</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8296-20</link>
+  <description/>
+  <pubDate>Thu, 29 Oct 2020 12:59:08 +0000
+</pubDate>
+    <dc:creator>mwoodland</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8296-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Affiliate Marketer to Pay More Than $13.8 Million for Binary Options Fraud</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8285-20</link>
+  <description/>
+  <pubDate>Tue, 13 Oct 2020 13:19:53 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8285-20</guid>
+    </item>
+<item>
+  <title>Federal Court Orders Pennsylvania Man and His Companies to Pay More Than $1.2 Million in Forex Trading Scheme</title>
+  <link>https://www.cftc.gov/PressRoom/PressReleases/8283-20</link>
+  <description/>
+  <pubDate>Fri, 09 Oct 2020 17:56:46 +0000
+</pubDate>
+    <dc:creator>dfaulk-white</dc:creator>
+    <guid isPermaLink="true">https://www.cftc.gov/PressRoom/PressReleases/8283-20</guid>
+    </item>
+
+  </channel>
+</rss>

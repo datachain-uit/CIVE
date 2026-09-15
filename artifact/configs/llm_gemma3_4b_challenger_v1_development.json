@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-gemma3-4b-challenger-v1-development",
+  "status": "predeclared-before-challenger-scoring",
+  "predeclared_at": "2026-08-16T17:38:10.2905257+07:00",
+  "selection_basis": "one final architecture-diverse local challenger selected for operational reliability and task calibration only; no Gemma market outcome or trading return exists or may be consulted",
+  "candidate": {
+    "model": "gemma3:4b",
+    "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+    "architecture": "gemma3",
+    "parameters": "4.3B",
+    "quantization": "Q4_K_M",
+    "license": "Gemma Terms of Use",
+    "rationale": "different model family from the evaluated Llama and Qwen candidates, instruction-tuned, and small enough to run as one local worker within the 6 GB GPU constraint",
+    "primary_sources": [
+      "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "https://ollama.com/library/gemma3:4b"
+    ]
+  },
+  "frozen_input_contract": {
+    "artifact": "results/llm_daily_information_sets_v1.json",
+    "sha256": "2136070baa8b1288a7064a770249f285bce72c179875117c2279bb0a5c2ab338",
+    "prompt_version": "crypto-daily-information-set-v1",
+    "prompt_hash": "58c04a420b8c7851a15130c95469b985387db18ad1c6eeef7c5757544a76938d",
+    "temperature": 0.0,
+    "seed": 20260814,
+    "long_threshold": 0.3,
+    "minimum_confidence": 0.7,
+    "threshold_optimization_prohibited": true
+  },
+  "stage1_operational_gate": {
+    "sampling": "twelve deterministic calendar samples per year for 2017-2025",
+    "sample_per_year": 12,
+    "expected_information_sets": 108,
+    "independent_component_runs": 2,
+    "workers_per_run": 1,
+    "request_delay_seconds": 10,
+    "required": {
+      "schema_success_each_run": 108,
+      "exact_score_agreement_min": 103,
+      "long_flat_action_agreements_min": 107,
+      "mean_absolute_score_difference_max": 0.01,
+      "max_absolute_score_difference_max": 0.4
+    },
+    "decision": "all requirements must pass; otherwise reject the challenger and stop before full inference, calibration or backtest"
+  },
+  "stage2_only_if_stage1_passes": {
+    "work": "one full 2927-record inference followed by outcome calibration only",
+    "minimum_observations": 1000,
+    "minimum_long_rule_observations": 100,
+    "required": {
+      "schema_errors": 0,
+      "pearson_score_forward_return_95_ci_lower_bound_gt": 0.0,
+      "long_minus_flat_mean_bps_95_ci_lower_bound_gt": 0.0
+    },
+    "decision": "all requirements must pass before authorizing a full repeat, consensus construction or any lifecycle trading backtest"
+  },
+  "prohibited": [
+    "consulting Gemma trading return during model selection",
+    "changing prompt or action thresholds within this experiment",
+    "adding further direct-direction model challengers after this predeclared final challenger",
+    "running multiple heavy jobs or LLM workers",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ],
+  "baseline_reference": {
+    "llama3_stage1_exact_score_agreement": "98/108",
+    "qwen25_7b_stage1_exact_score_agreement": "108/108",
+    "qwen25_7b_stage2_passed": false,
+    "qwen35_4b_prior_pilot_schema_success": "8/9",
+    "qwen35_4b_status": "not promoted because a pre-existing outcome-free pilot already showed a schema/range failure"
+  }
+}

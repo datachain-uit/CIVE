@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "experiment_id": "llm-event-extractor-ministral3-8b-v3.7-full-extraction",
+  "status": "predeclared-before-full-extraction",
+  "predeclared_at": "2026-08-26T22:55:58+07:00",
+  "research_role": "one full article-level event extraction after Stage 1 pass; no outcome join or trading action",
+  "selection_basis": "V3.7 passed every predeclared Stage 1 reliability requirement in two independent 114-headline runs. Both runs produced 114 schema-valid records, zero evidence fallbacks, exact categorical agreement, affected-assets mean Jaccard 1.0, and zero continuous-field difference. The only change from v3.6 is a closed exact allowlist for wrapped-BTC aliases, regression-tested against the failed v3.6 raw batch. This config opens one new full extraction from record zero over the frozen 39,393-headline input. No failed v3.6 checkpoint, market outcome, predictive metric, threshold, or trading result is reused or consulted.",
+  "candidate": {
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "architecture": "mistral3",
+    "parameters": "8.9B",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0"
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086",
+      "records": 39393
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/llm_event_extractor_v3_2.txt",
+      "sha256": "ac3798d3ee52899f297f1187396c6cfee22bf43c120c38463622c3bf71199497"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/llm_event_extraction_batch_v3_2.schema.json",
+      "sha256": "0ac1073b90b469631bb58ab3fccc7b6c89ffcb46bf0faa1103c05b97073e8d87"
+    },
+    "postprocessor": {
+      "path": "tools/llm/score_llm_event_extractor_v3_7.py",
+      "sha256": "1ef3e99893e69146b9ce6c26abc36db88e1b1f1b00403c617ce3abed896d7f81"
+    },
+    "producer": {
+      "path": "tools/llm/score_llm_event_extractor_v3_7_full.py",
+      "sha256": "0edb6dc23916ecfcd97efc4f0af98b8a84983178ae8a454e6d2818ed60840a07"
+    },
+    "audit": {
+      "path": "tools/llm/evaluate_llm_event_extractor_v3_5_full.py",
+      "sha256": "cf8505e660ef33e20916e36dda5dca10d85115c1702ea314b16063836747365b"
+    },
+    "stage1_gate": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_v3_7_stage1_gate.json",
+      "sha256": "92fb754a1add324d2270d2312fdcbbdfbb5f4cbac84afade3014e4a272000edc",
+      "required_status": "stage1-pass-full-extraction-authorized"
+    },
+    "btc_asset_alias_policy": {
+      "mode": "closed_exact_allowlist-after-whitespace-collapse-and-casefold",
+      "canonical_aliases": [
+        "BTC",
+        "Bitcoin",
+        "Bitcoin (BTC)",
+        "BTC (Bitcoin)",
+        "Bitcoin/BTC",
+        "BTC/Bitcoin",
+        "Wrapped BTC",
+        "WBTC",
+        "Wrapped Bitcoin",
+        "Wrapped Bitcoin (WBTC)",
+        "WBTC (Wrapped Bitcoin)",
+        "Wrapped Bitcoin/WBTC",
+        "WBTC/Wrapped Bitcoin"
+      ],
+      "unlisted_values": "preserve then apply the unchanged v3.5 validator"
+    },
+    "identifier_mode": "ordinal_item_id",
+    "batch_size": 4,
+    "expected_batches": 9849,
+    "temperature": 0.0,
+    "seed": 20260823,
+    "workers": 1,
+    "request_delay_seconds": 10,
+    "transport_retries": 3
+  },
+  "completion_gate": {
+    "required": {
+      "schema_success": 39393,
+      "headline_count_match": 39393,
+      "headline_id_and_order_match": 39393,
+      "evidence_exact_substring": 39393,
+      "errors": 0
+    },
+    "decision": "all requirements must pass before the extraction artifact can be frozen for downstream design"
+  },
+  "prohibited": [
+    "reusing the failed v3.6 checkpoint under the v3.7 contract",
+    "canonicalizing affected-assets values outside the frozen exact allowlist",
+    "joining market outcomes during full extraction",
+    "computing predictive metrics, selecting a target or horizon, or tuning a threshold",
+    "creating an action, position size, backtest, or Tech overlay",
+    "running more than one LLM worker",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

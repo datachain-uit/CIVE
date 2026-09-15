@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "family_id": "LLM-073--LLM-076-multicoin-transfer-v18",
+  "stage": "PREDECLARED_BEFORE_OUTCOME_FREE_SCREEN",
+  "frozen_at": "2026-09-11T08:56:52.956533+00:00",
+  "outcomes_consulted": false,
+  "assets": {
+    "BTCUSDT": {
+      "experiment_id": "LLM-073",
+      "aliases": [
+        "bitcoin",
+        "btc"
+      ]
+    },
+    "XRPUSDT": {
+      "experiment_id": "LLM-074",
+      "aliases": [
+        "ripple",
+        "xrp"
+      ]
+    },
+    "SOLUSDT": {
+      "experiment_id": "LLM-075",
+      "aliases": [
+        "sol",
+        "solana"
+      ]
+    },
+    "BNBUSDT": {
+      "experiment_id": "LLM-076",
+      "aliases": [
+        "binance coin",
+        "bnb"
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-09-11",
+      "valid_start": "2023-09-15",
+      "valid_end": "2024-01-31"
+    },
+    {
+      "fold": 2,
+      "train_end": "2024-01-31",
+      "valid_start": "2024-02-04",
+      "valid_end": "2024-06-21"
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-21",
+      "valid_start": "2024-06-25",
+      "valid_end": "2024-11-10"
+    },
+    {
+      "fold": 4,
+      "train_end": "2024-11-10",
+      "valid_start": "2024-11-14",
+      "valid_end": "2025-04-01"
+    },
+    {
+      "fold": 5,
+      "train_end": "2025-04-01",
+      "valid_start": "2025-04-05",
+      "valid_end": "2025-08-27"
+    }
+  ],
+  "thresholds": {
+    "minimum_direct_event_records": 1000,
+    "minimum_direct_event_dates": 700,
+    "minimum_event_dates_each_oos_fold": 100,
+    "maximum_evidence_fallback_fraction": 0.05
+  },
+  "sources": {
+    "extraction_inputs": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086"
+    },
+    "extraction": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\v3\\llm_event_extractor_v3_9_full_development.json",
+      "sha256": "e084343db1b70e31b1c11988c007b4c8b089940720db97bdef05ec3d9484707b"
+    },
+    "information_sets": {
+      "path": "D:\\UIT\\KLTN\\paper\\input\\results\\llm\\llm_daily_information_sets_multisource_v2_development.json",
+      "sha256": "43496e75c8e1b70159acde2bcba4749ce5ffa1cf0ed3ef0c6aa64648abaa2aa0"
+    },
+    "protocol": {
+      "path": "D:\\UIT\\KLTN\\paper\\working\\protocols\\LLM_Only_Multicoin_Transfer_Protocol_v18.md",
+      "sha256": "fdfe57000ad76b53a8192bf59ffe1594d2cd95e0e827a44d48af78fac803cd18"
+    },
+    "scripts": [
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\multicoin_transfer_v18_common.py",
+        "sha256": "dc77a7a138ab196bcdedabf5f14d1a67fe95b1b6ce2e252ca195e1845dc21cb0"
+      },
+      {
+        "path": "D:\\UIT\\KLTN\\tools\\llm\\audit_llm_only_multicoin_transfer_v18.py",
+        "sha256": "feb1defcfe918219573da7d258255ae8c55efd2032c0d347ba163654be2116ba"
+      }
+    ]
+  },
+  "next_authorized_action": "Run coverage/sample audit without price targets."
+}

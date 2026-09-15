@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "experiment_id": "HYB-008",
+  "status": "POST_EVALUATION_INTEGRITY_PASS",
+  "audited_at": "2026-09-11T16:41:55.769974+00:00",
+  "eligible_selected_rows_before_history_filter": 1008,
+  "rows_retained_after_18bar_history_requirement": 1008,
+  "history_coverage_fraction": 1.0,
+  "prediction_rows_by_fold": {
+    "1": 130,
+    "2": 139,
+    "3": 160,
+    "4": 121,
+    "5": 142
+  },
+  "recomputed_metrics": {
+    "tech": {
+      "brier": 0.08829182215207977,
+      "auc": 0.5624119402985075
+    },
+    "metadata": {
+      "brier": 0.0896932771193652,
+      "auc": 0.5274746268656716
+    },
+    "generic": {
+      "brier": 0.09118852964723777,
+      "auc": 0.503044776119403
+    },
+    "event": {
+      "brier": 0.09330703858128317,
+      "auc": 0.5009671641791045
+    },
+    "permuted": {
+      "brier": 0.09356399448852723,
+      "auc": 0.46899104477611936
+    }
+  },
+  "checks": {
+    "history_coverage_100pct": true,
+    "sample_count_matches": true,
+    "prediction_keys_unique": true,
+    "prediction_count_matches": true,
+    "fold_test_ranges_nonoverlap": true,
+    "metrics_recompute_exactly": true,
+    "predeclaration_hash_matches_sample": true,
+    "stage_b_not_authorized": true
+  },
+  "source_hashes": {
+    "predeclaration": "9625584bd1470543120d3c349b965d13c56449ad1ac72f74967222d42f63af4c",
+    "sample_audit": "8d221f78102903d52992a990233756bd6e7826cb701c7b85a44017ca64613f87",
+    "predictions": "4443b3dbf5e794901d893fa58216f8e4cbbef7f0b846a1b93ab3016685a52257",
+    "evaluation": "e247587bcfae272d17a7bddad9079a230f9e182ee533a331f4f3c53a58a0edbe"
+  },
+  "interpretation": "Confirms artifact integrity and the missing history-coverage denominator; it does not change the frozen Stage-A result."
+}
