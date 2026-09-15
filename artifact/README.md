@@ -76,8 +76,8 @@ No API key, exchange account, Redis instance, blockchain wallet, or live-trading
 Clone the repository:
 
 ~~~bash
-git clone https://github.com/MNfine/KLTN.git
-cd KLTN/artifact
+git clone https://github.com/datachain-uit/CIVE.git
+cd CIVE/artifact
 git status --short
 ~~~
 
