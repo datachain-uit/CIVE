@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LLM-085-glm4-9b-q3km-event-extractor-stage1-reliability",
+  "status": "predeclared-before-event-extractor-inference",
+  "predeclared_at": "2026-09-11T16:54:54.134234+07:00",
+  "research_role": "article-level structured event extraction; no return forecast and no trading action",
+  "selection_basis": "Preselected local challenger from an untested GLM model family; the exact 5.1 GB Q3_K_M artifact fits the available 6 GB GPU. Selection was made before this model produced any project output and was not based on returns.",
+  "candidate": {
+    "model": "glm4:9b-chat-q3_K_M",
+    "digest": "f61310a4c5448541c2e684787bad318158ac5209a5abab3cd0719238535c10c6",
+    "architecture": "chatglm",
+    "parameters": "9.4B",
+    "quantization": "Q3_K_M",
+    "license": "glm-4-9b License; academic research use permitted"
+  },
+  "frozen_contract": {
+    "full_input": {
+      "path": "paper/input/results/llm/v3/llm_event_extraction_inputs_v3_development.json",
+      "sha256": "09027906e6f6b591523ff28c0dca124fcd2fe5fc64c363a58a6e3ef008fc1086",
+      "records": 39393
+    },
+    "stage1_sample": {
+      "path": "paper/input/results/llm/v3/llm_event_extractor_stage1_sample_v3_frozen.json",
+      "sha256": "d58b812486ab9197158ed33c98cefd8dcc5356a2312c1a842dbfd39de474e4d2",
+      "records": 114,
+      "strata": 38
+    },
+    "sampler": {
+      "path": "tools/llm/build_llm_event_reliability_sample_v3.py",
+      "sha256": "c2d8220b1c5e7e2d97708e83d7b9dffc396a249352427ddf20cfe3629e5ccbc1"
+    },
+    "prompt": {
+      "path": "tools/llm/prompts/llm_event_extractor_v3.txt",
+      "sha256": "b23ed0b31f1eebdf58ae30398cd4b6080abf5a9f8e1aeef3b363a5c03b92a5e6"
+    },
+    "response_schema": {
+      "path": "tools/llm/schemas/llm_event_extraction_batch_v3.schema.json",
+      "sha256": "a8a0a40e08b6703a311b14d4243442f036d573cd35f28184153c3cb519b736ce"
+    },
+    "batch_size": 4,
+    "expected_batches_per_run": 29,
+    "temperature": 0.0,
+    "seed": 20260823,
+    "workers": 1,
+    "request_delay_seconds": 10
+  },
+  "stage1_gate": {
+    "independent_runs": 2,
+    "required": {
+      "schema_success_each_run": 114,
+      "headline_count_match_each_run": 114,
+      "headline_id_and_order_match_each_run": 114,
+      "evidence_exact_substring_each_run": 114,
+      "btc_relevance_exact_agreement_min": 108,
+      "event_type_exact_agreement_min": 103,
+      "direction_exact_agreement_min": 103,
+      "expected_horizon_exact_agreement_min": 97,
+      "affected_assets_mean_jaccard_min": 0.9,
+      "severity_mean_absolute_difference_max": 0.05,
+      "reported_surprise_mean_absolute_difference_max": 0.05,
+      "confidence_mean_absolute_difference_max": 0.05,
+      "continuous_field_max_absolute_difference_max": 0.25
+    },
+    "decision": "all requirements must pass before full-corpus extraction"
+  },
+  "stage2_only_if_stage1_passes": {
+    "scope": "one full extraction over 39393 articles; no outcome join, predictive test, threshold selection, backtest, or Tech overlay",
+    "required": {
+      "schema_success": 39393,
+      "headline_id_match": 39393,
+      "evidence_exact_substring": 39393
+    }
+  },
+  "prohibited": [
+    "changing prompt, schema, model digest, sample, batch size, or gate thresholds after Stage 1 begins",
+    "joining market outcomes before the full extraction artifact is complete and frozen",
+    "creating action, position size, or Tech overlay fields in the extractor",
+    "running more than one LLM worker",
+    "continuing compute at NVIDIA GPU temperature 75 C or above"
+  ]
+}

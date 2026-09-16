@@ -2,6 +2,7 @@
 configs
 data
 executor
+frozen_tools
 paper/input
 paper/working/audits
 paper/working/implementation

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-11T09:57:34.781004+00:00",
+  "experiment_id": "LLM-085-glm4-9b-q3km-event-extractor-stage1-reliability",
+  "run_id": "event-glm4_9b_v21-stage1-run1",
+  "model": "glm4:9b-chat-q3_K_M",
+  "model_digest": "f61310a4c5448541c2e684787bad318158ac5209a5abab3cd0719238535c10c6",
+  "config_sha256": "811ceeb29d7fe53294b9c8f491cd1dbf1b87c329855275550ba0f35e646ab61a",
+  "input_sha256": "d58b812486ab9197158ed33c98cefd8dcc5356a2312c1a842dbfd39de474e4d2",
+  "prompt_sha256": "b23ed0b31f1eebdf58ae30398cd4b6080abf5a9f8e1aeef3b363a5c03b92a5e6",
+  "response_schema_sha256": "a8a0a40e08b6703a311b14d4243442f036d573cd35f28184153c3cb519b736ce",
+  "batch_size": 4,
+  "workers": 1,
+  "outcomes_consulted": false,
+  "records": [
+    {
+      "affected_assets": [
+        "Terra"
+      ],
+      "btc_relevance": "none",
+      "confidence": 1.0,
+      "direction": "positive",
+      "event_type": "regulation",
+      "evidence_span": "SBI Group Crypto Arm Wins Singapore Securities License",
+      "expected_horizon": "unknown",
+      "headline_id": "9a6348ee8cb90e96c9a274f80581db5e6b787bdc88cfb4c76a363b8b3249e0a9",
+      "reported_surprise": 1.0,
+      "severity": 1.0,
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-16"
+    },
+    {
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "btc_relevance": "direct",
+      "confidence": 1.0,
+      "direction": "negative",
+      "event_type": "regulation",
+      "evidence_span": "CFTC Pursues First Case Against a DAO",
+      "expected_horizon": "unknown",
+      "headline_id": "f400377af56fd1f6b4f30631fdde8cf0343f25f075979ffc495118a66d609e1f",
+      "reported_surprise": 1.0,
+      "severity": 1.0,
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-23"
+    },
+    {
+      "affected_assets": [
+        "Bitcoin"
+      ],
+      "btc_relevance": "direct",
+      "confidence": 1.0,
+      "direction": "negative",
+      "event_type": "market_commentary",
+      "evidence_span": "Bitcoin Miner Marathon Digital Downgraded at BTIG on Headwinds From Compute North’s Bankruptcy",
+      "expected_horizon": "unknown",
+      "headline_id": "699a3bb7f018b61dc348f08f9db630724e9835f50996e05e295e0d03b90d1323",
+      "reported_surprise": 1.0,
+      "severity": 1.0,
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-23"
+    },
+    {
+      "affected_assets": [
+        "Dogecoin"
+      ],
+      "btc_relevance": "none",
+      "confidence": 1.0,
+      "direction": "positive",
+      "event_type": "market_commentary",
+      "evidence_span": "What’s Next for Ethereum in a Post-Merge World?",
+      "expected_horizon": "unknown",
+      "headline_id": "c14a2325120bca9c2e02d98c60a4a6806720b25e75a4e886a9404aa3e2d476d7",
+      "reported_surprise": 1.0,
+      "severity": 1.0,
+      "evidence_fallback": false,
+      "status": "success",
+      "error": null,
+      "information_date": "2022-09-23"
+    },
+    {
+      "headline_id": "a8aac5cd5a22dae3687edabcf51f5a5c452a12c089683ba5ea680948628f4ed3",
+      "information_date": "2022-09-29",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"affected_assets\": [\"ETHW\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"ETHW Surges as Binance Launches Ethereum Proof-of-Work Mining Pool\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"a8aac5cd5a22dae3687edabcf51f5a5c452a12c089683ba5ea680948628f4ed3\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Bitcoin\"],\n      \"btc_relevance\": \"systemic\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"regulation\",\n      \"evidence_span\": \"Basel Committee crypto-asset prudential treatment proposals get detailed responses\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"bf42ca309e1915aff211370cacd0273610af23b794d907108a8fd85c8059c444\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 3.0\n    },\n    {\n      \"affected_assets\": [\"Terra\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Anchorage co-founder to US regulators: ‘What we want is clarity’\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"11d957a75312fbeb9a7c58b442d709f406753677496f581d1e9f583a58bfee07\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Uniswap\", \"Ethereum\"],\n      \"btc_relevance\": \"indirect\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Polygon’s zkEVM Public Testnet to enable smoother Ethereum migration\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"e4785fa7d53986433988ed0e4aa10b47de67d7f4b438b633ac30e6fddc4e46c1\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    }\n  ]\n}"
+    },
+    {
+      "headline_id": "bf42ca309e1915aff211370cacd0273610af23b794d907108a8fd85c8059c444",
+      "information_date": "2022-10-04",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"affected_assets\": [\"ETHW\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"ETHW Surges as Binance Launches Ethereum Proof-of-Work Mining Pool\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"a8aac5cd5a22dae3687edabcf51f5a5c452a12c089683ba5ea680948628f4ed3\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Bitcoin\"],\n      \"btc_relevance\": \"systemic\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"regulation\",\n      \"evidence_span\": \"Basel Committee crypto-asset prudential treatment proposals get detailed responses\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"bf42ca309e1915aff211370cacd0273610af23b794d907108a8fd85c8059c444\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 3.0\n    },\n    {\n      \"affected_assets\": [\"Terra\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Anchorage co-founder to US regulators: ‘What we want is clarity’\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"11d957a75312fbeb9a7c58b442d709f406753677496f581d1e9f583a58bfee07\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Uniswap\", \"Ethereum\"],\n      \"btc_relevance\": \"indirect\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Polygon’s zkEVM Public Testnet to enable smoother Ethereum migration\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"e4785fa7d53986433988ed0e4aa10b47de67d7f4b438b633ac30e6fddc4e46c1\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    }\n  ]\n}"
+    },
+    {
+      "headline_id": "11d957a75312fbeb9a7c58b442d709f406753677496f581d1e9f583a58bfee07",
+      "information_date": "2022-10-07",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"affected_assets\": [\"ETHW\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"ETHW Surges as Binance Launches Ethereum Proof-of-Work Mining Pool\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"a8aac5cd5a22dae3687edabcf51f5a5c452a12c089683ba5ea680948628f4ed3\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Bitcoin\"],\n      \"btc_relevance\": \"systemic\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"regulation\",\n      \"evidence_span\": \"Basel Committee crypto-asset prudential treatment proposals get detailed responses\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"bf42ca309e1915aff211370cacd0273610af23b794d907108a8fd85c8059c444\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 3.0\n    },\n    {\n      \"affected_assets\": [\"Terra\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Anchorage co-founder to US regulators: ‘What we want is clarity’\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"11d957a75312fbeb9a7c58b442d709f406753677496f581d1e9f583a58bfee07\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Uniswap\", \"Ethereum\"],\n      \"btc_relevance\": \"indirect\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Polygon’s zkEVM Public Testnet to enable smoother Ethereum migration\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"e4785fa7d53986433988ed0e4aa10b47de67d7f4b438b633ac30e6fddc4e46c1\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    }\n  ]\n}"
+    },
+    {
+      "headline_id": "e4785fa7d53986433988ed0e4aa10b47de67d7f4b438b633ac30e6fddc4e46c1",
+      "information_date": "2022-10-10",
+      "status": "error",
+      "error": "ValueError: severity outside [0,1]",
+      "raw_response": "{\n  \"results\": [\n    {\n      \"affected_assets\": [\"ETHW\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"ETHW Surges as Binance Launches Ethereum Proof-of-Work Mining Pool\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"a8aac5cd5a22dae3687edabcf51f5a5c452a12c089683ba5ea680948628f4ed3\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Bitcoin\"],\n      \"btc_relevance\": \"systemic\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"regulation\",\n      \"evidence_span\": \"Basel Committee crypto-asset prudential treatment proposals get detailed responses\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"bf42ca309e1915aff211370cacd0273610af23b794d907108a8fd85c8059c444\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 3.0\n    },\n    {\n      \"affected_assets\": [\"Terra\"],\n      \"btc_relevance\": \"none\",\n      \"confidence\": 1.0,\n      \"direction\": \"negative\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Anchorage co-founder to US regulators: ‘What we want is clarity’\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"11d957a75312fbeb9a7c58b442d709f406753677496f581d1e9f583a58bfee07\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    },\n    {\n      \"affected_assets\": [\"Uniswap\", \"Ethereum\"],\n      \"btc_relevance\": \"indirect\",\n      \"confidence\": 1.0,\n      \"direction\": \"positive\",\n      \"event_type\": \"market_commentary\",\n      \"evidence_span\": \"Polygon’s zkEVM Public Testnet to enable smoother Ethereum migration\",\n      \"expected_horizon\": \"unknown\",\n      \"headline_id\": \"e4785fa7d53986433988ed0e4aa10b47de67d7f4b438b633ac30e6fddc4e46c1\",\n      \"reported_surprise\": 1.0,\n      \"severity\": 2.0\n    }\n  ]\n}"
+    }
+  ],
+  "summary": {
+    "attempted": 8,
+    "success": 4,
+    "errors": 4,
+    "evidence_fallbacks": 0
+  }
+}

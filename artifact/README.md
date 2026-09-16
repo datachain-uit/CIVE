@@ -33,9 +33,12 @@ Local model weights and virtual environments are not committed. Model identifier
 | [configs/](configs/) | Original machine-readable experiment configurations. |
 | [data/llm_sources/](data/llm_sources/) | CryptoVision v2 source archive and causal derivative. |
 | [executor/](executor/) | Original research and evaluation code snapshot. Live-trading modules are retained because research modules import shared execution semantics; live trading is not required for paper reproduction. |
+| [frozen_tools/llm/](frozen_tools/llm/) | Exact historical evaluator versions whose SHA-256 values were registered by HYB-006–HYB-008 before later workspace edits. The one-command runner loads these versions explicitly. |
 | [results/](results/) | Complete legacy research-results snapshot, including cached market data and exploratory outputs. |
 | [reproduction/auto_trading_snapshot_manifest.csv](reproduction/auto_trading_snapshot_manifest.csv) | Path, byte size, SHA-256, and source modification time for every migrated file. |
 | [tools/reproduction/verify_snapshot.py](tools/reproduction/verify_snapshot.py) | Verifies the migrated snapshot against that manifest. |
+| [tools/reproduction/materialize_portable_config.py](tools/reproduction/materialize_portable_config.py) | Maps legacy absolute paths to the current clone while verifying recorded hashes. |
+| [tools/reproduction/reproduce_reported_results.py](tools/reproduction/reproduce_reported_results.py) | Replays every result reported in the paper, redirects all generated output to ignored runtime storage, and produces a machine-readable PASS/FAIL report. |
 | [paper/input/results/](paper/input/results/) | Curated experiment ledger, frozen evidence, provenance, LLM studies, and hybrid studies. The retained path preserves compatibility with the registered scripts. |
 | [paper/input/references/](paper/input/references/) | Data-source provenance and preserved source-verification artifacts. The retained path preserves compatibility with the registered scripts. |
 | [paper/working/protocols/](paper/working/protocols/) | Registered experimental and execution protocols. |
@@ -197,11 +200,53 @@ On PowerShell, place the command on one line or replace each trailing backslash 
 
 The builder converts timestamps to UTC, enforces an allowed-domain list, rejects invalid records, deduplicates by normalized-title SHA-256 and normalized URL, records all counts, and never imports sentiment or price-movement labels.
 
-## Replay the frozen Tech-Control configuration
+## Reproduce the three research arms
 
-The authoritative configuration is [configs/technical_control_v1.json](configs/technical_control_v1.json). The reported candidate uses Bybit linear USDT perpetuals, completed daily candles, 4-hour execution bars, one long position selected by 20-day momentum, 1x gross leverage, 3 ATR fixed stop, 4 ATR trailing stop, 180-day folds, historical funding, and open_funding_intrabar_v2 execution semantics.
+The study has three distinct arms. They are not three deployable trading systems and do not have the same evidential role.
 
-Replay from committed snapshots and write output to ignored runtime storage:
+| Arm | Role | Replay included here | Frozen comparison |
+|---|---|---|---|
+| Tech-only | Control strategy | Rebuild the lifecycle-aware backtest from committed Bybit snapshots. | [Tech-Control result](results/technical_bybit_lifecycle_1x_candidate_hardened.json) |
+| LLM-only | Diagnostic test of event-conditioned information | Refit the registered models and recompute chronological out-of-sample predictions and statistical gates for every row reported in the paper. | [LLM result index](paper/input/results/README.md) |
+| Tech+LLM | Main treatment: Tech decisions with LLM-conditioned exposure | Recompute the reported HYB-001, HYB-002, HYB-003, and HYB-006–HYB-010 decisions or registered stop gates. | [Hybrid result directory](paper/input/results/hybrid/) |
+
+Run these commands from the artifact root. Generated files go to runtime/reproduction/ and never overwrite frozen evidence.
+
+### One-command reproduction of all reported results
+
+After installing [requirements-reproduction.txt](requirements-reproduction.txt), run:
+
+~~~bash
+python tools/reproduction/reproduce_reported_results.py
+~~~
+
+This command reproduces and compares every quantitative result reported in the conference paper:
+
+- the base, stress, and harsh Tech-Control backtests;
+- the 1,459-point daily-close equity reconstruction and drawdown proxy;
+- every row of the representative LLM-only table through the v17, v18, v19, and v20 evaluators;
+- HYB-001, HYB-003, and HYB-006 through HYB-010;
+- HYB-002 through its committed independent replay audit, which reconstructs the shadow lifecycle and intervention effects and requires near-zero differences from the canonical result;
+- the integrity and semantics of the 39,393-record structured-event extraction and the reported data/operational stop artifacts.
+
+The command writes regenerated outputs, per-case logs, and `runtime/reproduction/reported_results/reproduction_report.json` under ignored runtime storage. It exits with code zero only when every case passes and the full Tech backtests were included. The expected final summary is:
+
+~~~json
+{
+  "passed": true,
+  "complete": true
+}
+~~~
+
+The optional `--skip-tech-backtests` flag is only a development shortcut. A report created with that flag has `"complete": false` and cannot support a claim of complete paper reproduction.
+
+The original local model weights are not distributed. Consequently, the one-command workflow verifies the frozen inference outputs and reruns every reported downstream transformation, predictive evaluation, stop gate, policy evaluation, backtest, bootstrap, and comparison. Repeating raw LLM inference additionally requires obtaining the recorded model revision and environment described under [Local models](#local-models).
+
+Some registered JSON files preserve absolute paths from the original research machines. [materialize_portable_config.py](tools/reproduction/materialize_portable_config.py) creates a derived configuration pointing into the current clone and verifies every recorded source SHA-256. It does not edit the frozen configuration.
+
+### Arm 1: Tech-only control
+
+The authoritative configuration is [technical_control_v1.json](configs/technical_control_v1.json). The reported candidate uses completed Bybit daily candles, 4-hour execution bars, one long position selected by 20-day momentum, 1x gross leverage, 3 ATR fixed stop, 4 ATR trailing stop, historical funding, and open_funding_intrabar_v2 execution semantics.
 
 ~~~bash
 python executor/technical_bybit_lifecycle_execution.py \
@@ -225,53 +270,99 @@ python executor/technical_bybit_lifecycle_execution.py \
   --experiment-manifest runtime/reproduction/technical_control.manifest.json
 ~~~
 
-Compare the replay structurally and numerically with [the frozen legacy result](results/technical_bybit_lifecycle_1x_candidate_hardened.json). The historical manifest records six workers. Reduce worker count only after confirming output ordering and calculations remain deterministic.
+Compare the replay structurally and numerically with the frozen Tech-Control result. Its SHA-256 is 7e8e8653c207e759e6cd3093e78705486fd732ba588362620ffe0ff372c60cf7. The historical run used six workers. If worker count is reduced, confirm that ordering and calculations remain deterministic.
 
-Do not rebuild the point-in-time universe from today's API when reproducing the paper. The acquisition entry point below creates a newly dated dataset:
+Do not rebuild the point-in-time universe from today's API when reproducing the reported result. This command acquires a new, newly dated dataset instead:
 
 ~~~bash
 python executor/technical_bybit_lifecycle_universe.py --help
 ~~~
 
-## LLM and hybrid experiment routing
+### Arm 2: LLM-only diagnostic
 
-There is no safe single command for every LLM and hybrid experiment. Each experiment has its own registered data gate, representation or prompt, model configuration, outcome contract, and stop rule.
+This replay uses LLM-072/v17, a complete registered diagnostic with committed extraction, target, and expected-result artifacts. It does not contact an LLM provider or rerun inference. It starts from the frozen extraction and recomputes features, ridge fitting, five chronological out-of-sample folds, and the 5,000-draw block bootstrap.
 
-Use this order:
+~~~bash
+python tools/reproduction/materialize_portable_config.py \
+  --input paper/input/results/llm/v17/llm_only_eth_transfer_v17_predeclared.json \
+  --output runtime/reproduction/llm_v17_portable.json
+
+python tools/llm/evaluate_llm_only_eth_transfer_v17.py \
+  --config runtime/reproduction/llm_v17_portable.json \
+  --target-panel paper/input/results/llm/v17/llm_only_eth_transfer_target_panel_v17.json \
+  --prediction-panel runtime/reproduction/llm_v17_predictions.json \
+  --output runtime/reproduction/llm_v17_result.json
+~~~
+
+Expected decision: FAIL_STOP_BEFORE_LLM_ONLY_BACKTEST. Expected values are 699 out-of-sample predictions, event MSE 0.0014217712614098097, generic MSE 0.0013602513710191412, event-minus-generic delta MSE -0.00006151989039066817, and 0/5 event-arm fold wins. Display rounding may differ; a gate change or material numeric difference is a failed reproduction.
+
+The remaining LLM-only transfers are preserved under [paper/input/results/llm/](paper/input/results/llm/). Their IDs, eligibility stops, and evidence classes are indexed in the [result guide](paper/input/results/README.md) and [experiment ledger](paper/input/results/experiment_ledger/So_cai_thi_nghiem_Tech_LLM.xlsx). Step 2 verifies the upstream 86-file freeze; this replay verifies a reported downstream statistical result.
+
+### Arm 3: Tech+LLM treatment
+
+HYB-009 and HYB-010 provide a compact auditable route through the hybrid branch. Both retain the frozen Tech-Control entries, directions, exits, costs, funding, and stops; LLM-derived information changes exposure only.
+
+Replay HYB-009:
+
+~~~bash
+python tools/reproduction/materialize_portable_config.py \
+  --input paper/input/results/hybrid/hyb009_model_substitution_v1_1_predeclared.json \
+  --output runtime/reproduction/hyb009_portable.json
+
+python tools/llm/evaluate_hyb009_model_substitution_v1_1.py \
+  --config runtime/reproduction/hyb009_portable.json \
+  --output runtime/reproduction/hyb009_result.json
+~~~
+
+Expected decision: economic_increment is false for finbert, cryptobert, and ministral_direct. Their mean paired net differences are approximately -0.00507402, -0.00888421, and -0.00417152 per opportunity.
+
+Replay HYB-010, which tests whether the CryptoBERT downside ranking observed in HYB-009 can reallocate risk budget across the same 24 Tech opportunities:
+
+~~~bash
+python tools/reproduction/materialize_portable_config.py \
+  --input paper/input/results/hybrid/hyb010_risk_budget_reallocation_predeclared.json \
+  --output runtime/reproduction/hyb010_portable.json
+
+python tools/llm/evaluate_hyb010_risk_budget_reallocation.py \
+  --config runtime/reproduction/hyb010_portable.json \
+  --output runtime/reproduction/hyb010_result.json
+~~~
+
+Expected result: status COMPLETE and strong_risk_budget_conversion_pass false. The primary arm has 24 opportunities, mean exposure 1.0449576465, compounded net return 2.7428585639, mean paired net difference 0.0048286862, 95% interval approximately [-0.0021391874, 0.0143927797], and 2/3 positive folds. The lower interval bound is not above zero, so the stronger registered conversion gate fails.
+
+HYB-009 and HYB-010 are post-outcome exploratory development evidence, not independent validation, sealed holdout, or live evidence. These LLM-only and hybrid replays use CPU and committed inputs; they do not start Ollama, download weights, call an exchange, or require a GPU.
+
+### Route other registered LLM or hybrid experiments
+
+There is no safe universal command for all experiments because each has its own data gate, representation, outcome contract, and stop rule:
 
 1. locate the experiment ID in the experiment ledger;
-2. read the matching protocol under [paper/working/protocols/](paper/working/protocols/);
-3. locate the exact input and SHA-256 in its manifest or provenance record;
-4. read the matching config in [configs/](configs/) and script in [executor/](executor/) or [tools/llm/](tools/llm/);
-5. confirm the evidence class;
-6. write new output under runtime/reproduction, never over frozen evidence;
-7. compare schema, row count, chronological boundaries, metrics, and hashes;
-8. update the experiment ledger only after the registered gates pass.
-
-Pipeline:
+2. read its protocol under [paper/working/protocols/](paper/working/protocols/);
+3. verify every input against its recorded SHA-256;
+4. locate its script under [executor/](executor/) or [tools/llm/](tools/llm/);
+5. confirm its evidence class;
+6. write output under runtime/reproduction/, never over frozen evidence;
+7. compare schema, row count, time boundaries, metrics, gates, and hashes.
 
 ~~~text
 public source
   -> immutable raw snapshot and retrieval metadata
-  -> canonical UTC-aligned event/market table
+  -> UTC-aligned event/market table
   -> availability, sample-size, schema, and leakage gates
   -> chronological development/validation/holdout split
   -> technical or related baseline
   -> event-conditioned/LLM model
   -> hybrid decision rule
   -> result artifact, manifest, and ledger entry
-  -> verified result package
 ~~~
 
-Never shuffle time-series rows. Publication time, data availability, bar closure, and fill time must follow the matching as-of protocol. If the original study's data and design are not reproduced exactly, call the study a transfer test, not a replication.
+Never shuffle time-series rows. Publication time, data availability, bar closure, and fill time must follow the matching as-of protocol. If the original data and design are not reproduced exactly, call the study a transfer test, not a replication.
 
 ### Local models
 
-Model weights were excluded because they occupied approximately 16 GB. Virtual environments, caches, and secrets were also excluded.
+Model weights, virtual environments, caches, and secrets are excluded. A full inference replay requires the exact model and tokenizer revision, prompt/schema version, quantization and decoding settings, library versions, device/CUDA version, seed, input snapshot, and all failed responses recorded by the matching experiment.
 
-For an inference replay, obtain the exact model identifier/revision from the matching config or artifact and record the model and tokenizer revision, prompt/schema version, quantization and decoding settings, library versions, device/CUDA version, seed, input snapshot, and every failed response.
-
-Ollama-compatible scripts expect a local endpoint at http://127.0.0.1:11434. Model download and server startup are not part of the audit workflow. A malformed output is an operational failure and must not be manually repaired into a valid prediction.
+Ollama-compatible scripts expect a local endpoint at http://127.0.0.1:11434. Model download and server startup are not part of the deterministic audit workflow. A malformed response is an operational failure and must not be manually repaired into a valid prediction.
 
 ## Regression tests
 

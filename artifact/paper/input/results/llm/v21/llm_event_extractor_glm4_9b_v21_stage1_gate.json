@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-11T09:57:37.418660+00:00",
+  "experiment_id": "LLM-085-glm4-9b-q3km-event-extractor-stage1-reliability",
+  "outcomes_consulted": false,
+  "trading_backtest_consulted": false,
+  "passed": false,
+  "status": "stage1-fail-fast-stop-before-full-extraction",
+  "observed": {
+    "failed_run_number": 1,
+    "records_attempted": 8,
+    "schema_success": 4,
+    "errors": 4,
+    "maximum_possible_schema_success": 110,
+    "required_schema_success": 114
+  },
+  "inputs": {
+    "config": {
+      "path": "D:\\UIT\\KLTN\\runtime\\glm4_9b_challenger\\configs\\llm_event_extractor_glm4_9b_v21_stage1_predeclared.json",
+      "sha256": "811ceeb29d7fe53294b9c8f491cd1dbf1b87c329855275550ba0f35e646ab61a"
+    },
+    "partial_run": {
+      "path": "D:\\UIT\\KLTN\\runtime\\glm4_9b_challenger\\results\\llm_event_extractor_glm4_9b_v21_stage1_run1.json",
+      "sha256": "bd788793a96296dd43552314f06ffb045e0dc209b07d31dfff38690fc3475d91"
+    }
+  }
+}
